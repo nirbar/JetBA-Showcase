@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension">
+  <Bundle Name="!(bind.packageName.Setup.msi)"
+          Tag="!(bind.packageName.Setup.msi)"
+          Version="!(bind.packageVersion.Setup.msi)"
+          Manufacturer="!(bind.packageManufacturer.Setup.msi)"
+          UpgradeCode="26059b47-588d-427d-9f82-6f8d79850c9d"
+          IconSourceFile="$(sys.SOURCEFILEDIR)spaceship.ico"
+          SplashScreenSourceFile="$(sys.SOURCEFILEDIR)spaceship-128x128.bmp"
+          >
+
+    <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost">
+      <Payload Name="BootstrapperCore.config" SourceFile="$(var.SampleJetBA.ProjectDir)SampleJetBA.BootstrapperCore.config"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetPath)"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\SampleJetBA.resources.dll" Name="he\SampleJetBA.resources.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)PanelSW.Installer.JetBA.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.resources.dll" Name="he\PanelSW.Installer.JetBA.resources.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)PanelSW.Installer.JetBA.JetPack.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.JetPack.resources.dll" Name="he\PanelSW.Installer.JetBA.JetPack.resources.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)Ninject.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)Ninject.Extensions.Factory.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)Castle.Core.dll"/>
+    </BootstrapperApplicationRef>
+    <jet:JetBaSettings LicenseFile="$(sys.SOURCEFILEDIR)JetBA.lic"/>
+
+    <Variable Name="InstallFolder" Value="[ProgramFilesFolder][WixBundleName]\" bal:Overridable="yes" jet:Encrypt="yes"/>
+
+    <!-- Attach debugger -->
+    <?ifdef Debug?>
+    <Variable Name="BaLaunchDebugger" Value="1" Type="numeric"/>
+    <?endif?>
+
+    <Chain DisableSystemRestore="yes" ParallelCache="yes">
+      <PackageGroupRef Id="NetFx45Web"/>
+      <MsiPackage SourceFile="$(var.Setup.TargetPath)">
+        <MsiProperty Name="INSTALLFOLDER" Value="[InstallFolder]"/>
+      </MsiPackage>
+    </Chain>
+  </Bundle>
+</Wix>

@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="SampleJetBA.View.SummaryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:props="clr-namespace:SampleJetBA.Properties"
+             xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="500">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="Styles.xaml"/>
+    </UserControl.Resources>
+
+    <DockPanel>
+
+        <!-- Buttons strip -->
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" >
+            <!-- Cancel -->
+            <Button Style="{StaticResource LinkButtonStyle}" 
+                    Command="{Binding NavigationViewModel.StopCommand}"
+                    Content="{x:Static loc:Resources.Cancel}" />
+            <!-- Back -->
+            <Button Style="{StaticResource LinkButtonStyle}"
+                    Command="{Binding NavigationViewModel.BackCommand}"
+                    Content="{x:Static props:Resources.Back}" />
+            <!-- Install -->
+            <Button IsDefault="True" Style="{StaticResource DialogButtonStyle}"
+                    Command="{Binding ApplyViewModel.ApplyCommand}"
+                    Content="{x:Static props:Resources.Install}" />
+        </StackPanel>
+
+        <Border DockPanel.Dock="Top" Margin="0,0,0,56"
+			HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+			BorderBrush="{StaticResource WindowFrameBackgrdBrush}" BorderThickness="2" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.InstallFolder}" Style="{StaticResource GenericText}" />
+                <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource GenericText}" FlowDirection="LeftToRight" HorizontalAlignment="Center"
+                           Text="{Binding VariablesViewModel.InstallFolder.String}" />
+            </Grid>
+        </Border>
+
+        <ScrollViewer DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding PackagesViewModel.Packages}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <CheckBox IsEnabled="False"
+                                      Content="{Binding Path=DisplayName}" 
+                                      IsChecked="{Binding Path=PlanState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=MajorUpgrade;Install;MinorUpgrade, Mode=OneWay}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+    </DockPanel>
+</UserControl>

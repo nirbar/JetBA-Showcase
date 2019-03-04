@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="SampleJetBA.View.RepairView"
+             xmlns:props="clr-namespace:SampleJetBA.Properties"
+             xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="300">
+    
+    <UserControl.Resources>
+        <ResourceDictionary Source="Styles.xaml"/>
+    </UserControl.Resources>
+
+    <DockPanel>
+
+        <!-- Buttons strip -->
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" >
+            <!-- Repair -->
+            <Button HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}"
+                DataContext="{Binding ApplyViewModel}" 
+                Command="{Binding RepairCommand}"
+                Content="{x:Static props:Resources.Repair}" />
+            
+            <!-- Uninstall -->
+            <Button IsDefault="True" HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}" 
+                DataContext="{Binding ApplyViewModel}" 
+                Command="{Binding UninstallCommand}"
+                Content="{x:Static props:Resources.Uninstall}" />
+        </StackPanel>
+
+        <TextBlock DockPanel.Dock="Top" Style="{StaticResource GenericText}" TextWrapping="WrapWithOverflow"
+                   Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.ClickRepairToRepair0OrUninstallToRemoveIt}}"
+                   />
+    </DockPanel>
+</UserControl>

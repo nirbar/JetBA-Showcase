@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="Setup" Language="1033" Version="1.0.0.0" Manufacturer="" UpgradeCode="ba008159-cf1c-438f-b666-32068f1625c2">
-		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension">
+  <Product Id="*" Name="$(var.JetProductName)" Language="1033" Version="$(var.FullVersion)" Manufacturer="$(var.JetManufacturer)" UpgradeCode="93f8a01a-4b63-4b0e-a58a-08911165888a">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
-		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-		<MediaTemplate />
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." Schedule="afterInstallExecute"/>
+    <MediaTemplate />
 
-		<Feature Id="ProductFeature" Title="Setup" Level="1">
-			<ComponentGroupRef Id="ProductComponents" />
-		</Feature>
-	</Product>
+    <Feature Id="ProductFeature" Title="Setup" Level="1">
+      <ComponentGroupRef Id="FILES" />
+    </Feature>
 
-	<Fragment>
-		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="Setup" />
-			</Directory>
-		</Directory>
-	</Fragment>
+    <Property Id="MSIFASTINSTALL" Value="7"/>
+    <Property Id="MSIENFORCEUPGRADECOMPONENTRULES" Value="1"/>
+    <Property Id="MSIUNINSTALLSUPERSEDEDCOMPONENTS" Value="1"/>
 
-	<Fragment>
-		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-			<!-- <Component Id="ProductComponent"> -->
-				<!-- TODO: Insert files, registry keys, and other resources here. -->
-			<!-- </Component> -->
-		</ComponentGroup>
-	</Fragment>
+    <util:RestartResource ProcessName="chrome.exe"/>
+    <util:RestartResource ProcessName="devenv.exe"/>
+    <util:RestartResource ProcessName="notepad++.exe"/>
+    <util:RestartResource ProcessName="notepad.exe"/>
+    <util:RestartResource ProcessName="firefox.exe"/>
+
+    <jet:JetLicense LicenseFile="$(sys.SOURCEFILEDIR)..\Bootstrapper\JetBA.lic"/>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="Setup" />
+      </Directory>
+    </Directory>
+  </Product>
+
+  <?pragma heat.dir "$(sys.SOURCEFILEDIR)..\SampleJetBA" -sfrag -scom -sreg -suid -svb6 -cg FILES -dr INSTALLFOLDER -ag?>
 </Wix>
