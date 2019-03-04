@@ -133,6 +133,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Database Server.
+        /// </summary>
+        public static string DbServer {
+            get {
+                return ResourceManager.GetString("DbServer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Executing {0}.
         /// </summary>
         public static string Executing0 {
@@ -147,6 +156,16 @@ namespace SampleJetBA.Properties {
         public static string FailedConfiguring0 {
             get {
                 return ResourceManager.GetString("FailedConfiguring0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed connecting to DB server
+        ///{0}.
+        /// </summary>
+        public static string FailedConnectingToDbServer0 {
+            get {
+                return ResourceManager.GetString("FailedConnectingToDbServer0", resourceCulture);
             }
         }
         

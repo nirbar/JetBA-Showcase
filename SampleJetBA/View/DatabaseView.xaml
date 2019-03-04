@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="SampleJetBA.View.DatabaseView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:props="clr-namespace:SampleJetBA.Properties"
+             xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
+             mc:Ignorable="d"
+             d:DesignHeight="200" d:DesignWidth="500"
+             >
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="Styles.xaml"/>
+    </UserControl.Resources>
+
+    <DockPanel>
+
+        <!-- Buttons strip -->
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right"
+                    IsEnabled="{Binding IsIndeterminate, ElementName=testConnection_, Converter={StaticResource InverseBooleanConverter}}">
+            <!-- Going-next progress. Hide if popup is open. -->
+            <ProgressBar HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="10" Width="100" Name="testConnection_"
+                         IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"
+						 Visibility="{Binding IsIndeterminate, RelativeSource={RelativeSource Self}, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            <!-- Cancel -->
+            <Button Style="{StaticResource LinkButtonStyle}" 
+                    Command="{Binding NavigationViewModel.StopCommand}"
+                    Content="{x:Static loc:Resources.Cancel}" />
+            <!-- Back -->
+            <Button Style="{StaticResource LinkButtonStyle}"
+                    Command="{Binding NavigationViewModel.BackCommand}"
+                    Content="{x:Static props:Resources.Back}" />
+            <!-- Next -->
+            <Button IsDefault="True" Style="{StaticResource DialogButtonStyle}"
+                    Command="{Binding NavigationViewModel.NextCommand}"
+                    Content="{x:Static props:Resources.Next}" />
+        </StackPanel>
+
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" FontSize="18" Foreground="Black" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={}{0} Database, FallbackValue=Database}"/>
+
+        <Grid DockPanel.Dock="Top" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="90"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <ComboBox Grid.Row="0" Grid.Column="1" IsEditable="True" 
+                      ItemsSource="{Binding SqlViewModel.SqlServers}"
+                      SelectedValue="{Binding VariablesViewModel.SQL_SERVER.String}"
+                      SelectedValuePath="ServerInstance"
+                      DisplayMemberPath="ServerInstance"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="..." Width="20" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center"
+                    Command="{Binding SqlViewModel.EnumerateServersCommand}"/>
+            <ProgressBar Grid.Row="0" Grid.Column="3" IsIndeterminate="True" Width="70" VerticalAlignment="Center" Height="25"
+                         Visibility="{Binding SqlViewModel.ServerEnumerationStatus, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Running;WaitingForChildrenToComplete}"/>
+
+            <TextBox Grid.Row="1" Grid.Column="1"  Text="{Binding VariablesViewModel.SQL_DATABASE.String}"/>
+
+            <CheckBox Grid.Row="2" Grid.Column="1" Content="SQL Authentication" IsChecked="{Binding VariablesViewModel.SQL_AUTH.Boolean}"/>
+
+            <TextBox Grid.Row="3" Grid.Column="1" 
+                     Text="{Binding VariablesViewModel.SQL_USER.String, UpdateSourceTrigger=PropertyChanged}"
+                     Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+
+            <PasswordBox Grid.Row="4" Grid.Column="1" PasswordChanged="PasswordBox_PasswordChanged" Name="passwordBox_" 
+                         Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+        </Grid>
+    </DockPanel>
+</UserControl>

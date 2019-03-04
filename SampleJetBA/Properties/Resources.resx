@@ -197,4 +197,11 @@ By default UI and all prompts are displayed.
 
 InstallFolder="C:\Program Files\Sample" - Set terget folder</value>
   </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Database Server</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Failed connecting to DB server
+{0}</value>
+  </data>
 </root>

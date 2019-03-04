@@ -10,6 +10,7 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <NoWarn>CS3001;CS3003;CS3008</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,6 +38,10 @@
     <Compile Include="SampleBA.cs" />
     <Compile Include="ViewModel\InputValidationsViewModelEx.cs" />
     <Compile Include="ViewModel\NavigationViewModelEx.cs" />
+    <Page Include="View\DatabaseView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\DetectingView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +74,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="ViewModel\SqlViewModelEx.cs" />
+    <Compile Include="View\DatabaseView.xaml.cs">
+      <DependentUpon>DatabaseView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\DetectingView.xaml.cs">
       <DependentUpon>DetectingView.xaml</DependentUpon>
     </Compile>
@@ -120,11 +129,11 @@
     <Reference Include="PanelSW.Installer.JetBA">
       <HintPath>$(MSBuildThisFileDirectory)..\JetBA-Binaries\PanelSW.Installer.JetBA.dll</HintPath>
       <Private>True</Private>
-	</Reference>
+    </Reference>
     <Reference Include="PanelSW.Installer.JetBA.JetPack">
       <HintPath>$(MSBuildThisFileDirectory)..\JetBA-Binaries\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
       <Private>True</Private>
-	</Reference>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -146,7 +155,7 @@
     <None Include="SampleJetBA.BootstrapperCore.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\spaceship-64x64.png"/>
+    <Resource Include="Resources\spaceship-64x64.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.he.resx">

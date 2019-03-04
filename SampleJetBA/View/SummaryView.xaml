@@ -30,26 +30,14 @@
                     Content="{x:Static props:Resources.Install}" />
         </StackPanel>
 
-        <Border DockPanel.Dock="Top" Margin="0,0,0,56"
-			HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
-			BorderBrush="{StaticResource WindowFrameBackgrdBrush}" BorderThickness="2" >
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+        <Border DockPanel.Dock="Top" Margin="0,0,0,20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="{StaticResource WindowFrameBackgrdBrush}" BorderThickness="2">
+            <UniformGrid Columns="2">
+                <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.InstallFolder}" />
+                <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.InstallFolder.String}" />
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.InstallFolder}" Style="{StaticResource GenericText}" />
-                <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource GenericText}" FlowDirection="LeftToRight" HorizontalAlignment="Center"
-                           Text="{Binding VariablesViewModel.InstallFolder.String}" />
-            </Grid>
+                <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" />
+                <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.DbServer.String}" />
+            </UniformGrid>
         </Border>
 
         <ScrollViewer DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto">

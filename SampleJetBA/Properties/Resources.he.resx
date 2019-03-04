@@ -196,4 +196,11 @@
 
 InstallFolder="C:\Program Files\Sample" - מתקין לספריה המבוקשת</value>
   </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>שרת נתונים</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>שגיאה בהתחברות לשרת הנתונים
+{0}</value>
+  </data>
 </root>

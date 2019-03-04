@@ -16,22 +16,7 @@
     <DockPanel>
 
         <!-- Buttons strip -->
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right"
-                    IsEnabled="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Created;WaitingForActivation;RanToCompletion;Canceled;Faulted}">
-            <!-- Going-next progress. Hide if popup is open. -->
-            <ProgressBar HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="10" Width="100"
-						 Visibility="{Binding IsIndeterminate, RelativeSource={RelativeSource Self}, Converter={StaticResource BooleanToVisibilityConverter}}">
-                <ProgressBar.Style>
-                    <Style TargetType="ProgressBar" BasedOn="{StaticResource ProgressBarStyle}">
-                        <Setter Property="IsIndeterminate" Value="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=WaitingToRun;Running;WaitingForChildrenToComplete}"/>
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding PopupViewModel.IsOpen}" Value="True">
-                                <Setter Property="IsIndeterminate" Value="False"/>
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </ProgressBar.Style>
-            </ProgressBar>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
             <!-- Cancel -->
             <Button HorizontalAlignment="Right" Style="{StaticResource LinkButtonStyle}" 
                     Command="{Binding NavigationViewModel.StopCommand}"
@@ -41,6 +26,8 @@
                     Command="{Binding NavigationViewModel.NextCommand}"
                     Content="{x:Static props:Resources.Next}" />
         </StackPanel>
+
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" FontSize="18" Foreground="Black" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={}{0} Folder, FallbackValue=Target Folder}"/>
 
         <!-- Target folder -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
