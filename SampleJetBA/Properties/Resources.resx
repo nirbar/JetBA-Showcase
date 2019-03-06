@@ -204,4 +204,25 @@ InstallFolder="C:\Program Files\Sample" - Set terget folder</value>
     <value>Failed connecting to DB server
 {0}</value>
   </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Authentication</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Load</value>
+  </data>
 </root>

@@ -13,11 +13,9 @@
         <ResourceDictionary Source="Styles.xaml"/>
     </UserControl.Resources>
 
-    <DockPanel>
-
+    <DockPanel IsEnabled="{Binding IsIndeterminate, ElementName=testConnection_, Converter={StaticResource InverseBooleanConverter}}">
         <!-- Buttons strip -->
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right"
-                    IsEnabled="{Binding IsIndeterminate, ElementName=testConnection_, Converter={StaticResource InverseBooleanConverter}}">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
             <!-- Going-next progress. Hide if popup is open. -->
             <ProgressBar HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="10" Width="100" Name="testConnection_"
                          IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"
@@ -38,40 +36,50 @@
 
         <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" FontSize="18" Foreground="Black" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={}{0} Database, FallbackValue=Database}"/>
 
-        <Grid DockPanel.Dock="Top" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid DockPanel.Dock="Top" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="10,0,0,10">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="20"/>
-                <ColumnDefinition Width="350"/>
-                <ColumnDefinition Width="30"/>
-                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="30"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
 
-            <ComboBox Grid.Row="0" Grid.Column="1" IsEditable="True" 
+            <!-- DB Server -->
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.DbServer}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
+            <ComboBox Grid.Row="0" Grid.Column="1" IsEditable="True" SelectedValuePath="ServerInstance" DisplayMemberPath="ServerInstance" HorizontalAlignment="Stretch"
                       ItemsSource="{Binding SqlViewModel.SqlServers}"
-                      SelectedValue="{Binding VariablesViewModel.SQL_SERVER.String}"
-                      SelectedValuePath="ServerInstance"
-                      DisplayMemberPath="ServerInstance"/>
-            <Button Grid.Row="0" Grid.Column="2" Content="..." Width="20" HorizontalAlignment="Center" Height="25" VerticalAlignment="Center"
+                      SelectedValue="{Binding VariablesViewModel.SQL_SERVER.String}"/>
+            
+            <!-- Enumerate servers -->
+            <Button Grid.Row="0" Grid.Column="2" Content="{x:Static props:Resources.Load}" Style="{StaticResource LinkButtonStyle}" Margin="0,0,0,0"
                     Command="{Binding SqlViewModel.EnumerateServersCommand}"/>
-            <ProgressBar Grid.Row="0" Grid.Column="3" IsIndeterminate="True" Width="70" VerticalAlignment="Center" Height="25"
+            <ProgressBar Grid.Row="0" Grid.Column="3" IsIndeterminate="True" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="10"
                          Visibility="{Binding SqlViewModel.ServerEnumerationStatus, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Running;WaitingForChildrenToComplete}"/>
 
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static props:Resources.Database}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
             <TextBox Grid.Row="1" Grid.Column="1"  Text="{Binding VariablesViewModel.SQL_DATABASE.String}"/>
 
-            <CheckBox Grid.Row="2" Grid.Column="1" Content="SQL Authentication" IsChecked="{Binding VariablesViewModel.SQL_AUTH.Boolean}"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static props:Resources.Authentication}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
+            <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" Orientation="Horizontal">
+                <RadioButton Content="{x:Static props:Resources.SqlAuthentication}" IsChecked="{Binding VariablesViewModel.SQL_AUTH.Boolean}"/>
+                <RadioButton Content="{x:Static props:Resources.WindowsAuthentication}" IsChecked="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource InverseBooleanConverter}}"/>
+            </StackPanel>
 
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="{x:Static props:Resources.UserName}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"
+                       Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
             <TextBox Grid.Row="3" Grid.Column="1" 
                      Text="{Binding VariablesViewModel.SQL_USER.String, UpdateSourceTrigger=PropertyChanged}"
                      Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
 
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static props:Resources.Password}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"
+                       Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
             <PasswordBox Grid.Row="4" Grid.Column="1" PasswordChanged="PasswordBox_PasswordChanged" Name="passwordBox_" 
                          Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
         </Grid>

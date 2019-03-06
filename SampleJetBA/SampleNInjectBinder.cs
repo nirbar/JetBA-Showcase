@@ -42,7 +42,7 @@ namespace SampleJetBA
                               string db = ba_.Engine.StringVariables["SQL_DATABASE"];
                               string user = ba_.Engine.StringVariables["SQL_USER"];
                               string psw = ba_.Engine.StringVariables["SQL_PASSWORD"];
-                              bool isSqlAuth = (ba_.Engine.NumericVariables["SQL_AUTH"] == 1l);
+                              bool isSqlAuth = (ba_.Engine.NumericVariables["SQL_AUTH"] == 1L);
 
                               SqlConnectionStringBuilder connStr = new SqlConnectionStringBuilder()
                               {

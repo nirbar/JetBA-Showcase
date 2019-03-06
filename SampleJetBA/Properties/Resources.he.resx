@@ -203,4 +203,25 @@ InstallFolder="C:\Program Files\Sample" - מתקין לספריה המבוקשת
     <value>שגיאה בהתחברות לשרת הנתונים
 {0}</value>
   </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>אימות</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>בסיס נתונים</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>סיסמא</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>שם משתמש</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>טען</value>
+  </data>
 </root>
