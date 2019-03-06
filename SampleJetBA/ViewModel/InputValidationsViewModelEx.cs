@@ -1,6 +1,8 @@
-﻿using Ninject;
+﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
+using Ninject;
 using PanelSW.Installer.JetBA.ViewModel;
 using System;
+using System.Data;
 using System.IO;
 
 namespace SampleJetBA.ViewModel
@@ -22,6 +24,10 @@ namespace SampleJetBA.ViewModel
                     ValidateTargetFolder();
                     break;
 
+                case Pages.Database:
+                    ValidateDatabase();
+                    break;
+
                 default:
                     break;
             }
@@ -30,6 +36,7 @@ namespace SampleJetBA.ViewModel
         public override void ValidateAll()
         {
             ValidateTargetFolder();
+            ValidateDatabase();
         }
 
         private void ValidateTargetFolder()
@@ -40,6 +47,22 @@ namespace SampleJetBA.ViewModel
             if (string.IsNullOrWhiteSpace(installFolder) || (installFolder.IndexOfAny(Path.GetInvalidPathChars()) >= 0))
             {
                 AddResult(new Exception(string.Format(Properties.Resources._0IsNotALegalFolderName, installFolder)));
+            }
+        }
+
+        private void ValidateDatabase()
+        {
+            try
+            {
+                using (IDbConnection conn = BA.Kernel.Get<IDbConnection>())
+                {
+                    conn.Open();
+                }
+            }
+            catch (Exception ex)
+            {
+                BA.Engine.Log(LogLevel.Error, $"Failed connecting to DB server: {ex.Message}");
+                AddResult(new Exception(string.Format(Properties.Resources.FailedConnectingToDbServer0, ex.Message)));
             }
         }
     }

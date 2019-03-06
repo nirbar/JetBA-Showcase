@@ -1,9 +1,9 @@
 ﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
 using Ninject;
 using PanelSW.Installer.JetBA;
+using PanelSW.Installer.JetBA.ViewModel;
 using SampleJetBA.View;
 using System;
-using System.Threading;
 
 namespace SampleJetBA.ViewModel
 {
@@ -12,6 +12,7 @@ namespace SampleJetBA.ViewModel
         Unknown,
         Detecting,
         InstallLocation,
+        Database,
         Summary,
         Progress,
         Finish,
@@ -19,11 +20,12 @@ namespace SampleJetBA.ViewModel
         Help
     }
 
-    public class NavigationViewModelEx : PanelSW.Installer.JetBA.ViewModel.NavigationViewModel, IInitializable
+    public class NavigationViewModelEx : NavigationViewModel, IInitializable
     {
         public NavigationViewModelEx(SampleBA ba
             , Lazy<DetectingView> detectingView
             , Lazy<InstallLocationView> installLocationView
+            , Lazy<DatabaseView> dbView
             , Lazy<RepairView> repairView
             , Lazy<ProgressView> progressView
             , Lazy<HelpView> helpView
@@ -40,6 +42,7 @@ namespace SampleJetBA.ViewModel
             AddPage(Pages.Help, new Lazy<object>(() => helpView.Value));
             AddPage(Pages.Detecting, new Lazy<object>(() => detectingView.Value));
             AddPage(Pages.InstallLocation, new Lazy<object>(() => installLocationView.Value));
+            AddPage(Pages.Database, new Lazy<object>(() => dbView.Value));
             AddPage(Pages.Progress, new Lazy<object>(() => progressView.Value));
             AddPage(Pages.Repair, new Lazy<object>(() => repairView.Value));
             AddPage(Pages.Summary, new Lazy<object>(() => summaryView.Value));
@@ -49,7 +52,7 @@ namespace SampleJetBA.ViewModel
 
         void IInitializable.Initialize()
         {
-            PanelSW.Installer.JetBA.ViewModel.ApplyViewModel apply = BA.Kernel.Get<PanelSW.Installer.JetBA.ViewModel.ApplyViewModel>();
+            ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
             apply.PropertyChanged += apply_PropertyChanged;
         }
 
@@ -121,10 +124,14 @@ namespace SampleJetBA.ViewModel
         protected override object QueryNextPage(object hint)
         {
             Pages nextPage = Pages.Unknown;
-            PanelSW.Installer.JetBA.ViewModel.ApplyViewModel apply = BA.Kernel.Get<PanelSW.Installer.JetBA.ViewModel.ApplyViewModel>();
             switch ((Pages)Page)
             {
                 case Pages.InstallLocation:
+                    nextPage = Pages.Database;
+                    break;
+
+                case Pages.Database:
+                    ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
                     apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
                     nextPage = Pages.Summary;
                     break;
