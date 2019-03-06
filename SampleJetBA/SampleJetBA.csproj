@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-  <Import Project="..\packages\TidyBuild.1.0.9\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.0.9\build\TidyBuild.props')" />
+  <Import Project="..\packages\TidyBuild.1.0.10\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.0.10\build\TidyBuild.props')" />
   <PropertyGroup>
     <ProjectGuid>{CDD409C6-0F49-4A92-A4DC-FA59DC915646}</ProjectGuid>
     <AssemblyName>SampleJetBA</AssemblyName>
@@ -175,6 +175,6 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
-    <Error Condition="!Exists('..\packages\TidyBuild.1.0.9\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.0.9\build\TidyBuild.props'))" />
+    <Error Condition="!Exists('..\packages\TidyBuild.1.0.10\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.0.10\build\TidyBuild.props'))" />
   </Target>
 </Project>
