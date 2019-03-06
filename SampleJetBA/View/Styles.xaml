@@ -225,6 +225,7 @@
     </Style>
 
     <Style TargetType="ComboBox">
+        <Setter Property="Height" Value="24"/>
         <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Margin" Value="5,2,5,2"/>
@@ -234,6 +235,7 @@
     </Style>
 
     <Style TargetType="PasswordBox">
+        <Setter Property="Height" Value="24"/>
         <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Margin" Value="5,2,5,2"/>
@@ -243,6 +245,7 @@
     </Style>
 
     <Style TargetType="TextBox">
+        <Setter Property="Height" Value="24"/>
         <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Margin" Value="5,2,5,2"/>
