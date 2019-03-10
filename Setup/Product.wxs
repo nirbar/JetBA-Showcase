@@ -2,6 +2,7 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension">
   <Product Id="*" Name="$(var.JetProductName)" Language="1033" Version="$(var.FullVersion)" Manufacturer="$(var.JetManufacturer)" UpgradeCode="93f8a01a-4b63-4b0e-a58a-08911165888a">
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+    <jet:JetLicense LicenseFile="$(sys.SOURCEFILEDIR)..\Bootstrapper\JetBA.lic"/>
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." Schedule="afterInstallExecute"/>
     <MediaTemplate />
@@ -10,17 +11,8 @@
       <ComponentGroupRef Id="FILES" />
     </Feature>
 
-    <Property Id="MSIFASTINSTALL" Value="7"/>
     <Property Id="MSIENFORCEUPGRADECOMPONENTRULES" Value="1"/>
     <Property Id="MSIUNINSTALLSUPERSEDEDCOMPONENTS" Value="1"/>
-
-    <util:RestartResource ProcessName="chrome.exe"/>
-    <util:RestartResource ProcessName="devenv.exe"/>
-    <util:RestartResource ProcessName="notepad++.exe"/>
-    <util:RestartResource ProcessName="notepad.exe"/>
-    <util:RestartResource ProcessName="firefox.exe"/>
-
-    <jet:JetLicense LicenseFile="$(sys.SOURCEFILEDIR)..\Bootstrapper\JetBA.lic"/>
 
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">

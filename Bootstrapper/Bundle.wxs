@@ -12,14 +12,17 @@
     <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost">
       <Payload Name="BootstrapperCore.config" SourceFile="$(var.SampleJetBA.ProjectDir)SampleJetBA.BootstrapperCore.config"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetPath)"/>
-      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\SampleJetBA.resources.dll" Name="he\SampleJetBA.resources.dll"/>
+      <!-- JetBA requisites -->
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)PanelSW.Installer.JetBA.dll"/>
-      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.resources.dll" Name="he\PanelSW.Installer.JetBA.resources.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)PanelSW.Installer.JetBA.JetPack.dll"/>
-      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.JetPack.resources.dll" Name="he\PanelSW.Installer.JetBA.JetPack.resources.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)Ninject.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)Ninject.Extensions.Factory.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)Castle.Core.dll"/>
+
+      <!-- Localizations -->
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\SampleJetBA.resources.dll" Name="he\SampleJetBA.resources.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.resources.dll" Name="he\PanelSW.Installer.JetBA.resources.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.JetPack.resources.dll" Name="he\PanelSW.Installer.JetBA.JetPack.resources.dll"/>
     </BootstrapperApplicationRef>
     <jet:JetBaSettings LicenseFile="$(sys.SOURCEFILEDIR)JetBA.lic"/>
 
