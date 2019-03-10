@@ -225,4 +225,10 @@ InstallFolder="C:\Program Files\Sample" - Set terget folder</value>
   <data name="Load" xml:space="preserve">
     <value>Load</value>
   </data>
+  <data name="_0DatabaseConnection" xml:space="preserve">
+    <value>{0} database connection</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>{0} install folder</value>
+  </data>
 </root>

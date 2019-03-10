@@ -1,4 +1,5 @@
 ﻿using PanelSW.Installer.JetBA.JetPack.ViewModel;
+using PanelSW.Installer.JetBA.JetPack.Util;
 using PanelSW.Installer.JetBA.ViewModel;
 using System.Windows.Controls;
 
@@ -15,17 +16,12 @@ namespace SampleJetBA.View
             DataContext = this;
             InitializeComponent();
 
-            //TODO: Migrate to 'VariablesViewModel["DB_PASSWORD"].BindPassword'' once released.
-            passwordBox_.Password = VariablesViewModel["SQL_PASSWORD"].String;
+            // Pseudo-bind SQL_PASSWORD variable to UI.
+            VariablesViewModel["SQL_PASSWORD"].BindPasswordBox(passwordBox_, Dispatcher);
         }
 
         public VariablesViewModel VariablesViewModel { get; private set; }
         public NavigationViewModel NavigationViewModel { get; private set; }
         public SqlViewModel SqlViewModel { get; private set; }
-
-        private void PasswordBox_PasswordChanged(object sender, System.Windows.RoutedEventArgs e)
-        {
-            VariablesViewModel["SQL_PASSWORD"].String = ((PasswordBox)sender).Password;
-        }
     }
 }

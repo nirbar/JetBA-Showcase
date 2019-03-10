@@ -34,7 +34,7 @@
                     Content="{x:Static props:Resources.Next}" />
         </StackPanel>
 
-        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" FontSize="18" Foreground="Black" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={}{0} Database, FallbackValue=Database}"/>
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" FontSize="18" Foreground="Black" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0DatabaseConnection}}"/>
 
         <Grid DockPanel.Dock="Top" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="10,0,0,10">
             <Grid.ColumnDefinitions>
@@ -80,7 +80,7 @@
 
             <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static props:Resources.Password}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"
                        Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-            <PasswordBox Grid.Row="4" Grid.Column="1" PasswordChanged="PasswordBox_PasswordChanged" Name="passwordBox_" 
+            <PasswordBox Grid.Row="4" Grid.Column="1" Name="passwordBox_" 
                          Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
         </Grid>
     </DockPanel>

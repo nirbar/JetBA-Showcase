@@ -224,4 +224,10 @@ InstallFolder="C:\Program Files\Sample" - מתקין לספריה המבוקשת
   <data name="Load" xml:space="preserve">
     <value>טען</value>
   </data>
+  <data name="_0DatabaseConnection" xml:space="preserve">
+    <value>חיבור לשרת נתונים של {0}</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>ספריית התקנה של {0}</value>
+  </data>
 </root>
