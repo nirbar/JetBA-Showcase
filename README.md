@@ -1,4 +1,5 @@
-JetWixExtension features the most comprehensive WiX preprocessor and BootstrapperApplication frameworks supporting either native Qt-based or managed WPF-based user interface for WiX bundles
+JetWixExtension features the most comprehensive WiX preprocessor and BootstrapperApplication frameworks supporting either native Qt-based or managed WPF-based user interface for WiX bundles.
+
 Contact the owner to obtain a license for JetWixExtension
 
 ## JetBA
