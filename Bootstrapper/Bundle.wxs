@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension">
+  <?define UPGRADE_CODE = 11111111-1111-1111-1111-111111111111?>
+  <?if $(var.UPGRADE_CODE) = 11111111-1111-1111-1111-111111111111?>
+  <?warning Replace UPGRADE_CODE with a newly generated GUID value.?>
+  <?endif?>
+
   <Bundle Name="!(bind.packageName.Setup.msi)"
-          Tag="!(bind.packageName.Setup.msi)"
           Version="!(bind.packageVersion.Setup.msi)"
           Manufacturer="!(bind.packageManufacturer.Setup.msi)"
-          UpgradeCode="26059b47-588d-427d-9f82-6f8d79850c9d"
+          Tag="$(var.UPGRADE_CODE)"
+          UpgradeCode="$(var.UPGRADE_CODE)"
           IconSourceFile="$(sys.SOURCEFILEDIR)spaceship.ico"
           SplashScreenSourceFile="$(sys.SOURCEFILEDIR)spaceship-128x128.bmp"
           >
+    <?undef UPGRADE_CODE?>
 
     <BootstrapperApplicationRef Id="ManagedBootstrapperApplicationHost">
       <Payload Name="BootstrapperCore.config" SourceFile="$(var.SampleJetBA.ProjectDir)SampleJetBA.BootstrapperCore.config"/>
@@ -26,16 +32,16 @@
     </BootstrapperApplicationRef>
     <jet:JetBaSettings LicenseFile="$(sys.SOURCEFILEDIR)JetBA.lic"/>
 
-    <Variable Name="InstallFolder" Value="[ProgramFilesFolder][WixBundleName]\" bal:Overridable="yes" jet:Encrypt="yes"/>
+    <Variable Name="InstallFolder" Value="[ProgramFilesFolder][WixBundleName]\" Type="string" bal:Overridable="yes"/>
     <Variable Name="SQL_SERVER" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SQL_DATABASE" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SQL_USER" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
-    <Variable Name="SQL_PASSWORD" Value="" Type="string" bal:Overridable="yes" Persisted="no" Hidden="yes" jet:Encrypt="yes" />
+    <Variable Name="SQL_PASSWORD" Value="" Type="string" bal:Overridable="yes" Hidden="yes" jet:Encrypt="yes" />
     <Variable Name="SQL_AUTH" Value="0" Type="numeric" bal:Overridable="yes" Persisted="yes"/>
 
     <!-- Attach debugger -->
     <?ifdef Debug?>
-    <Variable Name="BaLaunchDebugger" Value="1" Type="numeric"/>
+    <Variable Name="BaLaunchDebugger" Value="1" Type="numeric" bal:Overridable="yes" Persisted="yes"/>
     <?endif?>
 
     <Chain DisableSystemRestore="yes" ParallelCache="yes">

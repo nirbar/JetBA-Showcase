@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension">
-  <Product Id="*" Name="$(var.JetProductName)" Language="1033" Version="$(var.FullVersion)" Manufacturer="$(var.JetManufacturer)" UpgradeCode="93f8a01a-4b63-4b0e-a58a-08911165888a">
+  <?define UPGRADE_CODE = 11111111-1111-1111-1111-111111111111?>
+  <?if $(var.UPGRADE_CODE) = 11111111-1111-1111-1111-111111111111?>
+  <?warning Replace UPGRADE_CODE with a newly generated GUID value.?>
+  <?endif?>
+  <Product Id="*" Name="$(var.JetProductName)" Language="1033" Version="$(var.FullVersion)" Manufacturer="$(var.JetManufacturer)" UpgradeCode="$(var.UPGRADE_CODE)">
+    <?undef UPGRADE_CODE?>
+    
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
     <jet:JetLicense LicenseFile="$(sys.SOURCEFILEDIR)..\Bootstrapper\JetBA.lic"/>
 
