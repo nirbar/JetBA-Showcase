@@ -6,6 +6,6 @@
     <JetProductName>JetBA-Showcase</JetProductName>
     <JetManufacturer>Panel::Software</JetManufacturer>
 
-    <DefineConstants>FullVersion=$(FullVersion);JetProductName=$(JetProductName);JetManufacturer=$(JetManufacturer);$(DefineConstants)</DefineConstants>
+    <DefineConstants Condition="'$(MSBuildProjectExtension)'=='.wixproj'">FullVersion=$(FullVersion);JetProductName=$(JetProductName);JetManufacturer=$(JetManufacturer);$(DefineConstants)</DefineConstants>
   </PropertyGroup>
 </Project>

@@ -10,7 +10,7 @@ using SampleJetBA;
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 [assembly: Guid("0ffc4944-9295-40b7-adac-3a6864b5219b")]
-[assembly: CLSCompliantAttribute(true)]
+[assembly: CLSCompliant(false)]
 // Identifies the class that derives from UserExperience and is the UX class that gets
 // instantiated by the interop layer
 [assembly: BootstrapperApplication(typeof(SampleBA))]
