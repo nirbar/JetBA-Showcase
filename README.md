@@ -43,3 +43,5 @@ The only native fully customizable, extensible, Qt-based UI for WiX bootstrapper
 1. Close the solution and then reopen it in Visual Studio.
 1. Rebuild project Bootstrapper
    The installer will be built in $(SolutionDir)build\bin\\$(Configuration)\Bootstrapper\JetBA_Setup.exe
+
+Note that Debug builds attempt to attach a debugger while Release builds do not.
