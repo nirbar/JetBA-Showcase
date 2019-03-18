@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD321923-E573-411A-AD00-713E2CDFB8BB}"
 	ProjectSection(SolutionItems) = preProject
 		JetBA-Binaries\JetWixExtension.xsd = JetBA-Binaries\JetWixExtension.xsd
+		README.md = README.md
 		TidyBuild.custom.props = TidyBuild.custom.props
 	EndProjectSection
 EndProject
