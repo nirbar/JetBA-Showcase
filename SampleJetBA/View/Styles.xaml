@@ -105,7 +105,6 @@
 
             <ContentPresenter
 				Grid.Column="1"
-				TextElement.FontFamily="Arial"
 				TextElement.Foreground="{TemplateBinding Foreground}"
 				TextElement.FontSize="11" 
 				Content="{TemplateBinding Content}"
@@ -132,7 +131,6 @@
     </Style>
 
     <Style TargetType="Button">
-        <Setter Property="FontFamily" Value="Arial" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Background" Value="{StaticResource ButtonBackgrdBrush}"/>
@@ -145,7 +143,6 @@
     </Style>
 
     <Style x:Key="DialogButtonStyle" TargetType="Button">
-        <Setter Property="FontFamily" Value="Arial" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="Foreground" Value="#FFFFFF"/>
         <Setter Property="Background" Value="Black"/>
@@ -210,7 +207,6 @@
 
     <Style TargetType="CheckBox">
         <Setter Property="FontSize" Value="12" />
-        <Setter Property="FontFamily" Value="Arial" />
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
@@ -226,7 +222,6 @@
 
     <Style TargetType="ComboBox">
         <Setter Property="Height" Value="24"/>
-        <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Margin" Value="5,2,5,2"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
@@ -236,7 +231,6 @@
 
     <Style TargetType="PasswordBox">
         <Setter Property="Height" Value="24"/>
-        <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Margin" Value="5,2,5,2"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
@@ -246,7 +240,6 @@
 
     <Style TargetType="TextBox">
         <Setter Property="Height" Value="24"/>
-        <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Margin" Value="5,2,5,2"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
@@ -255,7 +248,6 @@
     </Style>
 
     <Style TargetType="TextBlock" x:Key="GenericText">
-        <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="VerticalAlignment" Value="Center" />
@@ -263,7 +255,6 @@
     </Style>
 
     <Style TargetType="TextBlock" x:Key="HeaderText">
-        <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="16"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
@@ -272,15 +263,14 @@
     </Style>
 
     <Style TargetType="TextBlock" x:Key="TitleText">
-        <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontStyle" Value="Oblique"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="HorizontalAlignment" Value="Left" />
     </Style>
 
     <Style TargetType="Label">
-        <Setter Property="FontFamily" Value="Segoe UI"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="VerticalAlignment" Value="Top" />
@@ -288,23 +278,20 @@
     </Style>
 
     <Style x:Key="StatusTextStyle" TargetType="TextBlock">
-        <Setter Property="FontFamily" Value="Segoe UI"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Foreground" Value="White" />
         <Setter Property="VerticalAlignment" Value="Bottom" />
         <Setter Property="HorizontalAlignment" Value="Left" />
     </Style>
 
-    <Style TargetType="ProgressBar" x:Key="ProgressBarStyle">
+    <Style TargetType="ProgressBar">
         <Setter Property="Foreground" Value="#FF1E7DF7" />
         <Setter Property="Background" Value="#FFB4CDED" />
         <Setter Property="Height" Value="15"/>
     </Style>
-    <Style TargetType="ProgressBar" BasedOn="{StaticResource ProgressBarStyle}"/>
 
     <Style TargetType="RadioButton">
         <Setter Property="Margin" Value="5,2,5,2"/>
-        <Setter Property="FontFamily" Value="Segoe UI"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="VerticalAlignment" Value="Center" />

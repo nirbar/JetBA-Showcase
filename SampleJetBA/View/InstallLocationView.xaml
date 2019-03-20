@@ -27,7 +27,7 @@
                     Content="{x:Static props:Resources.Next}" />
         </StackPanel>
 
-        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" FontSize="18" Foreground="Black" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0InstallFolder}}"/>
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0InstallFolder}}"/>
 
         <!-- Target folder -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
