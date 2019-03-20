@@ -11,6 +11,7 @@ namespace SampleJetBA.ViewModel
     {
         Unknown,
         Detecting,
+        PageSelection,
         InstallLocation,
         Database,
         Summary,
@@ -24,6 +25,7 @@ namespace SampleJetBA.ViewModel
     {
         public NavigationViewModelEx(SampleBA ba
             , Lazy<DetectingView> detectingView
+            , Lazy<PageSelectionView> pageSelectionView
             , Lazy<InstallLocationView> installLocationView
             , Lazy<DatabaseView> dbView
             , Lazy<RepairView> repairView
@@ -41,6 +43,7 @@ namespace SampleJetBA.ViewModel
             AddPage(Pages.Finish, new Lazy<object>(() => finishView.Value));
             AddPage(Pages.Help, new Lazy<object>(() => helpView.Value));
             AddPage(Pages.Detecting, new Lazy<object>(() => detectingView.Value));
+            AddPage(Pages.PageSelection, new Lazy<object>(() => pageSelectionView.Value));
             AddPage(Pages.InstallLocation, new Lazy<object>(() => installLocationView.Value));
             AddPage(Pages.Database, new Lazy<object>(() => dbView.Value));
             AddPage(Pages.Progress, new Lazy<object>(() => progressView.Value));
@@ -66,7 +69,7 @@ namespace SampleJetBA.ViewModel
                 return;
             }
 
-            PanelSW.Installer.JetBA.ViewModel.ApplyViewModel apply = BA.Kernel.Get<PanelSW.Installer.JetBA.ViewModel.ApplyViewModel>();
+            ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
             if (apply.InstallState < InstallationState.Detected)
             {
                 Page = Pages.Detecting;
@@ -79,7 +82,7 @@ namespace SampleJetBA.ViewModel
                 case DetectionState.Newer:
                 case DetectionState.SameVersion:
                 case DetectionState.Older:
-                    Page = Pages.InstallLocation;
+                    Page = Pages.PageSelection;
                     break;
 
                 case DetectionState.Present:
@@ -121,19 +124,48 @@ namespace SampleJetBA.ViewModel
 
         #endregion
 
+        private bool showDbPage_ = true;
+        public bool ShowDbPage
+        {
+            get
+            {
+                return showDbPage_;
+            }
+            set
+            {
+                showDbPage_ = value;
+                OnPropertyChanged("ShowDbPage");
+            }
+        }
+
         protected override object QueryNextPage(object hint)
         {
             Pages nextPage = Pages.Unknown;
             switch ((Pages)Page)
             {
+                case Pages.PageSelection:
+                    nextPage = Pages.InstallLocation;
+                    break;
+
                 case Pages.InstallLocation:
-                    nextPage = Pages.Database;
+                    if (ShowDbPage)
+                    {
+                        nextPage = Pages.Database;
+                    }
+                    else
+                    {
+                        ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+                        apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
+                        nextPage = Pages.Summary;
+                    }
                     break;
 
                 case Pages.Database:
-                    ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
-                    apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
-                    nextPage = Pages.Summary;
+                    {
+                        ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+                        apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
+                        nextPage = Pages.Summary;
+                    }
                     break;
 
                 default:

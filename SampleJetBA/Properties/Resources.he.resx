@@ -230,4 +230,13 @@ InstallFolder="C:\Program Files\Sample" - מתקין לספריה המבוקשת
   <data name="_0InstallFolder" xml:space="preserve">
     <value>ספריית התקנה של {0}</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>חיבור לבסיס נתונים</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>ספריית התקנה</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>בחר עמודים לאשף ההתקנה</value>
+  </data>
 </root>

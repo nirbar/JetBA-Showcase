@@ -35,8 +35,11 @@
                 <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.InstallFolder}" />
                 <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.InstallFolder.String}" />
 
-                <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" />
-                <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.DbServer.String}" />
+                <!-- DB server- only if page was selected -->
+                <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" 
+                           Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.DbServer.String}" 
+                           Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
             </UniformGrid>
         </Border>
 

@@ -25,6 +25,7 @@ namespace SampleJetBA
             Rebind<PanelSW.Installer.JetBA.ViewModel.InputValidationsViewModel, ViewModel.InputValidationsViewModelEx>().To<ViewModel.InputValidationsViewModelEx>().InSingletonScope();
 
             // View
+            Bind<View.PageSelectionView>().ToSelf().InSingletonScope();
             Bind<View.InstallLocationView>().ToSelf().InSingletonScope();
             Bind<View.DatabaseView>().ToSelf().InSingletonScope();
             Bind<View.RepairView>().ToSelf().InSingletonScope();

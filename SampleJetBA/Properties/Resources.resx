@@ -231,4 +231,13 @@ InstallFolder="C:\Program Files\Sample" - Set terget folder</value>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>{0} install folder</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Database connection</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Installation folder</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Select Pages for the Installation Wizard</value>
+  </data>
 </root>

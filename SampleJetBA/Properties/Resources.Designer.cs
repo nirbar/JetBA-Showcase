@@ -169,6 +169,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Database connection.
+        /// </summary>
+        public static string DatabaseConnection {
+            get {
+                return ResourceManager.GetString("DatabaseConnection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Database Server.
         /// </summary>
         public static string DbServer {
@@ -259,6 +268,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Installation folder.
+        /// </summary>
+        public static string InstallationFolder {
+            get {
+                return ResourceManager.GetString("InstallationFolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Install Folder.
         /// </summary>
         public static string InstallFolder {
@@ -327,6 +345,15 @@ namespace SampleJetBA.Properties {
         public static string Restart {
             get {
                 return ResourceManager.GetString("Restart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Pages for the Installation Wizard.
+        /// </summary>
+        public static string SelectInstallationPages {
+            get {
+                return ResourceManager.GetString("SelectInstallationPages", resourceCulture);
             }
         }
         

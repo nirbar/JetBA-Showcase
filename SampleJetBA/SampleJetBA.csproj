@@ -38,6 +38,9 @@
     <Compile Include="SampleBA.cs" />
     <Compile Include="ViewModel\InputValidationsViewModelEx.cs" />
     <Compile Include="ViewModel\NavigationViewModelEx.cs" />
+    <Compile Include="View\PageSelection.xaml.cs">
+      <DependentUpon>PageSelection.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\DatabaseView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -106,6 +109,10 @@
     <Page Include="View\SummaryView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PageSelection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
