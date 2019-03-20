@@ -11,7 +11,7 @@
     <jet:JetLicense LicenseFile="$(sys.SOURCEFILEDIR)..\Bootstrapper\JetBA.lic"/>
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." Schedule="afterInstallExecute"/>
-    <MediaTemplate />
+    <MediaTemplate CabinetTemplate="smple{0}.cab"/>
 
     <Feature Id="ProductFeature" Title="Setup" Level="1">
       <ComponentGroupRef Id="FILES" />
