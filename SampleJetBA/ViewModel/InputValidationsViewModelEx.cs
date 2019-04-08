@@ -2,7 +2,7 @@
 using Ninject;
 using PanelSW.Installer.JetBA.ViewModel;
 using System;
-using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 
 namespace SampleJetBA.ViewModel
@@ -54,7 +54,23 @@ namespace SampleJetBA.ViewModel
         {
             try
             {
-                using (IDbConnection conn = BA.Kernel.Get<IDbConnection>())
+                VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
+                string server = vars["SQL_SERVER"].String;
+                string db = vars["SQL_DATABASE"].String;
+                string user = vars["SQL_USER"].String;
+                string psw = vars["SQL_PASSWORD"].String;
+                bool isSqlAuth = vars["SQL_AUTH"].Boolean;
+
+                SqlConnectionStringBuilder connStr = new SqlConnectionStringBuilder()
+                {
+                    DataSource = server,
+                    InitialCatalog = db,
+                    UserID = user,
+                    Password = psw,
+                    IntegratedSecurity = !isSqlAuth
+                };
+
+                using (SqlConnection conn = new SqlConnection(connStr.ToString()))
                 {
                     conn.Open();
                 }

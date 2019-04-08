@@ -39,6 +39,12 @@
     <Variable Name="SQL_PASSWORD" Value="" Type="string" bal:Overridable="yes" Hidden="yes" jet:Encrypt="yes" />
     <Variable Name="SQL_AUTH" Value="0" Type="numeric" bal:Overridable="yes" Persisted="yes"/>
 
+    <!-- Detect VC 2013 redist packages. No functional logic attached, just show how to use BundleSearch.
+    VC2013 redist x86 and x64 share the same bundle UpgradeCode. Using NamePattern to make a destiction between them.
+    -->
+    <jet:BundleSearch UpgradeCode="{1D1DB5E6-E0D8-3103-8570-369A82A9BF33}" VersionVariable="DetectedVC2013x86Version" NamePattern="\bx86\b"/>
+    <jet:BundleSearch UpgradeCode="{1D1DB5E6-E0D8-3103-8570-369A82A9BF33}" VersionVariable="DetectedVC2013x64Version" NamePattern="\bx64\b"/>
+
     <!-- Attach debugger -->
     <?ifdef Debug?>
     <Variable Name="BaLaunchDebugger" Value="1" Type="numeric" bal:Overridable="yes" Persisted="yes"/>
