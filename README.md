@@ -32,6 +32,18 @@ SampleJetBA project presents usage of JetBA. It features a WPF user interface:
   <?pragma endtuple.BAR?>
   <?pragma endtuple.NIR?>
   ~~~~~~~
+- Generate random Id. 
+  Useful when deploying files with same name to different target folders:
+  ~~~~~~~
+	<ComponentGroup Id="random">
+		<Component Directory="Product.Dir">
+		<File Source="$(sys.SOURCEFILEPATH)" Id="$(jet.random_id())"/>
+		</Component>
+		<Component Directory="INSTALL_FOLDER">
+		<File Source="$(sys.SOURCEFILEPATH)" Id="$(jet.random_id())"/>
+		</Component>
+	</ComponentGroup>
+  ~~~~~~~
 
 ## JetBA++
 
