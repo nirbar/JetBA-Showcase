@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:bal="http://schemas.microsoft.com/wix/BalExtension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension" xsi:schemaLocation="http://schemas.panel-sw.co.il/wix/JetWixExtension ../JetBA-Binaries/JetWixExtension.xsd">
   <?define UPGRADE_CODE = 11111111-1111-1111-1111-111111111111?>
   <?if $(var.UPGRADE_CODE) = 11111111-1111-1111-1111-111111111111?>
   <?warning Replace UPGRADE_CODE with a newly generated GUID value.?>

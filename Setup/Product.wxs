@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension">
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"     
+     xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension" xsi:schemaLocation="http://schemas.panel-sw.co.il/wix/JetWixExtension ../JetBA-Binaries/JetWixExtension.xsd">
   <?define UPGRADE_CODE = 11111111-1111-1111-1111-111111111111?>
   <?if $(var.UPGRADE_CODE) = 11111111-1111-1111-1111-111111111111?>
   <?warning Replace UPGRADE_CODE with a newly generated GUID value.?>
   <?endif?>
   <Product Id="*" Name="$(var.JetProductName)" Language="1033" Version="$(var.FullVersion)" Manufacturer="$(var.JetManufacturer)" UpgradeCode="$(var.UPGRADE_CODE)">
     <?undef UPGRADE_CODE?>
-    
+
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
     <jet:JetLicense LicenseFile="$(sys.SOURCEFILEDIR)..\Bootstrapper\JetBA.lic"/>
 
@@ -23,8 +24,8 @@
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
         <Directory Id="INSTALLFOLDER" Name="Setup" />
+        </Directory>
       </Directory>
-    </Directory>
   </Product>
 
   <?pragma heat.dir "$(sys.SOURCEFILEDIR)..\SampleJetBA" -sfrag -scom -sreg -suid -svb6 -cg FILES -dr INSTALLFOLDER -ag?>
