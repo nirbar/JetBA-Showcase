@@ -51,6 +51,7 @@ The only native fully customizable, extensible, Qt-based UI for WiX bootstrapper
 
 ## Building the sample
 
+1. Clone the repo including git submodules
 1. Restore Nuget packages
 1. Close the solution and then reopen it in Visual Studio.
 1. Rebuild project Bootstrapper
