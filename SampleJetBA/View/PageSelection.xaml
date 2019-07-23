@@ -18,7 +18,7 @@
         <!-- Buttons strip -->
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
             <!-- Cancel -->
-            <Button HorizontalAlignment="Right" Style="{StaticResource LinkButtonStyle}" 
+            <Button HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}" 
                     Command="{Binding NavigationViewModel.StopCommand}"
                     Content="{x:Static loc:Resources.Cancel}" />
             <!-- Next -->

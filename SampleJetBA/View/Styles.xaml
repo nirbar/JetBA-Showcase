@@ -153,18 +153,21 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Name="btn" CornerRadius="0" Height="24" Width="70" Background="Black">
-                        <TextBlock Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFFFFF" Background="Transparent" />
+                    <Border Name="btn" CornerRadius="4" Height="24" Width="70" BorderBrush="Black" BorderThickness="1">
+                        <TextBlock Name="txt" Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" Background="Transparent" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="btn" Property="Background" Value="Gray"/>
+                            <Setter TargetName="btn" Property="Background" Value="LightGray"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="False">
-                            <Setter TargetName="btn" Property="Background" Value="Black"/>
+                            <Setter TargetName="btn" Property="Background" Value="#f7f6f6"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="btn" Property="Background" Value="DarkGray" />
+                            <Setter TargetName="btn" Property="Opacity" Value="0.6" />
+                        </Trigger>
+                        <Trigger Property="IsDefault" Value="True">
+                            <Setter TargetName="txt" Property="TextDecorations" Value="Underline" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

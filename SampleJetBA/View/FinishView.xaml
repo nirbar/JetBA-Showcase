@@ -28,7 +28,7 @@
             <Button IsDefault="True" HorizontalAlignment="Right" 
                     Command="{Binding NavigationViewModel.StopCommand}"
                     Content="{x:Static props:Resources.Close}" 
-                    Style="{StaticResource LinkButtonStyle}"
+                    Style="{StaticResource DialogButtonStyle}"
                     />
         </StackPanel>
 

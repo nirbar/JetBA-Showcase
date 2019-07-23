@@ -14,7 +14,7 @@
     <DockPanel>
 
         <!-- Close -->
-        <Button DockPanel.Dock="Bottom" IsDefault="True" HorizontalAlignment="Right" Style="{StaticResource LinkButtonStyle}"
+        <Button DockPanel.Dock="Bottom" IsDefault="True" HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}"
                 Command="{Binding NavigationViewModel.StopCommand}"
                 Content="{x:Static props:Resources.Close}" />
 

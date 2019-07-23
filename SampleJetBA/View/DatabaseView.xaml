@@ -21,11 +21,11 @@
                          IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"
 						 Visibility="{Binding IsIndeterminate, RelativeSource={RelativeSource Self}, Converter={StaticResource BooleanToVisibilityConverter}}"/>
             <!-- Cancel -->
-            <Button Style="{StaticResource LinkButtonStyle}" 
+            <Button Style="{StaticResource DialogButtonStyle}" 
                     Command="{Binding NavigationViewModel.StopCommand}"
                     Content="{x:Static loc:Resources.Cancel}" />
             <!-- Back -->
-            <Button Style="{StaticResource LinkButtonStyle}"
+            <Button Style="{StaticResource DialogButtonStyle}"
                     Command="{Binding NavigationViewModel.BackCommand}"
                     Content="{x:Static props:Resources.Back}" />
             <!-- Next -->
@@ -58,7 +58,7 @@
                       SelectedValue="{Binding VariablesViewModel.SQL_SERVER.String}"/>
             
             <!-- Enumerate servers -->
-            <Button Grid.Row="0" Grid.Column="2" Content="{x:Static props:Resources.Load}" Style="{StaticResource LinkButtonStyle}" Margin="0,0,0,0"
+            <Button Grid.Row="0" Grid.Column="2" Content="{x:Static props:Resources.Load}" Style="{StaticResource DialogButtonStyle}" Margin="0,0,0,0"
                     Command="{Binding SqlViewModel.EnumerateServersCommand}"/>
             <ProgressBar Grid.Row="0" Grid.Column="3" IsIndeterminate="True" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="10"
                          Visibility="{Binding SqlViewModel.ServerEnumerationStatus, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Running;WaitingForChildrenToComplete}"/>

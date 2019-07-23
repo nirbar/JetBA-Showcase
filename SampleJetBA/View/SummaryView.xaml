@@ -17,11 +17,11 @@
         <!-- Buttons strip -->
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" >
             <!-- Cancel -->
-            <Button Style="{StaticResource LinkButtonStyle}" 
+            <Button Style="{StaticResource DialogButtonStyle}" 
                     Command="{Binding NavigationViewModel.StopCommand}"
                     Content="{x:Static loc:Resources.Cancel}" />
             <!-- Back -->
-            <Button Style="{StaticResource LinkButtonStyle}"
+            <Button Style="{StaticResource DialogButtonStyle}"
                     Command="{Binding NavigationViewModel.BackCommand}"
                     Content="{x:Static props:Resources.Back}" />
             <!-- Install -->

@@ -110,9 +110,9 @@
 						<!-- Buttons -->
 						<StackPanel DockPanel.Dock="Bottom" Margin="10,5,10,5" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
 							<Button Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}"
-									Content="{Binding LeftCommandText}" Style="{StaticResource LinkButtonStyle}"/>
+									Content="{Binding LeftCommandText}" Style="{StaticResource DialogButtonStyle}"/>
 							<Button Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}"
-									Content="{Binding MiddleCommandText}" Style="{StaticResource LinkButtonStyle}"/>
+									Content="{Binding MiddleCommandText}" Style="{StaticResource DialogButtonStyle}"/>
 							<Button Command="{Binding RightCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="True"
 									Content="{Binding RightCommandText}" Style="{StaticResource DialogButtonStyle}"/>
 						</StackPanel>

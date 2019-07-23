@@ -15,7 +15,7 @@
     <DockPanel>
 
         <!-- Cancel button -->
-        <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right" Style="{StaticResource LinkButtonStyle}"
+        <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}"
                 Command="{Binding NavigationViewModel.StopCommand}"
                 Content="{x:Static loc:Resources.Cancel}"
                 />
