@@ -15,9 +15,6 @@ namespace SampleJetBA.View
 
             DataContext = this;
             InitializeComponent();
-
-            // Pseudo-bind SQL_PASSWORD variable to UI.
-            VariablesViewModel["SQL_PASSWORD"].BindPasswordBox(passwordBox_, Dispatcher);
         }
 
         public VariablesViewModel VariablesViewModel { get; private set; }

@@ -30,6 +30,14 @@
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\SampleJetBA.resources.dll" Name="he\SampleJetBA.resources.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.resources.dll" Name="he\PanelSW.Installer.JetBA.resources.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.JetPack.resources.dll" Name="he\PanelSW.Installer.JetBA.JetPack.resources.dll"/>
+     
+      <!-- UI libraries -->
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)Xceed.Wpf.AvalonDock.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)Xceed.Wpf.AvalonDock.Themes.Aero.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)Xceed.Wpf.AvalonDock.Themes.Metro.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)Xceed.Wpf.AvalonDock.Themes.VS2010.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)Xceed.Wpf.Toolkit.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)PanelSwWpfControls.dll"/>
     </BootstrapperApplicationRef>
     <jet:JetBaSettings LicenseFile="$(sys.SOURCEFILEDIR)JetBA.lic"/>
 

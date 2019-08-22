@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-  <Import Project="..\packages\TidyBuild.1.1.0\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.1.0\build\TidyBuild.props')" />
+  <Import Project="..\packages\TidyBuild.1.1.1\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.props')" />
   <PropertyGroup>
     <ProjectGuid>{CDD409C6-0F49-4A92-A4DC-FA59DC915646}</ProjectGuid>
     <AssemblyName>SampleJetBA</AssemblyName>
@@ -140,6 +140,9 @@
       <HintPath>$(MSBuildThisFileDirectory)..\JetBA-Binaries\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PanelSwWpfControls, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PanelSwWpfControls.1.0.3\lib\net40\PanelSwWpfControls.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -155,6 +158,21 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xaml" />
     <Reference Include="WindowsBase" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -181,8 +199,8 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
-    <Error Condition="!Exists('..\packages\TidyBuild.1.1.0\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.0\build\TidyBuild.props'))" />
-    <Error Condition="!Exists('..\packages\TidyBuild.1.1.0\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.0\build\TidyBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.1\build\TidyBuild.props'))" />
+    <Error Condition="!Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.1\build\TidyBuild.targets'))" />
   </Target>
-  <Import Project="..\packages\TidyBuild.1.1.0\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.1.0\build\TidyBuild.targets')" />
+  <Import Project="..\packages\TidyBuild.1.1.1\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.targets')" />
 </Project>

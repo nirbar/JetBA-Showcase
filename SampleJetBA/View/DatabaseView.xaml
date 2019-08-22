@@ -5,8 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
+             xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
              mc:Ignorable="d"
-             d:DesignHeight="200" d:DesignWidth="500"
+             d:DesignHeight="298" d:DesignWidth="548"
              >
 
     <UserControl.Resources>
@@ -79,9 +80,9 @@
                      Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
 
             <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static props:Resources.Password}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"
-                       Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-            <PasswordBox Grid.Row="4" Grid.Column="1" Name="passwordBox_" 
-                         Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                       Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Visible}"/>
+            <panelsw:EyePasswordBox Grid.Row="4" Grid.Column="1" SecurePassword="{Binding VariablesViewModel.SQL_PASSWORD.SecureString}"
+                                    Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Visible}"/>
         </Grid>
     </DockPanel>
 </UserControl>
