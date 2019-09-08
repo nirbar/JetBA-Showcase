@@ -240,4 +240,13 @@ InstallFolder="C:\Program Files\Sample" - Set terget folder</value>
   <data name="SelectInstallationPages" xml:space="preserve">
     <value>Select Pages for the Installation Wizard</value>
   </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Invalid user name or password</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Service account</value>
+  </data>
+  <data name="_0ServiceAccount" xml:space="preserve">
+    <value>{0} service account</value>
+  </data>
 </root>

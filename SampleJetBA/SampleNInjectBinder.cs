@@ -1,8 +1,5 @@
 ﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
 using PanelSW.Installer.JetBA;
-using System.Data;
-using System.Data.Common;
-using System.Data.SqlClient;
 using System.Windows;
 
 namespace SampleJetBA
@@ -30,6 +27,7 @@ namespace SampleJetBA
             Bind<View.PageSelectionView>().ToSelf().InSingletonScope();
             Bind<View.InstallLocationView>().ToSelf().InSingletonScope();
             Bind<View.DatabaseView>().ToSelf().InSingletonScope();
+            Bind<View.ServiceAccountView>().ToSelf().InSingletonScope();
             Bind<View.RepairView>().ToSelf().InSingletonScope();
             Bind<View.ProgressView>().ToSelf().InSingletonScope();
             Bind<View.FinishView>().ToSelf().InSingletonScope();

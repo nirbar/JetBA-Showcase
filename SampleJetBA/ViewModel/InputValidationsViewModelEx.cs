@@ -3,7 +3,10 @@ using Ninject;
 using PanelSW.Installer.JetBA.ViewModel;
 using System;
 using System.Data.SqlClient;
+using System.DirectoryServices.AccountManagement;
 using System.IO;
+using System.Runtime.InteropServices;
+using System.Security;
 
 namespace SampleJetBA.ViewModel
 {
@@ -28,6 +31,10 @@ namespace SampleJetBA.ViewModel
                     ValidateDatabase();
                     break;
 
+                case Pages.Service:
+                    ValidateServiceAccount();
+                    break;
+
                 default:
                     break;
             }
@@ -37,6 +44,7 @@ namespace SampleJetBA.ViewModel
         {
             ValidateTargetFolder();
             ValidateDatabase();
+            ValidateServiceAccount();
         }
 
         private void ValidateTargetFolder()
@@ -55,22 +63,22 @@ namespace SampleJetBA.ViewModel
             try
             {
                 VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
-                string server = vars["SQL_SERVER"].String;
-                string db = vars["SQL_DATABASE"].String;
-                string user = vars["SQL_USER"].String;
-                string psw = vars["SQL_PASSWORD"].String;
-                bool isSqlAuth = vars["SQL_AUTH"].Boolean;
-
                 SqlConnectionStringBuilder connStr = new SqlConnectionStringBuilder()
                 {
-                    DataSource = server,
-                    InitialCatalog = db,
-                    UserID = user,
-                    Password = psw,
-                    IntegratedSecurity = !isSqlAuth
+                    DataSource = vars["SQL_SERVER"].String,
+                    InitialCatalog = vars["SQL_DATABASE"].String,
+                    IntegratedSecurity = !vars["SQL_AUTH"].Boolean
                 };
 
-                using (SqlConnection conn = new SqlConnection(connStr.ToString()))
+                SqlCredential sqlCredential = null;
+                if (!connStr.IntegratedSecurity)
+                {
+                    SecureString psw = vars["SQL_PASSWORD"].SecureString;
+                    psw.MakeReadOnly();
+                    sqlCredential = new SqlCredential(vars["SQL_USER"].String, psw);
+                }
+
+                using (SqlConnection conn = new SqlConnection(connStr.ToString(), sqlCredential))
                 {
                     conn.Open();
                 }
@@ -79,6 +87,69 @@ namespace SampleJetBA.ViewModel
             {
                 BA.Engine.Log(LogLevel.Error, $"Failed connecting to DB server: {ex.Message}");
                 AddResult(new Exception(string.Format(Properties.Resources.FailedConnectingToDbServer0, ex.Message)));
+            }
+        }
+
+        private void ValidateServiceAccount()
+        {
+            VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
+            if (!vars["SERVICE_USER"].Exists || string.IsNullOrWhiteSpace(vars["SERVICE_USER"].String))
+            {
+                // Default - .\LocalSystem account
+                vars["SERVICE_PASSWORD"].SecureString = new SecureString();
+                return;
+            }
+
+            ValidateCredentials(vars["SERVICE_USER"].String, vars["SERVICE_PASSWORD"].SecureString);
+        }
+
+        public static void ValidateCredentials(string username, SecureString password)
+        {
+            // Parse domain\user and user@domain formats.
+            string name = username;
+            string domain = ".";
+            int i = username.IndexOf('\\');
+            if (i >= 0)
+            {
+                domain = username.Substring(0, i);
+                name = username.Substring(i + 1);
+            }
+            else
+            {
+                i = username.IndexOf('@');
+                if (i >= 0)
+                {
+                    name = username.Substring(0, i);
+                    domain = username.Substring(i + 1);
+                }
+            }
+
+            ContextType ctx = ContextType.Domain;
+            if (string.IsNullOrWhiteSpace(domain) || domain.Equals(".") || domain.Equals(Environment.MachineName, StringComparison.OrdinalIgnoreCase))
+            {
+                ctx = ContextType.Machine;
+                domain = Environment.MachineName;
+            }
+            using (PrincipalContext pc = new PrincipalContext(ctx, domain))
+            {
+                IntPtr pPsw = IntPtr.Zero;
+                try
+                {
+                    pPsw = Marshal.SecureStringToGlobalAllocUnicode(password);
+
+                    // Validate credentials with minimal keep of managed plain password.
+                    if (!pc.ValidateCredentials(name, Marshal.PtrToStringUni(pPsw)))
+                    {
+                        throw new Exception(Properties.Resources.InvalidCredentials);
+                    }
+                }
+                finally
+                {
+                    if (pPsw != IntPtr.Zero)
+                    {
+                        Marshal.ZeroFreeGlobalAllocUnicode(pPsw);
+                    }
+                }
             }
         }
     }

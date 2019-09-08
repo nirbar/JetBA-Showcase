@@ -106,6 +106,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} service account.
+        /// </summary>
+        public static string _0ServiceAccount {
+            get {
+                return ResourceManager.GetString("_0ServiceAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Authentication.
         /// </summary>
         public static string Authentication {
@@ -286,6 +295,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid user name or password.
+        /// </summary>
+        public static string InvalidCredentials {
+            get {
+                return ResourceManager.GetString("InvalidCredentials", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to False.
         /// </summary>
         public static string IS_RIGHT_TO_LEFT {
@@ -354,6 +372,15 @@ namespace SampleJetBA.Properties {
         public static string SelectInstallationPages {
             get {
                 return ResourceManager.GetString("SelectInstallationPages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Service account.
+        /// </summary>
+        public static string ServiceAccount {
+            get {
+                return ResourceManager.GetString("ServiceAccount", resourceCulture);
             }
         }
         

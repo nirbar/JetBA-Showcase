@@ -14,6 +14,7 @@ namespace SampleJetBA.ViewModel
         PageSelection,
         InstallLocation,
         Database,
+        Service,
         Summary,
         Progress,
         Finish,
@@ -28,6 +29,7 @@ namespace SampleJetBA.ViewModel
             , Lazy<PageSelectionView> pageSelectionView
             , Lazy<InstallLocationView> installLocationView
             , Lazy<DatabaseView> dbView
+            , Lazy<ServiceAccountView> svcView
             , Lazy<RepairView> repairView
             , Lazy<ProgressView> progressView
             , Lazy<HelpView> helpView
@@ -46,6 +48,7 @@ namespace SampleJetBA.ViewModel
             AddPage(Pages.PageSelection, new Lazy<object>(() => pageSelectionView.Value));
             AddPage(Pages.InstallLocation, new Lazy<object>(() => installLocationView.Value));
             AddPage(Pages.Database, new Lazy<object>(() => dbView.Value));
+            AddPage(Pages.Service, new Lazy<object>(() => svcView.Value));
             AddPage(Pages.Progress, new Lazy<object>(() => progressView.Value));
             AddPage(Pages.Repair, new Lazy<object>(() => repairView.Value));
             AddPage(Pages.Summary, new Lazy<object>(() => summaryView.Value));
@@ -138,6 +141,20 @@ namespace SampleJetBA.ViewModel
             }
         }
 
+        private bool showServicePage_ = true;
+        public bool ShowServicePage
+        {
+            get
+            {
+                return showServicePage_;
+            }
+            set
+            {
+                showServicePage_ = value;
+                OnPropertyChanged("ShowServicePage");
+            }
+        }
+
         protected override object QueryNextPage(object hint)
         {
             Pages nextPage = Pages.Unknown;
@@ -152,6 +169,10 @@ namespace SampleJetBA.ViewModel
                     {
                         nextPage = Pages.Database;
                     }
+                    else if (ShowServicePage)
+                    {
+                        nextPage = Pages.Service;
+                    }
                     else
                     {
                         ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
@@ -161,6 +182,19 @@ namespace SampleJetBA.ViewModel
                     break;
 
                 case Pages.Database:
+                    if (ShowServicePage)
+                    {
+                        nextPage = Pages.Service;
+                    }
+                    else
+                    {
+                        ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+                        apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
+                        nextPage = Pages.Summary;
+                    }
+                    break;
+
+                case Pages.Service:
                     {
                         ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
                         apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
