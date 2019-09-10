@@ -50,7 +50,7 @@ namespace SampleJetBA.ViewModel
         private void ValidateTargetFolder()
         {
             VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
-            string installFolder = vars["InstallFolder"].String;
+            string installFolder = vars["InstallFolder"];
 
             if (string.IsNullOrWhiteSpace(installFolder) || (installFolder.IndexOfAny(Path.GetInvalidPathChars()) >= 0))
             {
@@ -65,17 +65,17 @@ namespace SampleJetBA.ViewModel
                 VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
                 SqlConnectionStringBuilder connStr = new SqlConnectionStringBuilder()
                 {
-                    DataSource = vars["SQL_SERVER"].String,
-                    InitialCatalog = vars["SQL_DATABASE"].String,
-                    IntegratedSecurity = !vars["SQL_AUTH"].Boolean
+                    DataSource = vars["SQL_SERVER"],
+                    InitialCatalog = vars["SQL_DATABASE"],
+                    IntegratedSecurity = !vars["SQL_AUTH"]
                 };
 
                 SqlCredential sqlCredential = null;
                 if (!connStr.IntegratedSecurity)
                 {
-                    SecureString psw = vars["SQL_PASSWORD"].SecureString;
+                    SecureString psw = vars["SQL_PASSWORD"];
                     psw.MakeReadOnly();
-                    sqlCredential = new SqlCredential(vars["SQL_USER"].String, psw);
+                    sqlCredential = new SqlCredential(vars["SQL_USER"], psw);
                 }
 
                 using (SqlConnection conn = new SqlConnection(connStr.ToString(), sqlCredential))
@@ -93,14 +93,14 @@ namespace SampleJetBA.ViewModel
         private void ValidateServiceAccount()
         {
             VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
-            if (!vars["SERVICE_USER"].Exists || string.IsNullOrWhiteSpace(vars["SERVICE_USER"].String))
+            if (vars["SERVICE_USER"].IsNullOrEmpty)
             {
                 // Default - .\LocalSystem account
                 vars["SERVICE_PASSWORD"].SecureString = new SecureString();
                 return;
             }
 
-            ValidateCredentials(vars["SERVICE_USER"].String, vars["SERVICE_PASSWORD"].SecureString);
+            ValidateCredentials(vars["SERVICE_USER"], vars["SERVICE_PASSWORD"]);
         }
 
         public static void ValidateCredentials(string username, SecureString password)
