@@ -5,7 +5,7 @@
                     xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
                     xmlns:xceed="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
                     >
-    
+
     <!-- Converters -->
     <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     <util:InverseBooleanConverter x:Key="InverseBooleanConverter" />
@@ -19,9 +19,11 @@
     <!-- Brushes -->
     <SolidColorBrush x:Key="BackgroundBrush" Color="White" />
 
-    <SolidColorBrush x:Key="TitleBackgroundBrush" Color="#424242" /> <!-- dark gray -->
+    <!-- dark gray -->
+    <SolidColorBrush x:Key="TitleBackgroundBrush" Color="#424242" />
 
-    <SolidColorBrush x:Key="WindowFrameBackgrdBrush" Color="#A8A8A8" /> <!-- light gray -->
+    <!-- light gray -->
+    <SolidColorBrush x:Key="WindowFrameBackgrdBrush" Color="#A8A8A8" />
 
     <SolidColorBrush x:Key="ButtonBackgrdBrush" Color="#F3F3F3" />
 
@@ -154,22 +156,30 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Name="btn" CornerRadius="4" Height="24" Width="70" BorderBrush="Black" BorderThickness="1">
+                    <Border Name="btn" CornerRadius="4" Height="24" Width="70" BorderBrush="Black" BorderThickness="1" Background="#f7f6f6">
                         <TextBlock Name="txt" Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" Background="Transparent" />
                     </Border>
                     <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="btn" Property="Background" Value="LightGray"/>
-                        </Trigger>
-                        <Trigger Property="IsMouseOver" Value="False">
-                            <Setter TargetName="btn" Property="Background" Value="#f7f6f6"/>
-                        </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter TargetName="btn" Property="Opacity" Value="0.6" />
                         </Trigger>
                         <Trigger Property="IsDefault" Value="True">
                             <Setter TargetName="txt" Property="TextDecorations" Value="Underline" />
                         </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="btn" Property="Background" Value="LightBlue"/>
+                        </Trigger>
+
+                        <!-- Mouse hover & default -->
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsDefault" Value="True"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <MultiTrigger.Setters>
+                                <Setter TargetName="btn" Property="BorderThickness" Value="2" />
+                            </MultiTrigger.Setters>
+                        </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
@@ -328,7 +338,7 @@
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
     </Style>
-    
+
     <!-- Window buttons -->
     <ControlTemplate x:Key="CloseButtonTemplate" TargetType="{x:Type Button}">
         <Grid>
