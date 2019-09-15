@@ -78,6 +78,7 @@ namespace SampleJetBA.ViewModel
                     sqlCredential = new SqlCredential(vars["SQL_USER"], psw);
                 }
 
+                BA.Engine.Log(LogLevel.Verbose, $"Testing SQL connection string '{connStr.ToString()}'");
                 using (SqlConnection conn = new SqlConnection(connStr.ToString(), sqlCredential))
                 {
                     conn.Open();
