@@ -147,8 +147,8 @@
       <HintPath>$(MSBuildThisFileDirectory)..\JetBA-Binaries\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PanelSwWpfControls, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PanelSwWpfControls.1.0.4\lib\net40\PanelSwWpfControls.dll</HintPath>
+    <Reference Include="PanelSwWpfControls, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PanelSwWpfControls.1.1.3\lib\net40\PanelSwWpfControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

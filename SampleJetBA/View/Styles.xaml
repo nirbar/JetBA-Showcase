@@ -4,6 +4,7 @@
                     xmlns:util="clr-namespace:PanelSW.Installer.JetBA.Util;assembly=PanelSW.Installer.JetBA"
                     xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
                     xmlns:xceed="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+                    xmlns:props="clr-namespace:SampleJetBA.Properties"
                     >
 
     <!-- Converters -->
@@ -241,6 +242,28 @@
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
+    </Style>
+
+    <Style TargetType="ProgressBar" BasedOn="{StaticResource {x:Type ProgressBar}}" x:Key="{x:Static panelsw:ResourceKeys.WaitableButtonProgressBarStyleKey}">
+        <Setter Property="Margin" Value="8,0,8,0"/>
+        <Setter Property="Opacity" Value="0.6"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ProgressBar">
+                    <Border Name="btn" CornerRadius="4" Height="24" Width="70" BorderBrush="Black" BorderThickness="1" Background="#f7f6f6">
+                        <ProgressBar HorizontalAlignment="Center" VerticalAlignment="Center" IsIndeterminate="True" Height="5" Width="60"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="Button" BasedOn="{StaticResource DialogButtonStyle}" x:Key="{x:Static panelsw:ResourceKeys.WaitableButtonButtonStyleKey}">
+        <Setter Property="Content" Value="{x:Static props:Resources.Next}"/>
+        <Setter Property="IsDefault" Value="True"/>
+    </Style>
+    <Style TargetType="panelsw:WaitableButton" BasedOn="{StaticResource {x:Type panelsw:WaitableButton}}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
     </Style>
 
     <Style TargetType="panelsw:EyePasswordBox">
