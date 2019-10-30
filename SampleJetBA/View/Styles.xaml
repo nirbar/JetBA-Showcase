@@ -148,43 +148,46 @@
 
     <Style x:Key="DialogButtonStyle" TargetType="Button">
         <Setter Property="FontSize" Value="12" />
-        <Setter Property="Foreground" Value="#FFFFFF"/>
-        <Setter Property="Background" Value="Black"/>
-        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Background" Value="#f7f6f6"/>
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="BorderThickness" Value="1" />
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Margin" Value="8,0,8,0"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border Name="btn" CornerRadius="4" Height="24" Width="70" BorderBrush="Black" BorderThickness="1" Background="#f7f6f6">
-                        <TextBlock Name="txt" Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" Background="Transparent" />
+                    <Border Name="btn" CornerRadius="4" Height="24" Width="70" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Opacity="{TemplateBinding Opacity}">
+                        <TextBlock Name="txt" Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{TemplateBinding Foreground}" Background="{TemplateBinding Background}" />
                     </Border>
                     <ControlTemplate.Triggers>
-                        <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="btn" Property="Opacity" Value="0.6" />
-                        </Trigger>
                         <Trigger Property="IsDefault" Value="True">
                             <Setter TargetName="txt" Property="TextDecorations" Value="Underline" />
                         </Trigger>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="btn" Property="Background" Value="LightBlue"/>
-                        </Trigger>
-
-                        <!-- Mouse hover & default -->
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="IsDefault" Value="True"/>
-                                <Condition Property="IsMouseOver" Value="True"/>
-                            </MultiTrigger.Conditions>
-                            <MultiTrigger.Setters>
-                                <Setter TargetName="btn" Property="BorderThickness" Value="2" />
-                            </MultiTrigger.Setters>
-                        </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value="0.6" />
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="LightBlue"/>
+            </Trigger>
+
+            <!-- Mouse hover & default -->
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsDefault" Value="True"/>
+                    <Condition Property="IsMouseOver" Value="True"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="BorderThickness" Value="2" />
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+        </Style.Triggers>
     </Style>
 
     <Style x:Key="LinkButtonStyle" TargetType="Button">
@@ -244,24 +247,12 @@
         <Setter Property="HorizontalAlignment" Value="Stretch" />
     </Style>
 
-    <Style TargetType="ProgressBar" BasedOn="{StaticResource {x:Type ProgressBar}}" x:Key="{x:Static panelsw:ResourceKeys.WaitableButtonProgressBarStyleKey}">
-        <Setter Property="Margin" Value="8,0,8,0"/>
-        <Setter Property="Opacity" Value="0.6"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="ProgressBar">
-                    <Border Name="btn" CornerRadius="4" Height="24" Width="70" BorderBrush="Black" BorderThickness="1" Background="#f7f6f6">
-                        <ProgressBar HorizontalAlignment="Center" VerticalAlignment="Center" IsIndeterminate="True" Height="5" Width="60"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+    <Style TargetType="Button" x:Key="{x:Static panelsw:ResourceKeys.WaitableButtonButtonStyleKey}" BasedOn="{StaticResource DialogButtonStyle}">
+        <Setter Property="Content" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content}"/>
+        <Setter Property="Command" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Command}"/>
+        <Setter Property="IsDefault" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsDefault}"/>
     </Style>
-    <Style TargetType="Button" BasedOn="{StaticResource DialogButtonStyle}" x:Key="{x:Static panelsw:ResourceKeys.WaitableButtonButtonStyleKey}">
-        <Setter Property="Content" Value="{x:Static props:Resources.Next}"/>
-        <Setter Property="IsDefault" Value="True"/>
-    </Style>
-    <Style TargetType="panelsw:WaitableButton" BasedOn="{StaticResource {x:Type panelsw:WaitableButton}}">
+    <Style TargetType="panelsw:WaitableButton" BasedOn="{StaticResource {x:Static panelsw:ResourceKeys.WaitableButtonBlinkingStyleKey}}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>
     </Style>
@@ -282,7 +273,6 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-
     <Style TargetType="Button" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxButtonStyleKey}" BasedOn="{StaticResource {x:Static panelsw:ResourceKeys.EyePasswordBoxButtonStyleKey}}">
         <Setter Property="Height" Value="24" />
         <Setter Property="Width" Value="24" />
