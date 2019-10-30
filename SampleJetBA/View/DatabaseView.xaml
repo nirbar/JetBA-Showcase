@@ -39,7 +39,6 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
@@ -56,10 +55,9 @@
                       SelectedValue="{Binding VariablesViewModel.SQL_SERVER.String}"/>
             
             <!-- Enumerate servers -->
-            <Button Grid.Row="0" Grid.Column="2" Content="{x:Static props:Resources.Load}" Style="{StaticResource DialogButtonStyle}" Margin="0,0,0,0"
-                    Command="{Binding SqlViewModel.EnumerateServersCommand}"/>
-            <ProgressBar Grid.Row="0" Grid.Column="3" IsIndeterminate="True" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="10"
-                         Visibility="{Binding SqlViewModel.ServerEnumerationStatus, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Running;WaitingForChildrenToComplete}"/>
+            <panelsw:WaitableButton Grid.Row="0" Grid.Column="2" Content="{x:Static props:Resources.Load}"
+                                    IsWaiting="{Binding SqlViewModel.ServerEnumerationStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running;WaitingForChildrenToComplete}"
+                                    Command="{Binding SqlViewModel.EnumerateServersCommand}"/>
 
             <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static props:Resources.Database}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
             <TextBox Grid.Row="1" Grid.Column="1"  Text="{Binding VariablesViewModel.SQL_DATABASE.String}"/>
