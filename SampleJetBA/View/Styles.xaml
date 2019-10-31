@@ -277,8 +277,15 @@
         <Setter Property="Height" Value="24" />
         <Setter Property="Width" Value="24" />
     </Style>
+    <Style TargetType="TextBox" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxTextBoxStyleKey}" BasedOn="{StaticResource {x:Static panelsw:ResourceKeys.EyePasswordBoxTextBoxStyleKey}}">
+        <Setter Property="FlowDirection" Value="LeftToRight"/>
+    </Style>
+    <Style TargetType="xceed:WatermarkPasswordBox" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxWatermarkPasswordBoxStyleKey}" BasedOn="{StaticResource {x:Static panelsw:ResourceKeys.EyePasswordBoxWatermarkPasswordBoxStyleKey}}">
+        <Setter Property="FlowDirection" Value="LeftToRight"/>
+    </Style>
     
     <Style TargetType="xceed:WatermarkTextBox">
+        <Setter Property="FlowDirection" Value="LeftToRight"/>
         <Setter Property="Height" Value="24"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Margin" Value="5,2,5,2"/>
@@ -296,6 +303,7 @@
     </Style>
 
     <Style TargetType="TextBox">
+        <Setter Property="FlowDirection" Value="LeftToRight"/>
         <Setter Property="Height" Value="24"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Margin" Value="5,2,5,2"/>
