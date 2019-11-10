@@ -151,6 +151,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Changes will not take fffect until you reboot the system.
+        /// </summary>
+        public static string ChangesWillNotTakeEffectUntilReboot {
+            get {
+                return ResourceManager.GetString("ChangesWillNotTakeEffectUntilReboot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Click &apos;Repair&apos; to repair {0} or &apos;Uninstall&apos; to remove it.
         /// </summary>
         public static string ClickRepairToRepair0OrUninstallToRemoveIt {

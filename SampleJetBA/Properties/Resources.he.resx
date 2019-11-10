@@ -248,4 +248,7 @@ InstallFolder="C:\Program Files\Sample" - מתקין לספריה המבוקשת
   <data name="_0ServiceAccount" xml:space="preserve">
     <value>חשבון משתמש להרצת שירותי {0}</value>
   </data>
+  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+    <value>יש לבצע אתחול של המערכת לסיום ההתקנה</value>
+  </data>
 </root>

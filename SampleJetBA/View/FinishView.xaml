@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="300"
+             d:DesignHeight="292" d:DesignWidth="583"
              >
 
     <UserControl.Resources>
@@ -105,5 +105,11 @@
 					   Style="{StaticResource GenericText}" VerticalAlignment="Center"
                        />
         </StackPanel>
+
+        <!-- Reboot -->
+        <TextBlock Visibility="{Binding FinishViewModel.RebootEnabled, Converter={StaticResource BooleanToVisibilityConverter}}"
+                   Text="{x:Static props:Resources.ChangesWillNotTakeEffectUntilReboot}"
+                   Style="{StaticResource GenericText}" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   />
     </DockPanel>
 </UserControl>

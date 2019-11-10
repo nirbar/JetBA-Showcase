@@ -249,4 +249,7 @@ InstallFolder="C:\Program Files\Sample" - Set terget folder</value>
   <data name="_0ServiceAccount" xml:space="preserve">
     <value>{0} service account</value>
   </data>
+  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+    <value>Changes will not take fffect until you reboot the system</value>
+  </data>
 </root>
