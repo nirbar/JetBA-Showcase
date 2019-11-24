@@ -24,6 +24,8 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <ItemGroup>
+    <Compile Include="Converters\EqualityConverter.cs" />
+    <Compile Include="Converters\PageTitleConverter.cs" />
     <Compile Include="Properties\Resources.he.Designer.cs">
       <DependentUpon>Resources.he.resx</DependentUpon>
       <AutoGen>True</AutoGen>

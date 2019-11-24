@@ -349,6 +349,78 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Database connection.
+        /// </summary>
+        public static string PageTitle_Database {
+            get {
+                return ResourceManager.GetString("PageTitle_Database", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Finish.
+        /// </summary>
+        public static string PageTitle_Finish {
+            get {
+                return ResourceManager.GetString("PageTitle_Finish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Target folder.
+        /// </summary>
+        public static string PageTitle_InstallLocation {
+            get {
+                return ResourceManager.GetString("PageTitle_InstallLocation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select features.
+        /// </summary>
+        public static string PageTitle_PageSelection {
+            get {
+                return ResourceManager.GetString("PageTitle_PageSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Install progress.
+        /// </summary>
+        public static string PageTitle_Progress {
+            get {
+                return ResourceManager.GetString("PageTitle_Progress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maintenance.
+        /// </summary>
+        public static string PageTitle_Repair {
+            get {
+                return ResourceManager.GetString("PageTitle_Repair", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Service account.
+        /// </summary>
+        public static string PageTitle_Service {
+            get {
+                return ResourceManager.GetString("PageTitle_Service", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ready to install.
+        /// </summary>
+        public static string PageTitle_Summary {
+            get {
+                return ResourceManager.GetString("PageTitle_Summary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string Password {

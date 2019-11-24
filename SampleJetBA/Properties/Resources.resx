@@ -252,4 +252,28 @@ InstallFolder="C:\Program Files\Sample" - Set terget folder</value>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Changes will not take fffect until you reboot the system</value>
   </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Database connection</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Target folder</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Select features</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Install progress</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Service account</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Ready to install</value>
+  </data>
 </root>

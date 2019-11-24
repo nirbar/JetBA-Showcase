@@ -251,4 +251,28 @@ InstallFolder="C:\Program Files\Sample" - מתקין לספריה המבוקשת
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>יש לבצע אתחול של המערכת לסיום ההתקנה</value>
   </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>חיבור לבסיס נתונים</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>סיום</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>ספריית התקנה</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>בחירת מסכים</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>התקדמות ההתקנה</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>שינוי והסרה</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>חשבון להרצת שירותים</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>סיכום</value>
+  </data>
 </root>

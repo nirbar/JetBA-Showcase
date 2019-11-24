@@ -4,6 +4,7 @@
                     xmlns:util="clr-namespace:PanelSW.Installer.JetBA.Util;assembly=PanelSW.Installer.JetBA"
                     xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
                     xmlns:xceed="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+                    xmlns:cnv="clr-namespace:SampleJetBA.Converters"
                     xmlns:props="clr-namespace:SampleJetBA.Properties"
                     >
 
@@ -12,6 +13,8 @@
     <util:InverseBooleanConverter x:Key="InverseBooleanConverter" />
     <util:EnumToVisibilityConverter x:Key="EnumToVisibilityConverter" />
     <util:EnumBooleanConverter x:Key="EnumBooleanConverter" />
+    <cnv:PageTitleConverter x:Key="PageTitleConverter" />
+    <cnv:EqualityConverter x:Key="EqualityConverter" />
 
     <!-- Geometry -->
     <StreamGeometry x:Key="NarrowXSign">M1.4139998,0 C1.4139998,-1.1920929E-07 2.806,1.3919997 4.5459998,3.1319997 L5.6569998,4.2429998 6.7679999,3.1319997 C8.5079997,1.3919997 9.8999999,-1.1920929E-07 9.8999999,0 9.8999999,-1.1920929E-07 11.313999,1.4139998 11.313999,1.4139998 11.313999,1.4139998 9.9220002,2.806 8.1819994,4.5459998 L7.0709994,5.6569998 8.1819994,6.7679999 C9.9220002,8.5079997 11.313999,9.8999999 11.313999,9.8999999 11.313999,9.8999999 9.8999999,11.313999 9.8999999,11.313999 9.8999999,11.313999 8.5079997,9.9220002 6.7679999,8.1819994 L5.6569998,7.0709994 4.5459998,8.1819994 C2.806,9.9220002 1.4139998,11.313999 1.4139998,11.313999 1.4139998,11.313999 -1.1920929E-07,9.8999999 0,9.8999999 -1.1920929E-07,9.8999999 1.3919997,8.5079997 3.1319997,6.7679999 L4.2429998,5.6569998 3.1319997,4.5459998 C1.3919997,2.806 -1.1920929E-07,1.4139998 0,1.4139998 -1.1920929E-07,1.4139998 1.4139998,-1.1920929E-07 1.4139998,0 z</StreamGeometry>

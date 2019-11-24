@@ -7,7 +7,7 @@
         WindowStyle="None" 
         AllowsTransparency="True"
         Background="{x:Null}"
-        Width="600" Height="450">
+        Width="800" Height="450">
 
     <Window.Resources>
         <ResourceDictionary Source="Styles.xaml"/>
@@ -69,12 +69,16 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Rectangle Grid.RowSpan="3" Fill="{StaticResource BackgroundBrush}"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Grid.RowSpan="3" Grid.ColumnSpan="2" Fill="{StaticResource BackgroundBrush}"/>
 
             <!-- Header line -->
-            <Grid Grid.Row="0" Height="85"/>
+            <Grid Grid.Row="0" Grid.ColumnSpan="2" Height="85"/>
             <!-- Logo -->
-            <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Left" Margin="40,0,0,0">
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="40,0,0,0">
                 <Image Source="../Resources/spaceship-64x64.png" VerticalAlignment="Bottom" FlowDirection="LeftToRight"/>
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource HeaderText}" Margin="40,0,0,0" FontSize="26" Foreground="#49678C">
                     <TextBlock.Text>
@@ -86,8 +90,33 @@
                 </TextBlock>
             </StackPanel>
 
+            <ListView Grid.Row="1" Grid.Column="0" ItemsSource="{Binding NavigationViewModel.ExpectedPages}" IsHitTestVisible="False">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}}" Tag="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListView}, Path=DataContext.NavigationViewModel.Page}" Foreground="Black">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock" BasedOn="{StaticResource GenericText}">
+                                    <Setter Property="FontWeight" Value="Normal"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Value="True">
+                                            <DataTrigger.Binding>
+                                                <MultiBinding Converter="{StaticResource EqualityConverter}">
+                                                    <Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
+                                                    <Binding RelativeSource="{RelativeSource Self}" Path="DataContext" />
+                                                </MultiBinding>
+                                            </DataTrigger.Binding>
+                                            <Setter Property="FontWeight" Value="Bold"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>                                
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
             <!-- Page Content Holder -->
-            <Grid Grid.Row="1" Margin="30,26,22,15">
+            <Grid Grid.Row="1" Grid.Column="1" Margin="30,26,22,15">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>

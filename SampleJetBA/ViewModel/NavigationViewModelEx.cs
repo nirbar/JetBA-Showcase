@@ -4,6 +4,8 @@ using PanelSW.Installer.JetBA;
 using PanelSW.Installer.JetBA.ViewModel;
 using SampleJetBA.View;
 using System;
+using System.Collections.ObjectModel;
+using System.Windows.Threading;
 
 namespace SampleJetBA.ViewModel
 {
@@ -41,6 +43,7 @@ namespace SampleJetBA.ViewModel
             BA.DetectComplete += BA_DetectComplete;
             BA.ApplyBegin += BA_ApplyBegin;
             BA.ApplyComplete += BA_ApplyComplete;
+            BA.Kernel.Get<Dispatcher>().Invoke(() => ExpectedPages = new ObservableCollection<Pages>());
 
             AddPage(Pages.Finish, new Lazy<object>(() => finishView.Value));
             AddPage(Pages.Help, new Lazy<object>(() => helpView.Value));
@@ -85,10 +88,26 @@ namespace SampleJetBA.ViewModel
                 case DetectionState.Newer:
                 case DetectionState.SameVersion:
                 case DetectionState.Older:
+                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
+                    {
+                        ExpectedPages.Add(Pages.PageSelection);
+                        ExpectedPages.Add(Pages.InstallLocation);
+                        ExpectedPages.Add(Pages.Database);
+                        ExpectedPages.Add(Pages.Service);
+                        ExpectedPages.Add(Pages.Summary);
+                        ExpectedPages.Add(Pages.Progress);
+                        ExpectedPages.Add(Pages.Finish);
+                    });
                     Page = Pages.PageSelection;
                     break;
 
                 case DetectionState.Present:
+                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
+                    {
+                        ExpectedPages.Add(Pages.Repair);
+                        ExpectedPages.Add(Pages.Progress);
+                        ExpectedPages.Add(Pages.Finish);
+                    });
                     Page = Pages.Repair;
                     break;
 
@@ -127,6 +146,8 @@ namespace SampleJetBA.ViewModel
 
         #endregion
 
+        public ObservableCollection<Pages> ExpectedPages { get; private set; }
+
         private bool showDbPage_ = true;
         public bool ShowDbPage
         {
@@ -137,6 +158,24 @@ namespace SampleJetBA.ViewModel
             set
             {
                 showDbPage_ = value;
+                if (showDbPage_)
+                {
+                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
+                    {
+                        if (!ExpectedPages.Contains(Pages.Database))
+                        {
+                            ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.InstallLocation) + 1, Pages.Database);
+                        }
+                    });
+                }
+                else
+                {
+                    if (ExpectedPages.Contains(Pages.Database))
+                    {
+                        ExpectedPages.Remove(Pages.Database);
+                    }
+                }
+
                 OnPropertyChanged("ShowDbPage");
             }
         }
@@ -151,6 +190,24 @@ namespace SampleJetBA.ViewModel
             set
             {
                 showServicePage_ = value;
+                if (showServicePage_)
+                {
+                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
+                    {
+                        if (!ExpectedPages.Contains(Pages.Service))
+                        {
+                            ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.Summary), Pages.Service);
+                        }
+                    });
+                }
+                else
+                {
+                    if (ExpectedPages.Contains(Pages.Service))
+                    {
+                        ExpectedPages.Remove(Pages.Service);
+                    }
+                }
+
                 OnPropertyChanged("ShowServicePage");
             }
         }
