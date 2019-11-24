@@ -32,7 +32,7 @@
         </MultiBinding>
     </Window.Title>
 
-    <Grid VerticalAlignment="Stretch" Margin="7,0,7,10">
+    <Grid VerticalAlignment="Stretch" Margin="7,0,7,10" Background="{StaticResource BackgroundBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="85"/>
@@ -61,7 +61,7 @@
             <DockPanel.Background>
                 <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
                     <GradientStop Color="#FFFFC934" Offset="0"/>
-                    <GradientStop Color="#FFFFFFFF" Offset="0.567"/>
+                    <GradientStop Color="White" Offset="0.567"/>
                 </LinearGradientBrush>
             </DockPanel.Background>
             <Image DockPanel.Dock="Left" Source="../Resources/spaceship-64x64.png" VerticalAlignment="Center" FlowDirection="LeftToRight" Margin="40,0,0,0"/>
@@ -75,31 +75,32 @@
             </TextBlock>
         </DockPanel>
 
-        <Rectangle Grid.Row="2" Grid.ColumnSpan="2" Fill="{StaticResource BackgroundBrush}"/>
-        <ListView Grid.Row="2" Grid.Column="0" ItemsSource="{Binding NavigationViewModel.ExpectedPages}" IsHitTestVisible="False">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}}" Tag="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListView}, Path=DataContext.NavigationViewModel.Page}" Foreground="Black">
-                        <TextBlock.Style>
-                            <Style TargetType="TextBlock" BasedOn="{StaticResource GenericText}">
-                                <Setter Property="FontWeight" Value="Normal"/>
-                                <Style.Triggers>
-                                    <DataTrigger Value="True">
-                                        <DataTrigger.Binding>
-                                            <MultiBinding Converter="{StaticResource EqualityConverter}">
-                                                <Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
-                                                <Binding RelativeSource="{RelativeSource Self}" Path="DataContext" />
-                                            </MultiBinding>
-                                        </DataTrigger.Binding>
-                                        <Setter Property="FontWeight" Value="Bold"/>
-                                    </DataTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </TextBlock.Style>
-                    </TextBlock>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="0" Margin="5,0,0,5">
+            <ItemsControl ItemsSource="{Binding NavigationViewModel.ExpectedPages}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}}" Tag="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ItemsControl}, Path=DataContext.NavigationViewModel.Page}" Foreground="Black">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock" BasedOn="{StaticResource GenericText}">
+                                    <Setter Property="FontWeight" Value="Normal"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Value="True">
+                                            <DataTrigger.Binding>
+                                                <MultiBinding Converter="{StaticResource EqualityConverter}">
+                                                    <Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
+                                                    <Binding RelativeSource="{RelativeSource Self}" Path="DataContext" />
+                                                </MultiBinding>
+                                            </DataTrigger.Binding>
+                                            <Setter Property="FontWeight" Value="Bold"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
 
         <!-- Page Content Holder -->
         <Grid Grid.Row="2" Grid.Column="1" Margin="30,26,22,15">

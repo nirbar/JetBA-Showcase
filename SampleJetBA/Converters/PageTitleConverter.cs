@@ -1,12 +1,7 @@
 ﻿using PanelSW.Installer.JetBA.Util;
 using SampleJetBA.ViewModel;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Data;
 
 namespace SampleJetBA.Converters
