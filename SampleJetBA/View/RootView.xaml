@@ -79,7 +79,7 @@
             <ItemsControl ItemsSource="{Binding NavigationViewModel.ExpectedPages}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}}" Tag="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ItemsControl}, Path=DataContext.NavigationViewModel.Page}" Foreground="Black">
+                        <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}}" Foreground="Black">
                             <TextBlock.Style>
                                 <Style TargetType="TextBlock" BasedOn="{StaticResource GenericText}">
                                     <Setter Property="FontWeight" Value="Normal"/>
@@ -87,7 +87,7 @@
                                         <DataTrigger Value="True">
                                             <DataTrigger.Binding>
                                                 <MultiBinding Converter="{StaticResource EqualityConverter}">
-                                                    <Binding RelativeSource="{RelativeSource Self}" Path="Tag" />
+                                                    <Binding RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType=ItemsControl}" Path="DataContext.NavigationViewModel.Page" />
                                                     <Binding RelativeSource="{RelativeSource Self}" Path="DataContext" />
                                                 </MultiBinding>
                                             </DataTrigger.Binding>
@@ -125,12 +125,9 @@
 
                     <!-- Buttons -->
                     <StackPanel DockPanel.Dock="Bottom" Margin="10,5,10,5" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
-                        <Button Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}" IsDefault="{Binding IsLeftButtonDefault}"
-									Content="{Binding LeftCommandText}" Style="{StaticResource DialogButtonStyle}"/>
-                        <Button Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}" IsDefault="{Binding IsMiddleButtonDefault}"
-									Content="{Binding MiddleCommandText}" Style="{StaticResource DialogButtonStyle}"/>
-                        <Button Command="{Binding RightCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}"
-									Content="{Binding RightCommandText}" Style="{StaticResource DialogButtonStyle}"/>
+                        <Button Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}" IsDefault="{Binding IsLeftButtonDefault}" Content="{Binding LeftCommandText}" Style="{StaticResource DialogButtonStyle}"/>
+                        <Button Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}" IsDefault="{Binding IsMiddleButtonDefault}" Content="{Binding MiddleCommandText}" Style="{StaticResource DialogButtonStyle}"/>
+                        <Button Command="{Binding RightCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}" Content="{Binding RightCommandText}" Style="{StaticResource DialogButtonStyle}"/>
                     </StackPanel>
 
                     <!-- Text -->

@@ -10,7 +10,7 @@ namespace SampleJetBA.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (!Enum.TryParse<Pages>(value?.ToString(), out Pages page))
+            if ((value == null) || !Enum.TryParse<Pages>(value.ToString(), out Pages page))
             {
                 return null;
             }
