@@ -158,10 +158,21 @@
                 <ControlTemplate TargetType="Button">
                     <Border Name="btn" CornerRadius="4" Height="24" Width="70" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Opacity="{TemplateBinding Opacity}">
                         <TextBlock Name="txt" Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{TemplateBinding Foreground}" Background="{TemplateBinding Background}" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="ValueStates">
+                                <VisualState Name="Ready"/>
+                                <VisualState Name="Waiting">
+                                    <Storyboard>
+                                        <ColorAnimation To="Transparent" Duration="0:0:0.5" Storyboard.TargetName="txt" Storyboard.TargetProperty="(Foreground).(Color)" RepeatBehavior="Forever"/>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDefault" Value="True">
-                            <Setter TargetName="txt" Property="TextDecorations" Value="Underline" />
+                            <Setter Property="Background" Value="#3059AA" />
+                            <Setter Property="Foreground" Value="White" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -171,9 +182,16 @@
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="Opacity" Value="0.6" />
             </Trigger>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="LightBlue"/>
-            </Trigger>
+            <!-- Mouse hover & non-default -->
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsDefault" Value="False"/>
+                    <Condition Property="IsMouseOver" Value="True"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Background" Value="LightBlue"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
 
             <!-- Mouse hover & default -->
             <MultiTrigger>
@@ -183,6 +201,7 @@
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
                     <Setter Property="BorderThickness" Value="2" />
+                    <Setter Property="Background" Value="#2A6DA5"/>
                 </MultiTrigger.Setters>
             </MultiTrigger>
         </Style.Triggers>
@@ -222,15 +241,7 @@
         </Style.Triggers>
     </Style>
 
-    <Style TargetType="Button" x:Key="{x:Static panelsw:ResourceKeys.WaitableButtonButtonStyleKey}" BasedOn="{StaticResource DialogButtonStyle}">
-        <Setter Property="Content" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content}"/>
-        <Setter Property="Command" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Command}"/>
-        <Setter Property="IsDefault" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsDefault}"/>
-    </Style>
-    <Style TargetType="panelsw:WaitableButton" BasedOn="{StaticResource {x:Static panelsw:ResourceKeys.WaitableButtonBlinkingStyleKey}}">
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="BorderThickness" Value="0"/>
-    </Style>
+    <Style TargetType="panelsw:WaitableButton" BasedOn="{StaticResource DialogButtonStyle}"/>
 
     <!-- EyePasswordBox -->
     <Style TargetType="panelsw:EyePasswordBox" BasedOn="{StaticResource {x:Type panelsw:EyePasswordBox}}">
