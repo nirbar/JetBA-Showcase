@@ -6,7 +6,7 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None" 
         AllowsTransparency="True"
-        Background="{x:Null}"
+        Background="{x:Null}" BorderBrush="Gray" BorderThickness="1"
         Width="800" Height="450">
 
     <Window.Resources>
@@ -32,7 +32,7 @@
         </MultiBinding>
     </Window.Title>
 
-    <Grid VerticalAlignment="Stretch" Margin="7,0,7,10" Background="{StaticResource BackgroundBrush}">
+    <Grid VerticalAlignment="Stretch" Background="{StaticResource BackgroundBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="85"/>

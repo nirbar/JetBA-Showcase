@@ -92,8 +92,8 @@ namespace SampleJetBA.ViewModel
                     {
                         ExpectedPages.Add(Pages.PageSelection);
                         ExpectedPages.Add(Pages.InstallLocation);
-                        ExpectedPages.Add(Pages.Database);
                         ExpectedPages.Add(Pages.Service);
+                        ExpectedPages.Add(Pages.Database);
                         ExpectedPages.Add(Pages.Summary);
                         ExpectedPages.Add(Pages.Progress);
                         ExpectedPages.Add(Pages.Finish);
