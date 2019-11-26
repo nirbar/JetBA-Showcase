@@ -32,8 +32,8 @@
         <!-- Target folder -->
         <StackPanel DockPanel.Dock="Top" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
             <CheckBox IsEnabled="False" Content="{x:Static props:Resources.InstallationFolder}" IsChecked="True"/>
-            <CheckBox Content="{x:Static props:Resources.DatabaseConnection}" IsChecked="{Binding NavigationViewModel.ShowDbPage}"/>
             <CheckBox Content="{x:Static props:Resources.ServiceAccount}" IsChecked="{Binding NavigationViewModel.ShowServicePage}"/>
+            <CheckBox Content="{x:Static props:Resources.DatabaseConnection}" IsChecked="{Binding NavigationViewModel.ShowDbPage}"/>
         </StackPanel>
 
     </DockPanel>

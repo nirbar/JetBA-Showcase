@@ -15,8 +15,8 @@ namespace SampleJetBA.ViewModel
         Detecting,
         PageSelection,
         InstallLocation,
-        Database,
         Service,
+        Database,
         Summary,
         Progress,
         Finish,
@@ -30,8 +30,8 @@ namespace SampleJetBA.ViewModel
             , Lazy<DetectingView> detectingView
             , Lazy<PageSelectionView> pageSelectionView
             , Lazy<InstallLocationView> installLocationView
-            , Lazy<DatabaseView> dbView
             , Lazy<ServiceAccountView> svcView
+            , Lazy<DatabaseView> dbView
             , Lazy<RepairView> repairView
             , Lazy<ProgressView> progressView
             , Lazy<HelpView> helpView
@@ -50,8 +50,8 @@ namespace SampleJetBA.ViewModel
             AddPage(Pages.Detecting, new Lazy<object>(() => detectingView.Value));
             AddPage(Pages.PageSelection, new Lazy<object>(() => pageSelectionView.Value));
             AddPage(Pages.InstallLocation, new Lazy<object>(() => installLocationView.Value));
-            AddPage(Pages.Database, new Lazy<object>(() => dbView.Value));
             AddPage(Pages.Service, new Lazy<object>(() => svcView.Value));
+            AddPage(Pages.Database, new Lazy<object>(() => dbView.Value));
             AddPage(Pages.Progress, new Lazy<object>(() => progressView.Value));
             AddPage(Pages.Repair, new Lazy<object>(() => repairView.Value));
             AddPage(Pages.Summary, new Lazy<object>(() => summaryView.Value));
@@ -164,7 +164,7 @@ namespace SampleJetBA.ViewModel
                     {
                         if (!ExpectedPages.Contains(Pages.Database))
                         {
-                            ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.InstallLocation) + 1, Pages.Database);
+                            ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.Summary), Pages.Database);
                         }
                     });
                 }
@@ -196,7 +196,7 @@ namespace SampleJetBA.ViewModel
                     {
                         if (!ExpectedPages.Contains(Pages.Service))
                         {
-                            ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.Summary), Pages.Service);
+                            ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.InstallLocation) + 1, Pages.Service);
                         }
                     });
                 }
@@ -222,13 +222,26 @@ namespace SampleJetBA.ViewModel
                     break;
 
                 case Pages.InstallLocation:
+                    if (ShowServicePage)
+                    {
+                        nextPage = Pages.Service;
+                    }
+                    else if (ShowDbPage)
+                    {
+                        nextPage = Pages.Database;
+                    } 
+                    else
+                    {
+                        ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+                        apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
+                        nextPage = Pages.Summary;
+                    }
+                    break;
+
+                case Pages.Service:
                     if (ShowDbPage)
                     {
                         nextPage = Pages.Database;
-                    }
-                    else if (ShowServicePage)
-                    {
-                        nextPage = Pages.Service;
                     }
                     else
                     {
@@ -239,19 +252,6 @@ namespace SampleJetBA.ViewModel
                     break;
 
                 case Pages.Database:
-                    if (ShowServicePage)
-                    {
-                        nextPage = Pages.Service;
-                    }
-                    else
-                    {
-                        ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
-                        apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
-                        nextPage = Pages.Summary;
-                    }
-                    break;
-
-                case Pages.Service:
                     {
                         ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
                         apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet

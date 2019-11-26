@@ -27,12 +27,12 @@ namespace SampleJetBA.ViewModel
                     ValidateTargetFolder();
                     break;
 
-                case Pages.Database:
-                    ValidateDatabase();
-                    break;
-
                 case Pages.Service:
                     ValidateServiceAccount();
+                    break;
+
+                case Pages.Database:
+                    ValidateDatabase();
                     break;
 
                 default:
@@ -43,8 +43,8 @@ namespace SampleJetBA.ViewModel
         public override void ValidateAll()
         {
             ValidateTargetFolder();
-            ValidateDatabase();
             ValidateServiceAccount();
+            ValidateDatabase();
         }
 
         private void ValidateTargetFolder()
