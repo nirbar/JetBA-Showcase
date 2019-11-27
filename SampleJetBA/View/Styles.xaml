@@ -53,6 +53,9 @@
     <SolidColorBrush x:Key="ProgressBarBackgroundBrush" Color="#FFB4CDED" />
     <SolidColorBrush x:Key="ProgressBarForegroundBrush" Color="#FF1E7DF7" />
 
+    <SolidColorBrush x:Key="ValidationProgressBarBackgroundBrush" Color="LightGray" />
+    <SolidColorBrush x:Key="ValidationProgressBarForegroundBrush" Color="Black" />
+
     <!-- Control Templates -->
 
     <ControlTemplate x:Key="CheckboxTemplate" TargetType="{x:Type CheckBox}">
@@ -271,10 +274,19 @@
         <Setter Property="HorizontalAlignment" Value="Left" />
     </Style>
 
+    <Style TargetType="ProgressBar" x:Key="ValidationProgressBar">
+        <Setter Property="Foreground" Value="{StaticResource ValidationProgressBarForegroundBrush}" />
+        <Setter Property="Background" Value="{StaticResource ValidationProgressBarBackgroundBrush}" />
+        <Setter Property="Height" Value="1"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Margin" Value="5,5,5,10"/>
+    </Style>
+
     <Style TargetType="ProgressBar">
         <Setter Property="Foreground" Value="{StaticResource ProgressBarForegroundBrush}" />
         <Setter Property="Background" Value="{StaticResource ProgressBarBackgroundBrush}" />
-        <Setter Property="Height" Value="15"/>
+        <Setter Property="Width" Value="400" />
+        <Setter Property="Height" Value="10"/>
     </Style>
 
     <Style TargetType="RadioButton">

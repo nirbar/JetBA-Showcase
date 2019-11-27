@@ -6,31 +6,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="300">
-    
+             d:DesignHeight="300" d:DesignWidth="500">
+
     <UserControl.Resources>
         <ResourceDictionary Source="Styles.xaml"/>
     </UserControl.Resources>
 
     <DockPanel>
-
         <!-- Buttons strip -->
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" >
-            <!-- Repair -->
-            <Button HorizontalAlignment="Right"
-                DataContext="{Binding ApplyViewModel}" 
-                Command="{Binding RepairCommand}"
-                Content="{x:Static props:Resources.Repair}" />
-            
-            <!-- Uninstall -->
-            <Button IsDefault="True" HorizontalAlignment="Right" 
-                DataContext="{Binding ApplyViewModel}" 
-                Command="{Binding UninstallCommand}"
-                Content="{x:Static props:Resources.Uninstall}" />
-        </StackPanel>
+        <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
+            <Button DockPanel.Dock="Right" IsDefault="True" Command="{Binding ApplyViewModel.UninstallCommand}" Content="{x:Static props:Resources.Uninstall}" />
+            <Button DockPanel.Dock="Right" Command="{Binding ApplyViewModel.RepairCommand}" Content="{x:Static props:Resources.Repair}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
+        </DockPanel>
+        <ProgressBar DockPanel.Dock="Bottom" Name="validation_" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"/>
 
-        <TextBlock DockPanel.Dock="Top" Style="{StaticResource GenericText}" TextWrapping="WrapWithOverflow"
-                   Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.ClickRepairToRepair0OrUninstallToRemoveIt}}"
-                   />
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.ClickRepairToRepair0OrUninstallToRemoveIt}}"/>
     </DockPanel>
 </UserControl>

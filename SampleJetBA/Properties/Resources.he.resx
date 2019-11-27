@@ -278,4 +278,7 @@ INSTALL_FOLDER="C:\Program Files\Sample" - מתקין לספריה המבוקש�
   <data name="ReadyToInstall" xml:space="preserve">
     <value>בדוק את הפרמטרים ולחץ 'התקן' להתחלת ההתקנה</value>
   </data>
+  <data name="PleasWaitWhileExecuting" xml:space="preserve">
+    <value>אנא המתן לסיום הפעולה</value>
+  </data>
 </root>

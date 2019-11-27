@@ -16,20 +16,12 @@
     <DockPanel>
 
         <!-- Buttons strip -->
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
-            <!-- Cancel -->
-            <Button HorizontalAlignment="Right" 
-                    Command="{Binding NavigationViewModel.StopCommand}"
-                    Content="{x:Static loc:Resources.Cancel}" />
-            <!-- Back -->
-            <Button HorizontalAlignment="Right" 
-                    Command="{Binding NavigationViewModel.BackCommand}"
-                    Content="{x:Static props:Resources.Back}" />
-            <!-- Next -->
-            <Button IsDefault="True" HorizontalAlignment="Right"
-                    Command="{Binding NavigationViewModel.NextCommand}"
-                    Content="{x:Static props:Resources.Next}" />
-        </StackPanel>
+        <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
+            <Button DockPanel.Dock="Right" IsDefault="True" Command="{Binding NavigationViewModel.NextCommand}" Content="{x:Static props:Resources.Next}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.BackCommand}" Content="{x:Static props:Resources.Back}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
+        </DockPanel>
+        <ProgressBar DockPanel.Dock="Bottom" Name="validation_" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"/>
 
         <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0InstallFolder}}"/>
 
@@ -40,7 +32,6 @@
                 <ColumnDefinition Width="120"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
             

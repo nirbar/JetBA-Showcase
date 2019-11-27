@@ -7,43 +7,41 @@
              xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    
+
     <UserControl.Resources>
         <ResourceDictionary Source="Styles.xaml"/>
     </UserControl.Resources>
 
     <DockPanel>
+        <!-- Buttons strip -->
+        <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
+        </DockPanel>
+        <ProgressBar DockPanel.Dock="Bottom" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="True"/>
 
-        <!-- Cancel button -->
-        <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right"
-                Command="{Binding NavigationViewModel.StopCommand}"
-                Content="{x:Static loc:Resources.Cancel}"
-                />
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{x:Static props:Resources.PleasWaitWhileExecuting}"/>
 
-        <!-- Cache progress -->            
-        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Bottom" 
-                   Text="{Binding ProgressViewModel.CachePackage, StringFormat={x:Static props:Resources.Caching0}}"
-                   Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"
-                   />
-        <ProgressBar DockPanel.Dock="Top" HorizontalAlignment="Stretch" VerticalAlignment="Top" 
-                     Margin="0,10,24,10" Height="10" 
-                     Value="{Binding ProgressViewModel.CacheProgress, Mode=OneWay}"
-                     IsIndeterminate="{Binding ProgressViewModel.CacheProgressState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Indeterminate}"
-                     Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"
-                     />
+        <Grid DockPanel.Dock="Top" Style="{StaticResource InputGridStyle}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
 
-        <!-- Execute progress -->
-        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Bottom" Margin="0,50,0,0"
-                   Text="{Binding ProgressViewModel.Package, StringFormat={x:Static props:Resources.Executing0}}" 
-                   />
-        <ProgressBar DockPanel.Dock="Top" HorizontalAlignment="Stretch" VerticalAlignment="Top" 
-                     Margin="0,10,24,10" Height="10" 
-                     DataContext="{Binding ProgressViewModel}"
-                     Value="{Binding ExecuteProgress}"
-                     IsIndeterminate="{Binding ExecuteProgressState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Indeterminate}"
-                     />
-        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Top"
-                   Text="{Binding ProgressViewModel.Message}" 
-                   />
+            <!-- Cache progress -->
+            <TextBlock Grid.Row="0" Text="{Binding ProgressViewModel.CachePackage, StringFormat={x:Static props:Resources.Caching0}}" Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"/>
+            <ProgressBar Grid.Row="1" Value="{Binding ProgressViewModel.CacheProgress, Mode=OneWay}" 
+                         IsIndeterminate="{Binding ProgressViewModel.CacheProgressState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Indeterminate}"
+                         Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"/>
+
+            <!-- Execute progress -->
+            <TextBlock Grid.Row="2" Text="{Binding ProgressViewModel.Package, StringFormat={x:Static props:Resources.Executing0}}"/>
+            <ProgressBar Grid.Row="3" Value="{Binding ProgressViewModel.ExecuteProgress}"
+                         IsIndeterminate="{Binding ProgressViewModel.ExecuteProgressState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Indeterminate}"/>
+
+            <TextBlock Grid.Row="4" Text="{Binding ProgressViewModel.Message}" />
+        </Grid>
     </DockPanel>
 </UserControl>

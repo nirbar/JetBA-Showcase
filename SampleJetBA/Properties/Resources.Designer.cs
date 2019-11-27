@@ -430,7 +430,16 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please review parameters and click 'Install' when ready.
+        ///   Looks up a localized string similar to Please wait while we&apos;re preparing the system.
+        /// </summary>
+        public static string PleasWaitWhileExecuting {
+            get {
+                return ResourceManager.GetString("PleasWaitWhileExecuting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please review parameters and click &apos;Install&apos; when ready.
         /// </summary>
         public static string ReadyToInstall {
             get {

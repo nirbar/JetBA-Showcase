@@ -15,14 +15,12 @@
     <DockPanel>
 
         <!-- Buttons strip -->
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" >
-            <!-- Cancel -->
-            <Button Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
-            <!-- Back -->
-            <Button Command="{Binding NavigationViewModel.BackCommand}" Content="{x:Static props:Resources.Back}" />
-            <!-- Install -->
-            <Button IsDefault="True" Command="{Binding ApplyViewModel.ApplyCommand}" Content="{x:Static props:Resources.Install}" />
-        </StackPanel>
+        <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
+            <Button DockPanel.Dock="Right" IsDefault="True" Command="{Binding ApplyViewModel.ApplyCommand}" Content="{x:Static props:Resources.Install}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.BackCommand}" Content="{x:Static props:Resources.Back}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
+        </DockPanel>
+        <ProgressBar DockPanel.Dock="Bottom" Name="validation_" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"/>
 
         <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{x:Static props:Resources.ReadyToInstall}"/>
 

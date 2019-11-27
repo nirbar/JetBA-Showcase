@@ -13,47 +13,29 @@
     </UserControl.Resources>
 
     <DockPanel>
-
         <!-- Buttons strip -->
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" >
-            <!-- Restart -->
-            <Button HorizontalAlignment="Right"
-                    Command="{Binding FinishViewModel.RebootCommand}"
-				    Visibility="{Binding FinishViewModel.RebootEnabled, Converter={StaticResource BooleanToVisibilityConverter}}" 
-                    Content="{x:Static props:Resources.Restart}" 
-                   
-                    />
-
-            <!-- Close -->
-            <Button IsDefault="True" HorizontalAlignment="Right" 
-                    Command="{Binding NavigationViewModel.StopCommand}"
-                    Content="{x:Static props:Resources.Close}" 
-                   
-                    />
-        </StackPanel>
+        <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
+            <Button DockPanel.Dock="Right" IsDefault="True" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static props:Resources.Close}" />
+            <Button DockPanel.Dock="Right" Command="{Binding FinishViewModel.RebootCommand}" Content="{x:Static props:Resources.Restart}" Visibility="{Binding FinishViewModel.RebootEnabled, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+        </DockPanel>
+        <ProgressBar DockPanel.Dock="Bottom" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="False"/>
 
         <!-- Failure -->
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" DockPanel.Dock="Top"
-                    Visibility="{Binding ApplyViewModel.InstallState, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Failed}"
-                    >
-
+        <StackPanel DockPanel.Dock="Top" Margin="6,20,0,0" Visibility="{Binding ApplyViewModel.InstallState, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Failed}">
             <!-- Install -->
             <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"
                        Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.FailedInstalling0}}"
-					   Style="{StaticResource GenericText}" VerticalAlignment="Center"
-                       />
+					   Style="{StaticResource TitleText}"/>
 
             <!-- Remove -->
             <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Uninstall}"
                        Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.FailedRemoving0}}"
-					   Style="{StaticResource GenericText}" VerticalAlignment="Center"
-                       />
+					   Style="{StaticResource TitleText}"/>
 
             <!-- Repair/Modify -->
             <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Modify;Repair}"
                        Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.FailedConfiguring0}}"
-					   Style="{StaticResource GenericText}" VerticalAlignment="Center"
-                       />
+					   Style="{StaticResource TitleText}"/>
 
             <!-- Error message -->
             <TextBlock Text="{Binding ApplyViewModel.ErrorMessage}"
@@ -63,8 +45,7 @@
 
             <!-- Open failure log -->
             <TextBlock>
-                <Hyperlink Command="{Binding UtilViewModel.ShellExecuteCommand}"
-                           CommandParameter="{Binding ApplyViewModel.FailingPackageLogFile}">
+                <Hyperlink Command="{Binding UtilViewModel.ShellExecuteCommand}" CommandParameter="{Binding ApplyViewModel.FailingPackageLogFile}">
                     <TextBlock Text="{x:Static props:Resources.OpenFailureLog}"/>
                 </Hyperlink>
 
@@ -83,33 +64,27 @@
         </StackPanel>
 
         <!-- Success -->
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" DockPanel.Dock="Top"
-                    Visibility="{Binding ApplyViewModel.InstallState, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Applied}"
-                    >
+        <StackPanel DockPanel.Dock="Top" Margin="6,20,0,0" Visibility="{Binding ApplyViewModel.InstallState, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Applied}">
 
             <!-- Install -->
             <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"
                        Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0IsReadyForUse}}"
-					   Style="{StaticResource GenericText}" VerticalAlignment="Center"
-                       />
+					   Style="{StaticResource TitleText}"/>
 
             <!-- Remove -->
             <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Uninstall}"
                        Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.ThankYouForHavingUsed0}}"
-					   Style="{StaticResource GenericText}" VerticalAlignment="Center"
-                       />
+					   Style="{StaticResource TitleText}"/>
 
             <!-- Repair/Modify -->
             <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Modify;Repair}"
                        Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0Configured}}"
-					   Style="{StaticResource GenericText}" VerticalAlignment="Center"
-                       />
+					   Style="{StaticResource TitleText}"/>
         </StackPanel>
 
         <!-- Reboot -->
-        <TextBlock Visibility="{Binding FinishViewModel.RebootEnabled, Converter={StaticResource BooleanToVisibilityConverter}}"
+        <TextBlock DockPanel.Dock="Bottom" Visibility="{Binding FinishViewModel.RebootEnabled, Converter={StaticResource BooleanToVisibilityConverter}}"
                    Text="{x:Static props:Resources.ChangesWillNotTakeEffectUntilReboot}"
-                   Style="{StaticResource GenericText}" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   />
+                   Style="{StaticResource GenericText}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20,0,0,10"/>
     </DockPanel>
 </UserControl>

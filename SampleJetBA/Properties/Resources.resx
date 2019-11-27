@@ -279,4 +279,7 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="ReadyToInstall" xml:space="preserve">
     <value>Please review parameters and click 'Install' when ready</value>
   </data>
+  <data name="PleasWaitWhileExecuting" xml:space="preserve">
+    <value>Please wait while we're preparing the system</value>
+  </data>
 </root>
