@@ -33,17 +33,21 @@
 
         <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0InstallFolder}}"/>
 
-        <!-- Target folder -->
-        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Text="{x:Static props:Resources.InstallFolder}" Style="{StaticResource GenericText}"/>
-            <TextBox Width="300" VerticalAlignment="Top" Margin="10,0,5,0" TextAlignment="Left" FlowDirection="LeftToRight"
-                     ToolTip="Set installation target folder"
-                     x:Name="pathTextBox"
-                     Text="{Binding VariablesViewModel.InstallFolder.String, UpdateSourceTrigger=PropertyChanged}"/>
-            <Button 
-                    Click="browseInstallFolder_Click"
-                    Content="{x:Static props:Resources.Browse}"/>
-        </StackPanel>
+        <Grid DockPanel.Dock="Top" Style="{StaticResource InputGridStyle}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.InstallFolder}" Style="{StaticResource GenericText}"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.InstallFolder.String, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Grid.Row="0" Grid.Column="2" Click="browseInstallFolder_Click" Content="{x:Static props:Resources.Browse}"/>
+        </Grid>
 
     </DockPanel>
 </UserControl>

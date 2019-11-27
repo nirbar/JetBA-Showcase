@@ -34,11 +34,11 @@
 
         <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0DatabaseConnection}}"/>
 
-        <Grid DockPanel.Dock="Top" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="10,0,0,10">
+        <Grid DockPanel.Dock="Top" Style="{StaticResource InputGridStyle}">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="120"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>

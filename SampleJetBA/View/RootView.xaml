@@ -7,7 +7,7 @@
         WindowStyle="None" 
         AllowsTransparency="True"
         Background="{x:Null}" BorderBrush="Gray" BorderThickness="1"
-        Width="800" Height="450">
+        Width="800" Height="500">
 
     <Window.Resources>
         <ResourceDictionary Source="Styles.xaml"/>

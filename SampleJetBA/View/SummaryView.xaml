@@ -17,44 +17,44 @@
         <!-- Buttons strip -->
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" >
             <!-- Cancel -->
-            <Button 
-                    Command="{Binding NavigationViewModel.StopCommand}"
-                    Content="{x:Static loc:Resources.Cancel}" />
+            <Button Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
             <!-- Back -->
-            <Button
-                    Command="{Binding NavigationViewModel.BackCommand}"
-                    Content="{x:Static props:Resources.Back}" />
+            <Button Command="{Binding NavigationViewModel.BackCommand}" Content="{x:Static props:Resources.Back}" />
             <!-- Install -->
-            <Button IsDefault="True"
-                    Command="{Binding ApplyViewModel.ApplyCommand}"
-                    Content="{x:Static props:Resources.Install}" />
+            <Button IsDefault="True" Command="{Binding ApplyViewModel.ApplyCommand}" Content="{x:Static props:Resources.Install}" />
         </StackPanel>
 
-        <Border DockPanel.Dock="Top" Margin="0,0,0,20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="{StaticResource WindowFrameBackgrdBrush}" BorderThickness="2">
-            <UniformGrid Columns="2">
-                <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.InstallFolder}" />
-                <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.InstallFolder.String}" />
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{x:Static props:Resources.ReadyToInstall}"/>
 
-                <!-- DB server- only if page was selected -->
-                <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" 
-                           Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
-                <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.DbServer.String}" 
-                           Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
-            </UniformGrid>
-        </Border>
+        <UniformGrid DockPanel.Dock="Top" Columns="2" Style="{StaticResource InputGridStyle}">
+            <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.InstallFolder}" />
+            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.InstallFolder.String}" />
 
-        <ScrollViewer DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto">
+            <!-- DB server- only if page was selected -->
+            <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.SQL_SERVER.String}" Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
+
+            <!-- Service- only if page was selected -->
+            <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.ServiceAccount}" Visibility="{Binding NavigationViewModel.ShowServicePage, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <TextBlock FlowDirection="LeftToRight" Visibility="{Binding NavigationViewModel.ShowServicePage, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <TextBlock.Style>
+                    <Style BasedOn="{StaticResource GenericText}" TargetType="TextBlock">
+                        <Setter Property="Text" Value="{Binding VariablesViewModel.SERVICE_USER.String}"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding VariablesViewModel.SERVICE_USER.IsNullOrEmpty}" Value="True">
+                                <Setter Property="Text" Value=".\LocalSystem"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </UniformGrid>
+
+        <ScrollViewer Style="{StaticResource InputGridStyle}" DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto">
             <ItemsControl ItemsSource="{Binding PackagesViewModel.Packages}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <CheckBox IsEnabled="False"
-                                      Content="{Binding Path=DisplayName}" 
-                                      IsChecked="{Binding Path=PlanState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=MajorUpgrade;Install;MinorUpgrade, Mode=OneWay}"/>
-                        </Grid>
+                        <CheckBox IsEnabled="False" Content="{Binding Path=DisplayName}" IsChecked="{Binding Path=PlanState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=MajorUpgrade;Install;MinorUpgrade, Mode=OneWay}"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

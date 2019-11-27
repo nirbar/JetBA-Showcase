@@ -275,4 +275,7 @@ InstallFolder="C:\Program Files\Sample" - מתקין לספריה המבוקשת
   <data name="PageTitle_Summary" xml:space="preserve">
     <value>סיכום</value>
   </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>בדוק את הפרמטרים ולחץ 'התקן' להתחלת ההתקנה</value>
+  </data>
 </root>

@@ -185,32 +185,43 @@
         <Setter Property="RenderTransformOrigin" Value=".5,.5" />
     </Style>
 
-    <Style TargetType="ComboBox">
-        <Setter Property="Height" Value="24"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Margin" Value="5,2,5,2"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
-        <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="BorderBrush" Value="{StaticResource TextBoxBorderBrush}" />
+    <Style TargetType="panelsw:WaitableButton" BasedOn="{StaticResource {x:Type Button}}"/>
+
+    <!-- Text input fields -->
+    <Style x:Key="TextInputBaseStyle">
+        <Setter Property="Control.FlowDirection" Value="LeftToRight"/>
+        <Setter Property="Control.Padding" Value="10,0,0,0"/>
+        <Setter Property="Control.Height" Value="36"/>
+        <Setter Property="Control.FontSize" Value="14"/>
+        <Setter Property="Control.Foreground" Value="{StaticResource ForegroundBrush}" />
+        <Setter Property="Control.VerticalAlignment" Value="Center" />
+        <Setter Property="Control.HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Control.HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Control.VerticalContentAlignment" Value="Center" />
+        <Setter Property="Control.Background" Value="White" />
+        <Setter Property="Control.BorderThickness" Value="1" />
+        <Setter Property="Control.BorderBrush" Value="{StaticResource TextBoxBorderBrush}" />
         <Style.Triggers>
-            <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                <Setter Property="BorderBrush" Value="{StaticResource TextBoxFocusedBorderBrush}" />
+            <Trigger Property="Control.IsKeyboardFocusWithin" Value="True">
+                <Setter Property="Control.BorderBrush" Value="{StaticResource TextBoxFocusedBorderBrush}" />
             </Trigger>
-            <Trigger Property="IsFocused" Value="True">
-                <Setter Property="BorderBrush" Value="{StaticResource TextBoxFocusedBorderBrush}" />
+            <Trigger Property="Control.IsFocused" Value="True">
+                <Setter Property="Control.BorderBrush" Value="{StaticResource TextBoxFocusedBorderBrush}" />
             </Trigger>
         </Style.Triggers>
     </Style>
-
-    <Style TargetType="panelsw:WaitableButton" BasedOn="{StaticResource {x:Type Button}}"/>
+    <Style TargetType="ComboBox" BasedOn="{StaticResource TextInputBaseStyle}"/>
+    <Style TargetType="xceed:WatermarkTextBox" BasedOn="{StaticResource TextInputBaseStyle}"/>
+    <Style TargetType="TextBox" BasedOn="{StaticResource TextInputBaseStyle}"/>
 
     <!-- EyePasswordBox -->
+    <Style TargetType="TextBox" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxTextBoxStyleKey}" BasedOn="{StaticResource TextInputBaseStyle}"/>
+    <Style TargetType="xceed:WatermarkPasswordBox" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxWatermarkPasswordBoxStyleKey}" BasedOn="{StaticResource TextInputBaseStyle}">
+        <Setter Property="Control.BorderThickness" Value="0" />
+    </Style>
     <Style TargetType="panelsw:EyePasswordBox" BasedOn="{StaticResource {x:Type panelsw:EyePasswordBox}}">
-        <Setter Property="Height" Value="24"/>
+        <Setter Property="Height" Value="36"/>
         <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Margin" Value="5,2,5,2"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
@@ -228,70 +239,6 @@
     <Style TargetType="Button" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxButtonStyleKey}" BasedOn="{StaticResource {x:Static panelsw:ResourceKeys.EyePasswordBoxButtonStyleKey}}">
         <Setter Property="Height" Value="24" />
         <Setter Property="Width" Value="24" />
-    </Style>
-    <Style TargetType="TextBox" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxTextBoxStyleKey}" BasedOn="{StaticResource {x:Static panelsw:ResourceKeys.EyePasswordBoxTextBoxStyleKey}}">
-        <Setter Property="FlowDirection" Value="LeftToRight"/>
-        <Setter Property="Height" Value="24"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Margin" Value="5,2,5,2"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
-        <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="BorderBrush" Value="{StaticResource TextBoxBorderBrush}" />
-        <Style.Triggers>
-            <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                <Setter Property="BorderBrush" Value="{StaticResource TextBoxFocusedBorderBrush}" />
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-    <Style TargetType="xceed:WatermarkPasswordBox" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxWatermarkPasswordBoxStyleKey}" BasedOn="{StaticResource {x:Static panelsw:ResourceKeys.EyePasswordBoxWatermarkPasswordBoxStyleKey}}">
-        <Setter Property="FlowDirection" Value="LeftToRight"/>
-        <Setter Property="Height" Value="24"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Margin" Value="5,2,5,2"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
-        <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="BorderBrush" Value="{StaticResource TextBoxBorderBrush}" />
-        <Style.Triggers>
-            <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                <Setter Property="BorderBrush" Value="{StaticResource TextBoxFocusedBorderBrush}" />
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-
-    <Style TargetType="xceed:WatermarkTextBox">
-        <Setter Property="FlowDirection" Value="LeftToRight"/>
-        <Setter Property="Height" Value="24"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Margin" Value="5,2,5,2"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
-        <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="Background" Value="White" />
-        <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="BorderBrush" Value="{StaticResource TextBoxBorderBrush}" />
-        <Style.Triggers>
-            <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                <Setter Property="BorderBrush" Value="{StaticResource TextBoxFocusedBorderBrush}" />
-            </Trigger>
-        </Style.Triggers>
-    </Style>
-
-    <Style TargetType="TextBox">
-        <Setter Property="FlowDirection" Value="LeftToRight"/>
-        <Setter Property="Height" Value="24"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Margin" Value="5,2,5,2"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
-        <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="BorderBrush" Value="{StaticResource TextBoxBorderBrush}" />
-        <Style.Triggers>
-            <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                <Setter Property="BorderBrush" Value="{StaticResource TextBoxFocusedBorderBrush}" />
-            </Trigger>
-        </Style.Triggers>
     </Style>
 
     <Style TargetType="TextBlock" x:Key="GenericText">
@@ -367,5 +314,11 @@
         <Setter Property="Height" Value="14"/>
         <Setter Property="Width" Value="14"/>
         <Setter Property="Template" Value="{StaticResource MinimizeButtonTemplate}"/>
+    </Style>
+
+    <Style x:Key="InputGridStyle">
+        <Setter Property="Control.VerticalAlignment" Value="Top"/>
+        <Setter Property="Control.HorizontalAlignment" Value="Left"/>
+        <Setter Property="Control.Margin" Value="10,20,10,10"/>
     </Style>
 </ResourceDictionary>

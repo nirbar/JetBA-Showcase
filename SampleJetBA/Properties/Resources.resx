@@ -276,4 +276,7 @@ InstallFolder="C:\Program Files\Sample" - Set terget folder</value>
   <data name="PageTitle_Summary" xml:space="preserve">
     <value>Ready to install</value>
   </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Please review parameters and click 'Install' when ready</value>
+  </data>
 </root>

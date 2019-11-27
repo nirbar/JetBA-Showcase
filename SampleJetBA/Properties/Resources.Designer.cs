@@ -430,6 +430,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please review parameters and click 'Install' when ready.
+        /// </summary>
+        public static string ReadyToInstall {
+            get {
+                return ResourceManager.GetString("ReadyToInstall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Repair.
         /// </summary>
         public static string Repair {
