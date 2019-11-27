@@ -18,11 +18,11 @@
         <!-- Buttons strip -->
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
             <!-- Cancel -->
-            <Button HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}" 
+            <Button HorizontalAlignment="Right" 
                     Command="{Binding NavigationViewModel.StopCommand}"
                     Content="{x:Static loc:Resources.Cancel}" />
             <!-- Next -->
-            <Button IsDefault="True" HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}"
+            <Button IsDefault="True" HorizontalAlignment="Right"
                     Command="{Binding NavigationViewModel.NextCommand}"
                     Content="{x:Static props:Resources.Next}" />
         </StackPanel>

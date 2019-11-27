@@ -15,13 +15,13 @@
     <DockPanel>
 
         <!-- Cancel button -->
-        <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}"
+        <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right"
                 Command="{Binding NavigationViewModel.StopCommand}"
                 Content="{x:Static loc:Resources.Cancel}"
                 />
 
         <!-- Cache progress -->            
-        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Bottom" Foreground="Black"
+        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Bottom" 
                    Text="{Binding ProgressViewModel.CachePackage, StringFormat={x:Static props:Resources.Caching0}}"
                    Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"
                    />
@@ -33,7 +33,7 @@
                      />
 
         <!-- Execute progress -->
-        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Bottom" Foreground="Black" Margin="0,50,0,0"
+        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Bottom" Margin="0,50,0,0"
                    Text="{Binding ProgressViewModel.Package, StringFormat={x:Static props:Resources.Executing0}}" 
                    />
         <ProgressBar DockPanel.Dock="Top" HorizontalAlignment="Stretch" VerticalAlignment="Top" 
@@ -42,7 +42,7 @@
                      Value="{Binding ExecuteProgress}"
                      IsIndeterminate="{Binding ExecuteProgressState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Indeterminate}"
                      />
-        <TextBlock DockPanel.Dock="Top" Foreground="Black" VerticalAlignment="Top"
+        <TextBlock DockPanel.Dock="Top" VerticalAlignment="Top"
                    Text="{Binding ProgressViewModel.Message}" 
                    />
     </DockPanel>

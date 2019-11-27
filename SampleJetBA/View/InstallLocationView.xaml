@@ -18,15 +18,15 @@
         <!-- Buttons strip -->
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
             <!-- Cancel -->
-            <Button HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}" 
+            <Button HorizontalAlignment="Right" 
                     Command="{Binding NavigationViewModel.StopCommand}"
                     Content="{x:Static loc:Resources.Cancel}" />
             <!-- Back -->
-            <Button HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}" 
+            <Button HorizontalAlignment="Right" 
                     Command="{Binding NavigationViewModel.BackCommand}"
                     Content="{x:Static props:Resources.Back}" />
             <!-- Next -->
-            <Button IsDefault="True" HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}"
+            <Button IsDefault="True" HorizontalAlignment="Right"
                     Command="{Binding NavigationViewModel.NextCommand}"
                     Content="{x:Static props:Resources.Next}" />
         </StackPanel>
@@ -40,7 +40,7 @@
                      ToolTip="Set installation target folder"
                      x:Name="pathTextBox"
                      Text="{Binding VariablesViewModel.InstallFolder.String, UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Style="{StaticResource DialogButtonStyle}" 
+            <Button 
                     Click="browseInstallFolder_Click"
                     Content="{x:Static props:Resources.Browse}"/>
         </StackPanel>

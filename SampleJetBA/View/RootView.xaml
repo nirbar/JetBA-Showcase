@@ -43,10 +43,10 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <DockPanel Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF66CBEA" MouseLeftButtonDown="Background_MouseLeftButtonDown">
-            <Button DockPanel.Dock="Right" Style="{StaticResource CloseButtonStyle}" Foreground="{StaticResource BackgroundBrush}" Height="8" Width="8" IsCancel="True" Command="{Binding NavigationViewModel.StopCommand}" Margin="8,0,8,0"/>
-            <Button DockPanel.Dock="Right" Style="{StaticResource MinimizeButtonStyle}" Foreground="{StaticResource BackgroundBrush}" Height="8" Width="8" Click="Minimize_Click"/>
-            <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="6,0,0,0" FontSize="12" Foreground="{StaticResource BackgroundBrush}">
+        <DockPanel Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{StaticResource TitleBarBackgroundBrush}" MouseLeftButtonDown="Background_MouseLeftButtonDown">
+            <Button DockPanel.Dock="Right" Style="{StaticResource CloseButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="8" Width="8" IsCancel="True" Command="{Binding NavigationViewModel.StopCommand}" Margin="8,0,8,0"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource MinimizeButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="8" Width="8" Click="Minimize_Click"/>
+            <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="6,0,0,0" FontSize="12" Foreground="{StaticResource TitleBarForegroundBrush}">
                 <TextBlock.Text>
                     <MultiBinding StringFormat="{}{0} v{1:4}">
                         <Binding Path="VariablesViewModel.WixBundleName.String" />
@@ -57,15 +57,9 @@
         </DockPanel>
 
         <!-- Logo -->
-        <DockPanel Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" MouseLeftButtonDown="Background_MouseLeftButtonDown">
-            <DockPanel.Background>
-                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
-                    <GradientStop Color="#FFC934" Offset="0"/>
-                    <GradientStop Color="White" Offset="0.567"/>
-                </LinearGradientBrush>
-            </DockPanel.Background>
+        <DockPanel Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Background="{StaticResource LogoBarBackgroundBrush}" MouseLeftButtonDown="Background_MouseLeftButtonDown">
             <Image DockPanel.Dock="Left" Source="../Resources/spaceship-64x64.png" VerticalAlignment="Center" FlowDirection="LeftToRight" Margin="40,0,0,0"/>
-            <TextBlock DockPanel.Dock="Left" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource HeaderText}" Background="Transparent" Margin="40,15,0,0" FontSize="26" Foreground="#49678C">
+            <TextBlock DockPanel.Dock="Left" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{StaticResource HeaderText}" Background="Transparent" Margin="40,15,0,0" FontSize="26" Foreground="{StaticResource LogoBarForegroundBrush}">
                 <TextBlock.Text>
                     <MultiBinding StringFormat="{}{0} v{1:4}" FallbackValue="JetBA v1.2.3.1">
                         <Binding Path="VariablesViewModel.WixBundleName.String" />
@@ -75,11 +69,11 @@
             </TextBlock>
         </DockPanel>
 
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="0" Padding="5,0,0,5" Background="#F0F0F0">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="0" Padding="5,0,0,5" Background="{StaticResource SideBarBackgroundBrush}">
             <ItemsControl ItemsSource="{Binding NavigationViewModel.ExpectedPages}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}}" Foreground="Black" Margin="0,5,0,5">
+                        <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}}" Foreground="{StaticResource SideBarForegroundBrush}" Margin="0,5,0,5">
                             <TextBlock.Style>
                                 <Style TargetType="TextBlock" BasedOn="{StaticResource GenericText}">
                                     <Setter Property="FontWeight" Value="Normal"/>
@@ -109,7 +103,7 @@
             </Grid.RowDefinitions>
 
             <!-- Pop-up messages -->
-            <Border Grid.Row="0" Panel.ZIndex="2" BorderBrush="#5daefb" BorderThickness="2" Background="#F0F0F0" Margin="15,15,15,15" 
+            <Border Grid.Row="0" Panel.ZIndex="2" BorderBrush="#5daefb" BorderThickness="2" Background="{StaticResource PopupBackgroundBrush}" Margin="15,15,15,15" 
                         DataContext="{Binding PopupViewModel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="1"
                         Visibility="{Binding IsOpen, Converter={StaticResource ResourceKey=BooleanToVisibilityConverter}}">
 
@@ -117,7 +111,7 @@
                     <DropShadowEffect ShadowDepth="15" BlurRadius="10" Color="#000000" Opacity="0.2"/>
                 </Border.Effect>
 
-                <DockPanel Background="#F0F0F0">
+                <DockPanel>
                     <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Left">
                         <Image Source="{Binding Icon}" Width="32" Height="32" Margin="5,5,0,0" />
                         <TextBlock Text="{Binding Caption}" FontSize="18" Height="25" Margin="20,0,0,0" VerticalAlignment="Center" Style="{StaticResource HeaderText}"/>
@@ -125,13 +119,13 @@
 
                     <!-- Buttons -->
                     <StackPanel DockPanel.Dock="Bottom" Margin="10,5,10,5" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
-                        <Button Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}" IsDefault="{Binding IsLeftButtonDefault}" Content="{Binding LeftCommandText}" Style="{StaticResource DialogButtonStyle}"/>
-                        <Button Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}" IsDefault="{Binding IsMiddleButtonDefault}" Content="{Binding MiddleCommandText}" Style="{StaticResource DialogButtonStyle}"/>
-                        <Button Command="{Binding RightCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}" Content="{Binding RightCommandText}" Style="{StaticResource DialogButtonStyle}"/>
+                        <Button Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}" IsDefault="{Binding IsLeftButtonDefault}" Content="{Binding LeftCommandText}"/>
+                        <Button Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}" IsDefault="{Binding IsMiddleButtonDefault}" Content="{Binding MiddleCommandText}"/>
+                        <Button Command="{Binding RightCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}" Content="{Binding RightCommandText}"/>
                     </StackPanel>
 
                     <!-- Text -->
-                    <TextBlock DockPanel.Dock="Top" Foreground="Black" Style="{StaticResource GenericText}" TextWrapping="WrapWithOverflow"
+                    <TextBlock DockPanel.Dock="Top" Foreground="{StaticResource PopupForegroundBrush}" Style="{StaticResource GenericText}" TextWrapping="WrapWithOverflow"
                                Text="{Binding Text}" Margin="10,10,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
                     <!-- Files in use -->

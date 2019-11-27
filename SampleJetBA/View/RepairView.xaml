@@ -17,13 +17,13 @@
         <!-- Buttons strip -->
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" >
             <!-- Repair -->
-            <Button HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}"
+            <Button HorizontalAlignment="Right"
                 DataContext="{Binding ApplyViewModel}" 
                 Command="{Binding RepairCommand}"
                 Content="{x:Static props:Resources.Repair}" />
             
             <!-- Uninstall -->
-            <Button IsDefault="True" HorizontalAlignment="Right" Style="{StaticResource DialogButtonStyle}" 
+            <Button IsDefault="True" HorizontalAlignment="Right" 
                 DataContext="{Binding ApplyViewModel}" 
                 Command="{Binding UninstallCommand}"
                 Content="{x:Static props:Resources.Uninstall}" />

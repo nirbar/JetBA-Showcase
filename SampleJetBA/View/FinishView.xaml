@@ -21,14 +21,14 @@
                     Command="{Binding FinishViewModel.RebootCommand}"
 				    Visibility="{Binding FinishViewModel.RebootEnabled, Converter={StaticResource BooleanToVisibilityConverter}}" 
                     Content="{x:Static props:Resources.Restart}" 
-                    Style="{StaticResource DialogButtonStyle}"
+                   
                     />
 
             <!-- Close -->
             <Button IsDefault="True" HorizontalAlignment="Right" 
                     Command="{Binding NavigationViewModel.StopCommand}"
                     Content="{x:Static props:Resources.Close}" 
-                    Style="{StaticResource DialogButtonStyle}"
+                   
                     />
         </StackPanel>
 
