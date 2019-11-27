@@ -41,7 +41,7 @@
     </BootstrapperApplicationRef>
     <jet:JetBaSettings LicenseFile="$(sys.SOURCEFILEDIR)JetBA.lic"/>
 
-    <Variable Name="InstallFolder" Value="[ProgramFilesFolder][WixBundleName]\" Type="string" bal:Overridable="yes"/>
+    <Variable Name="INSTALL_FOLDER" Value="[ProgramFilesFolder][WixBundleName]\" Type="string" bal:Overridable="yes"/>
     <Variable Name="SQL_SERVER" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SQL_DATABASE" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SQL_USER" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
@@ -65,7 +65,7 @@
     <Chain DisableSystemRestore="yes" ParallelCache="yes">
       <PackageGroupRef Id="NetFx45Web"/>
       <MsiPackage SourceFile="$(var.Setup.TargetPath)">
-        <MsiProperty Name="INSTALLFOLDER" Value="[InstallFolder]"/>
+        <MsiProperty Name="INSTALLFOLDER" Value="[INSTALL_FOLDER]"/>
       </MsiPackage>
     </Chain>
   </Bundle>

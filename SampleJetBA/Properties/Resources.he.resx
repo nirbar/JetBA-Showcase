@@ -194,7 +194,7 @@
 /language ID - מציג ממשק משתמש בשפה המבוקשת. לדוגמא,  "en" לאנגלית או "he" לעברית
 /? - מציג את מסך עזרה זה
 
-InstallFolder="C:\Program Files\Sample" - מתקין לספריה המבוקשת</value>
+INSTALL_FOLDER="C:\Program Files\Sample" - מתקין לספריה המבוקשת</value>
   </data>
   <data name="DbServer" xml:space="preserve">
     <value>שרת נתונים</value>

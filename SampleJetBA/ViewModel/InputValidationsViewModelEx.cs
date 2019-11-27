@@ -50,7 +50,7 @@ namespace SampleJetBA.ViewModel
         private void ValidateTargetFolder()
         {
             VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
-            string installFolder = vars["InstallFolder"];
+            string installFolder = vars["INSTALL_FOLDER"];
 
             if (string.IsNullOrWhiteSpace(installFolder) || (installFolder.IndexOfAny(Path.GetInvalidPathChars()) >= 0))
             {

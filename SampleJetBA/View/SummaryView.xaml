@@ -28,7 +28,7 @@
 
         <UniformGrid DockPanel.Dock="Top" Columns="2" Style="{StaticResource InputGridStyle}">
             <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.InstallFolder}" />
-            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.InstallFolder.String}" />
+            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String}" />
 
             <!-- DB server- only if page was selected -->
             <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />

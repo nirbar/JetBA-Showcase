@@ -45,7 +45,7 @@
             </Grid.RowDefinitions>
             
             <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.InstallFolder}" Style="{StaticResource GenericText}"/>
-            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.InstallFolder.String, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String, UpdateSourceTrigger=PropertyChanged}"/>
             <Button Grid.Row="0" Grid.Column="2" Click="browseInstallFolder_Click" Content="{x:Static props:Resources.Browse}"/>
         </Grid>
 

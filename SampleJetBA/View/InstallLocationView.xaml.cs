@@ -27,14 +27,14 @@ namespace SampleJetBA.View
         {
             WinForms.FolderBrowserDialog fbd = new WinForms.FolderBrowserDialog();
             fbd.ShowNewFolderButton = true;
-            if (!VariablesViewModel["InstallFolder"].IsNullOrEmpty)
+            if (!VariablesViewModel["INSTALL_FOLDER"].IsNullOrEmpty)
             {
-                fbd.SelectedPath = VariablesViewModel["InstallFolder"].String;
+                fbd.SelectedPath = VariablesViewModel["INSTALL_FOLDER"].String;
             }
 
             if (fbd.ShowDialog() == WinForms.DialogResult.OK)
             {
-                VariablesViewModel["InstallFolder"].String = fbd.SelectedPath;
+                VariablesViewModel["INSTALL_FOLDER"].String = fbd.SelectedPath;
             }
         }
     }
