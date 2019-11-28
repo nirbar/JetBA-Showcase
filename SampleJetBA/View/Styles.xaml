@@ -5,7 +5,6 @@
                     xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
                     xmlns:xceed="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
                     xmlns:cnv="clr-namespace:SampleJetBA.Converters"
-                    xmlns:props="clr-namespace:SampleJetBA.Properties"
                     >
 
     <!-- Converters -->
@@ -20,6 +19,7 @@
     <StreamGeometry x:Key="NarrowXSign">M1.4139998,0 C1.4139998,-1.1920929E-07 2.806,1.3919997 4.5459998,3.1319997 L5.6569998,4.2429998 6.7679999,3.1319997 C8.5079997,1.3919997 9.8999999,-1.1920929E-07 9.8999999,0 9.8999999,-1.1920929E-07 11.313999,1.4139998 11.313999,1.4139998 11.313999,1.4139998 9.9220002,2.806 8.1819994,4.5459998 L7.0709994,5.6569998 8.1819994,6.7679999 C9.9220002,8.5079997 11.313999,9.8999999 11.313999,9.8999999 11.313999,9.8999999 9.8999999,11.313999 9.8999999,11.313999 9.8999999,11.313999 8.5079997,9.9220002 6.7679999,8.1819994 L5.6569998,7.0709994 4.5459998,8.1819994 C2.806,9.9220002 1.4139998,11.313999 1.4139998,11.313999 1.4139998,11.313999 -1.1920929E-07,9.8999999 0,9.8999999 -1.1920929E-07,9.8999999 1.3919997,8.5079997 3.1319997,6.7679999 L4.2429998,5.6569998 3.1319997,4.5459998 C1.3919997,2.806 -1.1920929E-07,1.4139998 0,1.4139998 -1.1920929E-07,1.4139998 1.4139998,-1.1920929E-07 1.4139998,0 z</StreamGeometry>
     <StreamGeometry x:Key="CheckMark">F1M9.567,1.494C9.924,1.473 10.29,1.588 10.579,1.844 11.158,2.358 11.211,3.242 10.698,3.821 10.698,3.821 7.178,9.561 7.178,9.561L7.157,9.571 7.121,9.644 6.737,9.775 6.215,10.029C5.857,10.05,5.491,9.936,5.202,9.679L5.109,9.487 4.634,9.066C3.715,8.251 1.877,6.62 1.877,6.62 1.366,6.04 1.422,5.155 2.002,4.644 2.582,4.134 3.467,4.19 3.978,4.77 3.978,4.77 4.795,5.495 5.613,6.219L5.859,6.438 6.844,4.832C7.723,3.398 8.603,1.963 8.603,1.963 8.859,1.674 9.209,1.516 9.567,1.494z</StreamGeometry>
 
+    <SolidColorBrush x:Key="WindowBorderBrush" Color="Gray" />
     <SolidColorBrush x:Key="TitleBarBackgroundBrush" Color="#FF66CBEA" />
     <SolidColorBrush x:Key="TitleBarForegroundBrush" Color="White" />
 
@@ -32,6 +32,7 @@
     <SolidColorBrush x:Key="SideBarBackgroundBrush" Color="#F0F0F0" />
     <SolidColorBrush x:Key="SideBarForegroundBrush" Color="Black" />
 
+    <SolidColorBrush x:Key="PopupBorderBrush" Color="#5DAEFB" />
     <SolidColorBrush x:Key="PopupBackgroundBrush" Color="#F0F0F0" />
     <SolidColorBrush x:Key="PopupForegroundBrush" Color="Black" />
 
@@ -109,7 +110,7 @@
 
     <!-- Styles -->
     <Style TargetType="Button">
-        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontSize" Value="14" />
         <Setter Property="Foreground" Value="{StaticResource ButtonForegroundBrush}"/>
         <Setter Property="Background" Value="{StaticResource ButtonBackgroundBrush}"/>
         <Setter Property="BorderBrush" Value="Black" />
@@ -194,7 +195,7 @@
     <Style x:Key="TextInputBaseStyle">
         <Setter Property="Control.FlowDirection" Value="LeftToRight"/>
         <Setter Property="Control.Padding" Value="10,0,0,0"/>
-        <Setter Property="Control.Height" Value="36"/>
+        <Setter Property="Control.Height" Value="32"/>
         <Setter Property="Control.FontSize" Value="14"/>
         <Setter Property="Control.Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="Control.VerticalAlignment" Value="Center" />

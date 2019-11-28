@@ -12,10 +12,10 @@ namespace SampleJetBA.Converters
         {
             if ((value == null) || !Enum.TryParse<Pages>(value.ToString(), out Pages page))
             {
-                return null;
+                return value?.ToString();
             }
 
-            return Properties.Resources.ResourceManager.GetString($"PageTitle_{page.ToString()}", Properties.Resources.Culture);
+            return Properties.Resources.ResourceManager.GetString($"PageTitle_{page.ToString()}", culture);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

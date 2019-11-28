@@ -6,7 +6,7 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None" 
         AllowsTransparency="True"
-        Background="{x:Null}" BorderBrush="Gray" BorderThickness="1"
+        Background="{x:Null}" BorderBrush="{DynamicResource WindowBorderBrush}" BorderThickness="1"
         Width="800" Height="500">
 
     <Window.Resources>
@@ -69,11 +69,11 @@
             </TextBlock>
         </DockPanel>
 
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="0" Padding="5,0,0,5" Background="{StaticResource SideBarBackgroundBrush}">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Row="2" Grid.Column="0" Padding="10,0,0,5" Background="{StaticResource SideBarBackgroundBrush}">
             <ItemsControl ItemsSource="{Binding NavigationViewModel.ExpectedPages}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}}" Foreground="{StaticResource SideBarForegroundBrush}" Margin="0,5,0,5">
+                        <TextBlock Text="{Binding Converter={StaticResource PageTitleConverter}, ConverterCulture={x:Static props:Resources.Culture}}" Foreground="{StaticResource SideBarForegroundBrush}" Margin="0,5,0,5">
                             <TextBlock.Style>
                                 <Style TargetType="TextBlock" BasedOn="{StaticResource GenericText}">
                                     <Setter Property="FontWeight" Value="Normal"/>
@@ -103,7 +103,7 @@
             </Grid.RowDefinitions>
 
             <!-- Pop-up messages -->
-            <Border Grid.Row="0" Panel.ZIndex="2" BorderBrush="#5daefb" BorderThickness="2" Background="{StaticResource PopupBackgroundBrush}" Margin="15,15,15,15" 
+            <Border Grid.Row="0" Panel.ZIndex="2" BorderBrush="{StaticResource PopupBorderBrush}" BorderThickness="2" Background="{StaticResource PopupBackgroundBrush}" Margin="15,15,15,15" 
                         DataContext="{Binding PopupViewModel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="1"
                         Visibility="{Binding IsOpen, Converter={StaticResource ResourceKey=BooleanToVisibilityConverter}}">
 
