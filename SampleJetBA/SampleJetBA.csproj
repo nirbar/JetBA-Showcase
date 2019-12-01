@@ -141,12 +141,14 @@
       <HintPath>..\packages\Ninject.Extensions.Factory.3.2.1.0\lib\net40\Ninject.Extensions.Factory.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PanelSW.Installer.JetBA">
-      <HintPath>$(MSBuildThisFileDirectory)..\JetBA-Binaries\PanelSW.Installer.JetBA.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="PanelSW.Installer.JetBA, Version=4.0.2.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\JetBA.4.0.2\lib\net40\PanelSW.Installer.JetBA.dll</HintPath>
     </Reference>
-    <Reference Include="PanelSW.Installer.JetBA.JetPack">
-      <HintPath>$(MSBuildThisFileDirectory)..\JetBA-Binaries\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
+    <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=4.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBA.JetPack.4.0.2\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBundleVariables.g">
+      <HintPath>$(IntermediateOutputPath)JetBundleVariables.g.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PanelSwWpfControls, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL">
@@ -201,7 +203,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <Target Name="BeforeBuild" DependsOnTargets="GenerateVersion">
+  <Target Name="BeforeBuild" DependsOnTargets="GenerateVersion;GenerateDefaultJetBundleVariables;GenerateJetBundleVariables">
   </Target>
   <Import Project="..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -211,6 +213,8 @@
     <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.1\build\TidyBuild.props'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.1\build\TidyBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\JetBA.JetPack.4.0.2\build\JetBA.JetPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetBA.JetPack.4.0.2\build\JetBA.JetPack.targets'))" />
   </Target>
   <Import Project="..\packages\TidyBuild.1.1.1\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.targets')" />
+  <Import Project="..\packages\JetBA.JetPack.4.0.2\build\JetBA.JetPack.targets" Condition="Exists('..\packages\JetBA.JetPack.4.0.2\build\JetBA.JetPack.targets')" />
 </Project>

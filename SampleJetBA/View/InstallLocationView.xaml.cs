@@ -7,7 +7,7 @@ namespace SampleJetBA.View
 {
     public partial class InstallLocationView : UserControl
     {
-        public InstallLocationView(VariablesViewModel vars, NavigationViewModel nav, ApplyViewModel apply, PopupViewModel popup)
+        public InstallLocationView(JetBundleVariables.BundleVariablesViewModel vars, NavigationViewModel nav, ApplyViewModel apply, PopupViewModel popup)
         {
             NavigationViewModel = nav;
             VariablesViewModel = vars;
@@ -18,7 +18,7 @@ namespace SampleJetBA.View
             InitializeComponent();
         }
 
-        public VariablesViewModel VariablesViewModel { get; private set; }
+        public JetBundleVariables.BundleVariablesViewModel VariablesViewModel { get; private set; }
         public NavigationViewModel NavigationViewModel { get; private set; }
         public ApplyViewModel ApplyViewModel { get; private set; }
         public PopupViewModel PopupViewModel { get; private set; }
@@ -27,14 +27,14 @@ namespace SampleJetBA.View
         {
             WinForms.FolderBrowserDialog fbd = new WinForms.FolderBrowserDialog();
             fbd.ShowNewFolderButton = true;
-            if (!VariablesViewModel["INSTALL_FOLDER"].IsNullOrEmpty)
+            if (!VariablesViewModel.INSTALL_FOLDER.IsNullOrEmpty)
             {
-                fbd.SelectedPath = VariablesViewModel["INSTALL_FOLDER"].String;
+                fbd.SelectedPath = VariablesViewModel.INSTALL_FOLDER.String;
             }
 
             if (fbd.ShowDialog() == WinForms.DialogResult.OK)
             {
-                VariablesViewModel["INSTALL_FOLDER"].String = fbd.SelectedPath;
+                VariablesViewModel.INSTALL_FOLDER.String = fbd.SelectedPath;
             }
         }
     }

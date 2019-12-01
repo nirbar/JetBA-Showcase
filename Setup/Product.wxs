@@ -5,7 +5,7 @@
   <?if $(var.UPGRADE_CODE) = 11111111-1111-1111-1111-111111111111?>
   <?warning Replace UPGRADE_CODE with a newly generated GUID value.?>
   <?endif?>
-  <Product Id="*" Name="$(var.JetProductName)" Language="1033" Version="!(bind.fileVersion.PanelSW.Installer.JetBA.dll)" Manufacturer="$(var.JetManufacturer)" UpgradeCode="$(var.UPGRADE_CODE)">
+  <Product Id="*" Name="$(var.JetProductName)" Language="1033" Version="$(var.FullVersion)" Manufacturer="$(var.JetManufacturer)" UpgradeCode="$(var.UPGRADE_CODE)">
     <?undef UPGRADE_CODE?>
 
     <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
@@ -28,5 +28,5 @@
       </Directory>
   </Product>
 
-  <?pragma heat.dir "$(sys.SOURCEFILEDIR)..\JetBA-Binaries" -sfrag -scom -sreg -suid -svb6 -cg FILES -dr INSTALLFOLDER -ag?>
+  <?pragma heat.dir "$(sys.SOURCEFILEDIR)..\SampleJetBA" -sfrag -scom -sreg -suid -svb6 -cg FILES -dr INSTALLFOLDER -ag?>
 </Wix>

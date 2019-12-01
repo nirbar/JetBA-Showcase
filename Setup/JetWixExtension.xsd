@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:html="http://www.w3.org/1999/xhtml"
+            xmlns:wix="http://schemas.microsoft.com/wix/2006/wi"
+             xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:xse="http://schemas.microsoft.com/wix/2005/XmlSchemaExtension"
+      targetNamespace="http://schemas.panel-sw.co.il/wix/JetWixExtension"
+                xmlns="http://schemas.panel-sw.co.il/wix/JetWixExtension">
+  <xs:import namespace="http://schemas.microsoft.com/wix/2006/wi" />
+
+  <xs:element name="JetBaSettings">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Bundle" />
+      </xs:appinfo>
+    </xs:annotation>
+
+    <xs:complexType>
+      <xs:attribute name="LicenseFile" use="required" type="xs:string">
+        <xs:annotation>
+          <xs:documentation><![CDATA[Path to Jet license.]]></xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="EnumerateVariables" use="optional" type="wix:YesNoType" default="no">
+        <xs:annotation>
+          <xs:documentation><![CDATA['yes' to add a collection of all variables in the project to BootstrapperApplicationData. Only possible if compilation processes all project's source files at once, such as when building using Visual Studio projects.]]></xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attribute name="Encrypt" type="wix:YesNoType">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Variable" />
+      </xs:appinfo>
+      <xs:documentation>
+        <![CDATA[Yes to encrypt and persist a copy of the variable. Make sure to also set Hidden to 'yes' and Persisted to 'no'.
+      Variables, including hidden ones, are persisted plain text.
+      Setting Encrypt to 'yes' ensures that the variable is securely encrypted when persisted.
+      The value of the variable is encrypted on PlanBegin.
+      The persisted value is loaded, decrypted, and set on DetectBegin.
+      ]]></xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+
+  <xs:attribute name="RebootBoundary" type="wix:YesNoType">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="ExePackage" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="MsiPackage" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="MspPackage" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="MsuPackage" />
+      </xs:appinfo>
+      <xs:documentation>
+        <![CDATA[Yes to force reboot after the package if any preceding package required reboot]]>
+      </xs:documentation>
+    </xs:annotation>
+  </xs:attribute>
+
+  <xs:element name="BundleSearch">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Bundle" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Fragment" />
+      </xs:appinfo>
+    </xs:annotation>
+
+    <xs:complexType>
+      <xs:attribute name="UpgradeCode" type="xs:string" use="required">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[Bundle UpgradeCode]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="VersionVariable" type="xs:string" use="required">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[Name of a variable to receive the version of the bundle. If a matching bundle is detected its version will be written to the variable. Otherwise, the variable's value will be 0.0.0.0]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="NamePattern" type="xs:string" use="optional">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[Optional regex pattern to filter bundles sharing the same UpgradeCode]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="JetLicense">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Product" />
+      </xs:appinfo>
+    </xs:annotation>
+
+    <xs:complexType>
+      <xs:attribute name="LicenseFile" use="required" type="xs:string">
+        <xs:annotation>
+          <xs:documentation><![CDATA[Path to Jet license.]]></xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

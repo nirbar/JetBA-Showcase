@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\JetWixExtension.4.0.2\build\JetWixExtension.props" Condition="Exists('..\packages\JetWixExtension.4.0.2\build\JetWixExtension.props')" />
   <Import Project="..\packages\TidyBuild.1.1.1\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -31,10 +32,6 @@
       <HintPath>$(WixExtDir)\WixBalExtension.dll</HintPath>
       <Name>WixBalExtension</Name>
     </WixExtension>
-    <WixExtension Include="JetWixExtension">
-      <HintPath>$(MSBuildThisFileDirectory)..\JetBA-Binaries\JetWixExtension.dll</HintPath>
-      <Name>JetWixExtension</Name>
-    </WixExtension>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SampleJetBA\SampleJetBA.csproj">
@@ -56,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="JetBA.lic" />
+    <Content Include="JetWixExtension.xsd" />
     <Content Include="packages.config" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
@@ -67,6 +65,7 @@
     <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.1\build\TidyBuild.props'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.1\build\TidyBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\JetWixExtension.4.0.2\build\JetWixExtension.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetWixExtension.4.0.2\build\JetWixExtension.props'))" />
   </Target>
   <Import Project="..\packages\TidyBuild.1.1.1\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.targets')" />
   <!--

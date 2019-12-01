@@ -49,12 +49,10 @@ namespace SampleJetBA.ViewModel
 
         private void ValidateTargetFolder()
         {
-            VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
-            string installFolder = vars["INSTALL_FOLDER"];
-
-            if (string.IsNullOrWhiteSpace(installFolder) || (installFolder.IndexOfAny(Path.GetInvalidPathChars()) >= 0))
+            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            if (vars.INSTALL_FOLDER.IsNullOrEmpty || (vars.INSTALL_FOLDER.String.IndexOfAny(Path.GetInvalidPathChars()) >= 0))
             {
-                AddResult(new Exception(string.Format(Properties.Resources._0IsNotALegalFolderName, installFolder)));
+                AddResult(new Exception(string.Format(Properties.Resources._0IsNotALegalFolderName, vars.INSTALL_FOLDER.String)));
             }
         }
 
@@ -62,20 +60,20 @@ namespace SampleJetBA.ViewModel
         {
             try
             {
-                VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
+                JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
                 SqlConnectionStringBuilder connStr = new SqlConnectionStringBuilder()
                 {
-                    DataSource = vars["SQL_SERVER"],
-                    InitialCatalog = vars["SQL_DATABASE"],
-                    IntegratedSecurity = !vars["SQL_AUTH"]
+                    DataSource = vars.SQL_SERVER.String,
+                    InitialCatalog = vars.SQL_DATABASE.String,
+                    IntegratedSecurity = !vars.SQL_AUTH.Boolean
                 };
 
                 SqlCredential sqlCredential = null;
                 if (!connStr.IntegratedSecurity)
                 {
-                    SecureString psw = vars["SQL_PASSWORD"];
+                    SecureString psw = vars.SQL_PASSWORD.SecureString;
                     psw.MakeReadOnly();
-                    sqlCredential = new SqlCredential(vars["SQL_USER"], psw);
+                    sqlCredential = new SqlCredential(vars.SQL_USER.String, psw);
                 }
 
                 BA.Engine.Log(LogLevel.Verbose, $"Testing SQL connection string '{connStr.ToString()}'");
@@ -93,15 +91,15 @@ namespace SampleJetBA.ViewModel
 
         private void ValidateServiceAccount()
         {
-            VariablesViewModel vars = BA.Kernel.Get<VariablesViewModel>();
-            if (vars["SERVICE_USER"].IsNullOrEmpty)
+            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            if (vars.SERVICE_USER.IsNullOrEmpty)
             {
                 // Default - .\LocalSystem account
-                vars["SERVICE_PASSWORD"].SecureString = new SecureString();
+                vars.SERVICE_PASSWORD.SecureString = new SecureString();
                 return;
             }
 
-            ValidateCredentials(vars["SERVICE_USER"], vars["SERVICE_PASSWORD"]);
+            ValidateCredentials(vars.SERVICE_USER.String, vars.SERVICE_PASSWORD.SecureString);
         }
 
         public static void ValidateCredentials(string username, SecureString password)
