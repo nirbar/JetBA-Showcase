@@ -281,4 +281,7 @@ INSTALL_FOLDER="C:\Program Files\Sample" - מתקין לספריה המבוקש�
   <data name="PleasWaitWhileExecuting" xml:space="preserve">
     <value>אנא המתן לסיום הפעולה</value>
   </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>אנא הכנס שם משתמש לחיבור SQL</value>
+  </data>
 </root>

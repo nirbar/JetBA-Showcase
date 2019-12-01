@@ -41,9 +41,9 @@
 
             <!-- DB Server -->
             <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.DbServer}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
-            <ComboBox Grid.Row="0" Grid.Column="1" IsEditable="True" SelectedValuePath="ServerInstance" DisplayMemberPath="ServerInstance" HorizontalAlignment="Stretch"
+            <ComboBox Grid.Row="0" Grid.Column="1" IsEditable="True" SelectedValuePath="ServerInstance" DisplayMemberPath="ServerInstance" TextSearch.TextPath="ServerInstance"
                       ItemsSource="{Binding SqlViewModel.SqlServers}"
-                      SelectedValue="{Binding VariablesViewModel.SQL_SERVER.String}"/>
+                      Text="{Binding VariablesViewModel.SQL_SERVER.String, Mode=TwoWay}"/>
             
             <!-- Enumerate servers -->
             <panelsw:WaitableButton Grid.Row="0" Grid.Column="2" Content="{x:Static props:Resources.Load}"

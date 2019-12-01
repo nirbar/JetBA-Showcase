@@ -282,4 +282,7 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="PleasWaitWhileExecuting" xml:space="preserve">
     <value>Please wait while we're preparing the system</value>
   </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Please provide user name for SQL authentication</value>
+  </data>
 </root>

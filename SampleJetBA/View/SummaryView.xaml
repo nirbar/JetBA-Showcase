@@ -26,18 +26,18 @@
 
         <UniformGrid DockPanel.Dock="Top" Columns="2" Style="{StaticResource InputGridStyle}">
             <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.InstallFolder}" />
-            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String}" />
+            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String, Mode=OneWay}" />
 
             <!-- DB server- only if page was selected -->
             <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
-            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.SQL_SERVER.String}" Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.SQL_SERVER.String, Mode=OneWay}" Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
             <!-- Service- only if page was selected -->
             <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.ServiceAccount}" Visibility="{Binding NavigationViewModel.ShowServicePage, Converter={StaticResource BooleanToVisibilityConverter}}" />
             <TextBlock FlowDirection="LeftToRight" Visibility="{Binding NavigationViewModel.ShowServicePage, Converter={StaticResource BooleanToVisibilityConverter}}">
                 <TextBlock.Style>
                     <Style BasedOn="{StaticResource GenericText}" TargetType="TextBlock">
-                        <Setter Property="Text" Value="{Binding VariablesViewModel.SERVICE_USER.String}"/>
+                        <Setter Property="Text" Value="{Binding VariablesViewModel.SERVICE_USER.String, Mode=OneWay}"/>
                         <Style.Triggers>
                             <DataTrigger Binding="{Binding VariablesViewModel.SERVICE_USER.IsNullOrEmpty}" Value="True">
                                 <Setter Property="Text" Value=".\LocalSystem"/>

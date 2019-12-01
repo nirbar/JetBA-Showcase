@@ -7,6 +7,7 @@ using System.DirectoryServices.AccountManagement;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Security;
+using System.Security.Principal;
 
 namespace SampleJetBA.ViewModel
 {
@@ -58,6 +59,7 @@ namespace SampleJetBA.ViewModel
 
         private void ValidateDatabase()
         {
+            WindowsImpersonationContext impersonate = null;
             try
             {
                 JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
@@ -69,8 +71,24 @@ namespace SampleJetBA.ViewModel
                 };
 
                 SqlCredential sqlCredential = null;
-                if (!connStr.IntegratedSecurity)
+                if (connStr.IntegratedSecurity)
                 {
+                    vars.SQL_USER.String = "";
+                    vars.SQL_PASSWORD.SecureString = new SecureString();
+
+                    if (!vars.SERVICE_USER.IsNullOrEmpty)
+                    {
+                        BA.Engine.Log(LogLevel.Standard, $"Impersonating '{vars.SERVICE_USER.String}' to check Windows authentication to SQL server");
+                        impersonate = Util.WindowsIndetityEx.Impersonate(vars.SERVICE_USER.String, vars.SERVICE_PASSWORD.SecureString);
+                    }
+                }
+                else // SQL Auth
+                {
+                    if (vars.SQL_USER.IsNullOrEmpty)
+                    {
+                        AddResult(new Exception(Properties.Resources.PleaseProvideSqlUserName));
+                    }
+
                     SecureString psw = vars.SQL_PASSWORD.SecureString;
                     psw.MakeReadOnly();
                     sqlCredential = new SqlCredential(vars.SQL_USER.String, psw);
@@ -86,6 +104,10 @@ namespace SampleJetBA.ViewModel
             {
                 BA.Engine.Log(LogLevel.Error, $"Failed connecting to DB server: {ex.Message}");
                 AddResult(new Exception(string.Format(Properties.Resources.FailedConnectingToDbServer0, ex.Message)));
+            }
+            finally
+            {
+                impersonate?.Dispose();
             }
         }
 

@@ -430,6 +430,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please provide user name for SQL authentication.
+        /// </summary>
+        public static string PleaseProvideSqlUserName {
+            get {
+                return ResourceManager.GetString("PleaseProvideSqlUserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please wait while we&apos;re preparing the system.
         /// </summary>
         public static string PleasWaitWhileExecuting {
