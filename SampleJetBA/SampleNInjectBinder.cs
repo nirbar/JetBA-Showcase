@@ -16,6 +16,7 @@ namespace SampleJetBA
             base.Load();
 
             Rebind<BootstrapperApplication, JetBootstrapperApplication, SampleBA>().ToConstant(ba_ as SampleBA);
+            Rebind<PanelSW.Installer.JetBA.Localization.Resources, Localization.Localization>().To<Localization.Localization>().InSingletonScope();
 
             // ViewModel
             Rebind<PanelSW.Installer.JetBA.ViewModel.NavigationViewModel, ViewModel.NavigationViewModelEx>().To<ViewModel.NavigationViewModelEx>().InSingletonScope();

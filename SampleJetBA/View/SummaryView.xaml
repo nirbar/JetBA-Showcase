@@ -6,7 +6,7 @@
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="500">
+             d:DesignHeight="342" d:DesignWidth="546">
 
     <UserControl.Resources>
         <ResourceDictionary Source="Styles.xaml"/>

@@ -26,6 +26,7 @@
   <ItemGroup>
     <Compile Include="Converters\EqualityConverter.cs" />
     <Compile Include="Converters\PageTitleConverter.cs" />
+    <Compile Include="Localization\Localization.cs" />
     <Compile Include="Properties\Resources.he.Designer.cs">
       <DependentUpon>Resources.he.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -154,9 +155,8 @@
       <HintPath>..\packages\JetBA.JetPack.4.3.0\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PanelSwWpfControls, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PanelSwWpfControls.1.1.4\lib\net40\PanelSwWpfControls.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="PanelSwWpfControls, Version=1.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PanelSwWpfControls.1.1.5\lib\net40\PanelSwWpfControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -195,6 +195,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\spaceship-64x64.png" />
+    <Resource Include="Resources\baseline_error_black_36dp.png" />
+    <Resource Include="Resources\baseline_notification_important_black_36dp.png" />
+    <Resource Include="Resources\baseline_warning_black_36dp.png" />
+    <Resource Include="Resources\baseline_check_box_black_18dp.png" />
+    <Resource Include="Resources\baseline_check_box_outline_blank_black_18dp.png" />
+    <Resource Include="Resources\baseline_indeterminate_check_box_black_18dp.png" />
+    <Resource Include="Resources\baseline_close_white_24dp.png" />
+    <Resource Include="Resources\baseline_minimize_white_24dp.png" />
+    <Resource Include="Resources\baseline_help_black_36dp.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.he.resx">

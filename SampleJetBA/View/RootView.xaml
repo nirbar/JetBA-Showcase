@@ -44,8 +44,8 @@
         </Grid.ColumnDefinitions>
 
         <DockPanel Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{StaticResource TitleBarBackgroundBrush}" MouseLeftButtonDown="Background_MouseLeftButtonDown">
-            <Button DockPanel.Dock="Right" Style="{StaticResource CloseButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="8" Width="8" IsCancel="True" Command="{Binding NavigationViewModel.StopCommand}" Margin="8,0,8,0"/>
-            <Button DockPanel.Dock="Right" Style="{StaticResource MinimizeButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="8" Width="8" Click="Minimize_Click"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource CloseButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24" IsCancel="True" Command="{Binding NavigationViewModel.StopCommand}" Margin="8,0,8,0"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource MinimizeButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24" Click="Minimize_Click"/>
             <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="6,0,0,0" FontSize="12" Foreground="{StaticResource TitleBarForegroundBrush}">
                 <TextBlock.Text>
                     <MultiBinding StringFormat="{}{0} v{1:4}">
@@ -113,7 +113,7 @@
 
                 <DockPanel>
                     <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Left">
-                        <Image Source="{Binding Icon}" Width="32" Height="32" Margin="5,5,0,0" />
+                        <Image Source="{Binding Icon}" Width="36" Height="36" Margin="5,5,0,0" />
                         <TextBlock Text="{Binding Caption}" FontSize="18" Height="25" Margin="20,0,0,0" VerticalAlignment="Center" Style="{StaticResource HeaderText}"/>
                     </StackPanel>
 

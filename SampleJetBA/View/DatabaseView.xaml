@@ -7,7 +7,7 @@
              xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
              xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
              mc:Ignorable="d"
-             d:DesignHeight="298" d:DesignWidth="548"
+             d:DesignHeight="342" d:DesignWidth="546"
              >
 
     <UserControl.Resources>

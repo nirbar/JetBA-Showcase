@@ -51,7 +51,7 @@ namespace SampleJetBA.ViewModel
         private void ValidateTargetFolder()
         {
             JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
-            if (vars.INSTALL_FOLDER.IsNullOrEmpty || (vars.INSTALL_FOLDER.String.IndexOfAny(Path.GetInvalidPathChars()) >= 0))
+            if (vars.INSTALL_FOLDER.IsNullOrEmpty || (vars.INSTALL_FOLDER.String.IndexOfAny(Path.GetInvalidPathChars()) >= 0) || !Path.IsPathRooted(vars.INSTALL_FOLDER.String))
             {
                 AddResult(new Exception(string.Format(Properties.Resources._0IsNotALegalFolderName, vars.INSTALL_FOLDER.String)));
             }
