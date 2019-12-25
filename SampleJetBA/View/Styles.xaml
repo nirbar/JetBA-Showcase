@@ -15,10 +15,8 @@
     <cnv:PageTitleConverter x:Key="PageTitleConverter" />
     <cnv:EqualityConverter x:Key="EqualityConverter" />
 
-    <!-- Geometry -->
-    <StreamGeometry x:Key="NarrowXSign">M1.4139998,0 C1.4139998,-1.1920929E-07 2.806,1.3919997 4.5459998,3.1319997 L5.6569998,4.2429998 6.7679999,3.1319997 C8.5079997,1.3919997 9.8999999,-1.1920929E-07 9.8999999,0 9.8999999,-1.1920929E-07 11.313999,1.4139998 11.313999,1.4139998 11.313999,1.4139998 9.9220002,2.806 8.1819994,4.5459998 L7.0709994,5.6569998 8.1819994,6.7679999 C9.9220002,8.5079997 11.313999,9.8999999 11.313999,9.8999999 11.313999,9.8999999 9.8999999,11.313999 9.8999999,11.313999 9.8999999,11.313999 8.5079997,9.9220002 6.7679999,8.1819994 L5.6569998,7.0709994 4.5459998,8.1819994 C2.806,9.9220002 1.4139998,11.313999 1.4139998,11.313999 1.4139998,11.313999 -1.1920929E-07,9.8999999 0,9.8999999 -1.1920929E-07,9.8999999 1.3919997,8.5079997 3.1319997,6.7679999 L4.2429998,5.6569998 3.1319997,4.5459998 C1.3919997,2.806 -1.1920929E-07,1.4139998 0,1.4139998 -1.1920929E-07,1.4139998 1.4139998,-1.1920929E-07 1.4139998,0 z</StreamGeometry>
+    <!-- Brushes -->
     <StreamGeometry x:Key="CheckMark">F1M9.567,1.494C9.924,1.473 10.29,1.588 10.579,1.844 11.158,2.358 11.211,3.242 10.698,3.821 10.698,3.821 7.178,9.561 7.178,9.561L7.157,9.571 7.121,9.644 6.737,9.775 6.215,10.029C5.857,10.05,5.491,9.936,5.202,9.679L5.109,9.487 4.634,9.066C3.715,8.251 1.877,6.62 1.877,6.62 1.366,6.04 1.422,5.155 2.002,4.644 2.582,4.134 3.467,4.19 3.978,4.77 3.978,4.77 4.795,5.495 5.613,6.219L5.859,6.438 6.844,4.832C7.723,3.398 8.603,1.963 8.603,1.963 8.859,1.674 9.209,1.516 9.567,1.494z</StreamGeometry>
-
     <SolidColorBrush x:Key="WindowBorderBrush" Color="Gray" />
     <SolidColorBrush x:Key="TitleBarBackgroundBrush" Color="#FF66CBEA" />
     <SolidColorBrush x:Key="TitleBarForegroundBrush" Color="White" />
@@ -39,7 +37,7 @@
     <SolidColorBrush x:Key="BackgroundBrush" Color="White" />
     <SolidColorBrush x:Key="WindowFrameBackgrdBrush" Color="#A8A8A8" />
     <SolidColorBrush x:Key="ForegroundBrush" Color="Black" />
-    
+
     <SolidColorBrush x:Key="TextBoxBorderBrush" Color="#ABADB3" />
     <SolidColorBrush x:Key="TextBoxFocusedBorderBrush" Color="#569DE5" />
 
@@ -175,7 +173,7 @@
     </Style>
 
     <Style TargetType="CheckBox">
-        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontSize" Value="14" />
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}" />
         <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
@@ -286,6 +284,7 @@
     <Style TargetType="ProgressBar">
         <Setter Property="Foreground" Value="{StaticResource ProgressBarForegroundBrush}" />
         <Setter Property="Background" Value="{StaticResource ProgressBarBackgroundBrush}" />
+        <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="Width" Value="400" />
         <Setter Property="Height" Value="10"/>
     </Style>
@@ -300,11 +299,9 @@
 
     <!-- Window buttons -->
     <ControlTemplate x:Key="CloseButtonTemplate" TargetType="{x:Type Button}">
-        <Grid>
-            <Grid Background="Transparent">
-                <Path Data="{StaticResource NarrowXSign}" Fill="{TemplateBinding Foreground}" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform"/>
-                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Margin="{TemplateBinding Padding}"/>
-            </Grid>
+        <Grid Background="Transparent">
+            <Image Source="../Resources/baseline_close_white_24dp.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Margin="{TemplateBinding Padding}"/>
         </Grid>
     </ControlTemplate>
 
@@ -315,11 +312,9 @@
     </Style>
 
     <ControlTemplate x:Key="MinimizeButtonTemplate" TargetType="{x:Type Button}">
-        <Grid>
-            <Grid Background="Transparent">
-                <Rectangle Height="2" Fill="{TemplateBinding Foreground}" VerticalAlignment="Bottom"/>
-                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Margin="{TemplateBinding Padding}"/>
-            </Grid>
+        <Grid Background="Transparent">
+            <Image Source="../Resources/baseline_minimize_white_24dp.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Margin="{TemplateBinding Padding}"/>
         </Grid>
     </ControlTemplate>
 

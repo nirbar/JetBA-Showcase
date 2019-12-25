@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              mc:Ignorable="d" 
-             d:DesignHeight="292" d:DesignWidth="583"
+             d:DesignHeight="342" d:DesignWidth="546"
              >
 
     <UserControl.Resources>
