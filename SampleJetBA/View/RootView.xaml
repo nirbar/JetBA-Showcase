@@ -12,6 +12,9 @@
     <Window.Resources>
         <ResourceDictionary Source="Styles.xaml"/>
     </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="ApplicationCommandsOpen_Executed"/>
+    </Window.CommandBindings>
     <Window.Style>
         <Style TargetType="{x:Type Window}">
             <Setter Property="FlowDirection" Value="LeftToRight"/>

@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
+             xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
              mc:Ignorable="d"
              d:DesignHeight="342" d:DesignWidth="546"
              >
@@ -36,8 +37,8 @@
             </Grid.RowDefinitions>
             
             <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.InstallFolder}" Style="{StaticResource GenericText}"/>
-            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String, UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Grid.Row="0" Grid.Column="2" Click="browseInstallFolder_Click" Content="{x:Static props:Resources.Browse}"/>
+            <panelsw:TextBoxWithButton Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String, UpdateSourceTrigger=PropertyChanged}"
+                                       Command="ApplicationCommands.Open" CommandParameter="INSTALL_FOLDER|Directory"/>
         </Grid>
 
     </DockPanel>

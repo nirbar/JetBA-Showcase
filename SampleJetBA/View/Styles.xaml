@@ -215,6 +215,7 @@
     <Style TargetType="ComboBox" BasedOn="{StaticResource TextInputBaseStyle}"/>
     <Style TargetType="xceed:WatermarkTextBox" BasedOn="{StaticResource TextInputBaseStyle}"/>
     <Style TargetType="TextBox" BasedOn="{StaticResource TextInputBaseStyle}"/>
+    <Style TargetType="panelsw:TextBoxWithButton" BasedOn="{StaticResource TextInputBaseStyle}"/>
 
     <!-- EyePasswordBox -->
     <Style TargetType="TextBox" x:Key="{x:Static panelsw:ResourceKeys.EyePasswordBoxTextBoxStyleKey}" BasedOn="{StaticResource TextInputBaseStyle}"/>
