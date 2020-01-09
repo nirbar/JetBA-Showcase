@@ -38,6 +38,7 @@
     </Compile>
     <Compile Include="SampleNInjectBinder.cs" />
     <Compile Include="SampleBA.cs" />
+    <Compile Include="Util\BrowseFolderExtension.cs" />
     <Compile Include="Util\WindowsIndetityEx.cs" />
     <Compile Include="ViewModel\InputValidationsViewModelEx.cs" />
     <Compile Include="ViewModel\NavigationViewModelEx.cs" />
@@ -152,8 +153,8 @@
     <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=4.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\JetBA.JetPack.4.4.0\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
     </Reference>
-    <Reference Include="PanelSwWpfControls, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PanelSwWpfControls.1.2.0\lib\net40\PanelSwWpfControls.dll</HintPath>
+    <Reference Include="PanelSwWpfControls, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PanelSwWpfControls.1.2.1\lib\net40\PanelSwWpfControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

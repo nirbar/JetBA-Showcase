@@ -1,10 +1,8 @@
-﻿using Microsoft.Win32;
-using Ninject;
+﻿using PanelSW.Installer.JetBA.Util;
 using PanelSW.Installer.JetBA.ViewModel;
 using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Input;
-using System.Windows.Interop;
 
 namespace SampleJetBA.View
 {
@@ -48,31 +46,27 @@ namespace SampleJetBA.View
 
         private void ApplicationCommandsOpen_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            string prm = e.Parameter?.ToString();
-            if (string.IsNullOrEmpty(prm))
+            if (e.Parameter is FolderBrowserDialog fbd)
             {
-                return;
-            }
-            int i = prm.IndexOf('|');
-            if ((i <= 0) || (i >= prm.Length))
-            {
-                return;
-            }
-
-            string varName = prm.Substring(0, i);
-            string browseType = prm.Substring(i + 1);
-            if (browseType.Equals("Directory"))
-            {
-                using (FolderBrowserDialog fbd = new FolderBrowserDialog())
+                using (fbd)
                 {
-                    fbd.Description = VariablesViewModel.WixBundleName.String;
-                    fbd.SelectedPath = VariablesViewModel[varName].String;
-                    if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    string varName = fbd.Tag as string;
+                    if (!string.IsNullOrEmpty(varName))
                     {
-                        VariablesViewModel[varName].String = fbd.SelectedPath;
+                        fbd.Description = VariablesViewModel.WixBundleName.String;
+                        fbd.SelectedPath = VariablesViewModel[varName].String;
+                        if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                        {
+                            VariablesViewModel[varName].String = fbd.SelectedPath;
+                        }
                     }
                 }
             }
+        }
+
+        private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
         }
     }
 }

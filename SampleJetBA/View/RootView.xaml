@@ -13,7 +13,7 @@
         <ResourceDictionary Source="Styles.xaml"/>
     </Window.Resources>
     <Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.Open" Executed="ApplicationCommandsOpen_Executed"/>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="ApplicationCommandsOpen_Executed" CanExecute="CommandBinding_CanExecute"/>
     </Window.CommandBindings>
     <Window.Style>
         <Style TargetType="{x:Type Window}">
