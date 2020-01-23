@@ -60,7 +60,7 @@ namespace SampleJetBA.Util
             try
             {
                 IntPtr token = IntPtr.Zero;
-                if (!LogonUserCore(name, domain, Marshal.PtrToStringUni(psw), LOGON32_LOGON.LOGON32_LOGON_NETWORK, LOGON32_PROVIDER.LOGON32_PROVIDER_DEFAULT, ref token) || (token == IntPtr.Zero))
+                if (!LogonUserCore(name, domain, Marshal.PtrToStringUni(psw), LOGON32_LOGON.LOGON32_LOGON_NEW_CREDENTIALS, LOGON32_PROVIDER.LOGON32_PROVIDER_WINNT50, ref token) || (token == IntPtr.Zero))
                 {
                     //TODO P/Invoke FormatMessage to get localized error text
                     throw new Win32Exception(Marshal.GetLastWin32Error());
