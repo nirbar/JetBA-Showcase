@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Security.Principal;
@@ -34,10 +35,28 @@ namespace SampleJetBA.Util
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool LogonUserCore([MarshalAs(UnmanagedType.LPStr)] string pszUserName, [MarshalAs(UnmanagedType.LPStr)] string pszDomain, [MarshalAs(UnmanagedType.LPStr)] string pszPassword, [MarshalAs(UnmanagedType.U4)] LOGON32_LOGON dwLogonType, [MarshalAs(UnmanagedType.U4)]LOGON32_PROVIDER dwLogonProvider, ref IntPtr phToken);
 
-        #endregion
+        #endregion        
 
-        public static WindowsImpersonationContext Impersonate(string userName, SecureString password)
+        public enum RequestedLevel
         {
+            // Impersonate when making network connections.
+            // This level is sufficient for connecting to SQL Server and otehr network resources
+            NetworkOnly,
+
+            // Changes the local identity to the impersonated user
+            LocalAndNetwork
+        }
+
+        public static WindowsImpersonationContextEx Impersonate(string userName, SecureString password, RequestedLevel level = RequestedLevel.NetworkOnly)
+        {
+            LOGON32_LOGON logon = LOGON32_LOGON.LOGON32_LOGON_NEW_CREDENTIALS;
+            LOGON32_PROVIDER provider = LOGON32_PROVIDER.LOGON32_PROVIDER_WINNT50;
+            if (level == RequestedLevel.LocalAndNetwork)
+            {
+                logon = LOGON32_LOGON.LOGON32_LOGON_INTERACTIVE;
+                provider = LOGON32_PROVIDER.LOGON32_PROVIDER_DEFAULT;
+            }
+
             string name = userName;
             string domain = ".";
             int i = userName.IndexOf('\\');
@@ -56,24 +75,55 @@ namespace SampleJetBA.Util
                 }
             }
 
-            IntPtr psw = Marshal.SecureStringToBSTR(password);
+            IntPtr psw = IntPtr.Zero;
             try
             {
+                psw = Marshal.SecureStringToBSTR(password);
                 IntPtr token = IntPtr.Zero;
-                if (!LogonUserCore(name, domain, Marshal.PtrToStringUni(psw), LOGON32_LOGON.LOGON32_LOGON_NEW_CREDENTIALS, LOGON32_PROVIDER.LOGON32_PROVIDER_WINNT50, ref token) || (token == IntPtr.Zero))
+                if (!LogonUserCore(name, domain, Marshal.PtrToStringBSTR(psw), logon, provider, ref token) || (token == IntPtr.Zero))
                 {
                     //TODO P/Invoke FormatMessage to get localized error text
                     throw new Win32Exception(Marshal.GetLastWin32Error());
                 }
 
-                WindowsIdentity wi = new WindowsIdentity(token);
-                return wi.Impersonate();
+                WindowsImpersonationContext context = WindowsIdentity.Impersonate(token);
+                return new WindowsImpersonationContextEx(context, token);
             }
             finally
             {
                 if (psw != IntPtr.Zero)
                 {
                     Marshal.ZeroFreeBSTR(psw);
+                }
+            }
+        }
+    }
+
+    public class WindowsImpersonationContextEx : IDisposable
+    {
+        private IntPtr token_ = IntPtr.Zero;
+        private WindowsImpersonationContext context_ = null;
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+        [SuppressUnmanagedCodeSecurity]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool CloseHandle(IntPtr handle);
+
+        public WindowsImpersonationContextEx(WindowsImpersonationContext context, IntPtr token)
+        {
+            token_ = token;
+            context_ = context;
+        }
+
+        public void Dispose()
+        {
+            context_?.Dispose();
+            if (token_ != IntPtr.Zero)
+            {
+                if (!CloseHandle(token_))
+                {
+                    throw new Win32Exception(Marshal.GetLastWin32Error(), "Failed releasing impersonation token");
                 }
             }
         }
