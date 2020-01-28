@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:props="clr-namespace:SampleJetBA.Properties"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="None" 
+        WindowStyle="None" ResizeMode="NoResize"
         AllowsTransparency="True"
         Background="{x:Null}" BorderBrush="{DynamicResource WindowBorderBrush}" BorderThickness="1"
         Width="800" Height="500">
