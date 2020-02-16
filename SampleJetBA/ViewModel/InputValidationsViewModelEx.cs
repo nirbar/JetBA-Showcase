@@ -161,7 +161,7 @@ namespace SampleJetBA.ViewModel
                     pPsw = Marshal.SecureStringToGlobalAllocUnicode(password);
 
                     // Validate credentials with minimal keep of managed plain password.
-                    if (!pc.ValidateCredentials(name, Marshal.PtrToStringUni(pPsw)))
+                    if (!pc.ValidateCredentials(name, Marshal.PtrToStringUni(pPsw), ContextOptions.Signing | ContextOptions.Negotiate))
                     {
                         throw new Exception(Properties.Resources.InvalidCredentials);
                     }
