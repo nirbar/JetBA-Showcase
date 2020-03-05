@@ -107,8 +107,9 @@
 
             <!-- Pop-up messages -->
             <Border Grid.Row="0" Panel.ZIndex="2" BorderBrush="{StaticResource PopupBorderBrush}" BorderThickness="2" Background="{StaticResource PopupBackgroundBrush}" Margin="15,15,15,15" 
-                        DataContext="{Binding PopupViewModel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="1"
-                        Visibility="{Binding IsOpen, Converter={StaticResource ResourceKey=BooleanToVisibilityConverter}}">
+                    DataContext="{Binding PopupViewModel}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="1"
+                    Visibility="{Binding IsOpen, Converter={StaticResource ResourceKey=BooleanToVisibilityConverter}}"
+                    IsVisibleChanged="popup_IsVisibleChanged">
 
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="15" BlurRadius="10" Color="#000000" Opacity="0.2"/>
