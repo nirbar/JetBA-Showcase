@@ -3,6 +3,7 @@ using Ninject;
 using PanelSW.Installer.JetBA;
 using PanelSW.Installer.JetBA.JetPack.Util;
 using PanelSW.Installer.JetBA.Util;
+using PanelSW.Installer.JetBA.ViewModel;
 using System.Collections.Generic;
 
 namespace SampleJetBA
@@ -26,6 +27,13 @@ namespace SampleJetBA
                 System.Diagnostics.Debugger.Launch();
             }
             base.Run();
+        }
+
+        protected override void OnDetectBegin(DetectBeginEventArgs args)
+        {
+            base.OnDetectBegin(args);
+            ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
+            apply.PlanAfterReboot = true;
         }
 
         protected override void OnDetectRelatedBundle(DetectRelatedBundleEventArgs args)
