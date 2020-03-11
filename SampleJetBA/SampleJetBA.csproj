@@ -150,11 +150,11 @@
       <HintPath>$(IntermediateOutputPath)JetBundleVariables.g.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PanelSW.Installer.JetBA, Version=4.6.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\JetBA.4.6.0\lib\net40\PanelSW.Installer.JetBA.dll</HintPath>
+    <Reference Include="PanelSW.Installer.JetBA, Version=4.6.1.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\JetBA.4.6.1\lib\net40\PanelSW.Installer.JetBA.dll</HintPath>
     </Reference>
-    <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=4.6.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetBA.JetPack.4.6.0\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
+    <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=4.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBA.JetPack.4.6.1\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
     </Reference>
     <Reference Include="PanelSwWpfControls, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PanelSwWpfControls.1.3.1\lib\net40\PanelSwWpfControls.dll</HintPath>
@@ -219,8 +219,8 @@
     <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.1\build\TidyBuild.props'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.1.1\build\TidyBuild.targets'))" />
-    <Error Condition="!Exists('..\packages\JetBA.JetPack.4.6.0\build\JetBA.JetPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetBA.JetPack.4.6.0\build\JetBA.JetPack.targets'))" />
+    <Error Condition="!Exists('..\packages\JetBA.JetPack.4.6.1\build\JetBA.JetPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetBA.JetPack.4.6.1\build\JetBA.JetPack.targets'))" />
   </Target>
   <Import Project="..\packages\TidyBuild.1.1.1\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.1.1\build\TidyBuild.targets')" />
-  <Import Project="..\packages\JetBA.JetPack.4.6.0\build\JetBA.JetPack.targets" Condition="Exists('..\packages\JetBA.JetPack.4.6.0\build\JetBA.JetPack.targets')" />
+  <Import Project="..\packages\JetBA.JetPack.4.6.1\build\JetBA.JetPack.targets" Condition="Exists('..\packages\JetBA.JetPack.4.6.1\build\JetBA.JetPack.targets')" />
 </Project>

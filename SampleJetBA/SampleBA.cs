@@ -2,6 +2,7 @@
 using Ninject;
 using PanelSW.Installer.JetBA;
 using PanelSW.Installer.JetBA.JetPack.Util;
+using PanelSW.Installer.JetBA.JetPack.ViewModel;
 using PanelSW.Installer.JetBA.Util;
 using PanelSW.Installer.JetBA.ViewModel;
 using System.Collections.Generic;
@@ -66,6 +67,14 @@ namespace SampleJetBA
                     }
                 }
             }
+        }
+
+        protected override void OnShutdown(ShutdownEventArgs args)
+        {
+            FinishViewModelEx finish = Kernel.Get<FinishViewModelEx>();
+            finish.ZipLogFilesCommand.Execute(null);
+
+            base.OnShutdown(args);
         }
     }
 }
