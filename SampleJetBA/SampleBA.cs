@@ -32,9 +32,12 @@ namespace SampleJetBA
 
         protected override void OnDetectBegin(DetectBeginEventArgs args)
         {
+            if (HasJetBaExecuted)
+            {
+                ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
+                apply.PlanAfterReboot = true;
+            }
             base.OnDetectBegin(args);
-            ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
-            apply.PlanAfterReboot = true;
         }
 
         protected override void OnDetectRelatedBundle(DetectRelatedBundleEventArgs args)
