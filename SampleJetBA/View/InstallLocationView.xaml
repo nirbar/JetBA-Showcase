@@ -6,7 +6,7 @@
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
              xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
-             xmlns:util="clr-namespace:SampleJetBA.Util"
+             xmlns:cmd="clr-namespace:PanelSW.WPF.Controls.Commands;assembly=PanelSwWpfControls"
              mc:Ignorable="d"
              d:DesignHeight="342" d:DesignWidth="546"
              >
@@ -39,7 +39,7 @@
             
             <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.InstallFolder}" Style="{StaticResource GenericText}"/>
             <panelsw:TextBoxWithButton Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String, UpdateSourceTrigger=PropertyChanged}"
-                                       Command="ApplicationCommands.Open" CommandParameter="{util:BrowseFolder VariableName=INSTALL_FOLDER}"/>
+                                       Command="{cmd:BrowseFolderCommand Folder={Binding VariablesViewModel.INSTALL_FOLDER.String}}"/>
         </Grid>
 
     </DockPanel>

@@ -87,26 +87,6 @@ namespace SampleJetBA.View
             WindowState = WindowState.Minimized;
         }
 
-        private void ApplicationCommandsOpen_Executed(object sender, ExecutedRoutedEventArgs e)
-        {
-            if (e.Parameter is FolderBrowserDialog fbd)
-            {
-                using (fbd)
-                {
-                    string varName = fbd.Tag as string;
-                    if (!string.IsNullOrEmpty(varName))
-                    {
-                        fbd.Description = VariablesViewModel.WixBundleName.String;
-                        fbd.SelectedPath = VariablesViewModel[varName].String;
-                        if (fbd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                        {
-                            VariablesViewModel[varName].String = fbd.SelectedPath;
-                        }
-                    }
-                }
-            }
-        }
-
         private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
             e.CanExecute = true;
