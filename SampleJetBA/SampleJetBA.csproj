@@ -38,7 +38,6 @@
     </Compile>
     <Compile Include="SampleNInjectBinder.cs" />
     <Compile Include="SampleBA.cs" />
-    <Compile Include="Util\BrowseFolderExtension.cs" />
     <Compile Include="Util\WindowsIndetityEx.cs" />
     <Compile Include="ViewModel\InputValidationsViewModelEx.cs" />
     <Compile Include="ViewModel\NavigationViewModelEx.cs" />
