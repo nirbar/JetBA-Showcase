@@ -284,4 +284,10 @@ INSTALL_FOLDER="C:\Program Files\Sample" - מתקין לספריה המבוקש�
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
     <value>אנא הכנס שם משתמש לחיבור SQL</value>
   </data>
+  <data name="InterruptedRebootPrompt" xml:space="preserve">
+    <value>המחשב ביצע אתחול. האם להמשיך בפעולה שהתחלת טרם האתחול?</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>להמשיך</value>
+  </data>
 </root>

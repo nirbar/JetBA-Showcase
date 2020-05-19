@@ -8,6 +8,7 @@ using PanelSW.Installer.JetBA.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Windows.Input;
 
 namespace SampleJetBA
 {
@@ -60,6 +61,46 @@ namespace SampleJetBA
                 apply.PlanAfterReboot = true;
             }
             base.OnDetectBegin(args);
+        }
+
+        protected override void OnDetectComplete(DetectCompleteEventArgs args)
+        {
+            base.OnDetectComplete(args);
+
+            if (HasJetBaExecuted && (Command.Resume == ResumeType.Interrupted) && (Kernel.Get<Display>() == Display.Full))
+            {
+                ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
+                ICommand command = null;
+                switch (Command.Action)
+                {
+                    case LaunchAction.Install:
+                        command = apply.InstallCommand;
+                        break;
+
+                    case LaunchAction.Modify:
+                        command = apply.ModifyCommand;
+                        break;
+
+                    case LaunchAction.Repair:
+                        command = apply.RepairCommand;
+                        break;
+
+                    case LaunchAction.Uninstall:
+                        command = apply.UninstallCommand;
+                        break;
+                }
+
+                if (command != null)
+                {
+                    Engine.Log(LogLevel.Standard, $"Prompting to resume with {Command.Action} after an interrupted reboot");
+
+                    PanelSW.Installer.JetBA.Localization.Resources local = Kernel.Get<PanelSW.Installer.JetBA.Localization.Resources>();
+                    PopupViewModel popup = Kernel.Get<PopupViewModel>();
+                    popup.Show(Properties.Resources.Resume, Properties.Resources.InterruptedRebootPrompt, PopupViewModel.IconHint.Question
+                        , local.Yes, command
+                        , local.No);
+                }
+            }
         }
 
         protected override void OnDetectRelatedBundle(DetectRelatedBundleEventArgs args)

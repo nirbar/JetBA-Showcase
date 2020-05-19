@@ -285,4 +285,10 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
     <value>Please provide user name for SQL authentication</value>
   </data>
+  <data name="InterruptedRebootPrompt" xml:space="preserve">
+    <value>The machine has restarted. Do you wish to proceed with the operation started before the reboot?</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Resume</value>
+  </data>
 </root>
