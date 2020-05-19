@@ -5,7 +5,9 @@ using PanelSW.Installer.JetBA.JetPack.Util;
 using PanelSW.Installer.JetBA.JetPack.ViewModel;
 using PanelSW.Installer.JetBA.Util;
 using PanelSW.Installer.JetBA.ViewModel;
+using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace SampleJetBA
 {
@@ -23,11 +25,31 @@ namespace SampleJetBA
 
         protected override void Run()
         {
-            if (Engine.StringVariables.Contains("BaLaunchDebugger") && Engine.BooleanVariable("BaLaunchDebugger"))
+            JetBundleVariables.BundleVariablesViewModel vars = Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            if (vars.BaLaunchDebugger.Exists && vars.BaLaunchDebugger.Boolean)
             {
                 System.Diagnostics.Debugger.Launch();
             }
-            base.Run();
+
+            // Allow a single concurrent instance of this bootstrapper system-wide.
+            string mutexName = $"Global\\{vars.WixBundleProviderKey.String}.{vars.WixBundleVersion.String}";
+            using (Mutex mutex = new Mutex(false, mutexName))
+            {
+                try
+                {
+                    if (!mutex.WaitOne(0))
+                    {
+                        Engine.Log(LogLevel.Error, "Exiting because another instance of this installation is already running");
+                        Engine.Quit(-1);
+                        return;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Engine.Log(LogLevel.Error, $"Failed checking whether another instance of this installation is already running. {ex.Message}. Ignoring...");
+                }
+                base.Run();
+            }
         }
 
         protected override void OnDetectBegin(DetectBeginEventArgs args)
