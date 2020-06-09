@@ -18,8 +18,8 @@
                 Command="{Binding NavigationViewModel.StopCommand}"
                 Content="{x:Static props:Resources.Close}" />
 
-        <StackPanel Orientation="Vertical" DockPanel.Dock="Top" FlowDirection="LeftToRight">
-            <TextBlock TextWrapping="Wrap" Text="{x:Static props:Resources.HelpPageText }"/>
-        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DockPanel.Dock="Top" FlowDirection="LeftToRight">
+            <TextBlock TextWrapping="Wrap" Text="{x:Static props:Resources.HelpPageText }" HorizontalAlignment="Stretch"/>
+        </ScrollViewer>
     </DockPanel>
 </UserControl>
