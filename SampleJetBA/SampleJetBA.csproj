@@ -155,8 +155,8 @@
     <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=5.0.0.0, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=MSIL">
       <HintPath>..\packages\JetBA.JetPack.5.0.0\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
     </Reference>
-    <Reference Include="PanelSwWpfControls, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PanelSwWpfControls.1.4.0\lib\net40\PanelSwWpfControls.dll</HintPath>
+    <Reference Include="PanelSwWpfControls, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PanelSwWpfControls.1.4.1\lib\net40\PanelSwWpfControls.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -190,6 +190,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="SampleJetBA.BootstrapperCore.config" />
   </ItemGroup>
