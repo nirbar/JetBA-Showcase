@@ -115,6 +115,12 @@ namespace SampleJetBA.ViewModel
                     BA.Engine.Log(LogLevel.Error, $"Unhandled detect state '{apply.DetectState}'");
                     break;
             }
+
+            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            if (!vars.ForcePage.IsNullOrEmpty && Enum.TryParse(vars.ForcePage.String, out Pages page))
+            {
+                Page = page;
+            }
         }
 
         private void BA_DetectComplete(object sender, DetectCompleteEventArgs e)

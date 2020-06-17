@@ -61,7 +61,8 @@
 
     <!-- Attach debugger -->
     <?ifdef Debug?>
-    <Variable Name="BaLaunchDebugger" Value="1" Type="numeric" bal:Overridable="yes" Persisted="yes"/>
+    <Variable Name="BaLaunchDebugger" Value="1" Type="numeric" bal:Overridable="yes"/>
+    <Variable Name="ForcePage" Value="" Type="string" bal:Overridable="yes"/>
     <?endif?>
 
     <Chain DisableSystemRestore="yes" ParallelCache="yes">
