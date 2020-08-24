@@ -5,6 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
+             xmlns:jet="clr-namespace:PanelSW.Installer.JetBA;assembly=PanelSW.Installer.JetBA"
+             xmlns:tasks="clr-namespace:System.Threading.Tasks;assembly=mscorlib"
              mc:Ignorable="d"
              d:DesignHeight="342" d:DesignWidth="546">
 
@@ -12,7 +14,7 @@
         <ResourceDictionary Source="Styles.xaml"/>
     </UserControl.Resources>
 
-    <DockPanel>
+    <DockPanel IsEnabled="{Binding IsIndeterminate, ElementName=validation_, Converter={StaticResource InverseBooleanConverter}}">
 
         <!-- Buttons strip -->
         <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
@@ -20,7 +22,24 @@
             <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.BackCommand}" Content="{x:Static props:Resources.Back}" />
             <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
         </DockPanel>
-        <ProgressBar DockPanel.Dock="Bottom" Name="validation_" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"/>
+        <ProgressBar DockPanel.Dock="Bottom" Name="validation_">
+            <ProgressBar.Style>
+                <Style TargetType="ProgressBar" BasedOn="{StaticResource ValidationProgressBar}">
+                    <Setter Property="IsIndeterminate" Value="False"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding NavigationViewModel.GoingNextStatus}" Value="{x:Static tasks:TaskStatus.Running}">
+                            <Setter Property="IsIndeterminate" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ApplyViewModel.InstallState}" Value="{x:Static jet:InstallationState.Detected}">
+                            <Setter Property="IsIndeterminate" Value="True"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ApplyViewModel.InstallState}" Value="{x:Static jet:InstallationState.Planning}">
+                            <Setter Property="IsIndeterminate" Value="True"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </ProgressBar.Style>
+        </ProgressBar>
 
         <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{x:Static props:Resources.ReadyToInstall}"/>
 
