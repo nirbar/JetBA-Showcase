@@ -7,6 +7,7 @@ using PanelSW.Installer.JetBA.Util;
 using PanelSW.Installer.JetBA.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Windows.Input;
 
@@ -115,7 +116,7 @@ namespace SampleJetBA
                 JetBundleVariables.BundleVariablesViewModel vars = Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
                 foreach (string s in vars.VariableNames)
                 {
-                    if (bi.PersistedVariables.ContainsKey(s) && !string.IsNullOrEmpty(bi.PersistedVariables[s]) && !vars[s].IsOnCommandLine)
+                    if (bi.PersistedVariables.ContainsKey(s) && !vars.BuiltinVariableNames.Contains(s) && !string.IsNullOrEmpty(bi.PersistedVariables[s]) && !vars[s].IsOnCommandLine)
                     {
                         vars[s].String = bi.PersistedVariables[s];
                     }
