@@ -63,6 +63,10 @@ namespace SampleJetBA.ViewModel
         {
             ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
             apply.PropertyChanged += apply_PropertyChanged;
+
+            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            vars.CONFIGURE_SQL.PropertyChanged += CONFIGURE_SQL_PropertyChanged;
+            vars.CONFIGURE_SERVICE_ACCOUNT.PropertyChanged += CONFIGURE_SERVICE_ACCOUNT_PropertyChanged;
         }
 
         #region Event-based navigations
@@ -154,72 +158,51 @@ namespace SampleJetBA.ViewModel
 
         public ObservableCollection<Pages> ExpectedPages { get; private set; }
 
-        private bool showDbPage_ = true;
-        public bool ShowDbPage
+        private void CONFIGURE_SQL_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            get
+            if (!e.PropertyName.Equals("BooleanString"))
             {
-                return showDbPage_;
+                return;
             }
-            set
-            {
-                showDbPage_ = value;
-                if (showDbPage_)
-                {
-                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
-                    {
-                        if (!ExpectedPages.Contains(Pages.Database))
-                        {
-                            ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.Summary), Pages.Database);
-                        }
-                    });
-                }
-                else
-                {
-                    if (ExpectedPages.Contains(Pages.Database))
-                    {
-                        ExpectedPages.Remove(Pages.Database);
-                    }
-                }
 
-                OnPropertyChanged("ShowDbPage");
-            }
+            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            BA.Kernel.Get<Dispatcher>().Invoke(() =>
+            {
+                if (vars.CONFIGURE_SQL.BooleanString && !ExpectedPages.Contains(Pages.Database))
+                {
+                    ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.Summary), Pages.Database);
+                }
+                else if (!vars.CONFIGURE_SQL.BooleanString && ExpectedPages.Contains(Pages.Database))
+                {
+                    ExpectedPages.Remove(Pages.Database);
+                }
+            });
         }
 
-        private bool showServicePage_ = true;
-        public bool ShowServicePage
+        private void CONFIGURE_SERVICE_ACCOUNT_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            get
+            if (!e.PropertyName.Equals("BooleanString"))
             {
-                return showServicePage_;
+                return;
             }
-            set
-            {
-                showServicePage_ = value;
-                if (showServicePage_)
-                {
-                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
-                    {
-                        if (!ExpectedPages.Contains(Pages.Service))
-                        {
-                            ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.InstallLocation) + 1, Pages.Service);
-                        }
-                    });
-                }
-                else
-                {
-                    if (ExpectedPages.Contains(Pages.Service))
-                    {
-                        ExpectedPages.Remove(Pages.Service);
-                    }
-                }
 
-                OnPropertyChanged("ShowServicePage");
-            }
+            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            BA.Kernel.Get<Dispatcher>().Invoke(() =>
+            {
+                if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString && !ExpectedPages.Contains(Pages.Service))
+                {
+                    ExpectedPages.Insert(ExpectedPages.IndexOf(Pages.InstallLocation) + 1, Pages.Service);
+                }
+                else if (!vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString && ExpectedPages.Contains(Pages.Service))
+                {
+                    ExpectedPages.Remove(Pages.Service);
+                }
+            });
         }
 
         protected override object QueryNextPage(object hint)
         {
+            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
             Pages nextPage = Pages.Unknown;
             switch ((Pages)Page)
             {
@@ -228,14 +211,14 @@ namespace SampleJetBA.ViewModel
                     break;
 
                 case Pages.InstallLocation:
-                    if (ShowServicePage)
+                    if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString)
                     {
                         nextPage = Pages.Service;
                     }
-                    else if (ShowDbPage)
+                    else if (vars.CONFIGURE_SQL.BooleanString)
                     {
                         nextPage = Pages.Database;
-                    } 
+                    }
                     else
                     {
                         ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
@@ -245,7 +228,7 @@ namespace SampleJetBA.ViewModel
                     break;
 
                 case Pages.Service:
-                    if (ShowDbPage)
+                    if (vars.CONFIGURE_SQL.BooleanString)
                     {
                         nextPage = Pages.Database;
                     }

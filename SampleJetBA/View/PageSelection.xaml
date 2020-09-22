@@ -31,10 +31,10 @@
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
-            
+
             <CheckBox Grid.Row="0" IsEnabled="False" Content="{x:Static props:Resources.InstallationFolder}" IsChecked="True"/>
-            <CheckBox Grid.Row="1" Content="{x:Static props:Resources.ServiceAccount}" IsChecked="{Binding NavigationViewModel.ShowServicePage}"/>
-            <CheckBox Grid.Row="2" Content="{x:Static props:Resources.DatabaseConnection}" IsChecked="{Binding NavigationViewModel.ShowDbPage}"/>
+            <CheckBox Grid.Row="1" Content="{x:Static props:Resources.ServiceAccount}" IsChecked="{Binding VariablesViewModel.CONFIGURE_SERVICE_ACCOUNT.BooleanString}"/>
+            <CheckBox Grid.Row="2" Content="{x:Static props:Resources.DatabaseConnection}" IsChecked="{Binding VariablesViewModel.CONFIGURE_SQL.BooleanString}"/>
         </Grid>
 
     </DockPanel>

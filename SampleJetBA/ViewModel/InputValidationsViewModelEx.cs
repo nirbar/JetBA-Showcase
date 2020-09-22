@@ -3,13 +3,11 @@ using Ninject;
 using PanelSW.Installer.JetBA.ViewModel;
 using SampleJetBA.Util;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.DirectoryServices.AccountManagement;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Security;
-using System.Security.Principal;
 
 namespace SampleJetBA.ViewModel
 {
@@ -46,8 +44,16 @@ namespace SampleJetBA.ViewModel
         public override void ValidateAll()
         {
             ValidateTargetFolder();
-            ValidateServiceAccount();
-            ValidateDatabase();
+
+            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString)
+            {
+                ValidateServiceAccount();
+            }
+            if (vars.CONFIGURE_SQL.BooleanString)
+            {
+                ValidateDatabase();
+            }
         }
 
         private void ValidateTargetFolder()
@@ -78,7 +84,7 @@ namespace SampleJetBA.ViewModel
                     vars.SQL_USER.String = "";
                     vars.SQL_PASSWORD.SecureString = new SecureString();
 
-                    if (!vars.SERVICE_USER.IsNullOrEmpty)
+                    if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString && !vars.SERVICE_USER.IsNullOrEmpty)
                     {
                         BA.Engine.Log(LogLevel.Standard, $"Impersonating '{vars.SERVICE_USER.String}' to check Windows authentication to SQL server");
                         impersonate = WindowsIndetityEx.Impersonate(vars.SERVICE_USER.String, vars.SERVICE_PASSWORD.SecureString);

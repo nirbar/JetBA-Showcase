@@ -48,12 +48,12 @@
             <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String, Mode=OneWay}" />
 
             <!-- DB server- only if page was selected -->
-            <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
-            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.SQL_SERVER.String, Mode=OneWay}" Visibility="{Binding NavigationViewModel.ShowDbPage, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.DbServer}" Visibility="{Binding VariablesViewModel.CONFIGURE_SQL.BooleanString, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <TextBlock Style="{StaticResource GenericText}" FlowDirection="LeftToRight" Text="{Binding VariablesViewModel.SQL_SERVER.String, Mode=OneWay}" Visibility="{Binding VariablesViewModel.CONFIGURE_SQL.BooleanString, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
             <!-- Service- only if page was selected -->
-            <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.ServiceAccount}" Visibility="{Binding NavigationViewModel.ShowServicePage, Converter={StaticResource BooleanToVisibilityConverter}}" />
-            <TextBlock FlowDirection="LeftToRight" Visibility="{Binding NavigationViewModel.ShowServicePage, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <TextBlock Style="{StaticResource GenericText}" Text="{x:Static props:Resources.ServiceAccount}" Visibility="{Binding VariablesViewModel.CONFIGURE_SERVICE_ACCOUNT.BooleanString, Converter={StaticResource BooleanToVisibilityConverter}}" />
+            <TextBlock FlowDirection="LeftToRight" Visibility="{Binding VariablesViewModel.CONFIGURE_SERVICE_ACCOUNT.BooleanString, Converter={StaticResource BooleanToVisibilityConverter}}">
                 <TextBlock.Style>
                     <Style BasedOn="{StaticResource GenericText}" TargetType="TextBlock">
                         <Setter Property="Text" Value="{Binding VariablesViewModel.SERVICE_USER.String, Mode=OneWay}"/>

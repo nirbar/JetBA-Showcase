@@ -44,12 +44,15 @@
     <jet:JetBaSettings LicenseFile="$(sys.SOURCEFILEDIR)JetBA.lic"/>
 
     <Variable Name="INSTALL_FOLDER" Value="[ProgramFilesFolder][WixBundleName]\" Type="string" bal:Overridable="yes"/>
+
+    <Variable Name="CONFIGURE_SQL" Value="True" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SQL_SERVER" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SQL_DATABASE" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SQL_USER" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SQL_PASSWORD" Value="" Type="string" bal:Overridable="yes" Hidden="yes" jet:Encrypt="yes" />
     <Variable Name="SQL_AUTH" Value="0" Type="numeric" bal:Overridable="yes" Persisted="yes"/>
 
+    <Variable Name="CONFIGURE_SERVICE_ACCOUNT" Value="True" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SERVICE_USER" Value="" Type="string" bal:Overridable="yes" Persisted="yes"/>
     <Variable Name="SERVICE_PASSWORD" Value="" Type="string" bal:Overridable="yes" Hidden="yes" jet:Encrypt="yes" />
 
