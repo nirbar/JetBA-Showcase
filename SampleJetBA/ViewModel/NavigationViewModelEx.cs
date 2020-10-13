@@ -73,6 +73,11 @@ namespace SampleJetBA.ViewModel
 
         public void SetStartPage()
         {
+            if (BA.Kernel.Get<Display>() < Display.Passive)
+            {
+                return;
+            }
+
             if (BA.Command.Action == LaunchAction.Help)
             {
                 Page = Pages.Help;
@@ -160,7 +165,7 @@ namespace SampleJetBA.ViewModel
 
         private void CONFIGURE_SQL_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (!e.PropertyName.Equals("BooleanString"))
+            if (!e.PropertyName.Equals("BooleanString") || (BA.Kernel.Get<Display>() < Display.Passive))
             {
                 return;
             }
@@ -181,7 +186,7 @@ namespace SampleJetBA.ViewModel
 
         private void CONFIGURE_SERVICE_ACCOUNT_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (!e.PropertyName.Equals("BooleanString"))
+            if (!e.PropertyName.Equals("BooleanString") || (BA.Kernel.Get<Display>() < Display.Passive))
             {
                 return;
             }
