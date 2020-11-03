@@ -7,6 +7,54 @@
                 xmlns="http://schemas.panel-sw.co.il/wix/JetWixExtension">
   <xs:import namespace="http://schemas.microsoft.com/wix/2006/wi" />
 
+  <xs:element name="ExtractParameters">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Product" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Module" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Fragment" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:element name="EmbedParameters">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="File" />
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Parameter" />
+      </xs:choice>
+      
+      <xs:attribute name="TargetPath" use="optional" type="xs:string">
+        <xs:annotation>
+          <xs:documentation><![CDATA[Target path for the parameterized file. If not specified then the source file will be overwritten. This field is formatted]]></xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      
+      <xs:attribute name="Condition" use="optional" type="xs:string">
+        <xs:annotation>
+          <xs:documentation><![CDATA[Condition to test before embedding the parameters. Defaults to true]]></xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="Parameter">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.panel-sw.co.il/wix/JetWixExtension" ref="EmbedParameters" />
+      </xs:appinfo>
+    </xs:annotation>
+
+    <xs:complexType>
+      <xs:attribute name="Key" use="required" type="xs:string"/>
+      <xs:attribute name="Value" use="optional" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
   <xs:element name="JetBaSettings">
     <xs:annotation>
       <xs:appinfo>
@@ -23,6 +71,16 @@
       <xs:attribute name="EnumerateVariables" use="optional" type="wix:YesNoType" default="no">
         <xs:annotation>
           <xs:documentation><![CDATA['yes' to add a collection of all variables in the project to BootstrapperApplicationData. Only possible if compilation processes all project's source files at once, such as when building using Visual Studio projects.]]></xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="ExtractParameters" use="optional" type="wix:YesNoType" default="no">
+        <xs:annotation>
+          <xs:documentation><![CDATA[Whether or not JetBA should attempt to extract parameters from a signed bootstrapper]]></xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="NativeBA" use="optional" type="wix:YesNoType" default="no">
+        <xs:annotation>
+          <xs:documentation><![CDATA[Whether or not to include JetBA bafunctions.dll. An additional custom bafunctionex.dll may be included in the BA payloads as well]]></xs:documentation>
         </xs:annotation>
       </xs:attribute>
     </xs:complexType>
