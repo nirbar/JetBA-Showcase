@@ -1,6 +1,6 @@
-﻿using System.Windows.Controls;
-using PanelSW.Installer.JetBA.JetPack.ViewModel;
+﻿using PanelSW.Installer.JetBA.JetPack.ViewModel;
 using PanelSW.Installer.JetBA.ViewModel;
+using System.Windows.Controls;
 
 namespace SampleJetBA.View
 {

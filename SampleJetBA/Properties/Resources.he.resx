@@ -290,4 +290,8 @@ INSTALL_FOLDER="C:\Program Files\Sample" - מתקין לספריה המבוקש�
   <data name="Resume" xml:space="preserve">
     <value>להמשיך</value>
   </data>
+  <data name="WeNeedToRebootNow_0WillContinueAfterYouLoginAgain" xml:space="preserve">
+    <value>צריך לאתחל את המחשב כעת
+לאחר האתחול נמשיך ב-{0}</value>
+  </data>
 </root>

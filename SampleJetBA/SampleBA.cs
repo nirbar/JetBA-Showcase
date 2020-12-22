@@ -3,7 +3,6 @@ using Ninject;
 using PanelSW.Installer.JetBA;
 using PanelSW.Installer.JetBA.JetPack.Util;
 using PanelSW.Installer.JetBA.JetPack.ViewModel;
-using PanelSW.Installer.JetBA.Util;
 using PanelSW.Installer.JetBA.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -114,6 +113,19 @@ namespace SampleJetBA
                         }
                     }
                 }
+            }
+        }
+
+        // Prompt when need to reboot midway
+        protected override void OnApplyComplete(ApplyCompleteEventArgs args)
+        {
+            base.OnApplyComplete(args);
+            if ((args.Restart == ApplyRestart.RestartInitiated) && (Kernel.Get<Display>() == Display.Full))
+            {
+                PopupViewModel popup = Kernel.Get<PopupViewModel>();
+                ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
+                PanelSW.Installer.JetBA.Localization.Resources local = Kernel.Get<PanelSW.Installer.JetBA.Localization.Resources>();
+                popup.ShowSync(Properties.Resources.Restart, string.Format(Properties.Resources.WeNeedToRebootNow_0WillContinueAfterYouLoginAgain, apply.PlannedAction), PopupViewModel.IconHint.Information, local.OK);
             }
         }
 

@@ -547,6 +547,16 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to We need to reboot the machine now.
+        ///{0} will continue after you login again.
+        /// </summary>
+        public static string WeNeedToRebootNow_0WillContinueAfterYouLoginAgain {
+            get {
+                return ResourceManager.GetString("WeNeedToRebootNow_0WillContinueAfterYouLoginAgain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Windows.
         /// </summary>
         public static string WindowsAuthentication {

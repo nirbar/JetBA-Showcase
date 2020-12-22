@@ -291,4 +291,8 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="Resume" xml:space="preserve">
     <value>Resume</value>
   </data>
+  <data name="WeNeedToRebootNow_0WillContinueAfterYouLoginAgain" xml:space="preserve">
+    <value>We need to reboot the machine now.
+{0} will continue after you login again</value>
+  </data>
 </root>
