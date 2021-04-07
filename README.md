@@ -71,9 +71,9 @@ The only native fully customizable, extensible, Qt-based UI for WiX bootstrapper
 
 ## Building the sample
 
-1. Clone the repo including git submodules
+1. Clone the repo
 1. Restore Nuget packages
-1. Close the solution and then reopen it in Visual Studio.
+  1. If you restore nuget packages from within Visual Studio, then close & reopen Visual Studio
 1. Rebuild project Bootstrapper
    The installer will be built in $(SolutionDir)build\bin\\$(Configuration)\Bootstrapper\JetBA_Showcase.exe
 
