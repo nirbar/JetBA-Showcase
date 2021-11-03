@@ -1,4 +1,4 @@
-name: JetBA
+name: JetBA-Showcase
 on:
   push:
     tags:
@@ -13,7 +13,7 @@ jobs:
       - run: nuget restore
 
       - name: Build for default WiX
-        run: msbuild JetBA.sln -m -p:Configuration=Release
+        run: msbuild JetBA-Showcase.sln -m -p:Configuration=Release
 
       - uses: actions/upload-artifact@v2
         with:
