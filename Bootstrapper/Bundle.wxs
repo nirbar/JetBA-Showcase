@@ -29,9 +29,7 @@
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)JetBundleVariables.g.dll"/>
 
       <!-- Localizations -->
-      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\SampleJetBA.resources.dll" Name="he\SampleJetBA.resources.dll"/>
-      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.resources.dll" Name="he\PanelSW.Installer.JetBA.resources.dll"/>
-      <Payload SourceFile="$(var.SampleJetBA.TargetDir)he\PanelSW.Installer.JetBA.JetPack.resources.dll" Name="he\PanelSW.Installer.JetBA.JetPack.resources.dll"/>
+      <PayloadGroupRef Id="LOCALIZATION_FILES"/>
      
       <!-- UI libraries -->
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)Xceed.Wpf.AvalonDock.dll"/>
@@ -75,4 +73,6 @@
       </MsiPackage>
     </Chain>
   </Bundle>
+
+  <?pragma heat.dir "$(var.SampleJetBA.TargetDir)..\SampleJetBA" -sfrag -scom -sreg -suid -svb6 -cg LOCALIZATION_FILES -dr dontcare -ag -t "$(sys.SOURCEFILEDIR)XSLT\SampleJetBA.Resources.xslt" -t "$(sys.SOURCEFILEDIR)XSLT\ComponentsToPayloads.xslt"?>
 </Wix>

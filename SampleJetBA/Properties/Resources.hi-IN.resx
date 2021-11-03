@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Back" xml:space="preserve">
+    <value>पीछे</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>पीछे</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>पुनर्प्रयास करें</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>पुनर्प्रयास करें</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>ध्यान न दें</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>ध्यान न दें</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>हाँ</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>नहीं</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>हाँ</value>
+  </data>
+  <data name="CancelNo" xml:space="preserve">
+    <value>नहीं</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>ठीक</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>ठीक</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>निम्न अनुप्रयोगों द्वारा उपयोग की जाने वाली फ़ाइलों का इस सेटअप से अद्यतन होना आवश्यक है. आप सेटअप विज़ार्ड को इन्हें बंद करने की अनुमति दे सकते हैं और फिर से प्रारंभ करने का प्रयास कर सकते हैं या बाद में मशीन रीबूट कर सकते हैं.</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>फ़ाइलें उपयोग में</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>सुधारें</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>क्या आप वाकई रद्द करना चाहते हैं?</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>बाहर जाएँ</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>बाहर जाएँ</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>ब्राउज़ करें...</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>स्थापित करें</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>सेट अप विज़ार्ड आपको स्थापना में सहायता करे, तब तक कृपया प्रतीक्षा करें.</value>
+  </data>
+  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+    <value>स्थापना बदलें, सुधारें या निकालें</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>इस अनुप्रयोग के पुराने संस्करण निकाले जा रहे हैं...</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>कॉन्फ़िगर किया गया {0}</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>गंतव्य फ़ोल्डर</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>{0} को यहाँ स्थापित करें:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>फ़ोल्‍डर पथ '{0}' में अमान्‍य वर्ण है.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>कॉन्‍फ़िगरेशन विफल.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>{0} सेटअप विफल रहा.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>निकालना विफल.</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>स्थापना फ़ोल्डर:</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>निकालें</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>हिन्दी</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>अभी रीबूट करें</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0} इनस्टॉल होने तक प्रतीक्षा करें।</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>इंस्टालेशन निरस्त किया गया</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>समाप्त करें</value>
+  </data>
+  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+    <value>{0} के इंस्टालेशन को पूरा करने के लिए आपके कंप्यूटर को फिर से शुरू करना होगा। क्या आप अभी रीबूट करना चाहते हैं?</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>सुचना</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>त्रुटी</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>पिछले कार्यक्रम का प्रतिस्थापन / अधिष्ठापन सही ढंग से पूरा नही हुआ था. आपको कल्पयन्त्र फिर सुरु करना पडेगा.
+
+कल्पयन्त्र फिर सुरु करने पश्चात आप फिर से {0} का अधिष्ठापन शुरू करे.</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>फाइल को कार्यान्वयन नही कर पा रहा:
+{0}</value>
+  </data>
+  <data name="_0IsReadyForUse" xml:space="preserve">
+    <value>स्थापना ने {0} को आपके कल्पयन्त्र में सफलतापूर्वक अधिष्ठापन कर दिया है.</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>अधिष्ठापन के लिए तयार</value>
+  </data>
+  <data name="ThankYouForHavingUsed0" xml:space="preserve">
+    <value>{0} सफलतापूर्वक निस्कासन हुआ.</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>जारी</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>नोट</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>चेतावनी</value>
+  </data>
+</root>

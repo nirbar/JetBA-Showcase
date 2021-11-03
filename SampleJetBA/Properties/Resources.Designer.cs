@@ -115,6 +115,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        public static string Abort {
+            get {
+                return ResourceManager.GetString("Abort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Authentication.
         /// </summary>
         public static string Authentication {
@@ -151,6 +160,51 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string CancelCaption {
+            get {
+                return ResourceManager.GetString("CancelCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string CancelNo {
+            get {
+                return ResourceManager.GetString("CancelNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to cancel?.
+        /// </summary>
+        public static string CancelPrompt {
+            get {
+                return ResourceManager.GetString("CancelPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string CancelYes {
+            get {
+                return ResourceManager.GetString("CancelYes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Changes will not take fffect until you reboot the system.
         /// </summary>
         public static string ChangesWillNotTakeEffectUntilReboot {
@@ -174,6 +228,15 @@ namespace SampleJetBA.Properties {
         public static string Close {
             get {
                 return ResourceManager.GetString("Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Continue.
+        /// </summary>
+        public static string Continue {
+            get {
+                return ResourceManager.GetString("Continue", resourceCulture);
             }
         }
         
@@ -205,11 +268,40 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The installation/removal of a previous program was not completed. You will need to restart your computer to complete that installation.
+        ///
+        ///After restarting your computer, run Setup again to complete the installation of {0}..
+        /// </summary>
+        public static string ERROR_FAIL_NOACTION_REBOOT_0 {
+            get {
+                return ResourceManager.GetString("ERROR_FAIL_NOACTION_REBOOT_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Executing {0}.
         /// </summary>
         public static string Executing0 {
             get {
                 return ResourceManager.GetString("Executing0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        public static string Exit {
+            get {
+                return ResourceManager.GetString("Exit", resourceCulture);
             }
         }
         
@@ -251,6 +343,24 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Files in Use.
+        /// </summary>
+        public static string FilesInUse {
+            get {
+                return ResourceManager.GetString("FilesInUse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The following applications are using files that need to be updated by this setup. You can let Setup Wizard close them and attempt to restart them or reboot the machine later..
+        /// </summary>
+        public static string FilesInUseText {
+            get {
+                return ResourceManager.GetString("FilesInUseText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Getting Ready ....
         /// </summary>
         public static string GettingReady {
@@ -277,6 +387,24 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ignore.
+        /// </summary>
+        public static string Ignore {
+            get {
+                return ResourceManager.GetString("Ignore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information.
+        /// </summary>
+        public static string Information {
+            get {
+                return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Install.
         /// </summary>
         public static string Install {
@@ -291,6 +419,15 @@ namespace SampleJetBA.Properties {
         public static string InstallationFolder {
             get {
                 return ResourceManager.GetString("InstallationFolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please wait while {0} is being installed..
+        /// </summary>
+        public static string InstallationIsRunningFormat {
+            get {
+                return ResourceManager.GetString("InstallationIsRunningFormat", resourceCulture);
             }
         }
         
@@ -331,6 +468,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        public static string LanguageName {
+            get {
+                return ResourceManager.GetString("LanguageName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Load.
         /// </summary>
         public static string Load {
@@ -349,11 +495,56 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string No {
+            get {
+                return ResourceManager.GetString("No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note.
+        /// </summary>
+        public static string Note {
+            get {
+                return ResourceManager.GetString("Note", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Open failure log.
         /// </summary>
         public static string OpenFailureLog {
             get {
                 return ResourceManager.GetString("OpenFailureLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Installation Aborted.
+        /// </summary>
+        public static string OperationCanceled {
+            get {
+                return ResourceManager.GetString("OperationCanceled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retry.
+        /// </summary>
+        public static string PackageRetryPromptCaption {
+            get {
+                return ResourceManager.GetString("PackageRetryPromptCaption", resourceCulture);
             }
         }
         
@@ -457,6 +648,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Removing older versions of this application....
+        /// </summary>
+        public static string PreviousVersion {
+            get {
+                return ResourceManager.GetString("PreviousVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please review parameters and click &apos;Install&apos; when ready.
         /// </summary>
         public static string ReadyToInstall {
@@ -493,6 +693,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Retry.
+        /// </summary>
+        public static string Retry {
+            get {
+                return ResourceManager.GetString("Retry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select Pages for the Installation Wizard.
         /// </summary>
         public static string SelectInstallationPages {
@@ -507,6 +716,16 @@ namespace SampleJetBA.Properties {
         public static string ServiceAccount {
             get {
                 return ResourceManager.GetString("ServiceAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unable to execute file:
+        ///{0}.
+        /// </summary>
+        public static string ShellExecuteFailedTextFormat {
+            get {
+                return ResourceManager.GetString("ShellExecuteFailedTextFormat", resourceCulture);
             }
         }
         
@@ -547,6 +766,42 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string ValidationPromptCancel {
+            get {
+                return ResourceManager.GetString("ValidationPromptCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ignore.
+        /// </summary>
+        public static string ValidationPromptContinue {
+            get {
+                return ResourceManager.GetString("ValidationPromptContinue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string ValidationPromptOk {
+            get {
+                return ResourceManager.GetString("ValidationPromptOk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        public static string Warning {
+            get {
+                return ResourceManager.GetString("Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to We need to reboot the machine now.
         ///{0} will continue after you login again.
         /// </summary>
@@ -562,6 +817,15 @@ namespace SampleJetBA.Properties {
         public static string WindowsAuthentication {
             get {
                 return ResourceManager.GetString("WindowsAuthentication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string Yes {
+            get {
+                return ResourceManager.GetString("Yes", resourceCulture);
             }
         }
     }

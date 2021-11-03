@@ -3,7 +3,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              mc:Ignorable="d" 
              d:DesignHeight="342" d:DesignWidth="546">
@@ -17,7 +16,7 @@
         <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
             <Button DockPanel.Dock="Right" IsDefault="True" Command="{Binding ApplyViewModel.UninstallCommand}" Content="{x:Static props:Resources.Uninstall}" />
             <Button DockPanel.Dock="Right" Command="{Binding ApplyViewModel.RepairCommand}" Content="{x:Static props:Resources.Repair}" />
-            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static props:Resources.Cancel}" />
         </DockPanel>
         <ProgressBar DockPanel.Dock="Bottom" Name="validation_" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"/>
 

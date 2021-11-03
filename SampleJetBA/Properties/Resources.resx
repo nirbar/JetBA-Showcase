@@ -295,4 +295,94 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
     <value>We need to reboot the machine now.
 {0} will continue after you login again</value>
   </data>
+  <data name="Abort" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Are you sure you want to cancel?</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>The installation/removal of a previous program was not completed. You will need to restart your computer to complete that installation.
+
+After restarting your computer, run Setup again to complete the installation of {0}.</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Files in Use</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>The following applications are using files that need to be updated by this setup. You can let Setup Wizard close them and attempt to restart them or reboot the machine later.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignore</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Please wait while {0} is being installed.</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Installation Aborted</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>Removing older versions of this application...</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Unable to execute file:
+{0}</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignore</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
 </root>

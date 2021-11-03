@@ -1,7 +1,14 @@
-﻿using PanelSW.Installer.JetBA.ViewModel;
+﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
+using PanelSW.Installer.JetBA.ViewModel;
 using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Threading;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Interop;
 
@@ -49,8 +56,11 @@ namespace SampleJetBA.View
 
         #endregion
 
-        public RootView(ProgressViewModel prog, PopupViewModel popup, JetBundleVariables.BundleVariablesViewModel vars, NavigationViewModel nav, UtilViewModel util)
+        private readonly Engine eng_;
+
+        public RootView(Engine eng, ProgressViewModel prog, PopupViewModel popup, JetBundleVariables.BundleVariablesViewModel vars, ViewModel.NavigationViewModelEx nav, UtilViewModel util)
         {
+            eng_ = eng;
             ProgressViewModel = prog;
             PopupViewModel = popup;
             VariablesViewModel = vars;
@@ -60,6 +70,7 @@ namespace SampleJetBA.View
             DataContext = this;
             Closing += RootView_Closing;
             InitializeComponent();
+            LoadCultures();
         }
 
         // Support closing from NavigationViewModel only.
@@ -72,7 +83,7 @@ namespace SampleJetBA.View
         public ProgressViewModel ProgressViewModel { get; private set; }
         public PopupViewModel PopupViewModel { get; private set; }
         public JetBundleVariables.BundleVariablesViewModel VariablesViewModel { get; private set; }
-        public NavigationViewModel NavigationViewModel { get; private set; }
+        public ViewModel.NavigationViewModelEx NavigationViewModel { get; private set; }
         public UtilViewModel UtilViewModel { get; private set; }
 
         private void Background_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -106,6 +117,56 @@ namespace SampleJetBA.View
             {
                 flash.dwFlags = FlashWindow.FLASHW_STOP;
                 FlashWindowEx(ref flash);
+            }
+        }
+
+        private void LoadCultures()
+        {
+            ComboBoxItem bestMatchItem = null;
+
+            string myPath = Assembly.GetExecutingAssembly().Location;
+            string myDir = Path.GetDirectoryName(myPath);
+            string myName = Path.GetFileNameWithoutExtension(myPath);
+            List<string> cultureFiles = new List<string>(Directory.GetFiles(myDir, $"{myName}.resources.dll", SearchOption.AllDirectories));
+            foreach (string resFile in cultureFiles)
+            {
+                string cultureName = Path.GetDirectoryName(resFile);
+                cultureName = Path.GetFileName(cultureName);
+                CultureInfo culture = new CultureInfo(cultureName);
+
+                ComboBoxItem langItem = new ComboBoxItem();
+                langItem.Tag = culture;
+                langItem.Content = culture.NativeName;
+                langItem.FlowDirection = culture.TextInfo.IsRightToLeft ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+                cultureCombo_.Items.Add(langItem);
+
+                if (Thread.CurrentThread.CurrentUICulture.Equals(culture))
+                {
+                    bestMatchItem = langItem;
+                }
+                else if ((bestMatchItem == null) && ((Thread.CurrentThread.CurrentUICulture.Parent?.Equals(culture) == true) || (Thread.CurrentThread.CurrentUICulture.Parent?.Equals(culture?.Parent) == true)))
+                {
+                    bestMatchItem = langItem;
+                }
+            }
+
+            if (bestMatchItem != null)
+            {
+                cultureCombo_.SelectedItem = bestMatchItem;
+            }
+        }
+
+        private void culture_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if ((cultureCombo_.SelectedItem is ComboBoxItem clt) && (clt.Tag is CultureInfo newClt))
+            {
+                eng_.Log(LogLevel.Standard, $"Changing UI locale to '{newClt.Name}': {newClt.NativeName}");
+                Thread.CurrentThread.CurrentCulture = newClt;
+                Thread.CurrentThread.CurrentUICulture = newClt;
+                Properties.Resources.Culture = newClt;
+                PanelSW.Installer.JetBA.Properties.Resources.Culture = newClt;
+                NavigationViewModel.Refresh();
+                PopupViewModel.Refresh();
             }
         }
     }

@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Back" xml:space="preserve">
+    <value>뒤로(B)</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>뒤로(B)</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음(N)</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>다시 시도(R)</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>다시 시도(R)</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>무시(I)</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>무시(I)</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>예(Y)</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>아니요(N)</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>예(Y)</value>
+  </data>
+  <data name="CancelNo" xml:space="preserve">
+    <value>아니요(N)</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>다음 응용 프로그램에서 이 설치 프로그램이 업데이트해야 하는 파일을 사용하고 있습니다. 설치 마법사를 통해 해당 응용 프로그램을 닫은 후 다시 시작하거나 나중에 컴퓨터를 다시 부팅할 수 있습니다.</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>사용 중인 파일</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>복구(P)</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>취소하시겠습니까?</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>끝내기(X)</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>끝내기(X)</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>찾아보기(R)...</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>설치(I)</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>설치 마법사가 설치 안내를 준비하는 동안 잠시 기다려 주십시오.</value>
+  </data>
+  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+    <value>설치 변경, 복구 또는 제거</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>이 응용 프로그램의 이전 버전을 제거하는 중...</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>{0} 구성됨</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>대상 폴더</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>다음 폴더에 {0} 설치:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>폴더 경로 '{0}'에 사용할 수 없는 문자가 들어 있습니다.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>구성하지 못했습니다.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>{0} 이(가) 설치되지 않았습니다.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>제거하지 못했습니다.</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>설치 폴더(F):</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>제거(R)</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>한국어</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>지금 재부팅 하겠습니다.</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0}(을)를 설치하는 동안 잠시 기다려 주세요.</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>설치 취소</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>마침</value>
+  </data>
+  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+    <value>{0}의 설치를 완료하기 위해서는 시스템을 다시 시작해야 합니다. 지금 재부팅 하시겠습니까?</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>정보</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>이전 프로그램의 설치/제거 작업이 완료되지 않았습니다, 완료하려면 컴퓨터를 다시 시작해야 합니다.
+
+컴퓨터를 다시 시작한 후, 설치 마법사를 다시 실행하여 {0} 설치를 완료하시기 바랍니다.</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>파일 실행 오류:
+{0}</value>
+  </data>
+  <data name="_0IsReadyForUse" xml:space="preserve">
+    <value>귀하의 컴퓨터에 {0}이(가) 설치되었습니다.</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>설치 준비 완료</value>
+  </data>
+  <data name="ThankYouForHavingUsed0" xml:space="preserve">
+    <value>{0}이(가) 성공적으로 제거되었습니다!</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>처리 중:</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>하나 이상의 문제로 인해 설치에 실패했습니다. 문제를 수정하고 설치를 다시 시도하십시오. 자세한 내용은 로그 파일을 참조하십시오.</value>
+  </data>
+</root>

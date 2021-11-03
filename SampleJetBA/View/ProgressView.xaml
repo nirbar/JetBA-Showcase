@@ -3,7 +3,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
              xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls.Converters;assembly=PanelSwWpfControls"
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              mc:Ignorable="d" 
@@ -16,7 +15,7 @@
     <DockPanel>
         <!-- Buttons strip -->
         <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
-            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static props:Resources.Cancel}" />
         </DockPanel>
         <ProgressBar DockPanel.Dock="Bottom" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="True"/>
 

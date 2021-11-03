@@ -24,17 +24,18 @@ namespace SampleJetBA
             Rebind<PanelSW.Installer.JetBA.ViewModel.FinishViewModel, PanelSW.Installer.JetBA.JetPack.ViewModel.FinishViewModelEx>().To<PanelSW.Installer.JetBA.JetPack.ViewModel.FinishViewModelEx>().InSingletonScope();
             Bind<PanelSW.Installer.JetBA.JetPack.ViewModel.SqlViewModel>().ToSelf().InSingletonScope();
             Bind<PanelSW.Installer.JetBA.JetPack.ViewModel.PackagesViewModel>().ToSelf().InSingletonScope();
+            Rebind<PanelSW.Installer.JetBA.Localization.Resources, SampleJetBA.Localization.Resources>().To<SampleJetBA.Localization.Resources>().InSingletonScope();
 
             // View
-            Bind<View.PageSelectionView>().ToSelf().InSingletonScope();
-            Bind<View.InstallLocationView>().ToSelf().InSingletonScope();
-            Bind<View.DatabaseView>().ToSelf().InSingletonScope();
-            Bind<View.ServiceAccountView>().ToSelf().InSingletonScope();
-            Bind<View.RepairView>().ToSelf().InSingletonScope();
-            Bind<View.ProgressView>().ToSelf().InSingletonScope();
-            Bind<View.FinishView>().ToSelf().InSingletonScope();
-            Bind<View.HelpView>().ToSelf().InSingletonScope();
-            Bind<View.SummaryView>().ToSelf().InSingletonScope();
+            Bind<View.PageSelectionView>().ToSelf();
+            Bind<View.InstallLocationView>().ToSelf();
+            Bind<View.DatabaseView>().ToSelf();
+            Bind<View.ServiceAccountView>().ToSelf();
+            Bind<View.RepairView>().ToSelf();
+            Bind<View.ProgressView>().ToSelf();
+            Bind<View.FinishView>().ToSelf();
+            Bind<View.HelpView>().ToSelf();
+            Bind<View.SummaryView>().ToSelf();
             Bind<Window>().To<View.RootView>().InSingletonScope();
         }
     }

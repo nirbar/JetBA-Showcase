@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Back" xml:space="preserve">
+    <value>Atgal</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Atgal</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Pirmyn</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Atšaukti</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>Atšaukti</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Kartoti</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Kartoti</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Nepaisyti</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Nepaisyti</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Taip</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Taip</value>
+  </data>
+  <data name="CancelNo" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Gerai</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>Gerai</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Šios programos naudoja sąrankos metu būtinus atnaujinti failus. Galite leisti sąrankos vedliui juos uždaryti ir bandyti paleisti iš naujo arba vėliau perkrauti kompiuterį.</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Naudojami failai</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Taisyti</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Ar tikrai norite atšaukti?</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>Išeiti</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Išeiti</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Naršyti...</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Diegti</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Palaukite, kol sąrankos vedlys pasiruoš vadovauti diegimo procesui.</value>
+  </data>
+  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+    <value>Įdiegties keitimas, taisymas arba šalinimas</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>Šalinamos senesnės šios taikomosios programos versijos...</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>{0} sukonfigūruota</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Paskirties aplankas</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>Diegti „{0}“ į:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>Aplanko kelyje {0} yra netinkamas simbolis.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>Sukonfigūruoti nepavyko.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>{0} sąranka nepavyko.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>Pašalinti nepavyko.</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Diegimo aplankas:</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Šalinti</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Lietuvių</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Perkrauti dabar</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Prašome palaukti, kol {0} bus įdiegtas.</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Įdiegimas nutrauktas</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Baigti</value>
+  </data>
+  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+    <value>Jūsų kompiuteris turi būti perkrautas, kad būtų baigtas {0} įdiegimas. Ar jūs norite perkrauti dabar?</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informacija</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Klaida</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Ankstesnës programos diegimas/ðalinimas buvo neuþbaigtas. Jums reikëtø perkrauti kompiuterá, kad uþbaigtumëte diegimà.
+
+Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaigtumëte „{0}“ diegimà.</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Nepavyko paleisti failo:
+{0}</value>
+  </data>
+  <data name="_0IsReadyForUse" xml:space="preserve">
+    <value>Diegimo programa baigë „{0}“ diegimà Jûsø kompiuteryje.</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Pasirengta diegimui</value>
+  </data>
+  <data name="ThankYouForHavingUsed0" xml:space="preserve">
+    <value>„{0}“ buvo sëkmingai paðalinta ið Jûsø kompiuterio.</value>
+  </data>
+</root>

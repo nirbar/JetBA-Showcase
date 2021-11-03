@@ -3,7 +3,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:loc="clr-namespace:PanelSW.Installer.JetBA.Properties;assembly=PanelSW.Installer.JetBA"
              xmlns:jet="clr-namespace:PanelSW.Installer.JetBA;assembly=PanelSW.Installer.JetBA"
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              xmlns:tasks="clr-namespace:System.Threading.Tasks;assembly=mscorlib"
@@ -20,7 +19,7 @@
         <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
             <Button DockPanel.Dock="Right" IsDefault="True" Command="{Binding ApplyViewModel.ApplyCommand}" Content="{x:Static props:Resources.Install}" />
             <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.BackCommand}" Content="{x:Static props:Resources.Back}" />
-            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static loc:Resources.Cancel}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static props:Resources.Cancel}" />
         </DockPanel>
         <ProgressBar DockPanel.Dock="Bottom" Name="validation_">
             <ProgressBar.Style>

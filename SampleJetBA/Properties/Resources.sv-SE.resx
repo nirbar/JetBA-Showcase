@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Back" xml:space="preserve">
+    <value>Föregående</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Föregående</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Nästa</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Försök igen</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Försök igen</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorera</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignorera</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nej</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="CancelNo" xml:space="preserve">
+    <value>Nej</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Följande program använder filer som behöver uppdateras under installationen. Du kan låta installationsguiden stänga dem och försöka starta om dem, eller starta om datorn senare.</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Filer som används</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Reparera</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Vill du avbryta?</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>Avsluta</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Avsluta</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Bläddra...</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Installera</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Vänta medan installationsguiden förbereder installationen.</value>
+  </data>
+  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+    <value>Ändra, reparera eller ta bort installationen</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>Äldre versioner av programmet tas bort...</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>{0} konfigurerades</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Målmapp</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>Installera {0} i:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>Mappsökvägen {0} innehåller ett ogiltigt tecken.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>Konfigureringen misslyckades.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>Installationen av {0}  misslyckades.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>Borttagning misslyckades.</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Installationsmapp:</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Ta bort</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Svenska</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Starta om nu</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Var vänlig vänta medan {0} installeras.</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Installationen avbröts</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Slutför</value>
+  </data>
+  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+    <value>Din dator måste startas om för att fullborda installationen av {0}. Vill du starta om nu?</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fel</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Installationen/avinstallationen av ett tidigare program har inte slutförts. Du måste starta om datorn för att avsluta den installationen.
+
+Efter att ha startat om datorn kör du installationsprogrammet igen för att slutföra installationen av {0}.</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Kan inte köra filen:
+{0}</value>
+  </data>
+  <data name="_0IsReadyForUse" xml:space="preserve">
+    <value>{0} har nu installerats på din dator.</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Redo att installera</value>
+  </data>
+  <data name="ThankYouForHavingUsed0" xml:space="preserve">
+    <value>{0} är nu borttaget från din dator.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Bearbetar:</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Installationen misslyckades på grund av ett eller flera problem. Åtgärda problemen och försök igen. Se loggfilen för mer information.</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Fortsätt</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Anteckning</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Varning</value>
+  </data>
+</root>

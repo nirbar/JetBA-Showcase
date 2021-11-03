@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Back" xml:space="preserve">
+    <value>Endarrere</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Endarrere</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Endavant</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel·la</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>Cancel·la</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Torna-ho a provar</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Torna-ho a provar</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignora-ho</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignora-ho</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="CancelNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>D'acord</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>D'acord</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Les següents aplicacions fan servir fitxers que cal actualitzar en aquesta instal·lació. Podeu deixar que l'auxiliar d'instal·lació les tanqui i intenti reiniciar-les o podeu reiniciar l'ordinador més tard.</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Fitxers en ús</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Repara</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Esteu segur que voleu cancel·lar-ho?</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>Surt</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Surt</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Navega...</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Instal·la</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Espereu mentre l'auxiliar d'instal·lació es prepara per guiar-vos pel procés d'instal·lació.</value>
+  </data>
+  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+    <value>Canvi, reparació o supressió de la instal·lació</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>S'estan suprimint les versions anteriors d'aquesta aplicació...</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>S'ha configurat el {0}</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Carpeta de destinació</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>Instal·la el producte {0} a:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>El camí de la carpeta "{0}" conté un caràcter no vàlid.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>S'ha produït un error a la configuració.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>S'ha produït un error a la instal·lació del producte {{0}}.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>S'ha produït un error a la supressió.</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Carpeta d'instal·lació:</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Suprimeix</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Català</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Reinicia ara</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Si us plau, espereu mentre l'aplicació {0} s'instal·la.</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>S'ha abandonat la instal·lació</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Finalitza</value>
+  </data>
+  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+    <value>Cal reiniciar l'ordinador perquè pugui acabar-se la instal·lació de l'aplicació {0}. Voleu reiniciar-lo ara?</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informació</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>La instal·lació o desinstal·lació anterior no s'ha dut a terme. Caldrà que reinicieu l'ordinador per a finalitzar aquesta instal·lació.
+
+Després de reiniciar l'ordinador, executeu aquest programa de nou per completar la instal·lació de {0}.</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>No es pot executar el fitxer:
+{0}</value>
+  </data>
+  <data name="_0IsReadyForUse" xml:space="preserve">
+    <value>El programa ha finalitzat la instal·lació de {0} al vostre ordinador.</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Preparat per a instal·lar</value>
+  </data>
+  <data name="ThankYouForHavingUsed0" xml:space="preserve">
+    <value>{0} ha estat desinstal·lat correctament del vostre ordinador.</value>
+  </data>
+</root>

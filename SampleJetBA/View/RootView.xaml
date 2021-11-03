@@ -16,7 +16,7 @@
         <Style TargetType="{x:Type Window}">
             <Setter Property="FlowDirection" Value="LeftToRight"/>
             <Style.Triggers>
-                <DataTrigger Binding="{Binding Source={x:Static props:Resources.IS_RIGHT_TO_LEFT}}" Value="True" >
+                <DataTrigger Binding="{Binding ElementName=cultureCombo_, Path=SelectedItem.Tag.TextInfo.IsRightToLeft}" Value="True" >
                     <Setter Property="FlowDirection" Value="RightToLeft"/>
                 </DataTrigger>
             </Style.Triggers>
@@ -46,6 +46,7 @@
         <DockPanel Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{StaticResource TitleBarBackgroundBrush}" MouseLeftButtonDown="Background_MouseLeftButtonDown">
             <Button DockPanel.Dock="Right" Style="{StaticResource CloseButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24" IsCancel="True" Command="{Binding NavigationViewModel.StopCommand}" Margin="8,0,8,0"/>
             <Button DockPanel.Dock="Right" Style="{StaticResource MinimizeButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24" Click="Minimize_Click"/>
+            <ComboBox DockPanel.Dock="Right" Name="cultureCombo_" Height="14" Width="100" FontSize="10" FlowDirection="LeftToRight" SelectionChanged="culture_SelectionChanged"/>
             <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="6,0,0,0" FontSize="12" Foreground="{StaticResource TitleBarForegroundBrush}">
                 <TextBlock.Text>
                     <MultiBinding StringFormat="{}{0} v{1:4}">
@@ -97,7 +98,7 @@
         </ScrollViewer>
 
         <!-- Page Content Holder -->
-        <Grid Grid.Row="2" Grid.Column="1" Margin="30,26,22,15">
+        <Grid Grid.Row="2" Grid.Column="1" Margin="30,26,22,15" x:Name="mainGrid_">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>

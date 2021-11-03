@@ -8,7 +8,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Windows;
 using System.Windows.Input;
+using System.Windows.Markup;
 
 namespace SampleJetBA
 {
@@ -22,8 +24,10 @@ namespace SampleJetBA
             base.OnResolveCulture(args);
             Properties.Resources.Culture = args.CultureInfo;
             PanelSW.Installer.JetBA.JetPack.Properties.Resources.Culture = args.CultureInfo;
+            //TODO Keep? FrameworkElement.LanguageProperty.OverrideMetadata(typeof(FrameworkElement), new FrameworkPropertyMetadata(XmlLanguage.GetLanguage(args.CultureInfo.IetfLanguageTag)));
         }
 
+        [STAThread]
         protected override void Run()
         {
             JetBundleVariables.BundleVariablesViewModel vars = Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();

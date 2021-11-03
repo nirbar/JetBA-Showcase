@@ -108,9 +108,10 @@
         <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="MsiPackage" />
         <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="MspPackage" />
         <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="MsuPackage" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="RollbackBoundary" />
       </xs:appinfo>
       <xs:documentation>
-        <![CDATA[Yes to force reboot after the package if any preceding package required reboot]]>
+        <![CDATA[Yes to force reboot after the package if any preceding package required reboot. In RollbackBoundary, valid only if Transaction="yes" with the PanelSW.Custom.WiX build; reboot will be done after the transaction is committed or rolled back.]]>
       </xs:documentation>
     </xs:annotation>
   </xs:attribute>

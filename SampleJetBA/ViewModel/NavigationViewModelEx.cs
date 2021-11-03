@@ -27,16 +27,16 @@ namespace SampleJetBA.ViewModel
     public class NavigationViewModelEx : NavigationViewModel, IInitializable
     {
         public NavigationViewModelEx(SampleBA ba
-            , Lazy<DetectingView> detectingView
-            , Lazy<PageSelectionView> pageSelectionView
-            , Lazy<InstallLocationView> installLocationView
-            , Lazy<ServiceAccountView> svcView
-            , Lazy<DatabaseView> dbView
-            , Lazy<RepairView> repairView
-            , Lazy<ProgressView> progressView
-            , Lazy<HelpView> helpView
-            , Lazy<FinishView> finishView
-            , Lazy<SummaryView> summaryView
+            , Func<DetectingView> detectingView
+            , Func<PageSelectionView> pageSelectionView
+            , Func<InstallLocationView> installLocationView
+            , Func<ServiceAccountView> svcView
+            , Func<DatabaseView> dbView
+            , Func<RepairView> repairView
+            , Func<ProgressView> progressView
+            , Func<HelpView> helpView
+            , Func<FinishView> finishView
+            , Func<SummaryView> summaryView
             )
             : base(ba)
         {
@@ -45,16 +45,16 @@ namespace SampleJetBA.ViewModel
             BA.ApplyComplete += BA_ApplyComplete;
             BA.Kernel.Get<Dispatcher>().Invoke(() => ExpectedPages = new ObservableCollection<Pages>());
 
-            AddPage(Pages.Finish, new Lazy<object>(() => finishView.Value));
-            AddPage(Pages.Help, new Lazy<object>(() => helpView.Value));
-            AddPage(Pages.Detecting, new Lazy<object>(() => detectingView.Value));
-            AddPage(Pages.PageSelection, new Lazy<object>(() => pageSelectionView.Value));
-            AddPage(Pages.InstallLocation, new Lazy<object>(() => installLocationView.Value));
-            AddPage(Pages.Service, new Lazy<object>(() => svcView.Value));
-            AddPage(Pages.Database, new Lazy<object>(() => dbView.Value));
-            AddPage(Pages.Progress, new Lazy<object>(() => progressView.Value));
-            AddPage(Pages.Repair, new Lazy<object>(() => repairView.Value));
-            AddPage(Pages.Summary, new Lazy<object>(() => summaryView.Value));
+            AddPage(Pages.Finish, new Func<object>(() => finishView.Invoke()));
+            AddPage(Pages.Help, new Func<object>(() => helpView.Invoke()));
+            AddPage(Pages.Detecting, new Func<object>(() => detectingView.Invoke()));
+            AddPage(Pages.PageSelection, new Func<object>(() => pageSelectionView.Invoke()));
+            AddPage(Pages.InstallLocation, new Func<object>(() => installLocationView.Invoke()));
+            AddPage(Pages.Service, new Func<object>(() => svcView.Invoke()));
+            AddPage(Pages.Database, new Func<object>(() => dbView.Invoke()));
+            AddPage(Pages.Progress, new Func<object>(() => progressView.Invoke()));
+            AddPage(Pages.Repair, new Func<object>(() => repairView.Invoke()));
+            AddPage(Pages.Summary, new Func<object>(() => summaryView.Invoke()));
 
             SetStartPage();
         }
@@ -151,7 +151,7 @@ namespace SampleJetBA.ViewModel
 
         private void apply_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            PanelSW.Installer.JetBA.ViewModel.ApplyViewModel apply = BA.Kernel.Get<PanelSW.Installer.JetBA.ViewModel.ApplyViewModel>();
+            ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
             if (e.PropertyName.Equals("InstallState") && (apply.InstallState >= InstallationState.Applied))
             {
                 ClearHistory();
@@ -162,6 +162,13 @@ namespace SampleJetBA.ViewModel
         #endregion
 
         public ObservableCollection<Pages> ExpectedPages { get; private set; }
+
+        public void Refresh()
+        {
+            Page = Page;
+            Dispatcher.CurrentDispatcher.Invoke(() => ExpectedPages = new ObservableCollection<Pages>(ExpectedPages));
+            OnPropertyChanged(nameof(ExpectedPages));
+        }
 
         private void CONFIGURE_SQL_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
