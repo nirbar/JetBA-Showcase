@@ -120,11 +120,15 @@
                     </StackPanel>
 
                     <!-- Buttons -->
-                    <DockPanel DockPanel.Dock="Bottom" Margin="10,5,10,5" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" LastChildFill="False">
-                        <Button DockPanel.Dock="Right" Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}" IsDefault="{Binding IsLeftButtonDefault}" Content="{Binding LeftCommandText}"/>
-                        <Button DockPanel.Dock="Right" Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}" IsDefault="{Binding IsMiddleButtonDefault}" Content="{Binding MiddleCommandText}"/>
+                    <DockPanel DockPanel.Dock="Bottom" Margin="10,5,10,5" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" LastChildFill="False">
                         <Button DockPanel.Dock="Right" Command="{Binding RightCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}" Content="{Binding RightCommandText}"/>
-                        <Button DockPanel.Dock="Left" Command="{Binding CopyTextCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}" Content="{Binding CopyToClipboard}"/>
+                        <Button DockPanel.Dock="Right" Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}" IsDefault="{Binding IsMiddleButtonDefault}" Content="{Binding MiddleCommandText}"/>
+                        <Button DockPanel.Dock="Right" Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}" IsDefault="{Binding IsLeftButtonDefault}" Content="{Binding LeftCommandText}"/>
+                        <TextBlock DockPanel.Dock="Left">
+                            <Hyperlink Command="{Binding CopyTextCommand}">
+                                <TextBlock Text="{Binding CopyToClipboard}" Foreground="Blue"/>
+                            </Hyperlink>
+                        </TextBlock>
                     </DockPanel>
 
                     <!-- Text -->
