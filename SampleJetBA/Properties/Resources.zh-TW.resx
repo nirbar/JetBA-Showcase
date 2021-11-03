@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>電腦需要重新開機，才能完成安裝 {0} 。要馬上重新開機嗎？</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>複製細節到剪貼簿</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>訊息</value>
   </data>

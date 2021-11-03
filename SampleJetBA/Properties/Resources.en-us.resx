@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Your computer must be restarted in order to complete the installation of {0}. Do you want to reboot now?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copy Details To Clipboard</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
   </data>

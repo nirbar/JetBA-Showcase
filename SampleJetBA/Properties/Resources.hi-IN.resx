@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>{0} के इंस्टालेशन को पूरा करने के लिए आपके कंप्यूटर को फिर से शुरू करना होगा। क्या आप अभी रीबूट करना चाहते हैं?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>क्लिपबोर्ड पर विवरण कॉपी करें</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>सुचना</value>
   </data>

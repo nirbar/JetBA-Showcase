@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Windows muss neu gestartet werden, um die Installation von {0} zu vervollständigen. Möchten Sie Windows jetzt neu starten?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Details in die Zwischenablage kopieren</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
   </data>

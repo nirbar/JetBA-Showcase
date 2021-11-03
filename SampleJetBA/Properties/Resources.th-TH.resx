@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>เครื่องคอมพิวเตอร์ของคุณจำเป็นต้องรีสตารท์เพื่อการติดตั้งของ {0} จะเรียบร้อย, คุณต้องการจะ รีบูท เดี๋ยวนี้ไหม?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>คัดลอกรายละเอียดลงคลิปบอร์ด</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>คำอธิบาย</value>
   </data>

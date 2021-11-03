@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>{0}의 설치를 완료하기 위해서는 시스템을 다시 시작해야 합니다. 지금 재부팅 하시겠습니까?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>자세한 내용을 클립보드로 복사</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>정보</value>
   </data>

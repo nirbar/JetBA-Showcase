@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Uw systeem moet opnieuw worden opgestart om de installatie van {0} te voltooien. Wilt u nu herstarten?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Details kopiëren naar klembord</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informatie</value>
   </data>

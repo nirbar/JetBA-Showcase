@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Që të mund të plotësohet instalimi i {0}, kompjuteri juaj duhet të riniset. Doni të riniset tani?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopjo Hollësira Te E Papastra</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informacion</value>
   </data>

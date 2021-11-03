@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>{0} のインストールを完了するには、このコンピュータを再起動する必要があります。今すぐ再起動しますか？</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>クリップボードへ詳細をコピー</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>情報</value>
   </data>

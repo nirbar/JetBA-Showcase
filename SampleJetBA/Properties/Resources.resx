@@ -385,4 +385,7 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copy</value>
+  </data>
 </root>

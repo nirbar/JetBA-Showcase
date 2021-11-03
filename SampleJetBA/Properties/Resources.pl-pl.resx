@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Twój komputer musi zostać ponownie uruchomiony, aby zakończyć instalację {0}. Czy chcesz teraz ponownie uruchomić komputer?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopiuj szczegóły do schowka</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informacja</value>
   </data>

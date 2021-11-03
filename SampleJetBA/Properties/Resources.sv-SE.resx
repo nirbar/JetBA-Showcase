@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Din dator måste startas om för att fullborda installationen av {0}. Vill du starta om nu?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopiera detaljinformation till klippbordet</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
   </data>

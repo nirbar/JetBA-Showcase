@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Для завершения установки {0} необходимо перезагрузить компьютер. Хотите сделать это сейчас?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Копировать сведения в буфер обмена</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Информация</value>
   </data>

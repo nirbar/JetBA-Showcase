@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Πρέπει να γίνει επανεκκίνηση του υπολογιστή σας για να ολοκληρωθεί η εγκατάσταση του '{0}'. Θέλετε να επανεκκινήσετε τον υπολογιστή σας τώρα;</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Αντιγραφή λεπτομερειών στο Πρόχειρο</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Πληροφορίες</value>
   </data>

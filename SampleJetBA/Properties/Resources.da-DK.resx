@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Din computer skal genstartes for at gennemføre installationen af {0}. Vil du genstarte nu?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopier detaljer til udklipsholderen</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
   </data>

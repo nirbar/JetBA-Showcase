@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Jūsu datoru ir nepieciešams pārstartēt, lai pabeigtu '{0}' uzstādīšanu. Vai vēlaties pārstartēt datoru tūlīt?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Iekopēt detaļas starpliktuvē</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informâcija</value>
   </data>

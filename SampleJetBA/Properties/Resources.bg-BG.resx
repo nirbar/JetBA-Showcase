@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Компютърът трябва да бъде рестартиран, за да завърши инсталирането на {0}. Искате ли да рестартирате сега?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Копиране на данните в буфера</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Информация</value>
   </data>

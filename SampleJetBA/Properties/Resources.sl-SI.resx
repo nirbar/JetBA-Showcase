@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Za dokončanje namestitve {0} morate ponovno zagnati računalnik. Želite zdaj ponovno zagnati računalnik?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopiraj podrobnosti v odložišče</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informacija</value>
   </data>

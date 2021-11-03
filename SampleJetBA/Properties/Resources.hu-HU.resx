@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>A(z) {0} telepítésének befejezéséhez újra kell indítani a rendszert. Most akarja újraindítani?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Adatok vágólapra másolása</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Információk</value>
   </data>

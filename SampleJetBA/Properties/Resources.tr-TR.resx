@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>{0} kurulumunun tamamlanması için bilgisayarınızı yeniden başlatmanız gerekiyor.Bilgisayarınızı yeniden başlatmak istiyor musunuz?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Ayrıntıları panoya kopyala</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Bilgi</value>
   </data>

@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>{0} -ohjelman asennuksen viimeisteleminen edellyttää tietokoneen uudelleenkäynnistämistä. Haluatko käynnistää tietokoneen uudelleen nyt?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopioi tiedot leikepöydälle</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Ilmoitus</value>
   </data>

@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Per completare l'installazione di {0} il computer deve essere riavviato. Vuoi riavviarlo ora?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copia i dettagli negli Appunti</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informazioni</value>
   </data>

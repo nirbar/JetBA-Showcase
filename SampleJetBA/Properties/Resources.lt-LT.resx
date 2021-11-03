@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Jūsų kompiuteris turi būti perkrautas, kad būtų baigtas {0} įdiegimas. Ar jūs norite perkrauti dabar?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopijuoti detales į atmintį</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informacija</value>
   </data>

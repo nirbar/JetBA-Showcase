@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Votre ordinateur doit être redémarré afin de compléter l'installation de {0}. Souhaitez-vous redémarrer maintenant ?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copier les Détails dans le Presse-papier</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
   </data>

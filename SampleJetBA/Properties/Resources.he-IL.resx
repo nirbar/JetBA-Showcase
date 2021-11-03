@@ -378,4 +378,7 @@ INSTALL_FOLDER="C:\Program Files\Sample" - מתקין לספריה המבוקש�
   <data name="_0ServiceAccount" xml:space="preserve">
     <value>חשבון משתמש להרצת שירותי {0}</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>העתק ללוח</value>
+  </data>
 </root>

@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>{0} täielikuks paigaldamiseks tuleb arvuti taaskäivitada. Kas soovid arvuti kohe taaskäivitada ?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopeeri detailid lõikelauale</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informatsioon</value>
   </data>

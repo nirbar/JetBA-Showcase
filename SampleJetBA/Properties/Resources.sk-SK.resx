@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Pre úplné dokončenie inštalácie programu {0} je potrebné reštartovať váš počítač. Chcete ho reštartovať ihneď?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Skopírovať podrobnosti do schránky</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informácie</value>
   </data>

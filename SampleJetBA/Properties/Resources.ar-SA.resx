@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>يجب إعادة تشغيل الجهاز لإنهاء تنصيب {0}. هل تريد إعادة التشغيل الآن؟</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>نسخ التفاصيل إلى الذاكرة</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>معلومات</value>
   </data>

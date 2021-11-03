@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Seu computador deve ser reiniciado para completar a instalação do {0}. Você quer reiniciar agora?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copiar os Detalhes para a Área de Transferência</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informação</value>
   </data>

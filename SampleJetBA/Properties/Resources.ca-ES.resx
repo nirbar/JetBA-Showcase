@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Cal reiniciar l'ordinador perquè pugui acabar-se la instal·lació de l'aplicació {0}. Voleu reiniciar-lo ara?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copia els detalls al porta-retalls</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informació</value>
   </data>

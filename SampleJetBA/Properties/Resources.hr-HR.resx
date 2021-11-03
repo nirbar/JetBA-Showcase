@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Da bi se dovršila instalacija programa {0}, trebate ponovno pokrenuti računalo. Želite li to učiniti sada?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopiraj detalje u međuspremnik</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informacija</value>
   </data>

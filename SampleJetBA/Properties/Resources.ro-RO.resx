@@ -243,6 +243,9 @@
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Trebuie să reporniţi calculatorul pentru a termina instalarea. Doriţi să-l reporniţi acum?</value>
   </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copiere detalii în clipboard</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informaþii</value>
   </data>

@@ -120,11 +120,12 @@
                     </StackPanel>
 
                     <!-- Buttons -->
-                    <StackPanel DockPanel.Dock="Bottom" Margin="10,5,10,5" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
-                        <Button Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}" IsDefault="{Binding IsLeftButtonDefault}" Content="{Binding LeftCommandText}"/>
-                        <Button Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}" IsDefault="{Binding IsMiddleButtonDefault}" Content="{Binding MiddleCommandText}"/>
-                        <Button Command="{Binding RightCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}" Content="{Binding RightCommandText}"/>
-                    </StackPanel>
+                    <DockPanel DockPanel.Dock="Bottom" Margin="10,5,10,5" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" LastChildFill="False">
+                        <Button DockPanel.Dock="Right" Command="{Binding LeftCommand}" Visibility="{Binding LeftCommandVisibility}" IsDefault="{Binding IsLeftButtonDefault}" Content="{Binding LeftCommandText}"/>
+                        <Button DockPanel.Dock="Right" Command="{Binding MiddleCommand}" Visibility="{Binding MiddleCommandVisibility}" IsDefault="{Binding IsMiddleButtonDefault}" Content="{Binding MiddleCommandText}"/>
+                        <Button DockPanel.Dock="Right" Command="{Binding RightCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}" Content="{Binding RightCommandText}"/>
+                        <Button DockPanel.Dock="Left" Command="{Binding CopyTextCommand}" Visibility="{Binding RightCommandVisibility}" IsDefault="{Binding IsRightButtonDefault}" Content="{Binding CopyToClipboard}"/>
+                    </DockPanel>
 
                     <!-- Text -->
                     <ScrollViewer DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderThickness="0" Background="Transparent">
