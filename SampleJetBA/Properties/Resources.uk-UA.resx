@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Назад</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Назад</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Далі</value>
+  <data name="Information" xml:space="preserve">
+    <value>Відомості</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
@@ -132,26 +126,20 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Скасувати</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Повторити</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Закрити</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Повторити</value>
+  <data name="Close" xml:space="preserve">
+    <value>Закрити</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Пропустити</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Потрібне ім'я користувача</value>
   </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Пропустити</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Так</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Перервати</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Ні</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Так</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Ні</value>
@@ -162,29 +150,176 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>ОК</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Повторити</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Так</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Так</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Продовжити</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Помилка</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Увага!</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Триває обробка {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Завершення</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Завершення</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Далі</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Усе готово до інсталяції</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Вихід</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Сервер</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Інсталяція {0}</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Справді скасувати?</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>{0} Інсталяцію успішно завершено.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>{0} Інсталяцію успішно завершено.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>{0} Помилка інсталяції.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>{0} Помилка інсталяції.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>{0} Помилка інсталяції.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>{0} Помилка інсталяції.</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Функції продукту</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Функції продукту</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Папка призначення</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Папка призначення</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Інсталювати</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Відновити</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Прийняти</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Пропустити</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Пропустити</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Нотатка</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Повторіть спробу</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Зведення</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Відновити</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Огляд</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Перебіг інсталювання</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Перебіг інсталювання</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Перезавантажити</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Переглянути файл журналу</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>База даних</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>База даних</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Користувачі послуги</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Копіювати до буфера обміну</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Операцію скасовано</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Завантажити</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Змінити</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Ім’я користувача</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Відхилити</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Недійсне ім’я користувача.або пароль.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Автентифікація</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>Наведені нижче застосунки використовують файли, які підлягають оновленню під час цієї інсталяції. Можна дозволити майстру інсталяції закрити та спробувати перезапустити їх або перезавантажити комп’ютер пізніше.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Файли, які використовуються</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Відновити</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Справді скасувати?</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Вихід</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Вихід</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Огляд...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Інсталювати</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Зачекайте: майстер готується до інсталяції.</value>
@@ -195,9 +330,6 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>Триває видалення попередніх версій цього застосунку...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Настроєно {0}</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Папка призначення</value>
   </data>
@@ -207,50 +339,19 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Шлях до папки "{0}" містить неприпустимий символ.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Помилка настроювання.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Помилка програми інсталяції {{0}}.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Помилка видалення.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Папка для інсталяції:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Видалити</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Українська</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Перезавантажитися зараз</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Ласкаво просимо до Майстра Встановлення {0}</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Зачекайте, доки програма встановлення скопіює всі необхідні файли {0}.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Встановлення перервана</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Кінець</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Дана програма встановить {0} на Ваш комп'ютер.
+
+Рекомендовано закрити всі програми перед початком інсталяції. Це дозволить програмі встановлення оновити системні файли без перезавантаження системи.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Для того, щоб завершити встановлення {0} Ваш комп'ютер повинен перезавантажитися. Зробити це зараз?</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Копіювати деталі у буфер обміну</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Інформація</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Помилка</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>Встановлення або видалення попередньої програми не було завершено. Вам потрібно перезавантажити ваш комп’ютер для завершення минулого встановлення.
@@ -264,10 +365,10 @@
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>Встановлення {0} на ваш комп’ютер завершено.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Усе готово до встановлення</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} успішно видалено з вашого комп'ютера.</value>
+  </data>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Ця програма не підтримує версію Windows, встановлену на цьому комп'ютері.</value>
   </data>
 </root>

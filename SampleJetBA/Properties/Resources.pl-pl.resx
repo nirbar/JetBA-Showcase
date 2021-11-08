@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Wstecz</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Wstecz</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Dalej</value>
+  <data name="Information" xml:space="preserve">
+    <value>Informacje</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anuluj</value>
@@ -132,26 +126,17 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Anuluj</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Ponów próbę</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Zamknij</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Ponów próbę</value>
+  <data name="Close" xml:space="preserve">
+    <value>Zamknij</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignoruj</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignoruj</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Tak</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Przerwij</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Nie</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Tak</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Nie</value>
@@ -162,29 +147,197 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Ponów próbę</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Wymagana nazwa użytkownika</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Kontynuuj</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Ostrzeżenie</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Przetwarzanie encji {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Zakończ</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Zakończ</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Dalej</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Gotowość do instalacji</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Zakończ</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Hasło</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Serwer</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Instalator produktu {0}</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Czy na pewno chcesz anulować operację?</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>Instalacja produktu {0} została ukończona pomyślnie.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>Instalacja produktu {0} została ukończona pomyślnie.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Instalacja produktu {0} nie powiodła się.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>Instalacja produktu {0} nie powiodła się.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>Instalacja produktu {0} nie powiodła się.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>Instalacja produktu {0} nie powiodła się.</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Funkcje produktu</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Funkcje produktu</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Folder docelowy</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Folder docelowy</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Zainstaluj</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Napraw</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Odinstaluj</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Zaakceptuj</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignoruj</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignoruj</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Uwaga</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Spróbuj ponownie</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Podsumowanie</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Wznów</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Przeglądaj</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Postęp instalacji</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Postęp instalacji</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Uruchom ponownie</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Wyświetl plik dziennika</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Baza danych</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Baza danych</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Użytkownicy usługi</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Folder docelowy</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopiuj do Schowka</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Operacja anulowana</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Załaduj</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modyfikuj</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nazwa użytkownika</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Odrzuć</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Nieprawidłowa nazwa użytkownika lub hasło.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Uwierzytelnianie</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Uwierzytelnianie systemu Windows</value>
+  </data>
+  <data name="_0DatabaseConnection" xml:space="preserve">
+    <value>Konfiguracja bazy danych</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Konfiguracja bazy danych</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Konto usługi</value>
+  </data>
+  <data name="_0ServiceAccount" xml:space="preserve">
+    <value>Konto usługi</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>Poniższe aplikacje korzystają z plików, które wymagają zaktualizowania za pomocą tego instalatora. Możesz zezwolić, aby Kreator instalacji zakończył ich działanie, a następnie spróbował uruchomić je ponownie lub uruchomił ponownie komputer.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Pliki w użyciu</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Napraw</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Czy na pewno chcesz anulować operację?</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Zakończ</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Zakończ</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Przeglądaj...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Zainstaluj</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Zaczekaj, aż Kreator instalacji zakończy przygotowania do przeprowadzenia instalacji.</value>
@@ -195,62 +348,25 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>Trwa usuwanie starszych wersji tej aplikacji...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Skonfigurowano {0}</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Folder docelowy</value>
-  </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Zainstaluj produkt {0} w folderze:</value>
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Ścieżka folderu „{0}” zawiera nieprawidłowy znak.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Konfiguracja nie powiodła się.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Instalacja produktu {{0}} nie powiodła się.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Usunięcie nie powiodło się.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Folder instalacji:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Usuń</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Polski</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Uruchom ponownie teraz</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Witamy w kreatorze instalacji {0}</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Proszę czekać, trwa instalacja {0}.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Instalacja przerwana</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Zakończ</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Kreator ten pomoże Ci zainstalować {0}.
+
+Zalecane jest zamknięcie wszystkich uruchomionych programów przed rozpoczęciem instalacji. Pozwoli to na uaktualnienie niezbędnych plików systemowych bez konieczności ponownego uruchamiania komputera.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Twój komputer musi zostać ponownie uruchomiony, aby zakończyć instalację {0}. Czy chcesz teraz ponownie uruchomić komputer?</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopiuj szczegóły do schowka</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Informacja</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Błąd</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>Instalacja/dezinstalacja poprzedniej wersji aplikacji nie zosta³a zakoñczona. Aby zakoñczyæ instalacjê, nale¿y ponownie uruchomiæ komputer. 
@@ -264,25 +380,10 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>Instalator zakoñczy³ instalacjê aplikacji {0} na komputerze.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Gotowy do rozpoczêcia instalacji</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>Aplikacja {0} zosta³a usuniêta z komputera.</value>
   </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Trwa przetwarzanie:</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Co najmniej jeden problem spowodował niepowodzenie instalacji. Usuń problemy, a następnie ponów próbę instalacji. Aby uzyskać więcej informacji można znaleźć w pliku dziennika.</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Kontynuuj</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Uwaga</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Ostrzeżenie</value>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Ta aplikacja nie wspiera aktualnie uruchomionej wersji Windows.</value>
   </data>
 </root>

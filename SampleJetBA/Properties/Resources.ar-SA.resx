@@ -117,41 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>السابق</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>السابق</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>التالي</value>
+  <data name="Information" xml:space="preserve">
+    <value>المعلومات</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>إلغاء الأمر</value>
+    <value>إلغاء</value>
   </data>
   <data name="CancelCaption" xml:space="preserve">
-    <value>إلغاء الأمر</value>
+    <value>إلغاء</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>إعادة المحاولة</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>إغلاق‬</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>إعادة المحاولة</value>
+  <data name="Close" xml:space="preserve">
+    <value>إغلاق‬</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>تجاهل</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>مطلوب اسم مستخدم</value>
   </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>تجاهل</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>نعم</value>
+  <data name="Abort" xml:space="preserve">
+    <value>إيقاف قبل الاكتمال</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>لا</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>نعم</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>لا</value>
@@ -162,29 +150,194 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>موافق</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>إعادة المحاولة</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>متابعة</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>الخطأ</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>تحذير</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>قيد المعالجة {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>إنهاء</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>إنهاء</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>جاهز للتثبيت</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>‏‏إنهاء</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>الخادم</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>إعداد {0}</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>هل تريد بالتأكيد إلغاء الأمر؟</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>اكتمل إعداد {0} بنجاح.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>اكتمل إعداد {0} بنجاح.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>فشل إعداد {0} .</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>فشل إعداد {0} .</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>فشل إعداد {0} .</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>فشل إعداد {0} .</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>ميزات المنتج</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>ميزات المنتج</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>مجلد الوجهة</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>مجلد الوجهة</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>تثبيت</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>إصلاح</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>إزالة التثبيت</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>‏‏تجاهل</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>‏‏تجاهل</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>ملاحظة</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>المحاولة مرة أخرى</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>الملخص‬</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>استئناف</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>استعراض</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>تقدم التثبيت</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>تقدم التثبيت</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>إعادة تشغيل</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>عرض ملف السجل</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>قاعدة بيانات</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>قاعدة بيانات</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>مستخدمو الخدمة</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>المجلد الهدف</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>نسخ إلى الحافظة</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>تم إلغاء العملية</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>تحميل</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>اسم مستخدم</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>قبول</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>رفض</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>اسم مستخدم أو كلمة مرور غير صالحة.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>المصادقة</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>مصادقة Windows</value>
+  </data>
+  <data name="_0DatabaseConnection" xml:space="preserve">
+    <value>تكوين قاعدة البيانات</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>تكوين قاعدة البيانات</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>حساب الخدمة</value>
+  </data>
+  <data name="_0ServiceAccount" xml:space="preserve">
+    <value>حساب الخدمة</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>تستخدم التطبيقات التالية ملفات يلزم تحديثها من خلال هذا الإعداد. يمكن السماح لمعالج الإعداد بإغلاقها ومحاولة إعادة تشغيلها أو إعادة تشغيل الجهاز لاحقًا.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>الملفات قيد الاستخدام</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>إصلاح</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>‏‏هل تريد بالتأكيد إلغاء الأمر؟</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>إنهاء</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>إنهاء</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>استعراض...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>تثبيت</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>الرجاء الانتظار أثناء قيام "معالج الإعداد" بالتمهيد لإرشادك خلال عملية التثبيت.</value>
@@ -195,62 +348,25 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>‏‏يتم الآن إزالة الإصدارات القديمة من هذا التطبيق...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>‏‏تم تكوين {0}</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>المجلد الوجهة</value>
-  </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>تثبيت {0} على:</value>
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>‏‏يحتوي مسار المجلد '{0}' على حرف غير صالح.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>‏‏فشلت عملية التكوين.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>‏‏فشل إعداد {{0}}.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>‏‏فشلت عملية الإزالة.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>مجلد التثبيت:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>إزالة</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>True</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>العربية</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>أعد التشغيل الآن</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>مرحبا بك في مرشد إعداد {0}</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>الرجاء الإنتظار أثناء تنصيب {0}.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>إلغاء التنصيب</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>إنهاء</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>سيساعدك هذا المرشد في تنصيب {0}.
+
+من المفضل إغلاق جميع البرامج قبل التنصيب. سيساعد هذا في تجديد ملفات النظام دون الحاجة لإعادة تشغيل الجهاز.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>يجب إعادة تشغيل الجهاز لإنهاء تنصيب {0}. هل تريد إعادة التشغيل الآن؟</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>نسخ التفاصيل إلى الذاكرة</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>معلومات</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>خطأ</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>لم يكتمل التثبيت / إزالة البرنامج السابق. ستحتاج إلى إعادة تشغيل الكمبيوتر لإكمال هذا التثبيت.
@@ -264,10 +380,10 @@
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>إكتمل معالج التثبيت من تثبيت {0} على جهازك.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>جاهز للتثبيت</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>تم إزالة {0} تماما من جهازك بنجاح.</value>
+  </data>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>لا يدعم هذا البرنامج إصدار Windows الذي يعمل به الكمبيوتر.</value>
   </data>
 </root>

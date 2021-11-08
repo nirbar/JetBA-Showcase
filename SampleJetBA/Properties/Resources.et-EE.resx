@@ -132,6 +132,9 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Loobu</value>
   </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Lõpeta</value>
+  </data>
   <data name="Retry" xml:space="preserve">
     <value>Proovi uuesti</value>
   </data>
@@ -237,11 +240,28 @@
   <data name="OperationCanceled" xml:space="preserve">
     <value>Paigaldus katkestatud</value>
   </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>Paigaldus edukalt sooritatud.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Paigaldamine ebaõnnestus.</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Lõpeta</value>
   </data>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>{0} paigaldamine!</value>
+  </data>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>See abiline aitab paigaldada {0}.
+
+Enne paigaldamise alustamist on soovitatav kõik teised programmid sulgeda, see võimaldab teatud süsteemifaile uuendada ilma arvutit taaskäivitamata.</value>
+  </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>{0} täielikuks paigaldamiseks tuleb arvuti taaskäivitada. Kas soovid arvuti kohe taaskäivitada ?</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Nõustun</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopeeri detailid lõikelauale</value>
@@ -269,5 +289,8 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} eemaldati sinu arvutist edukalt.</value>
+  </data>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Seda programmi ei saa selle Windowsi versiooniga kasutada, mis arvutis praegu töötab.</value>
   </data>
 </root>

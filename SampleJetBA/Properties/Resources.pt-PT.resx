@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Anterior</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Anterior</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Seguinte</value>
+  <data name="Information" xml:space="preserve">
+    <value>Informações</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
@@ -132,26 +126,20 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Cancelar</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Repetir</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Fechar</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Repetir</value>
+  <data name="Close" xml:space="preserve">
+    <value>Fechar</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignorar</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Nome de Utilizador Necessário</value>
   </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignorar</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Sim</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Abortar</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Sim</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Não</value>
@@ -162,29 +150,179 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Repetir</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>A Processar {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Concluir</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Concluir</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Seguinte</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Pronto para Instalar</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Configuração do {0}</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Tem a certeza de que pretende cancelar?</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>A Configuração do {0}  foi concluída com êxito.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>A Configuração do {0}  foi concluída com êxito.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Falha na Configuração do {0} .</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>Falha na Configuração do {0} .</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>Falha na Configuração do {0} .</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>Falha na Configuração do {0} .</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Funcionalidades do produto</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Funcionalidades do produto</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Pasta de Destino</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Pasta de Destino</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Instalar</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Reparar</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Desinstalar</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Aceitar</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorar</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignorar</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Nota</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Repetir</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Resumo</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Retomar</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Progresso da Instalação</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Progresso da Instalação</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Reiniciar</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Ver o Ficheiro de Registo</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Base de Dados</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Base de Dados</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Utilizadores de Serviço</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Pasta de Destino</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copiar para Área de Transferência</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Operação Cancelada</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Carregar</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nome de Utilizador</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Recusar</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Nome de utilizador ou palavra-passe inválidos.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autenticação</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>As aplicações seguintes estão a utilizar ficheiros que necessitam de ser actualizados por esta configuração. Pode deixar o Assistente de Configuração fechá-las e tentar reiniciá-las ou reiniciar o computador mais tarde.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Ficheiros em Utilização</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Reparar</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Tem a certeza de que pretende cancelar?</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Sair</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Sair</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Procurar...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Instalar</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Aguarde enquanto o Assistente de Configuração se prepara para o orientar através da instalação.</value>
@@ -195,62 +333,25 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>A remover versões antigas desta aplicação...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} configurado</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Pasta de Destino</value>
-  </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Instalar o {0} em:</value>
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>O caminho da pasta '{0}' contém um carácter inválido.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>A configuração falhou.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>O Programa de Configuração do {0} falhou.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>A remoção falhou.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Pasta de instalação:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Remover</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Português</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Reiniciar Agora</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Bem vindo ao Assistente de Instalação do {0}</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Por favor, aguarde enquanto o {0} está sendo instalado.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Instalação Abortada</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Terminar</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Este assistente ajudá-lo-á durante a instalação do {0}.
+
+É recomendado que feche todas as outras aplicações antes de iniciar a Instalação. Isto permitirá que o Instalador actualize ficheiros relacionados com o sistema sem necessidade de reiniciar o computador.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>O seu computador deve ser reiniciado para concluír a instalação do {0}. Deseja reiniciar agora?</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copiar detalhes para a Área de Transfêrencia</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Informação</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Erro</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>A instalação/remoção de um programa anterior não foi completada. Necessitará de reiniciar o computador para completar essa instalação.
@@ -264,25 +365,10 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>O Assistente de Instalação concluiu a instalação do {0} no seu computador.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Pronto para Instalar</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>O {0} foi removido do seu computador com sucesso.</value>
   </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>A processar:</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Um ou mais problemas provocaram a falha da configuração. Corrija os problemas e repita a configuração. Para mais informações, consulte o ficheiro de registo.</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continuar</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Nota</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Advertência</value>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Este programa não suporta a versão do Windows que está a utilizar.</value>
   </data>
 </root>

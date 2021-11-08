@@ -132,6 +132,9 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
   <data name="Retry" xml:space="preserve">
     <value>Retry</value>
   </data>
@@ -237,11 +240,28 @@
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installation Aborted</value>
   </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>Setup was completed successfully.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Setup was not completed successfully.</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Finish</value>
   </data>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Welcome to {0} Setup</value>
+  </data>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Setup will guide you through the installation of {0}.
+
+It is recommended that you close all other applications before starting Setup. This will make it possible to update relevant system files without having to reboot your computer.</value>
+  </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Your computer must be restarted in order to complete the installation of {0}. Do you want to reboot now?</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>I Agree</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copy Details To Clipboard</value>
@@ -270,8 +290,14 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} was successfully removed from your computer.</value>
   </data>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>This program does not support the version of Windows your computer is running.</value>
+  </data>
   <data name="Executing0" xml:space="preserve">
     <value>Processing:</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Decline</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
     <value>One or more issues caused the setup to fail. Please fix the issues and then retry setup. For more information see the log file.</value>

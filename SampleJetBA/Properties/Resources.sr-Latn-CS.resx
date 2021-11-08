@@ -132,6 +132,9 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Otkaži</value>
   </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Završi</value>
+  </data>
   <data name="Retry" xml:space="preserve">
     <value>Pokušaj opet</value>
   </data>
@@ -237,11 +240,28 @@
   <data name="OperationCanceled" xml:space="preserve">
     <value>Prekinuta instalacija</value>
   </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>Instalacija je uspešno završena.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Instalacija je prekinuta i nije uspešno završena.</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Kraj</value>
   </data>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Dobrodošli u vodič za instalaciju programa {0}</value>
+  </data>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Bićete vođeni kroz proces instalacije programa {0}.
+
+Preporučljivo je da isključite sve druge programe pre početka instalacije. Ovo može omogućiti ažuriranje sistemskih fajlova bez potrebe za ponovnim pokretanjem računara.</value>
+  </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Računar mora biti ponovo pokrenut da bi se proces instalacije programa {0} uspešno završio. Želite li to odmah da uradite?</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Prihvatam</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiraj detalje u klipbord</value>
@@ -269,5 +289,8 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} je deinstaliran sa raèunara.</value>
+  </data>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Program ne podržava izdanje Windows-a koje koristite.</value>
   </data>
 </root>

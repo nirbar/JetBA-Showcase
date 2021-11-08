@@ -117,74 +117,209 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Information" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмяна</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>Отмяна</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Затваряне</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Затваряне</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>Прекратяване</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="CancelNo" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Повторен опит</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Изисква се потребителско име</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Продължаване</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Грешка</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Обработване на {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Напред</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>В готовност за инсталиране</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Изход</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Парола</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Сървър</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Настройка на {0}</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Наистина ли искате да отмените?</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>{0} Настройката завърши успешно.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>{0} Настройката завърши успешно.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>{0} Неуспешна настройка.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>{0} Неуспешна настройка.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>{0} Неуспешна настройка.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>{0} Неуспешна настройка.</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Функции на продукта</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Функции на продукта</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Папка на местоназначение</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Папка на местоназначение</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Назад</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Назад</value>
   </data>
-  <data name="Next" xml:space="preserve">
-    <value>Напред</value>
+  <data name="Install" xml:space="preserve">
+    <value>Инсталиране</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Отказ</value>
+  <data name="Repair" xml:space="preserve">
+    <value>Поправяне</value>
   </data>
-  <data name="CancelCaption" xml:space="preserve">
-    <value>Отказ</value>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Деинсталиране</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Опитай пак</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Опитай пак</value>
+  <data name="Accept" xml:space="preserve">
+    <value>Приемане</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>Игнорирай</value>
+    <value>Игнориране</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Игнорирай</value>
+    <value>Игнориране</value>
   </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Да</value>
+  <data name="Note" xml:space="preserve">
+    <value>Забележка</value>
   </data>
-  <data name="No" xml:space="preserve">
-    <value>Не</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Повторен опит</value>
   </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Да</value>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Обобщение</value>
   </data>
-  <data name="CancelNo" xml:space="preserve">
-    <value>Не</value>
+  <data name="Resume" xml:space="preserve">
+    <value>Подновяване</value>
   </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
+  <data name="Browse" xml:space="preserve">
+    <value>Преглед</value>
   </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Ход на инсталирането</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Ход на инсталирането</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Рестартиране</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Преглед на регистрационния файл</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>База данни</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>База данни</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Изпълнители на услуги</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Копирай в клипборда</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Операцията е отменена</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Зареди</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Модифициране</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Потребителско име</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Отхвърляне</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Невалидно потребителско име или парола.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Удостоверяване</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>Приложенията по-долу използват файлове, които трябва да се актуализират при това инсталиране. Можете да позволите на съветника за инсталиране да ги затвори и да се опита да ги стартира отново или да рестартирате компютъра по-късно.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Използвани в момента файлове</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Поправи</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Наистина ли искате да откажете?</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Изход</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Изход</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Преглед...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Инсталирай</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Моля, изчакайте, докато съветникът за инсталиране се подготви да ви направлява в инсталирането.</value>
@@ -195,9 +330,6 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>Премахване на по-старите версии на това приложение...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} е конфигуриран</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Папка местоназначение</value>
   </data>
@@ -207,50 +339,19 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Пътят на папката "{0}" съдържа невалиден знак.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Конфигурирането не е успешно.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Инсталирането на {0}  е неуспешно.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Премахването е неуспешно.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Папка за инсталиране:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Премахни</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Български</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Да, рестартирай сега</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Добре дошли в Съветника за инсталиране на {0}!</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Изчакайте, инсталират се файловете на {0}...</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Инсталирането прекратено.</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Край</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Той ще инсталира {0} на вашия компютър.
+
+Препоръчва се да затворите всички други приложения, преди да продължите. Това ще позволи на програмата да обнови някои системни файлове, без да се рестартира компютъра.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Компютърът трябва да бъде рестартиран, за да завърши инсталирането на {0}. Искате ли да рестартирате сега?</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Копиране на данните в буфера</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Информация</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Грешка</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>Инсталиране или премахване на предишна програма не е завършило. Рестартирайте компютъра, за да може процесът да завърши.
@@ -264,10 +365,10 @@
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>Инсталирането на {0} във Вашия компютър завърши.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Готовност за инсталиране</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} беше премахната успешно от Вашия компютър.</value>
+  </data>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Програмата не поддържа версията на Windows, с която работи компютърът ви.</value>
   </data>
 </root>

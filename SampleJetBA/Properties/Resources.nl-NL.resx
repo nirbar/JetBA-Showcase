@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Vorige</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Vorige</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Volgende</value>
+  <data name="Information" xml:space="preserve">
+    <value>Gegevens</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuleren</value>
@@ -132,26 +126,20 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Annuleren</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Opnieuw</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Sluiten</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Opnieuw</value>
+  <data name="Close" xml:space="preserve">
+    <value>Sluiten</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Negeren</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Gebruikersnaam vereist</value>
   </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Negeren</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Ja</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Afbreken</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Nee</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Ja</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Nee</value>
@@ -162,29 +150,194 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Opnieuw</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Doorgaan</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Waarschuwing</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>{0} verwerken</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Voltooien</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Voltooien</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Gereed voor installatie</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Afsluiten</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Wachtwoord</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0} Setup</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Weet u zeker dat u wilt annuleren?</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>De installatie van {0} is voltooid.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>De installatie van {0} is voltooid.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>De installatie van {0} is mislukt.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>De installatie van {0} is mislukt.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>De installatie van {0} is mislukt.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>De installatie van {0} is mislukt.</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Productonderdelen</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Productonderdelen</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Doelmap</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Doelmap</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Terug</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Terug</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Installeren</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Herstellen</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accepteren</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Negeren</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Negeren</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Opmerking</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Opnieuw</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Overzicht</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Hervatten</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Bladeren</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Voortgang van de installatie</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Voortgang van de installatie</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Opnieuw opstarten</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Logboekbestand weergeven</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Gebruikers van Service</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Doelmap</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Wijzigen</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Naar Klembord kopiëren</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Bewerking geannuleerd</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Laden</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Gebruikersnaam</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Weigeren</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Ongeldige gebruikersnaam of ongeldig wachtwoord.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Verificatie</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows-verificatie</value>
+  </data>
+  <data name="_0DatabaseConnection" xml:space="preserve">
+    <value>Databaseconfiguratie</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Databaseconfiguratie</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Serviceaccount</value>
+  </data>
+  <data name="_0ServiceAccount" xml:space="preserve">
+    <value>Serviceaccount</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>De volgende toepassingen gebruiken bestanden die door deze installatie moeten worden bijgewerkt. U kunt deze toepassingen met behulp van de installatiewizard sluiten en ze later opnieuw starten of u kunt de computer later opnieuw opstarten.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Bestanden in gebruik</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Herstellen</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Weet u zeker dat u de installatie wilt annuleren?</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Afsluiten</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Afsluiten</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Bladeren...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Installeren</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>De installatiewizard wordt voorbereid. Een ogenblik geduld.</value>
@@ -195,62 +348,25 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>Oudere versies van deze toepassing verwijderen...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Geconfigureerd {0}</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Doelmap</value>
-  </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>{0} installeren in:</value>
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Het pad {0} bevat een ongeldig teken.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Het configureren is mislukt.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>De installatie van {0}  is mislukt.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Het verwijderen is mislukt.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Installatiemap:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Verwijderen</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Nederlands</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Nu herstarten</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Welkom bij de {0}-installatiewizard</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Een ogenblik geduld terwijl {0} wordt geïnstalleerd.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Installatie afgebroken</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Voltooien</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Deze wizard zal {0} op uw systeem installeren.
+
+Het wordt aanbevolen alle overige toepassingen af te sluiten alvorens de installatie te starten. Dit maakt het mogelijk relevante systeembestanden bij te werken zonder uw systeem opnieuw op te moeten starten.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Uw systeem moet opnieuw worden opgestart om de installatie van {0} te voltooien. Wilt u nu herstarten?</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Details kopiëren naar klembord</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Informatie</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Fout</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>De installatie/verwijdering van een vorig programma is niet voltooid. U moet uw computer opnieuw opstarten om die installatie te voltooien.
@@ -264,25 +380,10 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>Setup heeft het installeren van {0} op deze computer voltooid.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Het voorbereiden van de installatie is gereed</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} is met succes van deze computer verwijderd.</value>
   </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Verwerken:</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Er zijn een of meer fouten opgetreden waardoor de installatie is mislukt. Corrigeer de problemen en voer Setup opnieuw uit. Raadpleeg het log boekbestand voor meer informatie.</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Doorgaan</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Notitie</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Waarschuwing</value>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Dit programma ondersteunt de versie van Windows die u gebruikt niet.</value>
   </data>
 </root>

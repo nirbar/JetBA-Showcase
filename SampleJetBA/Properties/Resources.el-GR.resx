@@ -117,41 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Πίσω</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Πίσω</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Επόμενο</value>
+  <data name="Information" xml:space="preserve">
+    <value>Πληροφορίες</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Άκυρο</value>
+    <value>Ακύρωση</value>
   </data>
   <data name="CancelCaption" xml:space="preserve">
-    <value>Άκυρο</value>
+    <value>Ακύρωση</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Επανάληψη</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Κλείσιμο</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Επανάληψη</value>
+  <data name="Close" xml:space="preserve">
+    <value>Κλείσιμο</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Παράβλεψη</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Παράβλεψη</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Ναι</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Ματαίωση</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Όχι</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Ναι</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Όχι</value>
@@ -162,29 +147,182 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>ΟΚ</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Επανάληψη</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ναι</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Ναι</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Απαιτείται το όνομα χρήστη</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Συνέχεια</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Προειδοποίηση</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Επεξεργασία {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Τέλος</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Τέλος</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Επόμενο</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Έτοιμο για εγκατάσταση</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Έξοδος</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Κωδικός πρόσβασης</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Διακομιστής</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Πρόγραμμα εγκατάστασης {0}</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Είστε βέβαιοι ότι θέλετε να πραγματοποιήσετε ακύρωση;</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>Η εγκατάσταση του {0} ολοκληρώθηκε με επιτυχία.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>Η εγκατάσταση του {0} ολοκληρώθηκε με επιτυχία.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Η εγκατάσταση του {0} απέτυχε.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>Η εγκατάσταση του {0} απέτυχε.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>Η εγκατάσταση του {0} απέτυχε.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>Η εγκατάσταση του {0} απέτυχε.</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Δυνατότητες προϊόντος</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Δυνατότητες προϊόντος</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Φάκελος προορισμού</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Φάκελος προορισμού</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Πίσω</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Πίσω</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Εγκατάσταση</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Επιδιόρθωση</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Κατάργηση εγκατάστασης</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Αποδοχή</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Παράβλεψη</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Παράβλεψη</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Σημείωση</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Νέα προσπάθεια</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Σύνοψη</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Συνέχιση</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Αναζήτηση</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Πρόοδος εγκατάστασης</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Πρόοδος εγκατάστασης</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Επανεκκίνηση</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Προβολή του αρχείου καταγραφής</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Βάση δεδομένων</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Βάση δεδομένων</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Χρήστες εξυπηρέτησης</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Αντιγραφή στο Πρόχειρο</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Η λειτουργία ακυρώθηκε</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Φόρτωση</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Τροποποίηση</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Φάκελος προορισμού</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Όνομα χρήστη</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Απόρριψη</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Μη έγκυρο όνομα χρήστη ή κωδικός πρόσβασης.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Έλεγχος ταυτότητας</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>Οι ακόλουθες εφαρμογές χρησιμοποιούν αρχεία που πρέπει να ενημερωθούν από αυτό το πρόγραμμα εγκατάστασης. Μπορείτε να αφήσετε τον Οδηγό εγκατάστασης να τα κλείσει και να προσπαθήσει να τα επανεκκινήσει ή να κάνετε επανεκκίνηση του υπολογιστή αργότερα.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Αρχεία σε χρήση</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Επιδιόρθωση</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Είστε βέβαιοι ότι θέλετε να κάνετε ακύρωση;</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Έξοδος</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Έξοδος</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Αναζήτηση...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Εγκατάσταση</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Περιμένετε όσο ο Οδηγός εγκατάστασης προετοιμάζεται για να σας καθοδηγήσει στην εγκατάσταση.</value>
@@ -195,62 +333,25 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>Κατάργηση παλαιότερων εκδόσεων αυτής της εφαρμογής...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Έγινε ρύθμιση παραμέτρων του {0}</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Φάκελος προορισμού</value>
-  </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Εγκατάσταση του {0} στη θέση:</value>
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Η διαδρομή φακέλου "{0}" περιέχει ένα μη έγκυρο χαρακτήρα.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Η ρύθμιση παραμέτρων απέτυχε.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Η εγκατάσταση του {0}  απέτυχε.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Η κατάργηση απέτυχε.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Φάκελος εγκατάστασης:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Κατάργηση</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Ελληνικά</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Να γίνει επανεκκίνηση τώρα</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Καλώς ήλθατε στην Εγκατάσταση του '{0}'</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Παρακαλώ περιμένετε όσο το '{0}' εγκαθίσταται.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Η Εγκατάσταση Διακόπηκε</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Τέλος</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Ο οδηγός αυτός θα σας καθοδηγήσει κατά τη διάρκεια της εγκατάστασης του '{0}'.
+
+Συνιστάται να κλείσετε όλες τις άλλες εφαρμογές πριν ξεκινήσετε την Εγκατάσταση. Αυτό θα επιτρέψει στην Εγκατάσταση να ενημερώσει τα σχετικά αρχεία συστήματος χωρίς την επανεκκίνηση του υπολογιστή σας.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Πρέπει να γίνει επανεκκίνηση του υπολογιστή σας για να ολοκληρωθεί η εγκατάσταση του '{0}'. Θέλετε να επανεκκινήσετε τον υπολογιστή σας τώρα;</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Αντιγραφή λεπτομερειών στο Πρόχειρο</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Πληροφορίες</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Σφάλμα</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>Η εγκατάσταση/αφαίρεση ενός προηγούμενου προγράμματος δεν ολοκληρώθηκε. Θα χρειαστεί να κάνετε επανεκκίνηση του υπολογιστή σας για να ολοκληρωθεί.
@@ -264,25 +365,10 @@
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>Ο Οδηγός Εγκατάστασης ολοκλήρωσε την εγκατάσταση του {0} στον υπολογιστή σας.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Έτοιμα για Εγκατάσταση</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>Το {0} αφαιρέθηκε με επιτυχία από τον υπολογιστή σας.</value>
   </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Επεξεργασία:</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Ένα ή περισσότερα προβλήματα προκάλεσαν την αποτυχία της εγκατάστασης. Διορθώστε τα προβλήματα και μετά επαναλάβετε την εγκατάσταση. Για περισσότερες πληροφορίες, ανατρέξτε στο αρχείο καταγραφής.</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Συνέχεια</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Σημείωση</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Προειδοπ</value>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Αυτό το πρόγραμμα δεν υποστηρίζει την έκδοση των Windows που εκτελεί ο υπολογιστής σας.</value>
   </data>
 </root>

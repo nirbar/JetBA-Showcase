@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Tilbage</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Tilbage</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Næste</value>
+  <data name="Information" xml:space="preserve">
+    <value>Oplysninger</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuller</value>
@@ -132,26 +126,20 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Annuller</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Prøv igen</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Luk</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Prøv igen</value>
+  <data name="Close" xml:space="preserve">
+    <value>Luk</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignorer</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Brugernavn kræves</value>
   </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignorer</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Ja</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Afbryd</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Nej</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Ja</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Nej</value>
@@ -162,29 +150,179 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Prøv igen</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Fortsæt</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fejl</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Advarsel</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Behandler {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Udfør</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Udfør</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Næste</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Klar til at installere</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Afslut</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Adgangskode</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Installation af {0}</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Er du sikker på, at du vil annullere?</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>Installationen af {0}  blev fuldført.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>Installationen af {0}  blev fuldført.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Installationen af {0}  mislykkedes.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>Installationen af {0}  mislykkedes.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>Installationen af {0}  mislykkedes.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>Installationen af {0}  mislykkedes.</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Produktfunktioner</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Produktfunktioner</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Destinationsmappe</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Destinationsmappe</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Tilbage</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Tilbage</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Installere</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Reparer</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Fjern</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Acceptér</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorer</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignorer</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Bemærk</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Forsøg igen</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Oversigt</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Genoptag</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Gennemse</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Installationsstatus</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Installationsstatus</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Genstart</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Vis logfilen</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Servicebrugere</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Destinationsmappe</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopiér til Udklipsholder</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Handlingen blev annulleret</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Indlæs</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Rediger</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Brugernavn</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Afvis</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Ugyldigt brugernavn og ugyldig adgangskode.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Godkendelse</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>Følgende programmer bruger filer, der skal opdateres af installationsprogrammet. Du kan lade guiden Installation lukke dem og forsøge at genstarte dem eller genstarte computeren på et senere tidspunkt.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Filer, der bruges</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Reparer</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Er du sikker på, at du vil annullere?</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Afslut</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Afslut</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Gennemse...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Installer</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Vent, mens guiden Installation forbereder at vejlede dig gennem installationen.</value>
@@ -195,62 +333,25 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>Fjerner ældre versioner af dette program...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Konfigurerede {0}</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Destinationsmappe</value>
-  </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Installer {0} i:</value>
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Mappestien '{0}' indeholder et ugyldigt tegn.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Konfigurationen mislykkedes.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0}  blev ikke installeret.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Fjernelsen mislykkedes.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Installationsmappe:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Fjern</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Dansk</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Genstart nu</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Velkommen til installationsguiden for {0}</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Vent venligst mens {0} bliver installeret.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Installation afbrudt</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Afslut</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Denne guide hjælper dig gennem installationen af {0}.
+
+Det anbefales, at du lukker alle kørende programmer inden start af installationsguiden. Det gør det muligt at opdatere de nødvendige systemfiler uden at skulle genstarte din computer.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Din computer skal genstartes for at gennemføre installationen af {0}. Vil du genstarte nu?</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopier detaljer til udklipsholderen</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Information</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Fejl</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>Installation eller afinstallation af et program er ikke afsluttet. Du skal genstarte computeren for at afslutte den foregående installation.
@@ -264,25 +365,10 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>Installationsguiden har fuldført installation af {0} på computeren.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Klar til at installere</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} er nu fjernet fra computeren.</value>
   </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Behandler:</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Installationen blev ikke gennemført på grund af et eller flere problemer. Løs problemerne, og prøv derefter at installere igen. Se logfilen for at få flere oplysninger.</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Fortsæt</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Bemærkning</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Advarsel</value>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Programmet understøtter ikke den version af Windows, som denne computer kører.</value>
   </data>
 </root>

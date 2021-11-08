@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Späť</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Späť</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Ďalej</value>
+  <data name="Information" xml:space="preserve">
+    <value>Informácie</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Zrušiť</value>
@@ -132,26 +126,17 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Zrušiť</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Znova</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Zavrieť</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Znova</value>
+  <data name="Close" xml:space="preserve">
+    <value>Zavrieť</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignorovať</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignorovať</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Áno</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Prerušiť</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Nie</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Áno</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Nie</value>
@@ -162,29 +147,179 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Znova</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Áno</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Áno</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Vyžaduje sa meno používateľa</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Pokračovať</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Upozornenie</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Spracúva sa entita {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Dokončiť</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Dokončiť</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Nasledujúce</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Pripravené na inštaláciu</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Skončiť</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Inštalácia produktu {0}</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Naozaj chcete zrušiť operáciu?</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>Inštalácia produktu {0} sa úspešne dokončila.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>Inštalácia produktu {0} sa úspešne dokončila.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Inštalácia produktu {0} zlyhala.</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>Inštalácia produktu {0} zlyhala.</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>Inštalácia produktu {0} zlyhala.</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>Inštalácia produktu {0} zlyhala.</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Funkcie produktu</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Funkcie produktu</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Cieľový priečinok</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Cieľový priečinok</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Naspäť</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Naspäť</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Inštalovať</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Opraviť</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Odinštalovať</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Prijať</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorovať</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignorovať</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Poznámka</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Skúsiť znova</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Súhrn</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Pokračovať</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Prehľadávať</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Priebeh inštalácie</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Priebeh inštalácie</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Reštartovať</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Zobraziť súbor denníka</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Databáza</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Databáza</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Používatelia služieb</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopírovať do schránky</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Operácia bola zrušená</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Načítať</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Upraviť</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Meno používateľa</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Odmietnuť</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Neplatné meno používateľa alebo heslo.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Overenie</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>Nasledujúce aplikácie používajú súbory, ktoré musí táto inštalácia aktualizovať. Sprievodca inštaláciou ich môže ukončiť a potom sa ich pokúsiť reštartovať alebo môže zariadenie reštartovať neskôr.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Používané súbory</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Opraviť</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Naozaj chcete zrušiť operáciu?</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Skončiť</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Skončiť</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Prehľadávať...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Inštalovať</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Počkajte, kým sa Sprievodca inštaláciou pripraví na prevádzanie inštaláciou.</value>
@@ -195,9 +330,6 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>Odstraňujú sa staršie verzie tejto aplikácie...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Nakonfigurované: {0}</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Cieľový priečinok</value>
   </data>
@@ -207,50 +339,19 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Cesta k priečinku {0} obsahuje neplatný znak.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Konfigurácia zlyhala.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Inštalácia programu {0} zlyhala.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Odstránenie zlyhalo.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Inštalačný priečinok:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Odstrániť</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Slovenčina</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Reštartovať teraz</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Vitajte v sprievodcovi inštaláciou programu {0}</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Počkajte prosím, kým prebehne inštalácia programu {0}.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Prerušenie inštalácie</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Dokončiť</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Tento sprievodca vás prevedie inštaláciou {0}.
+
+Pred začiatkom inštalácie sa odporúča ukončiť všetky ostatné programy. Tým umožníte aktualizovanie systémových súborov bez potreby reštartovania vášho počítača.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>Pre úplné dokončenie inštalácie programu {0} je potrebné reštartovať váš počítač. Chcete ho reštartovať ihneď?</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Skopírovať podrobnosti do schránky</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Informácie</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Chyba</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>Inštalácia/odinštalácia predošlého produktu nebola úplne dokončená. Dokončenie tohto procesu vyžaduje reštart počítača.
@@ -264,25 +365,10 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>Sprievodca inštaláciou dokončil inštaláciu produktu {0} do tohto počítača.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Inštalácia je pripravená</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} bol úspešne odinštalovaný z tohto počítača.</value>
   </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Spracúva sa:</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Inštalácia zlyhala pre jednu alebo viac príčin. Odstráňte problémy a skúste znova spustiť inštaláciu. Ďalšie informácie nájdete v súbore denníka.</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Pokračovať</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Poznámka</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Upozornenie</value>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Tento program nepodporuje vašu verziu systému Windows.</value>
   </data>
 </root>

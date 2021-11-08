@@ -117,14 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Edellinen</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Edellinen</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Seuraava</value>
+  <data name="Information" xml:space="preserve">
+    <value>Tiedot</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Peruuta</value>
@@ -132,26 +126,17 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Peruuta</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Yritä uudelleen</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Sulje</value>
   </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Yritä uudelleen</value>
+  <data name="Close" xml:space="preserve">
+    <value>Sulje</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ohita</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ohita</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Kyllä</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Keskeytä</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Ei</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Kyllä</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Ei</value>
@@ -162,29 +147,197 @@
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Yritä uudelleen</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Kyllä</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Kyllä</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Käyttäjänimi on pakollinen</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Jatka</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Virhe</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Varoitus</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Käsitellään entiteettiä {0}</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Valmis</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Valmis</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Seuraava</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Valmis asennusta varten</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Lopeta</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Salasana</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Palvelin</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Tuotteen {0} asennus</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Haluatko varmasti peruuttaa toiminnon?</value>
+  </data>
+  <data name="SuccessfullyFinished" xml:space="preserve">
+    <value>{0}  – asennus onnistui.</value>
+  </data>
+  <data name="_0Configured" xml:space="preserve">
+    <value>{0}  – asennus onnistui.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>{0}  – asennus epäonnistui</value>
+  </data>
+  <data name="FailedInstalling0" xml:space="preserve">
+    <value>{0}  – asennus epäonnistui</value>
+  </data>
+  <data name="FailedRemoving0" xml:space="preserve">
+    <value>{0}  – asennus epäonnistui</value>
+  </data>
+  <data name="FailedConfiguring0" xml:space="preserve">
+    <value>{0}  – asennus epäonnistui</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Tuotteen ominaisuudet</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Tuotteen ominaisuudet</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Kohdekansio</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Kohdekansio</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Takaisin</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Takaisin</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Asenna</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Korjaa</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Poista asennus</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Hyväksy</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ohita</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ohita</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Muistiinpano</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Yritä uudelleen</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Yhteenveto</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Jatka</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Selaa</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Asennuksen edistyminen</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Asennuksen edistyminen</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Käynnistä uudelleen</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Tarkastele lokitiedostoa</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Tietokanta</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Tietokanta</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Palvelukäyttäjät</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Kohdekansio</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Kopioi leikepöydälle</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Toiminto peruutettiin</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Lataa</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Muokkaa</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Käyttäjänimi</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Hylkää</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Virheellinen käyttäjänimi tai salasana.</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Todentaminen</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows-todennus</value>
+  </data>
+  <data name="_0DatabaseConnection" xml:space="preserve">
+    <value>Tietokannan konfigurointi</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Tietokannan konfigurointi</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Palvelutili</value>
+  </data>
+  <data name="_0ServiceAccount" xml:space="preserve">
+    <value>Palvelutili</value>
+  </data>
   <data name="FilesInUseText" xml:space="preserve">
     <value>Seuraavat sovellukset käyttävät tiedostoja, jotka tämän asennuksen on päivitettävä. Voit antaa ohjatun asennuksen sulkea ne ja yrittää käynnistää ne uudelleen tai käynnistää tietokoneen myöhemmin uudelleen.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Tiedostoja on käytössä</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Korjaa</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Haluatko varmasti peruuttaa?</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Lopeta</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Lopeta</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Selaa...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Asenna</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Odota. Ohjattu asennus valmistautuu asennukseen.</value>
@@ -195,62 +348,25 @@
   <data name="PreviousVersion" xml:space="preserve">
     <value>Poistetaan sovelluksen vanhempia versioita...</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Määritetty {0}</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Kohdekansio</value>
-  </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Asenna {0} seuraavaan sijaintiin:</value>
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Kansion polku {0} sisältää virheellisen merkin.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Määrittäminen epäonnistui.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} Asennus epäonnistui.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Poistaminen epäonnistui.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Asennuskansio:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Poista</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Suomi</value>
   </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Käynnistä uudelleen nyt</value>
+  <data name="WelcomeTitleFormat" xml:space="preserve">
+    <value>Tervetuloa {0} -ohjelman asennukseen</value>
   </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Odota... {0} asennetaan...</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Asennus keskeytyi.</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Valmis</value>
+  <data name="WelcomeCloseApps" xml:space="preserve">
+    <value>Saat tarvittavia ohjeita sitä mukaa kuin {0} -ohjelman asennus edistyy.
+
+On suositeltavaa sulkea kaikki muut ohjelmat ennen asennuksen aloittamista, jotta asennus voi päivittää järjestelmätiedostoja käynnistämättä konetta uudelleen.</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
     <value>{0} -ohjelman asennuksen viimeisteleminen edellyttää tietokoneen uudelleenkäynnistämistä. Haluatko käynnistää tietokoneen uudelleen nyt?</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopioi tiedot leikepöydälle</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Ilmoitus</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Virhe</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>Edellisen ohjelman asennus tai asennuksen poisto ei ole valmis. Sinun täytyy käynnistää kone uudelleen viimeistelläksesi edellisen asennuksen.
@@ -264,16 +380,10 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
   <data name="_0IsReadyForUse" xml:space="preserve">
     <value>{0} on nyt asennettu koneellesi.</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Valmiina asennukseen</value>
-  </data>
   <data name="ThankYouForHavingUsed0" xml:space="preserve">
     <value>{0} poistettiin onnistuneesti.</value>
   </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Käsitellään:</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Asennus epäonnistui yhdestä tai useammasta syystä. Korjaa ongelmat ja yritä suorittaa asennus sitten uudelleen. Lisätietoja on lokitiedostossa.</value>
+  <data name="WindowsVersionNotSupported" xml:space="preserve">
+    <value>Tämä ohjelma ei tue käytössä olevaa Windowsin versiota.</value>
   </data>
 </root>
