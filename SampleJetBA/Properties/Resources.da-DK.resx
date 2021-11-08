@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Behandler {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Udfør</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Udfør</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Er du sikker på, at du vil annullere?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>Installationen af {0}  blev fuldført.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Installationen af {0}  blev fuldført.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Installationen af {0}  mislykkedes.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Installationen af {0}  mislykkedes.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Installationen af {0}  mislykkedes.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Installationen af {0}  mislykkedes.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Fjern</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Acceptér</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorer</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Database</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Servicebrugere</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Destinationsmappe</value>
   </data>
@@ -305,9 +284,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Brugernavn</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Afvis</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Ugyldigt brugernavn og ugyldig adgangskode.</value>
@@ -327,7 +303,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Vent, mens guiden Installation forbereder at vejlede dig gennem installationen.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Skift, reparer eller fjern installationen</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Mappestien '{0}' indeholder et ugyldigt tegn.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Vent, mens Windows konfigurerer {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Dansk</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Velkommen til installationsguiden for {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Denne guide hjælper dig gennem installationen af {0}.
-
-Det anbefales, at du lukker alle kørende programmer inden start af installationsguiden. Det gør det muligt at opdatere de nødvendige systemfiler uden at skulle genstarte din computer.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Din computer skal genstartes for at gennemføre installationen af {0}. Vil du genstarte nu?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Kan ikke køre programfilen:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Installationsguiden har fuldført installation af {0} på computeren.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} er nu fjernet fra computeren.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Programmet understøtter ikke den version af Windows, som denne computer kører.</value>
   </data>
 </root>

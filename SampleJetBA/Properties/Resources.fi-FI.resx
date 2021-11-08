@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Käsitellään entiteettiä {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Valmis</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Valmis</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Haluatko varmasti peruuttaa toiminnon?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0}  – asennus onnistui.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0}  – asennus onnistui.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0}  – asennus epäonnistui</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0}  – asennus epäonnistui</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0}  – asennus epäonnistui</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0}  – asennus epäonnistui</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Poista asennus</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Hyväksy</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ohita</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Tietokanta</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Palvelukäyttäjät</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Kohdekansio</value>
   </data>
@@ -306,9 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>Käyttäjänimi</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Hylkää</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Virheellinen käyttäjänimi tai salasana.</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-todennus</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>Tietokannan konfigurointi</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>Tietokannan konfigurointi</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>Palvelutili</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>Palvelutili</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Odota. Ohjattu asennus valmistautuu asennukseen.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Korjaa tai poista asennus tai muuta sitä</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Kansion polku {0} sisältää virheellisen merkin.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Odota, Windows määrittää tuotteen {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Suomi</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Tervetuloa {0} -ohjelman asennukseen</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Saat tarvittavia ohjeita sitä mukaa kuin {0} -ohjelman asennus edistyy.
-
-On suositeltavaa sulkea kaikki muut ohjelmat ennen asennuksen aloittamista, jotta asennus voi päivittää järjestelmätiedostoja käynnistämättä konetta uudelleen.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0} -ohjelman asennuksen viimeisteleminen edellyttää tietokoneen uudelleenkäynnistämistä. Haluatko käynnistää tietokoneen uudelleen nyt?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Virhe suoritettaessa tiedostoa
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>{0} on nyt asennettu koneellesi.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} poistettiin onnistuneesti.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Tämä ohjelma ei tue käytössä olevaa Windowsin versiota.</value>
   </data>
 </root>

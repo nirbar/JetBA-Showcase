@@ -61,24 +61,6 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} configured.
-        /// </summary>
-        public static string _0Configured {
-            get {
-                return ResourceManager.GetString("_0Configured", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {0} database connection.
-        /// </summary>
-        public static string _0DatabaseConnection {
-            get {
-                return ResourceManager.GetString("_0DatabaseConnection", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to {0} install folder.
         /// </summary>
         public static string _0InstallFolder {
@@ -106,11 +88,20 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} service account.
+        ///   Looks up a localized string similar to {0} Setup failed.
         /// </summary>
-        public static string _0ServiceAccount {
+        public static string _0SetupFailed {
             get {
-                return ResourceManager.GetString("_0ServiceAccount", resourceCulture);
+                return ResourceManager.GetString("_0SetupFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Setup completed successfully..
+        /// </summary>
+        public static string _0SuccessfullyFinished {
+            get {
+                return ResourceManager.GetString("_0SuccessfullyFinished", resourceCulture);
             }
         }
         
@@ -207,18 +198,18 @@ namespace SampleJetBA.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Changes will not take fffect until you reboot the system.
         /// </summary>
-        public static string ChangesWillNotTakeEffectUntilReboot {
+        public static string ChangesWillNotTakeEffectUntilReboot0 {
             get {
-                return ResourceManager.GetString("ChangesWillNotTakeEffectUntilReboot", resourceCulture);
+                return ResourceManager.GetString("ChangesWillNotTakeEffectUntilReboot0", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Click &apos;Repair&apos; to repair {0} or &apos;Uninstall&apos; to remove it.
         /// </summary>
-        public static string ClickRepairToRepair0OrUninstallToRemoveIt {
+        public static string ClickRepairToRepairOrUninstallToRemoveIt {
             get {
-                return ResourceManager.GetString("ClickRepairToRepair0OrUninstallToRemoveIt", resourceCulture);
+                return ResourceManager.GetString("ClickRepairToRepairOrUninstallToRemoveIt", resourceCulture);
             }
         }
         
@@ -315,39 +306,12 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed configuring {0}.
-        /// </summary>
-        public static string FailedConfiguring0 {
-            get {
-                return ResourceManager.GetString("FailedConfiguring0", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Failed connecting to DB server
         ///{0}.
         /// </summary>
         public static string FailedConnectingToDbServer0 {
             get {
                 return ResourceManager.GetString("FailedConnectingToDbServer0", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Failed installing {0}.
-        /// </summary>
-        public static string FailedInstalling0 {
-            get {
-                return ResourceManager.GetString("FailedInstalling0", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Failed removing {0}.
-        /// </summary>
-        public static string FailedRemoving0 {
-            get {
-                return ResourceManager.GetString("FailedRemoving0", resourceCulture);
             }
         }
         
@@ -648,11 +612,11 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please wait while we&apos;re preparing the system.
+        ///   Looks up a localized string similar to Please wait while Windows configures {0}.
         /// </summary>
-        public static string PleasWaitWhileExecuting {
+        public static string PleasWaitWhileExecuting0 {
             get {
-                return ResourceManager.GetString("PleasWaitWhileExecuting", resourceCulture);
+                return ResourceManager.GetString("PleasWaitWhileExecuting0", resourceCulture);
             }
         }
         
@@ -744,15 +708,6 @@ namespace SampleJetBA.Properties {
         public static string SqlAuthentication {
             get {
                 return ResourceManager.GetString("SqlAuthentication", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Thank you for having used {0}.
-        /// </summary>
-        public static string ThankYouForHavingUsed0 {
-            get {
-                return ResourceManager.GetString("ThankYouForHavingUsed0", resourceCulture);
             }
         }
         

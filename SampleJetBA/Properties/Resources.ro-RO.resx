@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Se procesează {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Terminare</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Terminare</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Sigur anulați?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>Instalarea {0} s-a finalizat cu succes.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Instalarea {0} s-a finalizat cu succes.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Instalarea {0}  a eșuat.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Instalarea {0}  a eșuat.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Instalarea {0}  a eșuat.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Instalarea {0}  a eșuat.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Dezinstalare</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Acceptați</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorare</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Bază de date</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Utilizatori servicii</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copiere în Clipboard</value>
   </data>
@@ -302,9 +281,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nume utilizator</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Refuzați</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nume de utilizator sau parolă nevalidă.</value>
@@ -324,7 +300,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Aşteptaţi. Expertul de instalare se pregăteşte să vă ghideze pe parcursul instalării.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Modificaţi, reparaţi sau eliminaţi instalarea</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Calea folderului „{0}” conţine un caracter nevalid.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Aşteptaţi, Windows configurează {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Română</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Bine aţi venit la instalarea {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Această aplicaţie va instala {0}.
-
-Este recomandat să închideţi toate aplicaţiile înainte de începerea procesului de instalare. Acest lucru vă poate asigura un proces de instalare fără erori sau situaţii neprevăzute.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Trebuie să reporniţi calculatorul pentru a termina instalarea. Doriţi să-l reporniţi acum?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nu pot executa fila:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Instalarea {0} pe calculator a fost terminatã.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} a fost înlãturat cu succes de pe calculator.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Acest program nu suportã versiunea de Windows care ruleazã pe calculatorul tãu.</value>
   </data>
 </root>

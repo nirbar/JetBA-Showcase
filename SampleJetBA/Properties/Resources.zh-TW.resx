@@ -171,12 +171,6 @@
   <data name="Continue" xml:space="preserve">
     <value>繼續</value>
   </data>
-  <data name="Accept" xml:space="preserve">
-    <value>接受</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>拒絕</value>
-  </data>
   <data name="Error" xml:space="preserve">
     <value>錯誤</value>
   </data>
@@ -216,9 +210,6 @@
   <data name="Database" xml:space="preserve">
     <value>資料庫</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>服務使用者</value>
-  </data>
   <data name="DbServer" xml:space="preserve">
     <value>伺服器</value>
   </data>
@@ -227,9 +218,6 @@
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>複製至剪貼簿</value>
-  </data>
-  <data name="Finish" xml:space="preserve">
-    <value>完成</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>完成</value>
@@ -279,14 +267,11 @@
   <data name="GettingReady" xml:space="preserve">
     <value>安裝精靈正在準備引導您完成安裝，請稍候。</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>變更、修復或移除安裝</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>正在移除舊版應用程式...</value>
-  </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>已設定 {0}</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>安裝 {0} 到:</value>
@@ -294,17 +279,11 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>資料夾路徑 '{0}' 含有無效的字元。</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>設定失敗。</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} 安裝失敗。</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>移除失敗。</value>
-  </data>
   <data name="InstallationFolder" xml:space="preserve">
     <value>安裝資料夾(F):</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>請稍候，Windows 在設定 {0}</value>
   </data>
   <data name="LanguageName" xml:space="preserve">
     <value>中文(繁體)</value>
@@ -312,21 +291,7 @@
   <data name="InstallationIsRunningFormat" xml:space="preserve">
     <value>{0} 正在安裝，請稍候。</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
-    <value>安裝已完成。</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>安裝並未完成。</value>
-  </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>歡迎使用 {0} 安裝精靈</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>本精靈會引導您完成安裝 {0}。
-
-在開始安裝之前，建議先關閉其他所有應用程式。這將允許安裝程式更新相關的系統檔案，而不需要重新啟動電腦。</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>電腦需要重新開機，才能完成安裝 {0} 。要馬上重新開機嗎？</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -337,17 +302,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>無法執行檔案:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>安裝程式已經將 {0} 安裝在您的電腦上。</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} 已經成功從您的電腦中移除。</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>本安裝程式並不支援目前在電腦所運行的 Windows 版本。</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>正在處理:</value>
   </data>
 </root>

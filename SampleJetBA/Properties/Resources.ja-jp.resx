@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>{0} を処理しています</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>完了</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>完了</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>取り消しますか?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} のセットアップは正常に終了しました。</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} のセットアップは正常に終了しました。</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} のセットアップに失敗しました。</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} のセットアップに失敗しました。</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} のセットアップに失敗しました。</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} のセットアップに失敗しました。</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>アンインストール</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>同意する</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>無視</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>データベース</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>サービス ユーザー</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>クリップボードにコピー</value>
   </data>
@@ -306,9 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>ユーザー名</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>辞退</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>ユーザー名またはパスワードが無効です。</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows 認証</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>データベース コンフィギュレーション</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>データベース コンフィギュレーション</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>サービス アカウント</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>サービス アカウント</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>インストールの準備をしています。しばらくお待ちください。</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>インストールの変更、修復、または削除</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>フォルダー パス '{0}' に使用できない文字が含まれています。</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>{0} を構成しています。しばらくお待ちください。</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>日本語</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>{0} セットアップへようこそ</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>セットアップは、{0} のインストールをご案内します。
-
-セットアップを開始する前に、他のすべてのアプリケーションを終了することを推奨します。これによってセットアップがコンピュータを再起動せずに、システム ファイルを更新することができるようになります。</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0} のインストールを完了するには、このコンピュータを再起動する必要があります。今すぐ再起動しますか？</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>ファイル実行エラー:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>ご使用のコンピューターに {0} がセットアップされました。</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} はご使用のコンピューターから正常に削除されました。</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>このプログラムはお使いのバージョンの Windows をサポートしていません。</value>
   </data>
 </root>

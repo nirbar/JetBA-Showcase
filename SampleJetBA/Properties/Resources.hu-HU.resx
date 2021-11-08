@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>{0} feldolgozása</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Befejezés</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Befejezés</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Biztosan megszakítja?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} A telepítés sikeresen befejeződött.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} A telepítés sikeresen befejeződött.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} A telepítés sikertelen volt.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} A telepítés sikertelen volt.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} A telepítés sikertelen volt.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} A telepítés sikertelen volt.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Eltávolítás</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Elfogadás</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Figyelmen kívül hagyás</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Adatbázis</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Szolgáltatás felhasználói</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Célmappa</value>
   </data>
@@ -305,9 +284,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Felhasználónév</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Elutasítás</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Érvénytelen felhasználói név vagy jelszó.</value>
@@ -327,7 +303,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Várjon, amíg a telepítővarázsló felkészül, hogy végigvezesse Önt a telepítés folyamatán.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>A telepítés módosítása, kijavítása vagy eltávolítása</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>A mappa „{0}” elérési útja érvénytelen karaktert tartalmaz.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Kis türelmet, a Windows a(z) {0} konfigurálását végzi.</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Magyar</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Üdvözli a(z) {0} Telepítő Varázsló</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>A(z) {0} telepítése következik a számítógépre.
-
-Javasoljuk, hogy indítás előtt zárja be a futó alkalmazásokat. Így a telepítő a rendszer újraindítása nélkül tudja frissíteni a szükséges rendszerfájlokat.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>A(z) {0} telepítésének befejezéséhez újra kell indítani a rendszert. Most akarja újraindítani?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nem hajtható végre a fájl:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>A Telepítő végzett a(z) {0} telepítésével.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>A(z) {0} sikeresen el lett távolítva a számítógépről.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>A program nem támogatja a Windows ezen verzióját.</value>
   </data>
 </root>

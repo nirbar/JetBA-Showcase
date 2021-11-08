@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Vykdoma {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Baigti</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Baigti</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Ar tikrai norite atšaukti?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>„{0} “sąranka sėkmingai baigta.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>„{0} “sąranka sėkmingai baigta.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>„{0} “sąranka nepavyko.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>„{0} “sąranka nepavyko.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>„{0} “sąranka nepavyko.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>„{0} “sąranka nepavyko.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Pašalinti</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Priimti</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Nepaisyti</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Duomenų bazė</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Tarnybų vartotojai</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopijuoti į mainų sritį</value>
   </data>
@@ -303,9 +282,6 @@
   <data name="UserName" xml:space="preserve">
     <value>Vartotojo vardas</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Atmesti</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Netinkamas vartotojo vardas arba slaptažodis.</value>
   </data>
@@ -318,16 +294,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>„Windows“ autentifikavimas</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>Duomenų bazės konfigūravimas</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>Duomenų bazės konfigūravimas</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>Tarnybos abonementas</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>Tarnybos abonementas</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -339,7 +312,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Palaukite, kol sąrankos vedlys pasiruoš vadovauti diegimo procesui.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Įdiegties keitimas, taisymas arba šalinimas</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Aplanko kelyje {0} yra netinkamas simbolis.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Palaukite, kol „Windows“ sukonfigūruos {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Lietuvių</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Sveiki atvykę į {0} įdiegimo programą.</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Ši programa jums padės lengvai įdiegti {0}.
-
-Rekomenduojama išjungti visas programas, prieš pradedant įdiegimą. Tai leis atnaujinti sistemos failus neperkraunat kompiuterio.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Jūsų kompiuteris turi būti perkrautas, kad būtų baigtas {0} įdiegimas. Ar jūs norite perkrauti dabar?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nepavyko paleisti failo:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Diegimo programa baigë „{0}“ diegimà Jûsø kompiuteryje.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>„{0}“ buvo sëkmingai paðalinta ið Jûsø kompiuterio.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Ði programa nesuderinama su Jûsø kompiuteryje ádiegta Windows versija.</value>
   </data>
 </root>

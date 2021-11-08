@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>{0} İşleniyor</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Son</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Son</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>İptal etmek istediğinizden emin misiniz?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} Kurulumu başarıyla tamamlandı.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} Kurulumu başarıyla tamamlandı.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} Kurulumu yapılamadı.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} Kurulumu yapılamadı.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} Kurulumu yapılamadı.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} Kurulumu yapılamadı.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Kaldır</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Kabul Et</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Yoksay</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Veritabanı</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Servis Kullanıcıları</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Panoya Kopyala</value>
   </data>
@@ -306,9 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>Kullanıcı Adı</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Reddet</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Geçersiz kullanıcı adı veya parola.</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows Kimlik Doğrulaması</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>Veritabanı yapılandırması</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>Veritabanı yapılandırması</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>Hizmet hesabı</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>Hizmet hesabı</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Kurulum Sihirbazı yükleme sırasında size yol göstermek için hazırlanırken lütfen bekleyin.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Yüklemeyi değiştirin, onarın veya kaldırın</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>'{0}' klasör yolu geçersiz karakter içeriyor.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Windows, {0} ürününü yapılandırırken lütfen bekleyin</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Türkçe</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>{0} Kurulum sihirbazına hoş geldiniz</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Bu sihirbaz size {0} kurulumu boyunca rehberlik edecektir.
-
-Kurulumu başlatmadan önce çalışan diğer programlari kapatmanızı öneririz. Böylece bilgisayarınızı yeniden başlatmadan bazı sistem dosyaları sorunsuz kurulabilir.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0} kurulumunun tamamlanması için bilgisayarınızı yeniden başlatmanız gerekiyor.Bilgisayarınızı yeniden başlatmak istiyor musunuz?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Þu dosya yürütülemedi:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Bilgisayarýnýza {0} kurulumu tamamlandý.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} uygulamasý bilgisayarýnýzdan kaldýrýldý.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Bu uygulama, bilgisayarýnýzda yüklü olan Windows sürümü ile uyumlu deðil.</value>
   </data>
 </root>

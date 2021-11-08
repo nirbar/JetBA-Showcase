@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>{0} verwerken</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Voltooien</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Voltooien</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Weet u zeker dat u wilt annuleren?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>De installatie van {0} is voltooid.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>De installatie van {0} is voltooid.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>De installatie van {0} is mislukt.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>De installatie van {0} is mislukt.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>De installatie van {0} is mislukt.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>De installatie van {0} is mislukt.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Verwijderen</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Accepteren</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Negeren</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Database</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Gebruikers van Service</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Doelmap</value>
   </data>
@@ -306,9 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>Gebruikersnaam</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Weigeren</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Ongeldige gebruikersnaam of ongeldig wachtwoord.</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-verificatie</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>Databaseconfiguratie</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>Databaseconfiguratie</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>Serviceaccount</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>Serviceaccount</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>De installatiewizard wordt voorbereid. Een ogenblik geduld.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Installatie wijzigen, herstellen of verwijderen</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Het pad {0} bevat een ongeldig teken.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>{0} wordt nu geconfigureerd. Een ogenblik geduld</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Nederlands</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Welkom bij de {0}-installatiewizard</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Deze wizard zal {0} op uw systeem installeren.
-
-Het wordt aanbevolen alle overige toepassingen af te sluiten alvorens de installatie te starten. Dit maakt het mogelijk relevante systeembestanden bij te werken zonder uw systeem opnieuw op te moeten starten.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Uw systeem moet opnieuw worden opgestart om de installatie van {0} te voltooien. Wilt u nu herstarten?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Kan bestand niet uitvoeren:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Setup heeft het installeren van {0} op deze computer voltooid.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} is met succes van deze computer verwijderd.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Dit programma ondersteunt de versie van Windows die u gebruikt niet.</value>
   </data>
 </root>

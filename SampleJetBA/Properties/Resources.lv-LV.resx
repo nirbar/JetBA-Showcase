@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Apstrādā {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Pabeigt</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Pabeigt</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Vai tiešām vēlaties atcelt?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} Uzstādīšana sekmīgi pabeigta.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} Uzstādīšana sekmīgi pabeigta.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} Uzstādīšana neizdevās.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} Uzstādīšana neizdevās.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} Uzstādīšana neizdevās.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} Uzstādīšana neizdevās.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Atinstalēt</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Pieņemt</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorēt</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Datu bāze</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Servisa lietotāji</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopēt starpliktuvē</value>
   </data>
@@ -303,9 +282,6 @@
   <data name="UserName" xml:space="preserve">
     <value>Lietotājvārds</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Noraidīt</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nederīgs lietotāja vārds vai parole.</value>
   </data>
@@ -318,16 +294,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows autentifikācija</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>Datu bāzes konfigurācija</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>Datu bāzes konfigurācija</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>Pakalpojuma konts</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>Pakalpojuma konts</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -339,7 +312,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Uzgaidiet, līdz Uzstādīšanas vednī tiek sagatavoti instalēšanas norādījumi.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Instalācijas maiņa, labošana vai noņemšana</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Mapes ceļā '{0}' ir ietverta nederīga rakstzīme.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Lūdzu, gaidiet, kamēr sistēma Windows konfigurē produktu {0}.</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Latviešu</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Esiet sveicināti '{0}' uzstādīšanas vednī</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Šis uzstādīšanas vednis jums palīdzēs veikt '{0}' uzstādīšanu.
-
-Ļoti ieteicams aizvērt citas programmas pirms šīs programmas uzstādīšanas veikšanas. Tas ļaus atjaunot svarīgus sistēmas failus bez datora pārstartēšanas.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Jūsu datoru ir nepieciešams pārstartēt, lai pabeigtu '{0}' uzstādīšanu. Vai vēlaties pārstartēt datoru tūlīt?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Neiespçjami palaist failu:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Uzstâdîðana pabeigta.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} tika veiksmîgi noòemts no Jûsu datora.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Ðî programma neatbalsta Windows versiju datorâ darbojas.</value>
   </data>
 </root>

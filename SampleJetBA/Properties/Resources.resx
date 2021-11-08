@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Abort" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Authentication</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Back</value>
   </data>
@@ -126,62 +132,71 @@
   <data name="Caching0" xml:space="preserve">
     <value>Caching {0}</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>Are you sure you want to cancel?</value>
+  </data>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>Changes will not take fffect until you reboot the system</value>
+  </data>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Click 'Repair' to repair {0} or 'Uninstall' to remove it</value>
+  </data>
   <data name="Close" xml:space="preserve">
     <value>Close</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Database connection</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Database Server</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>The installation/removal of a previous program was not completed. You will need to restart your computer to complete that installation.
+
+After restarting your computer, run Setup again to complete the installation of {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
     <value>Executing {0}</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Failed configuring {0}</value>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
   </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Failed installing {0}</value>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Failed connecting to DB server
+{0}</value>
   </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Failed removing {0}</value>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Files in Use</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>The following applications are using files that need to be updated by this setup. You can let Setup Wizard close them and attempt to restart them or reboot the machine later.</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Getting Ready ...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Install</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Install Folder</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Next</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Open failure log</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Restart</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>Thank you for having used {0}</value>
-  </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} configured</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>{0} is ready for use</value>
-  </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
-    <value>Click 'Repair' to repair {0} or 'Uninstall' to remove it</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Repair</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Uninstall</value>
-  </data>
-  <data name="_0IsNotALegalFolderName" xml:space="preserve">
-    <value>'{0}' is not a legal folder name</value>
   </data>
   <data name="HelpPageText" xml:space="preserve">
     <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - installs, repairs, uninstalls or downloads a complete local copy of the bundle in directory. Install is the default.
@@ -197,60 +212,59 @@ By default UI and all prompts are displayed.
 
 INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Database Server</value>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignore</value>
   </data>
-  <data name="FailedConnectingToDbServer0" xml:space="preserve">
-    <value>Failed connecting to DB server
-{0}</value>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Authentication</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Database</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="SqlAuthentication" xml:space="preserve">
-    <value>SQL</value>
-  </data>
-  <data name="UserName" xml:space="preserve">
-    <value>User</value>
-  </data>
-  <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows</value>
-  </data>
-  <data name="Load" xml:space="preserve">
-    <value>Load</value>
-  </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>{0} database connection</value>
-  </data>
-  <data name="_0InstallFolder" xml:space="preserve">
-    <value>{0} install folder</value>
-  </data>
-  <data name="DatabaseConnection" xml:space="preserve">
-    <value>Database connection</value>
+  <data name="Install" xml:space="preserve">
+    <value>Install</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
     <value>Installation folder</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Select Pages for the Installation Wizard</value>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Please wait while {0} is being installed.</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Install Folder</value>
+  </data>
+  <data name="InterruptedRebootPrompt" xml:space="preserve">
+    <value>The machine has restarted. Do you wish to proceed with the operation started before the reboot?</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Invalid user name or password</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Service account</value>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
-    <value>{0} service account</value>
+  <data name="LanguageName" xml:space="preserve">
+    <value>English</value>
   </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
-    <value>Changes will not take fffect until you reboot the system</value>
+  <data name="Load" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Open failure log</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Installation Aborted</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Retry</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Database connection</value>
@@ -276,99 +290,52 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="PageTitle_Summary" xml:space="preserve">
     <value>Ready to install</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Please review parameters and click 'Install' when ready</value>
-  </data>
-  <data name="PleasWaitWhileExecuting" xml:space="preserve">
-    <value>Please wait while we're preparing the system</value>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
     <value>Please provide user name for SQL authentication</value>
   </data>
-  <data name="InterruptedRebootPrompt" xml:space="preserve">
-    <value>The machine has restarted. Do you wish to proceed with the operation started before the reboot?</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
-    <value>Resume</value>
-  </data>
-  <data name="WeNeedToRebootNow_0WillContinueAfterYouLoginAgain" xml:space="preserve">
-    <value>We need to reboot the machine now.
-{0} will continue after you login again</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="CancelCaption" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="CancelNo" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>Are you sure you want to cancel?</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Yes</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Error</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>The installation/removal of a previous program was not completed. You will need to restart your computer to complete that installation.
-
-After restarting your computer, run Setup again to complete the installation of {0}.</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Files in Use</value>
-  </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>The following applications are using files that need to be updated by this setup. You can let Setup Wizard close them and attempt to restart them or reboot the machine later.</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignore</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>Information</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Please wait while {0} is being installed.</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Note</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Installation Aborted</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Retry</value>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Please wait while Windows configures {0}</value>
+    <comment>0</comment>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Removing older versions of this application...</value>
   </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Please review parameters and click 'Install' when ready</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Repair</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Resume</value>
+  </data>
   <data name="Retry" xml:space="preserve">
     <value>Retry</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Select Pages for the Installation Wizard</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Service account</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Unable to execute file:
 {0}</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Uninstall</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Back</value>
@@ -382,10 +349,29 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="Warning" xml:space="preserve">
     <value>Warning</value>
   </data>
+  <data name="WeNeedToRebootNow_0WillContinueAfterYouLoginAgain" xml:space="preserve">
+    <value>We need to reboot the machine now.
+{0} will continue after you login again</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows</value>
+  </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
   </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copy</value>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>{0} install folder</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>'{0}' is not a legal folder name</value>
+  </data>
+  <data name="_0IsReadyForUse" xml:space="preserve">
+    <value>{0} is ready for use</value>
+  </data>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>{0} Setup failed</value>
+  </data>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>{0} Setup completed successfully.</value>
   </data>
 </root>

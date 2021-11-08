@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>מעבד את {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>סיום</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>סיום</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>האם אתה בטוח שברצונך לבטל?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>התקנת {0} הושלמה בהצלחה.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>התקנת {0} הושלמה בהצלחה.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>התקנת {0} נכשלה.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>התקנת {0} נכשלה.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>התקנת {0} נכשלה.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>התקנת {0} נכשלה.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -282,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>מסד נתונים</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>משתמשי שירות</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>העתק ללוח</value>
   </data>
@@ -303,12 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>שם משתמש</value>
   </data>
-  <data name="Accept" xml:space="preserve">
-    <value>קבל</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>דחה</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>שם משתמש או סיסמה לא חוקיים.</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>אימות של Windows</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>תצורת מסד נתונים</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>תצורת מסד נתונים</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>חשבון שירות</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>חשבון שירות</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>נא המתן בעת שאשף ההתקנה מתכונן להנחות אותך בתהליך ההתקנה.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>שינוי, תיקון או הסרה של ההתקנה</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>נתיב התיקיה '{0}' מכיל תו לא חוקי.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>נא המתן בזמן ש- Windows קובע את תצורת {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>עברית</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>ברוכים הבאים לאשף ההתקנה של {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>אשף זה ינחה אתכם במהלך ההתקנה של {0}.
-
-מומלץ לסגור כל תוכנית אחרת לפני התחלת ההתקנה. פעולה זו תאפשר לאשף לעדכן קבצי מערכת ללא איתחול המחשב.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>עלייך לאתחל את המחשב כדי לסיים את התקנת {0}. האם ברצונך לאתחל כעת?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>שגיאה בעת נסיון להריץ את הקובץ:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>התקנת {0} על מחשבך הסתיימה בהצלחה.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} הוסרה ממחשבך בהצלחה.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>תוכנה זו אינה נתמכת במערכת ההפעלה שלך.</value>
   </data>
 </root>

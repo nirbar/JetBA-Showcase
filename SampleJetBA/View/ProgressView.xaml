@@ -19,7 +19,7 @@
         </DockPanel>
         <ProgressBar DockPanel.Dock="Bottom" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="True"/>
 
-        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{x:Static props:Resources.PleasWaitWhileExecuting}"/>
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.PleasWaitWhileExecuting0}}"/>
 
         <Grid DockPanel.Dock="Top" Style="{StaticResource InputGridStyle}">
             <Grid.RowDefinitions>

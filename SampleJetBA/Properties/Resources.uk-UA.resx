@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Триває обробка {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Завершення</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Завершення</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Справді скасувати?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} Інсталяцію успішно завершено.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} Інсталяцію успішно завершено.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} Помилка інсталяції.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} Помилка інсталяції.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} Помилка інсталяції.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} Помилка інсталяції.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Видалити</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Прийняти</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Пропустити</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>База даних</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Користувачі послуги</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Копіювати до буфера обміну</value>
   </data>
@@ -302,9 +281,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Ім’я користувача</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Відхилити</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Недійсне ім’я користувача.або пароль.</value>
@@ -324,7 +300,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Зачекайте: майстер готується до інсталяції.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Змінити, відновити або видалити інсталяцію</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Шлях до папки "{0}" містить неприпустимий символ.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Зачекайте: система Windows настроює програму {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Українська</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Ласкаво просимо до Майстра Встановлення {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Дана програма встановить {0} на Ваш комп'ютер.
-
-Рекомендовано закрити всі програми перед початком інсталяції. Це дозволить програмі встановлення оновити системні файли без перезавантаження системи.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Для того, щоб завершити встановлення {0} Ваш комп'ютер повинен перезавантажитися. Зробити це зараз?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Неможливо виконати файл:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Встановлення {0} на ваш комп’ютер завершено.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} успішно видалено з вашого комп'ютера.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Ця програма не підтримує версію Windows, встановлену на цьому комп'ютері.</value>
   </data>
 </root>

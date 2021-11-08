@@ -20,6 +20,6 @@
         </DockPanel>
         <ProgressBar DockPanel.Dock="Bottom" Name="validation_" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"/>
 
-        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.ClickRepairToRepair0OrUninstallToRemoveIt}}"/>
+        <TextBlock DockPanel.Dock="Top" Margin="6,20,0,0" Style="{StaticResource TitleText}" Text="x:Static props:Resources.ClickRepairToRepairOrUninstallToRemoveIt}"/>
     </DockPanel>
 </UserControl>

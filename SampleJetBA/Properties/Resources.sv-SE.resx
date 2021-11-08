@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Bearbetar {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Slutför</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Slutför</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Vill du avbryta?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>Installationen av {0} slutfördes på korrekt sätt.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Installationen av {0} slutfördes på korrekt sätt.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Installationen av {0} misslyckades.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Installationen av {0} misslyckades.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Installationen av {0} misslyckades.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Installationen av {0} misslyckades.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Avinstallera</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Godkänn</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorera</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Databas</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Tjänsteanvändare</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiera till Urklipp</value>
   </data>
@@ -306,9 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>Användarnamn</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Avvisa</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Ogiltigt användarnamn eller lösenord.</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-autentisering</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>Databaskonfiguration</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>Databaskonfiguration</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>Tjänstkonto</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>Tjänstkonto</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Vänta medan installationsguiden förbereder installationen.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Ändra, reparera eller ta bort installationen</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Mappsökvägen {0} innehåller ett ogiltigt tecken.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Vänta medan {0} konfigureras</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Svenska</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Välkommen till installationsguiden för {0}.</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Denna guide tar dig igenom installationen av {0}.
-
-Det rekommenderas att du avslutar alla andra program innan du fortsätter installationen. Detta tillåter att installationen uppdaterar nödvändiga systemfiler utan att behöva starta om din dator.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Din dator måste startas om för att fullborda installationen av {0}. Vill du starta om nu?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Kan inte köra filen:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>{0} har nu installerats på din dator.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} är nu borttaget från din dator.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Programmet stödjer inte den version av Windows som körs på datorn.</value>
   </data>
 </root>

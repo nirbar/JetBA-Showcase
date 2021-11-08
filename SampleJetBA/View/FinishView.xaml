@@ -22,20 +22,7 @@
 
         <!-- Failure -->
         <StackPanel DockPanel.Dock="Top" Margin="6,20,0,0" Visibility="{Binding ApplyViewModel.InstallState, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Failed}">
-            <!-- Install -->
-            <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"
-                       Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.FailedInstalling0}}"
-					   Style="{StaticResource TitleText}"/>
-
-            <!-- Remove -->
-            <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Uninstall}"
-                       Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.FailedRemoving0}}"
-					   Style="{StaticResource TitleText}"/>
-
-            <!-- Repair/Modify -->
-            <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Modify;Repair}"
-                       Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.FailedConfiguring0}}"
-					   Style="{StaticResource TitleText}"/>
+            <TextBlock Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0SetupFailed}}" Style="{StaticResource TitleText}"/>
 
             <!-- Error message -->
             <TextBlock Text="{Binding ApplyViewModel.ErrorMessage}"
@@ -65,26 +52,12 @@
 
         <!-- Success -->
         <StackPanel DockPanel.Dock="Top" Margin="6,20,0,0" Visibility="{Binding ApplyViewModel.InstallState, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Applied}">
-
-            <!-- Install -->
-            <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Install}"
-                       Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0IsReadyForUse}}"
-					   Style="{StaticResource TitleText}"/>
-
-            <!-- Remove -->
-            <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Uninstall}"
-                       Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.ThankYouForHavingUsed0}}"
-					   Style="{StaticResource TitleText}"/>
-
-            <!-- Repair/Modify -->
-            <TextBlock Visibility="{Binding ApplyViewModel.PlannedAction, Converter={StaticResource EnumToVisibilityConverter}, ConverterParameter=Modify;Repair}"
-                       Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0Configured}}"
-					   Style="{StaticResource TitleText}"/>
+            <TextBlock Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources._0SuccessfullyFinished}}" Style="{StaticResource TitleText}"/>
         </StackPanel>
 
         <!-- Reboot -->
         <TextBlock DockPanel.Dock="Bottom" Visibility="{Binding FinishViewModel.RebootEnabled, Converter={StaticResource BooleanToVisibilityConverter}}"
-                   Text="{x:Static props:Resources.ChangesWillNotTakeEffectUntilReboot}"
+                   Text="{Binding VariablesViewModel.WixBundleName.String, StringFormat={x:Static props:Resources.ChangesWillNotTakeEffectUntilReboot0}}"
                    Style="{StaticResource GenericText}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20,0,0,10"/>
     </DockPanel>
 </UserControl>

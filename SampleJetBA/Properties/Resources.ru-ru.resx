@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Обработка {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Готово</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Готово</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Вы действительно хотите отменить?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>Установка {0}  успешно завершена.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Установка {0}  успешно завершена.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Не удалось установить {0} .</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Не удалось установить {0} .</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Не удалось установить {0} .</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Не удалось установить {0} .</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Удалить</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Принять</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Игнорировать</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>База данных</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Пользователи сервиса</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Целевая папка</value>
   </data>
@@ -306,9 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>Имя пользователя</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Отклонить</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Неверное имя пользователя или пароль.</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Проверка подлинности Windows</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>Конфигурация базы данных</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>Конфигурация базы данных</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>Учетная запись службы</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>Учетная запись службы</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Подождите, пока мастер выполняет подготовку к установке.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Изменение, восстановление или удаление установки</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Путь к папке "{0}" содержит недопустимый знак.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Подождите, пока Windows настроит программу {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Русский</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Вас приветствует мастер установки {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Эта программа установит {0} на ваш компьютер.
-
-Перед началом установки рекомендуется закрыть все работающие приложения. Это позволит программе установки обновить системные файлы без перезагрузки компьютера.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Для завершения установки {0} необходимо перезагрузить компьютер. Хотите сделать это сейчас?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Невозможно выполнить файл:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Программа {0} установлена на ваш компьютер.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>Программа {0} была полностью удалена с вашего компьютера.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Эта программа не поддерживает версию Windows, установленную на этом компьютере.</value>
   </data>
 </root>

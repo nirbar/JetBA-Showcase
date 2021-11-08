@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Обработване на {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Готово</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Готово</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Наистина ли искате да отмените?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} Настройката завърши успешно.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} Настройката завърши успешно.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} Неуспешна настройка.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} Неуспешна настройка.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} Неуспешна настройка.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} Неуспешна настройка.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Деинсталиране</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Приемане</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Игнориране</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>База данни</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Изпълнители на услуги</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Копирай в клипборда</value>
   </data>
@@ -302,9 +281,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Потребителско име</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Отхвърляне</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Невалидно потребителско име или парола.</value>
@@ -324,7 +300,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Моля, изчакайте, докато съветникът за инсталиране се подготви да ви направлява в инсталирането.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Промяна, поправяне или премахване на инсталация</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Пътят на папката "{0}" съдържа невалиден знак.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Моля, изчакайте, докато Windows конфигурира {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Български</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Добре дошли в Съветника за инсталиране на {0}!</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Той ще инсталира {0} на вашия компютър.
-
-Препоръчва се да затворите всички други приложения, преди да продължите. Това ще позволи на програмата да обнови някои системни файлове, без да се рестартира компютъра.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Компютърът трябва да бъде рестартиран, за да завърши инсталирането на {0}. Искате ли да рестартирате сега?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Не е възможно да се стартира файл:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Инсталирането на {0} във Вашия компютър завърши.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} беше премахната успешно от Вашия компютър.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Програмата не поддържа версията на Windows, с която работи компютърът ви.</value>
   </data>
 </root>

@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Obdelava entitete {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Dokončaj</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Dokončaj</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Ali ste prepričani, da želite preklicati?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>Namestitev programa {0}  je uspešno dokončana.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Namestitev programa {0}  je uspešno dokončana.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Namestitev programa {0}  ni uspela.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Namestitev programa {0}  ni uspela.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Namestitev programa {0}  ni uspela.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Namestitev programa {0}  ni uspela.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Odstrani</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Sprejmi</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Prezri</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Zbirka podatkov</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Uporabniki storitve</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiraj v odložišče</value>
   </data>
@@ -302,9 +281,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Uporabniško ime</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Zavrni</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Neveljavno uporabniško ime ali geslo.</value>
@@ -324,7 +300,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Počakajte, da se čarovnik za namestitev pripravi za vodenje po namestitvi.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Spreminjanje, popravljanje ali odstranjevanje namestitve</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Pot do mape »{0}« vsebuje neveljaven znak.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Počakajte, da Windows konfigurira {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Slovenski</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Dobrodošli v čarovniku namestitve {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Ta čarovnik vas vodi skozi namestitev programa {0}.
-
-Pred namestitvijo je priporočeno zapreti vsa ostala okna in programe. S tem omogočite nemoteno namestitev programa in potrebnih sistemskih datotek brez ponovnega zagona računalnika.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Za dokončanje namestitve {0} morate ponovno zagnati računalnik. Želite zdaj ponovno zagnati računalnik?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Ne morem zagnati programa:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Program {0} je namešèen v vaš raèunalnik.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>Program {0} je bil uspešno odstranjen iz vašega raèunalnika.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Program ne deluje na vaši razlièici sistema Windows.</value>
   </data>
 </root>

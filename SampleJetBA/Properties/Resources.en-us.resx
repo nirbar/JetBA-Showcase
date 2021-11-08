@@ -132,9 +132,6 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Finish</value>
-  </data>
   <data name="Retry" xml:space="preserve">
     <value>Retry</value>
   </data>
@@ -192,14 +189,11 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Please wait while the Setup Wizard prepares to guide you through the installation.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Change, repair, or remove installation</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Removing older versions of this application...</value>
-  </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Configured {0}</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Destination Folder</value>
@@ -210,20 +204,14 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>The folder path '{0}' contains an invalid character.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Configuration failed.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} Setup failed.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Removal failed.</value>
-  </data>
   <data name="InstallationFolder" xml:space="preserve">
     <value>Installation folder:</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Remove</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Please wait while Windows configures {0}</value>
   </data>
   <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
     <value>False</value>
@@ -240,28 +228,11 @@
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installation Aborted</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
-    <value>Setup was completed successfully.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Setup was not completed successfully.</value>
-  </data>
   <data name="Close" xml:space="preserve">
     <value>Finish</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Welcome to {0} Setup</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Setup will guide you through the installation of {0}.
-
-It is recommended that you close all other applications before starting Setup. This will make it possible to update relevant system files without having to reboot your computer.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Your computer must be restarted in order to complete the installation of {0}. Do you want to reboot now?</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>I Agree</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copy Details To Clipboard</value>
@@ -281,26 +252,8 @@ After restarting your computer, run Setup again to complete the installation of 
     <value>Unable to execute file:
 {0}</value>
   </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Setup has finished installing {0} on your computer.</value>
-  </data>
   <data name="ReadyToInstall" xml:space="preserve">
     <value>Ready to Install</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} was successfully removed from your computer.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>This program does not support the version of Windows your computer is running.</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Processing:</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Decline</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>One or more issues caused the setup to fail. Please fix the issues and then retry setup. For more information see the log file.</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Continue</value>

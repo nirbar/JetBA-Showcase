@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>正在处理 {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>完成</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>完成</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>是否确实要取消?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} 安装程序已成功完成。</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} 安装程序已成功完成。</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} 安装程序失败。</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} 安装程序失败。</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} 安装程序失败。</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} 安装程序失败。</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>卸载</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>接受</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>忽略</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>数据库</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>服务用户</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>复制到剪贴板</value>
   </data>
@@ -306,9 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>用户名</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>拒绝</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>用户名或密码无效。</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows 身份验证</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>数据库配置</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>数据库配置</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>服务帐户</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>服务帐户</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>安装向导正准备指导您完成安装过程，请稍候。</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>更改、修复或删除安装</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>文件夹路径“{0}”中含有非法字符。</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Windows 正在配置 {0}，请稍候</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>中文(简体)</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>欢迎使用 {0} 安装程序</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>此程序将引导你完成 {0} 的安装。
-
-在安装之前，请先关闭其他所有应用程序。这将确保安装程序能够更新所需的系统文件，从而避免在安装后重新启动计算机。</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>必须重新启动本机才能完成 {0} 的安装。是否立即重新启动？</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>不能执行文件：
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>安装程序已在您的电脑中安装了 {0}。</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} 已顺利地从您的电脑中删除。</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>这个程序不支持当前计算机运行的Windows版本。</value>
   </data>
 </root>

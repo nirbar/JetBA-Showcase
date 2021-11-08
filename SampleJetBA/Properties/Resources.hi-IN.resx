@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>{0} संसाधित किया जा रहा है</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>समाप्त</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>समाप्त</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>क्या आप वास्तव में रद्द करना चाहते हैं?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} सेटअप सफलतापूर्वक पूरा हुआ.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} सेटअप सफलतापूर्वक पूरा हुआ.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} सेटअप विफल रहा.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} सेटअप विफल रहा.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} सेटअप विफल रहा.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} सेटअप विफल रहा.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>स्थापना रद्द करें</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>स्वीकार करें</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>अनदेखा करें</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>डेटाबेस</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>सेवा उपयोगकर्ता</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>क्लिपबोर्ड पर प्रतिलिपि करें</value>
   </data>
@@ -302,9 +281,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>उपयोगकर्ता नाम</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>अस्वीकार करें</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>अमान्य उपयोगकर्ता नाम या पासवर्ड.</value>
@@ -324,7 +300,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>सेट अप विज़ार्ड आपको स्थापना में सहायता करे, तब तक कृपया प्रतीक्षा करें.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>स्थापना बदलें, सुधारें या निकालें</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>फ़ोल्‍डर पथ '{0}' में अमान्‍य वर्ण है.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>जब तक Windows {0} को कॉन्फ़िगर करता है, कृपया प्रतीक्षा करें</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>हिन्दी</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>{0} सेटअप में आपका स्वागत है</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>सेटअप {0} के इंस्टालेशन के दौरान आपका मार्गदर्शन करेगा।
-
-यह सिफारिश की जाती है कि सेटअप शुरू करने से पहले आप अन्य सभी अनुप्रयोग बंद कर दें। इससे आपके कंप्यूटर को रीबूट किए बिना प्रासंगिक सिस्टम फ़ाइलों को अपडेट करना संभव हो जाएगा।</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0} के इंस्टालेशन को पूरा करने के लिए आपके कंप्यूटर को फिर से शुरू करना होगा। क्या आप अभी रीबूट करना चाहते हैं?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,16 +332,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>फाइल को कार्यान्वयन नही कर पा रहा:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>स्थापना ने {0} को आपके कल्पयन्त्र में सफलतापूर्वक अधिष्ठापन कर दिया है.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} सफलतापूर्वक निस्कासन हुआ.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>इस से [name/ver] आपके कल्पयन्त्र में अधिष्ठापन होगा.
-
-ये बहेतर होगा आगे बढने से पहेले आप अन्य सभी कार्यक्रम हाल तुरत के लिए बंध कर दे.</value>
   </data>
 </root>

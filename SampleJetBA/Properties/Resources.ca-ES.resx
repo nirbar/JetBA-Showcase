@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>S'està processant {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Acabament</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Acabament</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Esteu segur que voleu cancel·lar-ho?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>La instal·lació del {0}  s'ha completat correctament.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>La instal·lació del {0}  s'ha completat correctament.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>La instal·lació de {0}  ha fallat.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>La instal·lació de {0}  ha fallat.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>La instal·lació de {0}  ha fallat.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>La instal·lació de {0}  ha fallat.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Desinstal·la</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Accepta</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Omet</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Base de dades</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Usuaris de serveis</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copia al Porta-retalls</value>
   </data>
@@ -302,9 +281,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nom d'usuari</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Rebutja</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nom d'usuari o contrasenya no vàlid.</value>
@@ -324,7 +300,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Espereu mentre l'auxiliar d'instal·lació es prepara per guiar-vos pel procés d'instal·lació.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Canvi, reparació o supressió de la instal·lació</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>El camí de la carpeta "{0}" conté un caràcter no vàlid.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Espereu mentre el Windows configura el producte {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Català</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Benvinguts a l'auxiliar d'instal·lació de l'aplicació {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Aquest auxiliar us guiarà durant el procés d'instal·lació de l'aplicació {0}.
-
-Es recomana tancar la resta d'aplicacions abans de començar la instal·lació. Això permetrà al programa d'instal·ació actualitzar fitxers del sistema rellevants sense haver de reiniciar l'ordinador.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Cal reiniciar l'ordinador perquè pugui acabar-se la instal·lació de l'aplicació {0}. Voleu reiniciar-lo ara?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>No es pot executar el fitxer:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>El programa ha finalitzat la instal·lació de {0} al vostre ordinador.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} ha estat desinstal·lat correctament del vostre ordinador.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Aquest programa no suporta la versió de Windows instal·lada al vostre ordinador.</value>
   </data>
 </root>

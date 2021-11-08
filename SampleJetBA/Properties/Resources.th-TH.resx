@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>กำลังดำเนินการ {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>เสร็จสิ้น</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>เสร็จสิ้น</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>คุณแน่ใจว่าต้องการยกเลิกหรือ</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>การติดตั้ง {0}  เสร็จเรียบร้อยแล้ว</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>การติดตั้ง {0}  เสร็จเรียบร้อยแล้ว</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>การติดตั้ง {0}  ไม่สำเร็จ</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>การติดตั้ง {0}  ไม่สำเร็จ</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>การติดตั้ง {0}  ไม่สำเร็จ</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>การติดตั้ง {0}  ไม่สำเร็จ</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>ถอนการติดตั้ง</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>ยอมรับ</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>ละเว้น</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>ฐานข้อมูล</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>ผู้ใช้บริการ</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>คัดลอกไปยังคลิปบอร์ด</value>
   </data>
@@ -303,9 +282,6 @@
   <data name="UserName" xml:space="preserve">
     <value>ชื่อผู้ใช้</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>ปฏิเสธ</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</value>
   </data>
@@ -318,16 +294,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>การรับรองความถูกต้องของ Windows</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>การตั้งค่าคอนฟิกฐานข้อมูล</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>การตั้งค่าคอนฟิกฐานข้อมูล</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>บัญชีบริการ</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>บัญชีบริการ</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -339,7 +312,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>โปรดรอสักครู่ขณะที่ตัวช่วยสร้างการติดตั้งเตรียมการที่จะแนะนำคุณตลอดขั้นตอนการติดตั้ง</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>เปลี่ยนแปลง ซ่อมแซม หรือเอาการติดตั้งออก</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>เส้นทางโฟลเดอร์ '{0}' มีอักขระที่ไม่ถูกต้อง</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>โปรดรอขณะที่ Windows ทำการกำหนดค่า {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>ไทย</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>ยินดีต้อนรับเข้าสู่การติดตั้งโปรแกรม {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>ตัวติดตั้งอัติโนมัติจะนำคุณไปสู่การติดตั้งของ {0}.
-
-เราขอแนะนำให้ปิดโปรแกรมอื่นๆให้หมดก่อนที่จะเริ่มติดตั้ง, นี่จะเป็นการอัปเดทไฟล์ได้ง่ายขึ้นโดยคุณไม่จำเป็นต้องทำการรีบูทคอมพิวเตอร์ของคุณ</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>เครื่องคอมพิวเตอร์ของคุณจำเป็นต้องรีสตารท์เพื่อการติดตั้งของ {0} จะเรียบร้อย, คุณต้องการจะ รีบูท เดี๋ยวนี้ไหม?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>ไม่สามารถขยายไฟล์ได้:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>การติดตั้งโปรแกรม {0} ในเครื่องคอมพิวเตอร์ เสร็จสมบูรณ์</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} ได้ยกเลิกการติดตั้ง จากคอมพิวเตอร์ของคุณแล้ว</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>โปรแกรมไม่รองรับเวอร์ชันของวินโดวน์ที่คุณใช้งานอยู่</value>
   </data>
 </root>

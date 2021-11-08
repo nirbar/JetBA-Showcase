@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>A Processar {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Concluir</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Concluir</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Tem a certeza de que pretende cancelar?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>A Configuração do {0}  foi concluída com êxito.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>A Configuração do {0}  foi concluída com êxito.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Falha na Configuração do {0} .</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Falha na Configuração do {0} .</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Falha na Configuração do {0} .</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Falha na Configuração do {0} .</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Desinstalar</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Aceitar</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorar</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Base de Dados</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Utilizadores de Serviço</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Pasta de Destino</value>
   </data>
@@ -305,9 +284,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nome de Utilizador</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Recusar</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nome de utilizador ou palavra-passe inválidos.</value>
@@ -327,7 +303,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Aguarde enquanto o Assistente de Configuração se prepara para o orientar através da instalação.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Alterar, reparar ou remover a instalação</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>O caminho da pasta '{0}' contém um carácter inválido.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Aguarde enquanto o Windows configura o {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Português</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Bem vindo ao Assistente de Instalação do {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Este assistente ajudá-lo-á durante a instalação do {0}.
-
-É recomendado que feche todas as outras aplicações antes de iniciar a Instalação. Isto permitirá que o Instalador actualize ficheiros relacionados com o sistema sem necessidade de reiniciar o computador.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>O seu computador deve ser reiniciado para concluír a instalação do {0}. Deseja reiniciar agora?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Não é possível executar o ficheiro:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>O Assistente de Instalação concluiu a instalação do {0} no seu computador.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>O {0} foi removido do seu computador com sucesso.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Este programa não suporta a versão do Windows que está a utilizar.</value>
   </data>
 </root>

@@ -132,9 +132,6 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Otkaži</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Završi</value>
-  </data>
   <data name="Retry" xml:space="preserve">
     <value>Pokušaj opet</value>
   </data>
@@ -192,14 +189,11 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Sačekajte dok se čarobnjak za instalaciju pripremi da vas vodi kroz instalaciju.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Promena, popravka ili uklanjanje instalacije</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Uklanjanje starijih verzija ove aplikacije...</value>
-  </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Proizvod {0} je konfigurisan</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Odredišna fascikla</value>
@@ -210,20 +204,14 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Putanja fascikle „{0}“ sadrži nevažeći znak.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Konfigurisanje nije uspelo.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Nije uspela instalacija proizvoda {0} .</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Uklanjanje nije uspelo.</value>
-  </data>
   <data name="InstallationFolder" xml:space="preserve">
     <value>Instalaciona fascikla:</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Ukloni</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Sačekajte dok Windows konfiguriše {0}</value>
   </data>
   <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
     <value>False</value>
@@ -240,28 +228,11 @@
   <data name="OperationCanceled" xml:space="preserve">
     <value>Prekinuta instalacija</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
-    <value>Instalacija je uspešno završena.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Instalacija je prekinuta i nije uspešno završena.</value>
-  </data>
   <data name="Close" xml:space="preserve">
     <value>Kraj</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Dobrodošli u vodič za instalaciju programa {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Bićete vođeni kroz proces instalacije programa {0}.
-
-Preporučljivo je da isključite sve druge programe pre početka instalacije. Ovo može omogućiti ažuriranje sistemskih fajlova bez potrebe za ponovnim pokretanjem računara.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Računar mora biti ponovo pokrenut da bi se proces instalacije programa {0} uspešno završio. Želite li to odmah da uradite?</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Prihvatam</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiraj detalje u klipbord</value>
@@ -281,16 +252,7 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
     <value>Ne mogu da pokrenem datoteku:
 {0}</value>
   </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Instaliranje programa {0} je završeno.</value>
-  </data>
   <data name="ReadyToInstall" xml:space="preserve">
     <value>Instalacija je spremna</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} je deinstaliran sa raèunara.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Program ne podržava izdanje Windows-a koje koristite.</value>
   </data>
 </root>

@@ -132,9 +132,6 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Loobu</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Lõpeta</value>
-  </data>
   <data name="Retry" xml:space="preserve">
     <value>Proovi uuesti</value>
   </data>
@@ -192,14 +189,11 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Palun oodake, kuni installiviisard valmistub teid installimisel juhendama.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Installi muutmine, parandamine või eemaldamine</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Selle rakenduse vanemate versioonide eemaldamine ...</value>
-  </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Konfigureeritud {0}</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Sihtkaust</value>
@@ -210,20 +204,14 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Kaustatee {0} sisaldab sobimatut märki.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Konfigureerimine nurjus.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Toote {0} installimine nurjus.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Eemaldamine nurjus.</value>
-  </data>
   <data name="InstallationFolder" xml:space="preserve">
     <value>Installikaust:</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Eemalda</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Palun oodake, kuni Windows konfigureerib toodet {0}</value>
   </data>
   <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
     <value>False</value>
@@ -240,28 +228,11 @@
   <data name="OperationCanceled" xml:space="preserve">
     <value>Paigaldus katkestatud</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
-    <value>Paigaldus edukalt sooritatud.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Paigaldamine ebaõnnestus.</value>
-  </data>
   <data name="Close" xml:space="preserve">
     <value>Lõpeta</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>{0} paigaldamine!</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>See abiline aitab paigaldada {0}.
-
-Enne paigaldamise alustamist on soovitatav kõik teised programmid sulgeda, see võimaldab teatud süsteemifaile uuendada ilma arvutit taaskäivitamata.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0} täielikuks paigaldamiseks tuleb arvuti taaskäivitada. Kas soovid arvuti kohe taaskäivitada ?</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Nõustun</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopeeri detailid lõikelauale</value>
@@ -281,16 +252,7 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
     <value>Ei saanud käivitada faili:
 {0}</value>
   </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>{0}'i paigaldamine on lõpetatud.</value>
-  </data>
   <data name="ReadyToInstall" xml:space="preserve">
     <value>Valmis paigaldama</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} eemaldati sinu arvutist edukalt.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Seda programmi ei saa selle Windowsi versiooniga kasutada, mis arvutis praegu töötab.</value>
   </data>
 </root>

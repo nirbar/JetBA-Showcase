@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Επεξεργασία {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Τέλος</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Τέλος</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Είστε βέβαιοι ότι θέλετε να πραγματοποιήσετε ακύρωση;</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>Η εγκατάσταση του {0} ολοκληρώθηκε με επιτυχία.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Η εγκατάσταση του {0} ολοκληρώθηκε με επιτυχία.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Η εγκατάσταση του {0} απέτυχε.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Η εγκατάσταση του {0} απέτυχε.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Η εγκατάσταση του {0} απέτυχε.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Η εγκατάσταση του {0} απέτυχε.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Κατάργηση εγκατάστασης</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Αποδοχή</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Παράβλεψη</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Βάση δεδομένων</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Χρήστες εξυπηρέτησης</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Αντιγραφή στο Πρόχειρο</value>
   </data>
@@ -305,9 +284,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Όνομα χρήστη</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Απόρριψη</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Μη έγκυρο όνομα χρήστη ή κωδικός πρόσβασης.</value>
@@ -327,7 +303,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Περιμένετε όσο ο Οδηγός εγκατάστασης προετοιμάζεται για να σας καθοδηγήσει στην εγκατάσταση.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Αλλαγή, επιδιόρθωση ή κατάργηση εγκατάστασης</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Η διαδρομή φακέλου "{0}" περιέχει ένα μη έγκυρο χαρακτήρα.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Περιμένετε όσο τα Windows ρυθμίζουν τις παραμέτρους του {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Ελληνικά</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Καλώς ήλθατε στην Εγκατάσταση του '{0}'</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Ο οδηγός αυτός θα σας καθοδηγήσει κατά τη διάρκεια της εγκατάστασης του '{0}'.
-
-Συνιστάται να κλείσετε όλες τις άλλες εφαρμογές πριν ξεκινήσετε την Εγκατάσταση. Αυτό θα επιτρέψει στην Εγκατάσταση να ενημερώσει τα σχετικά αρχεία συστήματος χωρίς την επανεκκίνηση του υπολογιστή σας.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Πρέπει να γίνει επανεκκίνηση του υπολογιστή σας για να ολοκληρωθεί η εγκατάσταση του '{0}'. Θέλετε να επανεκκινήσετε τον υπολογιστή σας τώρα;</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Δεν είναι δυνατή η εκτέλεση του αρχείου:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Ο Οδηγός Εγκατάστασης ολοκλήρωσε την εγκατάσταση του {0} στον υπολογιστή σας.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>Το {0} αφαιρέθηκε με επιτυχία από τον υπολογιστή σας.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Αυτό το πρόγραμμα δεν υποστηρίζει την έκδοση των Windows που εκτελεί ο υπολογιστής σας.</value>
   </data>
 </root>

@@ -132,9 +132,6 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Anuloje</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Përfundoje</value>
-  </data>
   <data name="Retry" xml:space="preserve">
     <value>Riprovoni</value>
   </data>
@@ -192,14 +189,11 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Ju lutemi, pritni teksa Ndihmësi i Rregullimit përgatitet t’ju udhëheqë përmes instalimit.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Ndryshoni, riparoni, ose hiqni një instalim</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Po hiqen versione të vjetër të këtij aplikacioni...</value>
-  </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>U formësua {0}</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Dosje destinacion</value>
@@ -210,20 +204,14 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Shtegu i dosjes '{0}' përmban një shenjë të pavlefshme.</value>
   </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
-    <value>Formësimi dështoi.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} Rregullimi dështoi.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Heqja dështoi.</value>
-  </data>
   <data name="InstallationFolder" xml:space="preserve">
     <value>Dosje instalimi:</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Hiqe</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Ju lutemi, prisni teksa Windows formëson {0}</value>
   </data>
   <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
     <value>False</value>
@@ -240,28 +228,11 @@
   <data name="OperationCanceled" xml:space="preserve">
     <value>Instalimi u Ndërpre</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
-    <value>Rregullimi u plotësua me sukses.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Rregullimi s’u plotësua me sukses.</value>
-  </data>
   <data name="Close" xml:space="preserve">
     <value>Përfundoje</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Mirë se vini te Rregullimi i {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Ky do t’ju udhëheqë gjatë instalimit të {0}.
-
-Këshillohet që të mbyllni tërë aplikacionet e tjera, para se të nisni Rregullimin. Kjo bën të mundur përditësimin e kartelave të rëndësishme të sistemit pa u dashur të riniset kompjuteri juaj.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Që të mund të plotësohet instalimi i {0}, kompjuteri juaj duhet të riniset. Doni të riniset tani?</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Pajtohem</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopjo Hollësira Te E Papastra</value>
@@ -281,16 +252,7 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
     <value>Nuk ekzekutohet skedari:
 {0}</value>
   </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Sistemuesi përfundoi instalimin në kompjuter të {0}.</value>
-  </data>
   <data name="ReadyToInstall" xml:space="preserve">
     <value>Gati të instalohet</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} u fshi me sukses nga kompjuteri.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Nuk përshtatet programi me këtë version të Windows-it.</value>
   </data>
 </root>

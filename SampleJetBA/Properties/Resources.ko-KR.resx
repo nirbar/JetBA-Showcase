@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>{0} 처리 중</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>마침</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>마침</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>취소하시겠습니까?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>{0} 설치를 완료했습니다.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>{0} 설치를 완료했습니다.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>{0} 설치하지 못했습니다.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>{0} 설치하지 못했습니다.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>{0} 설치하지 못했습니다.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>{0} 설치하지 못했습니다.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>제거</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>수락</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>무시</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>데이터베이스</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>서비스 담당자</value>
-  </data>
   <data name="Modify" xml:space="preserve">
     <value>수정</value>
   </data>
@@ -305,9 +284,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>사용자 이름</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>거절</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>사용자 이름 또는 암호가 잘못되었습니다.</value>
@@ -327,7 +303,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>설치 마법사가 설치 안내를 준비하는 동안 잠시 기다려 주십시오.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>설치 변경, 복구 또는 제거</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>폴더 경로 '{0}'에 사용할 수 없는 문자가 들어 있습니다.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>{0}을(를) 구성하는 동안 잠시 기다려 주십시오.</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>한국어</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>{0} 설치를 시작합니다.</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>이 프로그램은 당신의 컴퓨터에 {0}(을)를 설치할 것입니다.
-
-설치를 시작하기 전 가능한 한 모든 프로그램을 종료하여 주시기 바랍니다. 이는 재부팅을 하지 않고서도 시스템 파일을 수정할 수 있게 해줍니다.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0}의 설치를 완료하기 위해서는 시스템을 다시 시작해야 합니다. 지금 재부팅 하시겠습니까?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>파일 실행 오류:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>귀하의 컴퓨터에 {0}이(가) 설치되었습니다.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0}이(가) 성공적으로 제거되었습니다!</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>이 프로그램은 귀하의 Windows 버전을 지원하지 않습니다.</value>
   </data>
 </root>

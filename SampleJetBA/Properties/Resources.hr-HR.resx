@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Obrada u tijeku {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Završi</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Završi</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Jeste li sigurni da želite odustati?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>Postavljanje programa {0}  uspješno je dovršeno.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Postavljanje programa {0}  uspješno je dovršeno.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Postavljanje programa {0}  nije uspjelo.</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Postavljanje programa {0}  nije uspjelo.</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Postavljanje programa {0}  nije uspjelo.</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Postavljanje programa {0}  nije uspjelo.</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Deinstaliraj</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Prihvati</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Zanemari</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Baza podataka</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Korisnici usluge</value>
-  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiraj u međuspremnik</value>
   </data>
@@ -302,9 +281,6 @@
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Korisničko ime</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Odbij</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Korisničko ime ili lozinka nisu valjani.</value>
@@ -324,7 +300,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Pričekajte da se čarobnjak za instalaciju pripremi da bi vas vodio kroz instalaciju.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Promjena, popravak i uklanjanje instalacije</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -339,18 +315,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Put mape "{0}" sadrži znak koji nije valjan.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Pričekajte dok Windows konfigurira {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Hrvatski</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Dobrodošli u instalaciju programa {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Instalacija programa {0} na Vaše računalo sastoji se od nekoliko jednostavnih koraka kroz koje će Vas provesti ovaj čarobnjak.
-
-Preporučamo zatvaranje svih ostalih aplikacija prije samog početka instalacije. To će omogućiti nadogradnju nekih sistemskih datoteka bez potrebe za ponovnim pokretanjem Vašeg računala. U svakom trenutku instalaciju možete prekinuti pritiskom na 'Odustani'.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Da bi se dovršila instalacija programa {0}, trebate ponovno pokrenuti računalo. Želite li to učiniti sada?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -361,14 +332,5 @@ Nakon ponovnog pokretanja računala, pokreni instalaciju ponovo, kako bi se dovr
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nije moguće izvršiti datoteku:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Instalacija je završila instaliranje programa {0}.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} je uspješno uklonjen s računala.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Program ne podržava Windows verziju koju koristiš.</value>
   </data>
 </root>

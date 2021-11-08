@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>Verarbeitung von {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>Fertig stellen</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Fertig stellen</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>Möchten Sie den Vorgang wirklich abbrechen?</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>Das Setup für {0} wurde erfolgreich abgeschlossen.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>Das Setup für {0} wurde erfolgreich abgeschlossen.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>Fehler beim Setup für {0} .</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>Fehler beim Setup für {0} .</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>Fehler beim Setup für {0} .</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>Fehler beim Setup für {0} .</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -242,9 +227,6 @@
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Deinstallieren</value>
-  </data>
-  <data name="Accept" xml:space="preserve">
-    <value>Akzeptieren</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorieren</value>
@@ -285,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>Datenbank</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Servicebenutzer</value>
-  </data>
   <data name="Modify" xml:space="preserve">
     <value>Ändern</value>
   </data>
@@ -306,9 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>Benutzername</value>
   </data>
-  <data name="Decline" xml:space="preserve">
-    <value>Ablehnen</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Ungültiger Benutzername oder Kennwort.</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-Authentifizierung</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>Datenbankkonfiguration</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>Datenbankkonfiguration</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>Dienstkonto</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>Dienstkonto</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>Warten Sie, während die Installation vorbereitet wird.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Ändern, Reparieren oder Entfernen der Installation</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,19 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Der Pfad "{0}" enthält ein ungültiges Zeichen.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Bitte warten Sie, während {0} konfiguriert wird.</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>Deutsch</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>Willkommen zur Installation
-von {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>Dieser Assistent wird Sie durch die Installation von {0} begleiten.
-
-Es wird empfohlen, vor der Installation alle anderen Programme zu schließen, damit bestimmte Systemdateien ohne Neustart ersetzt werden können.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Windows muss neu gestartet werden, um die Installation von {0} zu vervollständigen. Möchten Sie Windows jetzt neu starten?</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -377,14 +344,5 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Datei kann nicht ausgeführt werden:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>Das Setup hat die Installation von {0} auf Ihrem Computer abgeschlossen.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>{0} wurde erfolgreich von Ihrem Computer entfernt.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>Dieses Programm unterstützt die auf Ihrem Computer installierte Windows-Version nicht.</value>
   </data>
 </root>

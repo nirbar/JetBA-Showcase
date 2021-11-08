@@ -162,10 +162,10 @@ namespace SampleJetBA.ViewModel
         #endregion
 
         public ObservableCollection<Pages> ExpectedPages { get; private set; }
-
-        public void Refresh()
+                
+        public override void Refresh()
         {
-            Page = Page;
+            base.Refresh();
             Dispatcher.CurrentDispatcher.Invoke(() => ExpectedPages = new ObservableCollection<Pages>(ExpectedPages));
             OnPropertyChanged(nameof(ExpectedPages));
         }

@@ -171,9 +171,6 @@
   <data name="Executing0" xml:space="preserve">
     <value>قيد المعالجة {0}</value>
   </data>
-  <data name="Finish" xml:space="preserve">
-    <value>إنهاء</value>
-  </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>إنهاء</value>
   </data>
@@ -198,22 +195,10 @@
   <data name="CancelPrompt" xml:space="preserve">
     <value>هل تريد بالتأكيد إلغاء الأمر؟</value>
   </data>
-  <data name="SuccessfullyFinished" xml:space="preserve">
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
     <value>اكتمل إعداد {0} بنجاح.</value>
   </data>
-  <data name="_0Configured" xml:space="preserve">
-    <value>اكتمل إعداد {0} بنجاح.</value>
-  </data>
-  <data name="InstallationFailed" xml:space="preserve">
-    <value>فشل إعداد {0} .</value>
-  </data>
-  <data name="FailedInstalling0" xml:space="preserve">
-    <value>فشل إعداد {0} .</value>
-  </data>
-  <data name="FailedRemoving0" xml:space="preserve">
-    <value>فشل إعداد {0} .</value>
-  </data>
-  <data name="FailedConfiguring0" xml:space="preserve">
+  <data name="_0SetupFailed" xml:space="preserve">
     <value>فشل إعداد {0} .</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
@@ -282,9 +267,6 @@
   <data name="Database" xml:space="preserve">
     <value>قاعدة بيانات</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>مستخدمو الخدمة</value>
-  </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>المجلد الهدف</value>
   </data>
@@ -303,12 +285,6 @@
   <data name="UserName" xml:space="preserve">
     <value>اسم مستخدم</value>
   </data>
-  <data name="Accept" xml:space="preserve">
-    <value>قبول</value>
-  </data>
-  <data name="Decline" xml:space="preserve">
-    <value>رفض</value>
-  </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>اسم مستخدم أو كلمة مرور غير صالحة.</value>
   </data>
@@ -321,16 +297,13 @@
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>مصادقة Windows</value>
   </data>
-  <data name="_0DatabaseConnection" xml:space="preserve">
-    <value>تكوين قاعدة البيانات</value>
-  </data>
   <data name="DatabaseConnection" xml:space="preserve">
     <value>تكوين قاعدة البيانات</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
+  <data name="ServiceAccount" xml:space="preserve">
     <value>حساب الخدمة</value>
   </data>
-  <data name="_0ServiceAccount" xml:space="preserve">
+  <data name="PageTitle_Service" xml:space="preserve">
     <value>حساب الخدمة</value>
   </data>
   <data name="FilesInUseText" xml:space="preserve">
@@ -342,7 +315,7 @@
   <data name="GettingReady" xml:space="preserve">
     <value>الرجاء الانتظار أثناء قيام "معالج الإعداد" بالتمهيد لإرشادك خلال عملية التثبيت.</value>
   </data>
-  <data name="ClickRepairToRepair0OrUninstallToRemoveIt" xml:space="preserve">
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>تغيير التثبيت أو إصلاحه أو إزالته</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
@@ -354,18 +327,13 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>‏‏يحتوي مسار المجلد '{0}' على حرف غير صالح.</value>
   </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>‏‏الرجاء الانتظار ريثما يقوم Windows بتكوين {0}</value>
+  </data>
   <data name="LanguageName" xml:space="preserve">
     <value>العربية</value>
   </data>
-  <data name="WelcomeTitleFormat" xml:space="preserve">
-    <value>مرحبا بك في مرشد إعداد {0}</value>
-  </data>
-  <data name="WelcomeCloseApps" xml:space="preserve">
-    <value>سيساعدك هذا المرشد في تنصيب {0}.
-
-من المفضل إغلاق جميع البرامج قبل التنصيب. سيساعد هذا في تجديد ملفات النظام دون الحاجة لإعادة تشغيل الجهاز.</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot" xml:space="preserve">
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>يجب إعادة تشغيل الجهاز لإنهاء تنصيب {0}. هل تريد إعادة التشغيل الآن؟</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
@@ -376,14 +344,5 @@
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>الإعداد غير قابل على تشغيل الملف:
 {0}</value>
-  </data>
-  <data name="_0IsReadyForUse" xml:space="preserve">
-    <value>إكتمل معالج التثبيت من تثبيت {0} على جهازك.</value>
-  </data>
-  <data name="ThankYouForHavingUsed0" xml:space="preserve">
-    <value>تم إزالة {0} تماما من جهازك بنجاح.</value>
-  </data>
-  <data name="WindowsVersionNotSupported" xml:space="preserve">
-    <value>لا يدعم هذا البرنامج إصدار Windows الذي يعمل به الكمبيوتر.</value>
   </data>
 </root>
