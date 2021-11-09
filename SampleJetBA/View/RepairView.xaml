@@ -16,6 +16,7 @@
         <DockPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
             <Button DockPanel.Dock="Right" IsDefault="True" Command="{Binding ApplyViewModel.UninstallCommand}" Content="{x:Static props:Resources.Uninstall}" />
             <Button DockPanel.Dock="Right" Command="{Binding ApplyViewModel.RepairCommand}" Content="{x:Static props:Resources.Repair}" />
+            <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.NextCommand}" Content="{x:Static props:Resources.Modify}" />
             <Button DockPanel.Dock="Right" Command="{Binding NavigationViewModel.StopCommand}" Content="{x:Static props:Resources.Cancel}" />
         </DockPanel>
         <ProgressBar DockPanel.Dock="Bottom" Name="validation_" Style="{StaticResource ValidationProgressBar}" IsIndeterminate="{Binding NavigationViewModel.GoingNextStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running}"/>

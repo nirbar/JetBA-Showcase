@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Informacije</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Prekini</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Preverjanje pristnosti</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Nazaj</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Prebrskaj</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Prekliči</value>
@@ -126,152 +135,85 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Prekliči</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Zapri</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Zapri</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Prekini</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Ne</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Ne</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>V redu</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>V redu</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Poskusi znova</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Obvezno uporabniško ime</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Nadaljuj</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Napaka</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Opozorilo</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Obdelava entitete {0}</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Dokončaj</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Naprej</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Pripravljen za namestitev</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Izhod</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Geslo</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Strežnik</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Namestitev izdelka {0}</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Ali ste prepričani, da želite preklicati?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Namestitev programa {0}  je uspešno dokončana.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Da</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>Namestitev programa {0}  ni uspela.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>Za dokončanje namestitve {0} morate ponovno zagnati računalnik. Želite zdaj ponovno zagnati računalnik?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Funkcije izdelka</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Spreminjanje, popravljanje ali odstranjevanje namestitve</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Funkcije izdelka</value>
+  <data name="Close" xml:space="preserve">
+    <value>Zapri</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Ciljna mapa</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Ciljna mapa</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Nazaj</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Nazaj</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Namesti</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Popravi</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Odstrani</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Prezri</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Prezri</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Opomba</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Vnovični poskus</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Povzetek</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
+  <data name="Continue" xml:space="preserve">
     <value>Nadaljuj</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Prebrskaj</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Potek namestitve</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Potek namestitve</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Zaženi znova</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Prikaži dnevniško datoteko</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Zbirka podatkov</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Zbirka podatkov</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiraj v odložišče</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Postopek preklican</value>
+  <data name="Database" xml:space="preserve">
+    <value>Zbirka podatkov</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Strežnik</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Napaka</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Namestitev ali odstranitev prejšnjega programa ni bila konèana. Da bi jo dokonèali, morate raèunalnik znova zagnati.
+
+Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste konèali namestitev programa {0}.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Obdelava entitete {0}</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Izhod</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Datoteke v uporabi</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Navedeni programi uporabljajo datoteke, ki jih je med to namestitvijo treba posodobiti. Lahko jih zaprete s čarovnikom za namestitev in jih pozneje poskusite znova zagnati ali pa znova zaženete računalnik pozneje.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Počakajte, da se čarovnik za namestitev pripravi za vodenje po namestitvi.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Prezri</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informacije</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Namesti</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Ciljna mapa</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Namestitev izdelka {0}</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Ciljna mapa</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Neveljavno uporabniško ime ali geslo.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Slovenski</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Naloži</value>
@@ -279,35 +221,111 @@
   <data name="Modify" xml:space="preserve">
     <value>Spremeni</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Uporabniško ime</value>
+  <data name="Next" xml:space="preserve">
+    <value>Naprej</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Neveljavno uporabniško ime ali geslo.</value>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Preverjanje pristnosti</value>
+  <data name="Note" xml:space="preserve">
+    <value>Opomba</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="OK" xml:space="preserve">
+    <value>V redu</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Navedeni programi uporabljajo datoteke, ki jih je med to namestitvijo treba posodobiti. Lahko jih zaprete s čarovnikom za namestitev in jih pozneje poskusite znova zagnati ali pa znova zaženete računalnik pozneje.</value>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Prikaži dnevniško datoteko</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Datoteke v uporabi</value>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Postopek preklican</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Počakajte, da se čarovnik za namestitev pripravi za vodenje po namestitvi.</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Vnovični poskus</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Spreminjanje, popravljanje ali odstranjevanje namestitve</value>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Zbirka podatkov</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Dokončaj</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Ciljna mapa</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Funkcije izdelka</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Potek namestitve</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Potek namestitve</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Račun storitve</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Povzetek</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Geslo</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Obvezno uporabniško ime</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Počakajte, da Windows konfigurira {0}</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Odstranjevanje starejših različic tega programa ...</value>
   </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Ciljna mapa</value>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Pripravljen za namestitev</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Popravi</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Zaženi znova</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Nadaljuj</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Poskusi znova</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Funkcije izdelka</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Račun storitve</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Ne morem zagnati programa:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Zapri</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Odstrani</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Uporabniško ime</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Nazaj</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Prezri</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>V redu</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Opozorilo</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Da</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Namesti {0} v:</value>
@@ -315,22 +333,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Pot do mape »{0}« vsebuje neveljaven znak.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Počakajte, da Windows konfigurira {0}</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>Namestitev programa {0}  ni uspela.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Slovenski</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Za dokončanje namestitve {0} morate ponovno zagnati računalnik. Želite zdaj ponovno zagnati računalnik?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>Namestitev ali odstranitev prejšnjega programa ni bila konèana. Da bi jo dokonèali, morate raèunalnik znova zagnati.
-
-Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste konèali namestitev programa {0}.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Ne morem zagnati programa:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>Namestitev programa {0}  je uspešno dokončana.</value>
   </data>
 </root>

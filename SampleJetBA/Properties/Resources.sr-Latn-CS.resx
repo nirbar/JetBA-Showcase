@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Abort" xml:space="preserve">
+    <value>Izađi</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Nazad</value>
   </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Nazad</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Dalje</value>
+  <data name="Browse" xml:space="preserve">
+    <value>Potraži…</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Otkaži</value>
@@ -132,113 +132,29 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Otkaži</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Pokušaj opet</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Pokušaj opet</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Zanemari</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Zanemari</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Ne</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Da</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Ne</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>U redu</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>U redu</value>
-  </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Sledeće aplikacije koriste datoteke koje ova instalacija treba da ažurira. Možete dozvoliti čarobnjaku za instalaciju da ih zatvori i pokuša ponovo da ih pokrene ili kasnije ponovo pokrenuti računar.</value>
-  </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Datoteke u upotrebi</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Popravi</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Želite li zaista da otkažete ovu radnju?</value>
   </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Izađi</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Izađi</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Potraži…</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Instaliraj</value>
-  </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Sačekajte dok se čarobnjak za instalaciju pripremi da vas vodi kroz instalaciju.</value>
-  </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Promena, popravka ili uklanjanje instalacije</value>
-  </data>
-  <data name="PreviousVersion" xml:space="preserve">
-    <value>Uklanjanje starijih verzija ove aplikacije...</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Odredišna fascikla</value>
-  </data>
-  <data name="_0InstallFolder" xml:space="preserve">
-    <value>Instaliraj {0} u:</value>
-  </data>
-  <data name="_0IsNotALegalFolderName" xml:space="preserve">
-    <value>Putanja fascikle „{0}“ sadrži nevažeći znak.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Instalaciona fascikla:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Ukloni</value>
-  </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Sačekajte dok Windows konfiguriše {0}</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Srpski</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Odmah ponovo pokreni računar</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Sačekajte dok se program {0} instalira.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Prekinuta instalacija</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Kraj</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Da</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Računar mora biti ponovo pokrenut da bi se proces instalacije programa {0} uspešno završio. Želite li to odmah da uradite?</value>
   </data>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Promena, popravka ili uklanjanje instalacije</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Kraj</value>
+  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiraj detalje u klipbord</value>
   </data>
-  <data name="Information" xml:space="preserve">
-    <value>Podaci</value>
+  <data name="Database" xml:space="preserve">
+    <value>Baza podataka</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Greška</value>
@@ -248,11 +164,111 @@
 
 Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</value>
   </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Izađi</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Datoteke u upotrebi</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Sledeće aplikacije koriste datoteke koje ova instalacija treba da ažurira. Možete dozvoliti čarobnjaku za instalaciju da ih zatvori i pokuša ponovo da ih pokrene ili kasnije ponovo pokrenuti računar.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Sačekajte dok se čarobnjak za instalaciju pripremi da vas vodi kroz instalaciju.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Zanemari</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Podaci</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Instaliraj</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Instalaciona fascikla:</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Sačekajte dok se program {0} instalira.</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Odredišna fascikla</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Srpski</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Dalje</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>U redu</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Prekinuta instalacija</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Pokušaj opet</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Baza podataka</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>
+    </value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Nalog usluge</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Sačekajte dok Windows konfiguriše {0}</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>Uklanjanje starijih verzija ove aplikacije...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Instalacija je spremna</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Popravi</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Odmah ponovo pokreni računar</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Pokušaj opet</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Nalog usluge</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Ne mogu da pokrenem datoteku:
 {0}</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Instalacija je spremna</value>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Ukloni</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Zanemari</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>U redu</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>Instaliraj {0} u:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>Putanja fascikle „{0}“ sadrži nevažeći znak.</value>
   </data>
 </root>

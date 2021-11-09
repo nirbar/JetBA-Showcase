@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Információk</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Megszakítás</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Hitelesítés</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Tallózás</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Mégse</value>
@@ -126,155 +135,85 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Mégse</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Bezárás</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Bezárás</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Felhasználónév szükséges</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Megszakítás</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Nem</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Nem</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Újra</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Igen</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Igen</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Folytatás</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Hiba</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Figyelmeztetés</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>{0} feldolgozása</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Befejezés</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Tovább</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Telepítésre felkészülve</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Kilépés</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Jelszó</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Kiszolgáló</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} telepítő</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Biztosan megszakítja?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} A telepítés sikeresen befejeződött.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Igen</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} A telepítés sikertelen volt.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>A(z) {0} telepítésének befejezéséhez újra kell indítani a rendszert. Most akarja újraindítani?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>A termék szolgáltatásai</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>A telepítés módosítása, kijavítása vagy eltávolítása</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>A termék szolgáltatásai</value>
+  <data name="Close" xml:space="preserve">
+    <value>Bezárás</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Célmappa</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Célmappa</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Vissza</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Vissza</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Telepítés</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Javítás</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Eltávolítás</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Figyelmen kívül hagyás</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Figyelmen kívül hagyás</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Megjegyzés</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Próbálja újra!</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Összegzés</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
+  <data name="Continue" xml:space="preserve">
     <value>Folytatás</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Tallózás</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Telepítés állapota</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Telepítés állapota</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Újraindítás</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>A naplófájl megtekintése</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Adatbázis</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Adatbázis</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Célmappa</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Másolás a vágólapra</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Művelet megszakítva</value>
+  <data name="Database" xml:space="preserve">
+    <value>Adatbázis</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Kiszolgáló</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Hiba</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>gy korábbi program telepítése/eltávolítása nem fejeződött be. Újra kell indítania a számítógépét a másik telepítés befejezéséhez.
+
+A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} telepítésének befejezéséhez.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>{0} feldolgozása</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Kilépés</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Fájlok vannak használatban</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>A következő alkalmazások jelenleg használják a telepítő által frissítendő fájlokat. Engedélyezheti, hogy a telepítővarázsló bezárja őket, és később kísérletet tegyen az újraindításukra vagy a számítógép újraindítására.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Várjon, amíg a telepítővarázsló felkészül, hogy végigvezesse Önt a telepítés folyamatán.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Figyelmen kívül hagyás</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Információk</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Telepítés</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Célmappa</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0} telepítő</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Célmappa</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Érvénytelen felhasználói név vagy jelszó.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Magyar</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Betöltés</value>
@@ -282,32 +221,111 @@
   <data name="Modify" xml:space="preserve">
     <value>Módosítás</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Felhasználónév</value>
+  <data name="Next" xml:space="preserve">
+    <value>Tovább</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Érvénytelen felhasználói név vagy jelszó.</value>
+  <data name="No" xml:space="preserve">
+    <value>Nem</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Hitelesítés</value>
+  <data name="Note" xml:space="preserve">
+    <value>Megjegyzés</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>A következő alkalmazások jelenleg használják a telepítő által frissítendő fájlokat. Engedélyezheti, hogy a telepítővarázsló bezárja őket, és később kísérletet tegyen az újraindításukra vagy a számítógép újraindítására.</value>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>A naplófájl megtekintése</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Fájlok vannak használatban</value>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Művelet megszakítva</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Várjon, amíg a telepítővarázsló felkészül, hogy végigvezesse Önt a telepítés folyamatán.</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Próbálja újra!</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>A telepítés módosítása, kijavítása vagy eltávolítása</value>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Adatbázis</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Befejezés</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Célmappa</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>A termék szolgáltatásai</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Telepítés állapota</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Telepítés állapota</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Szolgáltatásfiók</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Összegzés</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Felhasználónév szükséges</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Kis türelmet, a Windows a(z) {0} konfigurálását végzi.</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Az alkalmazás régebbi verzióinak eltávolítása...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Telepítésre felkészülve</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Javítás</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Újraindítás</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Folytatás</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Újra</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>A termék szolgáltatásai</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Szolgáltatásfiók</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Nem hajtható végre a fájl:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Bezárás</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Eltávolítás</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Felhasználónév</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Vissza</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Figyelmen kívül hagyás</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Figyelmeztetés</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Igen</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>A(z) {0} telepítése ide:</value>
@@ -315,22 +333,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>A mappa „{0}” elérési útja érvénytelen karaktert tartalmaz.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Kis türelmet, a Windows a(z) {0} konfigurálását végzi.</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>{0} A telepítés sikertelen volt.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Magyar</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>A(z) {0} telepítésének befejezéséhez újra kell indítani a rendszert. Most akarja újraindítani?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>gy korábbi program telepítése/eltávolítása nem fejeződött be. Újra kell indítania a számítógépét a másik telepítés befejezéséhez.
-
-A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} telepítésének befejezéséhez.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Nem hajtható végre a fájl:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>{0} A telepítés sikeresen befejeződött.</value>
   </data>
 </root>

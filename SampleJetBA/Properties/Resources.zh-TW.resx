@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ShutDown" xml:space="preserve">
-    <value>關閉</value>
+  <data name="Abort" xml:space="preserve">
+    <value>中止</value>
   </data>
-  <data name="Close" xml:space="preserve">
-    <value>關閉</value>
+  <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>瀏覽</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>取消​​</value>
@@ -129,83 +132,29 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>取消​​</value>
   </data>
-  <data name="Next" xml:space="preserve">
-    <value>下一步</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>瀏覽</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>安裝進度</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>安裝進度</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>修復</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>解除安裝</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>安裝</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>重新開機</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>檢視記錄檔</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>確定</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>確定</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>返回</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>返回</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>繼續</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>錯誤</value>
-  </data>
-  <data name="Information" xml:space="preserve">
-    <value>資訊</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>否</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>否</value>
   </data>
-  <data name="Note" xml:space="preserve">
-    <value>附註</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>是</value>
+  <data name="CancelPrompt" xml:space="preserve">
+    <value>您確定要取消嗎 ?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>是</value>
   </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>摘要</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>電腦需要重新開機，才能完成安裝 {0} 。要馬上重新開機嗎？</value>
   </data>
-  <data name="Password" xml:space="preserve">
-    <value>密碼</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>變更、修復或移除安裝</value>
   </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>忽略</value>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
   </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>忽略</value>
+  <data name="Continue" xml:space="preserve">
+    <value>繼續</value>
   </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>資料庫</value>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>複製至剪貼簿</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>資料庫</value>
@@ -213,94 +162,154 @@
   <data name="DbServer" xml:space="preserve">
     <value>伺服器</value>
   </data>
-  <data name="Warning" xml:space="preserve">
-    <value>警告</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>複製至剪貼簿</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>完成</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>重試</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>作業已取消</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>結束</value>
-  </data>
-  <data name="Load" xml:space="preserve">
-    <value>載入</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>重試</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
-    <value>繼續</value>
-  </data>
-  <data name="Modify" xml:space="preserve">
-    <value>修改</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>中止</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>目標資料夾</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>安裝準備就緒</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>下列應用程式正在使用要由此安裝程式更新的檔案。您可以讓安裝精靈關閉它們，稍後再嘗試重新啟動它們或重新啟動電腦。</value>
-  </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>檔案使用中</value>
-  </data>
-  <data name="CancelPrompt" xml:space="preserve">
-    <value>您確定要取消嗎 ?</value>
-  </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>安裝精靈正在準備引導您完成安裝，請稍候。</value>
-  </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>變更、修復或移除安裝</value>
-  </data>
-  <data name="PreviousVersion" xml:space="preserve">
-    <value>正在移除舊版應用程式...</value>
-  </data>
-  <data name="_0InstallFolder" xml:space="preserve">
-    <value>安裝 {0} 到:</value>
-  </data>
-  <data name="_0IsNotALegalFolderName" xml:space="preserve">
-    <value>資料夾路徑 '{0}' 含有無效的字元。</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>安裝資料夾(F):</value>
-  </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>請稍候，Windows 在設定 {0}</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>中文(繁體)</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} 正在安裝，請稍候。</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>電腦需要重新開機，才能完成安裝 {0} 。要馬上重新開機嗎？</value>
+  <data name="Error" xml:space="preserve">
+    <value>錯誤</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>先前的安裝/ 解除安裝尚未完成，您必須重新啟動電腦以完成該安裝。
 
 在重新啟動電腦之後，請再執行這個程式來安裝 {0}。</value>
   </data>
+  <data name="Exit" xml:space="preserve">
+    <value>結束</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>檔案使用中</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>下列應用程式正在使用要由此安裝程式更新的檔案。您可以讓安裝精靈關閉它們，稍後再嘗試重新啟動它們或重新啟動電腦。</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>安裝精靈正在準備引導您完成安裝，請稍候。</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>忽略</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>資訊</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>安裝</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>安裝資料夾(F):</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0} 正在安裝，請稍候。</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>目標資料夾</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>中文(繁體)</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>載入</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>附註</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>檢視記錄檔</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>作業已取消</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>重試</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>資料庫</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>目的地資料夾</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>安裝進度</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>安裝進度</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>服務帳戶</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>請稍候，Windows 在設定 {0}</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>正在移除舊版應用程式...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>安裝準備就緒</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>修復</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>重新開機</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>繼續</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>重試</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>服務帳戶</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>無法執行檔案:
 {0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>解除安裝</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>忽略</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>安裝 {0} 到:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>資料夾路徑 '{0}' 含有無效的字元。</value>
   </data>
 </root>

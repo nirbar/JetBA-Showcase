@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Informações</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Anular</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autenticação</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Procurar</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
@@ -126,128 +135,124 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Cancelar</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Fechar</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Fechar</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Anular</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Não</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Não</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Repetir</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Sim</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Sim</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nome de Usuário Necessário</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continuar</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Erro</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Aviso</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Processando {0}</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Concluir</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Próximo</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Pronto para Instalar</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Sair</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Senha</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Servidor</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Instalação do {0}</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Tem certeza de que deseja cancelar?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalação do {0} concluída com sucesso.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Sim</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>Falha na Instalação do {0} .</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>Seu computador deve ser reiniciado para completar a instalação do {0}. Você quer reiniciar agora?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Recursos do produto</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Alterar, reparar ou remover a instalação</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Recursos do produto</value>
+  <data name="Close" xml:space="preserve">
+    <value>Fechar</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Pasta de Destino</value>
+  <data name="Continue" xml:space="preserve">
+    <value>Continuar</value>
   </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Pasta de Destino</value>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Copiar para Área de Transferência</value>
   </data>
-  <data name="Back" xml:space="preserve">
-    <value>Voltar</value>
+  <data name="Database" xml:space="preserve">
+    <value>Banco de Dados</value>
   </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Voltar</value>
+  <data name="DbServer" xml:space="preserve">
+    <value>Servidor</value>
   </data>
-  <data name="Install" xml:space="preserve">
-    <value>Instalar</value>
+  <data name="Error" xml:space="preserve">
+    <value>Erro</value>
   </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Reparar</value>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>A instalação/remoção de um programa anterior não foi completada. Você precisará reiniciar o computador pra completar essa instalação.
+
+Após reiniciar seu computador execute o instalador de novo pra completar a instalação do {0}.</value>
   </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Desinstalar</value>
+  <data name="Executing0" xml:space="preserve">
+    <value>Processando {0}</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Arquivos em Uso</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Os aplicativos a seguir estão usando arquivos que precisam ser atualizados por esta instalação. Você pode permitir que o Assistente para Instalação feche esses aplicativos e tente reiniciá-los ou reinicializar o computador mais tarde.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Aguarde enquanto o Assistente para Instalação se prepara para orientar você durante a instalação.</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorar</value>
   </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignorar</value>
+  <data name="Information" xml:space="preserve">
+    <value>Informações</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Instalar</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Pasta de Destino</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Instalação do {0}</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Pasta de Destino</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Nome de usuário ou senha inválido.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Português Brasileiro</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Carregar</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Não</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>Observação</value>
   </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Exibir o Arquivo de Log</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Operação Cancelada</value>
+  </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Tente novamente</value>
   </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Resumo</value>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Banco de Dados</value>
   </data>
-  <data name="Resume" xml:space="preserve">
-    <value>Retomar</value>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Concluir</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Procurar</value>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Pasta de Destino</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Recursos do produto</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Progresso da Instalação</value>
@@ -255,65 +260,72 @@
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Progresso da Instalação</value>
   </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Conta de serviços</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Resumo</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Nome de Usuário Necessário</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Aguarde enquanto o Windows configura o {0}</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>Removendo versões anteriores deste aplicativo...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Pronto para Instalar</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Reparar</value>
+  </data>
   <data name="Restart" xml:space="preserve">
     <value>Reinicializar</value>
   </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Exibir o Arquivo de Log</value>
+  <data name="Resume" xml:space="preserve">
+    <value>Retomar</value>
   </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Banco de Dados</value>
+  <data name="Retry" xml:space="preserve">
+    <value>Repetir</value>
   </data>
-  <data name="Database" xml:space="preserve">
-    <value>Banco de Dados</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Pasta de Destino</value>
-  </data>
-  <data name="Modify" xml:space="preserve">
-    <value>Modificar</value>
-  </data>
-  <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copiar para Área de Transferência</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Operação Cancelada</value>
-  </data>
-  <data name="Load" xml:space="preserve">
-    <value>Carregar</value>
-  </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Nome de Usuário</value>
-  </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Nome de usuário ou senha inválido.</value>
-  </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Autenticação</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Recursos do produto</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Conta de serviços</value>
   </data>
-  <data name="PageTitle_Service" xml:space="preserve">
-    <value>Conta de serviços</value>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Incapaz de executar o arquivo:
+{0}</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Os aplicativos a seguir estão usando arquivos que precisam ser atualizados por esta instalação. Você pode permitir que o Assistente para Instalação feche esses aplicativos e tente reiniciá-los ou reinicializar o computador mais tarde.</value>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Fechar</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Arquivos em Uso</value>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Desinstalar</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Aguarde enquanto o Assistente para Instalação se prepara para orientar você durante a instalação.</value>
+  <data name="UserName" xml:space="preserve">
+    <value>Nome de Usuário</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Alterar, reparar ou remover a instalação</value>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Voltar</value>
   </data>
-  <data name="PreviousVersion" xml:space="preserve">
-    <value>Removendo versões anteriores deste aplicativo...</value>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignorar</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sim</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Instalar o {0} em:</value>
@@ -321,22 +333,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>O caminho da pasta '{0}' contém um caractere inválido.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Aguarde enquanto o Windows configura o {0}</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>Falha na Instalação do {0} .</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Português Brasileiro</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Seu computador deve ser reiniciado para completar a instalação do {0}. Você quer reiniciar agora?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>A instalação/remoção de um programa anterior não foi completada. Você precisará reiniciar o computador pra completar essa instalação.
-
-Após reiniciar seu computador execute o instalador de novo pra completar a instalação do {0}.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Incapaz de executar o arquivo:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>Instalação do {0} concluída com sucesso.</value>
   </data>
 </root>

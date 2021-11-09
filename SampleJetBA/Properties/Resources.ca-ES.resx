@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Informació</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Anul·la</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autenticació</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Enrere</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Navega</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel·la</value>
@@ -126,152 +135,85 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Cancel·la</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Tanca</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Tanca</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nom d'usuari obligatori</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Anul·la</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>No</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>No</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>D'acord</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>D'acord</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Torna-ho a provar</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Sí</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Sí</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continua</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Error</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Advertiment</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>S'està processant {0}</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Acabament</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Endavant</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Preparat per instal·lar</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Surt</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Contrasenya</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Servidor</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Programa d'instal·lació del {0}</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Esteu segur que voleu cancel·lar-ho?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>La instal·lació del {0}  s'ha completat correctament.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Sí</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>La instal·lació de {0}  ha fallat.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>Cal reiniciar l'ordinador perquè pugui acabar-se la instal·lació de l'aplicació {0}. Voleu reiniciar-lo ara?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Característiques del producte</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Canvi, reparació o supressió de la instal·lació</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Característiques del producte</value>
+  <data name="Close" xml:space="preserve">
+    <value>Tanca</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Carpeta de destinació</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Carpeta de destinació</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Enrere</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Enrere</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Instal·la</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Repara</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Desinstal·la</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Omet</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Omet</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Nota</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Torna-ho a provar</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Resum</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
-    <value>Reprèn</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Navega</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Progrés de la instal·lació</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Progrés de la instal·lació</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Reinicia</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Visualitza el fitxer de registre</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Base de dades</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Base de dades</value>
+  <data name="Continue" xml:space="preserve">
+    <value>Continua</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copia al Porta-retalls</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>L'operació s'ha cancel·lat</value>
+  <data name="Database" xml:space="preserve">
+    <value>Base de dades</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>La instal·lació o desinstal·lació anterior no s'ha dut a terme. Caldrà que reinicieu l'ordinador per a finalitzar aquesta instal·lació.
+
+Després de reiniciar l'ordinador, executeu aquest programa de nou per completar la instal·lació de {0}.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>S'està processant {0}</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Surt</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Fitxers en ús</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Les següents aplicacions fan servir fitxers que cal actualitzar en aquesta instal·lació. Podeu deixar que l'auxiliar d'instal·lació les tanqui i intenti reiniciar-les o podeu reiniciar l'ordinador més tard.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Espereu mentre l'auxiliar d'instal·lació es prepara per guiar-vos pel procés d'instal·lació.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Omet</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informació</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Instal·la</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Carpeta de destinació</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Programa d'instal·lació del {0}</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Carpeta de destinació</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Nom d'usuari o contrasenya no vàlid.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Català</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Carrega</value>
@@ -279,35 +221,111 @@
   <data name="Modify" xml:space="preserve">
     <value>Modifica</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Nom d'usuari</value>
+  <data name="Next" xml:space="preserve">
+    <value>Endavant</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Nom d'usuari o contrasenya no vàlid.</value>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Autenticació</value>
+  <data name="Note" xml:space="preserve">
+    <value>Nota</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="OK" xml:space="preserve">
+    <value>D'acord</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Les següents aplicacions fan servir fitxers que cal actualitzar en aquesta instal·lació. Podeu deixar que l'auxiliar d'instal·lació les tanqui i intenti reiniciar-les o podeu reiniciar l'ordinador més tard.</value>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Visualitza el fitxer de registre</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Fitxers en ús</value>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>L'operació s'ha cancel·lat</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Espereu mentre l'auxiliar d'instal·lació es prepara per guiar-vos pel procés d'instal·lació.</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Torna-ho a provar</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Canvi, reparació o supressió de la instal·lació</value>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Base de dades</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Acabament</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Carpeta de destinació</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Característiques del producte</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Progrés de la instal·lació</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Progrés de la instal·lació</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Compte de servei</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Resum</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Contrasenya</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Nom d'usuari obligatori</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Espereu mentre el Windows configura el producte {0}</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>S'estan suprimint les versions anteriors d'aquesta aplicació...</value>
   </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Carpeta de destinació</value>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Preparat per instal·lar</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Repara</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Reinicia</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Reprèn</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Torna-ho a provar</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Característiques del producte</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Compte de servei</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>No es pot executar el fitxer:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Tanca</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Desinstal·la</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nom d'usuari</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Enrere</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Omet</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>D'acord</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Advertiment</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Instal·la el producte {0} a:</value>
@@ -315,22 +333,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>El camí de la carpeta "{0}" conté un caràcter no vàlid.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Espereu mentre el Windows configura el producte {0}</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>La instal·lació de {0}  ha fallat.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Català</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Cal reiniciar l'ordinador perquè pugui acabar-se la instal·lació de l'aplicació {0}. Voleu reiniciar-lo ara?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>La instal·lació o desinstal·lació anterior no s'ha dut a terme. Caldrà que reinicieu l'ordinador per a finalitzar aquesta instal·lació.
-
-Després de reiniciar l'ordinador, executeu aquest programa de nou per completar la instal·lació de {0}.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>No es pot executar el fitxer:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>La instal·lació del {0}  s'ha completat correctament.</value>
   </data>
 </root>

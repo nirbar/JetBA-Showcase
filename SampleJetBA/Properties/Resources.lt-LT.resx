@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Informacija</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Nutraukti</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autentifikavimas</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Atgal</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Naršyti</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Atšaukti</value>
@@ -126,152 +135,88 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Atšaukti</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Uždaryti</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Uždaryti</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Vartotojo vardas būtinas</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Nutraukti</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Ne</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Ne</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>Gerai</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>Gerai</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Kartoti</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Taip</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Taip</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Tęsti</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Klaida</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Įspėjimas</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Vykdoma {0}</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Baigti</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Kitas</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Parengta diegti</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Išeiti</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Slaptažodis</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Serveris</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>„{0}“ sąranka</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Ar tikrai norite atšaukti?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>„{0} “sąranka sėkmingai baigta.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Taip</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>„{0} “sąranka nepavyko.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>Jūsų kompiuteris turi būti perkrautas, kad būtų baigtas {0} įdiegimas. Ar jūs norite perkrauti dabar?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Produkto funkcijos</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Įdiegties keitimas, taisymas arba šalinimas</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Produkto funkcijos</value>
+  <data name="Close" xml:space="preserve">
+    <value>Uždaryti</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Paskirties aplankas</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Paskirties aplankas</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Atgal</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Atgal</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Įdiegti</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Taisyti</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Pašalinti</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Nepaisyti</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Nepaisyti</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Pastaba</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Bandyti dar kartą</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Suvestinė</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
+  <data name="Continue" xml:space="preserve">
     <value>Tęsti</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Naršyti</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Diegimo eiga</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Diegimo eiga</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Paleisti iš naujo</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Rodyti žurnalo failą</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Duomenų bazė</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Duomenų bazė</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopijuoti į mainų sritį</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Operacija atšaukta</value>
+  <data name="Database" xml:space="preserve">
+    <value>Duomenų bazė</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Duomenų bazės konfigūravimas</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Serveris</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Klaida</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Ankstesnës programos diegimas/ðalinimas buvo neuþbaigtas. Jums reikëtø perkrauti kompiuterá, kad uþbaigtumëte diegimà.
+
+Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaigtumëte „{0}“ diegimà.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Vykdoma {0}</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Išeiti</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Naudojami failai</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Šios programos naudoja sąrankos metu būtinus atnaujinti failus. Galite leisti sąrankos vedliui juos uždaryti ir bandyti paleisti iš naujo arba vėliau perkrauti kompiuterį.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Palaukite, kol sąrankos vedlys pasiruoš vadovauti diegimo procesui.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Nepaisyti</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informacija</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Įdiegti</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Paskirties aplankas</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>„{0}“ sąranka</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Paskirties aplankas</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Netinkamas vartotojo vardas arba slaptažodis.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Lietuvių</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Įkelti</value>
@@ -279,47 +224,114 @@
   <data name="Modify" xml:space="preserve">
     <value>Modifikuoti</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Vartotojo vardas</value>
+  <data name="Next" xml:space="preserve">
+    <value>Kitas</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Netinkamas vartotojo vardas arba slaptažodis.</value>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Autentifikavimas</value>
+  <data name="Note" xml:space="preserve">
+    <value>Pastaba</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="OK" xml:space="preserve">
+    <value>Gerai</value>
   </data>
-  <data name="WindowsAuthentication" xml:space="preserve">
-    <value>„Windows“ autentifikavimas</value>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Rodyti žurnalo failą</value>
   </data>
-  <data name="DatabaseConnection" xml:space="preserve">
-    <value>Duomenų bazės konfigūravimas</value>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Operacija atšaukta</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Tarnybos abonementas</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Bandyti dar kartą</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Duomenų bazė</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Baigti</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Paskirties aplankas</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Produkto funkcijos</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Diegimo eiga</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Diegimo eiga</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Tarnybos abonementas</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Šios programos naudoja sąrankos metu būtinus atnaujinti failus. Galite leisti sąrankos vedliui juos uždaryti ir bandyti paleisti iš naujo arba vėliau perkrauti kompiuterį.</value>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Suvestinė</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Naudojami failai</value>
+  <data name="Password" xml:space="preserve">
+    <value>Slaptažodis</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Palaukite, kol sąrankos vedlys pasiruoš vadovauti diegimo procesui.</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Vartotojo vardas būtinas</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Įdiegties keitimas, taisymas arba šalinimas</value>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Palaukite, kol „Windows“ sukonfigūruos {0}</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Šalinamos senesnės šios taikomosios programos versijos...</value>
   </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Paskirties aplankas</value>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Parengta diegti</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Taisyti</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Paleisti iš naujo</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Tęsti</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Kartoti</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Produkto funkcijos</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Tarnybos abonementas</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Nepavyko paleisti failo:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Uždaryti</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Pašalinti</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Vartotojo vardas</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Atgal</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Nepaisyti</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>Gerai</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Įspėjimas</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>„Windows“ autentifikavimas</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Taip</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Diegti „{0}“ į:</value>
@@ -327,22 +339,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Aplanko kelyje {0} yra netinkamas simbolis.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Palaukite, kol „Windows“ sukonfigūruos {0}</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>„{0} “sąranka nepavyko.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Lietuvių</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Jūsų kompiuteris turi būti perkrautas, kad būtų baigtas {0} įdiegimas. Ar jūs norite perkrauti dabar?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>Ankstesnës programos diegimas/ðalinimas buvo neuþbaigtas. Jums reikëtø perkrauti kompiuterá, kad uþbaigtumëte diegimà.
-
-Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaigtumëte „{0}“ diegimà.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Nepavyko paleisti failo:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>„{0} “sąranka sėkmingai baigta.</value>
   </data>
 </root>

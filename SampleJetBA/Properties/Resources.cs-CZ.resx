@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Informace</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Přerušit</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Ověřování</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Procházet</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Zrušit</value>
@@ -126,155 +135,88 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Zrušit</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Zavřít</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Zavřít</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Přerušit</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Ne</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Ne</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Opakovat</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Ano</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Ano</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Vyžaduje se uživatelské jméno</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Pokračovat</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Chyba</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Upozornění</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Zpracovává se entita {0}.</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Dokončit</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Další</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Připraveno k instalaci</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Konec</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Heslo</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Instalační program pro {0}</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Určitě chcete tuto akci zrušit?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalační program produktu {0}  se úspěšně dokončil.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Ano</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>Instalační program produktu {0}  selhal.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>K dokončení instalace programu {0} je nutné restartovat počítač. Chcete jej restartovat nyní?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Součásti produktu</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Změna, oprava nebo odebrání instalace</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Součásti produktu</value>
+  <data name="Close" xml:space="preserve">
+    <value>Zavřít</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Cílová složka</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Cílová složka</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Zpět</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Zpět</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Nainstalovat</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Opravit</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Odinstalovat</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignorovat</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignorovat</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Poznámka</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Opakovat</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Souhrn</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
+  <data name="Continue" xml:space="preserve">
     <value>Pokračovat</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Procházet</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Průběh instalace</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Průběh instalace</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Restartovat počítač</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Zobrazit soubor protokolu</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Databáze</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Databáze</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Cílová složka</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Zkopírovat do schránky</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Zrušená operace</value>
+  <data name="Database" xml:space="preserve">
+    <value>Databáze</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Konfigurace databáze</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Instalace/odinstalace pøedchozího produktu nebyla zcela dokonèena. Aby mohla být dokonèena, musíte restartovat Váš poèítaè.
+
+Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby bylo možné dokonèit instalaci produktu {0}.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Zpracovává se entita {0}.</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Konec</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Používané soubory</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Následující aplikace používají soubory, které je třeba při instalaci aktualizovat. Můžete je nechat zavřít Průvodcem instalací a pokusit se je znovu spustit nebo restartovat počítač později.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Počkejte prosím, než se Průvodce instalací připraví na požadované kroky instalace.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorovat</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informace</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Nainstalovat</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Cílová složka</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Instalační program pro {0}</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Cílová složka</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Neplatné uživatelské jméno nebo heslo</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Čeština</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Načíst</value>
@@ -282,44 +224,114 @@
   <data name="Modify" xml:space="preserve">
     <value>Změnit</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Uživatelské jméno</value>
+  <data name="Next" xml:space="preserve">
+    <value>Další</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Neplatné uživatelské jméno nebo heslo</value>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Ověřování</value>
+  <data name="Note" xml:space="preserve">
+    <value>Poznámka</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Ověřování systému Windows</value>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Zobrazit soubor protokolu</value>
   </data>
-  <data name="DatabaseConnection" xml:space="preserve">
-    <value>Konfigurace databáze</value>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Zrušená operace</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Účet služby</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Opakovat</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Databáze</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Dokončit</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Cílová složka</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Součásti produktu</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Průběh instalace</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Průběh instalace</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Účet služby</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Následující aplikace používají soubory, které je třeba při instalaci aktualizovat. Můžete je nechat zavřít Průvodcem instalací a pokusit se je znovu spustit nebo restartovat počítač později.</value>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Souhrn</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Používané soubory</value>
+  <data name="Password" xml:space="preserve">
+    <value>Heslo</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Počkejte prosím, než se Průvodce instalací připraví na požadované kroky instalace.</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Vyžaduje se uživatelské jméno</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Změna, oprava nebo odebrání instalace</value>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Počkejte na dokončení konfigurace produktu {0} v systému Windows.</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Odebírání starších verzí této aplikace...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Připraveno k instalaci</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Opravit</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Restartovat počítač</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Pokračovat</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Opakovat</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Součásti produktu</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Účet služby</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Nelze spustit soubor:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Zavřít</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Odinstalovat</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Uživatelské jméno</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Zpět</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignorovat</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Upozornění</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Ověřování systému Windows</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ano</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Nainstalovat produkt {0} do složky:</value>
@@ -327,22 +339,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Cesta ke složce {0} obsahuje neplatný znak.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Počkejte na dokončení konfigurace produktu {0} v systému Windows.</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>Instalační program produktu {0}  selhal.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Čeština</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>K dokončení instalace programu {0} je nutné restartovat počítač. Chcete jej restartovat nyní?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>Instalace/odinstalace pøedchozího produktu nebyla zcela dokonèena. Aby mohla být dokonèena, musíte restartovat Váš poèítaè.
-
-Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby bylo možné dokonèit instalaci produktu {0}.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Nelze spustit soubor:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>Instalační program produktu {0}  se úspěšně dokončil.</value>
   </data>
 </root>

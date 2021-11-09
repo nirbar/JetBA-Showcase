@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Abort" xml:space="preserve">
+    <value>Dilni</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Mbrapsht</value>
   </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Mbrapsht</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Pasuesi</value>
+  <data name="Browse" xml:space="preserve">
+    <value>Shfleoni...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anuloje</value>
@@ -132,113 +132,29 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Anuloje</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Riprovoni</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Riprovoni</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Shpërfille</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Shpërfille</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Po</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Jo</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Po</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Jo</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Aplikacionet vijuese po përdorin skedarë që lypset të përditësohen nga ky rregullim. Mund të lini Ndihmësin e Rregulluesit t’i mbyllë dhe t’i rinisë ato, ose të rinisë makinën më vonë.</value>
-  </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Skedarë në Përdorim</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Riparoje</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Jeni i sigurt se doni ta anuloni?</value>
   </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Dilni</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Dilni</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Shfleoni...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Instaloje</value>
-  </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Ju lutemi, pritni teksa Ndihmësi i Rregullimit përgatitet t’ju udhëheqë përmes instalimit.</value>
-  </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Ndryshoni, riparoni, ose hiqni një instalim</value>
-  </data>
-  <data name="PreviousVersion" xml:space="preserve">
-    <value>Po hiqen versione të vjetër të këtij aplikacioni...</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Dosje destinacion</value>
-  </data>
-  <data name="_0InstallFolder" xml:space="preserve">
-    <value>Instaloje {0} te:</value>
-  </data>
-  <data name="_0IsNotALegalFolderName" xml:space="preserve">
-    <value>Shtegu i dosjes '{0}' përmban një shenjë të pavlefshme.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Dosje instalimi:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Hiqe</value>
-  </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Ju lutemi, prisni teksa Windows formëson {0}</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Shqip</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Rinise tani</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Ju lutemi, prisni, ndërkohë që {0} instalohet.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Instalimi u Ndërpre</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Përfundoje</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Po</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Që të mund të plotësohet instalimi i {0}, kompjuteri juaj duhet të riniset. Doni të riniset tani?</value>
   </data>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Ndryshoni, riparoni, ose hiqni një instalim</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Përfundoje</value>
+  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopjo Hollësira Te E Papastra</value>
   </data>
-  <data name="Information" xml:space="preserve">
-    <value>Informacion</value>
+  <data name="Database" xml:space="preserve">
+    <value>Baza e të dhënave</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Gabim</value>
@@ -248,11 +164,107 @@
 
 Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Dilni</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Skedarë në Përdorim</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Aplikacionet vijuese po përdorin skedarë që lypset të përditësohen nga ky rregullim. Mund të lini Ndihmësin e Rregulluesit t’i mbyllë dhe t’i rinisë ato, ose të rinisë makinën më vonë.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Ju lutemi, pritni teksa Ndihmësi i Rregullimit përgatitet t’ju udhëheqë përmes instalimit.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Shpërfille</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informacion</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Instaloje</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Dosje instalimi:</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Ju lutemi, prisni, ndërkohë që {0} instalohet.</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Dosje destinacion</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Shqip</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Pasuesi</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Jo</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Instalimi u Ndërpre</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Riprovoni</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Baza e të dhënave</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Llogaria e shërbimit</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Ju lutemi, prisni teksa Windows formëson {0}</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>Po hiqen versione të vjetër të këtij aplikacioni...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Gati të instalohet</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Riparoje</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Rinise tani</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Riprovoni</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Llogaria e shërbimit</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nuk ekzekutohet skedari:
 {0}</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Gati të instalohet</value>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Hiqe</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Mbrapsht</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Shpërfille</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Po</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>Instaloje {0} te:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>Shtegu i dosjes '{0}' përmban një shenjë të pavlefshme.</value>
   </data>
 </root>

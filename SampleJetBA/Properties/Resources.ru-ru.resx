@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Сведения</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Прервать</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Проверка подлинности</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Обзор</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
@@ -126,155 +135,88 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Отмена</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Закрыть</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Закрыть</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Прервать</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Нет</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Нет</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>ОК</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>ОК</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Повторить</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Да</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Да</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Требуется имя пользователя</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Продолжить</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Ошибка</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Предупреждение</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Обработка {0}</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Готово</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Далее</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Все готово к установке</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Выход</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Пароль</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Сервер</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} Установка</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Вы действительно хотите отменить?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Установка {0}  успешно завершена.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Да</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>Не удалось установить {0} .</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>Для завершения установки {0} необходимо перезагрузить компьютер. Хотите сделать это сейчас?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Компоненты продукта</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Изменение, восстановление или удаление установки</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Компоненты продукта</value>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Папка назначения</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Папка назначения</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Назад</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Назад</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Установить</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Восстановить</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Удалить</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Игнорировать</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Игнорировать</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Примечание</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Повторить попытку</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Сводка</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
-    <value>Возобновить</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Обзор</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Ход выполнения установки</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Ход выполнения установки</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Перезагрузка</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Просмотреть файл журнала</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>База данных</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>База данных</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Целевая папка</value>
+  <data name="Continue" xml:space="preserve">
+    <value>Продолжить</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Копировать в буфер обмена</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Операция отменена</value>
+  <data name="Database" xml:space="preserve">
+    <value>База данных</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Конфигурация базы данных</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Сервер</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Установка или удаление предыдущей программы не были завершены. Вам потребуется перезагрузить компьютер, чтобы завершить ту установку.
+
+После перезагрузки запустите вновь Программу установки, чтобы завершить установку {0}.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Обработка {0}</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Используемые файлы</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Следующие приложения используют файлы, нуждающиеся в обновлении. Мастер установки может закрыть их и попробовать перезапустить их; также можно перезагрузить компьютер позднее.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Подождите, пока мастер выполняет подготовку к установке.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Игнорировать</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Установить</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Папка назначения</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0} Установка</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Целевая папка</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Неверное имя пользователя или пароль.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Русский</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Загрузить</value>
@@ -282,44 +224,114 @@
   <data name="Modify" xml:space="preserve">
     <value>Изменить</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Имя пользователя</value>
+  <data name="Next" xml:space="preserve">
+    <value>Далее</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Неверное имя пользователя или пароль.</value>
+  <data name="No" xml:space="preserve">
+    <value>Нет</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Проверка подлинности</value>
+  <data name="Note" xml:space="preserve">
+    <value>Примечание</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="OK" xml:space="preserve">
+    <value>ОК</value>
   </data>
-  <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Проверка подлинности Windows</value>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Просмотреть файл журнала</value>
   </data>
-  <data name="DatabaseConnection" xml:space="preserve">
-    <value>Конфигурация базы данных</value>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Операция отменена</value>
   </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Учетная запись службы</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Повторить попытку</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>База данных</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Папка назначения</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Компоненты продукта</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Ход выполнения установки</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Ход выполнения установки</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Учетная запись службы</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Следующие приложения используют файлы, нуждающиеся в обновлении. Мастер установки может закрыть их и попробовать перезапустить их; также можно перезагрузить компьютер позднее.</value>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Сводка</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Используемые файлы</value>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Подождите, пока мастер выполняет подготовку к установке.</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Требуется имя пользователя</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Изменение, восстановление или удаление установки</value>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Подождите, пока Windows настроит программу {0}</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Удаление старых версий этого приложения...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Все готово к установке</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Восстановить</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Перезагрузка</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Возобновить</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Повторить</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Компоненты продукта</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Учетная запись службы</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Невозможно выполнить файл:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Игнорировать</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Проверка подлинности Windows</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Установить {0} в:</value>
@@ -327,22 +339,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Путь к папке "{0}" содержит недопустимый знак.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Подождите, пока Windows настроит программу {0}</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>Не удалось установить {0} .</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Русский</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Для завершения установки {0} необходимо перезагрузить компьютер. Хотите сделать это сейчас?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>Установка или удаление предыдущей программы не были завершены. Вам потребуется перезагрузить компьютер, чтобы завершить ту установку.
-
-После перезагрузки запустите вновь Программу установки, чтобы завершить установку {0}.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Невозможно выполнить файл:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>Установка {0}  успешно завершена.</value>
   </data>
 </root>

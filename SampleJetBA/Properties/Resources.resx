@@ -245,6 +245,9 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="Load" xml:space="preserve">
     <value>Load</value>
   </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Next</value>
   </data>

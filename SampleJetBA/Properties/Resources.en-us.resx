@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Abort" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Next</value>
+  <data name="Browse" xml:space="preserve">
+    <value>Browse...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
@@ -132,113 +132,32 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Retry</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Retry</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignore</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignore</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Yes</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>No</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>The following applications are using files that need to be updated by this setup. You can let Setup Wizard close them and attempt to restart them or reboot the machine later.</value>
-  </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Files in Use</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Repair</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Are you sure you want to cancel?</value>
   </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Browse...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Install</value>
-  </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Please wait while the Setup Wizard prepares to guide you through the installation.</value>
-  </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Change, repair, or remove installation</value>
-  </data>
-  <data name="PreviousVersion" xml:space="preserve">
-    <value>Removing older versions of this application...</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Destination Folder</value>
-  </data>
-  <data name="_0InstallFolder" xml:space="preserve">
-    <value>Install {0} to:</value>
-  </data>
-  <data name="_0IsNotALegalFolderName" xml:space="preserve">
-    <value>The folder path '{0}' contains an invalid character.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Installation folder:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Remove</value>
-  </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Please wait while Windows configures {0}</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Reboot now</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Please wait while {0} is being installed.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Installation Aborted</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Finish</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Yes</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>Your computer must be restarted in order to complete the installation of {0}. Do you want to reboot now?</value>
   </data>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Change, repair, or remove installation</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copy Details To Clipboard</value>
   </data>
-  <data name="Information" xml:space="preserve">
-    <value>Information</value>
+  <data name="Database" xml:space="preserve">
+    <value>Database</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
@@ -248,20 +167,116 @@
 
 After restarting your computer, run Setup again to complete the installation of {0}.</value>
   </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Unable to execute file:
-{0}</value>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Ready to Install</value>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Files in Use</value>
   </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>The following applications are using files that need to be updated by this setup. You can let Setup Wizard close them and attempt to restart them or reboot the machine later.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Please wait while the Setup Wizard prepares to guide you through the installation.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignore</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Installation folder:</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Please wait while {0} is being installed.</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Destination Folder</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>Note</value>
   </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Installation Aborted</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Destination Folder</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Service account</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Please wait while Windows configures {0}</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>Removing older versions of this application...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Ready to Install</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Repair</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Reboot now</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Service account</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Unable to execute file:
+{0}</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignore</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="Warning" xml:space="preserve">
     <value>Warning</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>Install {0} to:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>The folder path '{0}' contains an invalid character.</value>
   </data>
 </root>

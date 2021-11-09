@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Bilgiler</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Durdur</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Kimlik doğrulama</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Gözat</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>İptal</value>
@@ -126,152 +135,88 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>İptal</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Kapat</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Kapat</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Durdur</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Hayır</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Hayır</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>Tamam</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>Tamam</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Yeniden Dene</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Evet</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Evet</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Kullanıcı Adı Gerekli</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Devam</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Hata</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Uyarı</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>{0} İşleniyor</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Son</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Sonraki</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Yüklemeye Hazır</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Çıkış</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Parola</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Sunucu</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} Kurulumu</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>İptal etmek istediğinizden emin misiniz?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} Kurulumu başarıyla tamamlandı.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Evet</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} Kurulumu yapılamadı.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>{0} kurulumunun tamamlanması için bilgisayarınızı yeniden başlatmanız gerekiyor.Bilgisayarınızı yeniden başlatmak istiyor musunuz?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Ürün özellikleri</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Yüklemeyi değiştirin, onarın veya kaldırın</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Ürün özellikleri</value>
+  <data name="Close" xml:space="preserve">
+    <value>Kapat</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Hedef Klasör</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Hedef Klasör</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Geri</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Geri</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Yükle</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Onar</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Kaldır</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Yoksay</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Yoksay</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Not</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Yeniden dene</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Özet</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
-    <value>Sürdür</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Gözat</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Yükleme İlerleme Durumu</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Yükleme İlerleme Durumu</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Yeniden Başlat</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Günlük Dosyasını Görüntüle</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Veritabanı</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Veritabanı</value>
+  <data name="Continue" xml:space="preserve">
+    <value>Devam</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Panoya Kopyala</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>İşlem İptal Edildi</value>
+  <data name="Database" xml:space="preserve">
+    <value>Veritabanı</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Veritabanı yapılandırması</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Sunucu</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Önceki uygulama kurulumu ya da kaldýrýlmasý tamamlanmamýþ. Bu kurulumun tamamlanmasý için bilgisayarýnýzý yeniden baþlatmalýsýnýz.
+
+Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kurulum yardýmcýsýný yeniden çalýþtýrýn.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>{0} İşleniyor</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Çıkış</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Kullanılan Dosyalar</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Aşağıdaki uygulamalar, bu kurulum tarafından güncelleştirilmesi gereken dosyaları kullanıyor. Kurulum Sihirbazı'nın söz konusu uygulamaları kapatmasına ve yeniden başlatmayı denemesine izin verebilir veya makineyi daha sonra yeniden başlatabilirsiniz.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Kurulum Sihirbazı yükleme sırasında size yol göstermek için hazırlanırken lütfen bekleyin.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Yoksay</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Bilgiler</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Yükle</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Hedef Klasör</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0} Kurulumu</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Hedef Klasör</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Geçersiz kullanıcı adı veya parola.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Türkçe</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Yükle</value>
@@ -279,47 +224,114 @@
   <data name="Modify" xml:space="preserve">
     <value>Değiştir</value>
   </data>
-  <data name="InstallFolder" xml:space="preserve">
+  <data name="Next" xml:space="preserve">
+    <value>Sonraki</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Not</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Günlük Dosyasını Görüntüle</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>İşlem İptal Edildi</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Yeniden dene</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Veritabanı</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Son</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Hedef Klasör</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Kullanıcı Adı</value>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Ürün özellikleri</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Geçersiz kullanıcı adı veya parola.</value>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Yükleme İlerleme Durumu</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Kimlik doğrulama</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows Kimlik Doğrulaması</value>
-  </data>
-  <data name="DatabaseConnection" xml:space="preserve">
-    <value>Veritabanı yapılandırması</value>
-  </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Hizmet hesabı</value>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Yükleme İlerleme Durumu</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Hizmet hesabı</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Aşağıdaki uygulamalar, bu kurulum tarafından güncelleştirilmesi gereken dosyaları kullanıyor. Kurulum Sihirbazı'nın söz konusu uygulamaları kapatmasına ve yeniden başlatmayı denemesine izin verebilir veya makineyi daha sonra yeniden başlatabilirsiniz.</value>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Özet</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Kullanılan Dosyalar</value>
+  <data name="Password" xml:space="preserve">
+    <value>Parola</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Kurulum Sihirbazı yükleme sırasında size yol göstermek için hazırlanırken lütfen bekleyin.</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Kullanıcı Adı Gerekli</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Yüklemeyi değiştirin, onarın veya kaldırın</value>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Windows, {0} ürününü yapılandırırken lütfen bekleyin</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Bu uygulamanın eski sürümleri kaldırılıyor...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Yüklemeye Hazır</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Onar</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Yeniden Başlat</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Sürdür</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Yeniden Dene</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Ürün özellikleri</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Hizmet hesabı</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Þu dosya yürütülemedi:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Yoksay</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Uyarı</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows Kimlik Doğrulaması</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Evet</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>{0} ürününün yükleneceği konum:</value>
@@ -327,22 +339,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>'{0}' klasör yolu geçersiz karakter içeriyor.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Windows, {0} ürününü yapılandırırken lütfen bekleyin</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>{0} Kurulumu yapılamadı.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Türkçe</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0} kurulumunun tamamlanması için bilgisayarınızı yeniden başlatmanız gerekiyor.Bilgisayarınızı yeniden başlatmak istiyor musunuz?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>Önceki uygulama kurulumu ya da kaldýrýlmasý tamamlanmamýþ. Bu kurulumun tamamlanmasý için bilgisayarýnýzý yeniden baþlatmalýsýnýz.
-
-Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kurulum yardýmcýsýný yeniden çalýþtýrýn.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Þu dosya yürütülemedi:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>{0} Kurulumu başarıyla tamamlandı.</value>
   </data>
 </root>

@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Information</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autentisering</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Tillbaka</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Bläddra</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Avbryt</value>
@@ -126,152 +135,88 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Avbryt</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Stäng</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Stäng</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Användarnamn krävs</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Avbryt</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Nej</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Nej</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Försök igen</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Ja</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Ja</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Fortsätt</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Fel</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Varning!</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Bearbetar {0}</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Slutför</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Nästa</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Installationen kan påbörjas</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Avsluta</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Lösenord</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0}-konfiguration</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Vill du avbryta?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Installationen av {0} slutfördes på korrekt sätt.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Ja</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>Installationen av {0} misslyckades.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>Din dator måste startas om för att fullborda installationen av {0}. Vill du starta om nu?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Produktfunktioner</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Ändra, reparera eller ta bort installationen</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Produktfunktioner</value>
+  <data name="Close" xml:space="preserve">
+    <value>Stäng</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Målmapp</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Målmapp</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Tillbaka</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Tillbaka</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Installera</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Reparera</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Avinstallera</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignorera</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignorera</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Anteckning</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Försök igen</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Sammanfattning</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
-    <value>Återuppta</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Bläddra</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Installationsförlopp</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Installationsförlopp</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Starta om</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Visa loggfilen</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Databas</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Databas</value>
+  <data name="Continue" xml:space="preserve">
+    <value>Fortsätt</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiera till Urklipp</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Åtgärd avbruten</value>
+  <data name="Database" xml:space="preserve">
+    <value>Databas</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Databaskonfiguration</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fel</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Installationen/avinstallationen av ett tidigare program har inte slutförts. Du måste starta om datorn för att avsluta den installationen.
+
+Efter att ha startat om datorn kör du installationsprogrammet igen för att slutföra installationen av {0}.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Bearbetar {0}</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Avsluta</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Filer som används</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Följande program använder filer som behöver uppdateras under installationen. Du kan låta installationsguiden stänga dem och försöka starta om dem, eller starta om datorn senare.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Vänta medan installationsguiden förbereder installationen.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorera</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Installera</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Målmapp</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0}-konfiguration</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Målmapp</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Ogiltigt användarnamn eller lösenord.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Svenska</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Läs in</value>
@@ -279,47 +224,114 @@
   <data name="Modify" xml:space="preserve">
     <value>Ändra</value>
   </data>
-  <data name="InstallFolder" xml:space="preserve">
+  <data name="Next" xml:space="preserve">
+    <value>Nästa</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nej</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Anteckning</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Visa loggfilen</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Åtgärd avbruten</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Försök igen</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Databas</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Slutför</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Målmapp</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Användarnamn</value>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Produktfunktioner</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Ogiltigt användarnamn eller lösenord.</value>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Installationsförlopp</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Autentisering</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows-autentisering</value>
-  </data>
-  <data name="DatabaseConnection" xml:space="preserve">
-    <value>Databaskonfiguration</value>
-  </data>
-  <data name="ServiceAccount" xml:space="preserve">
-    <value>Tjänstkonto</value>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Installationsförlopp</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Tjänstkonto</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Följande program använder filer som behöver uppdateras under installationen. Du kan låta installationsguiden stänga dem och försöka starta om dem, eller starta om datorn senare.</value>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Sammanfattning</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Filer som används</value>
+  <data name="Password" xml:space="preserve">
+    <value>Lösenord</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Vänta medan installationsguiden förbereder installationen.</value>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Användarnamn krävs</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Ändra, reparera eller ta bort installationen</value>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Vänta medan {0} konfigureras</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Äldre versioner av programmet tas bort...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Installationen kan påbörjas</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Reparera</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Starta om</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Återuppta</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Försök igen</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Produktfunktioner</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Tjänstkonto</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Kan inte köra filen:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Stäng</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Avinstallera</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Användarnamn</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Tillbaka</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignorera</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Varning!</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows-autentisering</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Installera {0} i:</value>
@@ -327,22 +339,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Mappsökvägen {0} innehåller ett ogiltigt tecken.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Vänta medan {0} konfigureras</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>Installationen av {0} misslyckades.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Svenska</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Din dator måste startas om för att fullborda installationen av {0}. Vill du starta om nu?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>Installationen/avinstallationen av ett tidigare program har inte slutförts. Du måste starta om datorn för att avsluta den installationen.
-
-Efter att ha startat om datorn kör du installationsprogrammet igen för att slutföra installationen av {0}.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Kan inte köra filen:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>Installationen av {0} slutfördes på korrekt sätt.</value>
   </data>
 </root>

@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Abort" xml:space="preserve">
+    <value>Välju</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Tagasi</value>
   </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Tagasi</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Edasi</value>
+  <data name="Browse" xml:space="preserve">
+    <value>Sirvimine...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Loobu</value>
@@ -132,113 +132,29 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Loobu</value>
   </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Proovi uuesti</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Proovi uuesti</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignoreeri</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignoreeri</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Jah</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Ei</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Jah</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Ei</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Järgmised rakendused kasutavad faile, mida see installiprogramm peab värskendama. Võite lasta installiviisardil need sulgeda ja uuesti käivitada või taaskäivitada arvuti hiljem.</value>
-  </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Kasutuses olevad failid</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Paranda</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Kas soovite kindlasti loobuda?</value>
   </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Välju</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Välju</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Sirvimine...</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Installi</value>
-  </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Palun oodake, kuni installiviisard valmistub teid installimisel juhendama.</value>
-  </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Installi muutmine, parandamine või eemaldamine</value>
-  </data>
-  <data name="PreviousVersion" xml:space="preserve">
-    <value>Selle rakenduse vanemate versioonide eemaldamine ...</value>
-  </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Sihtkaust</value>
-  </data>
-  <data name="_0InstallFolder" xml:space="preserve">
-    <value>Installi toode {0} asukohta:</value>
-  </data>
-  <data name="_0IsNotALegalFolderName" xml:space="preserve">
-    <value>Kaustatee {0} sisaldab sobimatut märki.</value>
-  </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Installikaust:</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Eemalda</value>
-  </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Palun oodake, kuni Windows konfigureerib toodet {0}</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Eesti keel</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Taaskäivita kohe</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Palun oota kuni {0} on paigaldatud.</value>
-  </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Paigaldus katkestatud</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Lõpeta</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Jah</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0} täielikuks paigaldamiseks tuleb arvuti taaskäivitada. Kas soovid arvuti kohe taaskäivitada ?</value>
   </data>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Installi muutmine, parandamine või eemaldamine</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Lõpeta</value>
+  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopeeri detailid lõikelauale</value>
   </data>
-  <data name="Information" xml:space="preserve">
-    <value>Informatsioon</value>
+  <data name="Database" xml:space="preserve">
+    <value>Andmebaas</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Viga</value>
@@ -248,11 +164,110 @@
 
 Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigaldamine.</value>
   </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Välju</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Kasutuses olevad failid</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Järgmised rakendused kasutavad faile, mida see installiprogramm peab värskendama. Võite lasta installiviisardil need sulgeda ja uuesti käivitada või taaskäivitada arvuti hiljem.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Palun oodake, kuni installiviisard valmistub teid installimisel juhendama.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignoreeri</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informatsioon</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Installi</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Installikaust:</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Palun oota kuni {0} on paigaldatud.</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Sihtkaust</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Eesti keel</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Edasi</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ei</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Paigaldus katkestatud</value>
+  </data>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Proovi uuesti</value>
+  </data>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Andmebaas</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Sihtkataloog</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Teenusekonto</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Palun oodake, kuni Windows konfigureerib toodet {0}</value>
+  </data>
+  <data name="PreviousVersion" xml:space="preserve">
+    <value>Selle rakenduse vanemate versioonide eemaldamine ...</value>
+  </data>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Valmis paigaldama</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Paranda</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Taaskäivita kohe</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Proovi uuesti</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Teenusekonto</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Ei saanud käivitada faili:
 {0}</value>
   </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Valmis paigaldama</value>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Eemalda</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Tagasi</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignoreeri</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Jah</value>
+  </data>
+  <data name="_0InstallFolder" xml:space="preserve">
+    <value>Installi toode {0} asukohta:</value>
+  </data>
+  <data name="_0IsNotALegalFolderName" xml:space="preserve">
+    <value>Kaustatee {0} sisaldab sobimatut märki.</value>
   </data>
 </root>

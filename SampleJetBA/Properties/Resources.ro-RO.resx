@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>Informație</value>
+  <data name="Abort" xml:space="preserve">
+    <value>Abandonare</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autentificare</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Înapoi</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>Răsfoire</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anulare</value>
@@ -126,152 +135,85 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>Anulare</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>Închidere</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Închidere</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nume utilizator obligatoriu</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>Abandonare</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>Nu</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Nu</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>Reîncercare</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>Da</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continuare</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Eroare</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Avertizare</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>Se procesează {0}</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Terminare</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>Următorul</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>Gata de instalare</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>Ieșire</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Parolă</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Instalare {0}</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Sigur anulați?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalarea {0} s-a finalizat cu succes.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>Da</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>Instalarea {0}  a eșuat.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>Trebuie să reporniţi calculatorul pentru a termina instalarea. Doriţi să-l reporniţi acum?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Caracteristici produs</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>Modificaţi, reparaţi sau eliminaţi instalarea</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Caracteristici produs</value>
+  <data name="Close" xml:space="preserve">
+    <value>Închidere</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>Folder de destinație</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Folder de destinație</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Înapoi</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Înapoi</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>Instalare</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>Reparare</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>Dezinstalare</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>Ignorare</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Ignorare</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Notă</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Încercați din nou</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Rezumat</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
-    <value>Reluare</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Răsfoire</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Stadiu instalare</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Stadiu instalare</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>Repornire</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>Vizualizare fișier jurnal</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>Bază de date</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>Bază de date</value>
+  <data name="Continue" xml:space="preserve">
+    <value>Continuare</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copiere în Clipboard</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>Operațiune anulată</value>
+  <data name="Database" xml:space="preserve">
+    <value>Bază de date</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Eroare</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>Instalarea/dezinstalarea anterioarã a unui program nu a fost terminatã. Va trebui sã reporneºti calculatorul pentru a termina operaþia precedentã.
+
+Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza instalarea {0}.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Se procesează {0}</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Ieșire</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>Fişiere în uz</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>Aplicaţiile următoare utilizează fişiere care trebuie actualizate de această instalare. Lăsaţi Expertul de instalare să le închidă, apoi încercaţi să le reporniţi sau reporniţi computerul mai târziu.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>Aşteptaţi. Expertul de instalare se pregăteşte să vă ghideze pe parcursul instalării.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>Ignorare</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informație</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>Instalare</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>Folder de destinație</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>Instalare {0}</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>Folderul de destinaţie</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Nume de utilizator sau parolă nevalidă.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>Română</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Încărcare</value>
@@ -279,35 +221,111 @@
   <data name="Modify" xml:space="preserve">
     <value>Modificare</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>Nume utilizator</value>
+  <data name="Next" xml:space="preserve">
+    <value>Următorul</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>Nume de utilizator sau parolă nevalidă.</value>
+  <data name="No" xml:space="preserve">
+    <value>Nu</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>Autentificare</value>
+  <data name="Note" xml:space="preserve">
+    <value>Notă</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>Aplicaţiile următoare utilizează fişiere care trebuie actualizate de această instalare. Lăsaţi Expertul de instalare să le închidă, apoi încercaţi să le reporniţi sau reporniţi computerul mai târziu.</value>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Vizualizare fișier jurnal</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>Fişiere în uz</value>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Operațiune anulată</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>Aşteptaţi. Expertul de instalare se pregăteşte să vă ghideze pe parcursul instalării.</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>Încercați din nou</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>Modificaţi, reparaţi sau eliminaţi instalarea</value>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>Bază de date</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Terminare</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Folder de destinație</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Caracteristici produs</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Stadiu instalare</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Stadiu instalare</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>Cont serviciu</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Rezumat</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Parolă</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Nume utilizator obligatoriu</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>Aşteptaţi, Windows configurează {0}</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>Se elimină versiunile anterioare ale acestei aplicaţii...</value>
   </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>Folderul de destinaţie</value>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>Gata de instalare</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>Reparare</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Repornire</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Reluare</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Reîncercare</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Caracteristici produs</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>Cont serviciu</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>Nu pot executa fila:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Închidere</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>Dezinstalare</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nume utilizator</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>Înapoi</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>Ignorare</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Avertizare</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Da</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>Instalare {0} la:</value>
@@ -315,22 +333,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Calea folderului „{0}” conţine un caracter nevalid.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>Aşteptaţi, Windows configurează {0}</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>Instalarea {0}  a eșuat.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Română</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Trebuie să reporniţi calculatorul pentru a termina instalarea. Doriţi să-l reporniţi acum?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>Instalarea/dezinstalarea anterioarã a unui program nu a fost terminatã. Va trebui sã reporneºti calculatorul pentru a termina operaþia precedentã.
-
-Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza instalarea {0}.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>Nu pot executa fila:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>Instalarea {0} s-a finalizat cu succes.</value>
   </data>
 </root>

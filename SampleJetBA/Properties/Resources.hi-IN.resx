@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Information" xml:space="preserve">
-    <value>जानकारी</value>
+  <data name="Abort" xml:space="preserve">
+    <value>निरस्त करें</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>प्रमाणीकरण</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>वापस जाएँ</value>
+  </data>
+  <data name="Browse" xml:space="preserve">
+    <value>ब्राउज़ करें</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>रद्द करें</value>
@@ -126,152 +135,85 @@
   <data name="CancelCaption" xml:space="preserve">
     <value>रद्द करें</value>
   </data>
-  <data name="ShutDown" xml:space="preserve">
-    <value>बंद करें</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>बंद करें</value>
-  </data>
-  <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>उपयोगकर्ता नाम आवश्यक है</value>
-  </data>
-  <data name="Abort" xml:space="preserve">
-    <value>निरस्त करें</value>
-  </data>
-  <data name="No" xml:space="preserve">
-    <value>नहीं</value>
-  </data>
   <data name="CancelNo" xml:space="preserve">
     <value>नहीं</value>
-  </data>
-  <data name="OK" xml:space="preserve">
-    <value>ठीक</value>
-  </data>
-  <data name="ValidationPromptOk" xml:space="preserve">
-    <value>ठीक</value>
-  </data>
-  <data name="Retry" xml:space="preserve">
-    <value>पुनः प्रयास करें</value>
-  </data>
-  <data name="Yes" xml:space="preserve">
-    <value>हाँ</value>
-  </data>
-  <data name="CancelYes" xml:space="preserve">
-    <value>हाँ</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>जारी रखें</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>त्रुटि</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>चेतावनी</value>
-  </data>
-  <data name="Executing0" xml:space="preserve">
-    <value>{0} संसाधित किया जा रहा है</value>
-  </data>
-  <data name="PageTitle_Finish" xml:space="preserve">
-    <value>समाप्त</value>
-  </data>
-  <data name="Next" xml:space="preserve">
-    <value>अगला</value>
-  </data>
-  <data name="ReadyToInstall" xml:space="preserve">
-    <value>स्थापित करने के लिए तैयार</value>
-  </data>
-  <data name="Exit" xml:space="preserve">
-    <value>बाहर निकलें</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>पासवर्ड</value>
-  </data>
-  <data name="DbServer" xml:space="preserve">
-    <value>सर्वर</value>
-  </data>
-  <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} सेटअप</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>क्या आप वास्तव में रद्द करना चाहते हैं?</value>
   </data>
-  <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} सेटअप सफलतापूर्वक पूरा हुआ.</value>
+  <data name="CancelYes" xml:space="preserve">
+    <value>हाँ</value>
   </data>
-  <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} सेटअप विफल रहा.</value>
+  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
+    <value>{0} के इंस्टालेशन को पूरा करने के लिए आपके कंप्यूटर को फिर से शुरू करना होगा। क्या आप अभी रीबूट करना चाहते हैं?</value>
   </data>
-  <data name="SelectInstallationPages" xml:space="preserve">
-    <value>उत्पाद सुविधाएँ</value>
+  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
+    <value>स्थापना बदलें, सुधारें या निकालें</value>
   </data>
-  <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>उत्पाद सुविधाएँ</value>
+  <data name="Close" xml:space="preserve">
+    <value>बंद करें</value>
   </data>
-  <data name="InstallationFolder" xml:space="preserve">
-    <value>गंतव्य फ़ोल्डर</value>
-  </data>
-  <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>गंतव्य फ़ोल्डर</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>वापस जाएँ</value>
-  </data>
-  <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>वापस जाएँ</value>
-  </data>
-  <data name="Install" xml:space="preserve">
-    <value>स्‍थापित करें</value>
-  </data>
-  <data name="Repair" xml:space="preserve">
-    <value>सुधारें</value>
-  </data>
-  <data name="Uninstall" xml:space="preserve">
-    <value>स्थापना रद्द करें</value>
-  </data>
-  <data name="Ignore" xml:space="preserve">
-    <value>अनदेखा करें</value>
-  </data>
-  <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>अनदेखा करें</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>नोट</value>
-  </data>
-  <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>पुनः प्रयास करें</value>
-  </data>
-  <data name="PageTitle_Summary" xml:space="preserve">
-    <value>सारांश</value>
-  </data>
-  <data name="Resume" xml:space="preserve">
-    <value>फिर से शुरू करें</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>ब्राउज़ करें</value>
-  </data>
-  <data name="PageTitle_Progress" xml:space="preserve">
-    <value>स्थापना प्रगति</value>
-  </data>
-  <data name="PageTitle_Repair" xml:space="preserve">
-    <value>स्थापना प्रगति</value>
-  </data>
-  <data name="Restart" xml:space="preserve">
-    <value>रीबूट करें</value>
-  </data>
-  <data name="OpenFailureLog" xml:space="preserve">
-    <value>लॉग फ़ाइल देखें</value>
-  </data>
-  <data name="PageTitle_Database" xml:space="preserve">
-    <value>डेटाबेस</value>
-  </data>
-  <data name="Database" xml:space="preserve">
-    <value>डेटाबेस</value>
+  <data name="Continue" xml:space="preserve">
+    <value>जारी रखें</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>क्लिपबोर्ड पर प्रतिलिपि करें</value>
   </data>
-  <data name="OperationCanceled" xml:space="preserve">
-    <value>कार्रवाई रद्द की गई</value>
+  <data name="Database" xml:space="preserve">
+    <value>डेटाबेस</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>सर्वर</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>त्रुटि</value>
+  </data>
+  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
+    <value>पिछले कार्यक्रम का प्रतिस्थापन / अधिष्ठापन सही ढंग से पूरा नही हुआ था. आपको कल्पयन्त्र फिर सुरु करना पडेगा.
+
+कल्पयन्त्र फिर सुरु करने पश्चात आप फिर से {0} का अधिष्ठापन शुरू करे.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>{0} संसाधित किया जा रहा है</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>बाहर निकलें</value>
+  </data>
+  <data name="FilesInUse" xml:space="preserve">
+    <value>फ़ाइलें उपयोग में</value>
+  </data>
+  <data name="FilesInUseText" xml:space="preserve">
+    <value>निम्न अनुप्रयोगों द्वारा उपयोग की जाने वाली फ़ाइलों का इस सेटअप से अद्यतन होना आवश्यक है. आप सेटअप विज़ार्ड को इन्हें बंद करने की अनुमति दे सकते हैं और फिर से प्रारंभ करने का प्रयास कर सकते हैं या बाद में मशीन रीबूट कर सकते हैं.</value>
+  </data>
+  <data name="GettingReady" xml:space="preserve">
+    <value>सेट अप विज़ार्ड आपको स्थापना में सहायता करे, तब तक कृपया प्रतीक्षा करें.</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>अनदेखा करें</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>जानकारी</value>
+  </data>
+  <data name="Install" xml:space="preserve">
+    <value>स्‍थापित करें</value>
+  </data>
+  <data name="InstallationFolder" xml:space="preserve">
+    <value>गंतव्य फ़ोल्डर</value>
+  </data>
+  <data name="InstallationIsRunningFormat" xml:space="preserve">
+    <value>{0} सेटअप</value>
+  </data>
+  <data name="InstallFolder" xml:space="preserve">
+    <value>गंतव्य फ़ोल्डर</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>अमान्य उपयोगकर्ता नाम या पासवर्ड.</value>
+  </data>
+  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="LanguageName" xml:space="preserve">
+    <value>हिन्दी</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>लोड करें</value>
@@ -279,35 +221,111 @@
   <data name="Modify" xml:space="preserve">
     <value>संशोधित करें</value>
   </data>
-  <data name="UserName" xml:space="preserve">
-    <value>उपयोगकर्ता नाम</value>
+  <data name="Next" xml:space="preserve">
+    <value>अगला</value>
   </data>
-  <data name="InvalidCredentials" xml:space="preserve">
-    <value>अमान्य उपयोगकर्ता नाम या पासवर्ड.</value>
+  <data name="No" xml:space="preserve">
+    <value>नहीं</value>
   </data>
-  <data name="Authentication" xml:space="preserve">
-    <value>प्रमाणीकरण</value>
+  <data name="Note" xml:space="preserve">
+    <value>नोट</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="OK" xml:space="preserve">
+    <value>ठीक</value>
   </data>
-  <data name="FilesInUseText" xml:space="preserve">
-    <value>निम्न अनुप्रयोगों द्वारा उपयोग की जाने वाली फ़ाइलों का इस सेटअप से अद्यतन होना आवश्यक है. आप सेटअप विज़ार्ड को इन्हें बंद करने की अनुमति दे सकते हैं और फिर से प्रारंभ करने का प्रयास कर सकते हैं या बाद में मशीन रीबूट कर सकते हैं.</value>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>लॉग फ़ाइल देखें</value>
   </data>
-  <data name="FilesInUse" xml:space="preserve">
-    <value>फ़ाइलें उपयोग में</value>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>कार्रवाई रद्द की गई</value>
   </data>
-  <data name="GettingReady" xml:space="preserve">
-    <value>सेट अप विज़ार्ड आपको स्थापना में सहायता करे, तब तक कृपया प्रतीक्षा करें.</value>
+  <data name="PackageRetryPromptCaption" xml:space="preserve">
+    <value>पुनः प्रयास करें</value>
   </data>
-  <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
-    <value>स्थापना बदलें, सुधारें या निकालें</value>
+  <data name="PageTitle_Database" xml:space="preserve">
+    <value>डेटाबेस</value>
+  </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>समाप्त</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>गंतव्य फ़ोल्डर</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>उत्पाद सुविधाएँ</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>स्थापना प्रगति</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>स्थापना प्रगति</value>
+  </data>
+  <data name="PageTitle_Service" xml:space="preserve">
+    <value>सेवा खाता</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>सारांश</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>पासवर्ड</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>उपयोगकर्ता नाम आवश्यक है</value>
+  </data>
+  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
+    <value>जब तक Windows {0} को कॉन्फ़िगर करता है, कृपया प्रतीक्षा करें</value>
   </data>
   <data name="PreviousVersion" xml:space="preserve">
     <value>इस अनुप्रयोग के पुराने संस्करण निकाले जा रहे हैं...</value>
   </data>
-  <data name="InstallFolder" xml:space="preserve">
-    <value>गंतव्य फ़ोल्डर</value>
+  <data name="ReadyToInstall" xml:space="preserve">
+    <value>स्थापित करने के लिए तैयार</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>सुधारें</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>रीबूट करें</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>फिर से शुरू करें</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>पुनः प्रयास करें</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>उत्पाद सुविधाएँ</value>
+  </data>
+  <data name="ServiceAccount" xml:space="preserve">
+    <value>सेवा खाता</value>
+  </data>
+  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
+    <value>फाइल को कार्यान्वयन नही कर पा रहा:
+{0}</value>
+  </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>बंद करें</value>
+  </data>
+  <data name="Uninstall" xml:space="preserve">
+    <value>स्थापना रद्द करें</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>उपयोगकर्ता नाम</value>
+  </data>
+  <data name="ValidationPromptCancel" xml:space="preserve">
+    <value>वापस जाएँ</value>
+  </data>
+  <data name="ValidationPromptContinue" xml:space="preserve">
+    <value>अनदेखा करें</value>
+  </data>
+  <data name="ValidationPromptOk" xml:space="preserve">
+    <value>ठीक</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>चेतावनी</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>हाँ</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>{0} को यहाँ स्थापित करें:</value>
@@ -315,22 +333,10 @@
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>फ़ोल्‍डर पथ '{0}' में अमान्‍य वर्ण है.</value>
   </data>
-  <data name="PleasWaitWhileExecuting0" xml:space="preserve">
-    <value>जब तक Windows {0} को कॉन्फ़िगर करता है, कृपया प्रतीक्षा करें</value>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>{0} सेटअप विफल रहा.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>हिन्दी</value>
-  </data>
-  <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0} के इंस्टालेशन को पूरा करने के लिए आपके कंप्यूटर को फिर से शुरू करना होगा। क्या आप अभी रीबूट करना चाहते हैं?</value>
-  </data>
-  <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
-    <value>पिछले कार्यक्रम का प्रतिस्थापन / अधिष्ठापन सही ढंग से पूरा नही हुआ था. आपको कल्पयन्त्र फिर सुरु करना पडेगा.
-
-कल्पयन्त्र फिर सुरु करने पश्चात आप फिर से {0} का अधिष्ठापन शुरू करे.</value>
-  </data>
-  <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
-    <value>फाइल को कार्यान्वयन नही कर पा रहा:
-{0}</value>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>{0} सेटअप सफलतापूर्वक पूरा हुआ.</value>
   </data>
 </root>
