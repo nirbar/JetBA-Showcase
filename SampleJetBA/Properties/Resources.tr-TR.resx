@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Durdur</value>
+    <value>Çıkış</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Kimlik doğrulama</value>
@@ -127,7 +127,7 @@
     <value>Geri</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Gözat</value>
+    <value>Gözat...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>İptal</value>
@@ -151,13 +151,13 @@
     <value>Yüklemeyi değiştirin, onarın veya kaldırın</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Kapat</value>
+    <value>Bitir</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Devam</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Panoya Kopyala</value>
+    <value>Ayrıntıları panoya kopyala</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Veritabanı</value>
@@ -195,28 +195,22 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Yoksay</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Bilgiler</value>
+    <value>Bilgi</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Yükle</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Hedef Klasör</value>
+    <value>Yükleme klasörü:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} Kurulumu</value>
+    <value>Lütfen {0} kurulurken bekleyiniz.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Hedef Klasör</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Geçersiz kullanıcı adı veya parola.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Türkçe</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Yükle</value>
@@ -225,7 +219,7 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Değiştir</value>
   </data>
   <data name="Next" xml:space="preserve">
-    <value>Sonraki</value>
+    <value>İleri</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Hayır</value>
@@ -240,10 +234,10 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Günlük Dosyasını Görüntüle</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>İşlem İptal Edildi</value>
+    <value>Kurulum İptal Edildi</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Yeniden dene</value>
+    <value>Yeniden Dene</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Veritabanı</value>
@@ -261,7 +255,7 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Yükleme İlerleme Durumu</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Yükleme İlerleme Durumu</value>
+    <value>Bakım Seçenekleri</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Hizmet hesabı</value>
@@ -282,13 +276,13 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Bu uygulamanın eski sürümleri kaldırılıyor...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Yüklemeye Hazır</value>
+    <value>Kurulmaya Hazýr</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Onar</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Yeniden Başlat</value>
+    <value>Yeniden başlat</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Sürdür</value>
@@ -340,9 +334,9 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>'{0}' klasör yolu geçersiz karakter içeriyor.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} Kurulumu yapılamadı.</value>
+    <value>{0}Kurulumu yapılamadı.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} Kurulumu başarıyla tamamlandı.</value>
+    <value>{0}Kurulumu başarıyla tamamlandı.</value>
   </data>
 </root>

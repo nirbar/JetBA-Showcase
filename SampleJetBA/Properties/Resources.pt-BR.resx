@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Anular</value>
+    <value>Sair</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Autenticação</value>
@@ -127,7 +127,7 @@
     <value>Voltar</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Procurar</value>
+    <value>Procurar...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
@@ -151,13 +151,13 @@
     <value>Alterar, reparar ou remover a instalação</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Fechar</value>
+    <value>Concluir</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Continuar</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copiar para Área de Transferência</value>
+    <value>Copiar os Detalhes para a Área de Transferência</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Banco de Dados</value>
@@ -192,28 +192,22 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>Ignorar</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Informações</value>
+    <value>Informação</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Instalar</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Pasta de Destino</value>
+    <value>Pasta de instalação:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Instalação do {0}</value>
+    <value>Por favor espere enquanto o {0} está sendo instalado.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Pasta de Destino</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nome de usuário ou senha inválido.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Português Brasileiro</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Carregar</value>
@@ -222,7 +216,7 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>Modificar</value>
   </data>
   <data name="Next" xml:space="preserve">
-    <value>Próximo</value>
+    <value>Avançar</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Não</value>
@@ -237,10 +231,10 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>Exibir o Arquivo de Log</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Operação Cancelada</value>
+    <value>Instalação Abortada</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Tente novamente</value>
+    <value>Tentar Novamente</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Banco de Dados</value>
@@ -258,7 +252,7 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>Progresso da Instalação</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Progresso da Instalação</value>
+    <value>Opções de Manutenção</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Conta de serviços</value>
@@ -279,19 +273,19 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>Removendo versões anteriores deste aplicativo...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Pronto para Instalar</value>
+    <value>Pronto pra Instalar</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Reparar</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Reinicializar</value>
+    <value>Reiniciar agora</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Retomar</value>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Repetir</value>
+    <value>Tentar Novamente</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
     <value>Recursos do produto</value>
@@ -307,7 +301,7 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>Fechar</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Desinstalar</value>
+    <value>Remover</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nome de Usuário</value>
@@ -324,6 +318,9 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
   <data name="Warning" xml:space="preserve">
     <value>Aviso</value>
   </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Autenticação do Windows</value>
+  </data>
   <data name="Yes" xml:space="preserve">
     <value>Sim</value>
   </data>
@@ -334,9 +331,9 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>O caminho da pasta '{0}' contém um caractere inválido.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Falha na Instalação do {0} .</value>
+    <value>Falha na Instalação do {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalação do {0} concluída com sucesso.</value>
+    <value>Instalação do {0}concluída com sucesso.</value>
   </data>
 </root>

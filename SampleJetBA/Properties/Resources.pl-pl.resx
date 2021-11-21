@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Przerwij</value>
+    <value>Zakończ</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Uwierzytelnianie</value>
@@ -127,7 +127,7 @@
     <value>Wstecz</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Przeglądaj</value>
+    <value>Przeglądaj...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anuluj</value>
@@ -151,13 +151,13 @@
     <value>Zmienianie, naprawa lub usuwanie instalacji</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Zamknij</value>
+    <value>Zakończ</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Kontynuuj</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopiuj do Schowka</value>
+    <value>Kopiuj szczegóły do schowka</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Baza danych</value>
@@ -195,28 +195,22 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Ignoruj</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Informacje</value>
+    <value>Informacja</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Zainstaluj</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Folder docelowy</value>
+    <value>Folder instalacji:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Instalator produktu {0}</value>
+    <value>Proszę czekać, trwa instalacja {0}.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Folder docelowy</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nieprawidłowa nazwa użytkownika lub hasło.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Polski</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Załaduj</value>
@@ -240,10 +234,10 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Wyświetl plik dziennika</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Operacja anulowana</value>
+    <value>Instalacja przerwana</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Spróbuj ponownie</value>
+    <value>Ponów próbę</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Baza danych</value>
@@ -261,7 +255,7 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Postęp instalacji</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Postęp instalacji</value>
+    <value>Opcje konserwacji</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Konto usługi</value>
@@ -282,13 +276,13 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Trwa usuwanie starszych wersji tej aplikacji...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Gotowość do instalacji</value>
+    <value>Gotowy do rozpoczêcia instalacji</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Napraw</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Uruchom ponownie</value>
+    <value>Uruchom ponownie teraz</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Wznów</value>
@@ -310,7 +304,7 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Zamknij</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Odinstaluj</value>
+    <value>Usuń</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nazwa użytkownika</value>
@@ -340,9 +334,9 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Ścieżka folderu „{0}” zawiera nieprawidłowy znak.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Instalacja produktu {0} nie powiodła się.</value>
+    <value>Instalacja produktu {0}nie powiodła się.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalacja produktu {0} została ukończona pomyślnie.</value>
+    <value>Instalacja produktu {0}została ukończona pomyślnie.</value>
   </data>
 </root>

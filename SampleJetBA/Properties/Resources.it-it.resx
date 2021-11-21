@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Interrompi</value>
+    <value>Esci</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Autenticazione</value>
@@ -127,7 +127,7 @@
     <value>Indietro</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Sfoglia</value>
+    <value>Sfoglia...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annulla</value>
@@ -157,7 +157,7 @@
     <value>Continua</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copia negli Appunti</value>
+    <value>Copia i dettagli negli Appunti</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Database</value>
@@ -203,22 +203,16 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Installa</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Cartella di destinazione</value>
+    <value>Cartella di installazione:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Installazione di {0}</value>
+    <value>Attendi il completamento dell'installazione di {0}.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Cartella di destinazione</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nome utente o password non valida.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Italiano</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Carica</value>
@@ -242,7 +236,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Visualizza file di registro</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Operazione annullata</value>
+    <value>Installazione interrotta</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Riprova</value>
@@ -263,7 +257,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Stato installazione</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Stato installazione</value>
+    <value>Opzioni di manutenzione</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Account del servizio</value>
@@ -287,10 +281,10 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Pronto per l'installazione</value>
   </data>
   <data name="Repair" xml:space="preserve">
-    <value>Ripristina</value>
+    <value>Ripara</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Riavvia</value>
+    <value>Riavvia ora</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Riprendi</value>
@@ -312,7 +306,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Chiudi</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Disinstalla</value>
+    <value>Rimuovi</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nome utente</value>
@@ -327,7 +321,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>OK</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Avviso</value>
+    <value>Attenzione</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Autenticazione di Windows</value>
@@ -342,9 +336,9 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Il percorso della cartella '{0}' contiene un carattere non valido.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>L'installazione di {0} non è riuscita.</value>
+    <value>L'installazione di {0}non è riuscita.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>L'installazione di {0} è stata completata.</value>
+    <value>L'installazione di {0}è stata completata.</value>
   </data>
 </root>

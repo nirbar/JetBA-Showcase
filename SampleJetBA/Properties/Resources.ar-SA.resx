@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>إيقاف قبل الاكتمال</value>
+    <value>إنهاء</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>المصادقة</value>
@@ -127,19 +127,19 @@
     <value>السابق</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>استعراض</value>
+    <value>استعراض...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>إلغاء</value>
+    <value>إلغاء الأمر</value>
   </data>
   <data name="CancelCaption" xml:space="preserve">
-    <value>إلغاء</value>
+    <value>إلغاء الأمر</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>لا</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>هل تريد بالتأكيد إلغاء الأمر؟</value>
+    <value>‏‏هل تريد بالتأكيد إلغاء الأمر؟</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>نعم</value>
@@ -151,13 +151,13 @@
     <value>تغيير التثبيت أو إصلاحه أو إزالته</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>إغلاق‬</value>
+    <value>إنهاء</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>متابعة</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>نسخ إلى الحافظة</value>
+    <value>نسخ التفاصيل إلى الذاكرة</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>قاعدة بيانات</value>
@@ -169,7 +169,7 @@
     <value>الخادم</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>الخطأ</value>
+    <value>خطأ</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>لم يكتمل التثبيت / إزالة البرنامج السابق. ستحتاج إلى إعادة تشغيل الكمبيوتر لإكمال هذا التثبيت.
@@ -180,7 +180,7 @@
     <value>قيد المعالجة {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>‏‏إنهاء</value>
+    <value>إنهاء</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>الملفات قيد الاستخدام</value>
@@ -192,31 +192,25 @@
     <value>الرجاء الانتظار أثناء قيام "معالج الإعداد" بالتمهيد لإرشادك خلال عملية التثبيت.</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>‏‏تجاهل</value>
+    <value>تجاهل</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>المعلومات</value>
+    <value>معلومات</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>تثبيت</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>مجلد الوجهة</value>
+    <value>مجلد التثبيت:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>إعداد {0}</value>
+    <value>الرجاء الإنتظار أثناء تنصيب {0}.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
-    <value>المجلد الهدف</value>
+    <value>المجلد الوجهة</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>اسم مستخدم أو كلمة مرور غير صالحة.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>True</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>العربية</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>تحميل</value>
@@ -240,10 +234,10 @@
     <value>عرض ملف السجل</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>تم إلغاء العملية</value>
+    <value>إلغاء التنصيب</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>المحاولة مرة أخرى</value>
+    <value>إعادة المحاولة</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>قاعدة بيانات</value>
@@ -261,7 +255,7 @@
     <value>تقدم التثبيت</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>تقدم التثبيت</value>
+    <value>خيارات الصيانة</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>حساب الخدمة</value>
@@ -288,7 +282,7 @@
     <value>إصلاح</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>إعادة تشغيل</value>
+    <value>أعد التشغيل الآن</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>استئناف</value>
@@ -310,7 +304,7 @@
     <value>إغلاق‬</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>إزالة التثبيت</value>
+    <value>إزالة</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>اسم مستخدم</value>
@@ -319,7 +313,7 @@
     <value>السابق</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>‏‏تجاهل</value>
+    <value>تجاهل</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>موافق</value>
@@ -340,9 +334,9 @@
     <value>‏‏يحتوي مسار المجلد '{0}' على حرف غير صالح.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>فشل إعداد {0} .</value>
+    <value>فشل إعداد {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>اكتمل إعداد {0} بنجاح.</value>
+    <value>اكتمل إعداد {0}بنجاح.</value>
   </data>
 </root>

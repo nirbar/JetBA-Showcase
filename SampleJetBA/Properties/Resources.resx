@@ -236,12 +236,6 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Invalid user name or password</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>English</value>
-  </data>
   <data name="Load" xml:space="preserve">
     <value>Load</value>
   </data>

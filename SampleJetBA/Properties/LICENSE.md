@@ -1,19 +1,50 @@
-﻿# The following translations, listed here by their lookup keys, were copied from [NSIS](https://nsis.sourceforge.io/License)
-- MUI_TEXT_FINISH_REBOOTNOW / Restart
-- MUI_TEXT_INSTALLING_SUBTITLE / InstallationIsRunningFormat
-- MUI_TEXT_ABORT_TITLE / OperationCanceled
-- MUI_TEXT_FINISH_SUBTITLE / SuccessfullyFinished
-- MUI_TEXT_ABORT_SUBTITLE / InstallationFailed
-- MUI_BUTTONTEXT_FINISH / Close
-- MUI_TEXT_WELCOME_INFO_TITLE / WelcomeTitleFormat
-- MUI_TEXT_WELCOME_INFO_TEXT / WelcomeCloseApps
-- MUI_TEXT_FINISH_INFO_REBOOT / ChangesWillNotTakeEffectUntilReboot
-- AgreeBtn / Accept
-- CopyDetails / CopyToClipboard
-- DirSubCaption / InstallFolder
-- DirBrowseText / _0InstallFolder
+# The following translations, provided by lookup keys, where copied from WiX:
 
-## These are provided with the following license:
+- FilesInUseExit
+- WixUIBack
+- CustomizeDlgBrowse
+- WixUICancel
+- WixUINo
+- Error1602
+- WixUIYes
+- MaintenanceTypeDlgTitle
+- MsiRMFilesInUseTitle
+- MsiRMFilesInUseText
+- PrepareDlgDescription
+- WixUIIgnore
+- ResumeDlgInstall
+- InstallScopeDlgFolderLabel
+- InstallDirDlgTitle
+- WixUINext
+- WixUIOK
+- WixUIRetry
+- Error20
+- Error22
+- MaintenanceTypeDlgRepairButton
+- MaintenanceTypeDlgRemoveButton
+- InstallDirDlgFolderLabel
+- Error1324
+
+# The following translations, provided by lookup keys, where copied from NSIS:
+
+- MUI_TEXT_FINISH_INFO_REBOOT
+- MUI_BUTTONTEXT_FINISH
+- ^CopyDetails
+- MUI_TEXT_INSTALLING_SUBTITLE
+- MUI_TEXT_ABORT_TITLE
+- MUI_TEXT_FINISH_REBOOTNOW
+
+# The following translations, provided by lookup keys, where copied from INNO:
+
+- ErrorTitle
+- PreviousInstallNotCompleted
+- InformationTitle
+- WizardReady
+- ErrorExecutingProgram
+
+
+# [NSIS](https://nsis.sourceforge.io/License) translations are provided with the following license:
+
 This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
 
 Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
@@ -22,19 +53,8 @@ Permission is granted to anyone to use this software for any purpose, including 
     Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
     This notice may not be removed or altered from any source distribution.
 
-# The following translations, listed here by their lookup keys, were copied from [INNO Setup](https://jrsoftware.org/files/is/license.txt)
-- InformationTitle / Information
-- ShutdownBlockReasonInstallingApp / InstallationIsRunningFormat
-- ErrorTitle / Error
-- ButtonFinish / Close
-- PreviousInstallNotCompleted / ERROR_FAIL_NOACTION_REBOOT_0
-- ErrorExecutingProgram / ShellExecuteFailedTextFormat
-- FinishedLabelNoIcons / _0IsReadyForUse
-- WizardReady / ReadyToInstall
-- UninstalledAll / ThankYouForHavingUsed0
-- WindowsVersionNotSupported / WindowsVersionNotSupported
+# [INNO Setup](https://jrsoftware.org/files/is/license.txt) translations are provided with the following license:
 
-## These are provided with the following license:
 Inno Setup License
 ==================
 
@@ -68,41 +88,8 @@ Jordan Russell
 jr-2020 AT jrsoftware.org
 https://jrsoftware.org/
 
-# The following translations, listed here by their lookup keys, were copied from [WiX Toolset](https://wixtoolset.org/about/license/)
-- ProgressLabel / Executing0
-- InstallDeclineButton / Decline
-- FailureLogLinkText / OpenFailureLog
-- WixUIBack / Back
-- WixUINext / Next
-- WixUICancel / Cancel
-- WixUIFinish / Finish
-- WixUIRetry / Retry
-- WixUIIgnore / Ignore
-- WixUIYes / Yes
-- WixUINo / No
-- WixUIOK / OK
-- MsiRMFilesInUseText / FilesInUseText
-- MsiRMFilesInUseTitle / FilesInUse
-- MaintenanceTypeDlgRepairButton / Repair
-- Error1602 / CancelPrompt
-- FilesInUseExit / Abort
-- FilesInUseExit / Exit
-- CustomizeDlgBrowse / Browse
-- ResumeDlgInstall / Install
-- PrepareDlgDescription / GettingReady
-- MaintenanceTypeDlgTitle / ClickRepairToRepair0OrUninstallToRemoveIt
-- Error22 / PreviousVersion
-- Error1716 / _0Configured
-- InstallDirDlgTitle / InstallFolder
-- InstallDirDlgFolderLabel / _0InstallFolder
-- Error1324 / _0IsNotALegalFolderName
-- Error1729 / FailedConfiguring0
-- Error33 / FailedInstalling0
-- Error1725 / FailedRemoving0
-- InstallScopeDlgFolderLabel / InstallationFolder
-- MaintenanceTypeDlgRemoveButton / Uninstall
+# [WiX Toolset](https://wixtoolset.org/about/license/) translations are provided with the following license:
 
-## These are provided with the Microsoft Reciprocal License (MS-RL) license:
 This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
 
     Definitions

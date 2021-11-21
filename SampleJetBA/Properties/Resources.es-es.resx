@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Anular</value>
+    <value>Salir</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Autenticación</value>
@@ -127,7 +127,7 @@
     <value>Atrás</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Examinar</value>
+    <value>Examinar...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
@@ -151,13 +151,13 @@
     <value>Cambiar, reparar o quitar la instalación</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Cerrar</value>
+    <value>Terminar</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Continuar</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copiar al Portapapeles</value>
+    <value>Copiar Detalles al Portapapeles</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Base de datos</value>
@@ -192,7 +192,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Espere mientras el Asistente para la instalación se prepara para guiarlo durante la instalación.</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>Omitir</value>
+    <value>Ignorar</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Información</value>
@@ -201,22 +201,16 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Instalar</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Carpeta de destino</value>
+    <value>Carpeta de instalación:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Programa de instalación de {0}</value>
+    <value>Por favor espere mientras {0} se instala.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Carpeta de destino</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nombre de usuario o contraseña no válidos.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Español</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Cargar</value>
@@ -240,10 +234,10 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Ver el archivo de registro</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Operación cancelada</value>
+    <value>Instalación Anulada</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Intentar de nuevo</value>
+    <value>Reintentar</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Base de datos</value>
@@ -261,7 +255,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Progreso de la instalación</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Progreso de la instalación</value>
+    <value>Opciones de mantenimiento</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Cuenta de servicio</value>
@@ -282,13 +276,13 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Quitando versiones anteriores de esta aplicación...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Preparado para instalar</value>
+    <value>Listo para Instalar</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Reparar</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Reiniciar</value>
+    <value>Reiniciar ahora</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Reanudar</value>
@@ -310,7 +304,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Cerrar</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Desinstalar</value>
+    <value>Quitar</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nombre de usuario</value>
@@ -319,7 +313,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Atrás</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Omitir</value>
+    <value>Ignorar</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>Aceptar</value>
@@ -340,9 +334,9 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>La ruta de acceso a la carpeta '{0}' contiene un carácter no válido.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Error de instalación de {0} .</value>
+    <value>Error de instalación de {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>La instalación de {0}  finalizó correctamente.</value>
+    <value>La instalación de {0} finalizó correctamente.</value>
   </data>
 </root>

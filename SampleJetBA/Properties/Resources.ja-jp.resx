@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>中止</value>
+    <value>終了(X)</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>認証</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>戻る</value>
+    <value>戻る(B)</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>参照</value>
+    <value>参照(R)...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>キャンセル</value>
@@ -136,13 +136,13 @@
     <value>キャンセル</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
-    <value>いいえ</value>
+    <value>いいえ(N)</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>取り消しますか?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
-    <value>はい</value>
+    <value>はい(Y)</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0} のインストールを完了するには、このコンピュータを再起動する必要があります。今すぐ再起動しますか？</value>
@@ -151,13 +151,13 @@
     <value>インストールの変更、修復、または削除</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>閉じる</value>
+    <value>完了(F)</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>続行</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>クリップボードにコピー</value>
+    <value>クリップボードへ詳細をコピー</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>データベース</value>
@@ -180,7 +180,7 @@
     <value>{0} を処理しています</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>終了</value>
+    <value>終了(X)</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>使用中のファイル</value>
@@ -192,31 +192,25 @@
     <value>インストールの準備をしています。しばらくお待ちください。</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>無視</value>
+    <value>無視(I)</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>情報</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>インストール</value>
+    <value>インストール(I)</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>インストール先フォルダー</value>
+    <value>インストール フォルダー(F):</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} セットアップ</value>
+    <value>{0} をインストール中です。お待ちください。</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
-    <value>ターゲット フォルダー</value>
+    <value>インストール先フォルダー</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>ユーザー名またはパスワードが無効です。</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>日本語</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>読み込み</value>
@@ -225,10 +219,10 @@
     <value>修正</value>
   </data>
   <data name="Next" xml:space="preserve">
-    <value>次へ</value>
+    <value>次へ(N)</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>いいえ</value>
+    <value>いいえ(N)</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>メモ</value>
@@ -240,10 +234,10 @@
     <value>ログ ファイルの参照</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>操作が取り消されました</value>
+    <value>インストールの中止</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>やり直し</value>
+    <value>再試行(R)</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>データベース</value>
@@ -261,7 +255,7 @@
     <value>インストールの進行状況</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>インストールの進行状況</value>
+    <value>メンテナンス オプション</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>サービス アカウント</value>
@@ -282,19 +276,19 @@
     <value>このアプリケーションの古いバージョンを削除しています...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>インストールの準備が完了しました</value>
+    <value>インストール準備完了</value>
   </data>
   <data name="Repair" xml:space="preserve">
-    <value>修復</value>
+    <value>修復(P)</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>再起動</value>
+    <value>今すぐ再起動</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>再開</value>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>再試行</value>
+    <value>再試行(R)</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
     <value>製品の機能</value>
@@ -310,16 +304,16 @@
     <value>閉じる</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>アンインストール</value>
+    <value>削除(R)</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>ユーザー名</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>戻る</value>
+    <value>戻る(B)</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>無視</value>
+    <value>無視(I)</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
@@ -331,7 +325,7 @@
     <value>Windows 認証</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>はい</value>
+    <value>はい(Y)</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>{0} のインストール先:</value>
@@ -340,9 +334,9 @@
     <value>フォルダー パス '{0}' に使用できない文字が含まれています。</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} のセットアップに失敗しました。</value>
+    <value>{0}のセットアップに失敗しました。</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} のセットアップは正常に終了しました。</value>
+    <value>{0}のセットアップは正常に終了しました。</value>
   </data>
 </root>

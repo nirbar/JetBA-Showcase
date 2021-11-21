@@ -194,12 +194,6 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="InstallFolder" xml:space="preserve">
     <value>Dosje destinacion</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Shqip</value>
-  </data>
   <data name="Next" xml:space="preserve">
     <value>Pasuesi</value>
   </data>
@@ -218,8 +212,20 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Baza e të dhënave</value>
   </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Përfundo</value>
+  </data>
+  <data name="PageTitle_InstallLocation" xml:space="preserve">
+    <value>Dosja e vendmbërritjes</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Progresi i instalimit</value>
+  </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Llogaria e shërbimit</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Përmbledhje</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Ju lutemi, prisni teksa Windows formëson {0}</value>
@@ -257,6 +263,9 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Vërtetimi i Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Po</value>

@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>중단</value>
+    <value>끝내기(X)</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>인증</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>뒤로</value>
+    <value>뒤로(B)</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>찾아보기</value>
+    <value>찾아보기(R)...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>취소</value>
@@ -136,13 +136,13 @@
     <value>취소</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
-    <value>아니오</value>
+    <value>아니요(N)</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>취소하시겠습니까?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
-    <value>예</value>
+    <value>예(Y)</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
     <value>{0}의 설치를 완료하기 위해서는 시스템을 다시 시작해야 합니다. 지금 재부팅 하시겠습니까?</value>
@@ -151,13 +151,13 @@
     <value>설치 변경, 복구 또는 제거</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>종료</value>
+    <value>마침</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>계속</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>클립보드로 복사</value>
+    <value>자세한 내용을 클립보드로 복사</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>데이터베이스</value>
@@ -177,7 +177,7 @@
     <value>{0} 처리 중</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>끝내기</value>
+    <value>끝내기(X)</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>사용 중인 파일</value>
@@ -189,31 +189,25 @@
     <value>설치 마법사가 설치 안내를 준비하는 동안 잠시 기다려 주십시오.</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>무시</value>
+    <value>무시(I)</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>정보</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>설치</value>
+    <value>설치(I)</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>대상 폴더</value>
+    <value>설치 폴더(F):</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} 설치</value>
+    <value>{0}(을)를 설치하는 동안 잠시 기다려 주세요.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>대상 폴더</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>사용자 이름 또는 암호가 잘못되었습니다.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>한국어</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>로드</value>
@@ -222,10 +216,10 @@
     <value>수정</value>
   </data>
   <data name="Next" xml:space="preserve">
-    <value>다음</value>
+    <value>다음(N)</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>아니오</value>
+    <value>아니요(N)</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>메모</value>
@@ -237,10 +231,10 @@
     <value>로그 파일 보기</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>작업 취소됨</value>
+    <value>설치 취소</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>다시 시도</value>
+    <value>다시 시도(R)</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>데이터베이스</value>
@@ -258,7 +252,7 @@
     <value>설치 진행률</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>설치 진행률</value>
+    <value>유지 관리 옵션</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>서비스 계정</value>
@@ -282,16 +276,16 @@
     <value>설치 준비 완료</value>
   </data>
   <data name="Repair" xml:space="preserve">
-    <value>복구</value>
+    <value>복구(P)</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>다시 부팅</value>
+    <value>지금 재부팅 하겠습니다.</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>다시 시작</value>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>다시 시도</value>
+    <value>다시 시도(R)</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
     <value>제품 기능</value>
@@ -307,16 +301,16 @@
     <value>종료</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>제거</value>
+    <value>제거(R)</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>사용자 이름</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>뒤로</value>
+    <value>뒤로(B)</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>무시</value>
+    <value>무시(I)</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>확인</value>
@@ -324,8 +318,11 @@
   <data name="Warning" xml:space="preserve">
     <value>경고</value>
   </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows 인증</value>
+  </data>
   <data name="Yes" xml:space="preserve">
-    <value>예</value>
+    <value>예(Y)</value>
   </data>
   <data name="_0InstallFolder" xml:space="preserve">
     <value>다음 폴더에 {0} 설치:</value>
@@ -334,9 +331,9 @@
     <value>폴더 경로 '{0}'에 사용할 수 없는 문자가 들어 있습니다.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} 설치하지 못했습니다.</value>
+    <value>{0}설치하지 못했습니다.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} 설치를 완료했습니다.</value>
+    <value>{0}설치를 완료했습니다.</value>
   </data>
 </root>

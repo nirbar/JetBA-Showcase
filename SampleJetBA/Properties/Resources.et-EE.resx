@@ -194,12 +194,6 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   <data name="InstallFolder" xml:space="preserve">
     <value>Sihtkaust</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Eesti keel</value>
-  </data>
   <data name="Next" xml:space="preserve">
     <value>Edasi</value>
   </data>
@@ -218,11 +212,23 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Andmebaas</value>
   </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Valmis</value>
+  </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Sihtkataloog</value>
   </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Toote funktsioonid</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Installimise edenemine</value>
+  </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Teenusekonto</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Kokkuvõte</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Palun oodake, kuni Windows konfigureerib toodet {0}</value>
@@ -241,6 +247,9 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Proovi uuesti</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Toote funktsioonid</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Teenusekonto</value>

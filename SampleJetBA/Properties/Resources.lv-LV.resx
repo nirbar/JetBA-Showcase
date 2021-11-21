@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Pārtraukt</value>
+    <value>Iziet</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Autentifikācija</value>
@@ -127,7 +127,7 @@
     <value>Atpakaļ</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Pārlūkot</value>
+    <value>Pārlūkot...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Atcelt</value>
@@ -151,13 +151,13 @@
     <value>Instalācijas maiņa, labošana vai noņemšana</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Aizvērt</value>
+    <value>Pabeigt</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Turpināt</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopēt starpliktuvē</value>
+    <value>Iekopēt detaļas starpliktuvē</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Datu bāze</value>
@@ -169,7 +169,7 @@
     <value>Serveris</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>Kļūda</value>
+    <value>Kïûda</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>Instalâcija/noòemðana iepriekðçjai programmai nav pabeigta. Jums ir jâpârstartç dators, lai pabeigtu instalâciju.
@@ -195,28 +195,22 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Ignorēt</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Informācija</value>
+    <value>Informâcija</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Instalēt</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Mērķa mape</value>
+    <value>Instalācijas mape:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} uzstādīšana</value>
+    <value>Lūdzu uzgaidiet, kamēr notiek '{0}' uzstādīšana.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Mērķa mape</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nederīgs lietotāja vārds vai parole.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Latviešu</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Ielādēt</value>
@@ -225,7 +219,7 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Modificēt</value>
   </data>
   <data name="Next" xml:space="preserve">
-    <value>Nākamais</value>
+    <value>Tālāk</value>
   </data>
   <data name="No" xml:space="preserve">
     <value>Nē</value>
@@ -240,10 +234,10 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Skatīt žurnālfailu</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Operācija atcelta.</value>
+    <value>Uzstādīšana atcelta</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Mēģiniet vēlreiz</value>
+    <value>Mēģināt vēlreiz</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Datu bāze</value>
@@ -261,7 +255,7 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Instalēšanas norise</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Instalēšanas norise</value>
+    <value>Uzturēšanas opcijas</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Pakalpojuma konts</value>
@@ -282,13 +276,13 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Notiek vecāku šīs lietojumprogrammas versiju noņemšana...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Gatavs instalēšanai</value>
+    <value>Gatavs instalâcijai</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Labot</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Atkārtoti sāknēt</value>
+    <value>Pārstartēt tūlīt</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Atsākt</value>
@@ -310,7 +304,7 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Aizvērt</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Atinstalēt</value>
+    <value>Noņemt</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Lietotājvārds</value>
@@ -340,9 +334,9 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Mapes ceļā '{0}' ir ietverta nederīga rakstzīme.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} Uzstādīšana neizdevās.</value>
+    <value>{0}Uzstādīšana neizdevās.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} Uzstādīšana sekmīgi pabeigta.</value>
+    <value>{0}Uzstādīšana sekmīgi pabeigta.</value>
   </data>
 </root>

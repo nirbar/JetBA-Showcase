@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Abandonner</value>
+    <value>Quitter</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Authentification</value>
@@ -127,7 +127,7 @@
     <value>Précédent</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Parcourir</value>
+    <value>Parcourir...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuler</value>
@@ -139,7 +139,7 @@
     <value>Non</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>Êtes-vous sûr de vouloir annuler l’installation ?</value>
+    <value>Êtes-vous sûr de vouloir annuler ?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>Oui</value>
@@ -157,7 +157,7 @@
     <value>Continuer</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copier dans le Presse-papiers</value>
+    <value>Copier les Détails dans le Presse-papier</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Base de données</value>
@@ -195,28 +195,22 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Ignorer</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Informations</value>
+    <value>Information</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Installer</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Dossier de destination</value>
+    <value>Dossier d'installation :</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Installation de {0}</value>
+    <value>Veuillez patienter pendant l'installation de {0}.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
-    <value>Dossier cible</value>
+    <value>Dossier de destination</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nom d'utilisateur ou mot de passe non valide.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Français</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Charger</value>
@@ -240,7 +234,7 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Afficher le fichier journal</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Opération annulée</value>
+    <value>Installation interrompue</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Réessayer</value>
@@ -261,7 +255,7 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Progression de l’installation</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Progression de l’installation</value>
+    <value>Options de maintenance</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Compte de service</value>
@@ -282,19 +276,19 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Suppression des anciennes versions de cette application...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Prêt pour l'installation</value>
+    <value>Prêt à installer</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Réparer</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Redémarrer</value>
+    <value>Redémarrer maintenant</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Reprendre</value>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>Recommencer</value>
+    <value>Réessayer</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
     <value>Composants du produit</value>
@@ -310,7 +304,7 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Fermer</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Désinstaller</value>
+    <value>Supprimer</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nom d'utilisateur</value>
@@ -340,9 +334,9 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Le chemin d'accès du dossier « {0} » contient un caractère non valide.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Échec de l’installation de {0} .</value>
+    <value>Échec de l’installation de {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Installation de {0}  terminée.</value>
+    <value>Installation de {0} terminée.</value>
   </data>
 </root>

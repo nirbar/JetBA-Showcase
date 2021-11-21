@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Megszakítás</value>
+    <value>Kilépés</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Hitelesítés</value>
@@ -127,7 +127,7 @@
     <value>Vissza</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Tallózás</value>
+    <value>Tallózás...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Mégse</value>
@@ -139,7 +139,7 @@
     <value>Nem</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>Biztosan megszakítja?</value>
+    <value>Biztosan megszakítja a telepítést?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>Igen</value>
@@ -151,13 +151,13 @@
     <value>A telepítés módosítása, kijavítása vagy eltávolítása</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Bezárás</value>
+    <value>Befejezés</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Folytatás</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Másolás a vágólapra</value>
+    <value>Adatok vágólapra másolása</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Adatbázis</value>
@@ -189,7 +189,7 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Várjon, amíg a telepítővarázsló felkészül, hogy végigvezesse Önt a telepítés folyamatán.</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>Figyelmen kívül hagyás</value>
+    <value>Mellőzés</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Információk</value>
@@ -198,22 +198,16 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Telepítés</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Célmappa</value>
+    <value>Telepítési mappa:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} telepítő</value>
+    <value>Kis türelmet a(z) {0} telepítéséig.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Célmappa</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Érvénytelen felhasználói név vagy jelszó.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Magyar</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Betöltés</value>
@@ -228,7 +222,7 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Nem</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Megjegyzés</value>
+    <value>Megjegyz</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -237,10 +231,10 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>A naplófájl megtekintése</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Művelet megszakítva</value>
+    <value>A telepítés megszakadt</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Próbálja újra!</value>
+    <value>Újra</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Adatbázis</value>
@@ -258,7 +252,7 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Telepítés állapota</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Telepítés állapota</value>
+    <value>Karbantartási beállítások</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Szolgáltatásfiók</value>
@@ -279,13 +273,13 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Az alkalmazás régebbi verzióinak eltávolítása...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Telepítésre felkészülve</value>
+    <value>Készen állunk a telepítésre</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Javítás</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Újraindítás</value>
+    <value>Most indítom újra</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Folytatás</value>
@@ -316,13 +310,16 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Vissza</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Figyelmen kívül hagyás</value>
+    <value>Mellőzés</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Figyelmeztetés</value>
+    <value>Figyelmeztet</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows-hitelesítés</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Igen</value>
@@ -334,9 +331,9 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>A mappa „{0}” elérési útja érvénytelen karaktert tartalmaz.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} A telepítés sikertelen volt.</value>
+    <value>{0}A telepítés sikertelen volt.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} A telepítés sikeresen befejeződött.</value>
+    <value>{0}A telepítés sikeresen befejeződött.</value>
   </data>
 </root>

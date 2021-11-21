@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Prekini</value>
+    <value>Izhod</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Preverjanje pristnosti</value>
@@ -127,7 +127,7 @@
     <value>Nazaj</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Prebrskaj</value>
+    <value>Prebrskaj ...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Prekliči</value>
@@ -139,7 +139,7 @@
     <value>Ne</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>Ali ste prepričani, da želite preklicati?</value>
+    <value>Ali ste prepričani, da ga želite preklicati?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>Da</value>
@@ -151,13 +151,13 @@
     <value>Spreminjanje, popravljanje ali odstranjevanje namestitve</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Zapri</value>
+    <value>Dokončaj</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Nadaljuj</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopiraj v odložišče</value>
+    <value>Kopiraj podrobnosti v odložišče</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Zbirka podatkov</value>
@@ -192,28 +192,22 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
     <value>Prezri</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Informacije</value>
+    <value>Informacija</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Namesti</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Ciljna mapa</value>
+    <value>Namestitvena mapa:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Namestitev izdelka {0}</value>
+    <value>Prosimo, počakajte, {0} se namešča.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Ciljna mapa</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Neveljavno uporabniško ime ali geslo.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Slovenski</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Naloži</value>
@@ -237,10 +231,10 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
     <value>Prikaži dnevniško datoteko</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Postopek preklican</value>
+    <value>Prekinjena namestitev</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Vnovični poskus</value>
+    <value>Poskusi znova</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Zbirka podatkov</value>
@@ -258,7 +252,7 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
     <value>Potek namestitve</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Potek namestitve</value>
+    <value>Možnosti vzdrževanja</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Račun storitve</value>
@@ -285,7 +279,7 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
     <value>Popravi</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Zaženi znova</value>
+    <value>Ponovni zagon</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Nadaljuj</value>
@@ -324,6 +318,9 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
   <data name="Warning" xml:space="preserve">
     <value>Opozorilo</value>
   </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Preverjanje pristnosti sistema Windows</value>
+  </data>
   <data name="Yes" xml:space="preserve">
     <value>Da</value>
   </data>
@@ -334,9 +331,9 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
     <value>Pot do mape »{0}« vsebuje neveljaven znak.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Namestitev programa {0}  ni uspela.</value>
+    <value>Namestitev programa {0} ni uspela.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Namestitev programa {0}  je uspešno dokončana.</value>
+    <value>Namestitev programa {0} je uspešno dokončana.</value>
   </data>
 </root>

@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Afbreken</value>
+    <value>Afsluiten</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Verificatie</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>Terug</value>
+    <value>Vorige</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Bladeren</value>
+    <value>Bladeren...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuleren</value>
@@ -139,7 +139,7 @@
     <value>Nee</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>Weet u zeker dat u wilt annuleren?</value>
+    <value>Weet u zeker dat u de installatie wilt annuleren?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>Ja</value>
@@ -151,13 +151,13 @@
     <value>Installatie wijzigen, herstellen of verwijderen</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Sluiten</value>
+    <value>Voltooien</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Doorgaan</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Naar Klembord kopiëren</value>
+    <value>Details kopiëren naar klembord</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Database</value>
@@ -195,28 +195,22 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Negeren</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Gegevens</value>
+    <value>Informatie</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Installeren</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Doelmap</value>
+    <value>Installatiemap:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} Setup</value>
+    <value>Een ogenblik geduld terwijl {0} wordt geïnstalleerd.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Doelmap</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Ongeldige gebruikersnaam of ongeldig wachtwoord.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Nederlands</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Laden</value>
@@ -231,7 +225,7 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Nee</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Opmerking</value>
+    <value>Notitie</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -240,7 +234,7 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Logboekbestand weergeven</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Bewerking geannuleerd</value>
+    <value>Installatie afgebroken</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Opnieuw</value>
@@ -261,7 +255,7 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Voortgang van de installatie</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Voortgang van de installatie</value>
+    <value>Onderhoudsopties</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Serviceaccount</value>
@@ -282,13 +276,13 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Oudere versies van deze toepassing verwijderen...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Gereed voor installatie</value>
+    <value>Het voorbereiden van de installatie is gereed</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Herstellen</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Opnieuw opstarten</value>
+    <value>Nu herstarten</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Hervatten</value>
@@ -316,7 +310,7 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Gebruikersnaam</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Terug</value>
+    <value>Vorige</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
     <value>Negeren</value>
@@ -328,7 +322,7 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Waarschuwing</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows-verificatie</value>
+    <value>Windows-authenticatie</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>
@@ -340,9 +334,9 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Het pad {0} bevat een ongeldig teken.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>De installatie van {0} is mislukt.</value>
+    <value>De installatie van {0}is mislukt.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>De installatie van {0} is voltooid.</value>
+    <value>De installatie van {0}is voltooid.</value>
   </data>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Přerušit</value>
+    <value>Konec</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Ověřování</value>
@@ -127,19 +127,19 @@
     <value>Zpět</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Procházet</value>
+    <value>Procházet...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Zrušit</value>
+    <value>Storno</value>
   </data>
   <data name="CancelCaption" xml:space="preserve">
-    <value>Zrušit</value>
+    <value>Storno</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Ne</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>Určitě chcete tuto akci zrušit?</value>
+    <value>Opravdu chcete akci zrušit?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>Ano</value>
@@ -151,13 +151,13 @@
     <value>Změna, oprava nebo odebrání instalace</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Zavřít</value>
+    <value>Dokončit</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Pokračovat</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Zkopírovat do schránky</value>
+    <value>Zkopírovat podrobnosti do schránky</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Databáze</value>
@@ -201,22 +201,16 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Nainstalovat</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Cílová složka</value>
+    <value>Instalační složka:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Instalační program pro {0}</value>
+    <value>Počkejte prosím na dokončení instalace programu {0}.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Cílová složka</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Neplatné uživatelské jméno nebo heslo</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Čeština</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Načíst</value>
@@ -240,7 +234,7 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Zobrazit soubor protokolu</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Zrušená operace</value>
+    <value>Instalace přerušena</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Opakovat</value>
@@ -261,7 +255,7 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Průběh instalace</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Průběh instalace</value>
+    <value>Možnosti údržby</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Účet služby</value>
@@ -282,13 +276,13 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Odebírání starších verzí této aplikace...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Připraveno k instalaci</value>
+    <value>Instalace je pøipravena</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Opravit</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Restartovat počítač</value>
+    <value>Restartovat nyní</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Pokračovat</value>
@@ -310,7 +304,7 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Zavřít</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Odinstalovat</value>
+    <value>Odebrat</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Uživatelské jméno</value>
@@ -328,7 +322,7 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Upozornění</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Ověřování systému Windows</value>
+    <value>Ověřování Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ano</value>
@@ -340,9 +334,9 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Cesta ke složce {0} obsahuje neplatný znak.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Instalační program produktu {0}  selhal.</value>
+    <value>Instalační program produktu {0} selhal.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalační program produktu {0}  se úspěšně dokončil.</value>
+    <value>Instalační program produktu {0} se úspěšně dokončil.</value>
   </data>
 </root>

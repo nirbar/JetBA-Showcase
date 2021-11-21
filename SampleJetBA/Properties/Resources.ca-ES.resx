@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Anul·la</value>
+    <value>Surt</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Autenticació</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>Enrere</value>
+    <value>Endarrere</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Navega</value>
+    <value>Navega...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel·la</value>
@@ -151,13 +151,13 @@
     <value>Canvi, reparació o supressió de la instal·lació</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Tanca</value>
+    <value>Finalitza</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Continua</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copia al Porta-retalls</value>
+    <value>Copia els detalls al porta-retalls</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Base de dades</value>
@@ -189,7 +189,7 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Espereu mentre l'auxiliar d'instal·lació es prepara per guiar-vos pel procés d'instal·lació.</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>Omet</value>
+    <value>Ignora-ho</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Informació</value>
@@ -198,22 +198,16 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Instal·la</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Carpeta de destinació</value>
+    <value>Carpeta d'instal·lació:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Programa d'instal·lació del {0}</value>
+    <value>Si us plau, espereu mentre l'aplicació {0} s'instal·la.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Carpeta de destinació</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nom d'usuari o contrasenya no vàlid.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Català</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Carrega</value>
@@ -237,7 +231,7 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Visualitza el fitxer de registre</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>L'operació s'ha cancel·lat</value>
+    <value>S'ha abandonat la instal·lació</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Torna-ho a provar</value>
@@ -258,7 +252,7 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Progrés de la instal·lació</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Progrés de la instal·lació</value>
+    <value>Opcions de manteniment</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Compte de servei</value>
@@ -279,13 +273,13 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>S'estan suprimint les versions anteriors d'aquesta aplicació...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Preparat per instal·lar</value>
+    <value>Preparat per a instal·lar</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Repara</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Reinicia</value>
+    <value>Reinicia ara</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Reprèn</value>
@@ -307,22 +301,25 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Tanca</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Desinstal·la</value>
+    <value>Suprimeix</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nom d'usuari</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Enrere</value>
+    <value>Endarrere</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Omet</value>
+    <value>Ignora-ho</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>D'acord</value>
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Advertiment</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Autenticació del Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sí</value>
@@ -334,9 +331,9 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>El camí de la carpeta "{0}" conté un caràcter no vàlid.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>La instal·lació de {0}  ha fallat.</value>
+    <value>La instal·lació de {0} ha fallat.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>La instal·lació del {0}  s'ha completat correctament.</value>
+    <value>La instal·lació del {0} s'ha completat correctament.</value>
   </data>
 </root>

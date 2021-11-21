@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Keskeytä</value>
+    <value>Lopeta</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Todentaminen</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>Takaisin</value>
+    <value>Edellinen</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Selaa</value>
+    <value>Selaa...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Peruuta</value>
@@ -139,7 +139,7 @@
     <value>Ei</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>Haluatko varmasti peruuttaa toiminnon?</value>
+    <value>Haluatko varmasti peruuttaa?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>Kyllä</value>
@@ -151,13 +151,13 @@
     <value>Korjaa tai poista asennus tai muuta sitä</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Sulje</value>
+    <value>Valmis</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Jatka</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopioi leikepöydälle</value>
+    <value>Kopioi tiedot leikepöydälle</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Tietokanta</value>
@@ -195,28 +195,22 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Ohita</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Tiedot</value>
+    <value>Ilmoitus</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Asenna</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Kohdekansio</value>
+    <value>Asennuskansio:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Tuotteen {0} asennus</value>
+    <value>Odota... {0} asennetaan...</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Kohdekansio</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Virheellinen käyttäjänimi tai salasana.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Suomi</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Lataa</value>
@@ -240,7 +234,7 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Tarkastele lokitiedostoa</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Toiminto peruutettiin</value>
+    <value>Asennus keskeytyi.</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Yritä uudelleen</value>
@@ -261,7 +255,7 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Asennuksen edistyminen</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Asennuksen edistyminen</value>
+    <value>Ylläpitoasetukset</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Palvelutili</value>
@@ -282,13 +276,13 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Poistetaan sovelluksen vanhempia versioita...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Valmis asennusta varten</value>
+    <value>Valmiina asennukseen</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Korjaa</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Käynnistä uudelleen</value>
+    <value>Käynnistä uudelleen nyt</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Jatka</value>
@@ -310,13 +304,13 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Sulje</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Poista asennus</value>
+    <value>Poista</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Käyttäjänimi</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>Takaisin</value>
+    <value>Edellinen</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
     <value>Ohita</value>
@@ -340,9 +334,9 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Kansion polku {0} sisältää virheellisen merkin.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}  – asennus epäonnistui</value>
+    <value>{0} – asennus epäonnistui</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}  – asennus onnistui.</value>
+    <value>{0} – asennus onnistui.</value>
   </data>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Abortar</value>
+    <value>Sair</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Autenticação</value>
@@ -127,7 +127,7 @@
     <value>Anterior</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Procurar</value>
+    <value>Procurar...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
@@ -151,13 +151,13 @@
     <value>Alterar, reparar ou remover a instalação</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Fechar</value>
+    <value>Terminar</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Continuar</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copiar para Área de Transferência</value>
+    <value>Copiar detalhes para a Área de Transfêrencia</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Base de Dados</value>
@@ -192,28 +192,22 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Ignorar</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Informações</value>
+    <value>Informação</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Instalar</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Pasta de Destino</value>
+    <value>Pasta de instalação:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Configuração do {0}</value>
+    <value>Por favor, aguarde enquanto o {0} está sendo instalado.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Pasta de Destino</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nome de utilizador ou palavra-passe inválidos.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Português</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Carregar</value>
@@ -237,7 +231,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Ver o Ficheiro de Registo</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Operação Cancelada</value>
+    <value>Instalação Abortada</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Repetir</value>
@@ -258,7 +252,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Progresso da Instalação</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Progresso da Instalação</value>
+    <value>Opções de Manutenção</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Conta de serviço</value>
@@ -285,7 +279,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Reparar</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Reiniciar</value>
+    <value>Reiniciar Agora</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Retomar</value>
@@ -307,7 +301,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Fechar</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Desinstalar</value>
+    <value>Remover</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nome de Utilizador</value>
@@ -322,7 +316,10 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>OK</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Aviso</value>
+    <value>Advertência</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Autenticação do Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sim</value>
@@ -334,9 +331,9 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>O caminho da pasta '{0}' contém um carácter inválido.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Falha na Configuração do {0} .</value>
+    <value>Falha na Configuração do {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>A Configuração do {0}  foi concluída com êxito.</value>
+    <value>A Configuração do {0} foi concluída com êxito.</value>
   </data>
 </root>

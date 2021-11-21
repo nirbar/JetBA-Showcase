@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>ยกเลิก</value>
+    <value>จบการทำงาน</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>การรับรองความถูกต้อง</value>
@@ -127,7 +127,7 @@
     <value>ย้อนกลับ</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>เรียกดู</value>
+    <value>เรียกดู...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>ยกเลิก</value>
@@ -139,7 +139,7 @@
     <value>ไม่</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>คุณแน่ใจว่าต้องการยกเลิกหรือ</value>
+    <value>คุณแน่ใจหรือไม่ว่าคุณต้องการยกเลิก</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>ใช่</value>
@@ -151,13 +151,13 @@
     <value>เปลี่ยนแปลง ซ่อมแซม หรือเอาการติดตั้งออก</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>ปิด</value>
+    <value>เสร็จสิ้น</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>ทำต่อไป</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>คัดลอกไปยังคลิปบอร์ด</value>
+    <value>คัดลอกรายละเอียดลงคลิปบอร์ด</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>ฐานข้อมูล</value>
@@ -169,7 +169,7 @@
     <value>เซิร์ฟเวอร์</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>ผิดพลาด</value>
+    <value>ความผิดพลาด</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>การติดตั้ง หรือถอดถอน โปรแกรมเดิมไม่สมบูรณ์ คุณต้อง restart เครื่องคอมพิวเตอร์ เพื่อให้การติดตั้ง ถูกต้องสมบูรณ์
@@ -180,7 +180,7 @@
     <value>กำลังดำเนินการ {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>ออก</value>
+    <value>จบการทำงาน</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>แฟ้มถูกใช้งานอยู่</value>
@@ -195,28 +195,22 @@
     <value>ละเว้น</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>ข้อมูล</value>
+    <value>คำอธิบาย</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>ติดตั้ง</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>โฟลเดอร์ปลายทาง</value>
+    <value>โฟลเดอร์การติดตั้ง:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>โปรแกรมติดตั้ง {0}</value>
+    <value>โปรดรอในขณะที่ {0} กำลังถูกติดตั้ง</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>โฟลเดอร์ปลายทาง</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>ไทย</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>โหลด</value>
@@ -240,10 +234,10 @@
     <value>ดูแฟ้มบันทึก</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>ยกเลิกการดำเนินงานแล้ว</value>
+    <value>การติดตั้งถูกยกเลิก</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>ลองอีกครั้ง</value>
+    <value>ลองใหม่</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>ฐานข้อมูล</value>
@@ -261,7 +255,7 @@
     <value>ความคืบหน้าการติดตั้ง</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>ความคืบหน้าการติดตั้ง</value>
+    <value>ตัวเลือกการบำรุงรักษา</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>บัญชีบริการ</value>
@@ -288,7 +282,7 @@
     <value>ซ่อมแซม</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>เริ่มระบบของคอมพิวเตอร์ใหม่</value>
+    <value>รีบูท เดี๋ยวนี้</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>ดำเนินการต่อ</value>
@@ -310,7 +304,7 @@
     <value>ปิด</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>ถอนการติดตั้ง</value>
+    <value>เอาออก</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>ชื่อผู้ใช้</value>
@@ -340,9 +334,9 @@
     <value>เส้นทางโฟลเดอร์ '{0}' มีอักขระที่ไม่ถูกต้อง</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>การติดตั้ง {0}  ไม่สำเร็จ</value>
+    <value>การติดตั้ง {0} ไม่สำเร็จ</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>การติดตั้ง {0}  เสร็จเรียบร้อยแล้ว</value>
+    <value>การติดตั้ง {0} เสร็จเรียบร้อยแล้ว</value>
   </data>
 </root>

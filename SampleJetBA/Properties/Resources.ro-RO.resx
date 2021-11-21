@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Abandonare</value>
+    <value>Ieşire</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Autentificare</value>
@@ -127,19 +127,19 @@
     <value>Înapoi</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Răsfoire</value>
+    <value>Răsfoire...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Anulare</value>
+    <value>Revocare</value>
   </data>
   <data name="CancelCaption" xml:space="preserve">
-    <value>Anulare</value>
+    <value>Revocare</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
     <value>Nu</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>Sigur anulați?</value>
+    <value>Sigur revocaţi?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>Da</value>
@@ -151,13 +151,13 @@
     <value>Modificaţi, reparaţi sau eliminaţi instalarea</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Închidere</value>
+    <value>Terminare</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Continuare</value>
+    <value>Continuaţi</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Copiere în Clipboard</value>
+    <value>Copiere detalii în clipboard</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Bază de date</value>
@@ -177,7 +177,7 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Se procesează {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>Ieșire</value>
+    <value>Ieşire</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Fişiere în uz</value>
@@ -192,28 +192,22 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Ignorare</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Informație</value>
+    <value>Informaþii</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Instalare</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Folder de destinație</value>
+    <value>Folder de instalare:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Instalare {0}</value>
+    <value>Vă rugăm să aşteptaţi, {0} se instalează.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Folderul de destinaţie</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nume de utilizator sau parolă nevalidă.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Română</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Încărcare</value>
@@ -237,10 +231,10 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Vizualizare fișier jurnal</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Operațiune anulată</value>
+    <value>Instalare anulată</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Încercați din nou</value>
+    <value>Reîncercare</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Bază de date</value>
@@ -258,7 +252,7 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Stadiu instalare</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Stadiu instalare</value>
+    <value>Opțiuni de întreținere</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Cont serviciu</value>
@@ -279,13 +273,13 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Se elimină versiunile anterioare ale acestei aplicaţii...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Gata de instalare</value>
+    <value>Pregãtit de Instalare</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Reparare</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Repornire</value>
+    <value>Reporneşte acum</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Reluare</value>
@@ -307,7 +301,7 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Închidere</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Dezinstalare</value>
+    <value>Eliminare</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Nume utilizator</value>
@@ -324,6 +318,9 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
   <data name="Warning" xml:space="preserve">
     <value>Avertizare</value>
   </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Autentificare Windows</value>
+  </data>
   <data name="Yes" xml:space="preserve">
     <value>Da</value>
   </data>
@@ -334,9 +331,9 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Calea folderului „{0}” conţine un caracter nevalid.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Instalarea {0}  a eșuat.</value>
+    <value>Instalarea {0} a eșuat.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalarea {0} s-a finalizat cu succes.</value>
+    <value>Instalarea {0}s-a finalizat cu succes.</value>
   </data>
 </root>

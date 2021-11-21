@@ -120,6 +120,9 @@
   <data name="Abort" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Authentication</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Back</value>
   </data>
@@ -159,6 +162,12 @@
   <data name="Database" xml:space="preserve">
     <value>Database</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Database configuration</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
@@ -166,6 +175,9 @@
     <value>The installation/removal of a previous program was not completed. You will need to restart your computer to complete that installation.
 
 After restarting your computer, run Setup again to complete the installation of {0}.</value>
+  </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Processing {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Exit</value>
@@ -197,11 +209,14 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="InstallFolder" xml:space="preserve">
     <value>Destination Folder</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Invalid user name or password.</value>
   </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>English</value>
+  <data name="Load" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modify</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Next</value>
@@ -215,6 +230,9 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>View the Log File</value>
+  </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installation Aborted</value>
   </data>
@@ -224,11 +242,32 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Database</value>
   </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Destination Folder</value>
   </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Product features</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Installation Progress</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Maintenance Options</value>
+  </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Service account</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>User Name Required</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Please wait while Windows configures {0}</value>
@@ -245,8 +284,14 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="Restart" xml:space="preserve">
     <value>Reboot now</value>
   </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Resume</value>
+  </data>
   <data name="Retry" xml:space="preserve">
     <value>Retry</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Product features</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Service account</value>
@@ -255,8 +300,14 @@ After restarting your computer, run Setup again to complete the installation of 
     <value>Unable to execute file:
 {0}</value>
   </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Remove</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Username</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Back</value>
@@ -270,6 +321,9 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="Warning" xml:space="preserve">
     <value>Warning</value>
   </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows Authentication</value>
+  </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
   </data>
@@ -278,5 +332,11 @@ After restarting your computer, run Setup again to complete the installation of 
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>The folder path '{0}' contains an invalid character.</value>
+  </data>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>{0} Setup failed.</value>
+  </data>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>{0} Setup completed successfully.</value>
   </data>
 </root>

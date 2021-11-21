@@ -194,12 +194,6 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   <data name="InstallFolder" xml:space="preserve">
     <value>Odredišna fascikla</value>
   </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Srpski</value>
-  </data>
   <data name="Next" xml:space="preserve">
     <value>Dalje</value>
   </data>
@@ -218,12 +212,24 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Baza podataka</value>
   </data>
+  <data name="PageTitle_Finish" xml:space="preserve">
+    <value>Završi</value>
+  </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>
     </value>
   </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Funkcije proizvoda</value>
+  </data>
+  <data name="PageTitle_Progress" xml:space="preserve">
+    <value>Tok instalacije</value>
+  </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Nalog usluge</value>
+  </data>
+  <data name="PageTitle_Summary" xml:space="preserve">
+    <value>Rezime</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Sačekajte dok Windows konfiguriše {0}</value>
@@ -242,6 +248,9 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Pokušaj opet</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Funkcije proizvoda</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Nalog usluge</value>

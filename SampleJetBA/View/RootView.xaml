@@ -46,7 +46,20 @@
         <DockPanel Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{StaticResource TitleBarBackgroundBrush}" MouseLeftButtonDown="Background_MouseLeftButtonDown">
             <Button DockPanel.Dock="Right" Style="{StaticResource CloseButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24" IsCancel="True" Command="{Binding NavigationViewModel.StopCommand}" Margin="8,0,8,0"/>
             <Button DockPanel.Dock="Right" Style="{StaticResource MinimizeButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24" Click="Minimize_Click"/>
-            <ComboBox DockPanel.Dock="Right" Name="cultureCombo_" Height="18" Width="200" FontSize="14" FlowDirection="LeftToRight" SelectionChanged="culture_SelectionChanged"/>
+         
+            <ComboBox DockPanel.Dock="Right" Name="cultureCombo_" Height="18" Width="200" FontSize="14" SelectionChanged="culture_SelectionChanged">
+                <ComboBox.Style>
+                    <Style TargetType="ComboBox" BasedOn="{StaticResource {x:Type ComboBox}}">
+                        <Setter Property="FlowDirection" Value="LeftToRight"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=SelectedItem.Tag.TextInfo.IsRightToLeft}" Value="True" >
+                                <Setter Property="FlowDirection" Value="RightToLeft"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ComboBox.Style>
+            </ComboBox>
+            
             <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="6,0,0,0" FontSize="12" Foreground="{StaticResource TitleBarForegroundBrush}">
                 <TextBlock.Text>
                     <MultiBinding StringFormat="{}{0} v{1:4}">

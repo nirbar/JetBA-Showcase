@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Afbryd</value>
+    <value>Afslut</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Godkendelse</value>
@@ -127,7 +127,7 @@
     <value>Tilbage</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Gennemse</value>
+    <value>Gennemse...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuller</value>
@@ -151,13 +151,13 @@
     <value>Skift, reparer eller fjern installationen</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Luk</value>
+    <value>Afslut</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Fortsæt</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopiér til Udklipsholder</value>
+    <value>Kopier detaljer til udklipsholderen</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Database</value>
@@ -192,28 +192,22 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Ignorer</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Oplysninger</value>
+    <value>Information</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>Installere</value>
+    <value>Installer</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Destinationsmappe</value>
+    <value>Installationsmappe:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Installation af {0}</value>
+    <value>Vent venligst mens {0} bliver installeret.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Destinationsmappe</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Ugyldigt brugernavn og ugyldig adgangskode.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Dansk</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Indlæs</value>
@@ -228,7 +222,7 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Nej</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Bemærk</value>
+    <value>Bemærkning</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -237,10 +231,10 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Vis logfilen</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Handlingen blev annulleret</value>
+    <value>Installation afbrudt</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Forsøg igen</value>
+    <value>Prøv igen</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Database</value>
@@ -258,7 +252,7 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Installationsstatus</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Installationsstatus</value>
+    <value>Indstillinger for vedligeholdelse</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Tjenestekonto</value>
@@ -285,7 +279,7 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Reparer</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Genstart</value>
+    <value>Genstart nu</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Genoptag</value>
@@ -324,6 +318,9 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
   <data name="Warning" xml:space="preserve">
     <value>Advarsel</value>
   </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows-godkendelse</value>
+  </data>
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>
   </data>
@@ -334,9 +331,9 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Mappestien '{0}' indeholder et ugyldigt tegn.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Installationen af {0}  mislykkedes.</value>
+    <value>Installationen af {0} mislykkedes.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Installationen af {0}  blev fuldført.</value>
+    <value>Installationen af {0} blev fuldført.</value>
   </data>
 </root>

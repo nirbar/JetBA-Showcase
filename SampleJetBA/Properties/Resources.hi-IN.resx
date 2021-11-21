@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>निरस्त करें</value>
+    <value>बाहर जाएँ</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>प्रमाणीकरण</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>वापस जाएँ</value>
+    <value>पीछे</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>ब्राउज़ करें</value>
+    <value>ब्राउज़ करें...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>रद्द करें</value>
@@ -139,7 +139,7 @@
     <value>नहीं</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>क्या आप वास्तव में रद्द करना चाहते हैं?</value>
+    <value>क्या आप वाकई रद्द करना चाहते हैं?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>हाँ</value>
@@ -151,13 +151,13 @@
     <value>स्थापना बदलें, सुधारें या निकालें</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>बंद करें</value>
+    <value>समाप्त करें</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>जारी रखें</value>
+    <value>जारी</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>क्लिपबोर्ड पर प्रतिलिपि करें</value>
+    <value>क्लिपबोर्ड पर विवरण कॉपी करें</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>डेटाबेस</value>
@@ -166,7 +166,7 @@
     <value>सर्वर</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>त्रुटि</value>
+    <value>त्रुटी</value>
   </data>
   <data name="ERROR_FAIL_NOACTION_REBOOT_0" xml:space="preserve">
     <value>पिछले कार्यक्रम का प्रतिस्थापन / अधिष्ठापन सही ढंग से पूरा नही हुआ था. आपको कल्पयन्त्र फिर सुरु करना पडेगा.
@@ -177,7 +177,7 @@
     <value>{0} संसाधित किया जा रहा है</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>बाहर निकलें</value>
+    <value>बाहर जाएँ</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>फ़ाइलें उपयोग में</value>
@@ -189,31 +189,25 @@
     <value>सेट अप विज़ार्ड आपको स्थापना में सहायता करे, तब तक कृपया प्रतीक्षा करें.</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>अनदेखा करें</value>
+    <value>ध्यान न दें</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>जानकारी</value>
+    <value>सुचना</value>
   </data>
   <data name="Install" xml:space="preserve">
-    <value>स्‍थापित करें</value>
+    <value>स्थापित करें</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>गंतव्य फ़ोल्डर</value>
+    <value>स्थापना फ़ोल्डर:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} सेटअप</value>
+    <value>{0} इनस्टॉल होने तक प्रतीक्षा करें।</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>गंतव्य फ़ोल्डर</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>अमान्य उपयोगकर्ता नाम या पासवर्ड.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>हिन्दी</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>लोड करें</value>
@@ -237,10 +231,10 @@
     <value>लॉग फ़ाइल देखें</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>कार्रवाई रद्द की गई</value>
+    <value>इंस्टालेशन निरस्त किया गया</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>पुनः प्रयास करें</value>
+    <value>पुनर्प्रयास करें</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>डेटाबेस</value>
@@ -258,7 +252,7 @@
     <value>स्थापना प्रगति</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>स्थापना प्रगति</value>
+    <value>रखरखाव विकल्प</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>सेवा खाता</value>
@@ -279,19 +273,19 @@
     <value>इस अनुप्रयोग के पुराने संस्करण निकाले जा रहे हैं...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>स्थापित करने के लिए तैयार</value>
+    <value>अधिष्ठापन के लिए तयार</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>सुधारें</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>रीबूट करें</value>
+    <value>अभी रीबूट करें</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>फिर से शुरू करें</value>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>पुनः प्रयास करें</value>
+    <value>पुनर्प्रयास करें</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
     <value>उत्पाद सुविधाएँ</value>
@@ -307,22 +301,25 @@
     <value>बंद करें</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>स्थापना रद्द करें</value>
+    <value>निकालें</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>उपयोगकर्ता नाम</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
-    <value>वापस जाएँ</value>
+    <value>पीछे</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>अनदेखा करें</value>
+    <value>ध्यान न दें</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>ठीक</value>
   </data>
   <data name="Warning" xml:space="preserve">
     <value>चेतावनी</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows प्रमाणन</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>हाँ</value>
@@ -334,9 +331,9 @@
     <value>फ़ोल्‍डर पथ '{0}' में अमान्‍य वर्ण है.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} सेटअप विफल रहा.</value>
+    <value>{0}सेटअप विफल रहा.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} सेटअप सफलतापूर्वक पूरा हुआ.</value>
+    <value>{0}सेटअप सफलतापूर्वक पूरा हुआ.</value>
   </data>
 </root>

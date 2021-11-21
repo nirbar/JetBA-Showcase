@@ -432,24 +432,6 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to False.
-        /// </summary>
-        public static string IS_RIGHT_TO_LEFT {
-            get {
-                return ResourceManager.GetString("IS_RIGHT_TO_LEFT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to English.
-        /// </summary>
-        public static string LanguageName {
-            get {
-                return ResourceManager.GetString("LanguageName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Load.
         /// </summary>
         public static string Load {

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Avbryt</value>
+    <value>Avslutt</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Godkjenning</value>
@@ -127,7 +127,7 @@
     <value>Tilbake</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Bla gjennom</value>
+    <value>Bla gjennom...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Avbryt</value>
@@ -136,7 +136,7 @@
     <value>Avbryt</value>
   </data>
   <data name="CancelNo" xml:space="preserve">
-    <value>No</value>
+    <value>Nei</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
     <value>Er du sikker på at du vil avbryte?</value>
@@ -151,13 +151,13 @@
     <value>Endre, reparer eller fjern installasjonen</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Lukk</value>
+    <value>Ferdig</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Fortsett</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Kopier til utklippstavlen</value>
+    <value>Kopier detaljer til utklippstavlen</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Database</value>
@@ -201,22 +201,16 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Installer</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Målmappe</value>
+    <value>Installasjonsmappe:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>Installasjonsprogram for {0}</value>
+    <value>Vennligst vent mens {0} blir installert.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Målmappe</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Ugyldig brukernavn eller passord.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Norsk</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Last inn</value>
@@ -228,10 +222,10 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Neste</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
+    <value>Nei</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Obs!</value>
+    <value>Merknad</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -240,7 +234,7 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Vis loggfilen</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Operasjonen ble avbrutt</value>
+    <value>Installasjonen er avbrutt</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Prøv på nytt</value>
@@ -261,7 +255,7 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Installasjonsfremdrift</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Installasjonsfremdrift</value>
+    <value>Alternativer for vedlikehold</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Tjenestekonto</value>
@@ -282,13 +276,13 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Sletter eldre versjoner av programmet ...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Klar for installasjon</value>
+    <value>Klar til å installere</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Reparer</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Start på nytt</value>
+    <value>Ja. Start datamaskinen på nytt nå</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Fortsett</value>
@@ -310,7 +304,7 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Lukk</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>Avinstaller</value>
+    <value>Fjern</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>Brukernavn</value>
@@ -340,9 +334,9 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Mappebanen {0} inneholder et ugyldig tegn.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Installasjonen av {0} mislyktes.</value>
+    <value>Installasjonen av {0}mislyktes.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Installasjonen av {0} er fullført.</value>
+    <value>Installasjonen av {0}er fullført.</value>
   </data>
 </root>

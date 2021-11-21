@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>Прервать</value>
+    <value>Выход</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>Проверка подлинности</value>
@@ -127,7 +127,7 @@
     <value>Назад</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Обзор</value>
+    <value>Обзор...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
@@ -139,7 +139,7 @@
     <value>Нет</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>Вы действительно хотите отменить?</value>
+    <value>Отменить установку?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>Да</value>
@@ -151,13 +151,13 @@
     <value>Изменение, восстановление или удаление установки</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Закрыть</value>
+    <value>Готово</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Продолжить</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>Копировать в буфер обмена</value>
+    <value>Копировать сведения в буфер обмена</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>База данных</value>
@@ -192,31 +192,25 @@
     <value>Подождите, пока мастер выполняет подготовку к установке.</value>
   </data>
   <data name="Ignore" xml:space="preserve">
-    <value>Игнорировать</value>
+    <value>Пропустить</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Сведения</value>
+    <value>Информация</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Установить</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>Папка назначения</value>
+    <value>Папка установки:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>{0} Установка</value>
+    <value>Подождите, идет копирование файлов {0}...</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
-    <value>Целевая папка</value>
+    <value>Конечная папка</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Неверное имя пользователя или пароль.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>False</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>Русский</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Загрузить</value>
@@ -231,7 +225,7 @@
     <value>Нет</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Примечание</value>
+    <value>Примеч</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>ОК</value>
@@ -240,10 +234,10 @@
     <value>Просмотреть файл журнала</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>Операция отменена</value>
+    <value>Установка прервана</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
-    <value>Повторить попытку</value>
+    <value>Повторить</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>База данных</value>
@@ -261,7 +255,7 @@
     <value>Ход выполнения установки</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Ход выполнения установки</value>
+    <value>Параметры обслуживания</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Учетная запись службы</value>
@@ -282,13 +276,13 @@
     <value>Удаление старых версий этого приложения...</value>
   </data>
   <data name="ReadyToInstall" xml:space="preserve">
-    <value>Все готово к установке</value>
+    <value>Всё готово к установке</value>
   </data>
   <data name="Repair" xml:space="preserve">
     <value>Восстановить</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>Перезагрузка</value>
+    <value>Да, перезагрузить ПК сейчас</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>Возобновить</value>
@@ -319,16 +313,16 @@
     <value>Назад</value>
   </data>
   <data name="ValidationPromptContinue" xml:space="preserve">
-    <value>Игнорировать</value>
+    <value>Пропустить</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>ОК</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Предупреждение</value>
+    <value>Предупр</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Проверка подлинности Windows</value>
+    <value>Windows — проверка подлинности</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Да</value>
@@ -340,9 +334,9 @@
     <value>Путь к папке "{0}" содержит недопустимый знак.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Не удалось установить {0} .</value>
+    <value>Не удалось установить {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Установка {0}  успешно завершена.</value>
+    <value>Установка {0} успешно завершена.</value>
   </data>
 </root>

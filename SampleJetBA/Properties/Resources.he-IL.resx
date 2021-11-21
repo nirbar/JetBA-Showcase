@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Abort" xml:space="preserve">
-    <value>בטל</value>
+    <value>יציאה</value>
   </data>
   <data name="Authentication" xml:space="preserve">
     <value>אימות</value>
@@ -127,7 +127,7 @@
     <value>הקודם</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>עיון</value>
+    <value>עיון...</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>ביטול</value>
@@ -139,7 +139,7 @@
     <value>לא</value>
   </data>
   <data name="CancelPrompt" xml:space="preserve">
-    <value>האם אתה בטוח שברצונך לבטל?</value>
+    <value>‏‏האם אתה בטוח שברצונך לבטל?</value>
   </data>
   <data name="CancelYes" xml:space="preserve">
     <value>כן</value>
@@ -151,13 +151,13 @@
     <value>שינוי, תיקון או הסרה של ההתקנה</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>סגור</value>
+    <value>סיים</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>המשך</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
-    <value>העתק ללוח</value>
+    <value>העתק פרטים ללוח</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>מסד נתונים</value>
@@ -201,22 +201,16 @@
     <value>התקן</value>
   </data>
   <data name="InstallationFolder" xml:space="preserve">
-    <value>תיקיית יעד</value>
+    <value>תיקיית התקנה:</value>
   </data>
   <data name="InstallationIsRunningFormat" xml:space="preserve">
-    <value>התקנת {0}</value>
+    <value>אנא המתן בזמן ש-{0} מותקן.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>תיקיית יעד</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>שם משתמש או סיסמה לא חוקיים.</value>
-  </data>
-  <data name="IS_RIGHT_TO_LEFT" xml:space="preserve">
-    <value>True</value>
-  </data>
-  <data name="LanguageName" xml:space="preserve">
-    <value>עברית</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>טען</value>
@@ -240,7 +234,7 @@
     <value>הצג את קובץ יומן הרישום</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
-    <value>‏‏הפעולה בוטלה</value>
+    <value>ההתקנה בוטלה</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>נסה שוב</value>
@@ -261,7 +255,7 @@
     <value>התקדמות ההתקנה</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>התקדמות ההתקנה</value>
+    <value>אפשרויות תחזוקה</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>חשבון שירות</value>
@@ -288,13 +282,13 @@
     <value>תקן</value>
   </data>
   <data name="Restart" xml:space="preserve">
-    <value>אתחל מחדש</value>
+    <value>אתחל כעת</value>
   </data>
   <data name="Resume" xml:space="preserve">
     <value>חדש הפעלה</value>
   </data>
   <data name="Retry" xml:space="preserve">
-    <value>נסה שנית</value>
+    <value>נסה שוב</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
     <value>תכונות מוצר</value>
@@ -310,7 +304,7 @@
     <value>סגור</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
-    <value>הסר התקנה</value>
+    <value>הסר</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>שם משתמש</value>
@@ -328,7 +322,7 @@
     <value>אזהרה</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>אימות של Windows</value>
+    <value>אימות Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>כן</value>
@@ -340,9 +334,9 @@
     <value>נתיב התיקיה '{0}' מכיל תו לא חוקי.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>התקנת {0} נכשלה.</value>
+    <value>התקנת {0}נכשלה.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>התקנת {0} הושלמה בהצלחה.</value>
+    <value>התקנת {0}הושלמה בהצלחה.</value>
   </data>
 </root>
