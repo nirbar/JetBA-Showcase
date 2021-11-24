@@ -79,11 +79,10 @@ namespace SampleJetBA
                 {
                     Engine.Log(LogLevel.Standard, $"Prompting to resume with {Command.Action} after an interrupted reboot");
 
-                    PanelSW.Installer.JetBA.Localization.Resources local = Kernel.Get<PanelSW.Installer.JetBA.Localization.Resources>();
                     PopupViewModel popup = Kernel.Get<PopupViewModel>();
-                    popup.Show(Properties.Resources.Resume, Properties.Resources.InterruptedRebootPrompt, PopupViewModel.IconHint.Question
-                        , local.Yes, cmd
-                        , local.No);
+                    popup.Show(nameof(Properties.Resources.Resume), nameof(Properties.Resources.InterruptedRebootPrompt), PopupViewModel.IconHint.Question
+                        , nameof(Properties.Resources.Yes), cmd
+                        , nameof(Properties.Resources.No));
                 }
             }
         }
@@ -128,8 +127,9 @@ namespace SampleJetBA
             {
                 PopupViewModel popup = Kernel.Get<PopupViewModel>();
                 ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
+                VariablesViewModel vars = Kernel.Get<VariablesViewModel>();
                 PanelSW.Installer.JetBA.Localization.Resources local = Kernel.Get<PanelSW.Installer.JetBA.Localization.Resources>();
-                popup.ShowSync(Properties.Resources.Restart, string.Format(Properties.Resources.WeNeedToRebootNow_0WillContinueAfterYouLoginAgain, apply.PlannedAction), PopupViewModel.IconHint.Information, local.OK);
+                popup.ShowSync(Properties.Resources.Restart, nameof(Properties.Resources.ERROR_FAIL_NOACTION_REBOOT_0), PopupViewModel.IconHint.Information, local.OK, null, null, PopupViewModel.Buttons.Right, vars["WixBundleName"].String);
             }
         }
 

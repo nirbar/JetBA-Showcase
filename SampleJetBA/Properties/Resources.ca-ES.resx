@@ -213,7 +213,7 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Carrega</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modifica</value>
+    <value>Canvia</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Endavant</value>
@@ -331,9 +331,9 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>El camí de la carpeta "{0}" conté un caràcter no vàlid.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>La instal·lació de {0} ha fallat.</value>
+    <value>S'ha produït un error a la instal·lació del producte {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>La instal·lació del {0} s'ha completat correctament.</value>
+    <value>La instal·lació del producte {0} s'ha completat correctament.</value>
   </data>
 </root>

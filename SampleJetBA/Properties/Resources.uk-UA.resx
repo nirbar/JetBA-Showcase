@@ -246,7 +246,7 @@
     <value>Папка призначення</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Функції продукту</value>
+    <value>Компоненти продукту</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Перебіг інсталювання</value>
@@ -288,7 +288,7 @@
     <value>Повторити</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Функції продукту</value>
+    <value>Компоненти продукту</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Обліковий запис служби</value>
@@ -331,9 +331,9 @@
     <value>Шлях до папки "{0}" містить неприпустимий символ.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}Помилка інсталяції.</value>
+    <value>Помилка програми інсталяції {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}Інсталяцію успішно завершено.</value>
+    <value>Роботу програми інсталяції {0} успішно завершено.</value>
   </data>
 </root>

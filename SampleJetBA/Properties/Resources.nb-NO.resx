@@ -334,9 +334,9 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Mappebanen {0} inneholder et ugyldig tegn.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Installasjonen av {0}mislyktes.</value>
+    <value>Installasjonen av {0} mislyktes.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Installasjonen av {0}er fullført.</value>
+    <value>Installasjonen av {0} er fullført.</value>
   </data>
 </root>

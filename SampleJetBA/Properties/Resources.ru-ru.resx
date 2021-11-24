@@ -246,7 +246,7 @@
     <value>Готово</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Папка назначения</value>
+    <value>Конечная папка</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
     <value>Компоненты продукта</value>

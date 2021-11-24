@@ -216,7 +216,7 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Ielādēt</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modificēt</value>
+    <value>Mainīt</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Tālāk</value>
@@ -249,7 +249,7 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Mērķa mape</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Produkta īpašības</value>
+    <value>Produkta līdzekļi</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Instalēšanas norise</value>
@@ -291,7 +291,7 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Mēģināt vēlreiz</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Produkta īpašības</value>
+    <value>Produkta līdzekļi</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Pakalpojuma konts</value>
@@ -334,9 +334,9 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Mapes ceļā '{0}' ir ietverta nederīga rakstzīme.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}Uzstādīšana neizdevās.</value>
+    <value>Produkta {0}  uzstādīšana neizdevās.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}Uzstādīšana sekmīgi pabeigta.</value>
+    <value>Produkta {0} uzstādīšana ir sekmīgi pabeigta.</value>
   </data>
 </root>

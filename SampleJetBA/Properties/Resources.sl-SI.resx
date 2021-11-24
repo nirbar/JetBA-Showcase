@@ -334,6 +334,6 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
     <value>Namestitev programa {0} ni uspela.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Namestitev programa {0} je uspešno dokončana.</value>
+    <value>Namestitev programa {0} se je uspešno dokončala.</value>
   </data>
 </root>

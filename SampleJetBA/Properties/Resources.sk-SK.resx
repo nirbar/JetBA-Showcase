@@ -213,7 +213,7 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>Načítať</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Upraviť</value>
+    <value>Zmeniť</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Ďalej</value>
@@ -246,7 +246,7 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>Cieľový priečinok</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Funkcie produktu</value>
+    <value>Súčasti produktu</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Priebeh inštalácie</value>
@@ -288,7 +288,7 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>Znova</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Funkcie produktu</value>
+    <value>Súčasti produktu</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Konto služby</value>
@@ -331,9 +331,9 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>Cesta k priečinku {0} obsahuje neplatný znak.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Inštalácia produktu {0}zlyhala.</value>
+    <value>Inštalácia programu {0} zlyhala.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Inštalácia produktu {0}sa úspešne dokončila.</value>
+    <value>Inštalácia programu {0} bola úspešne dokončená.</value>
   </data>
 </root>

@@ -216,7 +216,7 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Lataa</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Muokkaa</value>
+    <value>Muuta</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Seuraava</value>
@@ -334,9 +334,9 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Kansion polku {0} sisältää virheellisen merkin.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0} – asennus epäonnistui</value>
+    <value>{0} Asennus epäonnistui.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0} – asennus onnistui.</value>
+    <value>{0} Asennus onnistui.</value>
   </data>
 </root>

@@ -216,7 +216,7 @@
     <value>読み込み</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>修正</value>
+    <value>変更(C)</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>次へ(N)</value>
@@ -249,7 +249,7 @@
     <value>インストール先フォルダー</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>製品の機能</value>
+    <value>製品機能</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>インストールの進行状況</value>
@@ -291,7 +291,7 @@
     <value>再試行(R)</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
-    <value>製品の機能</value>
+    <value>製品機能</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>サービス アカウント</value>
@@ -334,9 +334,9 @@
     <value>フォルダー パス '{0}' に使用できない文字が含まれています。</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}のセットアップに失敗しました。</value>
+    <value>{0} のセットアップに失敗しました。</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}のセットアップは正常に終了しました。</value>
+    <value>{0} のセットアップは正常に終了しました。</value>
   </data>
 </root>

@@ -19,7 +19,7 @@
                 Content="{x:Static props:Resources.Close}" />
 
         <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DockPanel.Dock="Top" FlowDirection="LeftToRight">
-            <TextBlock TextWrapping="Wrap" Text="{x:Static props:Resources.HelpPageText }" HorizontalAlignment="Stretch"/>
+            <TextBlock TextWrapping="Wrap" Text="{x:Static props:Resources.HelpPageText}" HorizontalAlignment="Stretch"/>
         </ScrollViewer>
     </DockPanel>
 </UserControl>

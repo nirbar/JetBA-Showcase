@@ -334,9 +334,9 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Le chemin d'accès du dossier « {0} » contient un caractère non valide.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Échec de l’installation de {0}.</value>
+    <value>Échec de l'installation de {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Installation de {0} terminée.</value>
+    <value>L'installation de {0} s'est terminée correctement.</value>
   </data>
 </root>

@@ -334,9 +334,9 @@
     <value>נתיב התיקיה '{0}' מכיל תו לא חוקי.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>התקנת {0}נכשלה.</value>
+    <value>התקנת {0} נכשלה.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>התקנת {0}הושלמה בהצלחה.</value>
+    <value>התקנת {0} הסתיימה בהצלחה.</value>
   </data>
 </root>

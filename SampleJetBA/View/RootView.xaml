@@ -46,6 +46,11 @@
         <DockPanel Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{StaticResource TitleBarBackgroundBrush}" MouseLeftButtonDown="Background_MouseLeftButtonDown">
             <Button DockPanel.Dock="Right" Style="{StaticResource CloseButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24" IsCancel="True" Command="{Binding NavigationViewModel.StopCommand}" Margin="8,0,8,0"/>
             <Button DockPanel.Dock="Right" Style="{StaticResource MinimizeButtonStyle}" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24" Click="Minimize_Click"/>
+            <TextBlock DockPanel.Dock="Right" VerticalAlignment="Center" Margin="8,0,8,0" Foreground="{StaticResource TitleBarForegroundBrush}" Height="24" Width="24">
+                <Hyperlink Click="showLicenses_Click">
+                    <TextBlock Text="?" VerticalAlignment="Center"/>
+                </Hyperlink>
+            </TextBlock>
          
             <ComboBox DockPanel.Dock="Right" Name="cultureCombo_" Height="18" Width="200" FontSize="14" SelectionChanged="culture_SelectionChanged">
                 <ComboBox.Style>

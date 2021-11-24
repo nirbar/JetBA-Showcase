@@ -216,7 +216,7 @@ After restarting your computer, run Setup again to complete the installation of 
     <value>Load</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modify</value>
+    <value>Change</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Next</value>
@@ -249,7 +249,7 @@ After restarting your computer, run Setup again to complete the installation of 
     <value>Destination Folder</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Product features</value>
+    <value>Product Features</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Installation Progress</value>

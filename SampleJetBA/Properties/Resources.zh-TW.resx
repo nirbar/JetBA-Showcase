@@ -204,7 +204,7 @@
     <value>載入</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>修改</value>
+    <value>變更(C)</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>下一步(N)</value>
@@ -314,5 +314,11 @@
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>資料夾路徑 '{0}' 含有無效的字元。</value>
+  </data>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>{0} 安裝失敗。</value>
+  </data>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>{0} 安裝成功。</value>
   </data>
 </root>

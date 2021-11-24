@@ -61,7 +61,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} install folder.
+        ///   Looks up a localized string similar to Install {0} to:.
         /// </summary>
         public static string _0InstallFolder {
             get {
@@ -70,7 +70,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &apos;{0}&apos; is not a legal folder name.
+        ///   Looks up a localized string similar to The folder path &apos;{0}&apos; contains an invalid character..
         /// </summary>
         public static string _0IsNotALegalFolderName {
             get {
@@ -79,16 +79,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} is ready for use.
-        /// </summary>
-        public static string _0IsReadyForUse {
-            get {
-                return ResourceManager.GetString("_0IsReadyForUse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {0} Setup failed.
+        ///   Looks up a localized string similar to {0} Setup failed..
         /// </summary>
         public static string _0SetupFailed {
             get {
@@ -133,7 +124,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Browse.
+        ///   Looks up a localized string similar to Browse....
         /// </summary>
         public static string Browse {
             get {
@@ -196,7 +187,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Changes will not take fffect until you reboot the system.
+        ///   Looks up a localized string similar to Your computer must be restarted in order to complete the installation of {0}. Do you want to reboot now?.
         /// </summary>
         public static string ChangesWillNotTakeEffectUntilReboot0 {
             get {
@@ -205,7 +196,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Click &apos;Repair&apos; to repair {0} or &apos;Uninstall&apos; to remove it.
+        ///   Looks up a localized string similar to Change, repair, or remove installation.
         /// </summary>
         public static string ClickRepairToRepairOrUninstallToRemoveIt {
             get {
@@ -214,7 +205,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Close.
+        ///   Looks up a localized string similar to Finish.
         /// </summary>
         public static string Close {
             get {
@@ -232,7 +223,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copy.
+        ///   Looks up a localized string similar to Copy Details To Clipboard.
         /// </summary>
         public static string CopyToClipboard {
             get {
@@ -250,7 +241,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Database connection.
+        ///   Looks up a localized string similar to Database configuration.
         /// </summary>
         public static string DatabaseConnection {
             get {
@@ -259,7 +250,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Database Server.
+        ///   Looks up a localized string similar to Server.
         /// </summary>
         public static string DbServer {
             get {
@@ -288,7 +279,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Executing {0}.
+        ///   Looks up a localized string similar to Processing {0}.
         /// </summary>
         public static string Executing0 {
             get {
@@ -334,7 +325,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Getting Ready ....
+        ///   Looks up a localized string similar to Please wait while the Setup Wizard prepares to guide you through the installation..
         /// </summary>
         public static string GettingReady {
             get {
@@ -387,7 +378,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Installation folder.
+        ///   Looks up a localized string similar to Installation folder:.
         /// </summary>
         public static string InstallationFolder {
             get {
@@ -405,7 +396,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install Folder.
+        ///   Looks up a localized string similar to Destination Folder.
         /// </summary>
         public static string InstallFolder {
             get {
@@ -423,7 +414,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid user name or password.
+        ///   Looks up a localized string similar to Invalid user name or password..
         /// </summary>
         public static string InvalidCredentials {
             get {
@@ -441,7 +432,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Modify.
+        ///   Looks up a localized string similar to Change.
         /// </summary>
         public static string Modify {
             get {
@@ -486,7 +477,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open failure log.
+        ///   Looks up a localized string similar to View the Log File.
         /// </summary>
         public static string OpenFailureLog {
             get {
@@ -513,7 +504,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Database connection.
+        ///   Looks up a localized string similar to Database.
         /// </summary>
         public static string PageTitle_Database {
             get {
@@ -531,7 +522,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Target folder.
+        ///   Looks up a localized string similar to Destination Folder.
         /// </summary>
         public static string PageTitle_InstallLocation {
             get {
@@ -540,7 +531,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select features.
+        ///   Looks up a localized string similar to Product Features.
         /// </summary>
         public static string PageTitle_PageSelection {
             get {
@@ -549,7 +540,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install progress.
+        ///   Looks up a localized string similar to Installation Progress.
         /// </summary>
         public static string PageTitle_Progress {
             get {
@@ -558,7 +549,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maintenance.
+        ///   Looks up a localized string similar to Maintenance Options.
         /// </summary>
         public static string PageTitle_Repair {
             get {
@@ -576,7 +567,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ready to install.
+        ///   Looks up a localized string similar to Summary.
         /// </summary>
         public static string PageTitle_Summary {
             get {
@@ -594,7 +585,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please provide user name for SQL authentication.
+        ///   Looks up a localized string similar to User Name Required.
         /// </summary>
         public static string PleaseProvideSqlUserName {
             get {
@@ -621,7 +612,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please review parameters and click &apos;Install&apos; when ready.
+        ///   Looks up a localized string similar to Ready to Install.
         /// </summary>
         public static string ReadyToInstall {
             get {
@@ -639,7 +630,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Restart.
+        ///   Looks up a localized string similar to Reboot now.
         /// </summary>
         public static string Restart {
             get {
@@ -666,7 +657,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select Pages for the Installation Wizard.
+        ///   Looks up a localized string similar to Product features.
         /// </summary>
         public static string SelectInstallationPages {
             get {
@@ -703,7 +694,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Uninstall.
+        ///   Looks up a localized string similar to Remove.
         /// </summary>
         public static string Uninstall {
             get {
@@ -712,7 +703,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User.
+        ///   Looks up a localized string similar to Username.
         /// </summary>
         public static string UserName {
             get {
@@ -757,17 +748,7 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We need to reboot the machine now.
-        ///{0} will continue after you login again.
-        /// </summary>
-        public static string WeNeedToRebootNow_0WillContinueAfterYouLoginAgain {
-            get {
-                return ResourceManager.GetString("WeNeedToRebootNow_0WillContinueAfterYouLoginAgain", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Windows.
+        ///   Looks up a localized string similar to Windows Authentication.
         /// </summary>
         public static string WindowsAuthentication {
             get {

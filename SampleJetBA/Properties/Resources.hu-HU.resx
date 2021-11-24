@@ -246,7 +246,7 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Célmappa</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>A termék szolgáltatásai</value>
+    <value>A termék funkciói</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Telepítés állapota</value>
@@ -288,7 +288,7 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Újra</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
-    <value>A termék szolgáltatásai</value>
+    <value>A termék funkciói</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Szolgáltatásfiók</value>
@@ -331,9 +331,9 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>A mappa „{0}” elérési útja érvénytelen karaktert tartalmaz.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}A telepítés sikertelen volt.</value>
+    <value>{{0} – }A telepítés sikertelen volt.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}A telepítés sikeresen befejeződött.</value>
+    <value>{{0} – }A telepítés sikeresen befejeződött.</value>
   </data>
 </root>

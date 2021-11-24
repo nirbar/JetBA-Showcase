@@ -213,7 +213,7 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>Carregar</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modificar</value>
+    <value>Alterar</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Avançar</value>
@@ -246,7 +246,7 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>Pasta de Destino</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Recursos do produto</value>
+    <value>Recursos do Produto</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Progresso da Instalação</value>
@@ -331,9 +331,9 @@ Após reiniciar seu computador execute o instalador de novo pra completar a inst
     <value>O caminho da pasta '{0}' contém um caractere inválido.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Falha na Instalação do {0}.</value>
+    <value>Falha na instalação do {0} .</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalação do {0}concluída com sucesso.</value>
+    <value>A instalação do {0} foi concluída com êxito.</value>
   </data>
 </root>

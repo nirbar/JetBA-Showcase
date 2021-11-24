@@ -194,6 +194,9 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="InstallFolder" xml:space="preserve">
     <value>Dosje destinacion</value>
   </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Ndryshoje</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Pasuesi</value>
   </data>
@@ -216,7 +219,10 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
     <value>Përfundo</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Dosja e vendmbërritjes</value>
+    <value>Dosje destinacion</value>
+  </data>
+  <data name="PageTitle_PageSelection" xml:space="preserve">
+    <value>Veçori Produkti</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Progresi i instalimit</value>
@@ -244,6 +250,9 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Riprovoni</value>
+  </data>
+  <data name="SelectInstallationPages" xml:space="preserve">
+    <value>Veçori produkti</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Llogaria e shërbimit</value>
@@ -275,5 +284,11 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Shtegu i dosjes '{0}' përmban një shenjë të pavlefshme.</value>
+  </data>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>{0} Rregullimi dështoi.</value>
+  </data>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>{0} Rregullimi u plotësua me sukses.</value>
   </data>
 </root>

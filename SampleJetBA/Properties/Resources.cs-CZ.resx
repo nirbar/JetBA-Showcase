@@ -334,9 +334,9 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Cesta ke složce {0} obsahuje neplatný znak.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Instalační program produktu {0} selhal.</value>
+    <value>Instalace produktu {0} se nezdařila.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalační program produktu {0} se úspěšně dokončil.</value>
+    <value>Instalace produktu {0} byla úspěšně dokončena.</value>
   </data>
 </root>

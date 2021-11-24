@@ -213,7 +213,7 @@
     <value>लोड करें</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>संशोधित करें</value>
+    <value>बदलें</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>अगला</value>
@@ -331,9 +331,9 @@
     <value>फ़ोल्‍डर पथ '{0}' में अमान्‍य वर्ण है.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}सेटअप विफल रहा.</value>
+    <value>{0} सेटअप विफल रहा.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}सेटअप सफलतापूर्वक पूरा हुआ.</value>
+    <value>{0} सेटअप सफलतापूर्वक पूर्ण.</value>
   </data>
 </root>

@@ -216,7 +216,7 @@
     <value>加载</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>修改</value>
+    <value>更改(C)</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>下一步(N)</value>
@@ -334,9 +334,9 @@
     <value>文件夹路径“{0}”中含有非法字符。</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}安装程序失败。</value>
+    <value>{0} 安装失败。</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}安装程序已成功完成。</value>
+    <value>{0} 的安装已成功完成。</value>
   </data>
 </root>

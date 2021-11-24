@@ -213,7 +213,7 @@
     <value>Зареди</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Модифициране</value>
+    <value>Промени</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Напред</value>
@@ -243,10 +243,10 @@
     <value>Готово</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Папка на местоназначение</value>
+    <value>Папка местоназначение</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Функции на продукта</value>
+    <value>Компоненти на продукта</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Ход на инсталирането</value>
@@ -288,7 +288,7 @@
     <value>Опитай пак</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Функции на продукта</value>
+    <value>Компоненти на продукта</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Сервизен акаунт</value>
@@ -331,9 +331,9 @@
     <value>Пътят на папката "{0}" съдържа невалиден знак.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}Неуспешна настройка.</value>
+    <value>Инсталирането на {0}  е неуспешно.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}Настройката завърши успешно.</value>
+    <value>Инсталирането на {0} завърши успешно.</value>
   </data>
 </root>

@@ -334,9 +334,9 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Het pad {0} bevat een ongeldig teken.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>De installatie van {0}is mislukt.</value>
+    <value>De installatie van {0}  is mislukt.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>De installatie van {0}is voltooid.</value>
+    <value>De installatie van {0}  is voltooid.</value>
   </data>
 </root>

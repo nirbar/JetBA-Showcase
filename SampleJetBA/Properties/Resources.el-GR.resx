@@ -213,7 +213,7 @@
     <value>Φόρτωση</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Τροποποίηση</value>
+    <value>Αλλαγή</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Επόμενο</value>
@@ -331,9 +331,9 @@
     <value>Η διαδρομή φακέλου "{0}" περιέχει ένα μη έγκυρο χαρακτήρα.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Η εγκατάσταση του {0}απέτυχε.</value>
+    <value>Η εγκατάσταση του {0}  απέτυχε.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Η εγκατάσταση του {0}ολοκληρώθηκε με επιτυχία.</value>
+    <value>Η εγκατάσταση του {0} ολοκληρώθηκε με επιτυχία.</value>
   </data>
 </root>

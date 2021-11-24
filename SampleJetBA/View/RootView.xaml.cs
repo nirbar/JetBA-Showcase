@@ -169,5 +169,19 @@ namespace SampleJetBA.View
                 PopupViewModel.Refresh();
             }
         }
+
+        private void showLicenses_Click(object sender, RoutedEventArgs e)
+        {
+            string openSrcLicPath = Assembly.GetExecutingAssembly().Location;
+            openSrcLicPath = Path.GetDirectoryName(openSrcLicPath);
+            openSrcLicPath = Path.Combine(openSrcLicPath, "LICENSE.md");
+            if (!File.Exists(openSrcLicPath))
+            {
+                return;
+            }
+
+            string text = File.ReadAllText(openSrcLicPath);
+            PopupViewModel.Show(nameof(Properties.Resources.Note), text, PopupViewModel.IconHint.Information, nameof(Properties.Resources.OK));
+        }
     }
 }

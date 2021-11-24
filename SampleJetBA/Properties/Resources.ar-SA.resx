@@ -216,7 +216,7 @@
     <value>تحميل</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>تعديل</value>
+    <value>تغيير</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>التالي</value>
@@ -246,7 +246,7 @@
     <value>إنهاء</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>مجلد الوجهة</value>
+    <value>المجلد الوجهة</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
     <value>ميزات المنتج</value>
@@ -334,9 +334,9 @@
     <value>‏‏يحتوي مسار المجلد '{0}' على حرف غير صالح.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>فشل إعداد {0}.</value>
+    <value>‏‏فشل إعداد {0}.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>اكتمل إعداد {0}بنجاح.</value>
+    <value>‏‏اكتمل إعداد {0} بنجاح.</value>
   </data>
 </root>

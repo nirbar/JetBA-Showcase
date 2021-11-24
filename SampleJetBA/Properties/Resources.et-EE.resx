@@ -194,6 +194,9 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   <data name="InstallFolder" xml:space="preserve">
     <value>Sihtkaust</value>
   </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Muuda</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Edasi</value>
   </data>
@@ -216,7 +219,7 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
     <value>Valmis</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Sihtkataloog</value>
+    <value>Sihtkaust</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
     <value>Toote funktsioonid</value>
@@ -278,5 +281,11 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Kaustatee {0} sisaldab sobimatut märki.</value>
+  </data>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>Toote {0} installimine nurjus.</value>
+  </data>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>Toote {0} installimine on edukalt lõpule viidud.</value>
   </data>
 </root>

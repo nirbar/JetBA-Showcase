@@ -243,10 +243,10 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Terminare</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>Folder de destinație</value>
+    <value>Folderul de destinaţie</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Caracteristici produs</value>
+    <value>Caracteristicile produsului</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Stadiu instalare</value>
@@ -331,9 +331,9 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Calea folderului „{0}” conţine un caracter nevalid.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Instalarea {0} a eșuat.</value>
+    <value>Instalarea {0}  nu a reuşit.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalarea {0}s-a finalizat cu succes.</value>
+    <value>Instalarea {0}  s-a finalizat cu succes.</value>
   </data>
 </root>

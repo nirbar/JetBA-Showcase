@@ -216,7 +216,7 @@
     <value>โหลด</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>ปรับเปลี่ยน</value>
+    <value>เปลี่ยน</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>ถัดไป</value>
@@ -249,7 +249,7 @@
     <value>โฟลเดอร์ปลายทาง</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>คุณลักษณะของผลิตภัณฑ์</value>
+    <value>คุณลักษณะผลิตภัณฑ์</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>ความคืบหน้าการติดตั้ง</value>
@@ -291,7 +291,7 @@
     <value>ลองใหม่</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
-    <value>คุณลักษณะของผลิตภัณฑ์</value>
+    <value>คุณลักษณะผลิตภัณฑ์</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>บัญชีบริการ</value>
@@ -334,9 +334,9 @@
     <value>เส้นทางโฟลเดอร์ '{0}' มีอักขระที่ไม่ถูกต้อง</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>การติดตั้ง {0} ไม่สำเร็จ</value>
+    <value>การติดตั้ง {0} ล้มเหลว</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>การติดตั้ง {0} เสร็จเรียบร้อยแล้ว</value>
+    <value>การติดตั้ง {0} เสร็จสมบูรณ์</value>
   </data>
 </root>

@@ -218,7 +218,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Carica</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modifica</value>
+    <value>Cambia</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Avanti</value>
@@ -336,9 +336,9 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Il percorso della cartella '{0}' contiene un carattere non valido.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>L'installazione di {0}non è riuscita.</value>
+    <value>Impossibile installare {0} .</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>L'installazione di {0}è stata completata.</value>
+    <value>Installazione di {0} completata.</value>
   </data>
 </root>

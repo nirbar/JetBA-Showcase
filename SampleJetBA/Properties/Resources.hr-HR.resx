@@ -213,7 +213,7 @@ Nakon ponovnog pokretanja računala, pokreni instalaciju ponovo, kako bi se dovr
     <value>Učitaj</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Izmijeni</value>
+    <value>Promijeni</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Dalje</value>
@@ -331,9 +331,9 @@ Nakon ponovnog pokretanja računala, pokreni instalaciju ponovo, kako bi se dovr
     <value>Put mape "{0}" sadrži znak koji nije valjan.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Postavljanje programa {0} nije uspjelo.</value>
+    <value>Instalacija programa {0} nije uspjela.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Postavljanje programa {0} uspješno je dovršeno.</value>
+    <value>Instalacija programa {0} uspješno je dovršena.</value>
   </data>
 </root>

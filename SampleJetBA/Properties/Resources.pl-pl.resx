@@ -216,7 +216,7 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Załaduj</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modyfikuj</value>
+    <value>Zmień</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Dalej</value>
@@ -334,9 +334,9 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Ścieżka folderu „{0}” zawiera nieprawidłowy znak.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Instalacja produktu {0}nie powiodła się.</value>
+    <value>Instalacja produktu {0} nie powiodła się.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Instalacja produktu {0}została ukończona pomyślnie.</value>
+    <value>Instalacja produktu {0}  została ukończona pomyślnie.</value>
   </data>
 </root>

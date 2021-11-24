@@ -334,9 +334,9 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
     <value>Mappsökvägen {0} innehåller ett ogiltigt tecken.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Installationen av {0}misslyckades.</value>
+    <value>Installationen av {0}  misslyckades.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Installationen av {0}slutfördes på korrekt sätt.</value>
+    <value>Installationen av {0}  slutfördes.</value>
   </data>
 </root>

@@ -216,7 +216,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Cargar</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modificar</value>
+    <value>Cambiar</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Siguiente</value>
@@ -334,9 +334,9 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>La ruta de acceso a la carpeta '{0}' contiene un carácter no válido.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Error de instalación de {0}.</value>
+    <value>No se pudo instalar {0} .</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>La instalación de {0} finalizó correctamente.</value>
+    <value>La instalación de {0}  se completó correctamente.</value>
   </data>
 </root>

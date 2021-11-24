@@ -249,7 +249,7 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Hedef Klasör</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Ürün özellikleri</value>
+    <value>Ürün Özellikleri</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Yükleme İlerleme Durumu</value>
@@ -334,9 +334,9 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>'{0}' klasör yolu geçersiz karakter içeriyor.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}Kurulumu yapılamadı.</value>
+    <value>{0} Kurulumu başarısız oldu.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}Kurulumu başarıyla tamamlandı.</value>
+    <value>{0} Kurulumu başarıyla tamamlandı.</value>
   </data>
 </root>

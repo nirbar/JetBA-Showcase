@@ -226,7 +226,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.ro-RO.resx" />
+    <EmbeddedResource Include="Properties\Resources.ro-RO.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.ru-ru.resx" />
     <EmbeddedResource Include="Properties\Resources.sk-SK.resx" />
     <EmbeddedResource Include="Properties\Resources.sl-SI.resx" />
@@ -234,7 +236,9 @@
     <EmbeddedResource Include="Properties\Resources.sr-Latn-CS.resx" />
     <EmbeddedResource Include="Properties\Resources.sv-SE.resx" />
     <EmbeddedResource Include="Properties\Resources.th-TH.resx" />
-    <EmbeddedResource Include="Properties\Resources.tr-TR.resx" />
+    <EmbeddedResource Include="Properties\Resources.tr-TR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.uk-UA.resx" />
     <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
     <EmbeddedResource Include="Properties\Resources.zh-TW.resx" />

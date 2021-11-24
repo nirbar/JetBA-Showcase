@@ -213,7 +213,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Carregar</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modificar</value>
+    <value>Alterar</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Seguinte</value>
@@ -246,7 +246,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Pasta de Destino</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Funcionalidades do produto</value>
+    <value>Funcionalidades do Produto</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Progresso da Instalação</value>
@@ -331,9 +331,9 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>O caminho da pasta '{0}' contém um carácter inválido.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Falha na Configuração do {0}.</value>
+    <value>O Programa de Configuração do {0} falhou.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>A Configuração do {0} foi concluída com êxito.</value>
+    <value>O Programa de Configuração do {0} foi concluído com êxito.</value>
   </data>
 </root>

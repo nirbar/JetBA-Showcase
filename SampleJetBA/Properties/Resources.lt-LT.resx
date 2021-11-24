@@ -216,7 +216,7 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Įkelti</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Modifikuoti</value>
+    <value>Keisti</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Pirmyn</value>
@@ -249,7 +249,7 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Paskirties aplankas</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
-    <value>Produkto funkcijos</value>
+    <value>Produkto priemonės</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
     <value>Diegimo eiga</value>
@@ -291,7 +291,7 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Kartoti</value>
   </data>
   <data name="SelectInstallationPages" xml:space="preserve">
-    <value>Produkto funkcijos</value>
+    <value>Produkto priemonės</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Tarnybos abonementas</value>
@@ -334,9 +334,9 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Aplanko kelyje {0} yra netinkamas simbolis.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>„{0}“sąranka nepavyko.</value>
+    <value>{0} sąranka nepavyko.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>„{0}“sąranka sėkmingai baigta.</value>
+    <value>{0} sąranka atlikta sėkmingai.</value>
   </data>
 </root>

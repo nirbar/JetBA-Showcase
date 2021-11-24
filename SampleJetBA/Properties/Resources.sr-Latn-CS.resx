@@ -194,6 +194,9 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   <data name="InstallFolder" xml:space="preserve">
     <value>Odredišna fascikla</value>
   </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Promeni</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Dalje</value>
   </data>
@@ -216,8 +219,7 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
     <value>Završi</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
-    <value>
-    </value>
+    <value>Odredišna fascikla</value>
   </data>
   <data name="PageTitle_PageSelection" xml:space="preserve">
     <value>Funkcije proizvoda</value>
@@ -279,5 +281,11 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   </data>
   <data name="_0IsNotALegalFolderName" xml:space="preserve">
     <value>Putanja fascikle „{0}“ sadrži nevažeći znak.</value>
+  </data>
+  <data name="_0SetupFailed" xml:space="preserve">
+    <value>Nije uspela instalacija proizvoda {0} .</value>
+  </data>
+  <data name="_0SuccessfullyFinished" xml:space="preserve">
+    <value>Uspešno je dovršena instalacija proizvoda {0} .</value>
   </data>
 </root>

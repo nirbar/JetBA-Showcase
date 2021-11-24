@@ -213,7 +213,7 @@
     <value>로드</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>수정</value>
+    <value>변경(C)</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>다음(N)</value>
@@ -331,9 +331,9 @@
     <value>폴더 경로 '{0}'에 사용할 수 없는 문자가 들어 있습니다.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{0}설치하지 못했습니다.</value>
+    <value>{0} 이(가) 설치되지 않았습니다.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{0}설치를 완료했습니다.</value>
+    <value>{0} 이(가) 설치되었습니다.</value>
   </data>
 </root>

@@ -213,7 +213,7 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Indlæs</value>
   </data>
   <data name="Modify" xml:space="preserve">
-    <value>Rediger</value>
+    <value>Skift</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>Næste</value>
@@ -331,9 +331,9 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Mappestien '{0}' indeholder et ugyldigt tegn.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>Installationen af {0} mislykkedes.</value>
+    <value>{0}  blev ikke installeret.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>Installationen af {0} blev fuldført.</value>
+    <value>Installationen af {0}  er fuldført.</value>
   </data>
 </root>
