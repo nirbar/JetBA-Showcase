@@ -3,6 +3,7 @@
 - FilesInUseExit
 - WixUIBack
 - CustomizeDlgBrowse
+- ProgressTextBindImageTemplate
 - WixUICancel
 - WixUINo
 - Error1602
@@ -25,6 +26,7 @@
 - MaintenanceTypeDlgRepairButton
 - FeaturesDlgTree
 - MaintenanceTypeDlgRemoveButton
+- Error1702
 - InstallDirDlgFolderLabel
 - Error1324
 - Error33

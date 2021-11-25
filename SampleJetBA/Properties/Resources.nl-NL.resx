@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Bladeren...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Bestand: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuleren</value>
   </data>
@@ -320,6 +323,9 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Waarschuwing</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Het systeem moet opnieuw worden opgestart voordat de configuratie van {0} kan doorgaan. Klik op Ja als u de computer nu opnieuw wilt opstarten of op Nee als u de computer later handmatig opnieuw wilt opstarten.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-authenticatie</value>

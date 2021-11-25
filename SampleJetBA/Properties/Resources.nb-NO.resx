@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Bla gjennom...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fil: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Avbryt</value>
   </data>
@@ -320,6 +323,9 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Advarsel</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Du må starte systemet på nytt før konfigurasjonen av {0} kan fortsette. Velg Ja hvis du vil starte på nytt nå, eller Nei for å starte på nytt manuelt senere.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-godkjenning</value>

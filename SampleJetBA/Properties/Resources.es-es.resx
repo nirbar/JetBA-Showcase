@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Examinar...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Archivo: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
@@ -320,6 +323,9 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Advertencia</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>El instalador debe reiniciar el sistema para que la configuración de {0} pueda continuar. Haga clic en Sí para reiniciar el sistema ahora o No si pretende reiniciarlo manualmente más tarde.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Autenticación de Windows</value>

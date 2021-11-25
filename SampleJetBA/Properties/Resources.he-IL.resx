@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>עיון...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>קובץ: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>ביטול</value>
   </data>
@@ -320,6 +323,9 @@
   </data>
   <data name="Warning" xml:space="preserve">
     <value>אזהרה</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>המתקין חייב להפעיל מחדש את המערכת שלך כדי שניתן יהיה להמשיך עם קביעת התצורה של {0}. לחץ על 'כן' כדי להפעיל מחדש כעת, או על 'לא' אם בכוונתך להפעיל מחדש באופן ידני מאוחר יותר.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>אימות Windows</value>

@@ -123,13 +123,26 @@ namespace SampleJetBA
         protected override void OnApplyComplete(ApplyCompleteEventArgs args)
         {
             base.OnApplyComplete(args);
-            if ((args.Restart == ApplyRestart.RestartInitiated) && (Kernel.Get<Display>() == Display.Full))
+            if ((args.Restart >= ApplyRestart.RestartRequired) && (Kernel.Get<Display>() == Display.Full))
             {
                 PopupViewModel popup = Kernel.Get<PopupViewModel>();
                 ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
                 VariablesViewModel vars = Kernel.Get<VariablesViewModel>();
-                PanelSW.Installer.JetBA.Localization.Resources local = Kernel.Get<PanelSW.Installer.JetBA.Localization.Resources>();
-                popup.ShowSync(Properties.Resources.Restart, nameof(Properties.Resources.ERROR_FAIL_NOACTION_REBOOT_0), PopupViewModel.IconHint.Information, local.OK, null, null, PopupViewModel.Buttons.Right, vars["WixBundleName"].String);
+                PopupViewModel.Buttons res = popup.ShowSync(Properties.Resources.Restart, nameof(Properties.Resources.WeNeedToRebootNow0), PopupViewModel.IconHint.Information
+                    , nameof(Properties.Resources.Yes)
+                    , nameof(Properties.Resources.No)
+                    , null
+                    , PopupViewModel.Buttons.Right
+                    , vars["WixBundleName"].String);
+
+                if (res == PopupViewModel.Buttons.Right)
+                {
+                    apply.RebootState = ApplyRestart.RestartInitiated;
+                }
+                else
+                {
+                    apply.RebootState = ApplyRestart.RestartRequired;
+                }
             }
         }
 

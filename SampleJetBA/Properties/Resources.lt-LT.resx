@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Naršyti...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Failas: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Atšaukti</value>
   </data>
@@ -320,6 +323,9 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Įspėjimas</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Diegimo programa turi paleisti sistemą iš naujo, kad būtų galima tęsti {0} konfigūravimą. Spustelėkite Taip ir paleiskite iš naujo dabar arba spustelėkite Ne ir paleiskite iš naujo vėliau neautomatiškai.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>„Windows“ autentifikavimas</value>

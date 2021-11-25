@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Przeglądaj...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Plik: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anuluj</value>
   </data>
@@ -320,6 +323,9 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Ostrzeżenie</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Instalator musi ponownie uruchomić system przed kontynuowaniem konfiguracji {0}. Kliknij przycisk Tak, aby uruchomić system ponownie, lub przycisk Nie, jeśli planujesz ręczne ponowne uruchomienie systemu później.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Uwierzytelnianie systemu Windows</value>

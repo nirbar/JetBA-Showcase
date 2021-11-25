@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Огляд...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Файл: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
   </data>
@@ -317,6 +320,9 @@
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Увага!</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Перед продовженням настроювання {0} інсталятору необхідно перезавантажити систему. Для негайного перезавантаження натисніть кнопку "Так". Щоб пізніше перезавантажити систему вручну, натисніть кнопку "Ні".</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Автентифікація Windows</value>

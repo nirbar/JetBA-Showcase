@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Pregledaj...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Datoteka: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Odustani</value>
   </data>
@@ -317,6 +320,9 @@ Nakon ponovnog pokretanja računala, pokreni instalaciju ponovo, kako bi se dovr
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Upozorenje</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Instalacijski program mora ponovno pokrenuti sustav da bi se mogla nastaviti konfiguracija programa {0}. Kliknite "Da" da biste odmah ponovno pokrenuli računalo ili "Ne" ako ga namjeravate naknadno ponovno pokrenuti ručno.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Provjera autentičnosti u sustavu Windows</value>

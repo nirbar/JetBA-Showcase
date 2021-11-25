@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Pārlūkot...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fails: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Atcelt</value>
   </data>
@@ -320,6 +323,9 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Brīdinājums</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Lai varētu tupināt {0} konfigurēšanu, instalēšanas programmai  ir jārestartē sistēma. Noklikšķiniet uz Jā, lai restartētu tūlīt, vai uz Nē, ja vēlaties manuāli restartēt vēlāk.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows autentifikācija</value>

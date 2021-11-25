@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Browse...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>File: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -320,6 +323,9 @@ After restarting your computer, run Setup again to complete the installation of 
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Warning</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>The installer must restart your system before configuration of {0} can continue. Click Yes to restart now or No if you plan to manually restart later.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows Authentication</value>

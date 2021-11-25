@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Sfoglia...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>File: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annulla</value>
   </data>
@@ -322,6 +325,9 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Attenzione</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Prima di continuare la configurazione di {0}, è necessario riavviare il sistema. Scegliere Sì per riavviarlo adesso oppure No per riavviarlo in un secondo momento.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Autenticazione di Windows</value>

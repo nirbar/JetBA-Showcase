@@ -126,6 +126,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Shfleoni...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Skedar: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anuloje</value>
   </data>
@@ -272,6 +275,9 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Instaluesi duhet të rinisë sistemin tuaj, përpara se të mund të vazhdohet me formësimin e {0}. Klikoni mbi Po, që të riniset tani, ose mbi Jo, nëse keni në plan ta rinisni dorazi më vonë.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Vërtetimi i Windows</value>

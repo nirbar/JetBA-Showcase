@@ -126,6 +126,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Sirvimine...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fail: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Loobu</value>
   </data>
@@ -272,6 +275,9 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Enne toote {0} konfigureerimise jätkamist peab installer süsteemi taaskäivitama. Arvuti kohe taaskäivitamiseks klõpsake käsul Jah, hiljem käsitsi taaskäivitamiseks klõpsake käsul Ei.</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Jah</value>

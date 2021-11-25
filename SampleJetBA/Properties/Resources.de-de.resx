@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Durchsuchen...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Datei: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Abbrechen</value>
   </data>
@@ -320,6 +323,9 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Warnung</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Das Installationsprogramm muss den Computer neu starten, damit die Konfiguration von {0} fortgesetzt werden kann. Klicken Sie auf "Ja", um den Computer jetzt neu zu starten, oder auf "Nein", um den Computer später manuell neu zu starten.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-Authentifizierung</value>

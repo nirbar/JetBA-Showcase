@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Αναζήτηση...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Αρχείο: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Άκυρο</value>
   </data>
@@ -317,6 +320,9 @@
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Προειδοπ</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Το πρόγραμμα εγκατάστασης πρέπει να επανεκκινήσει το σύστημά σας, για να συνεχιστεί η ρύθμιση των παραμέτρων του {0}. Κάντε κλικ στο κουμπί "Ναι", για να γίνει επανεκκίνηση τώρα ή στο κουμπί "Όχι", εάν θέλετε να κάνετε επανεκκίνηση αργότερα με μη αυτόματο τρόπο.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Έλεγχος ταυτότητας των Windows</value>

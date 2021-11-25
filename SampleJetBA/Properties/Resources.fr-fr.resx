@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Parcourir...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fichier : {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuler</value>
   </data>
@@ -320,6 +323,9 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Avertissement</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Le programme d'installation doit redémarrer l'ordinateur afin de poursuivre la configuration de {0}. Cliquez sur Oui pour redémarrer maintenant, ou sur Non pour redémarrer manuellement ultérieurement.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Authentification Windows</value>

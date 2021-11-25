@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Tallózás...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fájl: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Mégse</value>
   </data>
@@ -318,6 +321,9 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
   <data name="Warning" xml:space="preserve">
     <value>Figyelmeztet</value>
   </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>A telepítőnek újra kell indítania a rendszert a(z) {0} konfigurálásának folytatása előtt. Kattintson az Igen gombra az azonnali újraindításhoz, vagy a Nem gombra, ha később kívánja újraindítani a számítógépet.</value>
+  </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-hitelesítés</value>
   </data>
@@ -331,9 +337,9 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>A mappa „{0}” elérési útja érvénytelen karaktert tartalmaz.</value>
   </data>
   <data name="_0SetupFailed" xml:space="preserve">
-    <value>{{0} – }A telepítés sikertelen volt.</value>
+    <value>{0} - A telepítés sikertelen volt.</value>
   </data>
   <data name="_0SuccessfullyFinished" xml:space="preserve">
-    <value>{{0} – }A telepítés sikeresen befejeződött.</value>
+    <value>{0} - A telepítés sikeresen befejeződött.</value>
   </data>
 </root>

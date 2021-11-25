@@ -126,6 +126,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Potraži…</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Datoteka: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Otkaži</value>
   </data>
@@ -272,6 +275,9 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   </data>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>U redu</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Instalacioni program mora ponovo da pokrene sistem da bi moglo da se nastavi sa konfigurisanjem programa {0}. Kliknite na dugme „Da“ da biste odmah ponovo pokrenuli računar ili na dugme „Ne“ ako planirate da kasnije ručno ponovo pokrenete računar.</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Da</value>

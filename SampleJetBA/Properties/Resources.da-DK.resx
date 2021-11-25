@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Gennemse...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fil: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuller</value>
   </data>
@@ -317,6 +320,9 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Advarsel</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Installationsprogrammet skal genstarte programmet, før konfigurationen af {0} kan fortsætte. Klik på Ja for at genstarte nu, eller klik på Nej, hvis du vil genstarte manuelt senere.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-godkendelse</value>

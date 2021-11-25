@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Navega...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fitxer: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel·la</value>
   </data>
@@ -317,6 +320,9 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Advertiment</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Cal que l'instal·lador reiniciï el sistema perquè pugui continuar la instal·lació del producte {0}. Feu clic a Sí per reiniciar-lo ara o a No si teniu previst reiniciar-lo manualment més tard.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Autenticació del Windows</value>

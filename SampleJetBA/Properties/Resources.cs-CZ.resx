@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Procházet...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Soubor: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Storno</value>
   </data>
@@ -320,6 +323,9 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Upozornění</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Před pokračováním konfigurace produktu {0} je třeba, aby instalační služba restartovala počítač. Kliknete-li na tlačítko Ano, bude počítač restartován ihned. Pokud chcete počítač restartovat později ručně, klikněte na tlačítko Ne.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Ověřování Windows</value>

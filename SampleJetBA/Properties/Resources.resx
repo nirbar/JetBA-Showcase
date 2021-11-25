@@ -345,6 +345,9 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="Warning" xml:space="preserve">
     <value>Warning</value>
   </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>The installer must restart your system before configuration of {0} can continue. Click Yes to restart now or No if you plan to manually restart later.</value>
+  </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows Authentication</value>
   </data>

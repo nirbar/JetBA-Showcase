@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Prebrskaj ...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Datoteka: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Prekliči</value>
   </data>
@@ -317,6 +320,9 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Opozorilo</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Namestitveni program mora znova zagnati sistem, preden lahko nadaljuje konfiguracijo {0}. Kliknite »Da«, da sistem takoj zaženete znova, če pa želite to sami storiti pozneje, kliknite »Ne«.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Preverjanje pristnosti sistema Windows</value>

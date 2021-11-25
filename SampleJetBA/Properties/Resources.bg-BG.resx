@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Преглед...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Файл: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отказ</value>
   </data>
@@ -317,6 +320,9 @@
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Предупреждение</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Инсталиращата програма трябва да рестартира компютъра, за да продължи конфигурирането на {0}. Щракнете върху "Да", за да рестартирате сега, или върху "Не", ако искате да рестартирате ръчно по-късно.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Удостоверяване на Windows</value>

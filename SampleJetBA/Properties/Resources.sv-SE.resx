@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Bläddra...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fil: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Avbryt</value>
   </data>
@@ -320,6 +323,9 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Varning</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Datorn måste startas om innan konfigurationen av {0} kan fortsätta. Klicka på Ja om du vill starta om nu, eller på Nej om du vill starta om manuellt senare.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-autentisering</value>

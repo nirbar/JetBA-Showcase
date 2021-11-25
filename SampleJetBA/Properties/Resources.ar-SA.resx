@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>استعراض...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>الملف: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>إلغاء الأمر</value>
   </data>
@@ -320,6 +323,9 @@
   </data>
   <data name="Warning" xml:space="preserve">
     <value>تحذير</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>يجب على المثبت إعادة تشغيل النظام قبل متابعة تكوين {0}. انقر فوق "نعم" لإعادة التشغيل الآن، أو فوق "لا" إذا كنت تنوي القيام بإعادة التشغيل يدويًا في وقت لاحق.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>مصادقة Windows</value>

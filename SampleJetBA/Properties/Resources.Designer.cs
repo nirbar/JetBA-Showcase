@@ -748,6 +748,15 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The installer must restart your system before configuration of {0} can continue. Click Yes to restart now or No if you plan to manually restart later..
+        /// </summary>
+        public static string WeNeedToRebootNow0 {
+            get {
+                return ResourceManager.GetString("WeNeedToRebootNow0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Windows Authentication.
         /// </summary>
         public static string WindowsAuthentication {

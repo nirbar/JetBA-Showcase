@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Prehľadávať...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Súbor: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Zrušiť</value>
   </data>
@@ -317,6 +320,9 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Upozornenie</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Konfigurácia programu {0} môže pokračovať až po reštartovaní systému inštalátorom. Ak chcete reštartovať počítač, kliknite na tlačidlo Áno. Ak chcete reštartovať počítač neskôr manuálne, kliknite na tlačidlo Nie.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Overovanie Windowsu</value>

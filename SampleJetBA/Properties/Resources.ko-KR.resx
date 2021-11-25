@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>찾아보기(R)...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>파일: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>취소</value>
   </data>
@@ -317,6 +320,9 @@
   </data>
   <data name="Warning" xml:space="preserve">
     <value>경고</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>시스템을 다시 시작한 후에 {0} 구성을 계속할 수 있습니다. 지금 다시 시작하려면 "예"를 클릭하고, 나중에 수동으로 다시 시작하려면 "아니요"를 클릭하십시오.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows 인증</value>

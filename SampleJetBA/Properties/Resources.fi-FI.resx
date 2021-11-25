@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Selaa...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Tiedosto: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Peruuta</value>
   </data>
@@ -320,6 +323,9 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Varoitus</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Asennusohjelman on käynnistettävä järjestelmä uudelleen, ennen kuin kohteen {0} määritys voi jatkua. Valitse Kyllä, jos haluat käynnistää järjestelmän uudelleen nyt, tai Ei, jos haluat käynnistää järjestelmän myöhemmin manuaalisesti.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows-todennus</value>

@@ -126,6 +126,9 @@
   <data name="Browse" xml:space="preserve">
     <value>瀏覽(R)...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>檔案: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
@@ -302,6 +305,9 @@
   </data>
   <data name="Warning" xml:space="preserve">
     <value>警告</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>安裝程式必須重新啟動您的系統才能繼續設定 {0}。請按一下 [\[]是[\]] 立即重新啟動，或如果您想要稍後手動重新啟動請按一下 [\[]否[\]]。</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows 驗證</value>

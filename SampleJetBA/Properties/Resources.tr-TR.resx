@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Gözat...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Dosya: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>İptal</value>
   </data>
@@ -320,6 +323,9 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Uyarı</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Yükleyicinin {0} yapılandırmasına devam edebilmesi için sisteminizi yeniden başlatmanız gerekiyor. Şimdi yeniden başlatmak için Evet'i veya daha sonra el ile yeniden başlatacaksanız Hayır'ı tıklatın.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows Kimlik Doğrulaması</value>

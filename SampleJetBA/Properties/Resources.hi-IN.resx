@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>ब्राउज़ करें...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>फ़ाइल: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>रद्द करें</value>
   </data>
@@ -317,6 +320,9 @@
   </data>
   <data name="Warning" xml:space="preserve">
     <value>चेतावनी</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>{0} में किए गए कॉन्‍फ़िगरेशन परिवर्तनों को प्रभावी बनाने के लिए, आपको अपना सिस्‍टम पुनरारंभ करना होगा. अभी पुनरारंभ करने के लिए हाँ या यदि आप बाद में मैन्‍युअली पुनरारंभ करना चाहते हैं तो नहीं क्‍लिक करें.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Windows प्रमाणन</value>

@@ -129,6 +129,9 @@
   <data name="Browse" xml:space="preserve">
     <value>Răsfoire...</value>
   </data>
+  <data name="Caching0" xml:space="preserve">
+    <value>Fişier: {0}</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Revocare</value>
   </data>
@@ -317,6 +320,9 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Avertizare</value>
+  </data>
+  <data name="WeNeedToRebootNow0" xml:space="preserve">
+    <value>Programul de instalare trebuie să repornească sistemul înainte de a continua configurarea {0}. Faceţi clic pe Da pentru a reporni acum sau pe Nu dacă intenţionaţi să reporniţi manual mai târziu.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
     <value>Autentificare Windows</value>
