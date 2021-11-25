@@ -148,7 +148,7 @@
     <value>Да</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Компютърът трябва да бъде рестартиран, за да завърши инсталирането на {0}. Искате ли да рестартирате сега?</value>
+    <value>Трябва да рестартирате системата, за да се активират конфигурационните промени в {0}. Щракнете върху "Да", за да рестартирате сега, или върху "Не", ако искате да рестартирате ръчно по-късно.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Промяна, поправяне или премахване на инсталация</value>
@@ -208,6 +208,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Папка местоназначение</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Съветникът за инсталиране ще завърши инсталирането на {0} на компютъра. Щракнете върху "Инсталирай", за да продължите, или върху "Отказ" за изход от съветника за инсталиране.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Невалидно потребителско име или парола.</value>

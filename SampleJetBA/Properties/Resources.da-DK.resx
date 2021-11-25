@@ -148,7 +148,7 @@
     <value>Ja</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Din computer skal genstartes for at gennemføre installationen af {0}. Vil du genstarte nu?</value>
+    <value>Du skal genstarte systemet, for at de udførte konfigurationsændringer i {0} kan træde i kraft. Klik på Ja for at genstarte nu, eller klik på Nej, hvis du vil genstarte manuelt senere.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Skift, reparer eller fjern installationen</value>
@@ -208,6 +208,9 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Destinationsmappe</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Guiden Installation fuldfører installationen af {0} på computeren. Klik på Installer for at fortsætte, eller klik på Annuller for at afslutte guiden Installation.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Ugyldigt brugernavn og ugyldig adgangskode.</value>

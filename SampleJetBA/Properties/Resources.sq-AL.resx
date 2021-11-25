@@ -145,7 +145,7 @@
     <value>Po</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Që të mund të plotësohet instalimi i {0}, kompjuteri juaj duhet të riniset. Doni të riniset tani?</value>
+    <value>Që të hyjnë në fuqi ndryshimet e formësimit të bëra te {0}, duhet të rinisni sistemin tuaj. Klikoni mbi Po, që të riniset tani, ose mbi Jo, nëse keni në plan ta rinisni dorazi më vonë.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Ndryshoni, riparoni, ose hiqni një instalim</value>
@@ -196,6 +196,9 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Dosje destinacion</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Ndihmësi i Rregullimit do të plotësojë instalimin e {0} në kompjuterin tuaj. Klikoni mbi Instaloje që të vazhdohet ose mbi Anuloje që të dilet nga Ndihmësi i Rregullimit.</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Ndryshoje</value>

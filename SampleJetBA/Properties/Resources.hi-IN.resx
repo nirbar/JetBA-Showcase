@@ -148,7 +148,7 @@
     <value>हाँ</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0} के इंस्टालेशन को पूरा करने के लिए आपके कंप्यूटर को फिर से शुरू करना होगा। क्या आप अभी रीबूट करना चाहते हैं?</value>
+    <value>{0} में किए गए कॉन्‍फ़िगरेशन परिवर्तनों को प्रभावी बनाने के लिए, आपको अपना सिस्‍टम पुनरारंभ करना होगा. अभी पुनरारंभ करने के लिए हाँ या यदि आप बाद में मैन्‍युअली पुनरारंभ करना चाहते हैं तो नहीं क्‍लिक करें.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>स्थापना बदलें, सुधारें या निकालें</value>
@@ -208,6 +208,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>गंतव्य फ़ोल्डर</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>सेटअप विज़ार्ड आपके कंप्यूटर पर {0} की स्थापना पूरी करेगा. जारी रखने के लिए स्थापित करें क्लिक करें या सेटअप विज़ार्ड से बाहर निकलने के लिए रद्द करें क्लिक करें.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>अमान्य उपयोगकर्ता नाम या पासवर्ड.</value>

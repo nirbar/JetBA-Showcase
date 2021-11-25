@@ -8,6 +8,7 @@
 - WixUINo
 - Error1602
 - WixUIYes
+- Error1703
 - MaintenanceTypeDlgTitle
 - MsiRMFilesInUseTitle
 - MsiRMFilesInUseText
@@ -16,6 +17,7 @@
 - ResumeDlgInstall
 - InstallScopeDlgFolderLabel
 - InstallDirDlgTitle
+- ResumeDlgDescription
 - MaintenanceTypeDlgChangeButton
 - WixUINext
 - WixUIOK
@@ -61,7 +63,6 @@
 
 # The following translations, provided by lookup keys, where copied from NSIS:
 
-- MUI_TEXT_FINISH_INFO_REBOOT
 - MUI_BUTTONTEXT_FINISH
 - ^CopyDetails
 - MUI_TEXT_INSTALLING_SUBTITLE

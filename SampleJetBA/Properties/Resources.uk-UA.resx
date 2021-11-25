@@ -148,7 +148,7 @@
     <value>Так</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Для того, щоб завершити встановлення {0} Ваш комп'ютер повинен перезавантажитися. Зробити це зараз?</value>
+    <value>Щоб внесені до конфігурації {0} зміни набрали сили, необхідно перезавантажити систему. Для негайного перезавантаження натисніть кнопку "Так". Щоб пізніше перезавантажити систему вручну, натисніть кнопку "Ні".</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Змінити, відновити або видалити інсталяцію</value>
@@ -208,6 +208,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Папка призначення</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Майстер завершить інсталяцію програми {0} на комп’ютері. Для продовження натисніть кнопку "Інсталювати". Щоб закрити майстер інсталяції, натисніть кнопку "Скасувати".</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Недійсне ім’я користувача.або пароль.</value>

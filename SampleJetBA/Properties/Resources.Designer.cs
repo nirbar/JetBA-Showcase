@@ -405,11 +405,11 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The machine has restarted. Do you wish to proceed with the operation started before the reboot?.
+        ///   Looks up a localized string similar to The Setup Wizard will complete the installation of {0} on your computer. Click Install to continue or Cancel to exit the Setup Wizard..
         /// </summary>
-        public static string InterruptedRebootPrompt {
+        public static string InterruptedRebootPrompt0 {
             get {
-                return ResourceManager.GetString("InterruptedRebootPrompt", resourceCulture);
+                return ResourceManager.GetString("InterruptedRebootPrompt0", resourceCulture);
             }
         }
         

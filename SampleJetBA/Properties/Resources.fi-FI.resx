@@ -148,7 +148,7 @@
     <value>Kyllä</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0} -ohjelman asennuksen viimeisteleminen edellyttää tietokoneen uudelleenkäynnistämistä. Haluatko käynnistää tietokoneen uudelleen nyt?</value>
+    <value>Sinun on käynnistettävä järjestelmä uudelleen, jotta tuotteen {0} määrityksiin tehdyt muutokset tulisivat voimaan. Käynnistä tietokone uudelleen valitsemalla Kyllä tai käynnistä tietokone itse uudelleen myöhemmin valitsemalla Ei.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Korjaa tai poista asennus tai muuta sitä</value>
@@ -211,6 +211,9 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Kohdekansio</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Ohjattu asennus viimeistelee tuotteen {0} asennuksen tietokoneeseen. Voit jatkaa valitsemalla Asenna tai lopettaa ohjatun asennuksen valitsemalla Peruuta.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Virheellinen käyttäjänimi tai salasana.</value>

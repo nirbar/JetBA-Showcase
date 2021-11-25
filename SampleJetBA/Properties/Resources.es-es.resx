@@ -148,7 +148,7 @@
     <value>Sí</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Su sistema debe ser reiniciado para que pueda completarse la instalación de {0}. ¿Desea reiniciar ahora?</value>
+    <value>Debe reiniciar el sistema para que los cambios de configuración efectuados en {0} surtan efecto. Haga clic en Sí para reiniciar el sistema ahora o elija No si tiene previsto reiniciarlo manualmente más tarde.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Cambiar, reparar o quitar la instalación</value>
@@ -211,6 +211,9 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Carpeta de destino</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>El Asistente para la instalación completará la instalación de {0} en el equipo. Haga clic en Instalar para continuar o en Cancelar para salir del Asistente para la instalación.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nombre de usuario o contraseña no válidos.</value>

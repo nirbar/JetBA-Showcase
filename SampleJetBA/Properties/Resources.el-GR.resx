@@ -148,7 +148,7 @@
     <value>Ναι</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Πρέπει να γίνει επανεκκίνηση του υπολογιστή σας για να ολοκληρωθεί η εγκατάσταση του '{0}'. Θέλετε να επανεκκινήσετε τον υπολογιστή σας τώρα;</value>
+    <value>Πρέπει να κάνετε επανεκκίνηση του συστήματός σας για να ενεργοποιηθούν οι αλλαγές που έγιναν στις ρυθμίσεις των παραμέτρων του {0}. Κάντε κλικ στο κουμπί "Ναι" για να γίνει επανεκκίνηση τώρα ή στο κουμπί "Όχι" εάν θέλετε να κάνετε επανεκκίνηση αργότερα με μη αυτόματο τρόπο.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Αλλαγή, επιδιόρθωση ή κατάργηση εγκατάστασης</value>
@@ -208,6 +208,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Φάκελος προορισμού</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Ο Οδηγός εγκατάστασης θα ολοκληρώσει την εγκατάσταση του {0} στον υπολογιστή σας. Κάντε κλικ στο κουμπί "Εγκατάσταση", για να συνεχίσετε ή στο κουμπί " Άκυρο", για να εξέλθετε από τον Οδηγό εγκατάστασης.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Μη έγκυρο όνομα χρήστη ή κωδικός πρόσβασης.</value>

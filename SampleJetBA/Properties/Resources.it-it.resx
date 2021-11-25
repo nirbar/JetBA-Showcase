@@ -148,7 +148,7 @@
     <value>Sì</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Per completare l'installazione di {0} il computer deve essere riavviato. Vuoi riavviarlo ora?</value>
+    <value>Per rendere effettive le modifiche apportate alla configurazione di {0}, è necessario riavviare il sistema. Scegliere Sì per riavviarlo adesso oppure No per riavviarlo in un secondo momento.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Modifica, riparazione o rimozione installazione</value>
@@ -213,6 +213,9 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Cartella di destinazione</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>L'installazione di {0} nel computer in uso verrà completata. Fare clic su Installa per continuare oppure su Annulla per uscire dall'Installazione guidata.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nome utente o password non valida.</value>

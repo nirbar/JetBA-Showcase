@@ -148,7 +148,7 @@
     <value>예(Y)</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0}의 설치를 완료하기 위해서는 시스템을 다시 시작해야 합니다. 지금 재부팅 하시겠습니까?</value>
+    <value>변경된 구성 설정을 {0}에 적용하려면 시스템을 다시 시작해야 합니다. 지금 다시 시작하려면 "예"를 클릭하고, 나중에 수동으로 다시 시작하려면 "아니요"를 클릭하십시오.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>설치 변경, 복구 또는 제거</value>
@@ -208,6 +208,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>대상 폴더</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>{0} 설치를 완료합니다. 계속하려면 "설치"를 클릭하고 설치 마법사를 끝내려면 "취소"를 클릭하십시오.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>사용자 이름 또는 암호가 잘못되었습니다.</value>

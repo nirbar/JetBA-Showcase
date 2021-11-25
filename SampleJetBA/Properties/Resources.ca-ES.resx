@@ -148,7 +148,7 @@
     <value>Sí</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Cal reiniciar l'ordinador perquè pugui acabar-se la instal·lació de l'aplicació {0}. Voleu reiniciar-lo ara?</value>
+    <value>Heu de reiniciar el sistema perquè els canvis de configuració realitzats al {0} tinguin efecte. Feu clic a Sí per reiniciar-lo ara o a No si teniu previst reiniciar-lo manualment més tard.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Canvi, reparació o supressió de la instal·lació</value>
@@ -208,6 +208,9 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Carpeta de destinació</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>L'auxiliar d'instal·lació completarà la instal·lació del producte {0} a l'ordinador. Feu clic a Instal·la per continuar o a Cancel·la per sortir de l'auxiliar d'instal·lació.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nom d'usuari o contrasenya no vàlid.</value>

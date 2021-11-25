@@ -148,7 +148,7 @@
     <value>כן</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>עלייך לאתחל את המחשב כדי לסיים את התקנת {0}. האם ברצונך לאתחל כעת?</value>
+    <value>עליך להפעיל מחדש את המערכת כדי ששינויי התצורה של {0} ייכנסו לתוקף. לחץ על 'כן', כדי להפעיל מחדש כעת, או על 'לא' אם בכוונתך להפעיל מחדש באופן ידני מאוחר יותר.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>שינוי, תיקון או הסרה של ההתקנה</value>
@@ -211,6 +211,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>תיקיית יעד</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>אשף ההתקנה ישלים את התקנת {0} במחשב שלך. לחץ על 'התקן' כדי להמשיך, או על 'ביטול' כדי לצאת מאשף ההתקנה.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>שם משתמש או סיסמה לא חוקיים.</value>

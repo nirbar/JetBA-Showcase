@@ -148,7 +148,7 @@
     <value>はい(Y)</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0} のインストールを完了するには、このコンピュータを再起動する必要があります。今すぐ再起動しますか？</value>
+    <value>{0} に行った構成の変更を有効にするには、システムを再起動する必要があります。すぐに再起動する場合は [\[]はい[\]] を、後で手動で再起動する場合は [\[]いいえ[\]] をクリックしてください。</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>インストールの変更、修復、または削除</value>
@@ -211,6 +211,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>インストール先フォルダー</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>セットアップ ウィザードは {0} のインストールを完了します。セットアップを続行する場合は [\[]インストール[\]] を、終了する場合は [\[]キャンセル[\]] をクリックしてください。</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>ユーザー名またはパスワードが無効です。</value>

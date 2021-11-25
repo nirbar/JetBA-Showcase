@@ -145,7 +145,7 @@
     <value>是(Y)</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>電腦需要重新開機，才能完成安裝 {0} 。要馬上重新開機嗎？</value>
+    <value>您必須重新啟動系統，才能使對 {0} 的設定變更生效。請按一下 [\[]是[\]] 立即重新啟動，或如果您想要稍後手動重新啟動請按一下 [\[]否[\]]。</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>變更、修復或移除安裝</value>
@@ -202,6 +202,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>目的地資料夾</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>安裝精靈即將完成在您的電腦上安裝 {0}。請按 [\[]安裝[\]] 繼續進行，或按 [\[]取消[\]] 結束安裝精靈。</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>載入</value>

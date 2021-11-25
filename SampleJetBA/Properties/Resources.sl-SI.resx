@@ -148,7 +148,7 @@
     <value>Da</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Za dokončanje namestitve {0} morate ponovno zagnati računalnik. Želite zdaj ponovno zagnati računalnik?</value>
+    <value>Če želite uveljaviti spremembe v konfiguraciji za {0}, znova zaženite računalnik. Kliknite »Da«, če želite računalnik znova zagnati zdaj, če pa želite to sami storiti pozneje, kliknite »Ne«.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Spreminjanje, popravljanje ali odstranjevanje namestitve</value>
@@ -208,6 +208,9 @@ Po ponovnem zagonu raèunalnika znova zaženite namestitveni program, da boste k
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Ciljna mapa</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Čarovnik za namestitev bo dokončal namestitev programa {0} v računalnik. Če želite nadaljevati, kliknite »Namesti« ali »Prekliči«, če želite zapreti čarovnika za namestitev.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Neveljavno uporabniško ime ali geslo.</value>

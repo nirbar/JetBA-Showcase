@@ -230,8 +230,8 @@ INSTALL_FOLDER="C:\Program Files\Sample" - Set terget folder</value>
   <data name="InstallFolder" xml:space="preserve">
     <value>Destination Folder</value>
   </data>
-  <data name="InterruptedRebootPrompt" xml:space="preserve">
-    <value>The machine has restarted. Do you wish to proceed with the operation started before the reboot?</value>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>The Setup Wizard will complete the installation of {0} on your computer. Click Install to continue or Cancel to exit the Setup Wizard.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Invalid user name or password.</value>

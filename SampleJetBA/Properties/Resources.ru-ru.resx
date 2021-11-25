@@ -148,7 +148,7 @@
     <value>Да</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Для завершения установки {0} необходимо перезагрузить компьютер. Хотите сделать это сейчас?</value>
+    <value>Для вступления в силу изменений, сделанных в "{0}", необходимо перезагрузить компьютер. Чтобы перезагрузить компьютер сейчас, нажмите кнопку "Да". Чтобы выполнить перезагрузку позже вручную, нажмите кнопку "Нет".</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Изменение, восстановление или удаление установки</value>
@@ -211,6 +211,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Конечная папка</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Мастер установки завершит установку {0} на компьютер. Нажмите кнопку "Установить", чтобы продолжить, или кнопку "Отмена", чтобы выйти из мастера установки.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Неверное имя пользователя или пароль.</value>

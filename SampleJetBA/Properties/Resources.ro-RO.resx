@@ -148,7 +148,7 @@
     <value>Da</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Trebuie să reporniţi calculatorul pentru a termina instalarea. Doriţi să-l reporniţi acum?</value>
+    <value>Trebuie să reporniţi sistemul pentru ca modificările de configurare efectuate la {0} să fie aplicate. Faceţi clic pe Da pentru a reporni acum sau pe Nu dacă intenţionaţi să reporniţi manual mai târziu.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Modificaţi, reparaţi sau eliminaţi instalarea</value>
@@ -208,6 +208,9 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Folderul de destinaţie</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Expertul de instalare va finaliza instalarea {0} pe computer. Faceţi clic pe Instalare pentru a continua sau pe Revocare pentru a ieşi din Expertul de instalare.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nume de utilizator sau parolă nevalidă.</value>

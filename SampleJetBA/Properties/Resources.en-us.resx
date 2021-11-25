@@ -148,7 +148,7 @@
     <value>Yes</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Your computer must be restarted in order to complete the installation of {0}. Do you want to reboot now?</value>
+    <value>You must restart your system for the configuration changes made to {0} to take effect. Click Yes to restart now or No if you plan to manually restart later.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Change, repair, or remove installation</value>
@@ -211,6 +211,9 @@ After restarting your computer, run Setup again to complete the installation of 
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Destination Folder</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>The Setup Wizard will complete the installation of {0} on your computer. Click Install to continue or Cancel to exit the Setup Wizard.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Invalid user name or password.</value>

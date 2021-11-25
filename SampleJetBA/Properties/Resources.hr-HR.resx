@@ -148,7 +148,7 @@
     <value>Da</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Da bi se dovršila instalacija programa {0}, trebate ponovno pokrenuti računalo. Želite li to učiniti sada?</value>
+    <value>Morate ponovno pokrenuti sustav da bi promjene konfiguracije programa {0} stupile na snagu. Kliknite "Da" da biste odmah ponovno pokrenuli računalo ili "Ne" ako ga planirate ponovno pokrenuti ručno kasnije.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Promjena, popravak i uklanjanje instalacije</value>
@@ -208,6 +208,9 @@ Nakon ponovnog pokretanja računala, pokreni instalaciju ponovo, kako bi se dovr
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Odredišna mapa</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Čarobnjak za instalaciju dovršit će instalaciju programa {0} na računalo. Kliknite "Instaliraj" da biste nastavili ili "Odustani" da biste izašli iz čarobnjaka za instalaciju.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Korisničko ime ili lozinka nisu valjani.</value>

@@ -148,7 +148,7 @@
     <value>Áno</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Pre úplné dokončenie inštalácie programu {0} je potrebné reštartovať váš počítač. Chcete ho reštartovať ihneď?</value>
+    <value>Zmeny konfigurácie programu {0} sa prejavia až po reštartovaní systému. Ak chcete reštartovať počítač, kliknite na tlačidlo Áno. Ak chcete reštartovať počítač neskôr manuálne, kliknite na tlačidlo Nie.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Zmena, oprava alebo odstránenie inštalácie</value>
@@ -208,6 +208,9 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Cieľový priečinok</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Sprievodca inštaláciou dokončí inštaláciu programu {0} v počítači. Ak chcete pokračovať, kliknite na tlačidlo Inštalovať. Ak chcete Sprievodcu inštaláciou ukončiť, kliknite na tlačidlo Zrušiť.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Neplatné meno používateľa alebo heslo.</value>

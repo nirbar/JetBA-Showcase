@@ -148,7 +148,7 @@
     <value>Taip</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Jūsų kompiuteris turi būti perkrautas, kad būtų baigtas {0} įdiegimas. Ar jūs norite perkrauti dabar?</value>
+    <value>Turite paleisti sistemą iš naujo, kad {0} konfigūravimo metu padaryti keitimai įsigaliotų. Spustelėkite Taip ir paleiskite iš naujo dabar arba spustelėkite Ne ir paleiskite iš naujo vėliau.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Įdiegties keitimas, taisymas arba šalinimas</value>
@@ -211,6 +211,9 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Paskirties aplankas</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Sąrankos vedlys baigs diegti {0} jūsų kompiuteryje. Norėdami tęsti spustelėkite mygtuką Diegti, o norėdami išeiti iš sąrankos vedlio, spustelėkite mygtuką Atšaukti.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Netinkamas vartotojo vardas arba slaptažodis.</value>

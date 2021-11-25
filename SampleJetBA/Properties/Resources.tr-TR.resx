@@ -148,7 +148,7 @@
     <value>Evet</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0} kurulumunun tamamlanması için bilgisayarınızı yeniden başlatmanız gerekiyor.Bilgisayarınızı yeniden başlatmak istiyor musunuz?</value>
+    <value>{0} yapılandırma değişikliklerinin etkinleşmesi için sisteminizi yeniden başlatmalısınız. Şimdi yeniden başlatmak için Evet'i veya daha sonra el ile yeniden başlatacaksanız Hayır'ı tıklatın.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Yüklemeyi değiştirin, onarın veya kaldırın</value>
@@ -211,6 +211,9 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Hedef Klasör</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Kurulum Sihirbazı {0} ürününü bilgisayarınıza yüklemeyi tamamlayacak. Devam etmek için Yükle'yi, Kurulum Sihirbazı'ndan çıkmak içinse İptal'i tıklatın.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Geçersiz kullanıcı adı veya parola.</value>

@@ -148,7 +148,7 @@
     <value>Ano</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>K dokončení instalace programu {0} je nutné restartovat počítač. Chcete jej restartovat nyní?</value>
+    <value>Aby se projevily změny konfigurace produktu {0}, je nutné počítač restartovat. Kliknete-li na tlačítko Ano, bude počítač restartován ihned. Pokud chcete počítač restartovat později ručně, klikněte na tlačítko Ne.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Změna, oprava nebo odebrání instalace</value>
@@ -211,6 +211,9 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Cílová složka</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Průvodce instalací dokončí instalaci produktu {0} do počítače. Pokračujte kliknutím na tlačítko Nainstalovat, nebo kliknutím na tlačítko Storno ukončete Průvodce instalací.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Neplatné uživatelské jméno nebo heslo</value>

@@ -148,7 +148,7 @@
     <value>Igen</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>A(z) {0} telepítésének befejezéséhez újra kell indítani a rendszert. Most akarja újraindítani?</value>
+    <value>A(z) {0} konfigurációjában végzett módosítások érvénybe lépéséhez újra kell indítani a rendszert. Kattintson az Igen gombra az azonnali újraindításhoz, vagy a Nem gombra, ha később kívánja újraindítani a számítógépet.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>A telepítés módosítása, kijavítása vagy eltávolítása</value>
@@ -208,6 +208,9 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Célmappa</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>A telepítővarázsló befejezi a(z) {0} telepítését a számítógépre. A folytatáshoz kattintson a Telepítés gombra, a varázslóból való kilépéshez a Mégse gombra.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Érvénytelen felhasználói név vagy jelszó.</value>

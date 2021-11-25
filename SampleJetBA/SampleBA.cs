@@ -3,6 +3,7 @@ using Ninject;
 using PanelSW.Installer.JetBA;
 using PanelSW.Installer.JetBA.JetPack.Util;
 using PanelSW.Installer.JetBA.JetPack.ViewModel;
+using PanelSW.Installer.JetBA.Util;
 using PanelSW.Installer.JetBA.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -75,14 +76,15 @@ namespace SampleJetBA
             {
                 ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
                 ICommand cmd = apply.GetCommand(Command.Action);
+                ICommand exit = new RelayCommand(o => InvokeShutdown());
                 if (cmd != null)
                 {
                     Engine.Log(LogLevel.Standard, $"Prompting to resume with {Command.Action} after an interrupted reboot");
 
                     PopupViewModel popup = Kernel.Get<PopupViewModel>();
-                    popup.Show(nameof(Properties.Resources.Resume), nameof(Properties.Resources.InterruptedRebootPrompt), PopupViewModel.IconHint.Question
-                        , nameof(Properties.Resources.Yes), cmd
-                        , nameof(Properties.Resources.No));
+                    popup.Show(nameof(Properties.Resources.Resume), nameof(Properties.Resources.InterruptedRebootPrompt0), PopupViewModel.IconHint.Question
+                        , nameof(Properties.Resources.Install), cmd
+                        , nameof(Properties.Resources.Cancel), exit);
                 }
             }
         }
@@ -123,7 +125,7 @@ namespace SampleJetBA
         protected override void OnApplyComplete(ApplyCompleteEventArgs args)
         {
             base.OnApplyComplete(args);
-            if ((args.Restart >= ApplyRestart.RestartRequired) && (Kernel.Get<Display>() == Display.Full))
+            if ((args.Restart == ApplyRestart.RestartInitiated) && (Kernel.Get<Display>() == Display.Full))
             {
                 PopupViewModel popup = Kernel.Get<PopupViewModel>();
                 ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
@@ -135,12 +137,9 @@ namespace SampleJetBA
                     , PopupViewModel.Buttons.Right
                     , vars["WixBundleName"].String);
 
-                if (res == PopupViewModel.Buttons.Right)
+                if (res != PopupViewModel.Buttons.Right)
                 {
-                    apply.RebootState = ApplyRestart.RestartInitiated;
-                }
-                else
-                {
+                    Engine.Log(LogLevel.Standard, "User selected to delay reboot");
                     apply.RebootState = ApplyRestart.RestartRequired;
                 }
             }

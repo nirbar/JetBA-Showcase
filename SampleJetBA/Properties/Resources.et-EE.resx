@@ -145,7 +145,7 @@
     <value>Jah</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0} täielikuks paigaldamiseks tuleb arvuti taaskäivitada. Kas soovid arvuti kohe taaskäivitada ?</value>
+    <value>Muudatused toote {0} konfiguratsioonis jõustuvad alles pärast arvuti taaskäivitamist. Arvuti kohe taaskäivitamiseks klõpsake käsul Jah või hiljem käsitsi taaskäivitamiseks klõpsake käsul Ei.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Installi muutmine, parandamine või eemaldamine</value>
@@ -196,6 +196,9 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Sihtkaust</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Installiviisard viib toote {0} teie arvutisse installimise lõpule. Jätkamiseks klõpsake käsul Installi, installiviisardist väljumiseks käsul Loobu.</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Muuda</value>

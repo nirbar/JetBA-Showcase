@@ -148,7 +148,7 @@
     <value>ใช่</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>เครื่องคอมพิวเตอร์ของคุณจำเป็นต้องรีสตารท์เพื่อการติดตั้งของ {0} จะเรียบร้อย, คุณต้องการจะ รีบูท เดี๋ยวนี้ไหม?</value>
+    <value>คุณต้องเริ่มการทำงานของระบบของคุณใหม่เพื่อให้การเปลี่ยนแปลงการกำหนดค่าที่ทำไว้กับ {0} มีผล คลิก ใช่ เพื่อเริ่มการทำงานใหม่เดี๋ยวนี้ หรือ ไม่ใช่ หากคุณวางแผนที่จะเริ่มการทำงานใหม่ด้วยตนเองในภายหลัง</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>เปลี่ยนแปลง ซ่อมแซม หรือเอาการติดตั้งออก</value>
@@ -211,6 +211,9 @@
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>โฟลเดอร์ปลายทาง</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>ตัวช่วยสร้างการติดตั้งจะทำการติดตั้ง {0} ลงบนคอมพิวเตอร์ของคุณ ให้คลิก ติดตั้ง เพื่อดำเนินการต่อหรือคลิก ยกเลิก เพื่อออกจากตัวช่วยสร้างการติดตั้ง</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</value>

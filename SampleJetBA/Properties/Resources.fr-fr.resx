@@ -148,7 +148,7 @@
     <value>Oui</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Votre ordinateur doit être redémarré afin de compléter l'installation de {0}. Souhaitez-vous redémarrer maintenant ?</value>
+    <value>Vous devez redémarrer votre système pour que les modifications apportées à la configuration de {0} prennent effet. Cliquez sur Oui pour redémarrer maintenant, ou sur Non pour redémarrer manuellement ultérieurement.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Modifier, réparer ou supprimer l'installation</value>
@@ -211,6 +211,9 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Dossier de destination</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>L'Assistant Installation va terminer l'installation de {0} sur l'ordinateur. Cliquez sur Installer pour continuer, ou sur Annuler pour quitter l'Assistant Installation.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nom d'utilisateur ou mot de passe non valide.</value>

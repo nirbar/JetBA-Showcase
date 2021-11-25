@@ -148,7 +148,7 @@
     <value>Jā</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Jūsu datoru ir nepieciešams pārstartēt, lai pabeigtu '{0}' uzstādīšanu. Vai vēlaties pārstartēt datoru tūlīt?</value>
+    <value>Lai {0} konfigurācijas izmaiņas stātos spēkā, ir jārestartē sistēma. Noklikšķiniet uz Jā, lai restartētu tūlīt, vai uz Nē, ja vēlaties manuāli restartēt vēlāk.</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Instalācijas maiņa, labošana vai noņemšana</value>
@@ -211,6 +211,9 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
   </data>
   <data name="InstallFolder" xml:space="preserve">
     <value>Mērķa mape</value>
+  </data>
+  <data name="InterruptedRebootPrompt0" xml:space="preserve">
+    <value>Izmantojot uzstādīšanas vedni, datorā tiks pabeigta {0} instalēšana. Noklikšķiniet uz Instalēt, lai turpinātu, vai uz Atcelt, lai izietu no uzstādīšanas vedņa.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
     <value>Nederīgs lietotāja vārds vai parole.</value>
