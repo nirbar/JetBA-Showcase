@@ -148,7 +148,7 @@
     <value>Áno</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Zmeny konfigurácie programu {0} sa prejavia až po reštartovaní systému. Ak chcete reštartovať počítač, kliknite na tlačidlo Áno. Ak chcete reštartovať počítač neskôr manuálne, kliknite na tlačidlo Nie.</value>
+    <value>Pre úplné dokončenie inštalácie programu {0} je potrebné reštartovať váš počítač. Chcete ho reštartovať ihneď?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Zmena, oprava alebo odstránenie inštalácie</value>

@@ -148,7 +148,7 @@
     <value>Sì</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Per rendere effettive le modifiche apportate alla configurazione di {0}, è necessario riavviare il sistema. Scegliere Sì per riavviarlo adesso oppure No per riavviarlo in un secondo momento.</value>
+    <value>Per completare l'installazione di {0} il computer deve essere riavviato. Vuoi riavviarlo ora?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Modifica, riparazione o rimozione installazione</value>

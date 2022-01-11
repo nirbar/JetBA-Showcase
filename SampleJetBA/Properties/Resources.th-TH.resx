@@ -148,7 +148,7 @@
     <value>ใช่</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>คุณต้องเริ่มการทำงานของระบบของคุณใหม่เพื่อให้การเปลี่ยนแปลงการกำหนดค่าที่ทำไว้กับ {0} มีผล คลิก ใช่ เพื่อเริ่มการทำงานใหม่เดี๋ยวนี้ หรือ ไม่ใช่ หากคุณวางแผนที่จะเริ่มการทำงานใหม่ด้วยตนเองในภายหลัง</value>
+    <value>เครื่องคอมพิวเตอร์ของคุณจำเป็นต้องรีสตารท์เพื่อการติดตั้งของ {0} จะเรียบร้อย, คุณต้องการจะ รีบูท เดี๋ยวนี้ไหม?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>เปลี่ยนแปลง ซ่อมแซม หรือเอาการติดตั้งออก</value>

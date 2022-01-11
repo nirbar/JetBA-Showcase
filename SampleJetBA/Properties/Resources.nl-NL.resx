@@ -148,7 +148,7 @@
     <value>Ja</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>De wijzigingen in de configuratie van {0} worden pas van kracht als u de computer opnieuw opstart. Klik op Ja als u de computer nu opnieuw wilt opstarten of op Nee als u de computer later handmatig opnieuw wilt opstarten.</value>
+    <value>Uw systeem moet opnieuw worden opgestart om de installatie van {0} te voltooien. Wilt u nu herstarten?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Installatie wijzigen, herstellen of verwijderen</value>

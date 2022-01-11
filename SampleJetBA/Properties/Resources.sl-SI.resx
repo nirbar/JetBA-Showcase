@@ -148,7 +148,7 @@
     <value>Da</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Če želite uveljaviti spremembe v konfiguraciji za {0}, znova zaženite računalnik. Kliknite »Da«, če želite računalnik znova zagnati zdaj, če pa želite to sami storiti pozneje, kliknite »Ne«.</value>
+    <value>Za dokončanje namestitve {0} morate ponovno zagnati računalnik. Želite zdaj ponovno zagnati računalnik?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Spreminjanje, popravljanje ali odstranjevanje namestitve</value>

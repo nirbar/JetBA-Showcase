@@ -145,7 +145,7 @@
     <value>Po</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Që të hyjnë në fuqi ndryshimet e formësimit të bëra te {0}, duhet të rinisni sistemin tuaj. Klikoni mbi Po, që të riniset tani, ose mbi Jo, nëse keni në plan ta rinisni dorazi më vonë.</value>
+    <value>Që të mund të plotësohet instalimi i {0}, kompjuteri juaj duhet të riniset. Doni të riniset tani?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Ndryshoni, riparoni, ose hiqni një instalim</value>

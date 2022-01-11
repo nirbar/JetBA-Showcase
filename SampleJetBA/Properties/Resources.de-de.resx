@@ -148,7 +148,7 @@
     <value>Ja</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Sie müssen den Computer neu starten, damit die geänderte Konfiguration von {0} wirksam wird. Klicken Sie auf "Ja", um den Computer jetzt neu zu starten, oder auf "Nein", um den Computer später manuell neu zu starten.</value>
+    <value>Windows muss neu gestartet werden, um die Installation von {0} zu vervollständigen. Möchten Sie Windows jetzt neu starten?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Ändern, Reparieren oder Entfernen der Installation</value>

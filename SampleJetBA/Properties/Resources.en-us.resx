@@ -148,7 +148,7 @@
     <value>Yes</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>You must restart your system for the configuration changes made to {0} to take effect. Click Yes to restart now or No if you plan to manually restart later.</value>
+    <value>Your computer must be restarted in order to complete the installation of {0}. Do you want to reboot now?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Change, repair, or remove installation</value>

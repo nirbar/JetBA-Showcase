@@ -148,7 +148,7 @@
     <value>Igen</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>A(z) {0} konfigurációjában végzett módosítások érvénybe lépéséhez újra kell indítani a rendszert. Kattintson az Igen gombra az azonnali újraindításhoz, vagy a Nem gombra, ha később kívánja újraindítani a számítógépet.</value>
+    <value>A(z) {0} telepítésének befejezéséhez újra kell indítani a rendszert. Most akarja újraindítani?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>A telepítés módosítása, kijavítása vagy eltávolítása</value>

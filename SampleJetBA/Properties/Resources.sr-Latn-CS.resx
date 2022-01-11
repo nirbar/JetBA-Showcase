@@ -145,7 +145,7 @@
     <value>Da</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Morate ponovo da pokrenete sistem da bi promene napravljene u konfiguraciji proizvoda {0} stupile na snagu. Kliknite na dugme „Da“ da biste odmah ponovo pokrenuli računar ili na dugme „Ne“ ako planirate kasnije ručno da ponovo pokrenete računar.</value>
+    <value>Računar mora biti ponovo pokrenut da bi se proces instalacije programa {0} uspešno završio. Želite li to odmah da uradite?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Promena, popravka ili uklanjanje instalacije</value>

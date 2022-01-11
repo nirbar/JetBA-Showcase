@@ -148,7 +148,7 @@
     <value>Kyllä</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Sinun on käynnistettävä järjestelmä uudelleen, jotta tuotteen {0} määrityksiin tehdyt muutokset tulisivat voimaan. Käynnistä tietokone uudelleen valitsemalla Kyllä tai käynnistä tietokone itse uudelleen myöhemmin valitsemalla Ei.</value>
+    <value>{0} -ohjelman asennuksen viimeisteleminen edellyttää tietokoneen uudelleenkäynnistämistä. Haluatko käynnistää tietokoneen uudelleen nyt?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Korjaa tai poista asennus tai muuta sitä</value>

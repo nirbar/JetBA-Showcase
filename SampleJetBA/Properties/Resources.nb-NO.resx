@@ -148,7 +148,7 @@
     <value>Ja</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Du må starte systemet på nytt før konfigurasjonsendringene for {0} trer i kraft. Velg Ja for å starte på nytt nå, eller Nei for å starte på nytt manuelt senere.</value>
+    <value>Du må starte datamaskinen på nytt for å fullføre installasjonen av {0}. Vil du starte datamaskinen på nytt nå?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Endre, reparer eller fjern installasjonen</value>

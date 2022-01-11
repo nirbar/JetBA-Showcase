@@ -148,7 +148,7 @@
     <value>Jā</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Lai {0} konfigurācijas izmaiņas stātos spēkā, ir jārestartē sistēma. Noklikšķiniet uz Jā, lai restartētu tūlīt, vai uz Nē, ja vēlaties manuāli restartēt vēlāk.</value>
+    <value>Jūsu datoru ir nepieciešams pārstartēt, lai pabeigtu '{0}' uzstādīšanu. Vai vēlaties pārstartēt datoru tūlīt?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Instalācijas maiņa, labošana vai noņemšana</value>

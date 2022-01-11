@@ -148,7 +148,7 @@
     <value>نعم</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>‏يجب إعادة تشغيل النظام حتى تسري تغييرات التكوين التي تمت على {0}. انقر فوق "نعم" لإعادة التشغيل الآن، أو فوق "لا" إذا كنت تنوي القيام بإعادة التشغيل يدويًا في وقت لاحق.</value>
+    <value>يجب إعادة تشغيل الجهاز لإنهاء تنصيب {0}. هل تريد إعادة التشغيل الآن؟</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>تغيير التثبيت أو إصلاحه أو إزالته</value>

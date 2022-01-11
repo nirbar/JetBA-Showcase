@@ -148,7 +148,7 @@
     <value>是(Y)</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>您必须重新启动系统，对 {0} 进行的配置更改才能生效。单击“是”可立即重新启动，单击“否”可在以后手动重新启动。</value>
+    <value>必须重新启动本机才能完成 {0} 的安装。是否立即重新启动？</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>更改、修复或删除安装</value>

@@ -145,7 +145,7 @@
     <value>Jah</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Muudatused toote {0} konfiguratsioonis jõustuvad alles pärast arvuti taaskäivitamist. Arvuti kohe taaskäivitamiseks klõpsake käsul Jah või hiljem käsitsi taaskäivitamiseks klõpsake käsul Ei.</value>
+    <value>{0} täielikuks paigaldamiseks tuleb arvuti taaskäivitada. Kas soovid arvuti kohe taaskäivitada ?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Installi muutmine, parandamine või eemaldamine</value>

@@ -148,7 +148,7 @@
     <value>예(Y)</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>변경된 구성 설정을 {0}에 적용하려면 시스템을 다시 시작해야 합니다. 지금 다시 시작하려면 "예"를 클릭하고, 나중에 수동으로 다시 시작하려면 "아니요"를 클릭하십시오.</value>
+    <value>{0}의 설치를 완료하기 위해서는 시스템을 다시 시작해야 합니다. 지금 재부팅 하시겠습니까?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>설치 변경, 복구 또는 제거</value>

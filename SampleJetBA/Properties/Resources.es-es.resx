@@ -148,7 +148,7 @@
     <value>Sí</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Debe reiniciar el sistema para que los cambios de configuración efectuados en {0} surtan efecto. Haga clic en Sí para reiniciar el sistema ahora o elija No si tiene previsto reiniciarlo manualmente más tarde.</value>
+    <value>Su sistema debe ser reiniciado para que pueda completarse la instalación de {0}. ¿Desea reiniciar ahora?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Cambiar, reparar o quitar la instalación</value>

@@ -148,7 +148,7 @@
     <value>Ano</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Aby se projevily změny konfigurace produktu {0}, je nutné počítač restartovat. Kliknete-li na tlačítko Ano, bude počítač restartován ihned. Pokud chcete počítač restartovat později ručně, klikněte na tlačítko Ne.</value>
+    <value>K dokončení instalace programu {0} je nutné restartovat počítač. Chcete jej restartovat nyní?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Změna, oprava nebo odebrání instalace</value>

@@ -148,7 +148,7 @@
     <value>Да</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Для вступления в силу изменений, сделанных в "{0}", необходимо перезагрузить компьютер. Чтобы перезагрузить компьютер сейчас, нажмите кнопку "Да". Чтобы выполнить перезагрузку позже вручную, нажмите кнопку "Нет".</value>
+    <value>Для завершения установки {0} необходимо перезагрузить компьютер. Хотите сделать это сейчас?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Изменение, восстановление или удаление установки</value>

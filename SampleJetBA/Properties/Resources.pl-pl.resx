@@ -148,7 +148,7 @@
     <value>Tak</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Musisz ponownie uruchomić system, aby zmiany konfiguracji {0} zostały wprowadzone. Kliknij przycisk Tak, aby uruchomić system ponownie lub przycisk Nie, jeśli planujesz ręczne ponowne uruchomienie systemu później.</value>
+    <value>Twój komputer musi zostać ponownie uruchomiony, aby zakończyć instalację {0}. Czy chcesz teraz ponownie uruchomić komputer?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Zmienianie, naprawa lub usuwanie instalacji</value>

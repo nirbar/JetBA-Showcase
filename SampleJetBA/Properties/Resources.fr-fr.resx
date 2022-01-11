@@ -148,7 +148,7 @@
     <value>Oui</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Vous devez redémarrer votre système pour que les modifications apportées à la configuration de {0} prennent effet. Cliquez sur Oui pour redémarrer maintenant, ou sur Non pour redémarrer manuellement ultérieurement.</value>
+    <value>Votre ordinateur doit être redémarré afin de compléter l'installation de {0}. Souhaitez-vous redémarrer maintenant ?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Modifier, réparer ou supprimer l'installation</value>

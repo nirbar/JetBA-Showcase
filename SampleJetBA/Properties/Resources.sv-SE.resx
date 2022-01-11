@@ -148,7 +148,7 @@
     <value>Ja</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Du måste starta om systemet för att konfigurationsändringarna som gjorts för {0} ska börja gälla. Klicka på Ja om du vill starta om nu, eller på Nej om du vill starta om manuellt senare.</value>
+    <value>Din dator måste startas om för att fullborda installationen av {0}. Vill du starta om nu?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Ändra, reparera eller ta bort installationen</value>

@@ -148,7 +148,7 @@
     <value>Sim</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Terá de reiniciar o sistema para que as alterações de configuração efectuadas em {0} produzam efeito. Clique em Sim para reiniciar agora ou em Não se pretender reiniciar manualmente mais tarde.</value>
+    <value>O seu computador deve ser reiniciado para concluír a instalação do {0}. Deseja reiniciar agora?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Alterar, reparar ou remover a instalação</value>

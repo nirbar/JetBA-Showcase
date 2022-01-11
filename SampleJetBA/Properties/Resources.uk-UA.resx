@@ -148,7 +148,7 @@
     <value>Так</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Щоб внесені до конфігурації {0} зміни набрали сили, необхідно перезавантажити систему. Для негайного перезавантаження натисніть кнопку "Так". Щоб пізніше перезавантажити систему вручну, натисніть кнопку "Ні".</value>
+    <value>Для того, щоб завершити встановлення {0} Ваш комп'ютер повинен перезавантажитися. Зробити це зараз?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Змінити, відновити або видалити інсталяцію</value>

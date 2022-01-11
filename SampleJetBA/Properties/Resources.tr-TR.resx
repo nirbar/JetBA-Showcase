@@ -148,7 +148,7 @@
     <value>Evet</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>{0} yapılandırma değişikliklerinin etkinleşmesi için sisteminizi yeniden başlatmalısınız. Şimdi yeniden başlatmak için Evet'i veya daha sonra el ile yeniden başlatacaksanız Hayır'ı tıklatın.</value>
+    <value>{0} kurulumunun tamamlanması için bilgisayarınızı yeniden başlatmanız gerekiyor.Bilgisayarınızı yeniden başlatmak istiyor musunuz?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Yüklemeyi değiştirin, onarın veya kaldırın</value>

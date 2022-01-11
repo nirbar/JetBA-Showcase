@@ -8,7 +8,6 @@
 - WixUINo
 - Error1602
 - WixUIYes
-- Error1703
 - MaintenanceTypeDlgTitle
 - MsiRMFilesInUseTitle
 - MsiRMFilesInUseText
@@ -34,7 +33,7 @@
 - Error33
 - Error32
 
-# The following translations, provided by lookup keys, were copied from non-formal open sources:
+# The following translations, provided by lookup keys, were copied from open sources without a license:
 
 - Authentication (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn)
 - Continue (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
@@ -63,6 +62,7 @@
 
 # The following translations, provided by lookup keys, where copied from NSIS:
 
+- MUI_TEXT_FINISH_INFO_REBOOT
 - MUI_BUTTONTEXT_FINISH
 - ^CopyDetails
 - MUI_TEXT_INSTALLING_SUBTITLE

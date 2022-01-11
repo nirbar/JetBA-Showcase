@@ -148,7 +148,7 @@
     <value>Sí</value>
   </data>
   <data name="ChangesWillNotTakeEffectUntilReboot0" xml:space="preserve">
-    <value>Heu de reiniciar el sistema perquè els canvis de configuració realitzats al {0} tinguin efecte. Feu clic a Sí per reiniciar-lo ara o a No si teniu previst reiniciar-lo manualment més tard.</value>
+    <value>Cal reiniciar l'ordinador perquè pugui acabar-se la instal·lació de l'aplicació {0}. Voleu reiniciar-lo ara?</value>
   </data>
   <data name="ClickRepairToRepairOrUninstallToRemoveIt" xml:space="preserve">
     <value>Canvi, reparació o supressió de la instal·lació</value>
