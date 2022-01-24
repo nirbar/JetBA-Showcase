@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Înapoi</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Răsfoire...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fişier: {0}</value>
   </data>
@@ -157,16 +154,25 @@
     <value>Terminare</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Continuaţi</value>
+    <value>Continuă</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copiere detalii în clipboard</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>Bază de date</value>
+    <value>Bază</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Conexiune baze</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Server bază de date</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>O versiune mai nouă a [WixBundleName] detectată. Scăderea clasării nu este acceptată</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Eroare</value>
@@ -177,10 +183,16 @@
 Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza instalarea {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Se procesează {0}</value>
+    <value>Procesare {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Ieşire</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Nu a reușit conectarea la baza de date {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Eșec la crearea arhivei fișierelor jurnal</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Fişiere în uz</value>
@@ -190,6 +202,20 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Aşteptaţi. Expertul de instalare se pregăteşte să vă ghideze pe parcursul instalării.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - instalează, repară, dezinstalează sau descarcă o copie locală completă a pachetului în director. Instalarea este cea implicită.
+
+/passive - Interfața minimă cu utilizatorul fără solicitări.
+/quiet - Fără interfaţă şi fără solicitări.
+În mod implicit interfața cu utilizatorul și toate solicitările sunt afișate.
+
+/norestart - Suprima orice încercare de a reporni. Implicit UI va solicita înainte de repornire.
+/log log.txt - Loghează la un anumit fişier. În mod implicit, un fișier jurnal este creat în %TEMP% folder.
+/language ID - Utilizați limba specificată. Exemplu de identificare sunt "en" pentru limba engleză sau "he" ebraică.
+/? - Arată acest ecran de ajutor
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Setați dosarul țintă</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorare</value>
@@ -216,7 +242,7 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Nume de utilizator sau parolă nevalidă.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Încărcare</value>
+    <value>Loc</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Modificare</value>
@@ -234,7 +260,7 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Vizualizare fișier jurnal</value>
+    <value>Deschide fișierul jurnal</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Instalare anulată</value>
@@ -242,11 +268,14 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Reîncercare</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Una dintre componente nu a reușit să se instaleze. Reîncercarea ar putea rezolva problema. Doriţi să reîncercaţi?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>Bază de date</value>
+    <value>Bază</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Terminare</value>
+    <value>Finish</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Folderul de destinaţie</value>
@@ -255,22 +284,22 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Caracteristicile produsului</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Stadiu instalare</value>
+    <value>progres</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Opțiuni de întreținere</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Cont serviciu</value>
+    <value>Cont de serviciu</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Rezumat</value>
+    <value>Gata de instalare</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Parolă</value>
+    <value>parolă</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nume utilizator obligatoriu</value>
+    <value>Vă rugăm să furnizați nume de utilizator SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Aşteptaţi, Windows configurează {0}</value>
@@ -288,7 +317,7 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Reporneşte acum</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Reluare</value>
+    <value>Continuă</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Reîncercare</value>
@@ -297,14 +326,20 @@ Dupã repornirea calculatorului, ruleazã Instalatorul din nou pentru a realiza 
     <value>Caracteristici produs</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Cont serviciu</value>
+    <value>Cont de serviciu</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Eroare</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nu pot executa fila:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Închidere</value>
+    <value>Oprire</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Autentificare SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Eliminare</value>

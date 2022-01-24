@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>戻る(B)</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>参照(R)...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>ファイル: {0}</value>
   </data>
@@ -157,7 +154,7 @@
     <value>完了(F)</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>続行</value>
+    <value>続ける</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>クリップボードへ詳細をコピー</value>
@@ -166,10 +163,16 @@
     <value>データベース</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>データベース コンフィギュレーション</value>
+    <value>データベース接続</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>サーバー</value>
+    <value>データベースサーバ</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>ダウングレード</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>新しいバージョンの [WixBundleName] が検出されました。ダウングレードはサポートされていません</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>エラー</value>
@@ -180,10 +183,16 @@
 {0} のインストールを完了するためには、再起動後にもう一度セットアップを実行してください。</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>{0} を処理しています</value>
+    <value>{0} を処理中</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>終了(X)</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>{0} データベースへの接続に失敗しました</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>ログファイルアーカイブの作成に失敗しました</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>使用中のファイル</value>
@@ -193,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>インストールの準備をしています。しばらくお待ちください。</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"-バンドルの完全なローカルコピーをディレクトリにインストール、修復、アンインストール、またはダウンロードします。[インストール] がデフォルトです。
+
+/passive-プロンプトなしの最小限の UI。
+/quiet-UI もプロンプトもありません。
+既定では、UI とすべてのプロンプトが表示されます。
+
+/norestart-再起動の試行をすべて抑制します。デフォルトでは、UI は再起動前にプロンプトを表示します。
+/log log.txt-特定のファイルにログを記録します。デフォルトでは、%TEMP%フォルダにログファイルが作成されます。
+/language ID-指定した言語を使用します。ID"en""he" の例は英語用またはヘブライ語用です。
+/?-このヘルプ画面を表示する
+
+INSTALL_FOLDER="C:\Program Files\Sample"-対象フォルダの設定</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>無視(I)</value>
@@ -231,13 +254,13 @@
     <value>いいえ(N)</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>メモ</value>
+    <value>注</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>ログ ファイルの参照</value>
+    <value>[ログファイルを開く]</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>インストールの中止</value>
@@ -245,11 +268,14 @@
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>再試行(R)</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>コンポーネントの 1 つをインストールできませんでした。再試行すると問題が解決する場合があります。リトライしてもよろしいですか？</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>データベース</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>完了</value>
+    <value>フィニッシュ</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>インストール先フォルダー</value>
@@ -258,22 +284,22 @@
     <value>製品機能</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>インストールの進行状況</value>
+    <value>進捗</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>メンテナンス オプション</value>
+    <value>保守オプション</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>サービス アカウント</value>
+    <value>サービスアカウント</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>概要</value>
+    <value>インストール準備完了</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>パスワード</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>ユーザー名が必要です</value>
+    <value>SQL ユーザー名を入力してください</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>{0} を構成しています。しばらくお待ちください。</value>
@@ -291,7 +317,7 @@
     <value>今すぐ再起動</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>再開</value>
+    <value>続ける</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>再試行(R)</value>
@@ -300,14 +326,20 @@
     <value>製品機能</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>サービス アカウント</value>
+    <value>サービスアカウント</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>エラー</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>ファイル実行エラー:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>閉じる</value>
+    <value>シャットダウン</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL 認証</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>削除(R)</value>

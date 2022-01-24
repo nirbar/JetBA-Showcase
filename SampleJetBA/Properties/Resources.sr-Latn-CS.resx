@@ -120,11 +120,11 @@
   <data name="Abort" xml:space="preserve">
     <value>Izađi</value>
   </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autentifikacija</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Nazad</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Potraži…</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Datoteka: {0}</value>
@@ -153,11 +153,26 @@
   <data name="Close" xml:space="preserve">
     <value>Kraj</value>
   </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Nastavi</value>
+  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiraj detalje u klipbord</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Baza podataka</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Veza baze podataka</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server baze podataka</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Dovngrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Otkrivena novija verzija [WixBundleName] -. Smanjenje nije podržano</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Greška</value>
@@ -167,8 +182,17 @@
 
 Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</value>
   </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Obrada {0}</value>
+  </data>
   <data name="Exit" xml:space="preserve">
     <value>Izađi</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Neuspelo povezivanje sa bazom {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Nije uspelo da kreirate arhivu dnevnika</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Datoteke u upotrebi</value>
@@ -178,6 +202,20 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Sačekajte dok se čarobnjak za instalaciju pripremi da vas vodi kroz instalaciju.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - instalira, popravke, deinstalira ili preuzima kompletnu lokalnu kopiju paketa u direktorijumu. Instalacija je podrazumevana.
+
+/passive - Minimalni korisnički interfejs bez uputstava.
+/quiet - Nema korisničkog sučelja i nema upita.
+Podrazumevano korisničko sučelje i svi upiti se prikazuju.
+
+/norestart - Potisnite sve pokušaje ponovnog pokretanja. Podrazumevano UI će zatražiti pre ponovnog pokretanja.
+/log log.txt - Trupci na određenu datoteku. Podrazumevano se kreira datoteka dnevnika u %TEMP% fascikli.
+/language ID - Koristite navedeni jezik. Primeri ID-ovi su "en" za engleski ili "he" za hebrejski.
+/? - Pokažite ovaj ekran pomoći
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Postavite ciljnu fasciklu</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Zanemari</value>
@@ -200,6 +238,12 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   <data name="InterruptedRebootPrompt0" xml:space="preserve">
     <value>Čarobnjak za instalaciju će dovršiti instalaciju proizvoda {0} na računaru. Kliknite na dugme „Instaliraj“ da biste nastavili ili na dugme „Otkaži“ da biste izašli iz čarobnjaka za instalaciju.</value>
   </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Nevažeće korisničko ime ili lozinka.</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Opterećenje</value>
+  </data>
   <data name="Modify" xml:space="preserve">
     <value>Promeni</value>
   </data>
@@ -209,14 +253,23 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   <data name="No" xml:space="preserve">
     <value>Ne</value>
   </data>
+  <data name="Note" xml:space="preserve">
+    <value>Beleška</value>
+  </data>
   <data name="OK" xml:space="preserve">
     <value>U redu</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Otvorite datoteku dnevnika</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Prekinuta instalacija</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Pokušaj opet</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Jedna od komponenti nije uspela da se instalira. Ponovno pokušaj može da reši problem. Da li želite da ponovite?</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Baza podataka</value>
@@ -231,13 +284,22 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
     <value>Funkcije proizvoda</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Tok instalacije</value>
+    <value>Napredak</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Opcije održavanja</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Nalog usluge</value>
+    <value>Servisni nalog</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Rezime</value>
+    <value>Spreman za instalaciju</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Lozinka</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Molimo vas da navedete SKL korisničko ime</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Sačekajte dok Windows konfiguriše {0}</value>
@@ -254,6 +316,9 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   <data name="Restart" xml:space="preserve">
     <value>Odmah ponovo pokreni računar</value>
   </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Nastavi</value>
+  </data>
   <data name="Retry" xml:space="preserve">
     <value>Pokušaj opet</value>
   </data>
@@ -261,14 +326,26 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
     <value>Funkcije proizvoda</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Nalog usluge</value>
+    <value>Servisni nalog</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Greška</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Ne mogu da pokrenem datoteku:
 {0}</value>
   </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Gašenje</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SKL autentifikacija</value>
+  </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Ukloni</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Korisničko ime</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Nazad</value>
@@ -279,8 +356,14 @@ Nakon ponovnog pokretanja, otvorite instalaciju i instalirajte program {0}.</val
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>U redu</value>
   </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Upozorenje</value>
+  </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Instalacioni program mora ponovo da pokrene sistem da bi moglo da se nastavi sa konfigurisanjem programa {0}. Kliknite na dugme „Da“ da biste odmah ponovo pokrenuli računar ili na dugme „Ne“ ako planirate da kasnije ručno ponovo pokrenete računar.</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Prozori autentifikacija</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Da</value>

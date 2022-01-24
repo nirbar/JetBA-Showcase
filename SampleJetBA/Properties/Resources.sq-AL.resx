@@ -120,11 +120,11 @@
   <data name="Abort" xml:space="preserve">
     <value>Dilni</value>
   </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autentifikimi</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Mbrapsht</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Shfleoni...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Skedar: {0}</value>
@@ -153,11 +153,26 @@
   <data name="Close" xml:space="preserve">
     <value>Përfundoje</value>
   </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Vazhdo</value>
+  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopjo Hollësira Te E Papastra</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Baza e të dhënave</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Lidhje bazës së të dhënave</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Server i bazës së të dhënave</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Zbulohet një version më i ri i [WixBundleName]. Zbritja nuk mbështetet</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Gabim</value>
@@ -167,8 +182,17 @@
 
 Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Përpunimi {0}</value>
+  </data>
   <data name="Exit" xml:space="preserve">
     <value>Dilni</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Dështoi lidhja me bazën e të dhënave {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Dështoi në krijimin e skedarëve log arkiv</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Skedarë në Përdorim</value>
@@ -178,6 +202,20 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Ju lutemi, pritni teksa Ndihmësi i Rregullimit përgatitet t’ju udhëheqë përmes instalimit.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - instalon, riparon, çinstalon ose shkarkon një kopje të plotë lokale të paketës në direktori. Instaloni është parazgjedhja.
+
+/passive - UI minimale pa kërkesa.
+/quiet - Asnjë UI dhe nuk ka kërkesa.
+By default UI dhe të gjitha kërkesat janë shfaqur.
+
+/norestart - Shtypni çdo përpjekje për të rifilluar. By default UI do të kërkojë para rinisjes.
+/log log.txt - Shkrime në një skedar të veçantë. By default një skedar log është krijuar në %TEMP% dosje.
+/language ID - Përdorni gjuhën e specifikuar. Shembull ID janë "en" për anglisht ose "he" për hebraisht.
+/? - Trego këtë ekran ndihmë
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Vendosni dosjen e synuar</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Shpërfille</value>
@@ -200,6 +238,12 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="InterruptedRebootPrompt0" xml:space="preserve">
     <value>Ndihmësi i Rregullimit do të plotësojë instalimin e {0} në kompjuterin tuaj. Klikoni mbi Instaloje që të vazhdohet ose mbi Anuloje që të dilet nga Ndihmësi i Rregullimit.</value>
   </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Emri i përdoruesit ose fjalëkalimi i pavlefshëm.</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Ngarkesës</value>
+  </data>
   <data name="Modify" xml:space="preserve">
     <value>Ndryshoje</value>
   </data>
@@ -209,8 +253,14 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="No" xml:space="preserve">
     <value>Jo</value>
   </data>
+  <data name="Note" xml:space="preserve">
+    <value>Shënim</value>
+  </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Hapni skedarin e regjistrit</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Instalimi u Ndërpre</value>
@@ -218,11 +268,14 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Riprovoni</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Një nga komponentët nuk ka arritur të instalojë. Rivendosja mund ta zgjidhë çështjen. A dëshironi të rigjykoni?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Baza e të dhënave</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Përfundo</value>
+    <value>Mbaro</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Dosje destinacion</value>
@@ -231,13 +284,22 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
     <value>Veçori Produkti</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Progresi i instalimit</value>
+    <value>Progres</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Opsione mirëmbajtje</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Llogaria e shërbimit</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Përmbledhje</value>
+    <value>Gati për të instaluar</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Fjalëkalimi</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Ju lutemi jepni SQL Username</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Ju lutemi, prisni teksa Windows formëson {0}</value>
@@ -254,6 +316,9 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="Restart" xml:space="preserve">
     <value>Rinise tani</value>
   </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Vazhdo</value>
+  </data>
   <data name="Retry" xml:space="preserve">
     <value>Riprovoni</value>
   </data>
@@ -263,12 +328,24 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Llogaria e shërbimit</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Gabim</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nuk ekzekutohet skedari:
 {0}</value>
   </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Shutdown</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Vërtetimi SQL</value>
+  </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Hiqe</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Emri i përdoruesit</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Mbrapsht</value>
@@ -279,11 +356,14 @@ Pas rinisjes, hapni sërish Sistemuesin që të kryhet instalimi i {0}.</value>
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Warning" xml:space="preserve">
+    <value>paralajmërim</value>
+  </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Instaluesi duhet të rinisë sistemin tuaj, përpara se të mund të vazhdohet me formësimin e {0}. Klikoni mbi Po, që të riniset tani, ose mbi Jo, nëse keni në plan ta rinisni dorazi më vonë.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Vërtetimi i Windows</value>
+    <value>Autentifikimi i Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Po</value>

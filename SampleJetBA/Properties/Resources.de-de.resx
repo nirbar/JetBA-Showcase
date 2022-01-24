@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Zurück</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Durchsuchen...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Datei: {0}</value>
   </data>
@@ -157,7 +154,7 @@
     <value>Fertigstellen</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Fortfahren</value>
+    <value>Weiter</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Details in die Zwischenablage kopieren</value>
@@ -166,10 +163,16 @@
     <value>Datenbank</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Datenbankkonfiguration</value>
+    <value>Datenbank-Verbindung</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Datenbank-Server</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Herabstufen</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Es wurde eine neuere Version von [WixBundleName] erkannt. Downgrade wird nicht unterstützt</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Fehler</value>
@@ -185,6 +188,12 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
   <data name="Exit" xml:space="preserve">
     <value>Beenden</value>
   </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Verbindung zur {0} -Datenbank konnte nicht hergestellt werden</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Protokolldateien-Archiv konnte nicht erstellt werden</value>
+  </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Dateien werden verwendet</value>
   </data>
@@ -193,6 +202,20 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Warten Sie, während die Installation vorbereitet wird.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"- installiert, repariert, deinstalliert oder lädt eine vollständige lokale Kopie des Bundles im Verzeichnis herunter. Installieren ist die Standardeinstellung.
+
+/passive- Minimales UI ohne Eingabeaufforderungen.
+/quiet- Keine UI und keine Aufforderungen.
+Standardmäßig werden UI und alle Eingabeaufforderungen angezeigt.
+
+/norestart- Unterdrückt alle Neustartversuche. Standardmäßig wird die Benutzeroberfläche vor dem Neustart aufgefordert.
+/log log.txt- Protokolliert sich in einer bestimmten Datei. Standardmäßig wird eine Protokolldatei im%TEMP% Ordner erstellt.
+/language ID- Verwenden Sie die angegebene Sprache. Beispiel-IDs sind"en" für Englisch oder"he" Hebräisch.
+/?- Zeige diesen Hilfebildschirm
+
+INSTALL_FOLDER="C:\Program Files\Sample"- Zielordner setzen</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorieren</value>
@@ -216,7 +239,7 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
     <value>Die Installation von {0} wird vom Setup-Assistenten auf dem Computer abgeschlossen. Klicken Sie auf "Installieren", um den Vorgang fortzusetzen, bzw. auf "Abbrechen", um den Setup-Assistenten zu beenden.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Ungültiger Benutzername oder Kennwort.</value>
+    <value>Ungültiger Benutzername oder Passwort.</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Laden</value>
@@ -231,13 +254,13 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
     <value>Nein</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Notiz</value>
+    <value>Hinweis</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Protokolldatei anzeigen</value>
+    <value>Protokolldatei öffnen</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Abbruch der Installation</value>
@@ -245,11 +268,14 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Wiederholen</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Eine der Komponenten konnte nicht installiert werden. Ein erneuter Versuch kann das Problem lösen. Möchten Sie es erneut versuchen?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Datenbank</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Fertig stellen</value>
+    <value>Fertig</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Zielordner</value>
@@ -258,22 +284,22 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
     <value>Produktfunktionen</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Installationsstatus</value>
+    <value>Fortschritte</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Wartungsoptionen</value>
+    <value>Möglichkeiten der Wartung</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Dienstkonto</value>
+    <value>Service-Konto</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Zusammenfassung</value>
+    <value>Bereit zur Installation</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Kennwort</value>
+    <value>Passwort</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Benutzername erforderlich</value>
+    <value>Bitte geben Sie den SQL-Benutzernamen</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Bitte warten Sie, während {0} konfiguriert wird.</value>
@@ -291,7 +317,7 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
     <value>Jetzt neu starten</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Fortsetzen</value>
+    <value>Weiter</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Wiederholen</value>
@@ -300,14 +326,20 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
     <value>Produktfunktionen</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Dienstkonto</value>
+    <value>Service-Konto</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Fehler</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Datei kann nicht ausgeführt werden:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Schließen</value>
+    <value>Shutdown</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL Authentifizierung</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Entfernen</value>
@@ -331,7 +363,7 @@ Starten Sie das Setup nach dem Neustart Ihres Computers erneut, um die Installat
     <value>Das Installationsprogramm muss den Computer neu starten, damit die Konfiguration von {0} fortgesetzt werden kann. Klicken Sie auf "Ja", um den Computer jetzt neu zu starten, oder auf "Nein", um den Computer später manuell neu zu starten.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows-Authentifizierung</value>
+    <value>Windows Authentifizierung</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>

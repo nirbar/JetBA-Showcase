@@ -121,13 +121,10 @@
     <value>Çıkış</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Kimlik doğrulama</value>
+    <value>Kimlik Doğrulama</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Geri</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Gözat...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Dosya: {0}</value>
@@ -157,19 +154,25 @@
     <value>Bitir</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Devam</value>
+    <value>Devam Et</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Ayrıntıları panoya kopyala</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>Veritabanı</value>
+    <value>Veri tabanı</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Veritabanı yapılandırması</value>
+    <value>Veritabanı bağlantısı</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Sunucu</value>
+    <value>Veritabanı sunucusu</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Düşürme</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>[WixBundleName] daha yeni bir sürümü algılandı. İndirme desteklenmiyor</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Hata</value>
@@ -180,10 +183,16 @@
 Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kurulum yardýmcýsýný yeniden çalýþtýrýn.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>{0} İşleniyor</value>
+    <value>İşleme {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Çıkış</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>{0} veritabanına bağlanılamadı</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Günlük dosyaları arşivi oluşturulamadı</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Kullanılan Dosyalar</value>
@@ -193,6 +202,20 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Kurulum Sihirbazı yükleme sırasında size yol göstermek için hazırlanırken lütfen bekleyin.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - Dizin içindeki paketin tam bir yerel kopyasını yükler, onarır, kaldırır veya indirir. Yükleme varsayılan değerdir.
+
+/passive - Hiçbir istemleri ile minimum UI.
+/quiet - Kullanıcı Arabirimi yok ve komut istemi yok.
+Varsayılan kullanıcı arabirimi ve tüm istemler görüntülenir.
+
+/norestart - Yeniden başlatma girişimlerini bastırın. Kullanıcı Arabirimi varsayılan olarak yeniden başlatmadan önce sorar.
+/log log.txt - Belirli bir dosyaya günlükler. Varsayılan olarak %TEMP% klasörde bir günlük dosyası oluşturulur.
+/language ID - Belirtilen dili kullan. Örnek kimlikler "en" İngilizce veya İbranice "he" içindir.
+/? - Bu yardım ekranını göster
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Hedef klasörü ayarla</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Yoksay</value>
@@ -219,7 +242,7 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Geçersiz kullanıcı adı veya parola.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Yükle</value>
+    <value>Yük</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Değiştir</value>
@@ -237,7 +260,7 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Tamam</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Günlük Dosyasını Görüntüle</value>
+    <value>Günlük dosyasını aç</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Kurulum İptal Edildi</value>
@@ -245,11 +268,14 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Yeniden Dene</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Bileşenlerden biri yüklenemedi. Yeniden deneme sorunu çözebilir. Tekrar denemek ister misin?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>Veritabanı</value>
+    <value>Veri tabanı</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Son</value>
+    <value>Bitiş</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Hedef Klasör</value>
@@ -258,22 +284,22 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Ürün Özellikleri</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Yükleme İlerleme Durumu</value>
+    <value>İlerleme</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Bakım Seçenekleri</value>
+    <value>Bakım seçenekleri</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Hizmet hesabı</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Özet</value>
+    <value>Yüklemeye hazır</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Parola</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Kullanıcı Adı Gerekli</value>
+    <value>Lütfen SQL Kullanıcı Adı girin</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Windows, {0} ürününü yapılandırırken lütfen bekleyin</value>
@@ -291,7 +317,7 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Yeniden başlat</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Sürdür</value>
+    <value>Devam Et</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Yeniden Dene</value>
@@ -302,12 +328,18 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
   <data name="ServiceAccount" xml:space="preserve">
     <value>Hizmet hesabı</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Hata</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Þu dosya yürütülemedi:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Kapat</value>
+    <value>Kapatma</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL kimlik doğrulaması</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Kaldır</value>
@@ -331,7 +363,7 @@ Bilgisayarýnýzý yeniden baþlattýktan sonra iþlemi tamamlamak için {0} kur
     <value>Yükleyicinin {0} yapılandırmasına devam edebilmesi için sisteminizi yeniden başlatmanız gerekiyor. Şimdi yeniden başlatmak için Evet'i veya daha sonra el ile yeniden başlatacaksanız Hayır'ı tıklatın.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows Kimlik Doğrulaması</value>
+    <value>Windows kimlik doğrulaması</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Evet</value>

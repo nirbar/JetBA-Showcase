@@ -121,13 +121,10 @@
     <value>Avslutt</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Godkjenning</value>
+    <value>Autentisering</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Tilbake</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Bla gjennom...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fil: {0}</value>
@@ -157,19 +154,25 @@
     <value>Ferdig</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Fortsett</value>
+    <value>Fortsette</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopier detaljer til utklippstavlen</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>Database</value>
+    <value>database</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Databasekonfigurasjon</value>
+    <value>Database tilkobling</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Database server</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Nedgradering</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>En nyere versjon av [WixBundleName] oppdaget. Nedgradering støttes ikke</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Feil</value>
@@ -180,10 +183,16 @@
 Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre installasjonen av {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Behandler {0}</value>
+    <value>Behandling {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Avslutt</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Kunne ikke koble til {0} database</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Kan ikke opprette arkiv for loggfiler</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Filer i bruk</value>
@@ -193,6 +202,20 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Vent mens installasjonsveiviseren gjør klar for å lede deg gjennom installasjonen.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - installerer, reparerer, avinstallerer eller laster ned en komplett lokal kopi av pakken i katalogen. Installasjonen er standard.
+
+/passive - Minimal brukergrensesnitt uten anmodninger.
+/quiet - Ingen brukergrensesnitt og ingen ledetekster.
+Som standard UI og alle ledetekster vises.
+
+/norestart - Undertrykke eventuelle forsøk på å starte på nytt. Som standard brukergrensesnitt vil spørre før omstart.
+/log log.txt - Logger til en bestemt fil. Som standard opprettes en loggfil i %TEMP% mappen.
+/language ID - Bruk det angitte språket. Eksempel-ID-er er "en" for engelsk eller "he" for hebraisk.
+/? - Vis denne hjelpeskjermen
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Sett målmappen</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorer</value>
@@ -219,7 +242,7 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Ugyldig brukernavn eller passord.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Last inn</value>
+    <value>Last</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Endre</value>
@@ -231,13 +254,13 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Nei</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Merknad</value>
+    <value>Merk</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Vis loggfilen</value>
+    <value>Åpne loggfil</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installasjonen er avbrutt</value>
@@ -245,8 +268,11 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Prøv på nytt</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>En av komponentene har ikke installert. Prøver på nytt kan løse problemet. Ønsker du å prøve på nytt?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>Database</value>
+    <value>database</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>Fullfør</value>
@@ -258,22 +284,22 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Produktfunksjoner</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Installasjonsfremdrift</value>
+    <value>Fremgang</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Alternativer for vedlikehold</value>
+    <value>Vedlikehold alternativer</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Tjenestekonto</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Sammendrag</value>
+    <value>Klar til å installere</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Passord</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Brukernavn kreves</value>
+    <value>Vennligst oppgi SQL-brukernavn</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Vent mens Windows konfigurerer {0}</value>
@@ -291,7 +317,7 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
     <value>Ja. Start datamaskinen på nytt nå</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Fortsett</value>
+    <value>Fortsette</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Prøv på nytt</value>
@@ -302,12 +328,18 @@ Etter omstarten må du kjøre installasjonsprogrammet på nytt for å fullføre 
   <data name="ServiceAccount" xml:space="preserve">
     <value>Tjenestekonto</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Feil</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Kan ikke kjøre filen:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Lukk</value>
+    <value>Avslutning</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL-godkjenning</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Fjern</value>

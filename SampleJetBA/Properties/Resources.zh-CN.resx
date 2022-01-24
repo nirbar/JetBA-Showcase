@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>上一步(B)</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>浏览(R)...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>文件: {0}</value>
   </data>
@@ -166,10 +163,16 @@
     <value>数据库</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>数据库配置</value>
+    <value>数据库连接</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>服务器</value>
+    <value>数据库服务器</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>降级</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>检测到较新版本的 [WixBundleName]。不支持降级</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>错误</value>
@@ -185,6 +188,12 @@
   <data name="Exit" xml:space="preserve">
     <value>退出(X)</value>
   </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>连接到 {0} 数据库失败</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>无法创建日志文件存档</value>
+  </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>使用中的文件</value>
   </data>
@@ -193,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>安装向导正准备指导您完成安装过程，请稍候。</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"-在目录中安装、修复、卸载或下载捆绑包的完整本地副本。安装是默认设置。
+
+/passive-没有提示的最小用户界面。
+/quiet-没有用户界面也没有提示。
+默认情况下，将显示 UI 和所有提示。
+
+/norestart-禁止任何重启的尝试。默认情况下，UI 会在重启前提示。
+/log log.txt-记录到特定文件。默认情况下，将在%TEMP%文件夹中创建日志文件。
+/language ID-使用指定的语言。示例 ID"en" 适用于英语或"he"希伯来语。
+/?-显示此帮助屏幕
+
+INSTALL_FOLDER="C:\Program Files\Sample"-设置目标文件夹</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>忽略(I)</value>
@@ -231,13 +254,13 @@
     <value>否(N)</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>备注</value>
+    <value>注意</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>确定</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>查看日志文件</value>
+    <value>打开日志文件</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>安装中止</value>
@@ -245,11 +268,14 @@
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>重试(R)</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>其中一个组件安装失败。重试可能会解决问题。你想重试吗？</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>数据库</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>完成</value>
+    <value>完</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>目标文件夹</value>
@@ -258,22 +284,22 @@
     <value>产品功能</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>安装进度</value>
+    <value>进展</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>维护选项</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>服务帐户</value>
+    <value>服务账户</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>摘要</value>
+    <value>已准备好安装</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>密码</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>需要用户名</value>
+    <value>请提供 SQL 用户名</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Windows 正在配置 {0}，请稍候</value>
@@ -300,14 +326,20 @@
     <value>产品功能</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>服务帐户</value>
+    <value>服务账户</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>错误</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>不能执行文件：
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>关闭</value>
+    <value>关机</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL 验证</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>删除(R)</value>

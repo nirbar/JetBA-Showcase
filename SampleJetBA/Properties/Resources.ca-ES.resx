@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Endarrere</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Navega...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fitxer: {0}</value>
   </data>
@@ -157,7 +154,7 @@
     <value>Finalitza</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Continua</value>
+    <value>Continuar</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copia els detalls al porta-retalls</value>
@@ -165,8 +162,17 @@
   <data name="Database" xml:space="preserve">
     <value>Base de dades</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Connexió de</value>
+  </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Servidor</value>
+    <value>Servidor de</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>rebaixar</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>S'ha detectat una versió més recent de [WixBundleName]. No és compatible amb la baixada</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
@@ -177,10 +183,16 @@
 Després de reiniciar l'ordinador, executeu aquest programa de nou per completar la instal·lació de {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>S'està processant {0}</value>
+    <value>Processament {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Surt</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>No s'ha pogut connectar a la base de dades {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>No s'ha pogut crear arxiu d'arxius de registre</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Fitxers en ús</value>
@@ -190,6 +202,20 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Espereu mentre l'auxiliar d'instal·lació es prepara per guiar-vos pel procés d'instal·lació.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - instal·la, repara, desinstal o descarrega una còpia local completa del paquet en directori. Instal·lar és el valor per defecte.
+
+/passive - UI mínima sense indicacions.
+/quiet - No hi ha interfície d'usuari i no hi ha indicacions.
+Per omissió es mostren la interfície d'usuari i totes les indicacions.
+
+/norestart - Suprimeix els intents de reiniciar. Per defecte, la interfície d'usuari us demanarà abans de reiniciar.
+/log log.txt - Els registres a un fitxer específic. Per defecte, es crea un fitxer de registre a la %TEMP% carpeta.
+/language ID - Utilitzar l'idioma especificat. Els ID d'exemple són "en" per a l'anglès o "he" per a l'hebreu.
+/? - Mostra aquesta pantalla d'ajuda
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Establir la carpeta de destinació</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignora-ho</value>
@@ -213,10 +239,10 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>L'auxiliar d'instal·lació completarà la instal·lació del producte {0} a l'ordinador. Feu clic a Instal·la per continuar o a Cancel·la per sortir de l'auxiliar d'instal·lació.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Nom d'usuari o contrasenya no vàlid.</value>
+    <value>Nom d'usuari o contrasenya no vàlids.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Carrega</value>
+    <value>Càrrega</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Canvia</value>
@@ -234,7 +260,7 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>D'acord</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Visualitza el fitxer de registre</value>
+    <value>Obrir el fitxer de registre</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>S'ha abandonat la instal·lació</value>
@@ -242,11 +268,14 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Torna-ho a provar</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Un dels components no ha pogut instal·lar. Tornar a tractar pot resoldre el problema. Voleu tornar a provar?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Base de dades</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Acabament</value>
+    <value>Acabat</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Carpeta de destinació</value>
@@ -255,7 +284,7 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Característiques del producte</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Progrés de la instal·lació</value>
+    <value>Progrés</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Opcions de manteniment</value>
@@ -264,13 +293,13 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Compte de servei</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Resum</value>
+    <value>Llest per instal·lar</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Contrasenya</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nom d'usuari obligatori</value>
+    <value>Si us plau proporcioneu nom d'usuari SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Espereu mentre el Windows configura el producte {0}</value>
@@ -288,7 +317,7 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>Reinicia ara</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Reprèn</value>
+    <value>Continuar</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Torna-ho a provar</value>
@@ -299,12 +328,18 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
   <data name="ServiceAccount" xml:space="preserve">
     <value>Compte de servei</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Error</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>No es pot executar el fitxer:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Tanca</value>
+    <value>Aturada</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Autenticació SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Suprimeix</value>
@@ -322,13 +357,13 @@ Després de reiniciar l'ordinador, executeu aquest programa de nou per completar
     <value>D'acord</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Advertiment</value>
+    <value>Avís</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Cal que l'instal·lador reiniciï el sistema perquè pugui continuar la instal·lació del producte {0}. Feu clic a Sí per reiniciar-lo ara o a No si teniu previst reiniciar-lo manualment més tard.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Autenticació del Windows</value>
+    <value>Autenticació de Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sí</value>

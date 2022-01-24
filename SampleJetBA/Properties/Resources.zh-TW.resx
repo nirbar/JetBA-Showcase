@@ -120,11 +120,11 @@
   <data name="Abort" xml:space="preserve">
     <value>結束(X)</value>
   </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>身份驗證</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>上一步(B)</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>瀏覽(R)...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>檔案: {0}</value>
@@ -160,10 +160,19 @@
     <value>複製細節到剪貼簿</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>資料庫</value>
+    <value>數據庫</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>數據庫連接</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>伺服器</value>
+    <value>數據庫服務器</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>降級</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>檢測到 [WixBundleName] 的較新版本。不支持降級</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>錯誤</value>
@@ -173,8 +182,17 @@
 
 在重新啟動電腦之後，請再執行這個程式來安裝 {0}。</value>
   </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>正在處理 {0}</value>
+  </data>
   <data name="Exit" xml:space="preserve">
     <value>結束(X)</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>連接到 {0} 個數據庫失敗</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>無法創建日誌文件存檔</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>檔案使用中</value>
@@ -184,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>安裝精靈正在準備引導您完成安裝，請稍候。</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"-在目錄中安裝、修復、卸載或下載包的完整本地副本。默認設置為「安裝」。
+
+/passive-最小的用户界面，沒有提示。
+/quiet-沒有用户界面，沒有提示。
+默認情況下，將顯示 UI 和所有提示。
+
+/norestart-禁止任何重新啟動嘗試。默認情況下，UI 將在重新啟動之前提示。
+/log log.txt-記錄到特定文件。默認情況下，將在文件 %TEMP% 夾中創建一個日誌文件。
+/language ID-使用指定的語言。示例 ID 用 "en" 於英語或 "he" 希伯來語。
+/?-顯示此幫助屏幕
+
+INSTALL_FOLDER="C:\Program Files\Sample"-設置目標文件夾</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>忽略(I)</value>
@@ -206,8 +238,11 @@
   <data name="InterruptedRebootPrompt0" xml:space="preserve">
     <value>安裝精靈即將完成在您的電腦上安裝 {0}。請按 [\[]安裝[\]] 繼續進行，或按 [\[]取消[\]] 結束安裝精靈。</value>
   </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>無效的用户名或密碼。</value>
+  </data>
   <data name="Load" xml:space="preserve">
-    <value>載入</value>
+    <value>加載</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>變更(C)</value>
@@ -219,13 +254,13 @@
     <value>否(N)</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>附註</value>
+    <value>注意事項</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>確定</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>檢視記錄檔</value>
+    <value>打開日誌文件</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>已中止安裝</value>
@@ -233,8 +268,11 @@
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>重試(R)</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>其中一個組件安裝失敗。重試可能會解決問題。您希望重試嗎？</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>資料庫</value>
+    <value>數據庫</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
     <value>完成</value>
@@ -246,19 +284,22 @@
     <value>產品功能</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>安裝進度</value>
+    <value>進展</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>維護選項</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>服務帳戶</value>
+    <value>服務帳户</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>摘要</value>
+    <value>準備安裝</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>密碼</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>請提供 SQL 用户名</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>請稍候，Windows 在設定 {0}</value>
@@ -285,7 +326,10 @@
     <value>產品功能</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>服務帳戶</value>
+    <value>服務帳户</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>錯誤</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>無法執行檔案:
@@ -294,8 +338,14 @@
   <data name="ShutDown" xml:space="preserve">
     <value>關閉</value>
   </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL 身份驗證</value>
+  </data>
   <data name="Uninstall" xml:space="preserve">
     <value>移除(R)</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用户名</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>上一步(B)</value>
@@ -313,7 +363,7 @@
     <value>安裝程式必須重新啟動您的系統才能繼續設定 {0}。請按一下 [\[]是[\]] 立即重新啟動，或如果您想要稍後手動重新啟動請按一下 [\[]否[\]]。</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows 驗證</value>
+    <value>視窗身份驗證</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>是(Y)</value>

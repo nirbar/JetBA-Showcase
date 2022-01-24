@@ -121,13 +121,10 @@
     <value>Quitter</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Authentification</value>
+    <value>L'authentification</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Précédent</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Parcourir...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fichier : {0}</value>
@@ -163,13 +160,19 @@
     <value>Copier les Détails dans le Presse-papier</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>Base de données</value>
+    <value>Bases</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Configuration de la base de données</value>
+    <value>Connexion à la base</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Serveur</value>
+    <value>serveur de base de</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Rétrogradation</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Une version plus récente de [WixBundleName] a été détectée. La rétrogradation n'est pas prise</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Erreur</value>
@@ -180,10 +183,16 @@
 Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour reprendre l'installation de {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Traitement de {0} en cours</value>
+    <value>Traitement {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Quitter</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>échec de connexion à la base de données {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Impossible de créer l'archive des fichiers journaux</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Fichiers en cours d'utilisation</value>
@@ -193,6 +202,20 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Veuillez patienter pendant que l'Assistant Installation se prépare pour vous guider dans l'installation.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"- installe, répare, désinstalle ou télécharge une copie locale complète du bundle dans le répertoire. L'installation est la valeur par défaut.
+
+/passive- Interface utilisateur minimale sans invite.
+/quiet- Aucune interface utilisateur et aucune invite.
+Par défaut, l'interface utilisateur et toutes les invites sont affichées.
+
+/norestart- Supprimez toute tentative de redémarrage. Par défaut, l'interface utilisateur affiche une invite avant le redémarrage.
+/log log.txt- Consigne un fichier spécifique. Par défaut, un fichier journal est créé dans%TEMP% le dossier.
+/language ID- Utilisez la langue spécifiée. Les exemples d'ID sont"en" pour l'anglais ou"he" pour l'hébreu.
+/?- Afficher cet écran d'aide
+
+INSTALL_FOLDER="C:\Program Files\Sample"- Définir le dossier cible</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorer</value>
@@ -219,7 +242,7 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Nom d'utilisateur ou mot de passe non valide.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Charger</value>
+    <value>Charge</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Modifier</value>
@@ -231,13 +254,13 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Non</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Note</value>
+    <value>Remarque</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Afficher le fichier journal</value>
+    <value>Fichier journal ouvert</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installation interrompue</value>
@@ -245,11 +268,14 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Réessayer</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>L'un des composants n'a pas pu être installé. Une nouvelle tentative peut résoudre le problème. Souhaitez-vous réessayer ?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>Base de données</value>
+    <value>Bases</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Terminer</value>
+    <value>Finition</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Dossier de destination</value>
@@ -258,22 +284,22 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Composants du produit</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Progression de l’installation</value>
+    <value>Progrès</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Options de maintenance</value>
+    <value>Options d'entretien</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Compte de service</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Résumé</value>
+    <value>Prêt à installer</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Mot de passe</value>
+    <value>Mot de</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nom d'utilisateur requis</value>
+    <value>Indiquez le nom d'utilisateur SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Veuillez patienter pendant que Windows configure {0}</value>
@@ -291,7 +317,7 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
     <value>Redémarrer maintenant</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Reprendre</value>
+    <value>Continuer</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Réessayer</value>
@@ -302,18 +328,24 @@ Une fois votre ordinateur redémarré, veuillez relancer cet assistant pour repr
   <data name="ServiceAccount" xml:space="preserve">
     <value>Compte de service</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Impossible d'exécuter le fichier :
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Fermer</value>
+    <value>Arrêt</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Authentification SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Supprimer</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>Nom d'utilisateur</value>
+    <value>Nom utilisateur</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Précédent</value>

@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Atpakaļ</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Pārlūkot...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fails: {0}</value>
   </data>
@@ -166,10 +163,16 @@
     <value>Datu bāze</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Datu bāzes konfigurācija</value>
+    <value>Datu bāzes savienojums</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Serveris</value>
+    <value>Datu bāzes serveris</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Pazazināšanās</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Atklāta jaunāka [WixBundleName] versija. Samazināšana netiek atbalstīta</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Kïûda</value>
@@ -180,10 +183,16 @@
 Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdît {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Apstrādā {0}</value>
+    <value>Apstrāde {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Iziet</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Neizdevās izveidot savienojumu ar {0} datu bāzi</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Neizdevās izveidot žurnālfailu arhīvu</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Faili, kas tiek lietoti</value>
@@ -193,6 +202,20 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Uzgaidiet, līdz Uzstādīšanas vednī tiek sagatavoti instalēšanas norādījumi.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - instalē, remontē, atinstalē vai lejupielādē pilnīgu lokālo komplekta kopiju direktorijā. Instalēšana ir noklusējuma.
+
+/passive - Minimālais lietotāja interfeiss bez norādēm.
+/quiet - Nav lietotāja interfeisa un nav uzvednes.
+Pēc noklusējuma lietotāja interfeiss un visas uzvednes tiek parādītas.
+
+/norestart - Nomākt jebkādus mēģinājumus restartēt. Pēc noklusējuma UI tiks parādīta uzvedne pirms restartēšanas.
+/log log.txt - Žurnāli uz konkrētu failu. Pēc noklusējuma žurnālfails tiek izveidots %TEMP% mapē.
+/language ID - Izmantojiet norādīto valodu. Piemērs ID ir "en" angļu vai "he" ebreju valodā.
+/? - Rādīt šo palīdzības ekrānu
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Iestatīt mērķa mapi</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorēt</value>
@@ -216,10 +239,10 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Izmantojot uzstādīšanas vedni, datorā tiks pabeigta {0} instalēšana. Noklikšķiniet uz Instalēt, lai turpinātu, vai uz Atcelt, lai izietu no uzstādīšanas vedņa.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Nederīgs lietotāja vārds vai parole.</value>
+    <value>Nederīgs lietotājvārds vai parole.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Ielādēt</value>
+    <value>Slodze</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Mainīt</value>
@@ -237,13 +260,16 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Labi</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Skatīt žurnālfailu</value>
+    <value>Atvērt žurnāla failu</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Uzstādīšana atcelta</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Mēģināt vēlreiz</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Vienu no komponentiem nav izdevies instalēt. Atkārtota mēģināšana var atrisināt problēmu. Vai jūs vēlaties darīt vēlreiz?</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Datu bāze</value>
@@ -258,22 +284,22 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Produkta līdzekļi</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Instalēšanas norise</value>
+    <value>Progress</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Uzturēšanas opcijas</value>
+    <value>Apkopes iespējas</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Pakalpojuma konts</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Kopsavilkums</value>
+    <value>Gatavs instalēšanai</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Parole</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nepieciešams lietotājvārds</value>
+    <value>Lūdzu, norādiet SQL lietotājvārdu</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Lūdzu, gaidiet, kamēr sistēma Windows konfigurē produktu {0}.</value>
@@ -291,7 +317,7 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
     <value>Pārstartēt tūlīt</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Atsākt</value>
+    <value>Turpināt</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Mēģināt vēlreiz</value>
@@ -302,12 +328,18 @@ Pçc pârstartçðanas palaidiet uzstâdîðanu no jauna, lai pabeigtu uzstâdî
   <data name="ServiceAccount" xml:space="preserve">
     <value>Pakalpojuma konts</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Kïûda</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Neiespçjami palaist failu:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Aizvērt</value>
+    <value>Izslēgšana</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL autentifikācija</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Noņemt</value>

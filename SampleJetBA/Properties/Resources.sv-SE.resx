@@ -121,13 +121,10 @@
     <value>Avsluta</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Autentisering</value>
+    <value>autentisering</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Föregående</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Bläddra...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fil: {0}</value>
@@ -157,19 +154,25 @@
     <value>Slutför</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Fortsätt</value>
+    <value>Fortsätta</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiera detaljinformation till klippbordet</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>Databas</value>
+    <value>databas</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Databaskonfiguration</value>
+    <value>Databasanslutning</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Databasserver</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Nedgradering</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>En nyare version av [WixBundleName] upptäcktes. Nedgradering stöds inte</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Fel</value>
@@ -180,10 +183,16 @@
 Efter att ha startat om datorn kör du installationsprogrammet igen för att slutföra installationen av {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Bearbetar {0}</value>
+    <value>Bearbetning {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Avsluta</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Det gick inte att ansluta till {0} -databasen</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Det gick inte att skapa arkiv för loggfiler</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Filer som används</value>
@@ -193,6 +202,20 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Vänta medan installationsguiden förbereder installationen.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - installerar, reparerar, avinstallerar eller laddar ner en fullständig lokal kopia av paketet i katalogen. Installation är standard.
+
+/passive - Minimal UI utan uppmaningar.
+/quiet - Inget UI och inga uppmaningar.
+Som standard visas användargränssnittet och alla ledtexter.
+
+/norestart - Undertryck alla försök att starta om. Som standard frågar UI före omstart.
+/log log.txt - Loggar till en specifik fil. Som standard skapas en loggfil i %TEMP% mappen.
+/language ID - Använd det angivna språket. Exempel ID är "en" för engelska eller "he" hebreiska.
+/? - Visa den här hjälpskärmen
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Ställ in målkatalog</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorera</value>
@@ -219,7 +242,7 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
     <value>Ogiltigt användarnamn eller lösenord.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Läs in</value>
+    <value>Ladda</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Ändra</value>
@@ -231,13 +254,13 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
     <value>Nej</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Anteckning</value>
+    <value>Obs</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Visa loggfilen</value>
+    <value>Öppna loggfil</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installationen avbröts</value>
@@ -245,11 +268,14 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Försök igen</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>En av komponenterna har misslyckats med att installera. Försöker igen kan lösa problemet. Vill du göra försök igen?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>Databas</value>
+    <value>databas</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Slutför</value>
+    <value>Avsluta</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Målmapp</value>
@@ -258,22 +284,22 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
     <value>Produktfunktioner</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Installationsförlopp</value>
+    <value>Framsteg</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Underhållsalternativ</value>
+    <value>Alternativ för underhåll</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Tjänstkonto</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Sammanfattning</value>
+    <value>Klar att installeras</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Lösenord</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Användarnamn krävs</value>
+    <value>Ange SQL-användarnamn</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Vänta medan {0} konfigureras</value>
@@ -291,7 +317,7 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
     <value>Starta om nu</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Återuppta</value>
+    <value>Fortsätta</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Försök igen</value>
@@ -302,12 +328,18 @@ Efter att ha startat om datorn kör du installationsprogrammet igen för att slu
   <data name="ServiceAccount" xml:space="preserve">
     <value>Tjänstkonto</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Fel</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Kan inte köra filen:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Stäng</value>
+    <value>Avstängning</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL-autentisering</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Ta bort</value>

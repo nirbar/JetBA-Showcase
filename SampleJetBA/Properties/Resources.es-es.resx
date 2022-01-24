@@ -121,13 +121,10 @@
     <value>Salir</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Autenticación</value>
+    <value>autenticación</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Atrás</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Examinar...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Archivo: {0}</value>
@@ -163,13 +160,19 @@
     <value>Copiar Detalles al Portapapeles</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>Base de datos</value>
+    <value>Bases</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Configuración de la base de datos</value>
+    <value>Conexión base de datos</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Servidor</value>
+    <value>Servidor base de datos</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Degradar</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Se ha detectado una versión más reciente de [WixBundleName]. No se admite la degradación</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
@@ -180,10 +183,16 @@
 Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente para completar la instalación de {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Procesando {0}</value>
+    <value>Procesamiento {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Salir</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Error al conectar a la base de datos {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Error al crear el archivo de archivos de registro</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Archivos en uso</value>
@@ -193,6 +202,20 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Espere mientras el Asistente para la instalación se prepara para guiarlo durante la instalación.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"- instala, repara, desinstala o descarga una copia local completa del paquete en el directorio. La instalación es la opción predeterminada.
+
+/passive- Interfaz de usuario mínima sin indicaciones.
+/quiet- Sin interfaz de usuario y sin indicaciones.
+De forma predeterminada, se muestran la interfaz de usuario y todas las solicitudes.
+
+/norestart- Suprime cualquier intento de reinicio. De forma predeterminada, la interfaz de usuario aparecerá antes de reiniciar
+/log log.txt- Se registra en un archivo específico. De forma predeterminada, se crea un archivo de registro en%TEMP% la carpeta.
+/language ID- Use el idioma especificado. Las identificaciones de ejemplo son"en" para inglés o"he" hebreo.
+/?- Mostrar esta pantalla de ayuda
+
+INSTALL_FOLDER="C:\Program Files\Sample"- Establecer carpeta de destino</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorar</value>
@@ -219,7 +242,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Nombre de usuario o contraseña no válidos.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Cargar</value>
+    <value>Carga</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Cambiar</value>
@@ -237,7 +260,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Aceptar</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Ver el archivo de registro</value>
+    <value>Abrir archivo de registro</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Instalación Anulada</value>
@@ -245,11 +268,14 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Reintentar</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>No se ha podido instalar uno de los componentes. Reintentarlo puede resolver el problema. ¿Desea volver a intentarlo?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>Base de datos</value>
+    <value>Bases</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Finalizar</value>
+    <value>Acabado</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Carpeta de destino</value>
@@ -258,7 +284,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Características del producto</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Progreso de la instalación</value>
+    <value>Progreso</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Opciones de mantenimiento</value>
@@ -267,13 +293,13 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Cuenta de servicio</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Resumen</value>
+    <value>Listo para instalar</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Contraseña</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Se requiere un nombre de usuario</value>
+    <value>Proporcione el nombre de usuario de SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Espere mientras Windows configura {0}</value>
@@ -291,7 +317,7 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Reiniciar ahora</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Reanudar</value>
+    <value>Continuar</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Reintentar</value>
@@ -302,18 +328,24 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
   <data name="ServiceAccount" xml:space="preserve">
     <value>Cuenta de servicio</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Error</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Imposible ejecutar el archivo:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Cerrar</value>
+    <value>Apagado</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>autenticación de SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Quitar</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>Nombre de usuario</value>
+    <value>Nombre usuario</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Atrás</value>
@@ -325,13 +357,13 @@ Una vez reiniciado el sistema, ejecute el programa de instalación nuevamente pa
     <value>Aceptar</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Advertencia</value>
+    <value>Aviso</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>El instalador debe reiniciar el sistema para que la configuración de {0} pueda continuar. Haga clic en Sí para reiniciar el sistema ahora o No si pretende reiniciarlo manualmente más tarde.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Autenticación de Windows</value>
+    <value>autenticación de Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sí</value>

@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>뒤로(B)</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>찾아보기(R)...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>파일: {0}</value>
   </data>
@@ -165,8 +162,17 @@
   <data name="Database" xml:space="preserve">
     <value>데이터베이스</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>데이터베이스 연결</value>
+  </data>
   <data name="DbServer" xml:space="preserve">
-    <value>서버</value>
+    <value>데이터베이스 서버</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>다운그레이드</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>최신 버전의 [WixBundleName] 이 (가) 감지되었습니다.다운그레이드는 지원되지 않습니다.</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>오류</value>
@@ -177,10 +183,16 @@
 컴퓨터를 다시 시작한 후, 설치 마법사를 다시 실행하여 {0} 설치를 완료하시기 바랍니다.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>{0} 처리 중</value>
+    <value>처리 중 {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>끝내기(X)</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>{0} 데이터베이스에 연결하지 못했습니다.</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>로그 파일 아카이브를 만들지 못했습니다.</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>사용 중인 파일</value>
@@ -190,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>설치 마법사가 설치 안내를 준비하는 동안 잠시 기다려 주십시오.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"- 번들의 전체 로컬 복사본을 디렉터리에 설치, 복구, 제거 또는 다운로드합니다.설치가 기본값입니다.
+
+/passive- 프롬프트가 없는 최소 UI
+/quiet- UI와 프롬프트가 없습니다.
+기본적으로 UI와 모든 프롬프트가 표시됩니다.
+
+/norestart- 다시 시작하려는 시도를 억제합니다.기본적으로 UI는 다시 시작하기 전에 프롬프트가 표시됩니다.
+/log log.txt- 특정 파일에 기록합니다.기본적으로 로그 파일은%TEMP% 폴더에 생성됩니다.
+/language ID- 지정된 언어를 사용합니다."en"예 ID는 영어 또는"he" 히브리어입니다.
+/?- 이 도움말 화면 표시
+
+INSTALL_FOLDER="C:\Program Files\Sample"- 대상 폴더 설정</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>무시(I)</value>
@@ -228,19 +254,22 @@
     <value>아니요(N)</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>메모</value>
+    <value>노트</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>확인</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>로그 파일 보기</value>
+    <value>로그 파일 열기</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>설치 취소</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>다시 시도(R)</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>구성 요소 중 하나를 설치하지 못했습니다.다시 시도하면 문제가 해결될 수 있습니다.다시 시도하시겠습니까?</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>데이터베이스</value>
@@ -255,7 +284,7 @@
     <value>제품 기능</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>설치 진행률</value>
+    <value>진행률</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>유지 관리 옵션</value>
@@ -264,13 +293,13 @@
     <value>서비스 계정</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>요약</value>
+    <value>설치 준비 완료</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>암호</value>
+    <value>패스워드</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>사용자 이름 필요</value>
+    <value>SQL 사용자 이름을 입력하십시오.</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>{0}을(를) 구성하는 동안 잠시 기다려 주십시오.</value>
@@ -288,7 +317,7 @@
     <value>지금 재부팅 하겠습니다.</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>다시 시작</value>
+    <value>계속</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>다시 시도(R)</value>
@@ -299,12 +328,18 @@
   <data name="ServiceAccount" xml:space="preserve">
     <value>서비스 계정</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>오류</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>파일 실행 오류:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>종료</value>
+    <value>셧다운</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL 인증</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>제거(R)</value>
@@ -328,7 +363,7 @@
     <value>시스템을 다시 시작한 후에 {0} 구성을 계속할 수 있습니다. 지금 다시 시작하려면 "예"를 클릭하고, 나중에 수동으로 다시 시작하려면 "아니요"를 클릭하십시오.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows 인증</value>
+    <value>윈도우 인증</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>예(Y)</value>

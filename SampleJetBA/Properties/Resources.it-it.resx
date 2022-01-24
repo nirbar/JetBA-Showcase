@@ -121,13 +121,10 @@
     <value>Esci</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Autenticazione</value>
+    <value>L'autenticazione</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Indietro</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Sfoglia...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>File: {0}</value>
@@ -163,13 +160,19 @@
     <value>Copia i dettagli negli Appunti</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>Database</value>
+    <value>Banca dati</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Configurazione database</value>
+    <value>Connessione al database</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Server di database</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Declassamento</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>È stata rilevata una versione più recente di [WixBundleName]. Il downgrade non è supportato</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Errore</value>
@@ -182,10 +185,16 @@
 Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Elaborazione di {0}</value>
+    <value>Elaborazione {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Esci</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Connessione al database {0} non riuscita</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Impossibile creare l'archivio dei file di registro</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>File in uso</value>
@@ -195,6 +204,20 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Attendere. È in corso la preparazione dell'Installazione guidata.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"- installa, ripara, disinstalla o scarica una copia locale completa del pacchetto nella directory. L'installazione è l'impostazione predefinita.
+
+/passive- Interfaccia utente minima senza istruzioni.
+/quiet- Nessuna interfaccia utente e nessuna richiesta.
+Per impostazione predefinita, vengono visualizzati l'interfaccia utente e tutte le richieste.
+
+/norestart- Elimina qualsiasi tentativo di riavvio. Per impostazione predefinita l'interfaccia utente verrà richiesta prima del riavvio.
+/log log.txt- Registra un file specifico. Per impostazione predefinita, un file di registro viene creato nella%TEMP% cartella.
+/language ID- Usa la lingua specificata. Gli ID di esempio sono"en" per l'inglese o"he" per l'ebraico.
+/?- Mostra questa schermata di aiuto
+
+INSTALL_FOLDER="C:\Program Files\Sample"- Imposta cartella di destinazione</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignora</value>
@@ -218,7 +241,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>L'installazione di {0} nel computer in uso verrà completata. Fare clic su Installa per continuare oppure su Annulla per uscire dall'Installazione guidata.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Nome utente o password non valida.</value>
+    <value>Nome utente o password non validi.</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Carica</value>
@@ -239,7 +262,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Visualizza file di registro</value>
+    <value>Apri il file di registro</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installazione interrotta</value>
@@ -247,11 +270,14 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Riprova</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Impossibile installare uno dei componenti. Un nuovo tentativo potrebbe risolvere il problema. Vuoi riprovare?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>Database</value>
+    <value>Banca dati</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Fine</value>
+    <value>Finitura</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Cartella di destinazione</value>
@@ -260,7 +286,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Funzionalità del prodotto</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Stato installazione</value>
+    <value>Progressi</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Opzioni di manutenzione</value>
@@ -269,13 +295,13 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Account del servizio</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Riepilogo</value>
+    <value>Pronto per l'installazione</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nome utente obbligatorio</value>
+    <value>Fornisci il nome utente SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Attendere. È in corso la configurazione di {0}.</value>
@@ -293,7 +319,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Riavvia ora</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Riprendi</value>
+    <value>Continua</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Riprova</value>
@@ -304,12 +330,18 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
   <data name="ServiceAccount" xml:space="preserve">
     <value>Account del servizio</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Errore</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Impossibile eseguire il file:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Chiudi</value>
+    <value>Arresto</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Autenticazione SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Rimuovi</value>
@@ -333,7 +365,7 @@ Dopo il riavvio del sistema esegui di nuovo l'installazione di {0}.</value>
     <value>Prima di continuare la configurazione di {0}, è necessario riavviare il sistema. Scegliere Sì per riavviarlo adesso oppure No per riavviarlo in un secondo momento.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Autenticazione di Windows</value>
+    <value>Autenticazione Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sì</value>

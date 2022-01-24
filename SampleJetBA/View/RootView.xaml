@@ -151,8 +151,8 @@
 
                     <!-- Text -->
                     <ScrollViewer DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderThickness="0" Background="Transparent">
-	                    <TextBlock Foreground="{StaticResource PopupForegroundBrush}" Style="{StaticResource GenericText}" TextWrapping="WrapWithOverflow"
-                               Text="{Binding Text}" Margin="10,10,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+	                    <TextBlock Foreground="{StaticResource PopupForegroundBrush}" Style="{StaticResource GenericText}" TextWrapping="Wrap"
+                                   Text="{Binding Text}" Margin="10,10,0,10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                 	</ScrollViewer>
 
                     <!-- Files in use -->

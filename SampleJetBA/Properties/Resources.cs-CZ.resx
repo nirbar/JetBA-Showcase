@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Zpět</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Procházet...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Soubor: {0}</value>
   </data>
@@ -166,10 +163,16 @@
     <value>Databáze</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Konfigurace databáze</value>
+    <value>Připojení k databázi</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Databázový server</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Zjištěna novější verze [WixBundleName]. Downgradování není podporováno</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Chyba</value>
@@ -180,10 +183,16 @@
 Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby bylo možné dokonèit instalaci produktu {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Zpracovává se entita {0}.</value>
+    <value>Zpracování {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Konec</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Nepodařilo se připojit k databázi {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Nepodařilo se vytvořit archiv souborů protokolu</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Používané soubory</value>
@@ -193,6 +202,20 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Počkejte prosím, než se Průvodce instalací připraví na požadované kroky instalace.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - nainstaluje, opravuje, odinstaluje nebo stáhne kompletní místní kopii balíčku v adresáři. Instalovat je výchozí.
+
+/passive - Minimální uživatelské rozhraní bez výzev.
+/quiet - Žádné uživatelské rozhraní a žádné výzvy.
+Ve výchozím nastavení uživatelského rozhraní a všechny výzvy jsou zobrazeny.
+
+/norestart - Potlačit všechny pokusy o restartování. Ve výchozím nastavení uživatelského rozhraní zobrazí výzva před restartováním
+/log log.txt - Přihlásí se k určitému souboru. Ve výchozím nastavení je soubor protokolu vytvořen ve %TEMP% složce.
+/language ID - Použijte zadaný jazyk. Příklady ID jsou "en" pro angličtinu nebo "he" hebrejštinu.
+/? - Zobrazit tuto obrazovku nápovědy
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Nastavit cílovou složku</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorovat</value>
@@ -216,10 +239,10 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Průvodce instalací dokončí instalaci produktu {0} do počítače. Pokračujte kliknutím na tlačítko Nainstalovat, nebo kliknutím na tlačítko Storno ukončete Průvodce instalací.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Neplatné uživatelské jméno nebo heslo</value>
+    <value>Neplatné uživatelské jméno nebo heslo.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Načíst</value>
+    <value>Zatížení</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Změnit</value>
@@ -237,13 +260,16 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Zobrazit soubor protokolu</value>
+    <value>Otevřít soubor protokolu</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Instalace přerušena</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Opakovat</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Jedna ze součástí se nezdařila instalace. Opakování může vyřešit problém. Přejete si to zopakovat?</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Databáze</value>
@@ -258,7 +284,7 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Součásti produktu</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Průběh instalace</value>
+    <value>Postup</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Možnosti údržby</value>
@@ -267,13 +293,13 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>Účet služby</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Souhrn</value>
+    <value>Připraveno k instalaci</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Heslo</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Vyžaduje se uživatelské jméno</value>
+    <value>Zadejte uživatelské jméno SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Počkejte na dokončení konfigurace produktu {0} v systému Windows.</value>
@@ -302,12 +328,18 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
   <data name="ServiceAccount" xml:space="preserve">
     <value>Účet služby</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nelze spustit soubor:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Zavřít</value>
+    <value>Vypnutí</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Ověřování SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Odebrat</value>
@@ -325,13 +357,13 @@ Po restartování Vašeho poèítaèe spuste znovu prùvodce instalací, aby b
     <value>OK</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Upozornění</value>
+    <value>Varování</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Před pokračováním konfigurace produktu {0} je třeba, aby instalační služba restartovala počítač. Kliknete-li na tlačítko Ano, bude počítač restartován ihned. Pokud chcete počítač restartovat později ručně, klikněte na tlačítko Ne.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Ověřování Windows</value>
+    <value>Ověřování systému Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ano</value>

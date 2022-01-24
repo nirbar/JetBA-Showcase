@@ -121,13 +121,10 @@
     <value>Zakończ</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Uwierzytelnianie</value>
+    <value>uwierzytelnianie</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Wstecz</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Przeglądaj...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Plik: {0}</value>
@@ -157,7 +154,7 @@
     <value>Zakończ</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Kontynuuj</value>
+    <value>Kontynuować</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiuj szczegóły do schowka</value>
@@ -166,10 +163,16 @@
     <value>Baza danych</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Konfiguracja bazy danych</value>
+    <value>Połączenie z bazą</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Serwer</value>
+    <value>Serwer bazy danych</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Wykryto nowszą wersję [WixBundleName]. Zniżanie nie jest obsługiwane</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Błąd</value>
@@ -180,10 +183,16 @@
 Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Przetwarzanie encji {0}</value>
+    <value>Przetwarzanie {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Zakończ</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Nie powiodło się łączenie do bazy danych {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Tworzenie archiwum plików dziennika nie powiodło się</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Pliki w użyciu</value>
@@ -193,6 +202,20 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Zaczekaj, aż Kreator instalacji zakończy przygotowania do przeprowadzenia instalacji.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - instaluje, naprawia, odinstalowuje lub pobiera pełną lokalną kopię pakietu w katalogu. Instalacja jest domyślna.
+
+/passive - Minimalny interfejs użytkownika bez monitów.
+/quiet - Brak interfejsu użytkownika i żadnych monitów.
+Domyślnie wyświetlany jest interfejs użytkownika i wszystkie monity.
+
+/norestart - Wyłącz wszelkie próby ponownego uruchomienia. Domyślnie interfejs użytkownika monituje przed ponownym uruchomieniem.
+/log log.txt - Dzienniki do określonego pliku. Domyślnie plik dziennika jest tworzony w %TEMP% folderze.
+/language ID - Użyj określonego języka. Przykładowe identyfikatory są "en" dla języka angielskiego lub "he" hebrajskiego.
+/? - Pokaż ten ekran pomocy
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Ustaw folder docelowy</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignoruj</value>
@@ -219,7 +242,7 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Nieprawidłowa nazwa użytkownika lub hasło.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Załaduj</value>
+    <value>Załadować</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Zmień</value>
@@ -237,13 +260,16 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Wyświetl plik dziennika</value>
+    <value>Otwórz plik dziennika</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Instalacja przerwana</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Ponów próbę</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Nie udało się zainstalować jednego z komponentów. Ponowne próby mogą rozwiązać problem. Czy chciałbyś powtórzyć próbę?</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Baza danych</value>
@@ -258,7 +284,7 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Funkcje produktu</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Postęp instalacji</value>
+    <value>Postęp</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Opcje konserwacji</value>
@@ -267,13 +293,13 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Konto usługi</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Podsumowanie</value>
+    <value>Gotowy do instalacji</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Hasło</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Wymagana nazwa użytkownika</value>
+    <value>Podaj nazwę użytkownika SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Czekaj, system Windows konfiguruje produkt {0}</value>
@@ -291,7 +317,7 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Uruchom ponownie teraz</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Wznów</value>
+    <value>Kontynuować</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Ponów próbę</value>
@@ -302,12 +328,18 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
   <data name="ServiceAccount" xml:space="preserve">
     <value>Konto usługi</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nie mo¿na uruchomiæ:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Zamknij</value>
+    <value>Wyłączanie</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>uwierzytelnianie SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Usuń</value>
@@ -331,7 +363,7 @@ Nastêpnie ponownie uruchom instalator, aby zakoñczyæ instalacjê aplikacji {0
     <value>Instalator musi ponownie uruchomić system przed kontynuowaniem konfiguracji {0}. Kliknij przycisk Tak, aby uruchomić system ponownie, lub przycisk Nie, jeśli planujesz ręczne ponowne uruchomienie systemu później.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Uwierzytelnianie systemu Windows</value>
+    <value>uwierzytelnianie systemu Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Tak</value>

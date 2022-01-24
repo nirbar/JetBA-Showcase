@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>पीछे</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>ब्राउज़ करें...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>फ़ाइल: {0}</value>
   </data>
@@ -157,16 +154,25 @@
     <value>समाप्त करें</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>जारी</value>
+    <value>जारी रखें</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>क्लिपबोर्ड पर विवरण कॉपी करें</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>डेटाबेस</value>
+    <value>डाटाबेस</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>डाटाबेस कनेक्शन</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>सर्वर</value>
+    <value>डाटाबेस सर्वर</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>डाउनग्रेड</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>[WixBundleName] के नए संस्करण का पता चला। डाउनग्रेडिंग समर्थित नहीं है</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>त्रुटी</value>
@@ -177,10 +183,16 @@
 कल्पयन्त्र फिर सुरु करने पश्चात आप फिर से {0} का अधिष्ठापन शुरू करे.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>{0} संसाधित किया जा रहा है</value>
+    <value>प्रोसेसिंग {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>बाहर जाएँ</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>{0} डाटाबेस से कनेक्ट करने में विफल</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>लॉग फ़ाइल अभिलेख बनाने में विफल</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>फ़ाइलें उपयोग में</value>
@@ -190,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>सेट अप विज़ार्ड आपको स्थापना में सहायता करे, तब तक कृपया प्रतीक्षा करें.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"- निर्देशिका में बंडल की एक पूरी स्थानीय प्रतिलिपि स्थापित, मरम्मत, अनइंस्टॉल या डाउनलोड करता है। इंस्टॉल डिफ़ॉल्ट है।
+
+/passive- बिना किसी संकेत के न्यूनतम यूआई।
+/quiet- कोई UI और कोई संकेत नहीं।
+डिफ़ॉल्ट रूप से UI और सभी संकेत प्रदर्शित होते हैं।
+
+/norestart- पुनरारंभ करने के किसी भी प्रयास को दबाएं। डिफ़ॉल्ट रूप से UI पुनरारंभ करने से पहले संकेत देगा।
+/log log.txt- किसी विशिष्ट फ़ाइल में लॉग करता है डिफ़ॉल्ट रूप से%TEMP% फ़ोल्डर में एक लॉग फ़ाइल बनाई जाती है।
+/language ID- निर्दिष्ट भाषा का प्रयोग करें। उदाहरण आईडी अंग्रेजी या हिब्रू"he" के"en" लिए हैं।
+/?- यह हेल्प स्क्रीन दिखाएं
+
+INSTALL_FOLDER="C:\Program Files\Sample"- लक्ष्य फ़ोल्डर सेट करें</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>ध्यान न दें</value>
@@ -213,10 +239,10 @@
     <value>सेटअप विज़ार्ड आपके कंप्यूटर पर {0} की स्थापना पूरी करेगा. जारी रखने के लिए स्थापित करें क्लिक करें या सेटअप विज़ार्ड से बाहर निकलने के लिए रद्द करें क्लिक करें.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>अमान्य उपयोगकर्ता नाम या पासवर्ड.</value>
+    <value>अमान्य उपयोगकर्ता नाम या पासवर्ड।</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>लोड करें</value>
+    <value>लोड</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>बदलें</value>
@@ -234,7 +260,7 @@
     <value>ठीक</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>लॉग फ़ाइल देखें</value>
+    <value>लॉग फ़ाइल खोलें</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>इंस्टालेशन निरस्त किया गया</value>
@@ -242,11 +268,14 @@
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>पुनर्प्रयास करें</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>घटकों में से एक स्थापित करने में विफल रहा है। पुनः प्रयास करने से समस्या हल हो सकती है। क्या आप चाहते हैं कि पुनः प्रयास करें?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>डेटाबेस</value>
+    <value>डाटाबेस</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>समाप्त</value>
+    <value>फ़िनिश</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>गंतव्य फ़ोल्डर</value>
@@ -255,22 +284,22 @@
     <value>उत्पाद सुविधाएँ</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>स्थापना प्रगति</value>
+    <value>प्रोग्रेस</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>रखरखाव विकल्प</value>
+    <value>रखरखाव के विकल्प</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>सेवा खाता</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>सारांश</value>
+    <value>इंस्टॉल करने के लिए तैयार</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>पासवर्ड</value>
+    <value>कूटशब्द</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>उपयोगकर्ता नाम आवश्यक है</value>
+    <value>कृपया SQL उपयोगकर्ता नाम प्रदान करें</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>जब तक Windows {0} को कॉन्फ़िगर करता है, कृपया प्रतीक्षा करें</value>
@@ -288,7 +317,7 @@
     <value>अभी रीबूट करें</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>फिर से शुरू करें</value>
+    <value>जारी रखें</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>पुनर्प्रयास करें</value>
@@ -299,18 +328,24 @@
   <data name="ServiceAccount" xml:space="preserve">
     <value>सेवा खाता</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>त्रुटी</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>फाइल को कार्यान्वयन नही कर पा रहा:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>बंद करें</value>
+    <value>शटडाउन</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL प्रमाणीकरण</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>निकालें</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>उपयोगकर्ता नाम</value>
+    <value>उपयोक्ता नाम</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>पीछे</value>
@@ -328,7 +363,7 @@
     <value>{0} में किए गए कॉन्‍फ़िगरेशन परिवर्तनों को प्रभावी बनाने के लिए, आपको अपना सिस्‍टम पुनरारंभ करना होगा. अभी पुनरारंभ करने के लिए हाँ या यदि आप बाद में मैन्‍युअली पुनरारंभ करना चाहते हैं तो नहीं क्‍लिक करें.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows प्रमाणन</value>
+    <value>विंडोज़ प्रमाणीकरण</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>हाँ</value>

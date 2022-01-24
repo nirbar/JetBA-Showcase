@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Vissza</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Tallózás...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fájl: {0}</value>
   </data>
@@ -165,8 +162,17 @@
   <data name="Database" xml:space="preserve">
     <value>Adatbázis</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Adatbázis-kapcsolat</value>
+  </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Kiszolgáló</value>
+    <value>Adatbázis szerver</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Visszalépés</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>A [WixBundleName] újabb verzióját észlelték. A visszaminősítés nem támogatott</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Hiba</value>
@@ -177,10 +183,16 @@
 A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} telepítésének befejezéséhez.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>{0} feldolgozása</value>
+    <value>Feldolgozás {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Kilépés</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Nem sikerült csatlakozni a {0} adatbázishoz</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Nem sikerült létrehozni naplófájlok archívum</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Fájlok vannak használatban</value>
@@ -190,6 +202,20 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Várjon, amíg a telepítővarázsló felkészül, hogy végigvezesse Önt a telepítés folyamatán.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - telepíti, javítja, eltávolítja vagy letölti a csomag teljes helyi példányát a könyvtárban. A telepítés az alapértelmezett.
+
+/passive - Minimális UI nem kéri.
+/quiet - Nincs felhasználói felület és nincs felszólítás.
+Alapértelmezés szerint a felhasználói felület és az összes felszólítás megjelenik.
+
+/norestart - Szüntesse meg az újraindítási kísérleteket. Alapértelmezés szerint a felhasználói felület újraindítás előtt kéri.
+/log log.txt - Naplók egy adott fájlba. Alapértelmezés szerint naplófájl jön létre a %TEMP% mappában.
+/language ID - Használja a megadott nyelvet. A "en" példaazonosítók angol vagy "he" héber nyelven vannak.
+/? - A súgó képernyő megjelenítése
+
+INSTALL_FOLDER="C:\Program Files\Sample" - A célmappa beállítása</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Mellőzés</value>
@@ -213,7 +239,7 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>A telepítővarázsló befejezi a(z) {0} telepítését a számítógépre. A folytatáshoz kattintson a Telepítés gombra, a varázslóból való kilépéshez a Mégse gombra.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Érvénytelen felhasználói név vagy jelszó.</value>
+    <value>Érvénytelen felhasználónév vagy jelszó.</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Betöltés</value>
@@ -228,13 +254,13 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>Nem</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Megjegyz</value>
+    <value>Megjegyzés</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>A naplófájl megtekintése</value>
+    <value>Naplófájl megnyitása</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>A telepítés megszakadt</value>
@@ -242,11 +268,14 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Újra</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Az egyik összetevő nem sikerült telepíteni. Az újrapróbálás megoldhatja a problémát. Szeretné, ha újra próbálkozna?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Adatbázis</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Befejezés</value>
+    <value>Befejez</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Célmappa</value>
@@ -255,22 +284,22 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>A termék funkciói</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Telepítés állapota</value>
+    <value>Haladás</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Karbantartási beállítások</value>
+    <value>Karbantartási lehetőségek</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Szolgáltatásfiók</value>
+    <value>Szolgáltatási számla</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Összegzés</value>
+    <value>Készen áll a telepítésre</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Jelszó</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Felhasználónév szükséges</value>
+    <value>Adja meg az SQL felhasználónevet</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Kis türelmet, a Windows a(z) {0} konfigurálását végzi.</value>
@@ -297,14 +326,20 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>A termék funkciói</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Szolgáltatásfiók</value>
+    <value>Szolgáltatási számla</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Hiba</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nem hajtható végre a fájl:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Bezárás</value>
+    <value>Leállítás</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL hitelesítés</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Eltávolítás</value>
@@ -322,7 +357,7 @@ A számítógépe újraindítása után ismét futtassa a Telepítőt a(z) {0} t
     <value>OK</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Figyelmeztet</value>
+    <value>Figyelmeztetés</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>A telepítőnek újra kell indítania a rendszert a(z) {0} konfigurálásának folytatása előtt. Kattintson az Igen gombra az azonnali újraindításhoz, vagy a Nem gombra, ha később kívánja újraindítani a számítógépet.</value>

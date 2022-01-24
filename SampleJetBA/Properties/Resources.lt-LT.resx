@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Atgal</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Naršyti...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Failas: {0}</value>
   </data>
@@ -166,10 +163,16 @@
     <value>Duomenų bazė</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Duomenų bazės konfigūravimas</value>
+    <value>Duomenų bazės ryšys</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Serveris</value>
+    <value>Duomenų bazės serveris</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Žemyninė</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Naujesnė [WixBundleName] versija aptikta. Sumažėjimas nepalaikomas</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Klaida</value>
@@ -180,10 +183,16 @@
 Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaigtumëte „{0}“ diegimà.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Vykdoma {0}</value>
+    <value>Apdorojimas {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Išeiti</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Nepavyko prisijungti prie {0} duomenų bazės</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Nepavyko sukurti žurnalo failų archyvo</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Naudojami failai</value>
@@ -193,6 +202,20 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Palaukite, kol sąrankos vedlys pasiruoš vadovauti diegimo procesui.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - įdiegia, remontuoja, išdiegia ar atsisiunčia visą vietinę paketo kopiją kataloge. Įdiegti yra numatytasis.
+
+/passive - Minimalus UI be jokių raginimų.
+/quiet - Nėra UI ir jokių raginimų.
+Pagal numatytuosius nustatymus UI ir visi raginimai rodomi.
+
+/norestart - Slopinti bet kokius bandymus paleisti iš naujo. Pagal numatytuosius nustatymus UI bus greitai prieš paleidžiant iš naujo.
+/log log.txt - Įrašai į konkretų failą. Pagal numatytuosius nustatymus žurnalo failas yra sukurtas %TEMP% aplanke.
+/language ID - Naudokite nurodytą kalbą. Pavyzdys ID yra "en" anglų arba "he" hebrajų kalba.
+/? - Rodyti šį pagalbos ekraną
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Nustatyti tikslinę aplanką</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Nepaisyti</value>
@@ -216,10 +239,10 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Sąrankos vedlys baigs diegti {0} jūsų kompiuteryje. Norėdami tęsti spustelėkite mygtuką Diegti, o norėdami išeiti iš sąrankos vedlio, spustelėkite mygtuką Atšaukti.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Netinkamas vartotojo vardas arba slaptažodis.</value>
+    <value>Neteisingas vartotojo vardas arba slaptažodis.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Įkelti</value>
+    <value>Apkrova</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Keisti</value>
@@ -237,13 +260,16 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Gerai</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Rodyti žurnalo failą</value>
+    <value>Atidaryti žurnalo failą</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Įdiegimas nutrauktas</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Kartoti</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Vienas iš komponentų nepavyko įdiegti. Pakartotinis bandymas gali išspręsti šią problemą. Ar norite dar kartą pabandyti?</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Duomenų bazė</value>
@@ -258,22 +284,22 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Produkto priemonės</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Diegimo eiga</value>
+    <value>Pažanga</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Priežiūros parinktys</value>
+    <value>Techninės priežiūros galimybės</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Tarnybos abonementas</value>
+    <value>Paslaugų paskyra</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Suvestinė</value>
+    <value>Pasiruošę įdiegti</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Slaptažodis</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Vartotojo vardas būtinas</value>
+    <value>Prašome pateikti SQL vartotojo vardą</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Palaukite, kol „Windows“ sukonfigūruos {0}</value>
@@ -300,14 +326,20 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Produkto priemonės</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Tarnybos abonementas</value>
+    <value>Paslaugų paskyra</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Klaida</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nepavyko paleisti failo:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Uždaryti</value>
+    <value>Išjungimas</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL autentifikavimas</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Šalinti</value>
@@ -325,13 +357,13 @@ Kai perkrausite kompiuterá, paleiskite diegimo programà dar kartà, kad pabaig
     <value>Gerai</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Įspėjimas</value>
+    <value>įspėjimas</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Diegimo programa turi paleisti sistemą iš naujo, kad būtų galima tęsti {0} konfigūravimą. Spustelėkite Taip ir paleiskite iš naujo dabar arba spustelėkite Ne ir paleiskite iš naujo vėliau neautomatiškai.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>„Windows“ autentifikavimas</value>
+    <value>“Windows” autentifikavimas</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Taip</value>

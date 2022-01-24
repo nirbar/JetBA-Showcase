@@ -121,13 +121,10 @@
     <value>จบการทำงาน</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>การรับรองความถูกต้อง</value>
+    <value>การตรวจสอบความถูกต้อง</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>ย้อนกลับ</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>เรียกดู...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>แฟ้ม: {0}</value>
@@ -157,7 +154,7 @@
     <value>เสร็จสิ้น</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>ทำต่อไป</value>
+    <value>ดำเนินการต่อ</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>คัดลอกรายละเอียดลงคลิปบอร์ด</value>
@@ -166,10 +163,16 @@
     <value>ฐานข้อมูล</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>การตั้งค่าคอนฟิกฐานข้อมูล</value>
+    <value>การเชื่อมต่อฐานข้อมูล</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>เซิร์ฟเวอร์</value>
+    <value>เซิร์ฟเวอร์ฐานข้อมูล</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>ดาวน์เกรด</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>ตรวจพบเวอร์ชันที่ใหม่กว่าของ [WixBundleName]ไม่รองรับการดาวน์เกรด</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>ความผิดพลาด</value>
@@ -180,10 +183,16 @@
 หลังจากการ restart เครื่องคอมพิวเตอร์แล้ว เรียกโปรแกรม Setup นี้อีกครั้ง เพื่อให้การติดตั้ง {0} ถูกต้องสมบูรณ์</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>กำลังดำเนินการ {0}</value>
+    <value>การประมวลผล {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>จบการทำงาน</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>การเชื่อมต่อกับฐานข้อมูล {0} ล้มเหลว</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>ไม่สามารถสร้างแฟ้มบันทึกเก็บถาวรได้</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>แฟ้มถูกใช้งานอยู่</value>
@@ -193,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>โปรดรอสักครู่ขณะที่ตัวช่วยสร้างการติดตั้งเตรียมการที่จะแนะนำคุณตลอดขั้นตอนการติดตั้ง</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - ติดตั้งซ่อมแซมถอนการติดตั้งหรือดาวน์โหลดสำเนาภายในที่สมบูรณ์ของกลุ่มในไดเร็กทอรีติดตั้งเป็นค่าเริ่มต้น
+
+/passive - UI น้อยที่สุดกับไม่มีพร้อมท์
+/quiet - ไม่มี UI และไม่มีพร้อมท์
+โดยค่าเริ่มต้น UI และพร้อมท์ทั้งหมดจะปรากฏ
+
+/norestart - ปราบปรามความพยายามใด ๆ ในการรีสตาร์ทโดยค่าเริ่มต้น UI จะแจ้งให้ก่อนรีสตาร์ท
+/log log.txt - บันทึกไปยังแฟ้มที่เฉพาะเจาะจงโดยค่าเริ่มต้นแฟ้มบันทึกจะถูกสร้างขึ้นใน %TEMP% โฟลเดอร์
+/language ID - ใช้ภาษาที่ระบุตัวอย่างรหัส "en" สำหรับภาษาอังกฤษหรือ "he" ภาษาฮิบรู
+/? - แสดงหน้าจอวิธีใช้นี้
+
+INSTALL_FOLDER="C:\Program Files\Sample" - ตั้งค่าโฟลเดอร์เป้าหมาย</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>ละเว้น</value>
@@ -231,19 +254,22 @@
     <value>ไม่</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>บันทึกย่อ</value>
+    <value>หมายเหตุ</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>ตกลง</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>ดูแฟ้มบันทึก</value>
+    <value>เปิดแฟ้มบันทึก</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>การติดตั้งถูกยกเลิก</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>ลองใหม่</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>หนึ่งในคอมโพเนนต์ไม่สามารถติดตั้งได้การลองใหม่อาจจะแก้ปัญหาได้.คุณอยากลองใหม่อีกครั้งไหม</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>ฐานข้อมูล</value>
@@ -258,7 +284,7 @@
     <value>คุณลักษณะผลิตภัณฑ์</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>ความคืบหน้าการติดตั้ง</value>
+    <value>ความคืบหน้า</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>ตัวเลือกการบำรุงรักษา</value>
@@ -267,13 +293,13 @@
     <value>บัญชีบริการ</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>สรุปข้อมูล</value>
+    <value>พร้อมติดตั้ง</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>รหัสผ่าน</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>ต้องการชื่อผู้ใช้</value>
+    <value>โปรดระบุชื่อผู้ใช้ SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>โปรดรอขณะที่ Windows ทำการกำหนดค่า {0}</value>
@@ -302,12 +328,18 @@
   <data name="ServiceAccount" xml:space="preserve">
     <value>บัญชีบริการ</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>ความผิดพลาด</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>ไม่สามารถขยายไฟล์ได้:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>ปิด</value>
+    <value>ปิดเครื่อง</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>การรับรองความถูกต้องของ SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>เอาออก</value>
@@ -331,7 +363,7 @@
     <value>โปรแกรมติดตั้งต้องเริ่มการทำงานของระบบของคุณใหม่ ก่อนจึงจะสามารถกำหนดค่า {0} ต่อไปได้ คลิก ใช่ เพื่อเริ่มการทำงานใหม่เดี๋ยวนี้ หรือ ไม่ใช่ หากคุณวางแผนที่จะเริ่มการทำงานใหม่ด้วยตนเองในภายหลัง</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>การรับรองความถูกต้องของ Windows</value>
+    <value>การตรวจสอบความถูกต้องของ Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>ใช่</value>

@@ -121,13 +121,10 @@
     <value>Skončiť</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Overenie</value>
+    <value>Autentifikácia</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Späť</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Prehľadávať...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Súbor: {0}</value>
@@ -165,8 +162,17 @@
   <data name="Database" xml:space="preserve">
     <value>Databáza</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Databázové pripojenie</value>
+  </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Databázový server</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Zistená novšia verzia [WixBundleName]. Downgrading nie je podporovaný</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Chyba</value>
@@ -177,10 +183,16 @@
 Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo možné kompletne dokončiť inštaláciu produktu {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Spracúva sa entita {0}</value>
+    <value>Spracovanie {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Skončiť</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Pripojenie k databáze {0} zlyhalo</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Nepodarilo sa vytvoriť archív súborov denníka</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Používané súbory</value>
@@ -190,6 +202,20 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Počkajte, kým sa Sprievodca inštaláciou pripraví na prevádzanie inštaláciou.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - nainštaluje, opravuje, odinštaluje alebo stiahne kompletnú lokálnu kópiu balíka v adresári. Inštalácia je predvolená.
+
+/passive - Minimálne UI bez výziev.
+/quiet - Žiadne UI a žiadne výzvy.
+V predvolenom nastavení používateľského rozhrania a všetky výzvy sa zobrazia.
+
+/norestart - Potlačiť všetky pokusy o reštartovanie. Predvolene UI zobrazí výzvu pred reštartovaním.
+/log log.txt - Záznamy do konkrétneho súboru. V predvolenom nastavení sa vytvorí súbor denníka v %TEMP% priečinku.
+/language ID - Použite zadaný jazyk. Príklady ID sú "en" pre angličtinu alebo "he" hebrejčinu.
+/? - Zobraziť túto obrazovku Pomocníka
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Nastaviť cieľový priečinok</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorovať</value>
@@ -213,10 +239,10 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>Sprievodca inštaláciou dokončí inštaláciu programu {0} v počítači. Ak chcete pokračovať, kliknite na tlačidlo Inštalovať. Ak chcete Sprievodcu inštaláciou ukončiť, kliknite na tlačidlo Zrušiť.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Neplatné meno používateľa alebo heslo.</value>
+    <value>Neplatné používateľské meno alebo heslo.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Načítať</value>
+    <value>Zaťaženie</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Zmeniť</value>
@@ -234,13 +260,16 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Zobraziť súbor denníka</value>
+    <value>Otvoriť súbor denníka</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Prerušenie inštalácie</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Znova</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Jedna z komponentov sa nepodarilo nainštalovať. Opakované skúšanie môže vyriešiť problém. Prajete si to zopakovať?</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Databáza</value>
@@ -255,22 +284,22 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>Súčasti produktu</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Priebeh inštalácie</value>
+    <value>Pokrok</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Možnosti údržby</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Konto služby</value>
+    <value>Servisný účet</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Súhrn</value>
+    <value>Pripravené na inštaláciu</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Heslo</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Vyžaduje sa meno používateľa</value>
+    <value>Uveďte používateľské meno SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Počkajte, kým systém Windows nakonfiguruje program {0}</value>
@@ -297,20 +326,26 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>Súčasti produktu</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Konto služby</value>
+    <value>Servisný účet</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Chyba</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Nedá sa spustiť súbor:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Zavrieť</value>
+    <value>Vypnutie</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Overenie SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Odstrániť</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>Meno používateľa</value>
+    <value>Používateľské meno</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Späť</value>
@@ -322,13 +357,13 @@ Po reštartovaní počítača znovu spustite Sprievodcu inštaláciou, aby bolo 
     <value>OK</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Upozornenie</value>
+    <value>Varovanie</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Konfigurácia programu {0} môže pokračovať až po reštartovaní systému inštalátorom. Ak chcete reštartovať počítač, kliknite na tlačidlo Áno. Ak chcete reštartovať počítač neskôr manuálne, kliknite na tlačidlo Nie.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Overovanie Windowsu</value>
+    <value>Overenie systému Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Áno</value>

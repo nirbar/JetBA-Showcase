@@ -121,13 +121,10 @@
     <value>Выход</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Проверка подлинности</value>
+    <value>аутентификация</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Назад</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Обзор...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Файл: {0}</value>
@@ -166,10 +163,16 @@
     <value>База данных</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Конфигурация базы данных</value>
+    <value>Подключение к базе данных</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Сервер</value>
+    <value>Сервер баз данных</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Понижение версии</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Обнаружена более новая версия [WixBundleName]. Понижение версии не поддерживается</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Ошибка</value>
@@ -185,6 +188,12 @@
   <data name="Exit" xml:space="preserve">
     <value>Выход</value>
   </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Не удалось подключиться к базе данных {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Не удалось создать архив лог-файлов</value>
+  </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Используемые файлы</value>
   </data>
@@ -193,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Подождите, пока мастер выполняет подготовку к установке.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"- устанавливает, исправляет, удаляет или загружает полную локальную копию пакета в каталоге. Установить используется по умолчанию.
+
+/passive- Минимальный пользовательский интерфейс без подсказок.
+/quiet- Нет пользовательского интерфейса и подсказок.
+По умолчанию отображаются пользовательский интерфейс и все подсказки.
+
+/norestart- Подавление любых попыток перезапуска. По умолчанию пользовательский интерфейс будет запрашивать перед перезапуском.
+/log log.txt- Запись журналов в определенный файл. По умолчанию файл журнала создается в%TEMP% папке.
+/language ID- Используйте указанный язык. Примеры"en" идентификаторов — английский или"he" иврит.
+/?- Показать этот экран справки
+
+INSTALL_FOLDER="C:\Program Files\Sample"- Установить целевую папку</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Пропустить</value>
@@ -216,10 +239,10 @@
     <value>Мастер установки завершит установку {0} на компьютер. Нажмите кнопку "Установить", чтобы продолжить, или кнопку "Отмена", чтобы выйти из мастера установки.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Неверное имя пользователя или пароль.</value>
+    <value>Недопустимое имя пользователя или пароль.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Загрузить</value>
+    <value>Нагрузка</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Изменить</value>
@@ -231,13 +254,13 @@
     <value>Нет</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Примеч</value>
+    <value>Примечание</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>ОК</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Просмотреть файл журнала</value>
+    <value>Открыть лог-файл</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Установка прервана</value>
@@ -245,11 +268,14 @@
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Повторить</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Один из компонентов не удалось установить. Повторные попытки могут решить проблему. Хотите повторить попытку?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>База данных</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Готово</value>
+    <value>Отделка</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Конечная папка</value>
@@ -258,22 +284,22 @@
     <value>Компоненты продукта</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Ход выполнения установки</value>
+    <value>Прогресс</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Параметры обслуживания</value>
+    <value>Варианты обслуживания</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Учетная запись службы</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Сводка</value>
+    <value>Готов к установке</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Требуется имя пользователя</value>
+    <value>Укажите имя пользователя SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Подождите, пока Windows настроит программу {0}</value>
@@ -291,7 +317,7 @@
     <value>Да, перезагрузить ПК сейчас</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Возобновить</value>
+    <value>Продолжить</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Повторить</value>
@@ -302,18 +328,24 @@
   <data name="ServiceAccount" xml:space="preserve">
     <value>Учетная запись службы</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Невозможно выполнить файл:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Закрыть</value>
+    <value>Отключение</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Аутентификация SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Удалить</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>Имя пользователя</value>
+    <value>имя пользователя</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Назад</value>
@@ -325,13 +357,13 @@
     <value>ОК</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Предупр</value>
+    <value>Предупреждение</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Перед продолжением настройки {0} установщик должен перезагрузить компьютер. Чтобы перезагрузить компьютер сейчас, нажмите кнопку "Да". Чтобы отложить перезагрузку, нажмите кнопку "Нет".</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows — проверка подлинности</value>
+    <value>Аутентификация Windows</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Да</value>

@@ -121,13 +121,10 @@
     <value>Sair</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Autenticação</value>
+    <value>autenticação</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Anterior</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Procurar...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Ficheiro: {0}</value>
@@ -163,10 +160,19 @@
     <value>Copiar detalhes para a Área de Transfêrencia</value>
   </data>
   <data name="Database" xml:space="preserve">
-    <value>Base de Dados</value>
+    <value>Base de</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Ligação à base de</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Servidor</value>
+    <value>Servidor de banco de</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Foi detectada uma versão mais recente do [WixBundleName]. A desgraduação não é suportada</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Erro</value>
@@ -177,10 +183,16 @@
 Depois de reiniciar o computador, execute novamente este Assistente de Instalação para completar a instalação do {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>A Processar {0}</value>
+    <value>Processamento {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Sair</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Falha na ligação à base de dados {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Ocorreu uma falha ao criar ficheiros de registo</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Ficheiros em Utilização</value>
@@ -190,6 +202,20 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Aguarde enquanto o Assistente de Configuração se prepara para o orientar através da instalação.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - instala, repara, desinstala ou transfere uma cópia local completa do pacote no directório. Instalar é a predefinição.
+
+/passive - UI mínima sem indicações.
+/quiet - Sem UI e sem indicações.
+Por padrão, a UI e todos os pedidos são exibidos.
+
+/norestart - Suprimir quaisquer tentativas de reiniciar. Por predefinição, a UI será solicitada antes de reiniciar.
+/log log.txt - Registos de um ficheiro específico. Por predefinição, é criado um ficheiro de registo na %TEMP% pasta.
+/language ID - Utilizar a língua especificada. IDs de "en" exemplo são para inglês ou "he" hebraico.
+/? - Mostrar este ecrã de ajuda
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Definir pasta de destino</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorar</value>
@@ -216,7 +242,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Nome de utilizador ou palavra-passe inválidos.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Carregar</value>
+    <value>Carga</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Alterar</value>
@@ -234,7 +260,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Ver o Ficheiro de Registo</value>
+    <value>Abrir ficheiro de registo</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Instalação Abortada</value>
@@ -242,11 +268,14 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Repetir</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Um dos componentes falhou na instalação. Retentar pode resolver o problema. Deseja experimentar novamente?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
-    <value>Base de Dados</value>
+    <value>Base de</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Concluir</value>
+    <value>Acabamento</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Pasta de Destino</value>
@@ -255,22 +284,22 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Funcionalidades do Produto</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Progresso da Instalação</value>
+    <value>Andamento</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Opções de Manutenção</value>
+    <value>Opções de manutenção</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Conta de serviço</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Resumo</value>
+    <value>Pronto para instalar</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Palavra-passe</value>
+    <value>Senha</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Nome de Utilizador Necessário</value>
+    <value>Por favor forneça SQL Username</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Aguarde enquanto o Windows configura o {0}</value>
@@ -288,7 +317,7 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>Reiniciar Agora</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Retomar</value>
+    <value>Continuar</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Repetir</value>
@@ -299,18 +328,24 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
   <data name="ServiceAccount" xml:space="preserve">
     <value>Conta de serviço</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Erro</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Não é possível executar o ficheiro:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Fechar</value>
+    <value>Desligamento</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Autenticação S</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Remover</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>Nome de Utilizador</value>
+    <value>Nome de utilizador</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Anterior</value>
@@ -322,13 +357,13 @@ Depois de reiniciar o computador, execute novamente este Assistente de Instalaç
     <value>OK</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Advertência</value>
+    <value>Atenção</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>O instalador tem de reiniciar o sistema para que a configuração de {0} possa continuar. Clique em Sim para reiniciar agora ou em Não se pretender reiniciar manualmente mais tarde.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Autenticação do Windows</value>
+    <value>Autenticação</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Sim</value>

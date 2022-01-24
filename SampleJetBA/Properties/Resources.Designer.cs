@@ -124,15 +124,6 @@ namespace SampleJetBA.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Browse....
-        /// </summary>
-        public static string Browse {
-            get {
-                return ResourceManager.GetString("Browse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Caching {0}.
         /// </summary>
         public static string Caching0 {

@@ -2,7 +2,6 @@
 
 - FilesInUseExit
 - WixUIBack
-- CustomizeDlgBrowse
 - ProgressTextBindImageTemplate
 - WixUICancel
 - WixUINo
@@ -33,32 +32,6 @@
 - Error33
 - Error32
 
-# The following translations, provided by lookup keys, were copied from open sources without a license:
-
-- Authentication (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn)
-- Continue (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- Database (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,et-ee,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sq-al,sr-latn-cs,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- DatabaseConnection (,ar-sa,cs-cz,de-de,en-us,es-es,fi-fi,fr-fr,he-il,it-it,ja-jp,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,ru-ru,sv-se,th-th,tr-tr,zh-cn)
-- DbServer (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- Executing0 (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn)
-- InvalidCredentials (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn)
-- Load (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- Note (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- OpenFailureLog (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- PageTitle_Database (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,et-ee,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sq-al,sr-latn-cs,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- PageTitle_Finish (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,et-ee,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sq-al,sr-latn-cs,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- PageTitle_Progress (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,et-ee,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sq-al,sr-latn-cs,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- PageTitle_Repair (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- PageTitle_Service (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,et-ee,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sq-al,sr-latn-cs,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- PageTitle_Summary (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,et-ee,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sq-al,sr-latn-cs,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- Password (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- PleaseProvideSqlUserName (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn)
-- Resume (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- ServiceAccount (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,et-ee,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sq-al,sr-latn-cs,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- ShutDown (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- UserName (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn)
-- Warning (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
-- WindowsAuthentication (,ar-sa,bg-bg,ca-es,cs-cz,da-dk,de-de,el-gr,en-us,es-es,fi-fi,fr-fr,he-il,hi-in,hr-hr,hu-hu,it-it,ja-jp,ko-kr,lt-lt,lv-lv,nb-no,nl-nl,pl-pl,pt-br,pt-pt,ro-ro,ru-ru,sk-sk,sl-si,sq-al,sv-se,th-th,tr-tr,uk-ua,zh-cn,zh-tw)
 
 # The following translations, provided by lookup keys, where copied from NSIS:
 

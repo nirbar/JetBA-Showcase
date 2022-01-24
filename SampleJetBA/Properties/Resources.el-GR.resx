@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Πίσω</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Αναζήτηση...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Αρχείο: {0}</value>
   </data>
@@ -157,7 +154,7 @@
     <value>Τέλος</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Συνέχεια</value>
+    <value>Συνέχισε</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Αντιγραφή λεπτομερειών στο Πρόχειρο</value>
@@ -165,8 +162,17 @@
   <data name="Database" xml:space="preserve">
     <value>Βάση δεδομένων</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Σύνδεση βάσης δεδομένων</value>
+  </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Διακομιστής</value>
+    <value>Διακομιστής βάσης</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Υποβάθμιση</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Εντοπίστηκε μια νεότερη έκδοση του [WixBundleName]. Η υποβάθμιση δεν υποστηρίζεται</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Σφάλμα</value>
@@ -182,6 +188,12 @@
   <data name="Exit" xml:space="preserve">
     <value>Έξοδος</value>
   </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Αποτυχία σύνδεσης με τη βάση δεδομένων {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Αποτυχία δημιουργίας αρχειοθέτησης αρχείων καταγραφής</value>
+  </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Αρχεία σε χρήση</value>
   </data>
@@ -190,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Περιμένετε όσο ο Οδηγός εγκατάστασης προετοιμάζεται για να σας καθοδηγήσει στην εγκατάσταση.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - εγκαθιστά, επιδιορθώνει, καταργεί ή κατεβάζει ένα πλήρες τοπικό αντίγραφο της δέσμης στον κατάλογο. Η εγκατάσταση είναι η προεπιλογή.
+
+/passive - Ελάχιστη UI χωρίς προτροπές.
+/quiet - Χωρίς UI και χωρίς προτροπές.
+Από προεπιλογή εμφανίζονται το περιβάλλον εργασίας Χρήστη και όλες οι προτροπές.
+
+/norestart - Αποκρύψτε τυχόν απόπειρες επανεκκίνησης. Από προεπιλογή, το περιβάλλον εργασίας χρήστη θα σας ζητήσει πριν από την επανεκκίνηση.
+/log log.txt - Καταγράφει ένα συγκεκριμένο αρχείο. Από προεπιλογή δημιουργείται ένα αρχείο καταγραφής στο %TEMP% φάκελο.
+/language ID - Χρησιμοποιήστε την καθορισμένη γλώσσα. Τα αναγνωριστικά παραδείγματος είναι "en" για τα αγγλικά ή "he" για τα εβραϊκά.
+/? - Εμφάνιση αυτής της οθόνης βοήθειας
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Ορισμός φακέλου προορισμού</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Παράβλεψη</value>
@@ -234,7 +260,7 @@
     <value>ΟΚ</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Προβολή του αρχείου καταγραφής</value>
+    <value>Άνοιγμα αρχείου καταγραφής</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Η Εγκατάσταση Διακόπηκε</value>
@@ -242,11 +268,14 @@
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Επανάληψη</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Ένα από τα στοιχεία απέτυχε να εγκατασταθεί. Η επανάληψη της προσπάθειας μπορεί να λύσει το πρόβλημα. Θέλετε να ξαναδοκιμάσετε;</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Βάση δεδομένων</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Τέλος</value>
+    <value>Φινίρισμα</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Φάκελος προορισμού</value>
@@ -255,22 +284,22 @@
     <value>Δυνατότητες προϊόντος</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Πρόοδος εγκατάστασης</value>
+    <value>Πρόοδος</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Επιλογές συντήρησης</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Λογαριασμό υπηρεσίας</value>
+    <value>Λογαριασμός υπηρεσίας</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Σύνοψη</value>
+    <value>Έτοιμο για εγκατάσταση</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Κωδικός πρόσβασης</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Απαιτείται το όνομα χρήστη</value>
+    <value>Παρακαλώ δώστε το όνομα χρήστη SQL</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Περιμένετε όσο τα Windows ρυθμίζουν τις παραμέτρους του {0}</value>
@@ -288,7 +317,7 @@
     <value>Να γίνει επανεκκίνηση τώρα</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Συνέχιση</value>
+    <value>Συνέχισε</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Επανάληψη</value>
@@ -297,20 +326,26 @@
     <value>Δυνατότητες προϊόντος</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Λογαριασμό υπηρεσίας</value>
+    <value>Λογαριασμός υπηρεσίας</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Σφάλμα</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Δεν είναι δυνατή η εκτέλεση του αρχείου:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Κλείσιμο</value>
+    <value>Τερματισμός λειτουργίας</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>Έλεγχος ταυτότητας SQL</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Κατάργηση</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>Όνομα χρήστη</value>
+    <value>Όνομα Χρήστη</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Πίσω</value>
@@ -322,7 +357,7 @@
     <value>ΟΚ</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Προειδοπ</value>
+    <value>Προειδοποίηση</value>
   </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Το πρόγραμμα εγκατάστασης πρέπει να επανεκκινήσει το σύστημά σας, για να συνεχιστεί η ρύθμιση των παραμέτρων του {0}. Κάντε κλικ στο κουμπί "Ναι", για να γίνει επανεκκίνηση τώρα ή στο κουμπί "Όχι", εάν θέλετε να κάνετε επανεκκίνηση αργότερα με μη αυτόματο τρόπο.</value>

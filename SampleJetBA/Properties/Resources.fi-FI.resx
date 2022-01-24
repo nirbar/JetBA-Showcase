@@ -121,13 +121,10 @@
     <value>Lopeta</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Todentaminen</value>
+    <value>Todennus</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Edellinen</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Selaa...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Tiedosto: {0}</value>
@@ -166,10 +163,16 @@
     <value>Tietokanta</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Tietokannan konfigurointi</value>
+    <value>Tietokantayhteys</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Palvelin</value>
+    <value>Tietokantapalvelin</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Alenna</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Uudempi versio [WixBundleName] havaittu. Alentamista ei tueta</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Virhe</value>
@@ -180,10 +183,16 @@
 Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Käsitellään entiteettiä {0}</value>
+    <value>Käsittely {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Lopeta</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Yhteys {0} -tietokantaan epäonnistui</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Lokitiedostojen arkistoa ei voitu</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Tiedostoja on käytössä</value>
@@ -193,6 +202,20 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Odota. Ohjattu asennus valmistautuu asennukseen.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - asentaa, korjaa, poistaa tai lataa täydellisen paikallisen kopion nipun hakemistoon. Asennus on oletusarvo.
+
+/passive - Minimaalinen käyttöliittymä ilman kehotteita.
+/quiet - Ei käyttöliittymän eikä kehotteita.
+Oletusarvoisesti käyttöliittymä ja kaikki kehotteita näytetään.
+
+/norestart - Tukahduttaa kaikki yritykset käynnistää uudelleen. Oletusarvoisesti käyttöliittymä kysyy ennen uudelleenkäynnistystä.
+/log log.txt - Lokit tiettyyn tiedostoon. Oletusarvoisesti lokitiedosto luodaan %TEMP% kansioon.
+/language ID - Käytä määritettyä kieltä. "en" Esimerkkitunnukset ovat englanniksi tai "he" hepreaksi.
+/? - Näytä tämä ohjenäyttö
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Aseta kohdekansio</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ohita</value>
@@ -219,7 +242,7 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Virheellinen käyttäjänimi tai salasana.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Lataa</value>
+    <value>Kuormitus</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Muuta</value>
@@ -231,13 +254,13 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Ei</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Muistiinpano</value>
+    <value>Huomautus</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Tarkastele lokitiedostoa</value>
+    <value>Avaa lokitiedosto</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Asennus keskeytyi.</value>
@@ -245,11 +268,14 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Yritä uudelleen</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Yksi komponenteista ei ole asennettu. Uudelleenyrittäminen voi ratkaista ongelman. Haluatko yrittää uudelleen?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Tietokanta</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Valmis</value>
+    <value>Lopeta</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Kohdekansio</value>
@@ -258,22 +284,22 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
     <value>Tuotteen ominaisuudet</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Asennuksen edistyminen</value>
+    <value>Edistyminen</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Ylläpitoasetukset</value>
+    <value>Huolto vaihtoehdot</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Palvelutili</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Yhteenveto</value>
+    <value>Valmis asennettavaksi</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Salasana</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Käyttäjänimi on pakollinen</value>
+    <value>Anna SQL Käyttäjätunnus</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Odota, Windows määrittää tuotteen {0}</value>
@@ -302,18 +328,24 @@ Aja {0} -asennusohjelma uudestaan, kun olet käynnistänyt koneen uudelleen.</va
   <data name="ServiceAccount" xml:space="preserve">
     <value>Palvelutili</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Virhe</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Virhe suoritettaessa tiedostoa
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Sulje</value>
+    <value>Sammutus</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL-todennus</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Poista</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>Käyttäjänimi</value>
+    <value>Käyttäjätunnus</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Edellinen</value>

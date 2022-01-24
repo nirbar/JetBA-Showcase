@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Назад</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Преглед...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Файл: {0}</value>
   </data>
@@ -157,7 +154,7 @@
     <value>Край</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Продължаване</value>
+    <value>Продължавай</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Копиране на данните в буфера</value>
@@ -165,8 +162,17 @@
   <data name="Database" xml:space="preserve">
     <value>База данни</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Връзка с база данни</value>
+  </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Сървър</value>
+    <value>Сървър за бази данни</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>понижаване</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Открита е по-нова версия на [WixBundleName]. Понижаването не се поддържа</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Грешка</value>
@@ -177,10 +183,16 @@
 След като рестартирате, стартирайте инсталатора отново, за да довършите инсталирането на {0}.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Обработване на {0}</value>
+    <value>Обработка {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Изход</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Неуспешно свързване към {0} база данни</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Неуспешно създаване на архив на регистрационните файлове</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Използвани в момента файлове</value>
@@ -190,6 +202,20 @@
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Моля, изчакайте, докато съветникът за инсталиране се подготви да ви направлява в инсталирането.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - инсталира, ремонтира, деинсталира или изтегля пълно локално копие на пакета в директорията. Инсталирането е по подразбиране.
+
+/passive - Минимален потребителски интерфейс без подкани.
+/quiet - Няма потребителски интерфейс и никакви подкани.
+По подразбиране потребителския интерфейс и всички подкани се показват.
+
+/norestart - Потискайте всички опити за рестартиране. По подразбиране UI ще подкани преди рестартиране.
+/log log.txt - Дневници за конкретен файл. По подразбиране се създава лог файл в %TEMP% папка.
+/language ID - Използвайте посочения език. Примерни идентификатори са "en" за английски или "he" за иврит.
+/? - Показване на този помощен екран
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Задаване на целевата папка</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Игнорирай</value>
@@ -216,7 +242,7 @@
     <value>Невалидно потребителско име или парола.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Зареди</value>
+    <value>Заредете</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Промени</value>
@@ -234,7 +260,7 @@
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Преглед на регистрационния файл</value>
+    <value>Отваряне на лог файл</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Инсталирането прекратено.</value>
@@ -242,11 +268,14 @@
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Опитай пак</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Един от компонентите не успя да се инсталира. Повторно опити може да реши проблема. Искате ли да опитате отново?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>База данни</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Готово</value>
+    <value>Завършете</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Папка местоназначение</value>
@@ -255,22 +284,22 @@
     <value>Компоненти на продукта</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Ход на инсталирането</value>
+    <value>Напредък</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
     <value>Опции за поддръжка</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Сервизен акаунт</value>
+    <value>Служебен акаунт</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Обобщение</value>
+    <value>Готов за инсталиране</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Парола</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Изисква се потребителско име</value>
+    <value>Моля, посочете SQL потребителско име</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Моля, изчакайте, докато Windows конфигурира {0}</value>
@@ -288,7 +317,7 @@
     <value>Да, рестартирай сега</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Подновяване</value>
+    <value>Продължавай</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Опитай пак</value>
@@ -297,14 +326,20 @@
     <value>Компоненти на продукта</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Сервизен акаунт</value>
+    <value>Служебен акаунт</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Грешка</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Не е възможно да се стартира файл:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Затваряне</value>
+    <value>Изключване</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL удостоверяване</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Премахни</value>

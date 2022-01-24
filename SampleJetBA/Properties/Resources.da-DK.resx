@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Tilbage</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Gennemse...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fil: {0}</value>
   </data>
@@ -165,8 +162,17 @@
   <data name="Database" xml:space="preserve">
     <value>Database</value>
   </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Databaseforbindelse</value>
+  </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Database-server</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Nedgradering</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Der er fundet en nyere version af [WixBundleName]. Nedgradering understøttes ikke</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Fejl</value>
@@ -177,10 +183,16 @@
 Når computeren er genstartet skal du køre installationsprogrammet til {0} igen.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>Behandler {0}</value>
+    <value>Behandling {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Afslut</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Kunne ikke oprette forbindelse til {0} -databasen</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Det lykkedes ikke at oprette logfilarkiv</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Filer, der bruges</value>
@@ -190,6 +202,20 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Vent, mens guiden Installation forbereder at vejlede dig gennem installationen.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - installerer, reparerer, afinstallerer eller downloader en komplet lokal kopi af bundtet i mappen. Installer er standard.
+
+/passive - Minimal UI uden prompter.
+/quiet - Ingen brugergrænseflade og ingen prompter.
+Som standard vises UI og alle kommandolinjer.
+
+/norestart - Undertryk ethvert forsøg på at genstarte. Som standard vil UI spørge før genstart.
+/log log.txt - Logger til en bestemt fil. Som standard oprettes en logfil i %TEMP% mappen.
+/language ID - Brug det angivne sprog. Eksempel på id'er er "en" for engelsk eller "he" hebraisk.
+/? - Vis denne hjælpeskærm
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Indstil mål mappe</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignorer</value>
@@ -213,7 +239,7 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Guiden Installation fuldfører installationen af {0} på computeren. Klik på Installer for at fortsætte, eller klik på Annuller for at afslutte guiden Installation.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Ugyldigt brugernavn og ugyldig adgangskode.</value>
+    <value>Ugyldigt brugernavn eller adgangskode.</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Indlæs</value>
@@ -228,13 +254,13 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Nej</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Bemærkning</value>
+    <value>Bemærk</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Vis logfilen</value>
+    <value>Åbn logfil</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installation afbrudt</value>
@@ -242,11 +268,14 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Prøv igen</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>En af komponenterne har undladt at installere. Genforsøg kan løse problemet. Ønsker du at prøve igen?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Database</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Udfør</value>
+    <value>Afslut</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Destinationsmappe</value>
@@ -255,22 +284,22 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Produktfunktioner</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Installationsstatus</value>
+    <value>Fremskridt</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Indstillinger for vedligeholdelse</value>
+    <value>Vedligeholdelse muligheder</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Tjenestekonto</value>
+    <value>Tjeneste-konto</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Oversigt</value>
+    <value>Klar til installation</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Adgangskode</value>
+    <value>Password</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Brugernavn kræves</value>
+    <value>Angiv SQL-brugernavn</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Vent, mens Windows konfigurerer {0}</value>
@@ -288,7 +317,7 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Genstart nu</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Genoptag</value>
+    <value>Fortsæt</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Prøv igen</value>
@@ -297,14 +326,20 @@ Når computeren er genstartet skal du køre installationsprogrammet til {0} igen
     <value>Produktfunktioner</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Tjenestekonto</value>
+    <value>Tjeneste-konto</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Fejl</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Kan ikke køre programfilen:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Luk</value>
+    <value>Nedlukning</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL-godkendelse</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Fjern</value>

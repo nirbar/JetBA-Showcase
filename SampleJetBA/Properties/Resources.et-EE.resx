@@ -120,11 +120,11 @@
   <data name="Abort" xml:space="preserve">
     <value>Välju</value>
   </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Autentimine</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Tagasi</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Sirvimine...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Fail: {0}</value>
@@ -153,11 +153,26 @@
   <data name="Close" xml:space="preserve">
     <value>Lõpeta</value>
   </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Jätka</value>
+  </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopeeri detailid lõikelauale</value>
   </data>
   <data name="Database" xml:space="preserve">
     <value>Andmebaas</value>
+  </data>
+  <data name="DatabaseConnection" xml:space="preserve">
+    <value>Andmebaasi ühendus</value>
+  </data>
+  <data name="DbServer" xml:space="preserve">
+    <value>Andmebaasi server</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Allahindmine</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Tuvastati [WixBundleName] uuem versioon. Allahinde alandamist ei toetata</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Viga</value>
@@ -167,8 +182,17 @@
 
 Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigaldamine.</value>
   </data>
+  <data name="Executing0" xml:space="preserve">
+    <value>Töötlemine {0}</value>
+  </data>
   <data name="Exit" xml:space="preserve">
     <value>Välju</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>{0} andmebaasiga ühendamine nurjus</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Logifailide arhiivi loomine nurjus</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Kasutuses olevad failid</value>
@@ -178,6 +202,20 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Palun oodake, kuni installiviisard valmistub teid installimisel juhendama.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - installib, remont, desinstallib või alla laadida täielik kohalik koopia kimp kataloogis. Installimine on vaikimisi.
+
+/passive - Minimaalne kasutajaliidese ilma viipadeta.
+/quiet - Ei kasutajaliidese ja ei viipasid.
+Vaikimisi kuvatakse kasutajaliidese ja kõik viipad.
+
+/norestart - Supresseerida kõik katsed taaskäivitada. Vaikimisi küsib kasutajaliidese enne taaskäivitamist.
+/log log.txt - logib kindlale failile. Vaikimisi luuakse %TEMP% kausta logifail.
+/language ID - Kasutage määratud keelt. Näidete "en" ID-d on inglise või "he" heebrea keeles.
+/? - Näita seda spikri ekraani
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Määra sihtkaust</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignoreeri</value>
@@ -200,6 +238,12 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   <data name="InterruptedRebootPrompt0" xml:space="preserve">
     <value>Installiviisard viib toote {0} teie arvutisse installimise lõpule. Jätkamiseks klõpsake käsul Installi, installiviisardist väljumiseks käsul Loobu.</value>
   </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Kehtetu kasutajanimi või parool.</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Koormus</value>
+  </data>
   <data name="Modify" xml:space="preserve">
     <value>Muuda</value>
   </data>
@@ -209,8 +253,14 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   <data name="No" xml:space="preserve">
     <value>Ei</value>
   </data>
+  <data name="Note" xml:space="preserve">
+    <value>Märge</value>
+  </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
+  </data>
+  <data name="OpenFailureLog" xml:space="preserve">
+    <value>Ava logifail</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Paigaldus katkestatud</value>
@@ -218,11 +268,14 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Proovi uuesti</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Üks komponente ei õnnestunud installida. Korduvproovimine võib probleemi lahendada. Kas soovite uuesti proovida?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Andmebaas</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Valmis</value>
+    <value>Lõpeta</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Sihtkaust</value>
@@ -231,13 +284,22 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
     <value>Toote funktsioonid</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Installimise edenemine</value>
+    <value>Progress</value>
+  </data>
+  <data name="PageTitle_Repair" xml:space="preserve">
+    <value>Hoolduse võimalused</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Teenusekonto</value>
+    <value>Teenuse konto</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Kokkuvõte</value>
+    <value>Installimiseks valmis</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Salasõna</value>
+  </data>
+  <data name="PleaseProvideSqlUserName" xml:space="preserve">
+    <value>Palun sisestage SQL-i kasutajanimi</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Palun oodake, kuni Windows konfigureerib toodet {0}</value>
@@ -254,6 +316,9 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   <data name="Restart" xml:space="preserve">
     <value>Taaskäivita kohe</value>
   </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Jätka</value>
+  </data>
   <data name="Retry" xml:space="preserve">
     <value>Proovi uuesti</value>
   </data>
@@ -261,14 +326,26 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
     <value>Toote funktsioonid</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Teenusekonto</value>
+    <value>Teenuse konto</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Viga</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Ei saanud käivitada faili:
 {0}</value>
   </data>
+  <data name="ShutDown" xml:space="preserve">
+    <value>Sulgemine</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL-i autentimine</value>
+  </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Eemalda</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Kasutajanimi</value>
   </data>
   <data name="ValidationPromptCancel" xml:space="preserve">
     <value>Tagasi</value>
@@ -279,8 +356,14 @@ Pärast taaskäivitust käivitage {0}'i paigaldaja uuesti, et lõpetada paigalda
   <data name="ValidationPromptOk" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Hoiatus</value>
+  </data>
   <data name="WeNeedToRebootNow0" xml:space="preserve">
     <value>Enne toote {0} konfigureerimise jätkamist peab installer süsteemi taaskäivitama. Arvuti kohe taaskäivitamiseks klõpsake käsul Jah, hiljem käsitsi taaskäivitamiseks klõpsake käsul Ei.</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windowsi autentimine</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Jah</value>

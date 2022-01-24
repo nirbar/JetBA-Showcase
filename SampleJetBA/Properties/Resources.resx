@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Browse...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>Caching {0}</value>
   </data>

@@ -121,13 +121,10 @@
     <value>Afsluiten</value>
   </data>
   <data name="Authentication" xml:space="preserve">
-    <value>Verificatie</value>
+    <value>Authenticatie</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Vorige</value>
-  </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Bladeren...</value>
   </data>
   <data name="Caching0" xml:space="preserve">
     <value>Bestand: {0}</value>
@@ -157,7 +154,7 @@
     <value>Voltooien</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Doorgaan</value>
+    <value>Ga verder</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Details kopiëren naar klembord</value>
@@ -166,10 +163,16 @@
     <value>Database</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Databaseconfiguratie</value>
+    <value>Verbinding met database</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Databaseserver</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>Er is een nieuwere versie van [WixBundleName] gedetecteerd. Downgraden wordt niet ondersteund</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Fout</value>
@@ -180,10 +183,16 @@
 Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie van {0} te voltooien.</value>
   </data>
   <data name="Executing0" xml:space="preserve">
-    <value>{0} verwerken</value>
+    <value>Verwerking {0}</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Afsluiten</value>
+  </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Verbinding met {0} -database is mislukt</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Het maken van archief met logbestanden is mislukt</value>
   </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Bestanden in gebruik</value>
@@ -193,6 +202,20 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>De installatiewizard wordt voorbereid. Een ogenblik geduld.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract"- installeert, repareert, verwijdert of downloadt een volledige lokale kopie van de bundel in de map. Installeren is de standaardinstelling.
+
+/passive- Minimale gebruikersinterface zonder aanwijzingen.
+/quiet- Geen gebruikersinterface en geen aanwijzingen.
+Standaard worden gebruikersinterface en alle prompts weergegeven.
+
+/norestart- Onderdruk pogingen om opnieuw op te starten. Standaard wordt de gebruikersinterface gevraagd voordat u opnieuw wordt opgestart.
+/log log.txt- Logboeken naar een specifiek bestand. Standaard wordt een logbestand gemaakt in de%TEMP% map.
+/language ID- Gebruik de opgegeven taal. Voorbeeld-ID's zijn"en" voor Engels of"he" voor Hebreeuws.
+/?- Dit help-scherm weergeven
+
+INSTALL_FOLDER="C:\Program Files\Sample"- Doelmap instellen</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Negeren</value>
@@ -216,10 +239,10 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>De installatie van {0} op uw computer wordt voltooid. Klik op Installeren om door te gaan of op Annuleren als u de installatiewizard wilt sluiten.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Ongeldige gebruikersnaam of ongeldig wachtwoord.</value>
+    <value>Ongeldige gebruikersnaam of wachtwoord.</value>
   </data>
   <data name="Load" xml:space="preserve">
-    <value>Laden</value>
+    <value>Load</value>
   </data>
   <data name="Modify" xml:space="preserve">
     <value>Wijzigen</value>
@@ -231,13 +254,13 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Nee</value>
   </data>
   <data name="Note" xml:space="preserve">
-    <value>Notitie</value>
+    <value>Opmerking</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>Logboekbestand weergeven</value>
+    <value>Logbestand openen</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installatie afgebroken</value>
@@ -245,11 +268,14 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Opnieuw</value>
   </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>Eén van de componenten is niet geïnstalleerd. Opnieuw proberen kan het probleem oplossen. Wil je het opnieuw proberen?</value>
+  </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Database</value>
   </data>
   <data name="PageTitle_Finish" xml:space="preserve">
-    <value>Voltooien</value>
+    <value>Afwerking</value>
   </data>
   <data name="PageTitle_InstallLocation" xml:space="preserve">
     <value>Doelmap</value>
@@ -258,22 +284,22 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Productonderdelen</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Voortgang van de installatie</value>
+    <value>Vooruitgang</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Onderhoudsopties</value>
+    <value>Opties voor onderhoud</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
-    <value>Serviceaccount</value>
+    <value>Service-account</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Overzicht</value>
+    <value>Klaar om te installeren</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Wachtwoord</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>Gebruikersnaam vereist</value>
+    <value>Geef SQL-gebruikersnaam op</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>{0} wordt nu geconfigureerd. Een ogenblik geduld</value>
@@ -291,7 +317,7 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Nu herstarten</value>
   </data>
   <data name="Resume" xml:space="preserve">
-    <value>Hervatten</value>
+    <value>Ga verder</value>
   </data>
   <data name="Retry" xml:space="preserve">
     <value>Opnieuw</value>
@@ -300,14 +326,20 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Productonderdelen</value>
   </data>
   <data name="ServiceAccount" xml:space="preserve">
-    <value>Serviceaccount</value>
+    <value>Service-account</value>
+  </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Fout</value>
   </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Kan bestand niet uitvoeren:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Sluiten</value>
+    <value>Afsluiten</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL-verificatie</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Verwijderen</value>
@@ -331,7 +363,7 @@ Start Setup nogmaals nadat uw computer opnieuw is opgestart om de installatie va
     <value>Het systeem moet opnieuw worden opgestart voordat de configuratie van {0} kan doorgaan. Klik op Ja als u de computer nu opnieuw wilt opstarten of op Nee als u de computer later handmatig opnieuw wilt opstarten.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows-authenticatie</value>
+    <value>Windows-verificatie</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>

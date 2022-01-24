@@ -126,9 +126,6 @@
   <data name="Back" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="Browse" xml:space="preserve">
-    <value>Browse...</value>
-  </data>
   <data name="Caching0" xml:space="preserve">
     <value>File: {0}</value>
   </data>
@@ -166,10 +163,16 @@
     <value>Database</value>
   </data>
   <data name="DatabaseConnection" xml:space="preserve">
-    <value>Database configuration</value>
+    <value>Database connection</value>
   </data>
   <data name="DbServer" xml:space="preserve">
-    <value>Server</value>
+    <value>Database server</value>
+  </data>
+  <data name="Downgrade" xml:space="preserve">
+    <value>Downgrade</value>
+  </data>
+  <data name="DowngradePromptFormat" xml:space="preserve">
+    <value>A newer version of [WixBundleName] detected. Downgrading is not supported</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
@@ -185,6 +188,12 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="Exit" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="FailedConnectingToDbServer0" xml:space="preserve">
+    <value>Failed connecting to database server {0}</value>
+  </data>
+  <data name="FailedZippingLogFiles" xml:space="preserve">
+    <value>Failed zipping log files</value>
+  </data>
   <data name="FilesInUse" xml:space="preserve">
     <value>Files in Use</value>
   </data>
@@ -193,6 +202,20 @@ After restarting your computer, run Setup again to complete the installation of 
   </data>
   <data name="GettingReady" xml:space="preserve">
     <value>Please wait while the Setup Wizard prepares to guide you through the installation.</value>
+  </data>
+  <data name="HelpPageText" xml:space="preserve">
+    <value>/install | /repair | /uninstall | /layout "C:\Users\Me\Desktop\Extract" - installs, repairs, uninstalls or downloads a complete local copy of the bundle in directory. Install is the default.
+
+/passive - Minimal UI with no prompts.
+/quiet - No UI and no prompts.
+By default UI and all prompts are displayed.
+
+/norestart - Suppress any attempts to restart. By default UI will prompt before restart.
+/log log.txt - Logs to a specific file. By default a log file is created in %TEMP% folder.
+/language ID - Use the specified language. Example IDs are "en" for English or "he" for Hebrew.
+/? - Show this help screen
+
+INSTALL_FOLDER="C:\Program Files\Sample" - Set target folder</value>
   </data>
   <data name="Ignore" xml:space="preserve">
     <value>Ignore</value>
@@ -216,7 +239,7 @@ After restarting your computer, run Setup again to complete the installation of 
     <value>The Setup Wizard will complete the installation of {0} on your computer. Click Install to continue or Cancel to exit the Setup Wizard.</value>
   </data>
   <data name="InvalidCredentials" xml:space="preserve">
-    <value>Invalid user name or password.</value>
+    <value>Invalid username or password</value>
   </data>
   <data name="Load" xml:space="preserve">
     <value>Load</value>
@@ -237,13 +260,16 @@ After restarting your computer, run Setup again to complete the installation of 
     <value>OK</value>
   </data>
   <data name="OpenFailureLog" xml:space="preserve">
-    <value>View the Log File</value>
+    <value>Open log file</value>
   </data>
   <data name="OperationCanceled" xml:space="preserve">
     <value>Installation Aborted</value>
   </data>
   <data name="PackageRetryPromptCaption" xml:space="preserve">
     <value>Retry</value>
+  </data>
+  <data name="PackageRetryPromptText" xml:space="preserve">
+    <value>One of the components has failed to install. Retrying it may solve the issue. Do you wish do retry it?</value>
   </data>
   <data name="PageTitle_Database" xml:space="preserve">
     <value>Database</value>
@@ -258,22 +284,22 @@ After restarting your computer, run Setup again to complete the installation of 
     <value>Product Features</value>
   </data>
   <data name="PageTitle_Progress" xml:space="preserve">
-    <value>Installation Progress</value>
+    <value>Progress</value>
   </data>
   <data name="PageTitle_Repair" xml:space="preserve">
-    <value>Maintenance Options</value>
+    <value>Maintenance options</value>
   </data>
   <data name="PageTitle_Service" xml:space="preserve">
     <value>Service account</value>
   </data>
   <data name="PageTitle_Summary" xml:space="preserve">
-    <value>Summary</value>
+    <value>Ready to install</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
   <data name="PleaseProvideSqlUserName" xml:space="preserve">
-    <value>User Name Required</value>
+    <value>Please provide SQL username</value>
   </data>
   <data name="PleasWaitWhileExecuting0" xml:space="preserve">
     <value>Please wait while Windows configures {0}</value>
@@ -302,12 +328,18 @@ After restarting your computer, run Setup again to complete the installation of 
   <data name="ServiceAccount" xml:space="preserve">
     <value>Service account</value>
   </data>
+  <data name="ShellExecuteFailedCaption" xml:space="preserve">
+    <value>Error</value>
+  </data>
   <data name="ShellExecuteFailedTextFormat" xml:space="preserve">
     <value>Unable to execute file:
 {0}</value>
   </data>
   <data name="ShutDown" xml:space="preserve">
-    <value>Close</value>
+    <value>Shutdown</value>
+  </data>
+  <data name="SqlAuthentication" xml:space="preserve">
+    <value>SQL authentication</value>
   </data>
   <data name="Uninstall" xml:space="preserve">
     <value>Remove</value>
@@ -331,7 +363,7 @@ After restarting your computer, run Setup again to complete the installation of 
     <value>The installer must restart your system before configuration of {0} can continue. Click Yes to restart now or No if you plan to manually restart later.</value>
   </data>
   <data name="WindowsAuthentication" xml:space="preserve">
-    <value>Windows Authentication</value>
+    <value>Windows authentication</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
