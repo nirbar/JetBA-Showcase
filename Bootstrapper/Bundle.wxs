@@ -25,7 +25,7 @@
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)Ninject.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)Ninject.Extensions.Factory.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)Castle.Core.dll"/>
-      <Payload SourceFile="$(var.SampleJetBA.TargetDir)ICSharpCode.SharpZipLib.dll"/>
+      <Payload SourceFile="$(var.SampleJetBA.TargetDir)DotNetZip.dll"/>
       <Payload SourceFile="$(var.SampleJetBA.TargetDir)JetBundleVariables.g.dll"/>
 
       <!-- Localizations -->

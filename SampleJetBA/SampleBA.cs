@@ -146,7 +146,7 @@ namespace SampleJetBA
         protected override void OnShutdown(ShutdownEventArgs args)
         {
             FinishViewModelEx finish = Kernel.Get<FinishViewModelEx>();
-            finish.ZipLogFilesCommand.Execute(null);
+            finish.ZipLogFiles();
 
             base.OnShutdown(args);
         }

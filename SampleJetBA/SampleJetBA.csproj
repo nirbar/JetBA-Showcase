@@ -129,8 +129,8 @@
       <HintPath>..\packages\Castle.Core.3.2.0\lib\net40-client\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    <Reference Include="DotNetZip, Version=1.16.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.16.0\lib\net40\DotNetZip.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
@@ -145,11 +145,11 @@
       <HintPath>$(IntermediateOutputPath)JetBundleVariables.g.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PanelSW.Installer.JetBA, Version=6.0.1.0, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=x86">
-      <HintPath>..\packages\JetBA.6.0.1\lib\net40\PanelSW.Installer.JetBA.dll</HintPath>
+    <Reference Include="PanelSW.Installer.JetBA, Version=6.0.2.0, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=x86">
+      <HintPath>..\packages\JetBA.6.0.2\lib\net40\PanelSW.Installer.JetBA.dll</HintPath>
     </Reference>
-    <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=6.0.1.0, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetBA.JetPack.6.0.1\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
+    <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=6.0.2.0, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBA.JetPack.6.0.2\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
     </Reference>
     <Reference Include="PanelSwWpfControls, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PanelSwWpfControls.1.4.1\lib\net40\PanelSwWpfControls.dll</HintPath>
@@ -253,8 +253,8 @@
     <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.2.0\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.2.0\build\TidyBuild.props'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.2.0\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.2.0\build\TidyBuild.targets'))" />
-    <Error Condition="!Exists('..\packages\JetBA.JetPack.6.0.1\build\JetBA.JetPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetBA.JetPack.6.0.1\build\JetBA.JetPack.targets'))" />
+    <Error Condition="!Exists('..\packages\JetBA.JetPack.6.0.2\build\JetBA.JetPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetBA.JetPack.6.0.2\build\JetBA.JetPack.targets'))" />
   </Target>
   <Import Project="..\packages\TidyBuild.1.2.0\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.2.0\build\TidyBuild.targets')" />
-  <Import Project="..\packages\JetBA.JetPack.6.0.1\build\JetBA.JetPack.targets" Condition="Exists('..\packages\JetBA.JetPack.6.0.1\build\JetBA.JetPack.targets')" />
+  <Import Project="..\packages\JetBA.JetPack.6.0.2\build\JetBA.JetPack.targets" Condition="Exists('..\packages\JetBA.JetPack.6.0.2\build\JetBA.JetPack.targets')" />
 </Project>
