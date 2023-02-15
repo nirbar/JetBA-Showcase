@@ -1,10 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <Import Project="$(MSBuildThisFileDirectory)TidyBuild.user.props" Condition="Exists('$(MSBuildThisFileDirectory)TidyBuild.user.props')" />
   <PropertyGroup>
     <FullVersion>6.0.0</FullVersion>
     <JetProductName>JetBA-Showcase</JetProductName>
     <JetManufacturer>Panel::Software</JetManufacturer>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
 
     <DefineConstants Condition="'$(MSBuildProjectExtension)'=='.wixproj'">FullVersion=$(FullVersion);JetProductName=$(JetProductName);JetManufacturer=$(JetManufacturer);$(DefineConstants)</DefineConstants>
   </PropertyGroup>

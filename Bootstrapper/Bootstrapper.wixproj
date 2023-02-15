@@ -1,84 +1,43 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\JetWixExtension.6.0.2\build\JetWixExtension.props" Condition="Exists('..\packages\JetWixExtension.6.0.2\build\JetWixExtension.props')" />
-  <Import Project="..\packages\TidyBuild.1.2.0\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.2.0\build\TidyBuild.props')" />
+<Project Sdk="WixToolset.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>3.10</ProductVersion>
-    <ProjectGuid>5ae1a51c-2bd3-4325-b927-3fb63c17166e</ProjectGuid>
-    <SchemaVersion>2.0</SchemaVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <PropertyGroup>
     <OutputName>JetBA_Showcase</OutputName>
     <OutputType>Bundle</OutputType>
-    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
-    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <BundleFolder>$(MSBuildProjectDirectory)</BundleFolder>
     <DefineConstants>Debug;$(DefineConstants)</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Bundle.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <WixExtension Include="WixNetFxExtension">
-      <HintPath>$(WixExtDir)\WixNetFxExtension.dll</HintPath>
-      <Name>WixNetFxExtension</Name>
-    </WixExtension>
-    <WixExtension Include="WixBalExtension">
-      <HintPath>$(WixExtDir)\WixBalExtension.dll</HintPath>
-      <Name>WixBalExtension</Name>
-    </WixExtension>
+    <PackageReference Include="WixToolset.NetFx.wixext" Version="4.0.0-rc.2" />
+    <PackageReference Include="WixToolset.Bal.wixext" Version="4.0.0-rc.2" />
+    <PackageReference Include="WixToolset.Heat" Version="4.0.0-rc.2" />
+    <PackageReference Include="JetWixExtension4" Version="6.3.2.84-rc.2" />
+    <PackageReference Include="MSBuildTasks" Version="1.5.0.235" />
+    <PackageReference Include="TidyBuild" Version="1.5.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SampleJetBA\SampleJetBA.csproj">
-      <Name>SampleJetBA</Name>
-      <Project>{cdd409c6-0f49-4a92-a4dc-fa59dc915646}</Project>
-      <Private>True</Private>
-      <DoNotHarvest>True</DoNotHarvest>
-      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
-      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
-    </ProjectReference>
-    <ProjectReference Include="..\Setup\Setup.wixproj">
-      <Name>Setup</Name>
-      <Project>{afd71940-747f-4570-991a-3169d1caadd6}</Project>
-      <Private>True</Private>
-      <DoNotHarvest>True</DoNotHarvest>
-      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
-      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
-    </ProjectReference>
+    <ProjectReference Include="..\SampleJetBA\SampleJetBA.csproj" />
+    <ProjectReference Include="..\Setup\Setup.wixproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="JetBA.lic" />
     <Content Include="JetWixExtension.xsd" />
-    <Content Include="packages.config" />
     <Content Include="XSLT\ComponentsToPayloads.xslt" />
     <Content Include="XSLT\SampleJetBA.Resources.xslt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="XSLT" />
   </ItemGroup>
-  <Import Project="$(WixTargetsPath)" />
-  <Import Project="..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
-    <Error Condition="!Exists('..\packages\TidyBuild.1.2.0\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.2.0\build\TidyBuild.props'))" />
-    <Error Condition="!Exists('..\packages\TidyBuild.1.2.0\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.2.0\build\TidyBuild.targets'))" />
-    <Error Condition="!Exists('..\packages\JetWixExtension.6.0.2\build\JetWixExtension.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetWixExtension.6.0.2\build\JetWixExtension.props'))" />
+  <Target Name="PublishBA" BeforeTargets="HarvestDirectory">
+    <Exec Command="dotnet publish --runtime win-$(Platform) --configuration $(Configuration) --self-contained true --no-dependencies &quot;..\SampleJetBA\SampleJetBA.csproj&quot; --output &quot;$(OutputPath)\..\SampleJetBA\net6.0-windows\publish&quot; &quot;-p:SolutionDir=$(SolutionDir)\&quot; -p:BuildProjectReferences=false" />
   </Target>
-  <Import Project="..\packages\TidyBuild.1.2.0\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.2.0\build\TidyBuild.targets')" />
-  <!--
-	To modify your build process, add your task inside one of the targets below and uncomment it.
-	Other similar extension points exist, see Wix.targets.
-	<Target Name="BeforeBuild">
-	</Target>
-	<Target Name="AfterBuild">
-	</Target>
-	-->
 </Project>

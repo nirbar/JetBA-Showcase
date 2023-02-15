@@ -58,7 +58,7 @@ namespace SampleJetBA.View
 
         private readonly Engine eng_;
 
-        public RootView(Engine eng, ProgressViewModel prog, PopupViewModel popup, JetBundleVariables.BundleVariablesViewModel vars, ViewModel.NavigationViewModelEx nav, UtilViewModel util)
+        public RootView(Engine eng, ProgressViewModel prog, PopupViewModel popup, VariablesViewModelEx vars, ViewModel.NavigationViewModelEx nav, UtilViewModel util)
         {
             eng_ = eng;
             ProgressViewModel = prog;
@@ -82,7 +82,7 @@ namespace SampleJetBA.View
 
         public ProgressViewModel ProgressViewModel { get; private set; }
         public PopupViewModel PopupViewModel { get; private set; }
-        public JetBundleVariables.BundleVariablesViewModel VariablesViewModel { get; private set; }
+        public VariablesViewModelEx VariablesViewModel { get; private set; }
         public ViewModel.NavigationViewModelEx NavigationViewModel { get; private set; }
         public UtilViewModel UtilViewModel { get; private set; }
 

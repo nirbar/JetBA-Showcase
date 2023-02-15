@@ -1,22 +1,53 @@
-﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
-using Ninject;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Hosting;
 using PanelSW.Installer.JetBA;
 using PanelSW.Installer.JetBA.JetPack.Util;
 using PanelSW.Installer.JetBA.JetPack.ViewModel;
 using PanelSW.Installer.JetBA.Util;
 using PanelSW.Installer.JetBA.ViewModel;
+using SampleJetBA.View;
+using SampleJetBA.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using System.Windows.Input;
+using System.Windows;
+using WixToolset.Mba.Core;
 
 namespace SampleJetBA
 {
     public class SampleBA : JetBootstrapperApplication
     {
-        private SampleNInjectBinder binder_ = null;
-        protected override NInjectBinder Binder => binder_ ?? (binder_ = new SampleNInjectBinder(this));
+        public SampleBA(IEngine engine, IBootstrapperCommand command)
+            : base(engine, command)
+        {
+        }
+
+        protected override void ConfigureServices(HostBuilderContext context, IServiceCollection services)
+        {
+            base.ConfigureServices(context, services);
+
+            services.RemoveAll(typeof(VariablesViewModel));
+            services.AddSingleton<VariablesViewModel, ViewModel.VariablesViewModelEx>();
+
+            services.AddSingleton<NavigationViewModel, ViewModel.NavigationViewModelEx>();
+
+            services.RemoveAll(typeof(InputValidationsViewModel));
+            services.AddSingleton<InputValidationsViewModel, ViewModel.InputValidationsViewModelEx>();
+
+            services.AddTransient<DatabaseView>();
+            services.AddTransient<DetectingView>();
+            services.AddTransient<FinishView>();
+            services.AddTransient<HelpView>();
+            services.AddTransient<InstallLocationView>();
+            services.AddTransient<PageSelectionView>();
+            services.AddTransient<ProgressView>();
+            services.AddTransient<RepairView>();
+            services.AddTransient<ServiceAccountView>();
+            services.AddTransient<SummaryView>();
+            services.AddSingleton<Window, RootView>();
+        }
 
         protected override void OnResolveCulture(ResolveCultureEventArgs args)
         {
@@ -29,7 +60,7 @@ namespace SampleJetBA
         [STAThread]
         protected override void Run()
         {
-            JetBundleVariables.BundleVariablesViewModel vars = Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = Kernel.Get<VariablesViewModelEx>();
             if (vars.BaLaunchDebugger.Exists && vars.BaLaunchDebugger.Boolean)
             {
                 System.Diagnostics.Debugger.Launch();
@@ -96,7 +127,7 @@ namespace SampleJetBA
                 BundleInfo bi = bs.LoadByBundleId(args.ProductCode, args.PerMachine);
                 Engine.Log(LogLevel.Standard, $"Copying variables from {bi.Name} v{bi.Version}");
 
-                JetBundleVariables.BundleVariablesViewModel vars = Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+                VariablesViewModelEx vars = Kernel.Get<VariablesViewModelEx>();
                 foreach (string s in vars.VariableNames)
                 {
                     if (bi.PersistedVariables.ContainsKey(s) && !vars.BuiltinVariableNames.Contains(s) && !string.IsNullOrEmpty(bi.PersistedVariables[s]) && !vars[s].IsOnCommandLine)

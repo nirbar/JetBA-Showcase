@@ -64,7 +64,7 @@ namespace SampleJetBA.ViewModel
             ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
             apply.PropertyChanged += apply_PropertyChanged;
 
-            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
             vars.CONFIGURE_SQL.PropertyChanged += CONFIGURE_SQL_PropertyChanged;
             vars.CONFIGURE_SERVICE_ACCOUNT.PropertyChanged += CONFIGURE_SERVICE_ACCOUNT_PropertyChanged;
         }
@@ -125,7 +125,7 @@ namespace SampleJetBA.ViewModel
                     break;
             }
 
-            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
             if (!vars.ForcePage.IsNullOrEmpty && Enum.TryParse(vars.ForcePage.String, out Pages page))
             {
                 Page = page;
@@ -177,7 +177,7 @@ namespace SampleJetBA.ViewModel
                 return;
             }
 
-            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
             BA.Kernel.Get<Dispatcher>().Invoke(() =>
             {
                 if (vars.CONFIGURE_SQL.BooleanString && !ExpectedPages.Contains(Pages.Database))
@@ -198,7 +198,7 @@ namespace SampleJetBA.ViewModel
                 return;
             }
 
-            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
             BA.Kernel.Get<Dispatcher>().Invoke(() =>
             {
                 if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString && !ExpectedPages.Contains(Pages.Service))
@@ -214,7 +214,7 @@ namespace SampleJetBA.ViewModel
 
         protected override object QueryNextPage(object hint)
         {
-            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
             Pages nextPage = Pages.Unknown;
             switch ((Pages)Page)
             {

@@ -20,7 +20,7 @@ namespace SampleJetBA
             // ViewModel
             Rebind<PanelSW.Installer.JetBA.ViewModel.NavigationViewModel, ViewModel.NavigationViewModelEx>().To<ViewModel.NavigationViewModelEx>().InSingletonScope();
             Rebind<PanelSW.Installer.JetBA.ViewModel.InputValidationsViewModel, ViewModel.InputValidationsViewModelEx>().To<ViewModel.InputValidationsViewModelEx>().InSingletonScope();
-            Rebind<PanelSW.Installer.JetBA.ViewModel.VariablesViewModel, JetBundleVariables.BundleVariablesViewModel>().To<JetBundleVariables.BundleVariablesViewModel>().InSingletonScope();
+            Rebind<PanelSW.Installer.JetBA.ViewModel.VariablesViewModel, VariablesViewModelEx>().To<VariablesViewModelEx>().InSingletonScope();
             Rebind<PanelSW.Installer.JetBA.ViewModel.FinishViewModel, PanelSW.Installer.JetBA.JetPack.ViewModel.FinishViewModelEx>().To<PanelSW.Installer.JetBA.JetPack.ViewModel.FinishViewModelEx>().InSingletonScope();
             Bind<PanelSW.Installer.JetBA.JetPack.ViewModel.SqlViewModel>().ToSelf().InSingletonScope();
             Bind<PanelSW.Installer.JetBA.JetPack.ViewModel.PackagesViewModel>().ToSelf().InSingletonScope();

@@ -45,7 +45,7 @@ namespace SampleJetBA.ViewModel
         {
             ValidateTargetFolder();
 
-            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
             if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString)
             {
                 ValidateServiceAccount();
@@ -58,7 +58,7 @@ namespace SampleJetBA.ViewModel
 
         private void ValidateTargetFolder()
         {
-            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
             if (vars.INSTALL_FOLDER.IsNullOrEmpty || (vars.INSTALL_FOLDER.String.IndexOfAny(Path.GetInvalidPathChars()) >= 0) || !Path.IsPathRooted(vars.INSTALL_FOLDER.String))
             {
                 AddResult(new Exception(string.Format(Properties.Resources._0IsNotALegalFolderName, vars.INSTALL_FOLDER.String)));
@@ -70,7 +70,7 @@ namespace SampleJetBA.ViewModel
             WindowsImpersonationContextEx impersonate = null;
             try
             {
-                JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+                VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
                 SqlConnectionStringBuilder connStr = new SqlConnectionStringBuilder()
                 {
                     DataSource = vars.SQL_SERVER.String,
@@ -121,7 +121,7 @@ namespace SampleJetBA.ViewModel
 
         private void ValidateServiceAccount()
         {
-            JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();
+            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
             if (vars.SERVICE_USER.IsNullOrEmpty)
             {
                 // Default - .\LocalSystem account
