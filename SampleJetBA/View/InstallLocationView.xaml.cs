@@ -1,4 +1,5 @@
 using PanelSW.Installer.JetBA.ViewModel;
+using SampleJetBA.ViewModel;
 using System.Windows.Controls;
 
 namespace SampleJetBA.View

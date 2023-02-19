@@ -1,11 +1,11 @@
-﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
-using Ninject;
 using PanelSW.Installer.JetBA;
+using PanelSW.Installer.JetBA.JetPack;
 using PanelSW.Installer.JetBA.ViewModel;
 using SampleJetBA.View;
 using System;
 using System.Collections.ObjectModel;
 using System.Windows.Threading;
+using WixToolset.Mba.Core;
 
 namespace SampleJetBA.ViewModel
 {
@@ -24,67 +24,71 @@ namespace SampleJetBA.ViewModel
         Help
     }
 
-    public class NavigationViewModelEx : NavigationViewModel, IInitializable
+    public class NavigationViewModelEx : NavigationViewModel
     {
-        public NavigationViewModelEx(SampleBA ba
-            , Func<DetectingView> detectingView
-            , Func<PageSelectionView> pageSelectionView
-            , Func<InstallLocationView> installLocationView
-            , Func<ServiceAccountView> svcView
-            , Func<DatabaseView> dbView
-            , Func<RepairView> repairView
-            , Func<ProgressView> progressView
-            , Func<HelpView> helpView
-            , Func<FinishView> finishView
-            , Func<SummaryView> summaryView
-            )
-            : base(ba)
+        public NavigationViewModelEx(SampleBA ba, IBootstrapperCommand command, IEngine engine, JetPackActivator activator)
+            : base(ba, command, engine, activator)
         {
-            BA.DetectComplete += BA_DetectComplete;
-            BA.ApplyBegin += BA_ApplyBegin;
-            BA.ApplyComplete += BA_ApplyComplete;
-            BA.Kernel.Get<Dispatcher>().Invoke(() => ExpectedPages = new ObservableCollection<Pages>());
+            _ba.DetectComplete += BA_DetectComplete;
+            _ba.ApplyBegin += BA_ApplyBegin;
+            _ba.ApplyComplete += BA_ApplyComplete;
+            _activator.GetService<Dispatcher>().Invoke(() => ExpectedPages = new ObservableCollection<Pages>());
 
-            AddPage(Pages.Finish, new Func<object>(() => finishView.Invoke()));
-            AddPage(Pages.Help, new Func<object>(() => helpView.Invoke()));
-            AddPage(Pages.Detecting, new Func<object>(() => detectingView.Invoke()));
-            AddPage(Pages.PageSelection, new Func<object>(() => pageSelectionView.Invoke()));
-            AddPage(Pages.InstallLocation, new Func<object>(() => installLocationView.Invoke()));
-            AddPage(Pages.Service, new Func<object>(() => svcView.Invoke()));
-            AddPage(Pages.Database, new Func<object>(() => dbView.Invoke()));
-            AddPage(Pages.Progress, new Func<object>(() => progressView.Invoke()));
-            AddPage(Pages.Repair, new Func<object>(() => repairView.Invoke()));
-            AddPage(Pages.Summary, new Func<object>(() => summaryView.Invoke()));
+            ApplyViewModel apply = _activator.GetService<ApplyViewModel>();
+            apply.PropertyChanged += apply_PropertyChanged;
+
+            VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
+            vars.CONFIGURE_SQL.PropertyChanged += CONFIGURE_SQL_PropertyChanged;
+            vars.CONFIGURE_SERVICE_ACCOUNT.PropertyChanged += CONFIGURE_SERVICE_ACCOUNT_PropertyChanged;
 
             SetStartPage();
         }
 
-        void IInitializable.Initialize()
+        protected override object GetView(object key)
         {
-            ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
-            apply.PropertyChanged += apply_PropertyChanged;
-
-            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
-            vars.CONFIGURE_SQL.PropertyChanged += CONFIGURE_SQL_PropertyChanged;
-            vars.CONFIGURE_SERVICE_ACCOUNT.PropertyChanged += CONFIGURE_SERVICE_ACCOUNT_PropertyChanged;
+            switch ((Pages)key)
+            {
+                case Pages.Detecting:
+                    return _activator.GetService<DetectingView>();
+                case Pages.PageSelection:
+                    return _activator.GetService<PageSelectionView>();
+                case Pages.InstallLocation:
+                    return _activator.GetService<InstallLocationView>();
+                case Pages.Service:
+                    return _activator.GetService<ServiceAccountView>();
+                case Pages.Database:
+                    return _activator.GetService<DatabaseView>();
+                case Pages.Summary:
+                    return _activator.GetService<SummaryView>();
+                case Pages.Progress:
+                    return _activator.GetService<ProgressView>();
+                case Pages.Finish:
+                    return _activator.GetService<FinishView>();
+                case Pages.Repair:
+                    return _activator.GetService<RepairView>();
+                case Pages.Help:
+                    return _activator.GetService<HelpView>();
+                default:
+                    return null;
+            }
         }
 
         #region Event-based navigations
 
         public void SetStartPage()
         {
-            if (BA.Kernel.Get<Display>() < Display.Passive)
+            if (_activator.GetService<Display>() < Display.Passive)
             {
                 return;
             }
 
-            if (BA.Command.Action == LaunchAction.Help)
+            if (_command.Action == LaunchAction.Help)
             {
                 Page = Pages.Help;
                 return;
             }
 
-            ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+            ApplyViewModel apply = _activator.GetService<ApplyViewModel>();
             if (apply.InstallState < InstallationState.Detected)
             {
                 Page = Pages.Detecting;
@@ -97,7 +101,7 @@ namespace SampleJetBA.ViewModel
                 case DetectionState.Newer:
                 case DetectionState.SameVersion:
                 case DetectionState.Older:
-                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
+                    _activator.GetService<Dispatcher>().Invoke(() =>
                     {
                         ExpectedPages.Add(Pages.PageSelection);
                         ExpectedPages.Add(Pages.InstallLocation);
@@ -111,7 +115,7 @@ namespace SampleJetBA.ViewModel
                     break;
 
                 case DetectionState.Present:
-                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
+                    _activator.GetService<Dispatcher>().Invoke(() =>
                     {
                         ExpectedPages.Add(Pages.Repair);
                         ExpectedPages.Add(Pages.Progress);
@@ -121,11 +125,11 @@ namespace SampleJetBA.ViewModel
                     break;
 
                 default:
-                    BA.Engine.Log(LogLevel.Error, $"Unhandled detect state '{apply.DetectState}'");
+                    _engine.Log(LogLevel.Error, $"Unhandled detect state '{apply.DetectState}'");
                     break;
             }
 
-            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
+            VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
             if (!vars.ForcePage.IsNullOrEmpty && Enum.TryParse(vars.ForcePage.String, out Pages page))
             {
                 Page = page;
@@ -151,7 +155,7 @@ namespace SampleJetBA.ViewModel
 
         private void apply_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+            ApplyViewModel apply = _activator.GetService<ApplyViewModel>();
             if (e.PropertyName.Equals("InstallState") && (apply.InstallState >= InstallationState.Applied))
             {
                 ClearHistory();
@@ -172,13 +176,13 @@ namespace SampleJetBA.ViewModel
 
         private void CONFIGURE_SQL_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (!e.PropertyName.Equals("BooleanString") || (BA.Kernel.Get<Display>() < Display.Passive))
+            if (!e.PropertyName.Equals("BooleanString") || (_activator.GetService<Display>() < Display.Passive))
             {
                 return;
             }
 
-            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
-            BA.Kernel.Get<Dispatcher>().Invoke(() =>
+            VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
+            _activator.GetService<Dispatcher>().Invoke(() =>
             {
                 if (vars.CONFIGURE_SQL.BooleanString && !ExpectedPages.Contains(Pages.Database))
                 {
@@ -193,13 +197,13 @@ namespace SampleJetBA.ViewModel
 
         private void CONFIGURE_SERVICE_ACCOUNT_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (!e.PropertyName.Equals("BooleanString") || (BA.Kernel.Get<Display>() < Display.Passive))
+            if (!e.PropertyName.Equals("BooleanString") || (_activator.GetService<Display>() < Display.Passive))
             {
                 return;
             }
 
-            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
-            BA.Kernel.Get<Dispatcher>().Invoke(() =>
+            VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
+            _activator.GetService<Dispatcher>().Invoke(() =>
             {
                 if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString && !ExpectedPages.Contains(Pages.Service))
                 {
@@ -214,7 +218,7 @@ namespace SampleJetBA.ViewModel
 
         protected override object QueryNextPage(object hint)
         {
-            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
+            VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
             Pages nextPage = Pages.Unknown;
             switch ((Pages)Page)
             {
@@ -233,7 +237,7 @@ namespace SampleJetBA.ViewModel
                     }
                     else
                     {
-                        ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+                        ApplyViewModel apply = _activator.GetService<ApplyViewModel>();
                         apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
                         nextPage = Pages.Summary;
                     }
@@ -246,7 +250,7 @@ namespace SampleJetBA.ViewModel
                     }
                     else
                     {
-                        ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+                        ApplyViewModel apply = _activator.GetService<ApplyViewModel>();
                         apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
                         nextPage = Pages.Summary;
                     }
@@ -254,7 +258,7 @@ namespace SampleJetBA.ViewModel
 
                 case Pages.Database:
                     {
-                        ApplyViewModel apply = BA.Kernel.Get<ApplyViewModel>();
+                        ApplyViewModel apply = _activator.GetService<ApplyViewModel>();
                         apply.PlanCommand.Execute(LaunchAction.Install); // Plan only, not starting install yet
                         nextPage = Pages.Summary;
                     }

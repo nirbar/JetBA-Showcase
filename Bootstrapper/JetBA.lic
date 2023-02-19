@@ -1,20 +1,5 @@
-<License xmlns="http://schemas.panel-sw.co.il/wix/JetWixExtension" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <Manufacturer>Panel::Software</Manufacturer>
-  <ManufacturerPattern i:nil="true" />
-  <ProductName>JetBA-Showcase</ProductName>
-  <ProductNamePattern i:nil="true" />
-  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-    <SignedInfo>
-      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
-      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
-      <Reference URI="">
-        <Transforms>
-          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
-        </Transforms>
-        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <DigestValue>Jy2U83LJU8BjpObkzqKpjtBkKf0=</DigestValue>
-      </Reference>
-    </SignedInfo>
-    <SignatureValue>TsfAWkP86jt5IQsMrdCp2sqaKSXdJUARe6PgKM+8a0R/4mlV+7YJMED9+4/sanVODM0Dsa9yHr5k/hxJhQ49K+na9+lly28A7Q7xWQBzgtVrKRHJ3rTd+XNpu0pCLAZkSVvalino9oTaXRq9YTdtEDVKOwHvtapKCqB89Ea+Gho=</SignatureValue>
-  </Signature>
-</License>
+UGFuZWw6OlNvZnR3YXJl
+SmV0QkEtU2hvd2Nhc2U=
+
+
+TFctLl0HBxMvKUUGtHGpt5i1hJp/ovvYIgT7ldQSgsGHAvBtLfKuToRgTeIXH4wZCYOk52jalzcI9cBMaKUQKydXVqtJb5VFhY6653rb0QVfX77rdUd8xFuHrrjwE6DVM+s2lny9eqZRgRr+Yl3R0yjYwAZVjxqCzzmr41MrHaw=

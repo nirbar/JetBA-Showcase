@@ -17,7 +17,7 @@
     <PackageReference Include="WixToolset.NetFx.wixext" Version="4.0.0-rc.2" />
     <PackageReference Include="WixToolset.Bal.wixext" Version="4.0.0-rc.2" />
     <PackageReference Include="WixToolset.Heat" Version="4.0.0-rc.2" />
-    <PackageReference Include="JetWixExtension4" Version="6.3.2.84-rc.2" />
+    <PackageReference Include="JetWixExtension4" Version="6.3.2.88-rc.2" />
     <PackageReference Include="MSBuildTasks" Version="1.5.0.235" />
     <PackageReference Include="TidyBuild" Version="1.5.1">
       <PrivateAssets>all</PrivateAssets>
@@ -32,7 +32,7 @@
     <Content Include="JetBA.lic" />
     <Content Include="JetWixExtension.xsd" />
     <Content Include="XSLT\ComponentsToPayloads.xslt" />
-    <Content Include="XSLT\SampleJetBA.Resources.xslt" />
+    <Content Include="XSLT\ba.xslt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="XSLT" />

@@ -1,12 +1,13 @@
-﻿using System.Globalization;
+using PanelSW.Installer.JetBA.JetPack;
+using System.Globalization;
 using System.Resources;
 
 namespace SampleJetBA.Localization
 {
-    public class Resources : PanelSW.Installer.JetBA.Localization.Resources
+    public class Resources : PanelSW.Installer.JetBA.JetPack.Localization.Resources
     {
-        public Resources(SampleBA ba)
-            : base(ba)
+        public Resources(JetPackActivator activator)
+            : base(activator)
         {
         }
 

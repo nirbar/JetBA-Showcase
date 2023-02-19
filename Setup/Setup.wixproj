@@ -1,4 +1,4 @@
-﻿<Project Sdk="WixToolset.Sdk">
+<Project Sdk="WixToolset.Sdk">
   <PropertyGroup Condition=" '$(Platform)' == '' ">
     <Platform>x86</Platform>
   </PropertyGroup>
@@ -8,7 +8,7 @@
   <ItemGroup>
     <PackageReference Include="WixToolset.Util.wixext" Version="4.0.0-rc.2" />
     <PackageReference Include="WixToolset.Heat" Version="4.0.0-rc.2" />
-    <PackageReference Include="JetWixExtension4" Version="6.3.2.84-rc.2" />
+    <PackageReference Include="JetWixExtension4" Version="6.3.2.88-rc.2" />
     <PackageReference Include="MSBuildTasks" Version="1.5.0.235" />
     <PackageReference Include="TidyBuild" Version="1.5.1">
       <PrivateAssets>all</PrivateAssets>

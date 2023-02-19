@@ -1,4 +1,4 @@
-﻿using PanelSW.Installer.JetBA.JetPack.ViewModel;
+using PanelSW.Installer.JetBA.JetPack.ViewModel;
 using PanelSW.Installer.JetBA.ViewModel;
 using System.Windows.Controls;
 
@@ -6,11 +6,10 @@ namespace SampleJetBA.View
 {
     public partial class DatabaseView : UserControl
     {
-        public DatabaseView(VariablesViewModel vars, NavigationViewModel nav, SqlViewModel db)
+        public DatabaseView(VariablesViewModel vars, NavigationViewModel nav)
         {
             NavigationViewModel = nav;
             VariablesViewModel = vars;
-            SqlViewModel = db;
 
             DataContext = this;
             InitializeComponent();
@@ -18,6 +17,5 @@ namespace SampleJetBA.View
 
         public VariablesViewModel VariablesViewModel { get; private set; }
         public NavigationViewModel NavigationViewModel { get; private set; }
-        public SqlViewModel SqlViewModel { get; private set; }
     }
 }

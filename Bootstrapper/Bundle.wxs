@@ -1,4 +1,4 @@
-﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension" xsi:schemaLocation="http://schemas.panel-sw.co.il/wix/JetWixExtension ./JetWixExtension.xsd">
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:bal="http://wixtoolset.org/schemas/v4/wxs/bal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jet="http://schemas.panel-sw.co.il/wix/JetWixExtension" xsi:schemaLocation="http://schemas.panel-sw.co.il/wix/JetWixExtension ./JetWixExtension.xsd">
   <?define UPGRADE_CODE = 11111111-1111-1111-1111-111111111111?>
   <?if $(var.UPGRADE_CODE) = 11111111-1111-1111-1111-111111111111?>
   <?warning Replace UPGRADE_CODE with a newly generated GUID value.?>
@@ -39,12 +39,11 @@
     <?endif?>
 
     <Chain DisableSystemRestore="yes" ParallelCache="yes">
-      <PackageGroupRef Id="NetFx45Web" />
       <MsiPackage SourceFile="$(var.Setup.TargetPath)">
         <MsiProperty Name="INSTALLFOLDER" Value="[INSTALL_FOLDER]" />
       </MsiPackage>
     </Chain>
   </Bundle>
 
-  <?pragma heat.dir "$(var.SampleJetBA.TargetDir)..\SampleJetBA" -sfrag -scom -sreg -suid -svb6 -cg LOCALIZATION_FILES -dr dontcare -ag -generate payloadgroup -t "$(sys.SOURCEFILEDIR)XSLT\ba.xslt"?>
+  <?pragma heat.dir "$(var.SampleJetBA.TargetDir)..\SampleJetBA\net6.0-windows\publish" -sfrag -scom -sreg -suid -svb6 -cg SampleJetBA -dr dontcare -ag -t "$(sys.SOURCEFILEDIR)XSLT\ComponentsToPayloads.xslt" -t "$(sys.SOURCEFILEDIR)XSLT\ba.xslt" ?>
 </Wix>

@@ -39,14 +39,7 @@
 
             <!-- DB Server -->
             <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.DbServer}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
-            <ComboBox Grid.Row="0" Grid.Column="1" IsEditable="True" SelectedValuePath="ServerInstance" DisplayMemberPath="ServerInstance" TextSearch.TextPath="ServerInstance"
-                      ItemsSource="{Binding SqlViewModel.SqlServers}"
-                      Text="{Binding VariablesViewModel.SQL_SERVER.String, Mode=TwoWay}"/>
-            
-            <!-- Enumerate servers -->
-            <Button Grid.Row="0" Grid.Column="2" Content="{x:Static props:Resources.Load}"
-                    IsEnabled="{Binding SqlViewModel.ServerEnumerationStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running;WaitingForChildrenToComplete}"
-                    Command="{Binding SqlViewModel.EnumerateServersCommand}"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.SQL_SERVER.String, Mode=TwoWay}"/>
 
             <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static props:Resources.Database}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
             <TextBox Grid.Row="1" Grid.Column="1"  Text="{Binding VariablesViewModel.SQL_DATABASE.String}"/>

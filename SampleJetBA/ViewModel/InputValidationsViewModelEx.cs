@@ -1,20 +1,20 @@
-﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
-using Ninject;
+using PanelSW.Installer.JetBA.JetPack;
 using PanelSW.Installer.JetBA.ViewModel;
 using SampleJetBA.Util;
-using System;
 using System.Data.SqlClient;
 using System.DirectoryServices.AccountManagement;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Security;
+using System.Security.Principal;
+using WixToolset.Mba.Core;
 
 namespace SampleJetBA.ViewModel
 {
     public class InputValidationsViewModelEx : InputValidationsViewModel
     {
-        public InputValidationsViewModelEx(SampleBA ba)
-            : base(ba)
+        public InputValidationsViewModelEx(SampleBA ba, IEngine engine, IBootstrapperCommand command, JetPackActivator activator)
+            : base(ba, engine, command, activator)
         {
         }
 
@@ -45,7 +45,7 @@ namespace SampleJetBA.ViewModel
         {
             ValidateTargetFolder();
 
-            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
+            VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
             if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString)
             {
                 ValidateServiceAccount();
@@ -58,7 +58,7 @@ namespace SampleJetBA.ViewModel
 
         private void ValidateTargetFolder()
         {
-            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
+            VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
             if (vars.INSTALL_FOLDER.IsNullOrEmpty || (vars.INSTALL_FOLDER.String.IndexOfAny(Path.GetInvalidPathChars()) >= 0) || !Path.IsPathRooted(vars.INSTALL_FOLDER.String))
             {
                 AddResult(new Exception(string.Format(Properties.Resources._0IsNotALegalFolderName, vars.INSTALL_FOLDER.String)));
@@ -67,10 +67,9 @@ namespace SampleJetBA.ViewModel
 
         private void ValidateDatabase()
         {
-            WindowsImpersonationContextEx impersonate = null;
             try
             {
-                VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
+                VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
                 SqlConnectionStringBuilder connStr = new SqlConnectionStringBuilder()
                 {
                     DataSource = vars.SQL_SERVER.String,
@@ -78,7 +77,7 @@ namespace SampleJetBA.ViewModel
                     IntegratedSecurity = !vars.SQL_AUTH.Boolean
                 };
 
-                SqlCredential sqlCredential = null;
+                _engine.Log(LogLevel.Verbose, $"Testing SQL connection string '{connStr}'");
                 if (connStr.IntegratedSecurity)
                 {
                     vars.SQL_USER.String = "";
@@ -86,8 +85,17 @@ namespace SampleJetBA.ViewModel
 
                     if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString && !vars.SERVICE_USER.IsNullOrEmpty)
                     {
-                        BA.Engine.Log(LogLevel.Standard, $"Impersonating '{vars.SERVICE_USER.String}' to check Windows authentication to SQL server");
-                        impersonate = WindowsIndetityEx.Impersonate(vars.SERVICE_USER.String, vars.SERVICE_PASSWORD.SecureString);
+                        _engine.Log(LogLevel.Standard, $"Impersonating '{vars.SERVICE_USER.String}' to check Windows authentication to SQL server");
+                        using (WindowsImpersonationContextEx ctx = WindowsIndetityEx.Impersonate(vars.SERVICE_USER.String, vars.SERVICE_PASSWORD.SecureString))
+                        {
+                            WindowsIdentity.RunImpersonated(ctx.Handle, () =>
+                            {
+                                using (SqlConnection conn = new SqlConnection(connStr.ToString(), null))
+                                {
+                                    conn.Open();
+                                }
+                            });
+                        }
                     }
                 }
                 else // SQL Auth
@@ -99,29 +107,23 @@ namespace SampleJetBA.ViewModel
 
                     SecureString psw = vars.SQL_PASSWORD.SecureString;
                     psw.MakeReadOnly();
-                    sqlCredential = new SqlCredential(vars.SQL_USER.String, psw);
-                }
-
-                BA.Engine.Log(LogLevel.Verbose, $"Testing SQL connection string '{connStr.ToString()}'");
-                using (SqlConnection conn = new SqlConnection(connStr.ToString(), sqlCredential))
-                {
-                    conn.Open();
+                    SqlCredential sqlCredential = new SqlCredential(vars.SQL_USER.String, psw);
+                    using (SqlConnection conn = new SqlConnection(connStr.ToString(), sqlCredential))
+                    {
+                        conn.Open();
+                    }
                 }
             }
             catch (Exception ex)
             {
-                BA.Engine.Log(LogLevel.Error, $"Failed connecting to DB server: {ex.Message}");
+                _engine.Log(LogLevel.Error, $"Failed connecting to DB server: {ex.Message}");
                 AddResult(new Exception(string.Format(Properties.Resources.FailedConnectingToDbServer0, ex.Message)));
-            }
-            finally
-            {
-                impersonate?.Dispose();
             }
         }
 
         private void ValidateServiceAccount()
         {
-            VariablesViewModelEx vars = BA.Kernel.Get<VariablesViewModelEx>();
+            VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
             if (vars.SERVICE_USER.IsNullOrEmpty)
             {
                 // Default - .\LocalSystem account
