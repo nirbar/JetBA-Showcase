@@ -1,7 +1,9 @@
-﻿using System;
+using Microsoft.Win32.SafeHandles;
+using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Security;
+using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 
 namespace SampleJetBA.Util
@@ -81,12 +83,10 @@ namespace SampleJetBA.Util
                 IntPtr token = IntPtr.Zero;
                 if (!LogonUserCore(name, domain, Marshal.PtrToStringBSTR(psw), logon, provider, ref token) || (token == IntPtr.Zero))
                 {
-                    //TODO P/Invoke FormatMessage to get localized error text
                     throw new Win32Exception(Marshal.GetLastWin32Error());
                 }
 
-                WindowsImpersonationContext context = WindowsIdentity.Impersonate(token);
-                return new WindowsImpersonationContextEx(context, token);
+                return new WindowsImpersonationContextEx(token);
             }
             finally
             {
@@ -100,30 +100,22 @@ namespace SampleJetBA.Util
 
     public class WindowsImpersonationContextEx : IDisposable
     {
-        private IntPtr token_ = IntPtr.Zero;
-        private WindowsImpersonationContext context_ = null;
+        private SafeAccessTokenHandle handle_ = null;
+        public SafeAccessTokenHandle Handle => handle_;
 
         [DllImport("kernel32.dll", SetLastError = true)]
         [SuppressUnmanagedCodeSecurity]
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool CloseHandle(IntPtr handle);
 
-        public WindowsImpersonationContextEx(WindowsImpersonationContext context, IntPtr token)
+        public WindowsImpersonationContextEx(IntPtr token)
         {
-            token_ = token;
-            context_ = context;
+            handle_ = new SafeAccessTokenHandle(token);
         }
 
         public void Dispose()
         {
-            context_?.Dispose();
-            if (token_ != IntPtr.Zero)
-            {
-                if (!CloseHandle(token_))
-                {
-                    throw new Win32Exception(Marshal.GetLastWin32Error(), "Failed releasing impersonation token");
-                }
-            }
+            handle_?.Dispose();
         }
     }
 }

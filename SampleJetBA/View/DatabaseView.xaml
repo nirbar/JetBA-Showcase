@@ -3,7 +3,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              mc:Ignorable="d"
              d:DesignHeight="342" d:DesignWidth="546"
@@ -40,14 +39,7 @@
 
             <!-- DB Server -->
             <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.DbServer}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
-            <ComboBox Grid.Row="0" Grid.Column="1" IsEditable="True" SelectedValuePath="ServerInstance" DisplayMemberPath="ServerInstance" TextSearch.TextPath="ServerInstance"
-                      ItemsSource="{Binding SqlViewModel.SqlServers}"
-                      Text="{Binding VariablesViewModel.SQL_SERVER.String, Mode=TwoWay}"/>
-            
-            <!-- Enumerate servers -->
-            <panelsw:WaitableButton Grid.Row="0" Grid.Column="2" Content="{x:Static props:Resources.Load}"
-                                    IsWaiting="{Binding SqlViewModel.ServerEnumerationStatus, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Running;WaitingForChildrenToComplete}"
-                                    Command="{Binding SqlViewModel.EnumerateServersCommand}"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.SQL_SERVER.String, Mode=TwoWay}"/>
 
             <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static props:Resources.Database}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
             <TextBox Grid.Row="1" Grid.Column="1"  Text="{Binding VariablesViewModel.SQL_DATABASE.String}"/>
@@ -66,8 +58,8 @@
 
             <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static props:Resources.Password}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"
                        Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Visible}"/>
-            <panelsw:EyePasswordBox Grid.Row="4" Grid.Column="1" SecurePassword="{Binding VariablesViewModel.SQL_PASSWORD.SecureString}"
-                                    Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Visible}"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding VariablesViewModel.SQL_PASSWORD.String}"
+                     Visibility="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Visible}"/>
         </Grid>
     </DockPanel>
 </UserControl>

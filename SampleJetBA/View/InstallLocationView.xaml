@@ -3,8 +3,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:cmd="clr-namespace:PanelSW.WPF.Controls.Commands;assembly=PanelSwWpfControls"
-             xmlns:panelsw="clr-namespace:PanelSW.WPF.Controls;assembly=PanelSwWpfControls"
              xmlns:props="clr-namespace:SampleJetBA.Properties"
              mc:Ignorable="d"
              d:DesignHeight="342" d:DesignWidth="546"
@@ -30,15 +28,17 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="160"/>
                 <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="50"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
             
             <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static props:Resources.InstallFolder}" Style="{StaticResource GenericText}"/>
-            <panelsw:TextBoxWithButton Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String, UpdateSourceTrigger=PropertyChanged}"
-                                       Command="{cmd:BrowseFolderCommand Folder={Binding VariablesViewModel.INSTALL_FOLDER.String}}"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding VariablesViewModel.INSTALL_FOLDER.String, UpdateSourceTrigger=PropertyChanged}"/>
+            <!--
+            <Button Grid.Column="2" Margin="20,0,0,0" Content="..." Command="{cmd:BrowseFolderCommand Folder={Binding VariablesViewModel.INSTALL_FOLDER.String}}"/>
+            -->
         </Grid>
-
     </DockPanel>
 </UserControl>

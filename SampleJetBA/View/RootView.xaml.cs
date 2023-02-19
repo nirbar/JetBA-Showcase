@@ -1,16 +1,14 @@
-﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
 using PanelSW.Installer.JetBA.ViewModel;
-using System;
-using System.Collections.Generic;
+using SampleJetBA.ViewModel;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Interop;
+using WixToolset.Mba.Core;
 
 namespace SampleJetBA.View
 {
@@ -56,11 +54,11 @@ namespace SampleJetBA.View
 
         #endregion
 
-        private readonly Engine eng_;
+        private readonly IEngine _engine;
 
-        public RootView(Engine eng, ProgressViewModel prog, PopupViewModel popup, JetBundleVariables.BundleVariablesViewModel vars, ViewModel.NavigationViewModelEx nav, UtilViewModel util)
+        public RootView(IEngine eng, ProgressViewModel prog, PopupViewModel popup, VariablesViewModelEx vars, ViewModel.NavigationViewModelEx nav, UtilViewModel util)
         {
-            eng_ = eng;
+            _engine = eng;
             ProgressViewModel = prog;
             PopupViewModel = popup;
             VariablesViewModel = vars;
@@ -82,8 +80,8 @@ namespace SampleJetBA.View
 
         public ProgressViewModel ProgressViewModel { get; private set; }
         public PopupViewModel PopupViewModel { get; private set; }
-        public JetBundleVariables.BundleVariablesViewModel VariablesViewModel { get; private set; }
-        public ViewModel.NavigationViewModelEx NavigationViewModel { get; private set; }
+        public VariablesViewModelEx VariablesViewModel { get; private set; }
+        public NavigationViewModelEx NavigationViewModel { get; private set; }
         public UtilViewModel UtilViewModel { get; private set; }
 
         private void Background_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -160,7 +158,7 @@ namespace SampleJetBA.View
         {
             if ((cultureCombo_.SelectedItem is ComboBoxItem clt) && (clt.Tag is CultureInfo newClt))
             {
-                eng_.Log(LogLevel.Standard, $"Changing UI locale to '{newClt.Name}': {newClt.NativeName}");
+                _engine.Log(LogLevel.Standard, $"Changing UI locale to '{newClt.Name}': {newClt.NativeName}");
                 Thread.CurrentThread.CurrentCulture = newClt;
                 Thread.CurrentThread.CurrentUICulture = newClt;
                 Properties.Resources.Culture = newClt;
