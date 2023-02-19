@@ -26,13 +26,17 @@ namespace SampleJetBA.ViewModel
 
     public class NavigationViewModelEx : NavigationViewModel
     {
+        private readonly Dispatcher _uiDispatcher;
+
         public NavigationViewModelEx(SampleBA ba, IBootstrapperCommand command, IEngine engine, JetPackActivator activator)
             : base(ba, command, engine, activator)
         {
             _ba.DetectComplete += BA_DetectComplete;
             _ba.ApplyBegin += BA_ApplyBegin;
             _ba.ApplyComplete += BA_ApplyComplete;
-            _activator.GetService<Dispatcher>().Invoke(() => ExpectedPages = new ObservableCollection<Pages>());
+
+            _uiDispatcher = _activator.GetService<Dispatcher>();
+            _uiDispatcher.Invoke(() => ExpectedPages = new ObservableCollection<Pages>());
 
             ApplyViewModel apply = _activator.GetService<ApplyViewModel>();
             apply.PropertyChanged += apply_PropertyChanged;
@@ -77,7 +81,7 @@ namespace SampleJetBA.ViewModel
 
         public void SetStartPage()
         {
-            if (_activator.GetService<Display>() < Display.Passive)
+            if (_command.Display < Display.Passive)
             {
                 return;
             }
@@ -101,7 +105,7 @@ namespace SampleJetBA.ViewModel
                 case DetectionState.Newer:
                 case DetectionState.SameVersion:
                 case DetectionState.Older:
-                    _activator.GetService<Dispatcher>().Invoke(() =>
+                    _uiDispatcher.Invoke(() =>
                     {
                         ExpectedPages.Add(Pages.PageSelection);
                         ExpectedPages.Add(Pages.InstallLocation);
@@ -115,7 +119,7 @@ namespace SampleJetBA.ViewModel
                     break;
 
                 case DetectionState.Present:
-                    _activator.GetService<Dispatcher>().Invoke(() =>
+                    _uiDispatcher.Invoke(() =>
                     {
                         ExpectedPages.Add(Pages.Repair);
                         ExpectedPages.Add(Pages.Progress);
@@ -170,19 +174,19 @@ namespace SampleJetBA.ViewModel
         public override void Refresh()
         {
             base.Refresh();
-            Dispatcher.CurrentDispatcher.Invoke(() => ExpectedPages = new ObservableCollection<Pages>(ExpectedPages));
+            _uiDispatcher.Invoke(() => ExpectedPages = new ObservableCollection<Pages>(ExpectedPages));
             OnPropertyChanged(nameof(ExpectedPages));
         }
 
         private void CONFIGURE_SQL_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (!e.PropertyName.Equals("BooleanString") || (_activator.GetService<Display>() < Display.Passive))
+            if (!e.PropertyName.Equals("BooleanString") || (_command.Display < Display.Passive))
             {
                 return;
             }
 
             VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
-            _activator.GetService<Dispatcher>().Invoke(() =>
+            _uiDispatcher.Invoke(() =>
             {
                 if (vars.CONFIGURE_SQL.BooleanString && !ExpectedPages.Contains(Pages.Database))
                 {
@@ -197,13 +201,13 @@ namespace SampleJetBA.ViewModel
 
         private void CONFIGURE_SERVICE_ACCOUNT_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if (!e.PropertyName.Equals("BooleanString") || (_activator.GetService<Display>() < Display.Passive))
+            if (!e.PropertyName.Equals("BooleanString") || (_command.Display < Display.Passive))
             {
                 return;
             }
 
             VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();
-            _activator.GetService<Dispatcher>().Invoke(() =>
+            _uiDispatcher.Invoke(() =>
             {
                 if (vars.CONFIGURE_SERVICE_ACCOUNT.BooleanString && !ExpectedPages.Contains(Pages.Service))
                 {

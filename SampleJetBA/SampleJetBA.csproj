@@ -20,8 +20,8 @@
     <PackageReference Include="WixToolset.Dnc.HostGenerator" Version="4.0.0-rc.2" />
     <PackageReference Include="WixToolset.Mba.Core" Version="4.0.0-rc.2" />
     <PackageReference Include="TidyBuild" version="1.5.1" />
-    <PackageReference Include="JetBA4" version="6.3.2.88-rc.2" />
-    <PackageReference Include="JetBA4.JetPack" version="6.3.2.88-rc.2" />
+    <PackageReference Include="JetBA4" version="6.3.2.90-rc.2" />
+    <PackageReference Include="JetBA4.JetPack" version="6.3.2.90-rc.2" />
   </ItemGroup>
 
   <Target Name="BeforeBuild" DependsOnTargets="GenerateVersion;GenerateDefaultJetBundleVariables;GenerateJetBundleVariables" />

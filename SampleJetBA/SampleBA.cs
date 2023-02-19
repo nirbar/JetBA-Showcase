@@ -108,7 +108,7 @@ namespace SampleJetBA
         {
             base.OnDetectComplete(args);
 
-            if (HasJetBaExecuted && (_command.Resume == ResumeType.Interrupted) && (GetService<Display>() == Display.Full))
+            if (HasJetBaExecuted && (_command.Resume == ResumeType.Interrupted) && (_command.Display == Display.Full))
             {
                 ApplyViewModel apply = GetService<ApplyViewModel>();
                 ICommand cmd = apply.GetCommand(_command.Action);
@@ -161,7 +161,7 @@ namespace SampleJetBA
         protected override void OnApplyComplete(ApplyCompleteEventArgs args)
         {
             base.OnApplyComplete(args);
-            if ((args.Restart == ApplyRestart.RestartInitiated) && (GetService<Display>() == Display.Full))
+            if ((args.Restart == ApplyRestart.RestartInitiated) && (_command.Display == Display.Full))
             {
                 PopupViewModel popup = GetService<PopupViewModel>();
                 ApplyViewModel apply = GetService<ApplyViewModel>();
