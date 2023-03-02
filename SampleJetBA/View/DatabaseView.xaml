@@ -53,7 +53,7 @@
             <TextBox Grid.Row="1" Grid.Column="1"  Text="{Binding VariablesViewModel.SQL_DATABASE.String}"/>
 
             <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static props:Resources.Authentication}" Style="{StaticResource GenericText}" HorizontalAlignment="Stretch"/>
-            <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" Orientation="Horizontal">
+            <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Orientation="Horizontal">
                 <RadioButton Content="{x:Static props:Resources.SqlAuthentication}" IsChecked="{Binding VariablesViewModel.SQL_AUTH.Boolean}"/>
                 <RadioButton Content="{x:Static props:Resources.WindowsAuthentication}" IsChecked="{Binding VariablesViewModel.SQL_AUTH.Boolean, Converter={StaticResource InverseBooleanConverter}}"/>
             </StackPanel>

@@ -90,39 +90,29 @@ namespace SampleJetBA.ViewModel
                 Page = Pages.Detecting;
                 return;
             }
-
-            switch (apply.DetectState)
+            if (apply.DetectState.HasFlag(DetectionState.Present))
             {
-                case DetectionState.Absent:
-                case DetectionState.Newer:
-                case DetectionState.SameVersion:
-                case DetectionState.Older:
-                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
-                    {
-                        ExpectedPages.Add(Pages.PageSelection);
-                        ExpectedPages.Add(Pages.InstallLocation);
-                        ExpectedPages.Add(Pages.Service);
-                        ExpectedPages.Add(Pages.Database);
-                        ExpectedPages.Add(Pages.Summary);
-                        ExpectedPages.Add(Pages.Progress);
-                        ExpectedPages.Add(Pages.Finish);
-                    });
-                    Page = Pages.PageSelection;
-                    break;
-
-                case DetectionState.Present:
-                    BA.Kernel.Get<Dispatcher>().Invoke(() =>
-                    {
-                        ExpectedPages.Add(Pages.Repair);
-                        ExpectedPages.Add(Pages.Progress);
-                        ExpectedPages.Add(Pages.Finish);
-                    });
-                    Page = Pages.Repair;
-                    break;
-
-                default:
-                    BA.Engine.Log(LogLevel.Error, $"Unhandled detect state '{apply.DetectState}'");
-                    break;
+                BA.Kernel.Get<Dispatcher>().Invoke(() =>
+                {
+                    ExpectedPages.Add(Pages.Repair);
+                    ExpectedPages.Add(Pages.Progress);
+                    ExpectedPages.Add(Pages.Finish);
+                });
+                Page = Pages.Repair;
+            }
+            else
+            {
+                BA.Kernel.Get<Dispatcher>().Invoke(() =>
+                {
+                    ExpectedPages.Add(Pages.PageSelection);
+                    ExpectedPages.Add(Pages.InstallLocation);
+                    ExpectedPages.Add(Pages.Service);
+                    ExpectedPages.Add(Pages.Database);
+                    ExpectedPages.Add(Pages.Summary);
+                    ExpectedPages.Add(Pages.Progress);
+                    ExpectedPages.Add(Pages.Finish);
+                });
+                Page = Pages.PageSelection;
             }
 
             JetBundleVariables.BundleVariablesViewModel vars = BA.Kernel.Get<JetBundleVariables.BundleVariablesViewModel>();

@@ -17,6 +17,19 @@
     </xs:annotation>
   </xs:element>
 
+  <xs:element name="ExtractBlob">
+    <xs:annotation>
+      <xs:appinfo>
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Product" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Module" />
+        <xse:parent namespace="http://schemas.microsoft.com/wix/2006/wi" ref="Fragment" />
+      </xs:appinfo>
+      <xs:documentation>
+        <![CDATA[Extract blob data that was embedded using MSBuild EmbedFileTask. The blob is saved to a file, and the file path is stored in property 'JETBA_BLOB_FILE'. Errors in extracting the blob are ignored. To test for errors, check if that property has a value]]>
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
   <xs:element name="EmbedParameters">
     <xs:annotation>
       <xs:appinfo>

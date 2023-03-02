@@ -9,12 +9,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace SampleJetBA
 {
     public class SampleBA : JetBootstrapperApplication
     {
+        public enum JetBaShowcaseErrors
+        {
+            // The process terminated unexpectedly.
+            ERROR_PROCESS_ABORTED = 1067,
+        }
+
         private SampleNInjectBinder binder_ = null;
         protected override NInjectBinder Binder => binder_ ?? (binder_ = new SampleNInjectBinder(this));
 
@@ -72,18 +79,21 @@ namespace SampleJetBA
 
             if (HasJetBaExecuted && (Command.Resume == ResumeType.Interrupted) && (Kernel.Get<Display>() == Display.Full))
             {
-                ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
-                ICommand cmd = apply.GetCommand(Command.Action);
-                ICommand exit = new RelayCommand(o => InvokeShutdown());
-                if (cmd != null)
+                PopupViewModel popup = Kernel.Get<PopupViewModel>();
+                VariablesViewModel vars = Kernel.Get<VariablesViewModel>();
+                Task<Result> task = popup.Show((int)JetBaShowcaseErrors.ERROR_PROCESS_ABORTED, PopupViewModel.UIHintFlags.MB_ICONQUESTION | PopupViewModel.UIHintFlags.MB_OKCANCEL | PopupViewModel.UIHintFlags.MB_DEFBUTTON1, nameof(Properties.Resources.InterruptedRebootPrompt0), vars["WixBundleName"].String);
+                task.ContinueWith(t =>
                 {
-                    Engine.Log(LogLevel.Standard, $"Prompting to resume with {Command.Action} after an interrupted reboot");
-
-                    PopupViewModel popup = Kernel.Get<PopupViewModel>();
-                    popup.Show(nameof(Properties.Resources.Resume), nameof(Properties.Resources.InterruptedRebootPrompt0), PopupViewModel.IconHint.Question
-                        , nameof(Properties.Resources.Install), cmd
-                        , nameof(Properties.Resources.Cancel), exit);
-                }
+                    if (t.Result == Result.Ok)
+                    {
+                        ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
+                        apply.Plan(Command.Action);
+                    }
+                    else
+                    {
+                        InvokeShutdown();
+                    }
+                });
             }
         }
 
@@ -128,14 +138,8 @@ namespace SampleJetBA
                 PopupViewModel popup = Kernel.Get<PopupViewModel>();
                 ApplyViewModel apply = Kernel.Get<ApplyViewModel>();
                 VariablesViewModel vars = Kernel.Get<VariablesViewModel>();
-                PopupViewModel.Buttons res = popup.ShowSync(Properties.Resources.Restart, nameof(Properties.Resources.WeNeedToRebootNow0), PopupViewModel.IconHint.Information
-                    , nameof(Properties.Resources.Yes)
-                    , nameof(Properties.Resources.No)
-                    , null
-                    , PopupViewModel.Buttons.Right
-                    , vars["WixBundleName"].String);
-
-                if (res != PopupViewModel.Buttons.Right)
+                Result res = popup.ShowSync((int)ErrorCodes.RestartRequired, PopupViewModel.UIHintFlags.MB_ICONINFORMATION | PopupViewModel.UIHintFlags.MB_YESNO | PopupViewModel.UIHintFlags.MB_DEFBUTTON1, nameof(Properties.Resources.WeNeedToRebootNow0), vars["WixBundleName"].String);
+                if (res != Result.Yes)
                 {
                     Engine.Log(LogLevel.Standard, "User selected to delay reboot");
                     apply.RebootState = ApplyRestart.RestartRequired;
