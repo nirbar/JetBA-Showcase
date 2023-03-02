@@ -98,39 +98,29 @@ namespace SampleJetBA.ViewModel
                 Page = Pages.Detecting;
                 return;
             }
-
-            switch (apply.DetectState)
+            if (apply.DetectState.HasFlag(DetectionState.Present))
             {
-                case DetectionState.Absent:
-                case DetectionState.Newer:
-                case DetectionState.SameVersion:
-                case DetectionState.Older:
-                    _uiDispatcher.Invoke(() =>
-                    {
-                        ExpectedPages.Add(Pages.PageSelection);
-                        ExpectedPages.Add(Pages.InstallLocation);
-                        ExpectedPages.Add(Pages.Service);
-                        ExpectedPages.Add(Pages.Database);
-                        ExpectedPages.Add(Pages.Summary);
-                        ExpectedPages.Add(Pages.Progress);
-                        ExpectedPages.Add(Pages.Finish);
-                    });
-                    Page = Pages.PageSelection;
-                    break;
-
-                case DetectionState.Present:
-                    _uiDispatcher.Invoke(() =>
-                    {
-                        ExpectedPages.Add(Pages.Repair);
-                        ExpectedPages.Add(Pages.Progress);
-                        ExpectedPages.Add(Pages.Finish);
-                    });
-                    Page = Pages.Repair;
-                    break;
-
-                default:
-                    _engine.Log(LogLevel.Error, $"Unhandled detect state '{apply.DetectState}'");
-                    break;
+                _uiDispatcher.Invoke(() =>
+                {
+                    ExpectedPages.Add(Pages.Repair);
+                    ExpectedPages.Add(Pages.Progress);
+                    ExpectedPages.Add(Pages.Finish);
+                });
+                Page = Pages.Repair;
+            }
+            else
+            {
+                _uiDispatcher.Invoke(() =>
+                {
+                    ExpectedPages.Add(Pages.PageSelection);
+                    ExpectedPages.Add(Pages.InstallLocation);
+                    ExpectedPages.Add(Pages.Service);
+                    ExpectedPages.Add(Pages.Database);
+                    ExpectedPages.Add(Pages.Summary);
+                    ExpectedPages.Add(Pages.Progress);
+                    ExpectedPages.Add(Pages.Finish);
+                });
+                Page = Pages.PageSelection;
             }
 
             VariablesViewModelEx vars = _activator.GetService<VariablesViewModelEx>();

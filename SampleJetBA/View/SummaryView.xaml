@@ -70,7 +70,7 @@
             <ItemsControl ItemsSource="{Binding PackagesViewModel.Packages}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <CheckBox IsEnabled="False" Content="{Binding Path=DisplayName}" IsChecked="{Binding Path=PlanState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=MajorUpgrade;Install;MinorUpgrade, Mode=OneWay}"/>
+                        <CheckBox IsEnabled="False" Content="{Binding Path=DisplayName}" IsChecked="{Binding Path=PlanState, Converter={StaticResource EnumBooleanConverter}, ConverterParameter=Present;ForcePresent;Repair;Absent;ForceAbsent, Mode=OneWay}"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

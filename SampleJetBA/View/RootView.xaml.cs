@@ -179,7 +179,7 @@ namespace SampleJetBA.View
             }
 
             string text = File.ReadAllText(openSrcLicPath);
-            PopupViewModel.Show(nameof(Properties.Resources.Note), text, PopupViewModel.IconHint.Information, nameof(Properties.Resources.OK));
+            PopupViewModel.Show(0, PopupViewModel.UIHintFlags.MB_ICONINFORMATION | PopupViewModel.UIHintFlags.MB_OK | PopupViewModel.UIHintFlags.MB_DEFBUTTON1, text);
         }
     }
 }

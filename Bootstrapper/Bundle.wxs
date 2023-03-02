@@ -9,6 +9,7 @@
 
     <BootstrapperApplication>
       <PayloadGroupRef Id="SampleJetBA"/>
+      <Payload SourceFile="$(var.SampleJetBA.ProjectDir)Properties\LICENSE.md"/>
       <bal:WixDotNetCoreBootstrapperApplicationHost SelfContainedDeployment="yes" />
     </BootstrapperApplication>
     <jet:JetBaSettings LicenseFile="$(sys.SOURCEFILEDIR)JetBA.lic" />
