@@ -1,21 +1,39 @@
 name: JetBA-Showcase
 on:
-  push:
-    tags:
-      - v*
   workflow_dispatch:
+    inputs:
+      create_tag:
+        description: 'Create tag?'
+        required: true
+        default: false
+        type: boolean
 jobs:
   JetBA-Showcase-Build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.3.0
+        with:
+          submodules: 'true'
       - uses: microsoft/setup-msbuild@v1.0.2
-      - run: nuget restore
 
-      - name: Build for default WiX
-        run: msbuild JetBA-Showcase.sln -m -p:Configuration=Release
+      - name: Resolve build version
+        run: |
+          $xmlDoc = New-Object System.Xml.XmlDocument
+          $file = [System.IO.Path]::Combine($env:GITHUB_WORKSPACE, 'SampleJetBA', 'SampleJetBA.csproj')
+          [xml]$xmlDoc = Get-Content $file
+          $node = $xmlDoc.SelectSingleNode('//*[local-name(.)="PackageReference" and @Include="JetBA4"]/@version')
+          Add-Content -Path $env:GITHUB_ENV -Value ("FULL_VERSION=" + $node.Value)
+
+      - name: Build
+        run: msbuild JetBA-Showcase.sln -restore -m -p:Configuration=Release -p:FullVersion=${{ env.FULL_VERSION }}
 
       - uses: actions/upload-artifact@v2
         with:
           name: JetBA_Showcase.exe
           path: build\bin\Release\Bootstrapper\JetBA_Showcase.exe
+
+      - name: Tag
+        if: ${{ github.event.inputs.create_tag == 'true' }}
+        run: |
+          git tag wix4-v${{ env.FULL_VERSION }}-build.${{ github.run_number }}
+          git push --tags

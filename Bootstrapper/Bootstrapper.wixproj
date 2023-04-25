@@ -14,10 +14,10 @@
     <Compile Include="Bundle.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WixToolset.NetFx.wixext" Version="4.0.0-rc.3" />
-    <PackageReference Include="WixToolset.Bal.wixext" Version="4.0.0-rc.3" />
-    <PackageReference Include="WixToolset.Heat" Version="4.0.0-rc.3" />
-    <PackageReference Include="JetWixExtension4" Version="7.0.1.99-rc.3" />
+    <PackageReference Include="WixToolset.NetFx.wixext" Version="4.0.0" />
+    <PackageReference Include="WixToolset.Bal.wixext" Version="4.0.0" />
+    <PackageReference Include="WixToolset.Heat" Version="4.0.0" />
+    <PackageReference Include="JetWixExtension4" Version="7.0.2.105" />
     <PackageReference Include="MSBuildTasks" Version="1.5.0.235" />
     <PackageReference Include="TidyBuild" Version="1.5.1">
       <PrivateAssets>all</PrivateAssets>

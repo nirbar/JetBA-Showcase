@@ -178,7 +178,7 @@ namespace SampleJetBA
                 PopupViewModel popup = GetService<PopupViewModel>();
                 ApplyViewModel apply = GetService<ApplyViewModel>();
                 VariablesViewModelEx vars = GetService<VariablesViewModelEx>();
-                Result res = popup.ShowSync((int)ErrorCodes.RestartRequired, PopupViewModel.UIHintFlags.MB_ICONINFORMATION | PopupViewModel.UIHintFlags.MB_YESNO | PopupViewModel.UIHintFlags.MB_DEFBUTTON1, nameof(Properties.Resources.WeNeedToRebootNow0), vars.WixBundleName.String);
+                Result res = popup.ShowSync((int)ErrorCodes.ERROR_SUCCESS_REBOOT_REQUIRED, PopupViewModel.UIHintFlags.MB_ICONINFORMATION | PopupViewModel.UIHintFlags.MB_YESNO | PopupViewModel.UIHintFlags.MB_DEFBUTTON1, nameof(Properties.Resources.WeNeedToRebootNow0), vars.WixBundleName.String);
                 if (res != Result.Yes)
                 {
                     engine.Log(LogLevel.Standard, "User selected to delay reboot");
