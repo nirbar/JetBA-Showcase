@@ -1,4 +1,4 @@
-﻿<Project Sdk="WixToolset.Sdk">
+<Project Sdk="WixToolset.Sdk">
   <PropertyGroup>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
@@ -14,12 +14,11 @@
     <Compile Include="Bundle.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WixToolset.NetFx.wixext" Version="4.0.0" />
-    <PackageReference Include="WixToolset.Bal.wixext" Version="4.0.0" />
-    <PackageReference Include="WixToolset.Heat" Version="4.0.0" />
-    <PackageReference Include="JetWixExtension4" Version="7.0.2.105" />
-    <PackageReference Include="MSBuildTasks" Version="1.5.0.235" />
-    <PackageReference Include="TidyBuild" Version="1.5.1">
+    <PackageReference Include="WixToolset.NetFx.wixext"/>
+    <PackageReference Include="WixToolset.Bal.wixext"/>
+    <PackageReference Include="WixToolset.Heat"/>
+    <PackageReference Include="JetWixExtension4"/>
+    <PackageReference Include="TidyBuild">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -38,6 +37,6 @@
     <Folder Include="XSLT" />
   </ItemGroup>
   <Target Name="PublishBA" BeforeTargets="HarvestDirectory">
-    <Exec Command="dotnet publish --runtime win-$(Platform) --configuration $(Configuration) --self-contained true --no-dependencies &quot;..\SampleJetBA\SampleJetBA.csproj&quot; --output &quot;$(OutputPath)\..\SampleJetBA\net6.0-windows\publish&quot; &quot;-p:SolutionDir=$(SolutionDir)\&quot; -p:BuildProjectReferences=false" />
+    <Exec Command="dotnet publish --runtime win-$(Platform) --configuration $(Configuration) --self-contained true --no-dependencies &quot;..\SampleJetBA\SampleJetBA.csproj&quot; --output &quot;$(OutputPath)\..\SampleJetBA\net6.0-windows\publish&quot; &quot;-p:SolutionDir=$(SolutionDir)\&quot; &quot;-p:BuildFolder=$(BuildFolder)\&quot; &quot;-p:BaseBuildFolder=$(BuildFolder)\&quot; -p:BuildProjectReferences=false" />
   </Target>
 </Project>

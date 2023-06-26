@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.Build.Traversal">
+  <PropertyGroup>
+    <TraversalGlobalProperties>SolutionDir=$(MSBuildThisFileDirectory);BaseBuildFolder=$(BaseBuildFolder);BuildFolder=$(BaseBuildFolder);Configuration=Release;BuildProjectReferences=false</TraversalGlobalProperties>
+    <CustomBeforeTraversalProps>$(MSBuildThisFileDirectory)Directory.Build.props</CustomBeforeTraversalProps>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="Setup\Setup.wixproj" Properties="Platform=x86" Targets="Restore;Build" BuildInParallel="false"/>
+    <ProjectReference Include="Bootstrapper\Bootstrapper.wixproj" Properties="Platform=x86" Targets="Restore;Build" BuildInParallel="false"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TidyBuild" />
+  </ItemGroup>
+  
+  <Target Name="WixtoolsetToPanelSwWix4PerProject" Inputs="%(ProjectReference.FullPath)" Outputs="%(ProjectReference.FullPath).never">
+    <PropertyGroup>
+      <ProjectFileContents>$([System.IO.File]::ReadAllText('%(ProjectReference.FullPath)'))</ProjectFileContents>
+      <ProjectFileContents>$(ProjectFileContents.Replace('WixToolset.', 'PanelSwWix4.'))</ProjectFileContents>
+    </PropertyGroup>
+
+    <WriteLinesToFile File="%(ProjectReference.FullPath)"
+                      Lines="$(ProjectFileContents)"
+                      Overwrite="true" 
+                      WriteOnlyWhenDifferent="true" />
+  </Target>
+
+  <Target Name="WixtoolsetToPanelSwWix4" DependsOnTargets="WixtoolsetToPanelSwWix4PerProject">
+    <PropertyGroup>
+      <JsonFileContents>$([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory)global.json'))</JsonFileContents>
+      <JsonFileContents>$([System.Text.RegularExpressions.Regex]::Replace('$(JsonFileContents)', '.*WixToolset.*', '"PanelSwWix4.Sdk": "$(PanelSwWix4Version)",'))</JsonFileContents>
+    </PropertyGroup>
+
+    <WriteLinesToFile File="$(MSBuildThisFileDirectory)global.json"
+                      Lines="$(JsonFileContents)"
+                      Overwrite="true"/>
+                      
+    <XmlPoke XmlInputPath="Directory.Packages.props" Query="/Project/PropertyGroup/JetBaVersion" Value="$(JetBaVersion)-psw-wix"/>
+  </Target>
+  
+  
+</Project>

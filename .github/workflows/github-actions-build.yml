@@ -2,11 +2,27 @@ name: JetBA-Showcase
 on:
   workflow_dispatch:
     inputs:
+      jetba_version:
+        description: 'JetBA4 Version'
+        required: true
+        default: '7.0.3.112'
+        type: string
+      wix_version:
+        description: 'WixToolset v4 Version'
+        required: true
+        default: '4.0.1'
+        type: string
+      psw_wix_version:
+        description: 'PanelSwWix4 Version'
+        required: true
+        default: '5.0.0-psw-wix.0135-14'
+        type: string
       create_tag:
         description: 'Create tag?'
         required: true
         default: false
         type: boolean
+
 jobs:
   JetBA-Showcase-Build:
     runs-on: windows-latest
@@ -16,24 +32,28 @@ jobs:
           submodules: 'true'
       - uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Resolve build version
-        run: |
-          $xmlDoc = New-Object System.Xml.XmlDocument
-          $file = [System.IO.Path]::Combine($env:GITHUB_WORKSPACE, 'SampleJetBA', 'SampleJetBA.csproj')
-          [xml]$xmlDoc = Get-Content $file
-          $node = $xmlDoc.SelectSingleNode('//*[local-name(.)="PackageReference" and @Include="JetBA4"]/@version')
-          Add-Content -Path $env:GITHUB_ENV -Value ("FULL_VERSION=" + $node.Value)
-
       - name: Build
-        run: msbuild JetBA-Showcase.sln -restore -m -p:Configuration=Release -p:FullVersion=${{ env.FULL_VERSION }}
+        run: |
+          msbuild dirs.proj -restore -p:FullVersion=${{ github.event.inputs.jetba_version }} -p:WixToolsetVersion=${{ github.event.inputs.wix_version }} -p:JetBaVersion=${{ github.event.inputs.jetba_version }}
+
+      - name: Build for psw-wix
+        run: |
+          $buildPswWixFolder = [System.IO.Path]::Combine('${{ github.workspace }}', 'build-psw')
+          msbuild dirs.proj -t:WixtoolsetToPanelSwWix4 -p:JetBaVersion=${{ github.event.inputs.jetba_version }} -p:"BaseBuildFolder=$buildPswWixFolder\"
+          msbuild dirs.proj -restore -p:FullVersion=${{ github.event.inputs.jetba_version }} -p:PanelSwWix4Version=${{ github.event.inputs.psw_wix_version }} -p:"BaseBuildFolder=$buildPswWixFolder\"
 
       - uses: actions/upload-artifact@v2
         with:
           name: JetBA_Showcase.exe
           path: build\bin\Release\Bootstrapper\JetBA_Showcase.exe
 
+      - uses: actions/upload-artifact@v2
+        with:
+          name: JetBA_Showcase-psw-wix.exe
+          path: build-psw\bin\Release\Bootstrapper\JetBA_Showcase.exe
+
       - name: Tag
         if: ${{ github.event.inputs.create_tag == 'true' }}
         run: |
-          git tag wix4-v${{ env.FULL_VERSION }}-build.${{ github.run_number }}
+          git tag wix4-v${{ github.event.inputs.jetba_version }}-build.${{ github.run_number }}
           git push --tags

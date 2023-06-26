@@ -6,11 +6,10 @@
     <DefineConstants>Debug;$(DefineConstants)</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="WixToolset.Util.wixext" Version="4.0.0" />
-    <PackageReference Include="WixToolset.Heat" Version="4.0.0" />
-    <PackageReference Include="JetWixExtension4" Version="7.0.2.105" />
-    <PackageReference Include="MSBuildTasks" Version="1.5.0.235" />
-    <PackageReference Include="TidyBuild" Version="1.5.1">
+    <PackageReference Include="WixToolset.Util.wixext"/>
+    <PackageReference Include="WixToolset.Heat"/>
+    <PackageReference Include="JetWixExtension4"/>
+    <PackageReference Include="TidyBuild">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
