@@ -37,6 +37,6 @@
     <Folder Include="XSLT" />
   </ItemGroup>
   <Target Name="PublishBA" BeforeTargets="HarvestDirectory">
-    <Exec Command="dotnet publish --runtime win-$(Platform) --configuration $(Configuration) --self-contained true --no-dependencies &quot;..\SampleJetBA\SampleJetBA.csproj&quot; --output &quot;$(OutputPath)\..\SampleJetBA\net6.0-windows\publish&quot; &quot;-p:SolutionDir=$(SolutionDir)\&quot; &quot;-p:BuildFolder=$(BuildFolder)\&quot; &quot;-p:BaseBuildFolder=$(BuildFolder)\&quot; -p:BuildProjectReferences=false" />
+    <MSBuild Projects="..\SampleJetBA\SampleJetBA.csproj" Targets="Restore;Publish" Properties="SelfContained=true;RuntimeIdentifier=win-x64;Configuration=$(Configuration);Platform=$(Platform);PublishDir=$(OutputPath)\..\SampleJetBA\net6.0-windows\publish-msbuild;SolutionDir=$(SolutionDir);BuildFolder=$(BuildFolder);BaseBuildFolder=$(BuildFolder);BuildProjectReferences=false"/>
   </Target>
 </Project>
