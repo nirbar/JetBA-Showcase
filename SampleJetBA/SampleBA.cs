@@ -41,11 +41,7 @@ namespace SampleJetBA
             services.AddSingleton<InputValidationsViewModelEx>();
             services.AddSingleton<InputValidationsViewModel, InputValidationsViewModelEx>(s => s.GetService<InputValidationsViewModelEx>());
 
-            services.RemoveAll(typeof(PanelSW.Installer.JetBA.Localization.Resources));
-            services.RemoveAll(typeof(PanelSW.Installer.JetBA.JetPack.Localization.Resources));
-            services.AddSingleton<Localization.Resources>();
-            services.AddSingleton<PanelSW.Installer.JetBA.JetPack.Localization.Resources, Localization.Resources>(s => s.GetService<Localization.Resources>());
-            services.AddSingleton<PanelSW.Installer.JetBA.Localization.Resources, Localization.Resources>(s => s.GetService<Localization.Resources>());
+            services.AddSingleton<System.Resources.ResourceManager>(s => Properties.Resources.ResourceManager);
 
             services.AddTransient<DatabaseView>();
             services.AddTransient<DetectingView>();

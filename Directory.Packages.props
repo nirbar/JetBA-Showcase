@@ -2,8 +2,8 @@
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <WixToolsetVersion Condition=" '$(WixToolsetVersion)' == '' ">4.0.1</WixToolsetVersion>
-    <PanelSwWix4Version Condition=" '$(PanelSwWix4Version)' == '' ">5.0.0-psw-wix.0135-14</PanelSwWix4Version>
-    <JetBaVersion Condition=" '$(JetBaVersion)' == '' ">7.0.3.112</JetBaVersion>
+    <PanelSwWix4Version Condition=" '$(PanelSwWix4Version)' == '' ">5.0.0-psw-wix.0207-20</PanelSwWix4Version>
+    <JetBaVersion Condition=" '$(JetBaVersion)' == '' ">7.1.1.117</JetBaVersion>
   </PropertyGroup>
 
   <ItemGroup>
