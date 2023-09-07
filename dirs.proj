@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.Build.Traversal">
   <PropertyGroup>
-    <TraversalGlobalProperties>SolutionDir=$(MSBuildThisFileDirectory);BaseBuildFolder=$(BaseBuildFolder);BuildFolder=$(BaseBuildFolder);Configuration=Release;BuildProjectReferences=false</TraversalGlobalProperties>
+    <TraversalGlobalProperties>SolutionDir=$(MSBuildThisFileDirectory);BaseBuildFolder=$(BaseBuildFolder);BuildFolder=$(BaseBuildFolder);Configuration=$(Configuration);BuildProjectReferences=false</TraversalGlobalProperties>
     <CustomBeforeTraversalProps>$(MSBuildThisFileDirectory)Directory.Build.props</CustomBeforeTraversalProps>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="Setup\Setup.wixproj" Properties="Platform=x86" Targets="Restore;Build" BuildInParallel="false"/>
-    <ProjectReference Include="Bootstrapper\Bootstrapper.wixproj" Properties="Platform=x86" Targets="Restore;Build" BuildInParallel="false"/>
+    <ProjectReference Include="Bootstrapper\Bootstrapper.wixproj" Properties="Platform=x64" Targets="Restore;Build" BuildInParallel="false"/>
   </ItemGroup>
 
   <ItemGroup>

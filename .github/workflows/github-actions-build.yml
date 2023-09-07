@@ -34,13 +34,13 @@ jobs:
 
       - name: Build
         run: |
-          msbuild dirs.proj -restore -p:FullVersion=${{ github.event.inputs.jetba_version }} -p:WixToolsetVersion=${{ github.event.inputs.wix_version }} -p:JetBaVersion=${{ github.event.inputs.jetba_version }}
+          msbuild dirs.proj -restore -p:Configuration=Release -p:FullVersion=${{ github.event.inputs.jetba_version }} -p:WixToolsetVersion=${{ github.event.inputs.wix_version }} -p:JetBaVersion=${{ github.event.inputs.jetba_version }}
 
       - name: Build for psw-wix
         run: |
           $buildPswWixFolder = [System.IO.Path]::Combine('${{ github.workspace }}', 'build-psw')
-          msbuild dirs.proj -t:WixtoolsetToPanelSwWix4 -p:JetBaVersion=${{ github.event.inputs.jetba_version }} -p:"BaseBuildFolder=$buildPswWixFolder\"
-          msbuild dirs.proj -restore -p:FullVersion=${{ github.event.inputs.jetba_version }} -p:PanelSwWix4Version=${{ github.event.inputs.psw_wix_version }} -p:"BaseBuildFolder=$buildPswWixFolder\"
+          msbuild dirs.proj -t:WixtoolsetToPanelSwWix4 -p:Configuration=Release -p:JetBaVersion=${{ github.event.inputs.jetba_version }} -p:"BaseBuildFolder=$buildPswWixFolder\"
+          msbuild dirs.proj -restore -p:Configuration=Release -p:FullVersion=${{ github.event.inputs.jetba_version }} -p:PanelSwWix4Version=${{ github.event.inputs.psw_wix_version }} -p:"BaseBuildFolder=$buildPswWixFolder\"
 
       - uses: actions/upload-artifact@v2
         with:
