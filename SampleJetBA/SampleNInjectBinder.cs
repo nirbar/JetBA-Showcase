@@ -1,10 +1,11 @@
 ﻿using Microsoft.Tools.WindowsInstallerXml.Bootstrapper;
 using PanelSW.Installer.JetBA;
+using PanelSW.Installer.JetBA.JetPack;
 using System.Windows;
 
 namespace SampleJetBA
 {
-    class SampleNInjectBinder : NInjectBinder
+    class SampleNInjectBinder : JetPackNinjectBinder
     {
         public SampleNInjectBinder(SampleBA ba)
             : base(ba)
@@ -16,6 +17,7 @@ namespace SampleJetBA
             base.Load();
 
             Rebind<BootstrapperApplication, JetBootstrapperApplication, SampleBA>().ToConstant(ba_ as SampleBA);
+            Bind<System.Resources.ResourceManager>().ToConstant(Properties.Resources.ResourceManager).InSingletonScope();
 
             // ViewModel
             Rebind<PanelSW.Installer.JetBA.ViewModel.NavigationViewModel, ViewModel.NavigationViewModelEx>().To<ViewModel.NavigationViewModelEx>().InSingletonScope();
@@ -24,7 +26,6 @@ namespace SampleJetBA
             Rebind<PanelSW.Installer.JetBA.ViewModel.FinishViewModel, PanelSW.Installer.JetBA.JetPack.ViewModel.FinishViewModelEx>().To<PanelSW.Installer.JetBA.JetPack.ViewModel.FinishViewModelEx>().InSingletonScope();
             Bind<PanelSW.Installer.JetBA.JetPack.ViewModel.SqlViewModel>().ToSelf().InSingletonScope();
             Bind<PanelSW.Installer.JetBA.JetPack.ViewModel.PackagesViewModel>().ToSelf().InSingletonScope();
-            Rebind<PanelSW.Installer.JetBA.Localization.Resources, SampleJetBA.Localization.Resources>().To<SampleJetBA.Localization.Resources>().InSingletonScope();
 
             // View
             Bind<View.PageSelectionView>().ToSelf();

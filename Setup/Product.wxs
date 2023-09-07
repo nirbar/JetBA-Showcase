@@ -22,7 +22,7 @@
     <Property Id="MSIUNINSTALLSUPERSEDEDCOMPONENTS" Value="1"/>
 
     <Directory Id="TARGETDIR" Name="SourceDir">
-      <Directory Id="ProgramFilesFolder">
+      <Directory Id="ProgramFiles64Folder">
         <Directory Id="INSTALLFOLDER" Name="Setup" />
       </Directory>
     </Directory>

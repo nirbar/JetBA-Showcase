@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\TidyBuild.1.5.1\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.5.1\build\TidyBuild.props')" />
-  <Import Project="..\packages\JetWixExtension.7.0.1.100\build\JetWixExtension.props" Condition="Exists('..\packages\JetWixExtension.7.0.1.100\build\JetWixExtension.props')" />
+  <Import Project="..\packages\JetWixExtension.7.2.0.116\build\JetWixExtension.props" Condition="Exists('..\packages\JetWixExtension.7.2.0.116\build\JetWixExtension.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>{afd71940-747f-4570-991a-3169d1caadd6}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
@@ -15,10 +15,10 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
     <DefineConstants>Debug;$(DefineConstants)</DefineConstants>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Product.wxs" />
@@ -40,7 +40,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
-    <Error Condition="!Exists('..\packages\JetWixExtension.7.0.1.100\build\JetWixExtension.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetWixExtension.7.0.1.100\build\JetWixExtension.props'))" />
+    <Error Condition="!Exists('..\packages\JetWixExtension.7.2.0.116\build\JetWixExtension.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetWixExtension.7.2.0.116\build\JetWixExtension.props'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.5.1\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.5.1\build\TidyBuild.props'))" />
     <Error Condition="!Exists('..\packages\TidyBuild.1.5.1\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.5.1\build\TidyBuild.targets'))" />
   </Target>
