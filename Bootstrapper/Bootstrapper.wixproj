@@ -14,10 +14,10 @@
     <Compile Include="Bundle.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WixToolset.NetFx.wixext"/>
-    <PackageReference Include="WixToolset.Bal.wixext"/>
-    <PackageReference Include="WixToolset.Heat"/>
-    <PackageReference Include="JetWixExtension4"/>
+    <PackageReference Include="WixToolset.NetFx.wixext" />
+    <PackageReference Include="WixToolset.Bal.wixext" />
+    <PackageReference Include="WixToolset.Heat" />
+    <PackageReference Include="JetWixExtension4" />
     <PackageReference Include="TidyBuild">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -30,13 +30,12 @@
   <ItemGroup>
     <Content Include="JetBA.lic" />
     <Content Include="JetWixExtension.xsd" />
-    <Content Include="XSLT\ComponentsToPayloads.xslt" />
     <Content Include="XSLT\ba.xslt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="XSLT" />
   </ItemGroup>
   <Target Name="PublishBA" BeforeTargets="HarvestDirectory">
-    <MSBuild Projects="..\SampleJetBA\SampleJetBA.csproj" Targets="Restore;Publish" Properties="SelfContained=true;RuntimeIdentifier=win-x64;Configuration=$(Configuration);Platform=$(Platform);PublishDir=$(OutputPath)\..\SampleJetBA\net6.0-windows\publish-msbuild;SolutionDir=$(SolutionDir);BuildFolder=$(BuildFolder);BaseBuildFolder=$(BuildFolder);BuildProjectReferences=false"/>
+    <MSBuild Projects="..\SampleJetBA\SampleJetBA.csproj" Targets="Restore;Publish" Properties="SelfContained=true;RuntimeIdentifier=win-x64;Configuration=$(Configuration);Platform=$(Platform);PublishDir=$(OutputPath)\..\SampleJetBA\net6.0-windows\publish-msbuild;SolutionDir=$(SolutionDir);BuildFolder=$(BuildFolder);BaseBuildFolder=$(BuildFolder);BuildProjectReferences=false" />
   </Target>
 </Project>

@@ -46,5 +46,5 @@
     </Chain>
   </Bundle>
 
-  <?pragma heat.dir "$(var.SampleJetBA.TargetDir)..\SampleJetBA\net6.0-windows\publish-msbuild" -sfrag -scom -sreg -suid -svb6 -cg SampleJetBA -dr dontcare -ag -t "$(sys.SOURCEFILEDIR)XSLT\ComponentsToPayloads.xslt" -t "$(sys.SOURCEFILEDIR)XSLT\ba.xslt" ?>
+  <?pragma heat.dir "$(var.SampleJetBA.TargetDir)..\SampleJetBA\net6.0-windows\publish-msbuild" -dr SampleJetBA -generate payloadgroup -t "$(sys.SOURCEFILEDIR)XSLT\ba.xslt" ?>
 </Wix>

@@ -15,7 +15,7 @@
   <xsl:template match="wix:Payload" >
     <xsl:copy>
       <xsl:attribute name="Name">
-        <xsl:value-of select="substring-after( @SourceFile, 'SourceDir\')"/>
+        <xsl:value-of select="substring-after( @SourceFile, '\')"/>
       </xsl:attribute>
       <xsl:attribute name="Compressed">yes</xsl:attribute>
       <xsl:apply-templates select="@* | node()"/>
