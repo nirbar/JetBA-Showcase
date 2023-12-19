@@ -2,8 +2,10 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup Label="Build folders">
     <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+    <Platform Condition="'$(Platform)'==''">x64</Platform>
     <SolutionDir Condition="'$(SolutionDir)'==''">$(MSBuildThisFileDirectory)</SolutionDir>
     <BaseBuildFolder Condition="'$(BaseBuildFolder)'==''">$(MSBuildThisFileDirectory)build\</BaseBuildFolder>
+    <PublishDir Condition="'$(PublishDir)'==''">$(BaseBuildFolder)publish\$(MSBuildProjectName)\</PublishDir>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'==''">$(BaseBuildFolder)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
     <MSBuildProjectExtensionsPath Condition="'$(MSBuildProjectExtensionsPath )'==''">$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>

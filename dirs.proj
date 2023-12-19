@@ -4,8 +4,9 @@
     <CustomBeforeTraversalProps>$(MSBuildThisFileDirectory)Directory.Build.props</CustomBeforeTraversalProps>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="Setup\Setup.wixproj" Properties="Platform=x86" Targets="Restore;Build" BuildInParallel="false"/>
-    <ProjectReference Include="Bootstrapper\Bootstrapper.wixproj" Properties="Platform=x64" Targets="Restore;Build" BuildInParallel="false"/>
+    <ProjectReference Include="SampleJetBA\SampleJetBA.csproj" Properties="Platform=Any CPU;SelfContained=true;RuntimeIdentifier=win-$(Platform);IsPublishable=true" Targets="Build;Publish"/>
+    <ProjectReference Include="Setup\Setup.wixproj" Properties="Platform=$(Platform)" Targets="Restore;Build" BuildInParallel="false"/>
+    <ProjectReference Include="Bootstrapper\Bootstrapper.wixproj" Properties="Platform=$(Platform)" Targets="Restore;Build" BuildInParallel="false"/>
   </ItemGroup>
 
   <ItemGroup>

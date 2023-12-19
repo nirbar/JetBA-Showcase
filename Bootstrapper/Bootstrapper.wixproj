@@ -35,7 +35,18 @@
   <ItemGroup>
     <Folder Include="XSLT" />
   </ItemGroup>
-  <Target Name="PublishBA" BeforeTargets="HarvestDirectory">
-    <MSBuild Projects="..\SampleJetBA\SampleJetBA.csproj" Targets="Restore;Publish" Properties="SelfContained=true;RuntimeIdentifier=win-x64;Configuration=$(Configuration);Platform=$(Platform);PublishDir=$(OutputPath)\..\SampleJetBA\net6.0-windows\publish-msbuild;SolutionDir=$(SolutionDir);BuildFolder=$(BuildFolder);BaseBuildFolder=$(BuildFolder);BuildProjectReferences=false" />
-  </Target>
+  <PropertyGroup>
+    <HarvestDirectoryAdditionalOptions>-generate payloadgroup</HarvestDirectoryAdditionalOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <BindInputPaths Include="$(PublishDir)..\SampleJetBA\" />
+    <HarvestDirectory Include="$(PublishDir)..\SampleJetBA\">
+      <DirectoryRefId>SampleJetBA</DirectoryRefId>
+      <ComponentGroupName>SampleJetBA</ComponentGroupName>
+      <SuppressCom>true</SuppressCom>
+      <SuppressRegistry>true</SuppressRegistry>
+      <SuppressRootDirectory>true</SuppressRootDirectory>
+      <Transforms>XSLT\ba.xslt</Transforms>
+    </HarvestDirectory>
+  </ItemGroup>
 </Project>

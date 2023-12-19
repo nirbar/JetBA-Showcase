@@ -145,7 +145,7 @@ namespace SampleJetBA
                 VariablesViewModelEx vars = GetService<VariablesViewModelEx>();
                 foreach (string s in vars.VariableNames)
                 {
-                    if (bi.PersistedVariables.ContainsKey(s) && !vars.BuiltinVariableNames.Contains(s) && !string.IsNullOrEmpty(bi.PersistedVariables[s]) && !vars[s].IsOnCommandLine)
+                    if (bi.PersistedVariables.ContainsKey(s) && !VariablesViewModelEx.BuiltinVariableNames.Contains(s) && !string.IsNullOrEmpty(bi.PersistedVariables[s]) && !vars[s].IsOnCommandLine)
                     {
                         vars[s].String = bi.PersistedVariables[s];
                     }

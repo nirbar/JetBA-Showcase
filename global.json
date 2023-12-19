@@ -1,6 +1,6 @@
 {
   "msbuild-sdks": {
-    "WixToolset.Sdk": "4.0.1",
+    "WixToolset.Sdk": "4.0.3",
     "Microsoft.Build.Traversal": "4.0.0"
   },
   "sdk": {

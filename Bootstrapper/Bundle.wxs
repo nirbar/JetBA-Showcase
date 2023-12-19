@@ -45,6 +45,4 @@
       </MsiPackage>
     </Chain>
   </Bundle>
-
-  <?pragma heat.dir "$(var.SampleJetBA.TargetDir)..\SampleJetBA\net6.0-windows\publish-msbuild" -dr SampleJetBA -generate payloadgroup -t "$(sys.SOURCEFILEDIR)XSLT\ba.xslt" ?>
 </Wix>
