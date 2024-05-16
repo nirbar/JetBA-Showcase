@@ -7,10 +7,9 @@
   <Bundle Name="!(bind.packageName.Setup.msi)" Version="!(bind.packageVersion.Setup.msi)" Manufacturer="!(bind.packageManufacturer.Setup.msi)" Tag="$(var.UPGRADE_CODE)" UpgradeCode="$(var.UPGRADE_CODE)" IconSourceFile="$(sys.SOURCEFILEDIR)spaceship.ico" SplashScreenSourceFile="$(sys.SOURCEFILEDIR)spaceship-128x128.bmp">
     <?undef UPGRADE_CODE?>
 
-    <BootstrapperApplication>
+    <BootstrapperApplication SourceFile="SampleJetBA.exe">
       <PayloadGroupRef Id="SampleJetBA"/>
       <Payload SourceFile="$(var.SampleJetBA.ProjectDir)Properties\LICENSE.md"/>
-      <bal:WixDotNetCoreBootstrapperApplicationHost SelfContainedDeployment="yes" />
     </BootstrapperApplication>
     <jet:JetBaSettings LicenseFile="$(sys.SOURCEFILEDIR)JetBA.lic" />
 

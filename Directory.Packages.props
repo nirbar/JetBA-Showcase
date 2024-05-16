@@ -1,25 +1,21 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <WixToolsetVersion Condition=" '$(WixToolsetVersion)' == '' ">4.0.5</WixToolsetVersion>
-    <PanelSwWix4Version Condition=" '$(PanelSwWix4Version)' == '' ">5.0.0-psw-wix.0275-51</PanelSwWix4Version>
-    <JetBaVersion Condition=" '$(JetBaVersion)' == '' ">7.5.0.146</JetBaVersion>
+    <WixToolsetVersion Condition=" '$(WixToolsetVersion)' == '' ">5.0.0</WixToolsetVersion>
+    <PanelSwWix4Version Condition=" '$(PanelSwWix4Version)' == '' ">6.0.0-psw-wix.0276-14</PanelSwWix4Version>
+    <JetBaVersion Condition=" '$(JetBaVersion)' == '' ">8.1.0.145</JetBaVersion>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageVersion Include="WixToolset.Util.wixext" Version="$(WixToolsetVersion)" />
     <PackageVersion Include="WixToolset.Heat" Version="$(WixToolsetVersion)" />
     <PackageVersion Include="WixToolset.NetFx.wixext" Version="$(WixToolsetVersion)" />
     <PackageVersion Include="WixToolset.Bal.wixext" Version="$(WixToolsetVersion)" />
-    <PackageVersion Include="WixToolset.Dnc.HostGenerator" Version="$(WixToolsetVersion)" />
-    <PackageVersion Include="WixToolset.Mba.Core" Version="$(WixToolsetVersion)" />
-
+    <PackageVersion Include="WixToolset.BootstrapperApplicationApi" Version="$(WixToolsetVersion)" />
     <PackageVersion Include="PanelSwWix4.Util.wixext" Version="$(PanelSwWix4Version)" />
     <PackageVersion Include="PanelSwWix4.Heat" Version="$(PanelSwWix4Version)" />
     <PackageVersion Include="PanelSwWix4.NetFx.wixext" Version="$(PanelSwWix4Version)" />
     <PackageVersion Include="PanelSwWix4.Bal.wixext" Version="$(PanelSwWix4Version)" />
-    <PackageVersion Include="PanelSwWix4.Dnc.HostGenerator" Version="$(PanelSwWix4Version)" />
-    <PackageVersion Include="PanelSwWix4.Mba.Core" Version="$(PanelSwWix4Version)" />
+    <PackageVersion Include="PanelSwWix4.BootstrapperApplicationApi" Version="$(PanelSwWix4Version)" />
 
     <PackageVersion Include="JetWixExtension4" Version="$(JetBaVersion)" />
     <PackageVersion Include="JetBA4" version="$(JetBaVersion)" />
@@ -27,7 +23,7 @@
 
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
     <PackageVersion Include="PanelSwWpfControls" Version="2.0.0.1" />
-    <PackageVersion Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageVersion Include="System.Data.SqlClient" Version="4.8.6" />
     <PackageVersion Include="System.DirectoryServices.AccountManagement" Version="7.0.0" />
     <PackageVersion Include="System.Drawing.Common" Version="7.0.0" />
     <PackageVersion Include="TidyBuild" Version="1.5.2" />

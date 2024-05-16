@@ -9,7 +9,7 @@ using PanelSW.Installer.JetBA.ViewModel;
 using SampleJetBA.View;
 using SampleJetBA.ViewModel;
 using System.Windows;
-using WixToolset.Mba.Core;
+using WixToolset.BootstrapperApplicationApi;
 
 namespace SampleJetBA
 {
@@ -21,8 +21,7 @@ namespace SampleJetBA
             ERROR_PROCESS_ABORTED = 1067,
         }
 
-        public SampleBA(IEngine engine, IBootstrapperCommand command)
-            : base(engine, command)
+        public SampleBA()
         {
         }
 

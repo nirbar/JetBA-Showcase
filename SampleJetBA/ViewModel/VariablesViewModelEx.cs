@@ -1,6 +1,6 @@
 using PanelSW.Installer.JetBA.JetPack;
 using PanelSW.Installer.JetBA.ViewModel;
-using WixToolset.Mba.Core;
+using WixToolset.BootstrapperApplicationApi;
 
 namespace SampleJetBA.ViewModel
 {

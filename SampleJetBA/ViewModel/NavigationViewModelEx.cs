@@ -5,7 +5,7 @@ using SampleJetBA.View;
 using System;
 using System.Collections.ObjectModel;
 using System.Windows.Threading;
-using WixToolset.Mba.Core;
+using WixToolset.BootstrapperApplicationApi;
 
 namespace SampleJetBA.ViewModel
 {

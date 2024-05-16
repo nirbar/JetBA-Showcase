@@ -3,19 +3,19 @@ on:
   workflow_dispatch:
     inputs:
       jetba_version:
-        description: 'JetBA4 Version'
+        description: 'JetBA5 Version'
         required: true
-        default: '7.0.3.112'
+        default: '8.1.0.145'
         type: string
       wix_version:
         description: 'WixToolset v4 Version'
         required: true
-        default: '4.0.1'
+        default: '5.0.0'
         type: string
       psw_wix_version:
         description: 'PanelSwWix4 Version'
         required: true
-        default: '5.0.0-psw-wix.0135-14'
+        default: '6.0.0-psw-wix.0276-14'
         type: string
       create_tag:
         description: 'Create tag?'
