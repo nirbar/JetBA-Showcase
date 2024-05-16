@@ -4,7 +4,7 @@
     <CustomBeforeTraversalProps>$(MSBuildThisFileDirectory)Directory.Build.props</CustomBeforeTraversalProps>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="SampleJetBA\SampleJetBA.csproj" Properties="Platform=Any CPU;SelfContained=true;RuntimeIdentifier=win-$(Platform);IsPublishable=true" Targets="Build;Publish"/>
+    <ProjectReference Include="SampleJetBA\SampleJetBA.csproj" Properties="Platform=Any CPU;SelfContained=true;RuntimeIdentifier=win-$(Platform);IsPublishable=true" Targets="Restore;Build;Publish"/>
     <ProjectReference Include="Setup\Setup.wixproj" Properties="Platform=$(Platform)" Targets="Restore;Build" BuildInParallel="false"/>
     <ProjectReference Include="Bootstrapper\Bootstrapper.wixproj" Properties="Platform=$(Platform)" Targets="Restore;Build" BuildInParallel="false"/>
   </ItemGroup>
@@ -28,7 +28,7 @@
   <Target Name="WixtoolsetToPanelSwWix4" DependsOnTargets="WixtoolsetToPanelSwWix4PerProject">
     <PropertyGroup>
       <JsonFileContents>$([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory)global.json'))</JsonFileContents>
-      <JsonFileContents>$([System.Text.RegularExpressions.Regex]::Replace('$(JsonFileContents)', '.*WixToolset.*', '"PanelSwWix4.Sdk": "$(PanelSwWix4Version)",'))</JsonFileContents>
+      <JsonFileContents>$([System.Text.RegularExpressions.Regex]::Replace('$(JsonFileContents)', 'PanelSwWix4.*', 'PanelSwWix4.Sdk": "$(PanelSwWix4Version)",'))</JsonFileContents>
     </PropertyGroup>
 
     <WriteLinesToFile File="$(MSBuildThisFileDirectory)global.json"

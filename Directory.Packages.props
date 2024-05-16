@@ -1,9 +1,9 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <WixToolsetVersion Condition=" '$(WixToolsetVersion)' == '' ">4.0.3</WixToolsetVersion>
-    <PanelSwWix4Version Condition=" '$(PanelSwWix4Version)' == '' ">5.0.0-psw-wix.0240-32</PanelSwWix4Version>
-    <JetBaVersion Condition=" '$(JetBaVersion)' == '' ">7.4.8.138</JetBaVersion>
+    <WixToolsetVersion Condition=" '$(WixToolsetVersion)' == '' ">4.0.5</WixToolsetVersion>
+    <PanelSwWix4Version Condition=" '$(PanelSwWix4Version)' == '' ">5.0.0-psw-wix.0275-51</PanelSwWix4Version>
+    <JetBaVersion Condition=" '$(JetBaVersion)' == '' ">7.5.0.146</JetBaVersion>
   </PropertyGroup>
 
   <ItemGroup>
