@@ -12,7 +12,7 @@
     <MediaTemplate CabinetTemplate="smple{0}.cab" />
 
     <Feature Id="ProductFeature" Title="$(var.JetProductName)" Level="1">
-      <ComponentGroupRef Id="FILES" />
+      <Files Directory="INSTALLFOLDER" Include="..\SampleJetBA\**\*.*"/>
     </Feature>
 
     <Property Id="MSIENFORCEUPGRADECOMPONENTRULES" Value="1" />
@@ -22,6 +22,4 @@
       <Directory Id="INSTALLFOLDER" Name="$(var.JetProductName)" />
     </StandardDirectory>
   </Package>
-
-  <?pragma heat.dir "$(sys.SOURCEFILEDIR)..\SampleJetBA" -sfrag -scom -sreg -suid -svb6 -cg FILES -dr INSTALLFOLDER -ag?>
 </Wix>
