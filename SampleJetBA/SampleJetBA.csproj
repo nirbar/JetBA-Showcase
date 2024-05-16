@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-  <Import Project="..\packages\TidyBuild.1.5.1\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.5.1\build\TidyBuild.props')" />
+  <Import Project="..\packages\TidyBuild.1.5.2\build\TidyBuild.props" Condition="Exists('..\packages\TidyBuild.1.5.2\build\TidyBuild.props')" />
   <PropertyGroup>
     <ProjectGuid>{CDD409C6-0F49-4A92-A4DC-FA59DC915646}</ProjectGuid>
     <AssemblyName>SampleJetBA</AssemblyName>
@@ -144,11 +144,11 @@
       <HintPath>$(IntermediateOutputPath)JetBundleVariables.g.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PanelSW.Installer.JetBA, Version=7.2.0.116, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=x86">
-      <HintPath>..\packages\JetBA.7.2.0.116\lib\net40\PanelSW.Installer.JetBA.dll</HintPath>
+    <Reference Include="PanelSW.Installer.JetBA, Version=7.5.0.149, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=x86">
+      <HintPath>..\packages\JetBA.7.5.0.149\lib\net40\PanelSW.Installer.JetBA.dll</HintPath>
     </Reference>
-    <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=7.2.0.116, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetBA.JetPack.7.2.0.116\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
+    <Reference Include="PanelSW.Installer.JetBA.JetPack, Version=7.5.0.149, Culture=neutral, PublicKeyToken=59cb39152f33d7db, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBA.JetPack.7.5.0.149\lib\net40\PanelSW.Installer.JetBA.JetPack.dll</HintPath>
     </Reference>
     <Reference Include="PanelSwWpfControls, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\PanelSwWpfControls.1.4.1\lib\net40\PanelSwWpfControls.dll</HintPath>
@@ -244,16 +244,14 @@
   </ItemGroup>
   <Target Name="BeforeBuild" DependsOnTargets="GenerateVersion;GenerateDefaultJetBundleVariables;GenerateJetBundleVariables">
   </Target>
-  <Import Project="..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
-    <Error Condition="!Exists('..\packages\JetBA.JetPack.7.2.0.116\build\JetBA.JetPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetBA.JetPack.7.2.0.116\build\JetBA.JetPack.targets'))" />
-    <Error Condition="!Exists('..\packages\TidyBuild.1.5.1\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.5.1\build\TidyBuild.props'))" />
-    <Error Condition="!Exists('..\packages\TidyBuild.1.5.1\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.5.1\build\TidyBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\JetBA.JetPack.7.5.0.149\build\JetBA.JetPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JetBA.JetPack.7.5.0.149\build\JetBA.JetPack.targets'))" />
+    <Error Condition="!Exists('..\packages\TidyBuild.1.5.2\build\TidyBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.5.2\build\TidyBuild.props'))" />
+    <Error Condition="!Exists('..\packages\TidyBuild.1.5.2\build\TidyBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\TidyBuild.1.5.2\build\TidyBuild.targets'))" />
   </Target>
-  <Import Project="..\packages\JetBA.JetPack.7.2.0.116\build\JetBA.JetPack.targets" Condition="Exists('..\packages\JetBA.JetPack.7.2.0.116\build\JetBA.JetPack.targets')" />
-  <Import Project="..\packages\TidyBuild.1.5.1\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.5.1\build\TidyBuild.targets')" />
+  <Import Project="..\packages\JetBA.JetPack.7.5.0.149\build\JetBA.JetPack.targets" Condition="Exists('..\packages\JetBA.JetPack.7.5.0.149\build\JetBA.JetPack.targets')" />
+  <Import Project="..\packages\TidyBuild.1.5.2\build\TidyBuild.targets" Condition="Exists('..\packages\TidyBuild.1.5.2\build\TidyBuild.targets')" />
 </Project>
